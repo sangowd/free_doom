@@ -5,50 +5,64 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 翻墙党fanqiangdang.com, server: jp.noic.ml, port: 2309, type: vmess, uuid: d58a968f-1163-4d5e-d22f-b6683300b64f, alterId: 32, cipher: auto, tls: true}
-  - {name: 翻墙党fanqiangdang.com 2, server: jp1.noic.ml, port: 2311, type: vmess, uuid: aa497c9f-2df7-4b41-9887-fd204db21940, alterId: 32, cipher: auto, tls: true}
-  - {name: 翻墙党fanqiangdang.com 3, server: jp2.noic.ml, port: 2310, type: vmess, uuid: 65ad710b-e7e3-49ff-f394-a5b842f6e93e, alterId: 32, cipher: auto, tls: true}
-  - {name: 翻墙党fanqiangdang.com 4, server: aga.noic.ml, port: 2312, type: vmess, uuid: 8bbb3a34-6fac-485e-fdf5-d267abbd7f06, alterId: 32, cipher: auto, tls: true}
-  - {name: 翻墙党fanqiangdang.com 5, server: euserv4p.ezddns.tk, port: 443, type: vmess, uuid: d2da3dcb-b08a-4561-83de-b73e7b8c0288, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /stream, ws-headers: {Host: euserv4p.ezddns.tk}}
-  - {name: 翻墙党fanqiangdang.com 6, server: euserv5p.ezddns.tk, port: 80, type: vmess, uuid: 60b738e2-3aa4-4cde-c270-20f8cc1ab16a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv5p.ezddns.tk}}
-  - {name: 翻墙党fanqiangdang.com 7, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
-  - {name: 翻墙党fanqiangdang.com 8, server: euserv7p.ezddns.tk, port: 80, type: vmess, uuid: 0b5aeb7c-e477-484f-8999-61772c43b43c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv7p.ezddns.tk}}
-  - {name: 翻墙党fanqiangdang.com 9, server: euserv8p.ezddns.tk, port: 80, type: vmess, uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv8p.ezddns.tk}}
-  - {name: github.com/freefq - 葡萄牙  2, server: 82.102.26.117, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3, server: a7.ssrsub.one, port: 8443, type: trojan, password: kBFMVjsv, sni: a7.ssrsub.one}
-  - {name: 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4, server: t7.ssrsub.one, port: 443, type: trojan, password: QgMSj7Zi, sni: t7.ssrsub.one}
-  - {name: 🇺🇸 github.com/freefq - 美国  5, server: 148.72.169.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇷🇴 github.com/freefq - 罗马尼亚  6, server: 91.90.121.163, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇩🇪 github.com/freefq - 德国Hetzner 7, server: 138.201.150.52, port: 33957, type: vmess, uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇪🇺 github.com/freefq - 欧洲  8, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇳🇱 github.com/freefq - 荷兰  13, server: 46.182.107.46, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-8221ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.27430248.xyz}}
-  - {name: 🇳🇱 github.com/freefq - 荷兰  17, server: 46.182.107.153, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26111a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.53103739.xyz}}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19, server: auto.freev2.top, port: 38189, type: vmess, uuid: c13299df-ab6b-4aa1-bcc3-074fe16648d5, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20, server: a6.ssrsub.one, port: 8443, type: trojan, password: 5hE4y8tM, sni: a6.ssrsub.one}
-  - {name: 🇺🇸 github.com/freefq - 美国  22, server: 45.134.224.15, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇮🇳 github.com/freefq - 印度  26, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: github.com/freefq - 欧盟  27, server: 45.88.179.35, port: 44657, type: vmess, uuid: 085e6815-e476-411a-a9a6-4e5306a1b875, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 github.com/freefq - 印度  28, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: github.com/freefq - 波兰  29, server: 95.214.55.118, port: 50825, type: vmess, uuid: 0cfb1063-051e-4a56-ccac-27947710ea0e, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇦 github.com/freefq - 加拿大  30, server: 165.154.234.152, port: 42541, type: vmess, uuid: 41bfdf53-a03c-4233-a86a-f981a002d753, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32, server: t6.ssrsub.one, port: 443, type: trojan, password: hjyJ6qYS, sni: t6.ssrsub.one}
-  - {name: 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33, server: 52.255.146.242, port: 28380, type: vmess, uuid: a232e331-bff8-48d4-f9a6-2436cf41aa26, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34, server: 3.66.221.175, port: 31186, type: vmess, uuid: 3ebad99a-4470-4998-94be-43046d0b4986, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36, server: cn.linn.ink, port: 20020, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯  37, server: t8.ssrsub.one, port: 443, type: trojan, password: QiFPnHKv, sni: t8.ssrsub.one}
-  - {name: 🇺🇸 github.com/freefq - 北美地区  38, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇸 github.com/freefq - 美国Amazon数据中心 39, server: 18.193.122.123, port: 25275, type: vmess, uuid: eebfe76a-c71f-49e4-f983-983384d5dadf, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯  40, server: a8.ssrsub.one, port: 8443, type: trojan, password: YOR8hMHi, sni: a8.ssrsub.one}
-  - {name: 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
-  - {name: github.com/freefq - 波兰  42, server: 95.214.55.119, port: 16408, type: vmess, uuid: 4e49e7c6-b7cd-4c74-c022-2add80a19556, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43, server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯  44, server: 80.85.156.31, port: 40331, type: vmess, uuid: f3dc16e3-715c-4839-abd3-8e0c6df46064, alterId: 0, cipher: auto, tls: false}
-  - {name: github.com/freefq - 乌克兰  45, server: 91.245.227.135, port: 38166, type: vmess, uuid: 9551d4fd-610e-4bf3-9f93-1df5452c3654, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 91.245.227.135}}
+  - {name: 翻墙党fanqiangdang.com, server: 95.214.55.118, port: 50825, type: vmess, uuid: 0cfb1063-051e-4a56-ccac-27947710ea0e, alterId: 64, cipher: auto, tls: false}
+  - {name: 翻墙党fanqiangdang.com 2, server: 95.214.55.119, port: 16408, type: vmess, uuid: 4e49e7c6-b7cd-4c74-c022-2add80a19556, alterId: 64, cipher: auto, tls: false}
+  - {name: 翻墙党fanqiangdang.com 3, server: 91.245.227.135, port: 38166, type: vmess, uuid: 9551d4fd-610e-4bf3-9f93-1df5452c3654, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 91.245.227.135}}
+  - {name: 翻墙党fanqiangdang.com 4, server: sg.rapeamazon.ml, port: 443, type: vmess, uuid: 78405ab3-fe5a-4743-978a-078034b3790a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /bdff, ws-headers: {Host: sg.rapeamazon.ml}}
+  - {name: 翻墙党fanqiangdang.com 5, server: 45.88.179.35, port: 44657, type: vmess, uuid: 085e6815-e476-411a-a9a6-4e5306a1b875, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1, server: 54.254.167.44, port: 58955, type: vmess, uuid: b71c9c07-09b5-4af4-ea44-2ece8145b912, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 github.com/freefq - 香港Amazon数据中心 2, server: 18.162.168.190, port: 20050, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
+  - {name: 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3, server: auto.freev2.top, port: 43733, type: vmess, uuid: f99b585a-5547-43d2-bf30-cfc0dc91013e, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4, server: cn.linn.ink, port: 20020, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
+  - {name: 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5, server: 15.164.227.247, port: 10891, type: vmess, uuid: 62affe81-79f0-4c07-ed18-a69b97081542, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国惠普HP 6, server: 16.162.3.11, port: 20050, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
+  - {name: 🇺🇸 github.com/freefq - 美国Amazon数据中心 7, server: 18.157.179.71, port: 443, type: vmess, uuid: 81dd574d-8d47-4b31-9f5a-3f638b427842, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国  8, server: 148.72.169.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9, server: 54.177.24.1, port: 20050, type: ss, cipher: chacha20-ietf-poly1305, password: 39341fe7-b8b7-4605-a811-af1f1d46d4fb}
+  - {name: 🇷🇴 github.com/freefq - 罗马尼亚  10, server: 91.90.121.163, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇸 github.com/freefq - 北美地区  11, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12, server: 23.225.28.173, port: 443, type: vmess, uuid: 5ac3d610-1802-491b-ab06-dad9bbd83ff1, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.10855945.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13, server: 23.224.30.69, port: 443, type: vmess, uuid: 688f4b5d-ce9a-4729-abe5-b66ca96b2ee9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.36773818.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15, server: 23.224.8.92, port: 443, type: vmess, uuid: bef6f470-d961-4419-a0df-d9c2dcafaefa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.10925848.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16, server: 198.211.3.154, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18, server: 23.224.30.70, port: 443, type: vmess, uuid: 688f4b5d-ce9a-4729-abe5-b66ca96b2ee9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.36773818.xyz}}
+  - {name: 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19, server: cn.linn.ink, port: 30030, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国  20, server: 45.134.224.15, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21, server: 198.2.200.218, port: 443, type: vmess, uuid: 2a23dbd5-09cf-4aa8-a835-3230728c4973, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.48168443.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25, server: 154.84.1.106, port: 443, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.63681459.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27, server: 154.84.1.14, port: 443, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.51334583.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  29, server: 46.182.107.36, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f68, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.28735975.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  30, server: 46.182.107.112, port: 443, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.06022549.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31, server: 154.84.1.194, port: 443, type: vmess, uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.46352799.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  33, server: 46.182.107.45, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-8221ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.27430248.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34, server: 154.84.1.15, port: 443, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.51334583.xyz}}
+  - {name: 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37, server: 154.84.1.127, port: 443, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.63681459.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  38, server: 46.182.107.32, port: 443, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.97032356.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  39, server: 46.182.107.3, port: 443, type: vmess, uuid: bcca23ea-be73-4caf-b143-cbab2be93145, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.33960870.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  40, server: 46.182.107.81, port: 443, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.63681459.xyz}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  41, server: 46.182.107.150, port: 443, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.06321530.xyz}}
+  - {name: 🇮🇳 github.com/freefq - 印度  42, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45, server: 1.1.1.0, port: 80, type: vmess, uuid: 586fb889-61ee-42d9-b374-c1440b0a0664, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dn-7dp8osc1.cn2.run.gxu.edu.cn}}
+  - {name: 🇷🇴 github.com/freefq - 罗马尼亚  47, server: 91.90.123.115, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇮🇳 github.com/freefq - 印度  48, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49, server: t7.ssrsub.one, port: 443, type: trojan, password: QgMSj7Zi, sni: t7.ssrsub.one}
+  - {name: 🇪🇺 github.com/freefq - 欧洲  50, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  52, server: 165.154.234.152, port: 42541, type: vmess, uuid: 41bfdf53-a03c-4233-a86a-f981a002d753, alterId: 0, cipher: auto, tls: false}
+  - {name: github.com/freefq - 波兰  53, server: 95.214.55.118, port: 50825, type: vmess, uuid: 0cfb1063-051e-4a56-ccac-27947710ea0e, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57, server: a6.ssrsub.one, port: 8443, type: trojan, password: 5hE4y8tM, sni: a6.ssrsub.one}
+  - {name: github.com/freefq - 欧盟  58, server: 45.88.179.35, port: 44657, type: vmess, uuid: 085e6815-e476-411a-a9a6-4e5306a1b875, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59, server: 54.95.81.196, port: 32996, type: vmess, uuid: dfc32c07-a7b4-4842-85b2-e5a3732660f6, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60, server: t6.ssrsub.one, port: 443, type: trojan, password: hjyJ6qYS, sni: t6.ssrsub.one}
+  - {name: 🇷🇺 github.com/freefq - 俄罗斯  61, server: a8.ssrsub.one, port: 8443, type: trojan, password: YOR8hMHi, sni: a8.ssrsub.one}
+  - {name: 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64, server: 13.212.76.43, port: 15068, type: vmess, uuid: 7a006e11-72df-4497-947a-54b4ef9cd229, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65, server: a7.ssrsub.one, port: 8443, type: trojan, password: kBFMVjsv, sni: a7.ssrsub.one}
   - {name: "@SSRSUB-V1-付费推荐:suo.yt/ssrsub", server: 104.16.31.181, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
-  - {name: "@SSRSUB-V2-付费推荐:suo.yt/ssrsub", server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: "@SSRSUB-V3-付费推荐:suo.yt/ssrsub", server: 104.19.1.168, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
   - {name: "@SSRSUB-V4-付费推荐:suo.yt/ssrsub", server: 104.19.34.189, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
+  - {name: "@SSRSUB-V5-付费推荐:suo.yt/ssrsub", server: 104.19.40.9, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
   - {name: "@SSRSUB-V6-付费推荐:suo.yt/ssrsub", server: 104.20.28.32, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
-  - {name: "@SSRSUB-V7-付费推荐:suo.yt/ssrsub", server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
   - {name: "@SSRSUB-V8-付费推荐:suo.yt/ssrsub", server: 104.27.5.44, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
   - {name: "@SSRSUB-V9-付费推荐:suo.yt/ssrsub", server: 135.125.207.34, port: 80, type: vmess, uuid: e2816152-6326-4cf9-aa95-34b0f9a8c666, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 135.125.207.34}}
   - {name: "@SSRSUB-V10-付费推荐:suo.yt/ssrsub", server: 135.125.207.34, port: 80, type: vmess, uuid: e2816152-6326-4cf9-aa95-34b0f9a8c666, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 135.125.207.34}}
@@ -63,6 +77,7 @@ proxies:
   - {name: "@SSRSUB-V23-付费推荐:suo.yt/ssrsub", server: 3.112.193.158, port: 30050, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
   - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: 3.66.221.175, port: 31186, type: vmess, uuid: 3ebad99a-4470-4998-94be-43046d0b4986, alterId: 64, cipher: auto, tls: false}
   - {name: "@SSRSUB-V25-付费推荐:suo.yt/ssrsub", server: 45.135.135.93, port: 8080, type: vmess, uuid: 884688eb-d63b-4186-961d-f3b5deac45de, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.135.135.93}}
+  - {name: "@SSRSUB-V26-付费推荐:suo.yt/ssrsub", server: 45.135.135.93, port: 8080, type: vmess, uuid: 884688eb-d63b-4186-961d-f3b5deac45de, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: m.t.17186.cn}}
   - {name: "@SSRSUB-V30-付费推荐:suo.yt/ssrsub", server: 5.183.101.200, port: 35374, type: vmess, uuid: 62836733-0014-4014-e0e3-908eea2f3063, alterId: 64, cipher: auto, tls: false}
   - {name: "@SSRSUB-V31-付费推荐:suo.yt/ssrsub", server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
   - {name: "@SSRSUB-V32-付费推荐:suo.yt/ssrsub", server: 51.15.113.164, port: 80, type: vmess, uuid: 7512e0f4-05b3-4b97-8972-d3fea44cf452, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 51.15.113.164}}
@@ -84,18 +99,6 @@ proxies:
   - {name: "@SSRSUB-V48-付费推荐:suo.yt/ssrsub", server: sg.rapeamazon.ml, port: 443, type: vmess, uuid: 78405ab3-fe5a-4743-978a-078034b3790a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /bdff, ws-headers: {Host: sg.rapeamazon.ml}}
   - {name: "@SSRSUB-V49-付费推荐:suo.yt/ssrsub", server: usin1.biteb.xyz, port: 51009, type: vmess, uuid: 6c9ed95d-18fa-313c-92e2-54fdd2ca5b1f, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: usin1.biteb.xyz}}
   - {name: "@SSRSUB-V50-付费推荐:suo.yt/ssrsub", server: v2.linn.ink, port: 30050, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
-  - {name: 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20, server: 205.185.122.222, port: 2087, type: vmess, uuid: 30e03d66-cb5b-11eb-b078-001683f0971e, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /UOjlVRpk/, ws-headers: {Host: a7.ssrsub.one}}
-  - {name: 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3, server: cfcn.9sep.org, port: 80, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /w421x2bx2za, ws-headers: {Host: nj.sb-cloud.cf}}
-  - {name: 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19, server: 23.225.28.172, port: 443, type: vmess, uuid: 5ac3d610-1802-491b-ab06-dad9bbd83ff1, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.10855945.xyz}}
-  - {name: 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21, server: 23.225.125.195, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/301109172001, ws-headers: {Host: www.91370744.xyz}}
-  - {name: 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16, server: 173.230.146.234, port: 36788, type: vmess, uuid: B22C2F57-0189-25E7-79FA-90717E212748, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 173.230.146.234}}
-  - {name: 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29, server: 154.84.1.116, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd3588, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.25936911.xyz}}
-  - {name: 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8, server: 104.19.1.168, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
-  - {name: 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25, server: 104.19.40.9, port: 443, type: vmess, uuid: bfc6607d-7aa7-4baf-9c22-bf9fb97b573e, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /2yevws, ws-headers: {Host: ccc.1808.cf}}
-  - {name: 🇳🇱 https://git.io/v9999 荷兰  30, server: 46.182.107.147, port: 443, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a539467bc7a7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73207635.xyz}}
-  - {name: 🇳🇱 https://git.io/v9999 荷兰  28, server: 46.182.107.98, port: 443, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f077621b, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.08538470.xyz}}
-  - {name: 🇳🇱 https://git.io/v9999 荷兰  26, server: 46.182.107.146, port: 443, type: vmess, uuid: acedd8e0-e654-4a40-935d-5594c6c114bd, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.61020861.xyz}}
-  - {name: 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8, server: 45.135.135.93, port: 8080, type: vmess, uuid: 884688eb-d63b-4186-961d-f3b5deac45de, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: m.t.17186.cn}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -107,45 +110,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -160,6 +177,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -181,18 +199,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -204,45 +210,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -257,6 +277,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -278,18 +299,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -301,45 +310,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -354,6 +377,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -375,18 +399,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: 📲 电报信息
     type: select
     proxies:
@@ -397,45 +409,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -450,6 +476,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -471,18 +498,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -493,45 +508,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -546,6 +575,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -567,18 +597,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -589,45 +607,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -642,6 +674,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -663,18 +696,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -686,45 +707,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -739,6 +774,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -760,18 +796,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -799,45 +823,59 @@ proxy-groups:
       - 翻墙党fanqiangdang.com 3
       - 翻墙党fanqiangdang.com 4
       - 翻墙党fanqiangdang.com 5
-      - 翻墙党fanqiangdang.com 6
-      - 翻墙党fanqiangdang.com 7
-      - 翻墙党fanqiangdang.com 8
-      - 翻墙党fanqiangdang.com 9
-      - github.com/freefq - 葡萄牙  2
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 3
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 4
-      - 🇺🇸 github.com/freefq - 美国  5
-      - 🇷🇴 github.com/freefq - 罗马尼亚  6
-      - 🇩🇪 github.com/freefq - 德国Hetzner 7
-      - 🇪🇺 github.com/freefq - 欧洲  8
-      - 🇳🇱 github.com/freefq - 荷兰  13
-      - 🇳🇱 github.com/freefq - 荷兰  17
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 19
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 20
-      - 🇺🇸 github.com/freefq - 美国  22
-      - 🇮🇳 github.com/freefq - 印度  26
-      - github.com/freefq - 欧盟  27
-      - 🇮🇳 github.com/freefq - 印度  28
-      - github.com/freefq - 波兰  29
-      - 🇨🇦 github.com/freefq - 加拿大  30
-      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 32
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州博伊顿Microsoft数据中心 33
-      - 🇺🇸 github.com/freefq - 美国Amazon EC2服务器 34
-      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 36
-      - 🇷🇺 github.com/freefq - 俄罗斯  37
-      - 🇺🇸 github.com/freefq - 北美地区  38
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 39
-      - 🇷🇺 github.com/freefq - 俄罗斯  40
-      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 41
-      - github.com/freefq - 波兰  42
-      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 43
-      - 🇷🇺 github.com/freefq - 俄罗斯  44
-      - github.com/freefq - 乌克兰  45
+      - 🇸🇬 github.com/freefq - 新加坡亚马逊(Amazon)公司数据中心 1
+      - 🇭🇰 github.com/freefq - 香港Amazon数据中心 2
+      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 3
+      - 🇨🇳 github.com/freefq - 北京市亚马逊(Amazon)公司数据中心 4
+      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5
+      - 🇺🇸 github.com/freefq - 美国惠普HP 6
+      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 7
+      - 🇺🇸 github.com/freefq - 美国  8
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州旧金山Amazon数据中心 9
+      - 🇷🇴 github.com/freefq - 罗马尼亚  10
+      - 🇺🇸 github.com/freefq - 北美地区  11
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 12
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 13
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市Coperation Coloction数据中心 15
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 16
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 18
+      - 🇨🇳 github.com/freefq - 北京市Amazon数据中心 19
+      - 🇺🇸 github.com/freefq - 美国  20
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 21
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 25
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 27
+      - 🇳🇱 github.com/freefq - 荷兰  29
+      - 🇳🇱 github.com/freefq - 荷兰  30
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 31
+      - 🇳🇱 github.com/freefq - 荷兰  33
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 34
+      - 🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 37
+      - 🇳🇱 github.com/freefq - 荷兰  38
+      - 🇳🇱 github.com/freefq - 荷兰  39
+      - 🇳🇱 github.com/freefq - 荷兰  40
+      - 🇳🇱 github.com/freefq - 荷兰  41
+      - 🇮🇳 github.com/freefq - 印度  42
+      - 🇺🇸 github.com/freefq - 美国亚太互联网络信息中心(CloudFlare节点) 45
+      - 🇷🇴 github.com/freefq - 罗马尼亚  47
+      - 🇮🇳 github.com/freefq - 印度  48
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 49
+      - 🇪🇺 github.com/freefq - 欧洲  50
+      - 🇨🇦 github.com/freefq - 加拿大  52
+      - github.com/freefq - 波兰  53
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州马里科帕县菲尼克斯市Nobis技术集团有限公司 54
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 57
+      - github.com/freefq - 欧盟  58
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 59
+      - 🇸🇬 github.com/freefq - 俄罗斯新西伯利亚JustHost 60
+      - 🇷🇺 github.com/freefq - 俄罗斯  61
+      - 🇩🇰 github.com/freefq - 丹麦哥本哈根Digital VM 63
+      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 64
+      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM 65
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V4-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V5-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V6-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V7-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V8-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V9-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
@@ -852,6 +890,7 @@ proxy-groups:
       - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
@@ -873,18 +912,6 @@ proxy-groups:
       - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
-      - 🇺🇸 https://git.io/v9999 美国内华达州拉斯维加斯BuyVM 20
-      - 🇩🇪 https://git.io/v9999 美国科罗拉多州布隆菲尔德市Level 3通信股份有限公司 3
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶Coperation Coloction数据中心 19
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶CeraNetworks 21
-      - 🇺🇸 https://git.io/v9999 美国加利福尼亚州费利蒙Linode数据中心 16
-      - 🇺🇸 https://git.io/v9999 美国Cloudinnovation数据中心 29
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 25
-      - 🇳🇱 https://git.io/v9999 荷兰  30
-      - 🇳🇱 https://git.io/v9999 荷兰  28
-      - 🇳🇱 https://git.io/v9999 荷兰  26
-      - 🇷🇺 https://git.io/v9999 俄罗斯莫斯科JustHost 8
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -4255,3 +4282,4 @@ rules:
  - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
+
