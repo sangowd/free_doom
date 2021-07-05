@@ -5,415 +5,488 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本, server: jpaws.huarenlife.top, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jpaws.huarenlife.top}}
-  - {name: 🇺🇸 美国, server: 154.17.2.153, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇩🇪 德国, server: 5.183.179.94, port: 47148, type: vmess, uuid: 730cb94d-012a-4bfc-aa2a-1573f63e5905, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 2, server: ping.pe, port: 443, type: vmess, uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /111111.online, ws-headers: {Host: by.6111.online}}
-  - {name: 🇺🇸 美国 3, server: www.digitalocean.com, port: 443, type: vmess, uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /111111.online, ws-headers: {Host: by.6111.online}}
-  - {name: 🇩🇪 德国 2, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇭🇰 香港, server: huarenlife.top, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: huarenlife.top}}
-  - {name: 🇷🇺 俄罗斯, server: 85.117.234.184, port: 19303, type: vmess, uuid: c3806abf-afaf-4ed1-8f7e-41a7ecdbb4e3, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 4, server: 198.8.92.84, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: 🇺🇸 美国 5, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇳🇱 荷兰, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇩🇪 德国 3, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇩🇪 德国 4, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国 6, server: 154.17.5.184, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇳🇱 荷兰 2, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 🇨🇦 加拿大, server: 138.197.174.245, port: 56443, type: ss, cipher: chacha20-ietf-poly1305, password: yuMqkGIx6Ia0}
-  - {name: 🇩🇪 德国 5, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇩🇪 德国 6, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 美国 7, server: 198.8.92.84, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇺🇸 美国 8, server: 198.8.92.84, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇺🇸 美国 9, server: 198.8.92.84, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇳🇱 荷兰 3, server: 185.212.203.115, port: 36402, type: ss, cipher: aes-256-gcm, password: qLVVsktJzWpi}
-  - {name: 🇺🇸 美国 10, server: 198.8.92.84, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇸🇬 新加坡, server: 104.248.148.147, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 104.248.148.147}}
-  - {name: 🇺🇸 美国 11, server: 164.90.234.85, port: 18492, type: ss, cipher: chacha20-ietf-poly1305, password: fdRAl4scWDTg}
+  - {name: 🇺🇸 美国, server: 154.17.2.153, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇨🇦 加拿大 2, server: 217.138.200.189, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 克罗地亚, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 2, server: 198.8.92.84, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇷🇺 俄罗斯, server: 85.117.234.184, port: 19303, type: vmess, uuid: c3806abf-afaf-4ed1-8f7e-41a7ecdbb4e3, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 3, server: 116.149.51.40, port: 30504, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 116.149.51.40}}
+  - {name: 🇮🇹 意大利, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇺🇸 美国 4, server: 4733.ddns.inli.cloud, port: 30504, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 4733.ddns.inli.cloud}}
+  - {name: 🇨🇳 台湾, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+  - {name: 🇺🇸 美国 5, server: euserv5p.ezddns.tk, port: 80, type: vmess, uuid: 60b738e2-3aa4-4cde-c270-20f8cc1ab16a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv5p.ezddns.tk}}
+  - {name: 🇭🇰 香港, server: 54.223.185.171, port: 8002, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
+  - {name: 🇺🇸 美国 6, server: ping.pe, port: 443, type: vmess, uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /111111.online, ws-headers: {Host: by.6111.online}}
+  - {name: 比利时, server: 91.90.123.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇷🇺 俄罗斯 2, server: 45.151.144.234, port: 443, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+  - {name: 比利时 2, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇩🇪 德国, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 美国 7, server: 164.90.234.85, port: 18492, type: ss, cipher: chacha20-ietf-poly1305, password: fdRAl4scWDTg}
+  - {name: 🇰🇷 韩国, server: 3.36.76.192, port: 31812, type: vmess, uuid: a1371d43-f0fe-43cf-b826-d900a1c8de49, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 8, server: usa4a-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: usa4a-node.3366test.com}}
+  - {name: 🇨🇦 加拿大 3, server: 165.154.234.152, port: 50680, type: vmess, uuid: 7d45212a-d98f-4b98-9b44-bbe81cb72acb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 9, server: ngzyd-1.okex-tradebot.xyz, port: 30000, type: vmess, uuid: b25b32ab-d127-4620-aa25-e35a23eca6bd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 比利时 3, server: 91.90.123.115, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇳🇱 荷兰, server: nl1.hiout.me, port: 36402, type: ss, cipher: aes-256-gcm, password: qLVVsktJzWpi}
+  - {name: 比利时 4, server: 91.90.123.115, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国 10, server: 198.8.92.84, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
+  - {name: 比利时 5, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 比利时 6, server: 91.90.123.115, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇺🇸 美国 11, server: 116.149.51.40, port: 30504, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+  - {name: 🇩🇪 德国 2, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 比利时 7, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇳🇱 荷兰 2, server: 185.212.203.115, port: 36402, type: ss, cipher: aes-256-gcm, password: qLVVsktJzWpi}
+  - {name: 🇺🇸 美国 12, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
+  - {name: 比利时 8, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇸🇬 新加坡, server: 103.83.156.89, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.83.156.89}}
+  - {name: 🇬🇧 英国, server: 81.92.205.123, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: 🇷🇴 罗马尼亚, server: 37.120.233.141, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇹 意大利, server: 82.102.26.117, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇨🇳 台湾, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇺🇸 美国 12, server: 66.115.175.37, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国 13, server: 167.99.192.30, port: 3567, type: ss, cipher: chacha20-ietf-poly1305, password: HGBdOKdcIer5}
-  - {name: 🇨🇳 台湾 2, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: 比利时, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 比利时 2, server: 91.90.123.115, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 美国 14, server: 4733.ddns.inli.cloud, port: 30504, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 4733.ddns.inli.cloud}}
-  - {name: 🇺🇸 美国 15, server: 172.67.153.238, port: 443, type: vmess, uuid: 356ed062-4f58-49c3-bd44-c0b6db1c94ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /stream, ws-headers: {Host: euserv3p.ezddns.tk}}
-  - {name: 🇺🇸 美国 16, server: 4733.ddns.inli.cloud, port: 30504, type: vmess, uuid: 9afbb703-c486-39b1-9cd6-abdd430973e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: virt.tnty.xyz}}
-  - {name: 🇺🇸 美国 17, server: 143.244.60.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国 18, server: 154.17.2.109, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: l3Y9yKCBaT5SnpFFOe834yqIaXwSpRxz3l7D3Aua82ZgcSNZDCO6AexYDCE0Rj}
-  - {name: 比利时 3, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇺🇸 美国 19, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
-  - {name: 🇺🇸 美国 20, server: euserv5p.ezddns.tk, port: 80, type: vmess, uuid: 60b738e2-3aa4-4cde-c270-20f8cc1ab16a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv5p.ezddns.tk}}
-  - {name: 🇺🇸 美国 21, server: 207.244.67.149, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇰🇷 韩国, server: 54.180.96.67, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.180.96.67}}
-  - {name: 🇸🇬 新加坡 2, server: 103.83.156.89, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.83.156.89}}
+  - {name: 🇺🇸 美国 13, server: 173.82.186.148, port: 443, type: vmess, uuid: 35b77d63-ba4b-3271-b526-65645bd2e267, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+  - {name: 🇺🇸 美国 14, server: 207.244.67.149, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇯🇵 日本, server: qwerjm.moox.icu, port: 34002, type: vmess, uuid: 452b00a7-92d5-4a5b-a88c-4c3e0c629d5b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: awsjp1.moox.icu}}
+  - {name: 🇺🇸 美国 15, server: 198.8.92.84, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: 🇩🇪 德国 3, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇷🇴 罗马尼亚 2, server: 37.120.233.37, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇩🇪 德国 4, server: 120.240.47.76, port: 31005, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+  - {name: 🇭🇰 香港 2, server: huarenlife.top, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: huarenlife.top}}
+  - {name: 🇺🇸 美国 16, server: 207.244.67.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 美国 17, server: 198.8.92.84, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 美国 18, server: 116.149.51.40, port: 22334, type: vmess, uuid: 35b77d63-ba4b-3271-b526-65645bd2e267, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+  - {name: 🇷🇺 俄罗斯 3, server: 45.151.144.234, port: 443, type: vmess, uuid: 35b77d63-ba4b-3271-b526-65645bd2e267, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+  - {name: 🇺🇸 美国 19, server: 172.67.153.238, port: 443, type: vmess, uuid: 356ed062-4f58-49c3-bd44-c0b6db1c94ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /stream, ws-headers: {Host: euserv3p.ezddns.tk}}
+  - {name: 🇦🇺 澳大利亚, server: 1.0.0.4, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: enterprise.moss.network}}
+  - {name: 比利时 9, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 美国 20, server: 207.244.67.149, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇳🇱 荷兰 3, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇩🇪 德国 5, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 美国 21, server: 66.115.175.37, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国 22, server: 198.8.92.84, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇺🇸 美国 23, server: 120.240.47.76, port: 31001, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
   - {name: 🇫🇷 法国, server: bimbel.ruangguru.com, port: 80, type: vmess, uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: eu-sshkit.v2-ray.cf}}
-  - {name: 🇭🇰 香港 2, server: 54.223.185.171, port: 8001, type: vmess, uuid: 4a0825d3-0f32-4fec-a7fd-ba851e36e091, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
-  - {name: 🇺🇸 美国 22, server: 3.36.76.192, port: 31812, type: vmess, uuid: a1371d43-f0fe-43cf-b826-d900a1c8de49, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 3, server: 54.223.185.171, port: 8001, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: baidu.com}}
-  - {name: 🇭🇰 香港 4, server: 54.223.185.171, port: 8003, type: vmess, uuid: e854d8f1-f0f7-40fe-a77d-345cf7a78e05, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
-  - {name: 🇭🇰 香港 5, server: 54.223.185.171, port: 8002, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
-  - {name: 🇯🇵 日本 2, server: 54.223.185.171, port: 8002, type: vmess, uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
-  - {name: 🇯🇵 日本 3, server: 54.223.185.171, port: 8002, type: vmess, uuid: 4a0825d3-0f32-4fec-a7fd-ba851e36e091, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.223.185.171}}
+  - {name: 🇩🇪 德国 6, server: 5.183.179.94, port: 47148, type: vmess, uuid: 730cb94d-012a-4bfc-aa2a-1573f63e5905, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 24, server: www.digitalocean.com, port: 443, type: vmess, uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /111111.online, ws-headers: {Host: by.6111.online}}
+  - {name: 🇳🇱 荷兰 4, server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇯🇵 日本 2, server: 139.162.81.159, port: 443, type: vmess, uuid: 2c859d5f-b599-382d-ab6c-31e08afcd438, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /nima, ws-headers: {Host: 139.162.81.159}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港
       - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
+      - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -429,58 +502,69 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - 🇩🇪 德国
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇳🇱 荷兰
-      - 🇩🇪 德国 3
-      - 🇩🇪 德国 4
-      - 🇺🇸 美国 6
-      - 🇳🇱 荷兰 2
       - 🇨🇦 加拿大
-      - 🇩🇪 德国 5
-      - 🇩🇪 德国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇳🇱 荷兰 3
-      - 🇺🇸 美国 10
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国 11
-      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国
+      - 🇨🇦 加拿大 2
+      - 克罗地亚
+      - 🇺🇸 美国 2
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 3
       - 🇮🇹 意大利
+      - 🇺🇸 美国 4
       - 🇨🇳 台湾
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港
+      - 🇺🇸 美国 6
       - 比利时
+      - 🇷🇺 俄罗斯 2
       - 比利时 2
+      - 🇩🇪 德国
+      - 🇺🇸 美国 7
+      - 🇰🇷 韩国
+      - 🇺🇸 美国 8
+      - 🇨🇦 加拿大 3
+      - 🇺🇸 美国 9
+      - 比利时 3
+      - 🇳🇱 荷兰
+      - 比利时 4
+      - 🇺🇸 美国 10
+      - 比利时 5
+      - 比利时 6
+      - 🇺🇸 美国 11
+      - 🇩🇪 德国 2
+      - 比利时 7
+      - 🇳🇱 荷兰 2
+      - 🇺🇸 美国 12
+      - 比利时 8
+      - 🇸🇬 新加坡
+      - 🇬🇧 英国
+      - 🇷🇴 罗马尼亚
+      - 🇺🇸 美国 13
       - 🇺🇸 美国 14
+      - 🇯🇵 日本
       - 🇺🇸 美国 15
+      - 🇩🇪 德国 3
+      - 🇷🇴 罗马尼亚 2
+      - 🇩🇪 德国 4
+      - 🇭🇰 香港 2
       - 🇺🇸 美国 16
       - 🇺🇸 美国 17
       - 🇺🇸 美国 18
-      - 比利时 3
+      - 🇷🇺 俄罗斯 3
       - 🇺🇸 美国 19
+      - 🇦🇺 澳大利亚
+      - 比利时 9
       - 🇺🇸 美国 20
+      - 🇳🇱 荷兰 3
+      - 🇩🇪 德国 5
       - 🇺🇸 美国 21
-      - 🇰🇷 韩国
-      - 🇸🇬 新加坡 2
-      - 🇫🇷 法国
-      - 🇭🇰 香港 2
       - 🇺🇸 美国 22
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
+      - 🇺🇸 美国 23
+      - 🇫🇷 法国
+      - 🇩🇪 德国 6
+      - 🇺🇸 美国 24
+      - 🇳🇱 荷兰 4
       - 🇯🇵 日本 2
-      - 🇯🇵 日本 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
