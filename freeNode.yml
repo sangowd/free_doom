@@ -5,156 +5,234 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube-阿伟科技1, server: fs.china.aiv2.top, port: 11415, type: vmess, uuid: f02b2b4e-dcd8-4fe4-8c6c-c4cf8f832eb5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: YouTube-阿伟科技1 2, server: gz3.china.aiv2.top, port: 42001, type: vmess, uuid: f02b2b4e-dcd8-4fe4-8c6c-c4cf8f832eb5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 YouTube-阿伟科技2-US, server: yd.fenlin.club, port: 60007, type: vmess, uuid: a3c163d1-263a-4c40-89db-608b232298af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇺🇸 YouTube-阿伟科技2-US 2, server: yd.fenlin.club, port: 60008, type: vmess, uuid: a3c163d1-263a-4c40-89db-608b232298af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: YouTube-阿伟科技2-Ind, server: yd.fenlin.club, port: 60015, type: vmess, uuid: 789d8d04-a8fb-4b05-bcef-2ab99d93f60e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: YouTube-阿伟科技2-Ind 2, server: yd.fenlin.club, port: 60006, type: vmess, uuid: 789d8d04-a8fb-4b05-bcef-2ab99d93f60e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇭🇰 YouTube-阿伟科技3-HK, server: cm.cheapv2.xyz, port: 26609, type: vmess, uuid: d5853be0-234c-3211-af24-2b6701d380f4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cm.cheapv2.xyz}}
-  - {name: 🇭🇰 YouTube-阿伟科技3-HK 2, server: cm3.cheapv2.xyz, port: 23358, type: vmess, uuid: d5853be0-234c-3211-af24-2b6701d380f4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cm3.cheapv2.xyz}}
-  - {name: 🇸🇬 YouTube-阿伟科技4-SG, server: global-sakura-sg-a-01.yingyun-resolve.com, port: 122, type: vmess, uuid: 121334a4-ebd3-349f-8573-d12851e67719, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: v2ray-v1-aws-sg-05.yingyun-resolve.com}}
-  - {name: 🇯🇵 YouTube-阿伟科技4-JP, server: global-sakura-jp-a-01.yingyun-resolve.com, port: 2110, type: vmess, uuid: 121334a4-ebd3-349f-8573-d12851e67719, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: v2ray-v1-sakura-jp-10.yingyun-resolve.com}}
-  - {name: YouTube-阿伟科技5, server: gyb.cloudddns.icu, port: 123, type: vmess, uuid: a7436b35-0daf-3eac-9a0b-356b8a3cc63b, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /public, ws-headers: {Host: gyb.cloudddns.icu}}
-  - {name: YouTube-阿伟科技5 2, server: gya.cloudddns.icu, port: 819, type: vmess, uuid: a7436b35-0daf-3eac-9a0b-356b8a3cc63b, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /public, ws-headers: {Host: gya.cloudddns.icu}}
-  - {name: 🇯🇵 YouTube-阿伟科技6-JP, server: zzlt.flyss.link, port: 10025, type: ss, cipher: aes-256-gcm, password: 6840dfa1-b5ec-4b41-9a53-098ed78bc356}
-  - {name: 🇯🇵 YouTube-阿伟科技6-JP 2, server: zzlt.flyss.link, port: 10026, type: ss, cipher: aes-256-gcm, password: 6840dfa1-b5ec-4b41-9a53-098ed78bc356}
-  - {name: 🇭🇰 YouTube-阿伟科技7-HK, server: 1e5495d9614c.fkunky.cn, port: 52344, type: vmess, uuid: c071c3b0-1981-4037-a465-c7059b5a9e9a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 1e5495d9614c.fkunky.cn}}
-  - {name: 🇭🇰 YouTube-阿伟科技7-HK 2, server: 1e5495d9614c.fkunky.cn, port: 52343, type: vmess, uuid: c071c3b0-1981-4037-a465-c7059b5a9e9a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 1e5495d9614c.fkunky.cn}}
+  - {name: 🇨🇳 YouTube-阿伟科技01-TW, server: gz3.china.aiv2.top, port: 42008, type: vmess, uuid: 27126369-551d-4352-9ab0-1593deee73e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 YouTube-阿伟科技01-TW 2, server: fs.china.aiv2.top, port: 11410, type: vmess, uuid: 27126369-551d-4352-9ab0-1593deee73e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: YouTube-阿伟科技02-IDN, server: yd.fenlin.club, port: 60015, type: vmess, uuid: 7cbad567-d90d-4374-a2a6-27a6908a638d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
+  - {name: 🇺🇸 YouTube-阿伟科技02-US, server: yd.fenlin.club, port: 60001, type: vmess, uuid: 7cbad567-d90d-4374-a2a6-27a6908a638d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
+  - {name: YouTube-阿伟科技02, server: yd.fenlin.club, port: 60015, type: vmess, uuid: ded0fec5-a71d-4eff-952a-d22d8418d9d4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
+  - {name: YouTube-阿伟科技02 2, server: yd.fenlin.club, port: 60002, type: vmess, uuid: ded0fec5-a71d-4eff-952a-d22d8418d9d4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
+  - {name: 🇰🇷 YouTube-阿伟科技08-KR, server: 14.kaikaiye.cyou, port: 36114, type: vmess, uuid: cb237e01-7642-357c-b3bb-49bc69b6bcf9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 14.kaikaiye.cyou}}
+  - {name: 🇰🇷 YouTube-阿伟科技08-KR 2, server: 25.kaikaiye.cyou, port: 26125, type: vmess, uuid: d9a72cac-8ca8-3a19-8bca-41d6c1647c2e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 25.kaikaiye.cyou}}
+  - {name: 🇸🇬 YouTube-阿伟科技08-SG, server: 13.kaikaiye.cyou, port: 36113, type: vmess, uuid: d9a72cac-8ca8-3a19-8bca-41d6c1647c2e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.kaikaiye.cyou}}
+  - {name: 🇭🇰 YouTube-阿伟科技09-HK, server: t1.gz.yd.fastcloud.club, port: 10104, type: vmess, uuid: 65b4e955-f9fa-4832-8c25-4eae1855c697, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: t1.gz.yd.fastcloud.club}}
+  - {name: 🇭🇰 YouTube-阿伟科技09-HK 2, server: t1.gz.yd.fastcloud.club, port: 10102, type: vmess, uuid: 65b4e955-f9fa-4832-8c25-4eae1855c697, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: t1.gz.yd.fastcloud.club}}
+  - {name: 🇸🇬 YouTube-阿伟科技10-SG, server: fscm.96line.club, port: 50035, type: ss, cipher: chacha20-ietf-poly1305, password: 15fbe2a4-a344-422e-8c39-c4fb6e3b24ae}
+  - {name: 🇺🇸 YouTube-阿伟科技10-US, server: szcm.96line.club, port: 50065, type: ss, cipher: chacha20-ietf-poly1305, password: 15fbe2a4-a344-422e-8c39-c4fb6e3b24ae}
+  - {name: 🇺🇸 YouTube-阿伟科技10-US 2, server: szcm.96line.club, port: 50066, type: ss, cipher: chacha20-ietf-poly1305, password: a75ea7f8-8469-48ae-a945-957f09465b2b}
+  - {name: 🇺🇸 YouTube-阿伟科技10-US 3, server: szcm.96line.club, port: 50068, type: ss, cipher: chacha20-ietf-poly1305, password: a75ea7f8-8469-48ae-a945-957f09465b2b}
+  - {name: 🇺🇸 YouTube-阿伟科技11-US, server: 76.223.78.107, port: 33456, type: vmess, uuid: fc8ada91-4015-41b0-9675-96d117e19660, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aga.52fq.me}}
+  - {name: 🇭🇰 YouTube-阿伟科技11-HK, server: 223.111.183.71, port: 59735, type: vmess, uuid: fc8ada91-4015-41b0-9675-96d117e19660, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aga.52fq.me}}
+  - {name: 🇭🇰 YouTube-阿伟科技03-HK, server: cu.cheapv2.xyz, port: 29902, type: vmess, uuid: 5db07732-1b46-3b40-99d8-19bd110f4817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
+  - {name: 🇭🇰 YouTube-阿伟科技03-HK 2, server: cu.cheapv2.xyz, port: 26609, type: vmess, uuid: 5db07732-1b46-3b40-99d8-19bd110f4817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
+  - {name: 🇺🇸 YouTube-阿伟科技06-us, server: zzlt.flyss.link, port: 10023, type: ss, cipher: aes-256-gcm, password: d8efbf11-6bce-40c3-8d6a-84da464ecae0}
+  - {name: 🇺🇸 YouTube-阿伟科技06-us 2, server: zzlt.flyss.link, port: 10024, type: ss, cipher: aes-256-gcm, password: d8efbf11-6bce-40c3-8d6a-84da464ecae0}
+  - {name: YouTube-阿伟科技06-jp, server: zzlt.flyss.link, port: 10025, type: ss, cipher: aes-256-gcm, password: d8efbf11-6bce-40c3-8d6a-84da464ecae0}
+  - {name: 🇭🇰 YouTube-阿伟科技07-hk, server: 1e5495d9614c.fkunky.cn, port: 52343, type: vmess, uuid: 18a8f636-fd4f-4a9d-8a47-4758e2e40548, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 1e5495d9614c.fkunky.cn}}
+  - {name: YouTube-阿伟科技07-jp, server: beijing-bgp-01.holi.wtf, port: 56666, type: vmess, uuid: 18a8f636-fd4f-4a9d-8a47-4758e2e40548, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube-阿伟科技03-HK 3, server: global-sakura-hk-a-01.yingyun-resolve.com, port: 108, type: vmess, uuid: 7a06a22e-6e25-3bae-8310-d7ce6525b13a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: v2ray-v1-hkt-hk-01.yingyun-resolve.com}}
+  - {name: 🇭🇰 YouTube-阿伟科技03-HK 4, server: global-sakura-hk-a-01.yingyun-resolve.com, port: 110, type: vmess, uuid: 7a06a22e-6e25-3bae-8310-d7ce6525b13a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: v2ray-v1-hkt-hk-03.yingyun-resolve.com}}
+  - {name: 🇭🇰 YouTube-阿伟科技03-HK 5, server: global-sakura-hk-a-01.yingyun-resolve.com, port: 112, type: vmess, uuid: 7a06a22e-6e25-3bae-8310-d7ce6525b13a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: v2ray-v1-hkt-hk-05.yingyun-resolve.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 YouTube-阿伟科技07-hk
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,22 +248,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube-阿伟科技1
-      - YouTube-阿伟科技1 2
-      - 🇺🇸 YouTube-阿伟科技2-US
-      - 🇺🇸 YouTube-阿伟科技2-US 2
-      - YouTube-阿伟科技2-Ind
-      - YouTube-阿伟科技2-Ind 2
-      - 🇭🇰 YouTube-阿伟科技3-HK
-      - 🇭🇰 YouTube-阿伟科技3-HK 2
-      - 🇸🇬 YouTube-阿伟科技4-SG
-      - 🇯🇵 YouTube-阿伟科技4-JP
-      - YouTube-阿伟科技5
-      - YouTube-阿伟科技5 2
-      - 🇯🇵 YouTube-阿伟科技6-JP
-      - 🇯🇵 YouTube-阿伟科技6-JP 2
-      - 🇭🇰 YouTube-阿伟科技7-HK
-      - 🇭🇰 YouTube-阿伟科技7-HK 2
+      - 🇨🇳 YouTube-阿伟科技01-TW
+      - 🇨🇳 YouTube-阿伟科技01-TW 2
+      - YouTube-阿伟科技02-IDN
+      - 🇺🇸 YouTube-阿伟科技02-US
+      - YouTube-阿伟科技02
+      - YouTube-阿伟科技02 2
+      - 🇰🇷 YouTube-阿伟科技08-KR
+      - 🇰🇷 YouTube-阿伟科技08-KR 2
+      - 🇸🇬 YouTube-阿伟科技08-SG
+      - 🇭🇰 YouTube-阿伟科技09-HK
+      - 🇭🇰 YouTube-阿伟科技09-HK 2
+      - 🇸🇬 YouTube-阿伟科技10-SG
+      - 🇺🇸 YouTube-阿伟科技10-US
+      - 🇺🇸 YouTube-阿伟科技10-US 2
+      - 🇺🇸 YouTube-阿伟科技10-US 3
+      - 🇺🇸 YouTube-阿伟科技11-US
+      - 🇭🇰 YouTube-阿伟科技11-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK
+      - 🇭🇰 YouTube-阿伟科技03-HK 2
+      - 🇺🇸 YouTube-阿伟科技06-us
+      - 🇺🇸 YouTube-阿伟科技06-us 2
+      - YouTube-阿伟科技06-jp
+      - 🇭🇰 YouTube-阿伟科技07-hk
+      - YouTube-阿伟科技07-jp
+      - 🇭🇰 YouTube-阿伟科技03-HK 3
+      - 🇭🇰 YouTube-阿伟科技03-HK 4
+      - 🇭🇰 YouTube-阿伟科技03-HK 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
