@@ -1,2449 +1,158 @@
-# 生成地址：v2rayse.com
-# 模版名称：defaultName
-# 生成时间：2025-01-03 12:28:26
-# 不要随意改变关键字，否则会导致出错
-# acl4SSR规则
-# 去广告：支持
-# 自动测速：支持
-# 微软分流：支持
-# 苹果分流：支持
-# 增强中国IP段：不支持
-# 增强国外GFW：不支持
-
-mixed-port: 7890
-allow-lan: false
-mode: rule
-ipv6: false
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-dns:
-  enable: true
-  listen: 0.0.0.0:53
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-    - 119.29.29.29
-    - 180.76.76.76
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - router.asus.com
-    - localhost.sec.qq.com
-    - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 114.114.114.114
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
 proxies:
-  - name: HK_1
-    port: 443
-    server: 47.243.171.8
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_2
-    port: 12345
-    server: 42.98.167.229
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_3
-    port: 30002
-    server: 43.135.44.101
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_4
-    port: 443
-    server: 47.243.171.8
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_5
-    port: 12345
-    server: 42.98.167.229
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_6
-    port: 443
-    server: 43.128.26.74
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SG_1
-    port: 10010
-    server: 158.178.228.8
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: TW_1
-    port: 81
-    server: 210.61.97.241
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_1
-    port: 18446
-    server: 154.17.21.134
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_1
-    port: 8443
-    server: 141.145.205.115
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_2
-    port: 18446
-    server: 154.17.21.134
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: AU_1
-    port: 443
-    server: 152.67.102.137
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_1
-    port: 8443
-    server: 140.238.218.65
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_2
-    port: 443
-    server: 129.151.254.48
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_1
-    port: 8443
-    server: 158.180.230.4
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_3
-    port: 8443
-    server: 129.151.225.228
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: DE_1
-    port: 443
-    server: 130.61.23.77
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: ZA_1
-    port: 443
-    server: 160.123.255.121
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: DE_2
-    port: 443
-    server: 130.61.39.13
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SE_1
-    port: 8443
-    server: 129.151.198.3
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_3
-    port: 443
-    server: 63.141.128.99
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_1
-    port: 443
-    server: 2606:4700:3036:6ed4:e1ed:36:8916:dace
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_4
-    port: 443
-    server: 63.141.128.99
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: DE_3
-    port: 443
-    server: 130.61.39.13
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_4
-    port: 2053
-    server: 129.151.225.228
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: DE_4
-    port: 443
-    server: 130.61.23.77
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_2
-    port: 8443
-    server: 158.180.230.4
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_5
-    port: 443
-    server: 160.79.105.221
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_2
-    port: 443
-    server: 2606:4700:3036:6ed4:e1ed:36:7204:2031
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_2
-    port: 443
-    server: 140.238.212.95
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_6
-    port: 443
-    server: 160.79.105.12
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_7
-    port: 443
-    server: 160.79.105.99
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: ZA_2
-    port: 443
-    server: 160.123.255.100
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_8
-    port: 443
-    server: 216.221.210.185
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SE_2
-    port: 443
-    server: 129.151.204.91
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_3
-    port: 443
-    server: 2606:4700:3036:6ed4:e1ed:36:7204:2031
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_5
-    port: 443
-    server: 129.151.254.48
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_6
-    port: 443
-    server: 144.24.200.164
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_9
-    port: 443
-    server: 152.67.231.219
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_3
-    port: 2053
-    server: 158.180.230.4
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_10
-    port: 443
-    server: 152.67.231.219
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_11
-    port: 443
-    server: 160.79.104.84
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_4
-    port: 443
-    server: 2606:4700:3036:ef:db9e:ee41:a8df:d3b2
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SG_2
-    port: 443
-    server: 206.238.236.108
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_7
-    port: 443
-    server: 47.57.245.232
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_5
-    port: 443
-    server: 2606:4700:3036:6ed4:e1ed:36:8916:dace
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_4
-    port: 2053
-    server: 204.216.216.148
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_12
-    port: 443
-    server: 160.79.105.26
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_6
-    port: 443
-    server: 2606:4700:3036::ce:d6ea
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_5
-    port: 2053
-    server: 204.216.216.148
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KZ
-    port: 443
-    server: 194.76.18.10
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_7
-    port: 443
-    server: 2606:4700:3036:6ed4:260:e3e9:a48c:8437
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_13
-    port: 443
-    server: 192.9.157.76
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_8
-    port: 443
-    server: 2606:4700:3036:ef:3f32:a9c6:39c4:9ae3
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_14
-    port: 443
-    server: 160.79.104.54
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_6
-    port: 8443
-    server: 204.216.216.148
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_9
-    port: 443
-    server: 2606:4700:3036:6ed4:ffdf:f2ba:820b:ed5c
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_10
-    port: 443
-    server: 2606:4700:3036:0:a36a:4aa4:75d9:9f75
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: ZA_3
-    port: 443
-    server: 160.123.255.23
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_15
-    port: 443
-    server: 192.9.157.76
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_16
-    port: 443
-    server: 150.230.42.80
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: RU_1
-    port: 443
-    server: 45.67.215.48
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_3
-    port: 8443
-    server: 140.238.173.181
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SG_3
-    port: 443
-    server: 206.238.236.156
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SG_4
-    port: 10010
-    server: 158.178.228.8
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: GB_1
-    port: 2053
-    server: 143.47.243.144
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_7
-    port: 2053
-    server: 129.151.225.228
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_4
-    port: 8443
-    server: 140.238.173.181
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: RU_2
-    port: 443
-    server: 45.67.215.99
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_11
-    port: 443
-    server: 2606:4700:3036:6ed4:260:e367:c3d4:d3bb
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: RU_3
-    port: 443
-    server: 45.67.215.178
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SE_3
-    port: 443
-    server: 129.151.204.91
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SE_4
-    port: 8443
-    server: 129.151.198.3
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: SG_5
-    port: 443
-    server: 206.238.236.108
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_17
-    port: 443
-    server: 129.213.136.180
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_1
-    port: 443
-    server: 141.148.220.141
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_18
-    port: 443
-    server: 129.80.222.224
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_1
-    port: 50000
-    server: 14.39.254.65
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_19
-    port: 443
-    server: 160.79.104.76
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_7
-    port: 2053
-    server: 158.180.230.4
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_20
-    port: 443
-    server: 160.79.105.62
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_21
-    port: 8443
-    server: 144.24.20.92
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_22
-    port: 8443
-    server: 144.24.20.92
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_2
-    port: 50000
-    server: 14.39.254.65
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: ZA_4
-    port: 443
-    server: 160.123.255.172
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_23
-    port: 443
-    server: 129.213.136.180
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_12
-    port: 443
-    server: 2606:4700:3036::ce:d6ea
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: ZA_5
-    port: 443
-    server: 160.123.255.20
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_24
-    port: 443
-    server: 160.79.105.155
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_25
-    port: 443
-    server: 129.159.84.71
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_5
-    port: 8443
-    server: 140.238.218.65
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: GB_2
-    port: 2053
-    server: 143.47.243.144
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CH_6
-    port: 443
-    server: 140.238.212.95
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: TW_2
-    port: 443
-    server: 103.137.63.3
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_26
-    port: 443
-    server: 129.80.222.224
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_8
-    port: 443
-    server: 144.24.200.164
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IL_1
-    port: 8443
-    server: 129.159.143.171
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_9
-    port: 8443
-    server: 129.151.225.228
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_2
-    port: 443
-    server: 141.148.203.6
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_3
-    port: 443
-    server: 144.24.78.162
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_4
-    port: 443
-    server: 144.24.78.162
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_27
-    port: 443
-    server: 129.159.84.71
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_5
-    port: 443
-    server: 129.154.207.203
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_6
-    port: 443
-    server: 129.154.207.203
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_3
-    port: 443
-    server: 141.148.203.6
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_13
-    port: 443
-    server: 2606:4700:3036:0:a36a:4a23:4a60:9f3f
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_14
-    port: 443
-    server: 2606:4700:3036:0:a36a:4a94:8d40:c92c
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_28
-    port: 8443
-    server: 129.146.171.186
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IL_2
-    port: 2053
-    server: 129.159.129.107
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_15
-    port: 443
-    server: 2606:4700:3036:ef:92f:be51:8695:9fc5
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_29
-    port: 443
-    server: 160.79.105.51
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_4
-    port: 443
-    server: 141.148.220.141
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_30
-    port: 443
-    server: 130.250.137.170
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IT_8
-    port: 8443
-    server: 204.216.216.148
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_31
-    port: 37190
-    server: 104.168.43.27
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_5
-    port: 443
-    server: 129.154.46.115
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_32
-    port: 8443
-    server: 129.146.171.186
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_33
-    port: 443
-    server: 160.79.105.51
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_34
-    port: 443
-    server: 150.230.42.80
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IL_3
-    port: 2053
-    server: 129.159.129.107
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_8
-    port: 443
-    server: 219.76.13.183
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_9
-    port: 443
-    server: 219.76.13.183
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: JP_1
-    port: 443
-    server: 64.110.104.30
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_7
-    port: 14985
-    server: 61.81.181.169
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: JP_2
-    port: 443
-    server: 64.110.104.30
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_8
-    port: 443
-    server: 149.129.8.215
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: HK_10
-    port: 30002
-    server: 43.135.44.101
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IL_4
-    port: 8443
-    server: 129.159.143.171
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: AE_1
-    port: 443
-    server: 193.123.81.105
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: MY
-    port: 443
-    server: 210.186.12.244
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_35
-    port: 443
-    server: 47.253.223.200
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: JP_3
-    port: 8443
-    server: 138.2.36.157
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_36
-    port: 443
-    server: 47.253.223.200
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_9
-    port: 14985
-    server: 61.81.181.169
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: IN_6
-    port: 443
-    server: 129.154.46.115
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: FR_10
-    port: 8443
-    server: 141.145.205.115
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_10
-    port: 20443
-    server: 106.240.1.52
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_11
-    port: 20443
-    server: 106.240.1.52
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: AE_2
-    port: 443
-    server: 193.123.81.105
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: AU_2
-    port: 443
-    server: 152.67.102.137
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: CMCC-IPV6_16
-    port: 443
-    server: 2606:4700:3036:ef:3f32:9601:b705:e94b
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: KR_12
-    port: 443
-    server: 149.129.8.215
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_37
-    port: 3306
-    server: 23.94.255.55
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_38
-    port: 443
-    server: 47.90.141.204
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    alpn:
-      - h3
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: US_39
-    port: 3306
-    server: 23.94.255.55
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dsb.ylks.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: dsb.ylks.us.kg
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    client-fingerprint: random
-  - name: 荷兰_1
-    port: 443
-    server: nl.zhuk.us.kg
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /ylks
-      headers:
-        host: ""
-    cipher: auto
-    uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-    alterId: 0
-  - name: 荷兰_2
-    port: 2053
-    server: nl.zhuk.us.kg
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /ylks
-      headers:
-        host: ""
-    cipher: auto
-    uuid: aa704947-e163-4133-b485-f8032f8f1286
-    alterId: 0
-  - name: 荷兰_3
-    port: 8443
-    server: nl.zhuk.us.kg
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: nl.zhuk.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /ylks
-    uuid: 2d440073-2f92-4340-9958-32948877e0fa
-    client-fingerprint: chrome
+  - {"type":"vless","name":"HK_1","server":"47.243.171.8","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=47.243.171.8:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_2","server":"42.98.167.229","port":12345,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_3","server":"43.135.44.101","port":30002,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_4","server":"47.243.171.8","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_5","server":"42.98.167.229","port":12345,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=42.98.167.229:12345","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_6","server":"43.128.26.74","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=43.128.26.74:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SG_1","server":"158.178.228.8","port":10010,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"TW_1","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_1","server":"154.17.21.134","port":18446,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_1","server":"141.145.205.115","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_2","server":"154.17.21.134","port":18446,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=154.17.21.134:18446","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"AU_1","server":"152.67.102.137","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=152.67.102.137:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_1","server":"140.238.218.65","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_2","server":"129.151.254.48","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_1","server":"158.180.230.4","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_3","server":"129.151.225.228","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"DE_1","server":"130.61.23.77","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=130.61.23.77:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"ZA_1","server":"160.123.255.121","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"DE_2","server":"130.61.39.13","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=130.61.39.13:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SE_1","server":"129.151.198.3","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_3","server":"63.141.128.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_4","server":"63.141.128.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=63.141.128.99:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"DE_3","server":"130.61.39.13","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_4","server":"129.151.225.228","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"DE_4","server":"130.61.23.77","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_2","server":"158.180.230.4","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_5","server":"160.79.105.221","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_2","server":"140.238.212.95","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=140.238.212.95:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_6","server":"160.79.105.12","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_7","server":"160.79.105.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"ZA_2","server":"160.123.255.100","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.123.255.100:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_8","server":"216.221.210.185","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SE_2","server":"129.151.204.91","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_5","server":"129.151.254.48","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.151.254.48:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_6","server":"144.24.200.164","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=144.24.200.164:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_9","server":"152.67.231.219","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=152.67.231.219:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_3","server":"158.180.230.4","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_10","server":"152.67.231.219","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_11","server":"160.79.104.84","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.79.104.84:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SG_2","server":"206.238.236.108","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=206.238.236.108:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_7","server":"47.57.245.232","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_5","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_4","server":"204.216.216.148","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_12","server":"160.79.105.26","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.79.105.26:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_6","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_5","server":"204.216.216.148","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KZ","server":"194.76.18.10","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_7","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_13","server":"192.9.157.76","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_8","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_14","server":"160.79.104.54","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_6","server":"204.216.216.148","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_9","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_10","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"ZA_3","server":"160.123.255.23","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_15","server":"192.9.157.76","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=192.9.157.76:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_16","server":"150.230.42.80","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"RU_1","server":"45.67.215.48","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=45.67.215.48:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_3","server":"140.238.173.181","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SG_3","server":"206.238.236.156","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SG_4","server":"158.178.228.8","port":10010,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=158.178.228.8:10010","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"GB_1","server":"143.47.243.144","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_7","server":"129.151.225.228","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_4","server":"140.238.173.181","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"RU_2","server":"45.67.215.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_11","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"RU_3","server":"45.67.215.178","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SE_3","server":"129.151.204.91","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.151.204.91:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SE_4","server":"129.151.198.3","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"SG_5","server":"206.238.236.108","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_17","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_1","server":"141.148.220.141","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=141.148.220.141:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_18","server":"129.80.222.224","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_1","server":"14.39.254.65","port":50000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=14.39.254.65:50000","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_19","server":"160.79.104.76","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.79.104.76:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_7","server":"158.180.230.4","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_20","server":"160.79.105.62","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_21","server":"144.24.20.92","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_22","server":"144.24.20.92","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_2","server":"14.39.254.65","port":50000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"ZA_4","server":"160.123.255.172","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.123.255.172:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_23","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.213.136.180:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_12","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"ZA_5","server":"160.123.255.20","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_24","server":"160.79.105.155","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_25","server":"129.159.84.71","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.159.84.71:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_5","server":"140.238.218.65","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"GB_2","server":"143.47.243.144","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CH_6","server":"140.238.212.95","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"TW_2","server":"103.137.63.3","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_26","server":"129.80.222.224","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.80.222.224:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_8","server":"144.24.200.164","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IL_1","server":"129.159.143.171","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_9","server":"129.151.225.228","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_2","server":"141.148.203.6","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_3","server":"144.24.78.162","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=144.24.78.162:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_4","server":"144.24.78.162","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_27","server":"129.159.84.71","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_5","server":"129.154.207.203","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.154.207.203:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_6","server":"129.154.207.203","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_3","server":"141.148.203.6","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=141.148.203.6:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_13","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_14","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_28","server":"129.146.171.186","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IL_2","server":"129.159.129.107","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_15","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_29","server":"160.79.105.51","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_4","server":"141.148.220.141","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_30","server":"130.250.137.170","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IT_8","server":"204.216.216.148","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_31","server":"104.168.43.27","port":37190,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_5","server":"129.154.46.115","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=129.154.46.115:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_32","server":"129.146.171.186","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_33","server":"160.79.105.51","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=160.79.105.51:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_34","server":"150.230.42.80","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=150.230.42.80:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IL_3","server":"129.159.129.107","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_8","server":"219.76.13.183","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=219.76.13.183:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_9","server":"219.76.13.183","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"JP_1","server":"64.110.104.30","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=64.110.104.30:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_7","server":"61.81.181.169","port":14985,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"JP_2","server":"64.110.104.30","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_8","server":"149.129.8.215","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=149.129.8.215:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"HK_10","server":"43.135.44.101","port":30002,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=43.135.44.101:30002","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IL_4","server":"129.159.143.171","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"AE_1","server":"193.123.81.105","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"MY","server":"210.186.12.244","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_35","server":"47.253.223.200","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"JP_3","server":"138.2.36.157","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.jp.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_36","server":"47.253.223.200","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=47.253.223.200:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_9","server":"61.81.181.169","port":14985,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=61.81.181.169:14985","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"IN_6","server":"129.154.46.115","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"FR_10","server":"141.145.205.115","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_10","server":"106.240.1.52","port":20443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=106.240.1.52:20443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_11","server":"106.240.1.52","port":20443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"AE_2","server":"193.123.81.105","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=193.123.81.105:443","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"AU_2","server":"152.67.102.137","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"CMCC-IPV6_16","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"KR_12","server":"149.129.8.215","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_37","server":"23.94.255.55","port":3306,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560&proxyip=23.94.255.55:3306","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_38","server":"47.90.141.204","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vless","name":"US_39","server":"23.94.255.55","port":3306,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dsb.ylks.us.kg","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsb.ylks.us.kg"}}}
+  - {"type":"vmess","name":"荷兰_1","ws-opts":{"path":"/ylks"},"server":"nl.zhuk.us.kg","port":"443","uuid":"60c0bbfa-c54f-49a9-81ba-779b0206a9fd","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"荷兰_2","ws-opts":{"path":"/ylks"},"server":"nl.zhuk.us.kg","port":"2053","uuid":"aa704947-e163-4133-b485-f8032f8f1286","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"荷兰_3","server":"nl.zhuk.us.kg","port":8443,"uuid":"2d440073-2f92-4340-9958-32948877e0fa","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"nl.zhuk.us.kg","ws-opts":{"path":"/ylks","headers":{"host":"nl.zhuk.us.kg"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3539,25 +1248,19 @@ rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
-  - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
   - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
-  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
-  - DOMAIN,www.asusrouter.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
   - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -3565,21 +1268,20 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
   - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
+  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
   - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
   - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
   - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
   - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
   - DOMAIN-KEYWORD,adwords,🛑 全球拦截
+  - DOMAIN-KEYWORD,analysis,🛑 全球拦截
   - DOMAIN-KEYWORD,applovin,🛑 全球拦截
   - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
   - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -3593,8 +1295,28 @@ rules:
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
   - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
+  - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
+  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -3754,6 +1476,7 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -3829,6 +1552,7 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -3844,7 +1568,6 @@ rules:
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -3939,7 +1662,6 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -3989,7 +1711,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -4042,6 +1763,7 @@ rules:
   - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
   - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,demdex.net,🛑 全球拦截
   - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
@@ -4272,10 +1994,12 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -4327,8 +2051,10 @@ rules:
   - DOMAIN-SUFFIX,baidu9635.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidutv.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -4346,6 +2072,7 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -4448,10 +2175,13 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -4468,6 +2198,7 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -4492,6 +2223,7 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -4542,11 +2274,7 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -4676,6 +2404,7 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -4684,6 +2413,7 @@ rules:
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,xmpush.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -4878,6 +2608,8 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,union.6.cn,🍃 应用净化
@@ -5065,6 +2797,7 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
+  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -5075,6 +2808,8 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
+  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -5197,40 +2932,33 @@ rules:
   - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
+  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
+  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
+  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
   - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -5243,11 +2971,8 @@ rules:
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
@@ -5314,8 +3039,6 @@ rules:
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -5348,28 +3071,15 @@ rules:
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
-  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
-  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
+  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
@@ -5388,27 +3098,51 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
+  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -5437,12 +3171,25 @@ rules:
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
+  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -5458,7 +3205,6 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
@@ -5495,7 +3241,6 @@ rules:
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
-  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
@@ -5507,15 +3252,12 @@ rules:
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
-  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -5537,9 +3279,12 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -5550,49 +3295,11 @@ rules:
   - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
   - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
-  - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
-  - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
@@ -5603,7 +3310,7 @@ rules:
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
   - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
@@ -5616,7 +3323,7 @@ rules:
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -5627,24 +3334,22 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
-  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
-  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
-  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
@@ -5653,16 +3358,9 @@ rules:
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-  - DOMAIN,music.youtube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -5676,9 +3374,12 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -5686,7 +3387,6 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -5695,7 +3395,8 @@ rules:
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -5703,6 +3404,7 @@ rules:
   - DOMAIN-SUFFIX,sg,🚀 节点选择
   - DOMAIN-SUFFIX,tw,🚀 节点选择
   - DOMAIN-SUFFIX,uk,🚀 节点选择
+  - DOMAIN-SUFFIX,us,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -5756,6 +3458,7 @@ rules:
   - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
   - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
   - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+  - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
   - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
   - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
   - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
@@ -5853,11 +3556,8 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -5972,8 +3672,6 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -6011,7 +3709,6 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
-  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -6019,22 +3716,7 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
-  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
-  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
-  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -6086,14 +3768,10 @@ rules:
   - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
   - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
   - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
-  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
-  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
   - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -6106,15 +3784,11 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
-  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
-  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
-  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-SUFFIX,中国,🎯 全球直连
+  - DOMAIN-SUFFIX,公司,🎯 全球直连
+  - DOMAIN-SUFFIX,网络,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
   - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -6125,6 +3799,7 @@ rules:
   - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
   - DOMAIN-KEYWORD,chinacache,🎯 全球直连
   - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,duolingo,🎯 全球直连
   - DOMAIN-KEYWORD,jdpay,🎯 全球直连
   - DOMAIN-KEYWORD,moke,🎯 全球直连
   - DOMAIN-KEYWORD,qhimg,🎯 全球直连
@@ -6161,7 +3836,6 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
-  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -6201,8 +3875,7 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
-  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -6210,30 +3883,16 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,im9.com,🎯 全球直连
   - DOMAIN-SUFFIX,smtcdns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
+  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
+  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyincdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
-  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
-  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -6241,7 +3900,6 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -6250,7 +3908,6 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
@@ -6266,32 +3923,18 @@ rules:
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
   - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
   - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
   - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
   - DOMAIN-SUFFIX,dbankcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hc-cdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hihonor.com,🎯 全球直连
   - DOMAIN-SUFFIX,huawei.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweicloud.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweishop.net,🎯 全球直连
   - DOMAIN-SUFFIX,hwccpc.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmallres.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawnfs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawno.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawntech.com,🎯 全球直连
-  - DOMAIN-SUFFIX,coloros.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytap.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapcs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapdownload.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapimage.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapmobi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppoer.me,🎯 全球直连
-  - DOMAIN-SUFFIX,oppomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyink.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyrec.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
@@ -6353,16 +3996,10 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -6379,22 +4016,20 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -6443,7 +4078,46 @@ rules:
   - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
+  - DOMAIN-KEYWORD,announce,🎯 全球直连
+  - DOMAIN-KEYWORD,torrent,🎯 全球直连
+  - DOMAIN-KEYWORD,tracker,🎯 全球直连
+  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,animetorrents.me,🎯 全球直连
+  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,beitai.pt,🎯 全球直连
+  - DOMAIN-SUFFIX,bittorrent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
+  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
+  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
+  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
+  - DOMAIN-SUFFIX,hd4fans.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
+  - DOMAIN-SUFFIX,hdtime.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdzone.me,🎯 全球直连
+  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
+  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
+  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
+  - DOMAIN-SUFFIX,leaguehd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
+  - DOMAIN-SUFFIX,msg.vg,🎯 全球直连
+  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,open.cd,🎯 全球直连
+  - DOMAIN-SUFFIX,ourbits.club,🎯 全球直连
+  - DOMAIN-SUFFIX,passthepopcorn.me,🎯 全球直连
+  - DOMAIN-SUFFIX,privatehd.to,🎯 全球直连
+  - DOMAIN-SUFFIX,pthome.net,🎯 全球直连
+  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
+  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
+  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
+  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
   - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
+  - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
   - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
@@ -6455,12 +4129,9 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
+  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.pub,🎯 全球直连
-  - DOMAIN-SUFFIX,dns.alidns.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.360.cn,🎯 全球直连
-  - IP-CIDR,1.12.12.12/32,🎯 全球直连,no-resolve
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
   - DOMAIN-SUFFIX,115.com,🎯 全球直连
   - DOMAIN-SUFFIX,12306.com,🎯 全球直连
@@ -6490,7 +4161,6 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -6505,6 +4175,8 @@ rules:
   - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
   - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
   - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
@@ -6526,7 +4198,6 @@ rules:
   - DOMAIN-SUFFIX,eastday.com,🎯 全球直连
   - DOMAIN-SUFFIX,eastmoney.com,🎯 全球直连
   - DOMAIN-SUFFIX,ecitic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,element-plus.org,🎯 全球直连
   - DOMAIN-SUFFIX,ewqcxz.com,🎯 全球直连
   - DOMAIN-SUFFIX,fang.com,🎯 全球直连
   - DOMAIN-SUFFIX,fantasy.tv,🎯 全球直连
@@ -6580,9 +4251,11 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
+  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -6605,11 +4278,11 @@ rules:
   - DOMAIN-SUFFIX,nruan.com,🎯 全球直连
   - DOMAIN-SUFFIX,nuomi.com,🎯 全球直连
   - DOMAIN-SUFFIX,onedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,oneplus.com,🎯 全球直连
   - DOMAIN-SUFFIX,onlinedown.net,🎯 全球直连
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -6628,8 +4301,9 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,realme.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -6637,6 +4311,7 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
@@ -6662,7 +4337,6 @@ rules:
   - DOMAIN-SUFFIX,upyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,uxengine.net,🎯 全球直连
   - DOMAIN-SUFFIX,videocc.net,🎯 全球直连
-  - DOMAIN-SUFFIX,vivo.com,🎯 全球直连
   - DOMAIN-SUFFIX,wandoujia.com,🎯 全球直连
   - DOMAIN-SUFFIX,weather.com,🎯 全球直连
   - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
@@ -6699,7 +4373,6 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
