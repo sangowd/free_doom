@@ -1,5 +1,5 @@
 # 模版名称：ACL4SSR_Mini.ini
-# 配置生成日期：2025-08-26 09:58:39
+# 配置生成日期：2025-08-28 10:37:01
 
 mixed-port: 7890
 allow-lan: false
@@ -50,52 +50,25 @@ tun:
     - 1.0.0.1
 
 proxies:
-  - type: hysteria2
+  - type: vless
     name: US_youtube@资源分享师_1
+    server: 104.18.26.90
+    port: 80
+    uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+    network: ws
+    servername: blaze-can-118.blazecanada.site
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: blaze-can-118.blazecanada.site
+  - type: hysteria2
+    name: US_youtube@资源分享师_2
     server: 47.76.83.25
     port: 11243
     password: L60nS04NhsoMpN2DDGbnMqLP8DY
     skip-cert-verify: true
     sni: bing.com
-  - type: vmess
-    name: IN_youtube@资源分享师_1
-    server: 14.102.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_2
-    server: 104.238.69.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_3
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL200
-      headers:
-        Host: freexxx.ndeso.xyz
   - type: hysteria2
     name: CN_youtube@资源分享师_1
     server: 8.222.183.55
@@ -104,158 +77,112 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
   - type: vless
-    name: NL_youtube@资源分享师_1
-    server: 194.53.53.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: US_youtube@资源分享师_4
-    server: 104.26.3.186
+    name: US_youtube@资源分享师_3
+    server: cache.netflix.com.unlimited.spauu.web.id
     port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    network: grpc
-    servername: pqh31v6.hiddendom.shop
+    uuid: 59048b01-bbfb-45ea-ba1d-da07c4deb728
+    network: ws
+    servername: cache.netflix.com.unlimited.spauu.web.id
     tls: true
     encryption: none
-  - type: vmess
+    ws-opts:
+      path: /vl=194.127.193.124=24467
+      headers:
+        Host: cache.netflix.com.unlimited.spauu.web.id
+  - type: trojan
+    name: IR_youtube@资源分享师_1
+    server: d1.catcat321.com
+    port: 44379
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.twq2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: IR_youtube@资源分享师_2
+    server: d1.catcat321.com
+    port: 44665
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.sgx3.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: US_youtube@资源分享师_4
+    server: r2.tube-cat.com
+    port: 8310
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: usq2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: IR_youtube@资源分享师_3
+    server: d1.catcat321.com
+    port: 44488
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.sgx2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
     name: US_youtube@资源分享师_5
-    server: 155.46.167.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
+    server: r3.tube-cat.com
+    port: 9310
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: twq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
     name: US_youtube@资源分享师_6
-    server: 141.193.27.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: GB_youtube@资源分享师_1
-    server: 109.176.239.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
+    server: 104.21.76.21
+    port: 443
+    uuid: b6aeab0f-e440-4eae-93ba-d2ef7c99ae3b
     alterId: 0
     network: ws
     cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
+    servername: xcvbnnmklo.00890604.xyz
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /mLxSsn8mrIeTh7sLJtI1
       headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
+        Host: xcvbnnmklo.00890604.xyz
+    tls: true
+  - type: trojan
     name: US_youtube@资源分享师_7
-    server: 199.34.230.251
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: LT_youtube@资源分享师_1
-    server: 88.216.69.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+    server: r1.tube-cat.com
+    port: 9415
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: jpq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
   - type: vless
-    name: NL_youtube@资源分享师_2
-    server: 45.142.120.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    name: US_youtube@资源分享师_8
+    server: 63.141.128.13
+    port: 8080
+    uuid: 094af2f8-b421-4d0c-a96c-00625147a30c
     network: ws
-    servername: Telegram-channel-WangCai2
+    servername: c.jOin.zEdMoDeOn.oNl.
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
       headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: US_youtube@资源分享师_8
-    server: 216.24.57.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
+        Host: c.jOin.zEdMoDeOn.oNl.
+  - type: trojan
     name: US_youtube@资源分享师_9
-    server: 198.177.57.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_3
-    server: 45.131.209.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+    server: sgsqldsv.catcat321.com
+    port: 20005
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.jpx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
   - type: vmess
     name: US_youtube@资源分享师_10
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: sg8.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: sg8.naichachong.top
-  - type: vmess
-    name: NL_youtube@资源分享师_4
-    server: 45.153.7.224
+    server: 168.100.6.224
     port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
     alterId: 0
     network: ws
     cipher: auto
@@ -266,665 +193,173 @@ proxies:
         Host: TG.WangCai2.s4.db-link02.top
   - type: vless
     name: US_youtube@资源分享师_11
-    server: 155.46.167.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    server: 63.141.128.2
+    port: 8080
+    uuid: 5de6ad92-3282-4457-b4c4-a94dbce499b5
     network: ws
-    servername: Telegram-channel-WangCai2
+    servername: b.jOin.zEdMoDeOn.oNl.
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
       headers:
-        Host: cf.d3z.net
-  - type: vmess
+        Host: b.jOin.zEdMoDeOn.oNl.
+  - type: trojan
     name: US_youtube@资源分享师_12
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: sg8.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: sg8.naichachong.top
+    server: sgsqldsv.catcat321.com
+    port: 20038
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.hkx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: JP_youtube@资源分享师_1
+    server: 156.238.19.95
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
   - type: vless
     name: US_youtube@资源分享师_13
-    server: 172.67.137.6
+    server: 172.67.137.129
     port: 443
-    uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
     network: ws
-    servername: 85894eb2-7b7d-0cd9-7f2d-93e8a7691655.freevpnatm.dpdns.org
+    servername: INviNCIBle.fAfa20.shOP
     tls: true
     encryption: none
     ws-opts:
-      path: /0SCvfqSaeeB74kgXZ
+      path: /
       headers:
-        Host: 85894eb2-7b7d-0cd9-7f2d-93e8a7691655.freevpnatm.dpdns.org
-  - type: vmess
-    name: RU_youtube@资源分享师_1
-    server: 194.76.18.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_14
-    server: 198.177.56.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: INviNCIBle.fAfa20.shOP
+  - type: trojan
+    name: IR_youtube@资源分享师_4
+    server: d1.catcat321.com
+    port: 46118
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.usq2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: IR_youtube@资源分享师_5
+    server: d1.catcat321.com
+    port: 44910
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.twq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
   - type: vless
-    name: NL_youtube@资源分享师_5
-    server: 185.193.29.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
+    name: US_youtube@资源分享师_14
+    server: 66.81.247.18
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh36v4.hiddendom.shop
+    tls: true
     encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: CN_youtube@资源分享师_2
-    server: 154.211.8.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: JP_youtube@资源分享师_1
-    server: 156.238.19.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_2
-    server: 88.216.66.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AU_youtube@资源分享师_1
-    server: 185.207.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
   - type: vless
     name: US_youtube@资源分享师_15
-    server: 104.16.143.98
+    server: www.speedtest.net
     port: 443
-    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    uuid: 286a5f83-f8e6-47b4-a47e-5f7a6bec71fc
     network: ws
-    servername: F1.paRsa.fiLegEar-Sg.Me
+    servername: rAyAn-cOnFiC-10.rAyAn-iV.DnS-DyNaMiC.NeT
     tls: true
     encryption: none
     ws-opts:
-      path: /?ed
+      path: /@Rayan_Config
       headers:
-        Host: f1.parsa.filegear-sg.me
-  - type: vmess
-    name: LU_youtube@资源分享师_1
-    server: 188.42.89.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_16
-    server: 216.24.57.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_17
-    server: 198.71.189.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_18
-    server: 50.62.89.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_6
-    server: 45.159.217.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LU_youtube@资源分享师_2
-    server: 188.42.89.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: rayan-confic-10.rayan-iv.dns-dynamic.net
   - type: vless
-    name: NL_youtube@资源分享师_7
-    server: 45.131.208.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: NL_youtube@资源分享师_8
-    server: 45.131.5.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: NL_youtube@资源分享师_9
-    server: 193.227.99.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: hysteria2
-    name: US_youtube@资源分享师_19
-    server: 51.159.111.32
-    port: 5355
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    sni: www.bing.com
-  - type: vless
-    name: NL_youtube@资源分享师_10
-    server: 45.131.7.127
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    network: grpc
-    servername: pqh23v4.hiddendom.shop
-    tls: true
-    encryption: none
-  - type: vmess
     name: JP_youtube@资源分享师_2
-    server: 103.116.7.223
+    server: 156.238.18.214
     port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: UA_youtube@资源分享师_1
-    server: 91.124.127.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_20
-    server: 168.100.6.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_11
-    server: 188.164.248.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_21
-    server: 104.238.69.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_22
-    server: 66.81.247.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_23
-    server: 66.81.247.251
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
+    servername: yd.laoyoutiao.link
     encryption: none
     ws-opts:
-      path: /
+      path: /Telegram@MxlShare@freecodes/?ed=2560
       headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: US_youtube@资源分享师_24
-    server: light-presence.oneeat.co
-    port: 80
-    uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+        Host: yd.laoyoutiao.link
+  - type: vmess
+    name: RU_youtube@资源分享师_1
+    server: 46.254.92.224
+    port: 8880
+    uuid: 5c6b69d8-97a2-39c1-92b8-02fc0a369c31
+    alterId: 0
     network: ws
-    servername: light-presence.oneeat.co
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: trojan
+    name: IR_youtube@资源分享师_6
+    server: d1.catcat321.com
+    port: 45184
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.usq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_16
+    server: www.speedtest.net
+    port: 443
+    uuid: 0fbecce1-acf9-4b6e-a0f7-f48be9d2b7d0
+    network: ws
+    servername: MAxNETvipAp-cloUD252.nEtKh3.site
+    tls: true
     encryption: none
     ws-opts:
-      path: /
+      path: /linkws?ed=2560
       headers:
-        Host: light-presence.oneeat.co
-  - type: vmess
-    name: GB_youtube@资源分享师_2
-    server: 25.129.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: ZA_youtube@资源分享师_1
-    server: 102.132.188.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_12
-    server: 45.159.219.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_25
-    server: 184.168.47.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: ZA_youtube@资源分享师_2
-    server: 102.177.176.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_26
-    server: 104.129.167.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_3
-    server: 89.116.46.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: JP_youtube@资源分享师_3
-    server: 103.245.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: MAxNETvipAp-cloUD252.nEtKh3.site
   - type: vless
-    name: US_youtube@资源分享师_27
-    server: 104.129.167.161
+    name: ZA_youtube@资源分享师
+    server: 102.177.189.251
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
     network: grpc
     servername: pqh23v4.hiddendom.shop
     tls: true
     encryption: none
-  - type: vmess
-    name: NL_youtube@资源分享师_13
-    server: 160.153.138.223
+  - type: vless
+    name: JP_youtube@资源分享师_3
+    server: 156.238.18.83
     port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
+    servername: yd.laoyoutiao.link
+    encryption: none
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
       headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: SI_youtube@资源分享师_1
-    server: 92.53.188.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_17
+    server: www.speedtest.net
+    port: 8443
+    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
     network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
+    servername: hetzner-7.boss.name.ng
+    tls: true
+    encryption: none
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /
       headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_3
-    server: 45.85.118.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_28
-    server: 184.168.47.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_4
-    server: 88.216.69.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: hetzner-7.boss.name.ng
   - type: vmess
     name: CN_youtube@资源分享师_3
-    server: 27.50.49.224
+    server: 154.197.88.224
     port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_4
-    server: 25.129.197.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_14
-    server: 45.131.7.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_29
-    server: 66.81.247.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_5
-    server: 25.26.27.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_6
-    server: 185.162.229.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_30
-    server: 141.193.27.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: SI_youtube@资源分享师_2
-    server: 92.53.189.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_15
-    server: 185.193.28.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
     alterId: 0
     network: ws
     cipher: auto
@@ -934,194 +369,7 @@ proxies:
       headers:
         Host: TG.WangCai2.s4.db-link02.top
   - type: vless
-    name: US_youtube@资源分享师_31
-    server: freexxx.ndeso.web.id
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.web.id
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-AU6
-      headers:
-        Host: freexxx.ndeso.web.id
-  - type: vmess
-    name: NL_youtube@资源分享师_16
-    server: 45.159.219.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_32
-    server: 108.165.216.167
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    network: grpc
-    servername: pqh36v4.hiddendom.shop
-    tls: true
-    encryption: none
-  - type: vmess
-    name: AU_youtube@资源分享师_2
-    server: 185.207.198.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_17
-    server: 160.153.168.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_18
-    server: 185.193.28.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_33
-    server: 199.34.229.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AU_youtube@资源分享师_3
-    server: 192.65.217.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: trojan
-    name: FR_youtube@资源分享师_1
-    server: 35.180.142.18
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师_34
-    server: freevpn.xhamster.biz.id
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freevpn.xhamster.biz.id
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-AM2
-      headers:
-        Host: freevpn.xhamster.biz.id
-  - type: vmess
-    name: CN_youtube@资源分享师_4
-    server: 156.243.246.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AM_youtube@资源分享师_1
-    server: 188.164.158.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: BG_youtube@资源分享师_1
-    server: 185.176.26.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AU_youtube@资源分享师_4
-    server: 185.207.197.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: IN_youtube@资源分享师_2
-    server: 14.102.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_35
+    name: US_youtube@资源分享师_18
     server: freexxx.ndeso.xyz
     port: 443
     uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
@@ -1130,460 +378,9 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: /Free-CF-Proxy-NL840
+      path: /Free-CF-Proxy-US17
       headers:
         Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: GB_youtube@资源分享师_7
-    server: 109.176.239.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_19
-    server: 45.159.216.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: UA_youtube@资源分享师_2
-    server: 62.72.166.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: DE_youtube@资源分享师_1
-    server: 185.135.9.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_20
-    server: 185.193.29.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: SI_youtube@资源分享师_3
-    server: 92.53.191.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: AU_youtube@资源分享师_5
-    server: 185.207.199.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_8
-    server: 195.26.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_9
-    server: 195.26.229.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_36
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: US111.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: US111.naichachong.top
-  - type: vless
-    name: GB_youtube@资源分享师_10
-    server: 109.176.239.251
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: DK_youtube@资源分享师_1
-    server: 195.85.59.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: RU_youtube@资源分享师_2
-    server: 194.76.18.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: ES_youtube@资源分享师_1
-    server: 185.238.228.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: MD_youtube@资源分享师
-    server: 185.170.166.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_37
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: us20.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: us20.naichachong.top
-  - type: vmess
-    name: LT_youtube@资源分享师_5
-    server: 185.148.106.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_38
-    server: 170.114.46.251
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /Telegram @WangCai2 /
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: FR_youtube@资源分享师_2
-    server: 45.80.108.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: trojan
-    name: US_youtube@资源分享师_39
-    server: 63.176.195.158
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师_40
-    server: all.tellmethetrue.shop
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    network: grpc
-    servername: pqh30v8.hiddendom.shop
-    tls: true
-    encryption: none
-  - type: vmess
-    name: UA_youtube@资源分享师_3
-    server: 31.43.179.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: RU_youtube@资源分享师_3
-    server: 185.174.138.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: CN_youtube@资源分享师_6
-    server: 154.92.9.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: CN_youtube@资源分享师_7
-    server: 154.211.8.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: UA_youtube@资源分享师_4
-    server: 31.43.179.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: LT_youtube@资源分享师_6
-    server: 89.116.46.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: LT_youtube@资源分享师_7
-    server: 88.216.67.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: RU_youtube@资源分享师_4
-    server: 185.59.218.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_8
-    server: 89.116.46.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: NL_youtube@资源分享师_21
-    server: 185.193.30.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: US_youtube@资源分享师_41
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-US530
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vless
-    name: UA_youtube@资源分享师_5
-    server: 31.43.179.43
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    network: grpc
-    servername: pqh36v4.hiddendom.shop
-    tls: true
-    encryption: none
-  - type: vmess
-    name: CN_youtube@资源分享师_8
-    server: 27.50.49.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_42
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL727
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: US_youtube@资源分享师_43
-    server: 104.21.46.90
-    port: 443
-    uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 01c0f179-8d32-4095-6d52-293bf184cbe1.freevpnatm.dpdns.org
-    ws-opts:
-      path: /ri9mOOVJuAimB74kgXZ
-      headers:
-        Host: 01c0f179-8d32-4095-6d52-293bf184cbe1.freevpnatm.dpdns.org
-    tls: true
   - type: vless
     name: JP_youtube@资源分享师_4
     server: 156.238.18.77
@@ -1597,7 +394,1030 @@ proxies:
       headers:
         Host: yd.laoyoutiao.link
   - type: vless
+    name: US_youtube@资源分享师_19
+    server: cloudgetservice.mcloudservice.site
+    port: 443
+    uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
+    network: ws
+    servername: maxnetvipap-cloud76.netkh3.site
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: maxnetvipap-cloud76.netkh3.site
+  - type: vless
+    name: US_youtube@资源分享师_20
+    server: 50.62.90.154
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: cf.d3z.net
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: cf.d3z.net
+  - type: vless
+    name: US_youtube@资源分享师_21
+    server: 63.141.128.16
+    port: 80
+    uuid: 9d0f4677-d396-4291-a371-abd3d2e7e462
+    network: ws
+    servername: e.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: e.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_22
+    server: 104.18.26.90
+    port: 80
+    uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+    network: ws
+    servername: blaze-can-118.blazecanada.site
+    encryption: none
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: blaze-can-118.blazecanada.site
+  - type: vless
     name: JP_youtube@资源分享师_5
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: trojan
+    name: US_youtube@资源分享师_23
+    server: sgsqldsv.catcat321.com
+    port: 20054
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.hkx2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: RU_youtube@资源分享师_2
+    server: 94.247.142.103
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v5.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: JP_youtube@资源分享师_6
+    server: 156.238.18.80
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_7
+    server: 156.238.18.52
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_8
+    server: 156.238.18.87
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_9
+    server: 156.238.18.77
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vmess
+    name: US_youtube@资源分享师_24
+    server: 193.22.152.87
+    port: 42380
+    uuid: 982e3f72-09ab-4e35-bde3-b11f83bb2622
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: ""
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+  - type: vmess
+    name: NL_youtube@资源分享师_1
+    server: 185.193.30.224
+    port: 8880
+    uuid: 5c6b69d8-97a2-39c1-92b8-02fc0a369c31
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vless
+    name: US_youtube@资源分享师_25
+    server: 172.67.191.174
+    port: 443
+    uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
+    network: ws
+    servername: ccCcCcCf.222769.Xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /1xrOld7e5RpK3I98dxLkez
+      headers:
+        Host: cccccccf.222769.xyz
+  - type: vmess
+    name: US_youtube@资源分享师_26
+    server: 167.68.42.224
+    port: 8880
+    uuid: 5c6b69d8-97a2-39c1-92b8-02fc0a369c31
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vless
+    name: US_youtube@资源分享师_27
+    server: nuclear.us.kg
+    port: 443
+    uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+    network: ws
+    servername: nuclear.us.kg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /free/1.226.227.169:50001
+      headers:
+        Host: nuclear.us.kg
+  - type: vless
+    name: JP_youtube@资源分享师_10
+    server: 156.238.18.197
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vmess
+    name: US_youtube@资源分享师_28
+    server: 193.22.152.87
+    port: 34524
+    uuid: 84acd6fd-63e8-4440-a2e9-ba9fd163b05c
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: JP_youtube@资源分享师_11
+    server: 156.238.18.254
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: trojan
+    name: US_youtube@资源分享师_29
+    server: r2.tube-cat.com
+    port: 9415
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: jpq2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: JP_youtube@资源分享师_12
+    server: 156.238.18.36
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_13
+    server: 156.238.18.170
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_14
+    server: 156.238.18.34
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_15
+    server: 156.238.18.80
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_16
+    server: 156.238.18.90
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: trojan
+    name: US_youtube@资源分享师_30
+    server: 104.21.72.109
+    port: 443
+    password: f282b878-8711-45a1-8c69-5564172123c1
+    network: ws
+    sni: vpn.stupidworld.web.id
+    tls: true
+    ws-opts:
+      path: /Stupid-World/103.106.228.126-2053
+  - type: vless
+    name: JP_youtube@资源分享师_17
+    server: 156.238.18.246
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_18
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_19
+    server: 156.238.18.87
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_20
+    server: 156.238.18.160
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: DK_youtube@资源分享师_1
+    server: pubg.ac
+    port: 8080
+    uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
+    network: ws
+    servername: cdn-node-oss-99.paofu.de
+    encryption: none
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        Host: cdn-node-oss-99.paofu.de
+  - type: vmess
+    name: BG_youtube@资源分享师
+    server: 185.176.26.224
+    port: 8880
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vless
+    name: JP_youtube@资源分享师_21
+    server: 156.238.18.13
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram@MxlShare@freecodes/
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_31
+    server: freexxx.ndeso.xyz
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: freexxx.ndeso.xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-NL200
+      headers:
+        Host: freexxx.ndeso.xyz
+  - type: vless
+    name: US_youtube@资源分享师_32
+    server: cache.netflix.com.unlimited.spauu.web.id
+    port: 443
+    uuid: 3b40219d-541c-4a8e-aa19-377bd68f1f62
+    network: ws
+    servername: cache.netflix.com.unlimited.spauu.web.id
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /vl=129.150.49.58=18650
+      headers:
+        Host: cache.netflix.com.unlimited.spauu.web.id
+  - type: vless
+    name: JP_youtube@资源分享师_22
+    server: 156.238.18.90
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_33
+    server: 104.19.120.225
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vmess
+    name: NL_youtube@资源分享师_2
+    server: 45.159.216.224
+    port: 8880
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vless
+    name: JP_youtube@资源分享师_23
+    server: 156.238.18.52
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_24
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_25
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_26
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_34
+    server: hh.crosswall.dpdns.org
+    port: 443
+    uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+    network: ws
+    servername: hh.crosswall.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /higate
+      headers:
+        Host: hh.crosswall.dpdns.org
+  - type: vless
+    name: US_youtube@资源分享师_35
+    server: freexxx.ndeso.xyz
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: freexxx.ndeso.xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-NL868
+      headers:
+        Host: freexxx.ndeso.xyz
+  - type: vless
+    name: JP_youtube@资源分享师_27
+    server: 156.238.18.13
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_36
+    server: 172.67.148.229
+    port: 8443
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+    network: ws
+    servername: InVinCIble.faFA20.sHop
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: InVinCIble.faFA20.sHop
+  - type: vless
+    name: JP_youtube@资源分享师_28
+    server: 156.238.18.151
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_29
+    server: 156.238.18.13
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram@MxlShare@freecodes/
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vmess
+    name: RU_youtube@资源分享师_3
+    server: 185.174.138.224
+    port: 8880
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vmess
+    name: US_youtube@资源分享师_37
+    server: 193.22.152.87
+    port: 27386
+    uuid: 238ec0e0-c916-4415-e6d2-679571934d0c
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: CN_youtube@资源分享师_10
+    server: 45.192.224.182
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_38
+    server: 63.141.128.16
+    port: 80
+    uuid: 9d0f4677-d396-4291-a371-abd3d2e7e462
+    network: ws
+    servername: e.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: e.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: JP_youtube@资源分享师_30
+    server: 156.238.18.17
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram@V2ray_Alpha
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_31
+    server: 156.238.18.77
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_32
+    server: 156.238.18.1
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_33
+    server: 156.238.18.160
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_34
+    server: 156.238.18.197
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_35
+    server: 156.238.18.236
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: hysteria2
+    name: AU_youtube@资源分享师
+    server: krhub.xg-hub.icu
+    port: 25783
+    password: 2b7f3256-517f-4526-be27-5415846c5e21
+    skip-cert-verify: true
+    sni: krhub.xg-hub.icu
+  - type: vless
+    name: US_youtube@资源分享师_39
+    server: freexxx.ndeso.xyz
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: freexxx.ndeso.xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-NL507
+      headers:
+        Host: freexxx.ndeso.xyz
+  - type: vless
+    name: JP_youtube@资源分享师_36
+    server: 156.238.18.239
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: trojan
+    name: US_youtube@资源分享师_40
+    server: 172.67.181.173
+    port: 443
+    password: f282b878-8711-45a1-8c69-5564172123c1
+    network: ws
+    sni: vpn.stupidworld.web.id
+    tls: true
+    ws-opts:
+      path: /Stupid-World/103.106.228.126-2053
+  - type: vless
+    name: US_youtube@资源分享师_41
+    server: 167.68.42.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_42
+    server: 104.18.26.90
+    port: 80
+    uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+    network: ws
+    servername: blaze-can-118.blazecanada.site
+    encryption: none
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: blaze-can-118.blazecanada.site
+  - type: vless
+    name: US_youtube@资源分享师_43
+    server: 63.141.128.22
+    port: 80
+    uuid: f55fa25b-9aae-4828-8fbb-d0fb6c63b8c3
+    network: ws
+    servername: f.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: f.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: JP_youtube@资源分享师_37
+    server: 156.238.18.197
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: trojan
+    name: US_youtube@资源分享师_44
+    server: sgsqldsv.catcat321.com
+    port: 20055
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.hkx3.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: JP_youtube@资源分享师_38
+    server: 156.238.18.52
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_45
+    server: 63.141.128.13
+    port: 8080
+    uuid: 094af2f8-b421-4d0c-a96c-00625147a30c
+    network: ws
+    servername: c.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: c.jOin.zEdMoDeOn.oNl.
+  - type: vmess
+    name: US_youtube@资源分享师_46
+    server: 193.22.152.87
+    port: 34524
+    uuid: 84acd6fd-63e8-4440-a2e9-ba9fd163b05c
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: JP_youtube@资源分享师_39
+    server: 156.238.18.117
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_47
+    server: 63.141.128.13
+    port: 8080
+    uuid: 094af2f8-b421-4d0c-a96c-00625147a30c
+    network: ws
+    servername: c.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: c.jOin.zEdMoDeOn.oNl.
+  - type: vmess
+    name: ES_youtube@资源分享师
+    server: 185.238.228.224
+    port: 8880
+    uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: TG.WangCai2.s4.db-link02.top
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: TG.WangCai2.s4.db-link02.top
+  - type: vless
+    name: JP_youtube@资源分享师_40
+    server: 156.238.18.251
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vmess
+    name: US_youtube@资源分享师_48
+    server: 199.181.197.60
+    port: 443
+    uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: farid.1.berozha.ir
+    ws-opts:
+      path: /us.kkp.me.eu.org/aa
+      headers:
+        Host: farid.1.berozha.ir
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_49
+    server: freexxx.ndeso.xyz
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: freexxx.ndeso.xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-NL631
+      headers:
+        Host: freexxx.ndeso.xyz
+  - type: vless
+    name: US_youtube@资源分享师_50
+    server: 63.141.128.13
+    port: 8080
+    uuid: 094af2f8-b421-4d0c-a96c-00625147a30c
+    network: ws
+    servername: c.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: c.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_51
+    server: 104.25.227.244
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vless
+    name: JP_youtube@资源分享师_41
+    server: 156.238.18.190
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: sg.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram@CoinTech2U2/?ed=2048
+      headers:
+        Host: sg.laoyoutiao.link
+  - type: vless
+    name: RU_youtube@资源分享师_4
+    server: 185.59.218.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: GB_youtube@资源分享师_1
+    server: 45.8.211.71
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_52
+    server: 104.129.167.161
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: trojan
+    name: US_youtube@资源分享师_53
+    server: sgsqldsv.catcat321.com
+    port: 20021
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.twx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_54
+    server: 63.141.128.14
+    port: 8080
+    uuid: dd28fc32-c259-4dbe-981f-66ac565110a6
+    network: ws
+    servername: a.joIn.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: a.joIn.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_55
+    server: 63.141.128.16
+    port: 80
+    uuid: 9d0f4677-d396-4291-a371-abd3d2e7e462
+    network: ws
+    servername: e.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: e.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_56
+    server: 104.17.4.197
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vmess
+    name: US_youtube@资源分享师_57
+    server: FFFFfFFvvBgnh.iRAn2035.DpDnS.OrG
+    port: 443
+    uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: fffffffvvbgnh.iran2035.dpdns.org
+    ws-opts:
+      path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp
+      headers:
+        Host: fffffffvvbgnh.iran2035.dpdns.org
+    tls: true
+  - type: vless
+    name: JP_youtube@资源分享师_42
     server: 156.238.18.61
     port: 8880
     uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -1608,22 +1428,18 @@ proxies:
       path: /TelegramU0001F1E8U0001F1F3
       headers:
         Host: yd.laoyoutiao.link
-  - type: vmess
-    name: LT_youtube@资源分享师_9
-    server: 88.216.67.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+  - type: trojan
+    name: US_youtube@资源分享师_58
+    server: sgsqldsv.catcat321.com
+    port: 20067
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: iepl.sgx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
   - type: vless
-    name: JP_youtube@资源分享师_6
-    server: 156.238.18.143
+    name: JP_youtube@资源分享师_43
+    server: 156.238.18.36
     port: 8880
     uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     network: ws
@@ -1634,45 +1450,7 @@ proxies:
       headers:
         Host: yd.laoyoutiao.link
   - type: vless
-    name: US_youtube@资源分享师_44
-    server: 104.18.205.33
-    port: 443
-    uuid: a1650c69-531c-441f-bc6a-bd43565000a4
-    network: ws
-    servername: rayan-fg-2.hasan-kachal.filegear-sg.me
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: rayan-fg-2.hasan-kachal.filegear-sg.me
-  - type: vmess
-    name: NL_youtube@资源分享师_22
-    server: 45.131.6.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: RU_youtube@资源分享师_5
-    server: 46.254.92.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: US_youtube@资源分享师_45
+    name: US_youtube@资源分享师_59
     server: freexxx.ndeso.xyz
     port: 443
     uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
@@ -1684,72 +1462,632 @@ proxies:
       path: /Free-CF-Proxy-NL592
       headers:
         Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: GB_youtube@资源分享师_11
-    server: 77.75.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_46
-    server: 104.129.166.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_47
-    server: test3.flha.ru
-    port: 80
-    uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: ""
-    ws-opts:
-      path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
-      headers:
-        Host: ""
   - type: vless
-    name: JP_youtube@资源分享师_7
-    server: 156.238.18.207
+    name: JP_youtube@资源分享师_44
+    server: 156.238.18.139
     port: 8880
     uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     network: ws
     servername: yd.laoyoutiao.link
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+      path: /TelegramU0001F1E8U0001F1F3
       headers:
         Host: yd.laoyoutiao.link
-  - type: vmess
-    name: LT_youtube@资源分享师_10
-    server: 185.148.106.223
+  - type: vless
+    name: CN_youtube@资源分享师_20
+    server: 45.192.224.182
     port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_60
+    server: 63.141.128.15
+    port: 80
+    uuid: 5fd9c3f7-bd70-4dab-8915-4c57bfe2b309
+    network: ws
+    servername: d.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: d.jOin.zEdMoDeOn.oNl.
+  - type: trojan
+    name: US_youtube@资源分享师_61
+    server: r2.tube-cat.com
+    port: 8300
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: usq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_62
+    server: 63.141.128.2
+    port: 8080
+    uuid: 5de6ad92-3282-4457-b4c4-a94dbce499b5
+    network: ws
+    servername: b.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: b.jOin.zEdMoDeOn.oNl.
+  - type: ss
+    name: unKnow_youtube@资源分享师_1
+    server: awes35lesl.blhao0o.dpdns.org
+    port: 12009
+    cipher: aes-128-gcm
+    password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  - type: vless
+    name: US_youtube@资源分享师_63
+    server: 63.141.128.2
+    port: 8080
+    uuid: 5de6ad92-3282-4457-b4c4-a94dbce499b5
+    network: ws
+    servername: b.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: b.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: NL_youtube@资源分享师_3
+    server: 188.164.248.192
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: Telegram-channel-WangCai2
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: cf.d3z.net
+  - type: vless
+    name: US_youtube@资源分享师_64
+    server: modern-promise.seotoolsforyou.co.uk
+    port: 80
+    uuid: bd9b0366-e5dd-4665-bd5b-9896bc7327ae
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: trojan
+    name: US_youtube@资源分享师_65
+    server: r3.tube-cat.com
+    port: 9150
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: hkq1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: TR_youtube@资源分享师
+    server: c20f6d3f4b1883b1c20f6d3f4b1883b1c20f6d3f4b1883b1.jewelll.ir
+    port: 17500
+    uuid: 855793d3-b604-4031-97c1-3f20d7a57b1e
+    network: tcp
+    encryption: none
+  - type: ss
+    name: unKnow_youtube@资源分享师_2
+    server: awes35lesl.blhao0o.dpdns.org
+    port: 12020
+    cipher: aes-128-gcm
+    password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  - type: vless
+    name: US_youtube@资源分享师_66
+    server: www.speedtest.net
+    port: 8443
+    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+    network: ws
+    servername: iphoster-quran-iran-4.coin.name.ng
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---
+      headers:
+        Host: iphoster-quran-iran-4.coin.name.ng
+  - type: trojan
+    name: US_youtube@资源分享师_67
+    server: r1.tube-cat.com
+    port: 9405
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: jpx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: US_youtube@资源分享师_68
+    server: cloudgetservice.mcloudservice.site
+    port: 443
+    uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
     alterId: 0
     network: ws
     cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
+    servername: Fra-Vp-123.BLaZECLOUD.Site
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /linvkws
       headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: Fra-Vp-123.BLaZECLOUD.Site
+    tls: true
+  - type: vless
+    name: JP_youtube@资源分享师_45
+    server: 156.238.18.139
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: ss
+    name: unKnow_youtube@资源分享师_3
+    server: awes35lesl.blhao0o.dpdns.org
+    port: 12017
+    cipher: aes-128-gcm
+    password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  - type: vless
+    name: US_youtube@资源分享师_69
+    server: www.speedtest.net
+    port: 443
+    uuid: c997eaff-4bab-4fff-92e5-8e14dc248dc4
+    network: ws
+    servername: maxnetvip-clgervip146.maxnetcloudservice.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /linkws?ed
+      headers:
+        Host: maxnetvip-clgervip146.maxnetcloudservice.com
   - type: trojan
-    name: US_youtube@资源分享师_48
+    name: US_youtube@资源分享师_70
+    server: 52.29.121.204
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_71
+    server: 63.141.128.16
+    port: 80
+    uuid: 9d0f4677-d396-4291-a371-abd3d2e7e462
+    network: ws
+    servername: e.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: e.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_72
+    server: 50.62.89.154
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: sg.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: sg.laoyoutiao.link
+  - type: vless
+    name: JP_youtube@资源分享师_46
+    server: 156.238.18.1
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_73
+    server: 104.19.173.68
+    port: 443
+    uuid: 60882caa-4e74-42a2-be70-220755fc1551
+    network: ws
+    servername: rayan-olala.parvaneh.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rayan-olala.parvaneh.dpdns.org
+  - type: vless
+    name: NL_youtube@资源分享师_4
+    server: 45.142.120.251
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: cf.d3z.net
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: cf.d3z.net
+  - type: vless
+    name: US_youtube@资源分享师_74
+    server: famous-danger.oneeat.co
+    port: 80
+    uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: US_youtube@资源分享师_75
+    server: aio.loophole.biz.id
+    port: 80
+    uuid: f282b878-8711-45a1-8c69-5564172123c1
+    network: ws
+    servername: aio.loophole.biz.id
+    encryption: none
+    ws-opts:
+      path: /aioproxybot/129.150.49.58-18650
+      headers:
+        Host: aio.loophole.biz.id
+  - type: vless
+    name: SI_youtube@资源分享师_1
+    server: 92.53.188.36
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_76
+    server: 172.66.138.120
+    port: 443
+    uuid: 286a5f83-f8e6-47b4-a47e-5f7a6bec71fc
+    network: ws
+    servername: rAyAn-cOnFiC-11.rAyAn-iV.DnS-DyNaMiC.NeT
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /@Rayan_Config
+      headers:
+        Host: rayan-confic-11.rayan-iv.dns-dynamic.net
+  - type: vless
+    name: US_youtube@资源分享师_77
+    server: 104.24.30.89
+    port: 443
+    uuid: a0ac9cf5-f8c8-43cf-a09b-908455fb2b4b
+    network: ws
+    servername: rAyAn-cOnFiG-09.rAyAn-iIi.dNs-dYnAmIc.nEt
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /@Rayan_Config
+      headers:
+        Host: rayan-config-09.rayan-iii.dns-dynamic.net
+  - type: vless
+    name: US_youtube@资源分享师_78
+    server: 172.67.200.192
+    port: 443
+    uuid: 43ef1f94-978f-4539-ba01-1e6005859950
+    network: ws
+    servername: hostone-sg.zdsa.me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: hostone-sg.zdsa.me
+  - type: vless
+    name: JP_youtube@资源分享师_47
+    server: 156.238.18.106
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: GB_youtube@资源分享师_2
+    server: 77.75.199.154
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: sg.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: sg.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_79
+    server: 104.24.93.159
+    port: 443
+    uuid: d365b4a1-76b8-4a30-a83c-db47cb32f6b7
+    network: ws
+    servername: shop.happyground.ir
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /telegram-sarv2,NGV2ray?ed=2048
+      headers:
+        Host: shop.happyground.ir
+  - type: vless
+    name: US_youtube@资源分享师_80
+    server: 104.26.13.38
+    port: 2096
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+    network: ws
+    servername: inVINCIble.fAFA20.Shop
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+      headers:
+        Host: invincible.fafa20.shop
+  - type: vless
+    name: JP_youtube@资源分享师_48
+    server: 156.238.18.197
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_81
+    server: freevpn.ndeso.web.id
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: freevpn.ndeso.web.id
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-AT38
+      headers:
+        Host: freevpn.ndeso.web.id
+  - type: vless
+    name: US_youtube@资源分享师_82
+    server: 104.26.3.186
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: vp33.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: trojan
+    name: DE_youtube@资源分享师
+    server: 35.159.254.111
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: US_youtube@资源分享师_83
+    server: cloudgetservice.mcloudservice.site
+    port: 443
+    uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: Fra-Vp-123.BLaZECLOUD.Site
+    ws-opts:
+      path: /linvkws
+      headers:
+        Host: Fra-Vp-123.BLaZECLOUD.Site
+    tls: true
+  - type: vmess
+    name: US_youtube@资源分享师_84
+    server: 172.67.137.6
+    port: 443
+    uuid: 459885ec-e7a1-4984-9441-3c6aaf94bdf3
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
+    ws-opts:
+      path: /ri9mOOVJuAimB74kgXZ
+      headers:
+        Host: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
+    tls: true
+  - type: vmess
+    name: US_youtube@资源分享师_85
+    server: ssssssssssssfffffffgh.2032.pp.ua
+    port: 443
+    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: ssssssssssssfffffffgh.2032.pp.ua
+    ws-opts:
+      path: /6We3U9Df1WGxgFnoFPw1
+      headers:
+        Host: ssssssssssssfffffffgh.2032.pp.ua
+    tls: true
+  - type: vless
+    name: RU_youtube@资源分享师_5
+    server: 185.174.138.251
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: cf.d3z.net
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+      headers:
+        Host: cf.d3z.net
+  - type: vless
+    name: US_youtube@资源分享师_86
+    server: 104.19.99.250
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vmess
+    name: US_youtube@资源分享师_87
+    server: www.speedtest.net
+    port: 443
+    uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: BLaZE-fRA-64.BLaZECLOuD.sitE
+    ws-opts:
+      path: /linkvkwss
+      headers:
+        Host: BLaZE-fRA-64.BLaZECLOuD.sitE
+    tls: true
+  - type: vmess
+    name: US_youtube@资源分享师_88
+    server: 172.66.213.38
+    port: 443
+    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: dyb.dalazhi.eu.org
+    ws-opts:
+      path: /ssssssssssssfffffffgh.2032.pp.ua:443/6We3U9Df1WGxgFnoFPw1
+      headers:
+        Host: dyb.dalazhi.eu.org
+    tls: true
+  - type: vless
+    name: LT_youtube@资源分享师_1
+    server: 88.216.69.154
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: sg.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: sg.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_89
+    server: www.speedtest.net
+    port: 2082
+    uuid: a83b75d7-6b87-4201-a12a-8105fad6a8da
+    network: ws
+    servername: rAyAn-cOnFiG-TeLeGrAm-cLuB-6.RaYaN-6.ClOuDnS.ClUb
+    encryption: none
+    ws-opts:
+      path: /@Rayan_Config
+      headers:
+        Host: rAyAn-cOnFiG-TeLeGrAm-cLuB-6.RaYaN-6.ClOuDnS.ClUb
+  - type: vless
+    name: US_youtube@资源分享师_90
+    server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+    port: 8443
+    uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+    network: ws
+    servername: 3ReUd06HpP.lIrA9xC7.iNfO
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: 3ReUd06HpP.lIrA9xC7.iNfO
+  - type: vless
+    name: US_youtube@资源分享师_91
+    server: 104.17.187.205
+    port: 443
+    uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+    network: ws
+    servername: rAyAn-cOnFiG-TeLeGrAm-a01.rAyAn.dPdNs.oRg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /@Rayan_Config
+      headers:
+        Host: rayan-config-telegram-a01.rayan.dpdns.org
+  - type: vless
+    name: US_youtube@资源分享师_92
+    server: alhilal.com
+    port: 443
+    uuid: 2b256b16-91f9-4374-856f-23f4d6753039
+    network: ws
+    servername: rAyAn-dEAd.NasTarAn.DpDns.oRg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rayan-dead.nastaran.dpdns.org
+  - type: ss
+    name: unKnow_youtube@资源分享师_4
+    server: awes35lesl.blhao0o.dpdns.org
+    port: 12008
+    cipher: aes-128-gcm
+    password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  - type: vless
+    name: US_youtube@资源分享师_93
+    server: 162.159.137.3
+    port: 443
+    uuid: 12f591ba-d695-4396-9190-f2f3aaa9ea47
+    network: ws
+    servername: at.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /XYXY0721
+      headers:
+        Host: at.xiejiang.dpdns.org
+  - type: vless
+    name: JP_youtube@资源分享师_49
+    server: 103.116.7.192
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: Telegram-channel-WangCai2
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: cf.d3z.net
+  - type: trojan
+    name: US_youtube@资源分享师_94
+    server: r2.tube-cat.com
+    port: 9405
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: jpx1.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: US_youtube@资源分享师_95
+    server: uk-03.allhubb.info
+    port: 8443
+    password: 1ce1df7962f71c6f
+    network: tcp
+    sni: uk-03.allhubb.info
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: US_youtube@资源分享师_96
     server: 104.21.91.180
     port: 443
     password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
@@ -1758,417 +2096,6 @@ proxies:
     tls: true
     ws-opts:
       path: /x9F83IcyjcEyBXZBROjL3Q5vTymrhttp/1.1
-  - type: vmess
-    name: US_youtube@资源分享师_49
-    server: 130.250.137.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_50
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: US9.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: US9.naichachong.top
-  - type: vmess
-    name: LU_youtube@资源分享师_3
-    server: 188.42.88.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_11
-    server: 185.148.107.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_51
-    server: 166.62.108.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: DE_youtube@资源分享师_2
-    server: 31.185.108.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AU_youtube@资源分享师_6
-    server: 185.207.197.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_52
-    server: 45.40.149.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_53
-    server: 198.71.189.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: RU_youtube@资源分享师_6
-    server: 185.174.138.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_12
-    server: 185.162.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: DE_youtube@资源分享师_3
-    server: 31.185.108.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: JP_youtube@资源分享师_8
-    server: 156.238.18.106
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    network: ws
-    servername: yd.laoyoutiao.link
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳@MxlShare@WangCai2/?ed
-      headers:
-        Host: yd.laoyoutiao.link
-  - type: vmess
-    name: JP_youtube@资源分享师_9
-    server: 156.238.19.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_54
-    server: 166.62.106.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: ZA_youtube@资源分享师_3
-    server: 45.196.29.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_55
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL157
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vless
-    name: US_youtube@资源分享师_56
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL405
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: US_youtube@资源分享师_57
-    server: cloudflare.182682.xyz
-    port: 2086
-    uuid: dead1bb8-e95a-4517-8ed2-e0694de80ba6
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: US9.naichachong.top
-    ws-opts:
-      path: /
-      headers:
-        Host: US9.naichachong.top
-  - type: vless
-    name: ES_youtube@资源分享师_2
-    server: 185.251.81.251
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /TelegramU0001F1E8U0001F1F3
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: JP_youtube@资源分享师_10
-    server: 156.238.18.151
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    network: ws
-    servername: yd.laoyoutiao.link
-    encryption: none
-    ws-opts:
-      path: /TelegramU0001F1E8U0001F1F3
-      headers:
-        Host: yd.laoyoutiao.link
-  - type: vmess
-    name: UA_youtube@资源分享师_6
-    server: 91.124.127.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LU_youtube@资源分享师_4
-    server: 188.42.89.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: unKnow_youtube@资源分享师
-    server: 77.74.228.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_58
-    server: 172.67.150.132
-    port: 80
-    uuid: 85013347-6ebf-4597-8eec-27fe4eeb80f4
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: dddcvbbnj.444682.xyz
-    ws-opts:
-      path: /14Fziqw1hYgCXNutkS5H
-      headers:
-        Host: dddcvbbnj.444682.xyz
-  - type: vmess
-    name: US_youtube@资源分享师_59
-    server: 45.40.147.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: JP_youtube@资源分享师_11
-    server: 156.238.18.207
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    network: ws
-    servername: yd.laoyoutiao.link
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳@MxlShare@WangCai2/?ed=2560
-      headers:
-        Host: yd.laoyoutiao.link
-  - type: vless
-    name: US_youtube@资源分享师_60
-    server: 172.67.137.6
-    port: 443
-    uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
-    network: ws
-    servername: 85894eb2-7b7d-0cd9-7f2d-93e8a7691655.freevpnatm.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /0SCvfqSaeeB74kgXZ
-      headers:
-        Host: 85894eb2-7b7d-0cd9-7f2d-93e8a7691655.freevpnatm.dpdns.org
-  - type: vless
-    name: NL_youtube@资源分享师_23
-    server: 194.53.53.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: cf.d3z.net
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vmess
-    name: GB_youtube@资源分享师_13
-    server: 25.129.199.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_14
-    server: 195.26.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: ZA_youtube@资源分享师_4
-    server: 45.196.29.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
   - type: vmess
     name: DK_youtube@资源分享师_2
     server: csgo.com
@@ -2183,235 +2110,64 @@ proxies:
       headers:
         Host: cdn-node-oss-99.paofu.de
   - type: vless
-    name: JP_youtube@资源分享师_12
-    server: 156.238.18.52
+    name: LT_youtube@资源分享师_2
+    server: 89.116.180.154
     port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
-    servername: yd.laoyoutiao.link
+    servername: cf.d3z.net
     encryption: none
     ws-opts:
-      path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: yd.laoyoutiao.link
+        Host: cf.d3z.net
   - type: vless
-    name: JP_youtube@资源分享师_13
-    server: 156.238.18.106
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    name: US_youtube@资源分享师_97
+    server: math.book.zedmodeon.store
+    port: 80
+    uuid: 5fd9c3f7-bd70-4dab-8915-4c57bfe2b309
     network: ws
-    servername: yd.laoyoutiao.link
+    servername: d.jOin.zEdMoDeOn.oNl.
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
       headers:
-        Host: yd.laoyoutiao.link
-  - type: vmess
-    name: US_youtube@资源分享师_61
-    server: 104.129.167.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_62
-    server: 198.177.57.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_24
-    server: 45.159.217.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: IN_youtube@资源分享师_3
-    server: 14.102.228.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_25
-    server: 185.193.29.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_63
-    server: 166.62.109.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_15
-    server: 77.75.199.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_64
-    server: 45.40.147.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: RO_youtube@资源分享师_1
-    server: 213.182.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_65
-    server: 198.177.56.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: d.jOin.zEdMoDeOn.oNl.
   - type: vless
-    name: US_youtube@资源分享师_66
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    name: US_youtube@资源分享师_98
+    server: 63.141.128.2
+    port: 8080
+    uuid: 5de6ad92-3282-4457-b4c4-a94dbce499b5
     network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
+    servername: b.jOin.zEdMoDeOn.oNl.
     encryption: none
     ws-opts:
-      path: /Free-CF-Proxy-NL669
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
       headers:
-        Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: RO_youtube@资源分享师_2
-    server: 213.182.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: JP_youtube@资源分享师_14
-    server: 103.245.229.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: RU_youtube@资源分享师_7
-    server: 213.219.247.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_67
-    server: 166.62.109.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: b.jOin.zEdMoDeOn.oNl.
   - type: vless
-    name: US_youtube@资源分享师_68
+    name: US_youtube@资源分享师_99
     server: all.tellmethetrue.shop
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
     network: grpc
-    servername: pqh23v3.hiddendom.shop
+    servername: pqh30v7.hiddendom.shop
     tls: true
     encryption: none
   - type: vless
-    name: US_youtube@资源分享师_69
+    name: JP_youtube@资源分享师_50
+    server: 156.238.18.76
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: yd.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: yd.laoyoutiao.link
+  - type: vless
+    name: US_youtube@资源分享师_100
     server: tgju.org
     port: 80
     uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
@@ -2422,50 +2178,96 @@ proxies:
       path: /?ed=2048
       headers:
         Host: SeRvER07.VtNEt.InFO
-  - type: vmess
-    name: AT_youtube@资源分享师
-    server: 212.183.88.223
+  - type: vless
+    name: BR_youtube@资源分享师
+    server: 188.114.96.6
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: F1.paRsa.fiLegEar-Sg.Me
+  - type: vless
+    name: US_youtube@资源分享师_101
+    server: aio.xtradata.dpdns.org
+    port: 443
+    uuid: f282b878-8711-45a1-8c69-5564172123c1
+    network: ws
+    servername: aio.xtradata.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /aioproxybot/129.150.49.58-18650
+      headers:
+        Host: aio.xtradata.dpdns.org
+  - type: vless
+    name: US_youtube@资源分享师_102
+    server: 104.25.227.244
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /telegram:@Eternal_Connect-telegram:@Eternal_Connect-telegram:@Eternal_Connect-telegram:@Eternal_Connect
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vless
+    name: US_youtube@资源分享师_103
+    server: 172.67.67.178
     port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
+    uuid: 8225c631-a11e-46a3-b35d-25e9a6b23bf1
+    network: ws
+    servername: rAyAn-cOnFiG-TeLeGrAm-cLuB-4.RaYaN-4.ClOuDnS.ClUb
+    encryption: none
+    ws-opts:
+      path: /@Rayan_Config
+      headers:
+        Host: rAyAn-cOnFiG-TeLeGrAm-cLuB-4.RaYaN-4.ClOuDnS.ClUb
+  - type: vless
+    name: US_youtube@资源分享师_104
+    server: 104.17.148.22
+    port: 8443
+    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+    network: ws
+    servername: hetzner-7.boss.name.ng
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: hetzner-7.boss.name.ng
+  - type: vmess
+    name: US_youtube@资源分享师_105
+    server: aio.unlimited.biz.id
+    port: 443
+    uuid: f282b878-8711-45a1-8c69-5564172123c1
     alterId: 0
     network: ws
     cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
+    servername: aio.unlimited.biz.id
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /aioproxybot/129.150.49.58-18650
       headers:
-        Host: TG.WangCai2.s4.db-link02.top
+        Host: aio.unlimited.biz.id
+    tls: true
+  - type: hysteria2
+    name: NL_youtube@资源分享师_5
+    server: dehub.xg-hub.icu
+    port: 25784
+    password: 2b7f3256-517f-4526-be27-5415846c5e21
+    skip-cert-verify: true
+    sni: dehub.xg-hub.icu
   - type: vmess
-    name: US_youtube@资源分享师_70
-    server: 50.62.198.223
+    name: RU_youtube@资源分享师_6
+    server: 185.221.160.224
     port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_16
-    server: 45.85.118.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AU_youtube@资源分享师_7
-    server: 185.207.199.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
+    uuid: 5c6b69d8-97a2-39c1-92b8-02fc0a369c31
     alterId: 0
     network: ws
     cipher: auto
@@ -2475,8 +2277,69 @@ proxies:
       headers:
         Host: TG.WangCai2.s4.db-link02.top
   - type: vless
-    name: DE_youtube@资源分享师_4
-    server: 185.16.110.192
+    name: US_youtube@资源分享师_106
+    server: web.xhamster.biz.id
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    network: ws
+    servername: web.xhamster.biz.id
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Free-CF-Proxy-AT4
+      headers:
+        Host: web.xhamster.biz.id
+  - type: vless
+    name: US_youtube@资源分享师_107
+    server: 104.25.235.104
+    port: 443
+    uuid: 8df60790-c903-4661-b85d-64c0009378e5
+    network: ws
+    servername: F1.paRsa.fiLegEar-Sg.Me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: f1.parsa.filegear-sg.me
+  - type: vless
+    name: US_youtube@资源分享师_108
+    server: all.tellmethetrue.shop
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh25v1.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_109
+    server: 172.64.152.55
+    port: 443
+    uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+    network: ws
+    servername: usb.rtot.me
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /bing
+      headers:
+        Host: usb.rtot.me
+  - type: vless
+    name: US_youtube@资源分享师_110
+    server: 172.67.175.148
+    port: 2087
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+    network: ws
+    servername: InvInciBLe.FAFa20.sHop
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /hoOUCl9QWMZ9zBtD/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+      headers:
+        Host: invincible.fafa20.shop
+  - type: vless
+    name: US_youtube@资源分享师_111
+    server: 192.0.54.192
     port: 8880
     uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
@@ -2486,71 +2349,55 @@ proxies:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: cf.d3z.net
+  - type: vmess
+    name: DK_youtube@资源分享师_3
+    server: pubg.ac
+    port: 80
+    uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: cdn-node-oss-99.paofu.de
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        Host: cdn-node-oss-99.paofu.de
   - type: vless
-    name: RU_youtube@资源分享师_8
-    server: 185.221.160.192
+    name: US_youtube@资源分享师_112
+    server: 104.26.2.186
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_113
+    server: 63.141.128.251
     port: 8880
     uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
-    servername: Telegram-channel-WangCai2
+    servername: cf.d3z.net
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
       headers:
         Host: cf.d3z.net
-  - type: vmess
-    name: UA_youtube@资源分享师_7
-    server: 31.43.179.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_71
-    server: 199.34.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_17
-    server: 25.129.197.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
   - type: vless
-    name: CN_youtube@资源分享师_10
-    server: 45.192.224.126
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    name: US_youtube@资源分享师_114
+    server: www.speedtest.net
+    port: 8443
+    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
     network: ws
-    servername: yd.laoyoutiao.link
+    servername: hetzner-8.cache.name.ng
+    tls: true
     encryption: none
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /
       headers:
-        Host: yd.laoyoutiao.link
+        Host: hetzner-8.cache.name.ng
   - type: vless
-    name: US_youtube@资源分享师_72
+    name: US_youtube@资源分享师_115
     server: ip.sb
     port: 443
     uuid: 8df60790-c903-4661-b85d-64c0009378e5
@@ -2559,570 +2406,175 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: /?ed=
+      path: /?ed=2560
       headers:
         Host: f1.parsa.filegear-sg.me
   - type: vless
-    name: CN_youtube@资源分享师_11
-    server: 45.192.224.68
+    name: US_youtube@资源分享师_116
+    server: 172.67.175.148
+    port: 2053
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+    network: ws
+    servername: InviNcIbLe.FAFA20.sHOp
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: InviNcIbLe.FAFA20.sHOp
+  - type: trojan
+    name: US_youtube@资源分享师_117
+    server: r2.tube-cat.com
+    port: 9140
+    password: a9f40fd3-10b6-40c3-aa8a-37c8ddef8d6d
+    network: tcp
+    sni: hkq2.cat.bilibili.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_118
+    server: tgju.org
+    port: 80
+    uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
+    network: ws
+    servername: SeRvER16.VtNEt.InFO
+    encryption: none
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: SeRvER16.VtNEt.InFO
+  - type: vless
+    name: US_youtube@资源分享师_119
+    server: 63.141.128.0
+    port: 80
+    uuid: 5fd9c3f7-bd70-4dab-8915-4c57bfe2b309
+    network: ws
+    servername: d.jOin.zEdMoDeOn.oNl.
+    encryption: none
+    ws-opts:
+      path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      headers:
+        Host: d.jOin.zEdMoDeOn.oNl.
+  - type: vless
+    name: US_youtube@资源分享师_120
+    server: 50.62.89.154
     port: 8880
     uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     network: ws
-    servername: yd.laoyoutiao.link
+    servername: sg.laoyoutiao.link
     encryption: none
     ws-opts:
       path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: yd.laoyoutiao.link
+        Host: sg.laoyoutiao.link
   - type: vless
-    name: US_youtube@资源分享师_73
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL701
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vless
-    name: US_youtube@资源分享师_74
-    server: fearless-change.oneeat.co
-    port: 80
-    uuid: b055036a-2d81-4d46-ab18-4e1898b58cec
-    network: ws
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vmess
-    name: NL_youtube@资源分享师_26
-    server: 45.153.7.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: FR_youtube@资源分享师_3
-    server: 45.80.111.192
-    port: 8880
-    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-    network: ws
-    servername: Telegram-channel-WangCai2
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: cf.d3z.net
-  - type: vless
-    name: JP_youtube@资源分享师_15
-    server: 156.238.18.197
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    network: ws
-    servername: yd.laoyoutiao.link
-    encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: yd.laoyoutiao.link
-  - type: vless
-    name: UA_youtube@资源分享师_8
-    server: 62.72.166.251
+    name: US_youtube@资源分享师_121
+    server: 66.235.200.154
     port: 8880
     uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
     servername: cf.d3z.net
     encryption: none
     ws-opts:
-      path: /Telegram@WangCai2
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: cf.d3z.net
   - type: vless
-    name: US_youtube@资源分享师_75
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL132
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: NL_youtube@资源分享师_27
-    server: 45.159.219.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_18
-    server: 25.129.198.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: AM_youtube@资源分享师_2
-    server: 188.164.158.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: DK_youtube@资源分享师_3
-    server: 195.85.59.224
-    port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: trojan
-    name: US_youtube@资源分享师_76
-    server: 172.67.181.173
-    port: 443
-    password: f282b878-8711-45a1-8c69-5564172123c1
-    network: ws
-    sni: vpn.stupidworld.web.id
-    tls: true
-    ws-opts:
-      path: /Stupid-World/103.106.228.126-2053
-  - type: trojan
-    name: US_youtube@资源分享师_77
-    server: 172.67.220.32
-    port: 443
-    password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
-    network: ws
-    sni: eEEfGty6.999836.XYz
-    tls: true
-    ws-opts:
-      path: /XmTzATQPJv9RO3xr1D40NK
-      headers:
-        Host: eEEfGty6.999836.XYz
-  - type: vmess
-    name: BR_youtube@资源分享师_1
-    server: 185.159.247.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_78
-    server: 172.67.137.6
-    port: 443
-    uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
-    network: ws
-    servername: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /0SCvfqSaeeB74kgXZ
-      headers:
-        Host: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
-  - type: vless
-    name: US_youtube@资源分享师_79
-    server: 172.67.191.174
-    port: 443
-    uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
-    network: ws
-    servername: ccCcCcCf.222769.Xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /1xrOld7e5RpK3I98dxLkez
-      headers:
-        Host: cccccccf.222769.xyz
-  - type: vmess
-    name: BG_youtube@资源分享师_2
-    server: 185.176.26.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_19
-    server: 45.85.119.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: GB_youtube@资源分享师_20
-    server: 25.129.199.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_80
-    server: 199.34.229.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_81
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-NL318
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vmess
-    name: RU_youtube@资源分享师_9
-    server: 213.241.198.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_82
-    server: 199.181.197.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: LT_youtube@资源分享师_12
-    server: 88.216.66.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: US_youtube@资源分享师_83
-    server: freexxx.ndeso.xyz
-    port: 443
-    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-    network: ws
-    servername: freexxx.ndeso.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-CF-Proxy-US21
-      headers:
-        Host: freexxx.ndeso.xyz
-  - type: vless
-    name: US_youtube@资源分享师_84
-    server: 104.19.99.250
-    port: 443
-    uuid: 8df60790-c903-4661-b85d-64c0009378e5
-    network: ws
-    servername: F1.paRsa.fiLegEar-Sg.Me
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /fp
-      headers:
-        Host: f1.parsa.filegear-sg.me
-  - type: vmess
-    name: AM_youtube@资源分享师_3
-    server: 188.164.159.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_28
-    server: 45.159.218.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_85
-    server: 104.21.76.21
-    port: 443
-    uuid: b6aeab0f-e440-4eae-93ba-d2ef7c99ae3b
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: xcvbnnmklo.00890604.xyz
-    ws-opts:
-      path: /mLxSsn8mrIeTh7sLJtI1
-      headers:
-        Host: xcvbnnmklo.00890604.xyz
-    tls: true
-  - type: vmess
-    name: US_youtube@资源分享师_86
-    server: 198.71.188.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: BR_youtube@资源分享师_2
-    server: 185.159.247.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_87
-    server: 104.238.68.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_88
-    server: ssssssssssssfffffffgh.2032.pp.ua
-    port: 443
-    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: ssssssssssssfffffffgh.2032.pp.ua
-    ws-opts:
-      path: /6We3U9Df1WGxgFnoFPw1
-      headers:
-        Host: ssssssssssssfffffffgh.2032.pp.ua
-    tls: true
-  - type: vmess
-    name: NL_youtube@资源分享师_29
-    server: 188.164.248.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: JP_youtube@资源分享师_16
-    server: 156.238.19.223
-    port: 8880
-    uuid: 125f71e4-79d6-36c3-943b-d753b440dd09
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: CN_youtube@资源分享师_17
-    server: 154.197.88.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: NL_youtube@资源分享师_30
-    server: 45.128.76.223
-    port: 8880
-    uuid: 2e4d9d7e-71e8-377b-a373-24b0dda38a04
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vless
-    name: JP_youtube@资源分享师_17
-    server: 156.238.18.17
-    port: 8880
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    network: ws
-    servername: yd.laoyoutiao.link
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳
-      headers:
-        Host: yd.laoyoutiao.link
-  - type: vless
-    name: CA_youtube@资源分享师
-    server: 74.49.214.192
+    name: US_youtube@资源分享师_122
+    server: 8.34.70.154
     port: 8880
     uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
     servername: cf.d3z.net
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: cf.d3z.net
   - type: vless
-    name: US_youtube@资源分享师_89
-    server: 172.67.220.32
-    port: 443
-    uuid: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
-    network: ws
-    servername: RRRFGhY7.999836.xyZ
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /MIrEVIUviSe8ydvnmRKWDa8
-      headers:
-        Host: rrrfghy7.999836.xyz
-  - type: vmess
-    name: US_youtube@资源分享师_90
-    server: 198.71.189.224
+    name: LT_youtube@资源分享师_3
+    server: 89.116.250.154
     port: 8880
-    uuid: 47e83ed3-9bc0-36a3-94bf-670c8eae5993
-    alterId: 0
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
     network: ws
-    cipher: auto
-    servername: TG.WangCai2.s4.db-link02.top
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: TG.WangCai2.s4.db-link02.top
-  - type: vmess
-    name: US_youtube@资源分享师_91
-    server: 104.21.77.149
-    port: 443
-    uuid: 20e89a95-cedf-4fe3-9421-517ce66be170
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: dddcccvghyu.999834.xyz
-    ws-opts:
-      path: /SHToRcqfiraYkzOdf
-      headers:
-        Host: dddcccvghyu.999834.xyz
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师_92
-    server: tfl.gov.uk
-    port: 443
-    uuid: 4e4768df-0fbb-4cc1-8fd3-7c6fea95742a
-    network: ws
-    servername: rAyAn-cOnFiG-TeLeGrAm-a02.pArAsToO.DpDnS.OrG
-    tls: true
+    servername: cf.d3z.net
     encryption: none
     ws-opts:
-      path: /@Rayan_Config
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: rayan-config-telegram-a02.parastoo.dpdns.org
+        Host: cf.d3z.net
+  - type: vless
+    name: SI_youtube@资源分享师_2
+    server: 92.53.189.154
+    port: 8880
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    network: ws
+    servername: sg.laoyoutiao.link
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: sg.laoyoutiao.link
+  - type: vless
+    name: SI_youtube@资源分享师_3
+    server: 92.53.190.154
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: cf.d3z.net
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: cf.d3z.net
+  - type: vless
+    name: FR_youtube@资源分享师
+    server: 94.140.0.154
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    network: ws
+    servername: cf.d3z.net
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: cf.d3z.net
+  - type: trojan
+    name: CN_youtube@资源分享师_26
+    server: hk1acd706de-0fb7-424a-b504-31dd893a578b.odysseycdn.cyou
+    port: 29003
+    password: 4bd1b3a6-5f42-4ebb-8250-fe8b837c98aa
+    network: tcp
+    sni: www.icloud.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_27
+    server: hk2acd706de-0fb7-424a-b504-31dd893a578b.odysseycdn.cyou
+    port: 29003
+    password: 4bd1b3a6-5f42-4ebb-8250-fe8b837c98aa
+    network: tcp
+    sni: www.icloud.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_28
+    server: hk3acd706de-0fb7-424a-b504-31dd893a578b.odysseycdn.cyou
+    port: 29003
+    password: 4bd1b3a6-5f42-4ebb-8250-fe8b837c98aa
+    network: tcp
+    sni: www.icloud.com
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_29
+    server: hk05acd706de-0fb7-424a-b504-31dd893a578b.odysseycdn.cyou
+    port: 29003
+    password: 4bd1b3a6-5f42-4ebb-8250-fe8b837c98aa
+    network: tcp
+    sni: www.icloud.com
+    skip-cert-verify: true
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3130,497 +2582,449 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - US_youtube@资源分享师_1
-      - IN_youtube@资源分享师_1
       - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - IR_youtube@资源分享师_1
+      - IR_youtube@资源分享师_2
       - US_youtube@资源分享师_4
+      - IR_youtube@资源分享师_3
       - US_youtube@资源分享师_5
       - US_youtube@资源分享师_6
-      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_7
-      - LT_youtube@资源分享师_1
-      - NL_youtube@资源分享师_2
       - US_youtube@资源分享师_8
       - US_youtube@资源分享师_9
-      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_11
       - US_youtube@资源分享师_12
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_1
-      - US_youtube@资源分享师_14
-      - NL_youtube@资源分享师_5
-      - CN_youtube@资源分享师_2
       - JP_youtube@资源分享师_1
-      - LT_youtube@资源分享师_2
-      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_13
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - US_youtube@资源分享师_14
       - US_youtube@资源分享师_15
-      - LU_youtube@资源分享师_1
-      - US_youtube@资源分享师_16
-      - US_youtube@资源分享师_17
-      - US_youtube@资源分享师_18
-      - NL_youtube@资源分享师_6
-      - LU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_7
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - US_youtube@资源分享师_19
-      - NL_youtube@资源分享师_10
       - JP_youtube@资源分享师_2
-      - UA_youtube@资源分享师_1
+      - RU_youtube@资源分享师_1
+      - IR_youtube@资源分享师_6
+      - US_youtube@资源分享师_16
+      - ZA_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - US_youtube@资源分享师_17
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_18
+      - JP_youtube@资源分享师_4
+      - US_youtube@资源分享师_19
       - US_youtube@资源分享师_20
-      - NL_youtube@资源分享师_11
       - US_youtube@资源分享师_21
       - US_youtube@资源分享师_22
+      - JP_youtube@资源分享师_5
       - US_youtube@资源分享师_23
-      - US_youtube@资源分享师_24
-      - GB_youtube@资源分享师_2
-      - ZA_youtube@资源分享师_1
-      - NL_youtube@资源分享师_12
-      - US_youtube@资源分享师_25
-      - ZA_youtube@资源分享师_2
-      - US_youtube@资源分享师_26
-      - LT_youtube@资源分享师_3
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_27
-      - NL_youtube@资源分享师_13
-      - SI_youtube@资源分享师_1
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_28
-      - LT_youtube@资源分享师_4
-      - CN_youtube@资源分享师_3
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_14
-      - US_youtube@资源分享师_29
-      - GB_youtube@资源分享师_5
-      - GB_youtube@资源分享师_6
-      - US_youtube@资源分享师_30
-      - SI_youtube@资源分享师_2
-      - NL_youtube@资源分享师_15
-      - US_youtube@资源分享师_31
-      - NL_youtube@资源分享师_16
-      - US_youtube@资源分享师_32
-      - AU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_17
-      - NL_youtube@资源分享师_18
-      - US_youtube@资源分享师_33
-      - AU_youtube@资源分享师_3
-      - FR_youtube@资源分享师_1
-      - US_youtube@资源分享师_34
-      - CN_youtube@资源分享师_4
-      - AM_youtube@资源分享师_1
-      - BG_youtube@资源分享师_1
-      - AU_youtube@资源分享师_4
-      - IN_youtube@资源分享师_2
-      - US_youtube@资源分享师_35
-      - GB_youtube@资源分享师_7
-      - NL_youtube@资源分享师_19
-      - UA_youtube@资源分享师_2
-      - DE_youtube@资源分享师_1
-      - NL_youtube@资源分享师_20
-      - SI_youtube@资源分享师_3
-      - AU_youtube@资源分享师_5
-      - GB_youtube@资源分享师_8
-      - GB_youtube@资源分享师_9
-      - US_youtube@资源分享师_36
-      - GB_youtube@资源分享师_10
-      - DK_youtube@资源分享师_1
       - RU_youtube@资源分享师_2
-      - ES_youtube@资源分享师_1
-      - MD_youtube@资源分享师
-      - US_youtube@资源分享师_37
-      - LT_youtube@资源分享师_5
-      - US_youtube@资源分享师_38
-      - FR_youtube@资源分享师_2
-      - US_youtube@资源分享师_39
-      - US_youtube@资源分享师_40
-      - UA_youtube@资源分享师_3
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - JP_youtube@资源分享师_9
+      - US_youtube@资源分享师_24
+      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - JP_youtube@资源分享师_10
+      - US_youtube@资源分享师_28
+      - JP_youtube@资源分享师_11
+      - US_youtube@资源分享师_29
+      - JP_youtube@资源分享师_12
+      - JP_youtube@资源分享师_13
+      - JP_youtube@资源分享师_14
+      - JP_youtube@资源分享师_15
+      - JP_youtube@资源分享师_16
+      - US_youtube@资源分享师_30
+      - JP_youtube@资源分享师_17
+      - JP_youtube@资源分享师_18
+      - JP_youtube@资源分享师_19
+      - JP_youtube@资源分享师_20
+      - DK_youtube@资源分享师_1
+      - BG_youtube@资源分享师
+      - JP_youtube@资源分享师_21
+      - US_youtube@资源分享师_31
+      - US_youtube@资源分享师_32
+      - JP_youtube@资源分享师_22
+      - US_youtube@资源分享师_33
+      - NL_youtube@资源分享师_2
+      - JP_youtube@资源分享师_23
+      - JP_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - JP_youtube@资源分享师_26
+      - US_youtube@资源分享师_34
+      - US_youtube@资源分享师_35
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_36
+      - JP_youtube@资源分享师_28
+      - JP_youtube@资源分享师_29
       - RU_youtube@资源分享师_3
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - UA_youtube@资源分享师_4
-      - LT_youtube@资源分享师_6
-      - LT_youtube@资源分享师_7
-      - RU_youtube@资源分享师_4
-      - LT_youtube@资源分享师_8
-      - NL_youtube@资源分享师_21
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_10
+      - US_youtube@资源分享师_38
+      - JP_youtube@资源分享师_30
+      - JP_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - JP_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - JP_youtube@资源分享师_35
+      - AU_youtube@资源分享师
+      - US_youtube@资源分享师_39
+      - JP_youtube@资源分享师_36
+      - US_youtube@资源分享师_40
       - US_youtube@资源分享师_41
-      - UA_youtube@资源分享师_5
-      - CN_youtube@资源分享师_8
       - US_youtube@资源分享师_42
       - US_youtube@资源分享师_43
-      - JP_youtube@资源分享师_4
-      - JP_youtube@资源分享师_5
-      - LT_youtube@资源分享师_9
-      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_37
       - US_youtube@资源分享师_44
-      - NL_youtube@资源分享师_22
-      - RU_youtube@资源分享师_5
+      - JP_youtube@资源分享师_38
       - US_youtube@资源分享师_45
-      - GB_youtube@资源分享师_11
       - US_youtube@资源分享师_46
+      - JP_youtube@资源分享师_39
       - US_youtube@资源分享师_47
-      - JP_youtube@资源分享师_7
-      - LT_youtube@资源分享师_10
+      - ES_youtube@资源分享师
+      - JP_youtube@资源分享师_40
       - US_youtube@资源分享师_48
       - US_youtube@资源分享师_49
       - US_youtube@资源分享师_50
-      - LU_youtube@资源分享师_3
-      - LT_youtube@资源分享师_11
       - US_youtube@资源分享师_51
-      - DE_youtube@资源分享师_2
-      - AU_youtube@资源分享师_6
+      - JP_youtube@资源分享师_41
+      - RU_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_52
       - US_youtube@资源分享师_53
-      - RU_youtube@资源分享师_6
-      - GB_youtube@资源分享师_12
-      - DE_youtube@资源分享师_3
-      - JP_youtube@资源分享师_8
-      - JP_youtube@资源分享师_9
       - US_youtube@资源分享师_54
-      - ZA_youtube@资源分享师_3
       - US_youtube@资源分享师_55
       - US_youtube@资源分享师_56
       - US_youtube@资源分享师_57
-      - ES_youtube@资源分享师_2
-      - JP_youtube@资源分享师_10
-      - UA_youtube@资源分享师_6
-      - LU_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
+      - JP_youtube@资源分享师_42
       - US_youtube@资源分享师_58
+      - JP_youtube@资源分享师_43
       - US_youtube@资源分享师_59
-      - JP_youtube@资源分享师_11
+      - JP_youtube@资源分享师_44
+      - CN_youtube@资源分享师_20
       - US_youtube@资源分享师_60
-      - NL_youtube@资源分享师_23
-      - GB_youtube@资源分享师_13
-      - GB_youtube@资源分享师_14
-      - ZA_youtube@资源分享师_4
-      - DK_youtube@资源分享师_2
-      - JP_youtube@资源分享师_12
-      - JP_youtube@资源分享师_13
       - US_youtube@资源分享师_61
       - US_youtube@资源分享师_62
-      - NL_youtube@资源分享师_24
-      - IN_youtube@资源分享师_3
-      - NL_youtube@资源分享师_25
+      - unKnow_youtube@资源分享师_1
       - US_youtube@资源分享师_63
-      - GB_youtube@资源分享师_15
+      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_64
-      - RO_youtube@资源分享师_1
       - US_youtube@资源分享师_65
+      - TR_youtube@资源分享师
+      - unKnow_youtube@资源分享师_2
       - US_youtube@资源分享师_66
-      - RO_youtube@资源分享师_2
-      - JP_youtube@资源分享师_14
-      - RU_youtube@资源分享师_7
       - US_youtube@资源分享师_67
       - US_youtube@资源分享师_68
+      - JP_youtube@资源分享师_45
+      - unKnow_youtube@资源分享师_3
       - US_youtube@资源分享师_69
-      - AT_youtube@资源分享师
       - US_youtube@资源分享师_70
-      - GB_youtube@资源分享师_16
-      - AU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_8
-      - UA_youtube@资源分享师_7
       - US_youtube@资源分享师_71
-      - GB_youtube@资源分享师_17
-      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师_72
-      - CN_youtube@资源分享师_11
+      - JP_youtube@资源分享师_46
       - US_youtube@资源分享师_73
+      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_74
-      - NL_youtube@资源分享师_26
-      - FR_youtube@资源分享师_3
-      - JP_youtube@资源分享师_15
-      - UA_youtube@资源分享师_8
       - US_youtube@资源分享师_75
-      - NL_youtube@资源分享师_27
-      - GB_youtube@资源分享师_18
-      - AM_youtube@资源分享师_2
-      - DK_youtube@资源分享师_3
+      - SI_youtube@资源分享师_1
       - US_youtube@资源分享师_76
       - US_youtube@资源分享师_77
-      - BR_youtube@资源分享师_1
       - US_youtube@资源分享师_78
+      - JP_youtube@资源分享师_47
+      - GB_youtube@资源分享师_2
       - US_youtube@资源分享师_79
-      - BG_youtube@资源分享师_2
-      - GB_youtube@资源分享师_19
-      - GB_youtube@资源分享师_20
       - US_youtube@资源分享师_80
+      - JP_youtube@资源分享师_48
       - US_youtube@资源分享师_81
-      - RU_youtube@资源分享师_9
       - US_youtube@资源分享师_82
-      - LT_youtube@资源分享师_12
+      - DE_youtube@资源分享师
       - US_youtube@资源分享师_83
       - US_youtube@资源分享师_84
-      - AM_youtube@资源分享师_3
-      - NL_youtube@资源分享师_28
       - US_youtube@资源分享师_85
+      - RU_youtube@资源分享师_5
       - US_youtube@资源分享师_86
-      - BR_youtube@资源分享师_2
       - US_youtube@资源分享师_87
       - US_youtube@资源分享师_88
-      - NL_youtube@资源分享师_29
-      - JP_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - NL_youtube@资源分享师_30
-      - JP_youtube@资源分享师_17
-      - CA_youtube@资源分享师
+      - LT_youtube@资源分享师_1
       - US_youtube@资源分享师_89
       - US_youtube@资源分享师_90
       - US_youtube@资源分享师_91
       - US_youtube@资源分享师_92
+      - unKnow_youtube@资源分享师_4
+      - US_youtube@资源分享师_93
+      - JP_youtube@资源分享师_49
+      - US_youtube@资源分享师_94
+      - US_youtube@资源分享师_95
+      - US_youtube@资源分享师_96
+      - DK_youtube@资源分享师_2
+      - LT_youtube@资源分享师_2
+      - US_youtube@资源分享师_97
+      - US_youtube@资源分享师_98
+      - US_youtube@资源分享师_99
+      - JP_youtube@资源分享师_50
+      - US_youtube@资源分享师_100
+      - BR_youtube@资源分享师
+      - US_youtube@资源分享师_101
+      - US_youtube@资源分享师_102
+      - US_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - US_youtube@资源分享师_105
+      - NL_youtube@资源分享师_5
+      - RU_youtube@资源分享师_6
+      - US_youtube@资源分享师_106
+      - US_youtube@资源分享师_107
+      - US_youtube@资源分享师_108
+      - US_youtube@资源分享师_109
+      - US_youtube@资源分享师_110
+      - US_youtube@资源分享师_111
+      - DK_youtube@资源分享师_3
+      - US_youtube@资源分享师_112
+      - US_youtube@资源分享师_113
+      - US_youtube@资源分享师_114
+      - US_youtube@资源分享师_115
+      - US_youtube@资源分享师_116
+      - US_youtube@资源分享师_117
+      - US_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_120
+      - US_youtube@资源分享师_121
+      - US_youtube@资源分享师_122
+      - LT_youtube@资源分享师_3
+      - SI_youtube@资源分享师_2
+      - SI_youtube@资源分享师_3
+      - FR_youtube@资源分享师
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - CN_youtube@资源分享师_28
+      - CN_youtube@资源分享师_29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
       - US_youtube@资源分享师_1
-      - IN_youtube@资源分享师_1
       - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - IR_youtube@资源分享师_1
+      - IR_youtube@资源分享师_2
       - US_youtube@资源分享师_4
+      - IR_youtube@资源分享师_3
       - US_youtube@资源分享师_5
       - US_youtube@资源分享师_6
-      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_7
-      - LT_youtube@资源分享师_1
-      - NL_youtube@资源分享师_2
       - US_youtube@资源分享师_8
       - US_youtube@资源分享师_9
-      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_11
       - US_youtube@资源分享师_12
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_1
-      - US_youtube@资源分享师_14
-      - NL_youtube@资源分享师_5
-      - CN_youtube@资源分享师_2
       - JP_youtube@资源分享师_1
-      - LT_youtube@资源分享师_2
-      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_13
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - US_youtube@资源分享师_14
       - US_youtube@资源分享师_15
-      - LU_youtube@资源分享师_1
-      - US_youtube@资源分享师_16
-      - US_youtube@资源分享师_17
-      - US_youtube@资源分享师_18
-      - NL_youtube@资源分享师_6
-      - LU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_7
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - US_youtube@资源分享师_19
-      - NL_youtube@资源分享师_10
       - JP_youtube@资源分享师_2
-      - UA_youtube@资源分享师_1
+      - RU_youtube@资源分享师_1
+      - IR_youtube@资源分享师_6
+      - US_youtube@资源分享师_16
+      - ZA_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - US_youtube@资源分享师_17
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_18
+      - JP_youtube@资源分享师_4
+      - US_youtube@资源分享师_19
       - US_youtube@资源分享师_20
-      - NL_youtube@资源分享师_11
       - US_youtube@资源分享师_21
       - US_youtube@资源分享师_22
+      - JP_youtube@资源分享师_5
       - US_youtube@资源分享师_23
-      - US_youtube@资源分享师_24
-      - GB_youtube@资源分享师_2
-      - ZA_youtube@资源分享师_1
-      - NL_youtube@资源分享师_12
-      - US_youtube@资源分享师_25
-      - ZA_youtube@资源分享师_2
-      - US_youtube@资源分享师_26
-      - LT_youtube@资源分享师_3
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_27
-      - NL_youtube@资源分享师_13
-      - SI_youtube@资源分享师_1
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_28
-      - LT_youtube@资源分享师_4
-      - CN_youtube@资源分享师_3
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_14
-      - US_youtube@资源分享师_29
-      - GB_youtube@资源分享师_5
-      - GB_youtube@资源分享师_6
-      - US_youtube@资源分享师_30
-      - SI_youtube@资源分享师_2
-      - NL_youtube@资源分享师_15
-      - US_youtube@资源分享师_31
-      - NL_youtube@资源分享师_16
-      - US_youtube@资源分享师_32
-      - AU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_17
-      - NL_youtube@资源分享师_18
-      - US_youtube@资源分享师_33
-      - AU_youtube@资源分享师_3
-      - FR_youtube@资源分享师_1
-      - US_youtube@资源分享师_34
-      - CN_youtube@资源分享师_4
-      - AM_youtube@资源分享师_1
-      - BG_youtube@资源分享师_1
-      - AU_youtube@资源分享师_4
-      - IN_youtube@资源分享师_2
-      - US_youtube@资源分享师_35
-      - GB_youtube@资源分享师_7
-      - NL_youtube@资源分享师_19
-      - UA_youtube@资源分享师_2
-      - DE_youtube@资源分享师_1
-      - NL_youtube@资源分享师_20
-      - SI_youtube@资源分享师_3
-      - AU_youtube@资源分享师_5
-      - GB_youtube@资源分享师_8
-      - GB_youtube@资源分享师_9
-      - US_youtube@资源分享师_36
-      - GB_youtube@资源分享师_10
-      - DK_youtube@资源分享师_1
       - RU_youtube@资源分享师_2
-      - ES_youtube@资源分享师_1
-      - MD_youtube@资源分享师
-      - US_youtube@资源分享师_37
-      - LT_youtube@资源分享师_5
-      - US_youtube@资源分享师_38
-      - FR_youtube@资源分享师_2
-      - US_youtube@资源分享师_39
-      - US_youtube@资源分享师_40
-      - UA_youtube@资源分享师_3
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - JP_youtube@资源分享师_9
+      - US_youtube@资源分享师_24
+      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - JP_youtube@资源分享师_10
+      - US_youtube@资源分享师_28
+      - JP_youtube@资源分享师_11
+      - US_youtube@资源分享师_29
+      - JP_youtube@资源分享师_12
+      - JP_youtube@资源分享师_13
+      - JP_youtube@资源分享师_14
+      - JP_youtube@资源分享师_15
+      - JP_youtube@资源分享师_16
+      - US_youtube@资源分享师_30
+      - JP_youtube@资源分享师_17
+      - JP_youtube@资源分享师_18
+      - JP_youtube@资源分享师_19
+      - JP_youtube@资源分享师_20
+      - DK_youtube@资源分享师_1
+      - BG_youtube@资源分享师
+      - JP_youtube@资源分享师_21
+      - US_youtube@资源分享师_31
+      - US_youtube@资源分享师_32
+      - JP_youtube@资源分享师_22
+      - US_youtube@资源分享师_33
+      - NL_youtube@资源分享师_2
+      - JP_youtube@资源分享师_23
+      - JP_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - JP_youtube@资源分享师_26
+      - US_youtube@资源分享师_34
+      - US_youtube@资源分享师_35
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_36
+      - JP_youtube@资源分享师_28
+      - JP_youtube@资源分享师_29
       - RU_youtube@资源分享师_3
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - UA_youtube@资源分享师_4
-      - LT_youtube@资源分享师_6
-      - LT_youtube@资源分享师_7
-      - RU_youtube@资源分享师_4
-      - LT_youtube@资源分享师_8
-      - NL_youtube@资源分享师_21
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_10
+      - US_youtube@资源分享师_38
+      - JP_youtube@资源分享师_30
+      - JP_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - JP_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - JP_youtube@资源分享师_35
+      - AU_youtube@资源分享师
+      - US_youtube@资源分享师_39
+      - JP_youtube@资源分享师_36
+      - US_youtube@资源分享师_40
       - US_youtube@资源分享师_41
-      - UA_youtube@资源分享师_5
-      - CN_youtube@资源分享师_8
       - US_youtube@资源分享师_42
       - US_youtube@资源分享师_43
-      - JP_youtube@资源分享师_4
-      - JP_youtube@资源分享师_5
-      - LT_youtube@资源分享师_9
-      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_37
       - US_youtube@资源分享师_44
-      - NL_youtube@资源分享师_22
-      - RU_youtube@资源分享师_5
+      - JP_youtube@资源分享师_38
       - US_youtube@资源分享师_45
-      - GB_youtube@资源分享师_11
       - US_youtube@资源分享师_46
+      - JP_youtube@资源分享师_39
       - US_youtube@资源分享师_47
-      - JP_youtube@资源分享师_7
-      - LT_youtube@资源分享师_10
+      - ES_youtube@资源分享师
+      - JP_youtube@资源分享师_40
       - US_youtube@资源分享师_48
       - US_youtube@资源分享师_49
       - US_youtube@资源分享师_50
-      - LU_youtube@资源分享师_3
-      - LT_youtube@资源分享师_11
       - US_youtube@资源分享师_51
-      - DE_youtube@资源分享师_2
-      - AU_youtube@资源分享师_6
+      - JP_youtube@资源分享师_41
+      - RU_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_52
       - US_youtube@资源分享师_53
-      - RU_youtube@资源分享师_6
-      - GB_youtube@资源分享师_12
-      - DE_youtube@资源分享师_3
-      - JP_youtube@资源分享师_8
-      - JP_youtube@资源分享师_9
       - US_youtube@资源分享师_54
-      - ZA_youtube@资源分享师_3
       - US_youtube@资源分享师_55
       - US_youtube@资源分享师_56
       - US_youtube@资源分享师_57
-      - ES_youtube@资源分享师_2
-      - JP_youtube@资源分享师_10
-      - UA_youtube@资源分享师_6
-      - LU_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
+      - JP_youtube@资源分享师_42
       - US_youtube@资源分享师_58
+      - JP_youtube@资源分享师_43
       - US_youtube@资源分享师_59
-      - JP_youtube@资源分享师_11
+      - JP_youtube@资源分享师_44
+      - CN_youtube@资源分享师_20
       - US_youtube@资源分享师_60
-      - NL_youtube@资源分享师_23
-      - GB_youtube@资源分享师_13
-      - GB_youtube@资源分享师_14
-      - ZA_youtube@资源分享师_4
-      - DK_youtube@资源分享师_2
-      - JP_youtube@资源分享师_12
-      - JP_youtube@资源分享师_13
       - US_youtube@资源分享师_61
       - US_youtube@资源分享师_62
-      - NL_youtube@资源分享师_24
-      - IN_youtube@资源分享师_3
-      - NL_youtube@资源分享师_25
+      - unKnow_youtube@资源分享师_1
       - US_youtube@资源分享师_63
-      - GB_youtube@资源分享师_15
+      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_64
-      - RO_youtube@资源分享师_1
       - US_youtube@资源分享师_65
+      - TR_youtube@资源分享师
+      - unKnow_youtube@资源分享师_2
       - US_youtube@资源分享师_66
-      - RO_youtube@资源分享师_2
-      - JP_youtube@资源分享师_14
-      - RU_youtube@资源分享师_7
       - US_youtube@资源分享师_67
       - US_youtube@资源分享师_68
+      - JP_youtube@资源分享师_45
+      - unKnow_youtube@资源分享师_3
       - US_youtube@资源分享师_69
-      - AT_youtube@资源分享师
       - US_youtube@资源分享师_70
-      - GB_youtube@资源分享师_16
-      - AU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_8
-      - UA_youtube@资源分享师_7
       - US_youtube@资源分享师_71
-      - GB_youtube@资源分享师_17
-      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师_72
-      - CN_youtube@资源分享师_11
+      - JP_youtube@资源分享师_46
       - US_youtube@资源分享师_73
+      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_74
-      - NL_youtube@资源分享师_26
-      - FR_youtube@资源分享师_3
-      - JP_youtube@资源分享师_15
-      - UA_youtube@资源分享师_8
       - US_youtube@资源分享师_75
-      - NL_youtube@资源分享师_27
-      - GB_youtube@资源分享师_18
-      - AM_youtube@资源分享师_2
-      - DK_youtube@资源分享师_3
+      - SI_youtube@资源分享师_1
       - US_youtube@资源分享师_76
       - US_youtube@资源分享师_77
-      - BR_youtube@资源分享师_1
       - US_youtube@资源分享师_78
+      - JP_youtube@资源分享师_47
+      - GB_youtube@资源分享师_2
       - US_youtube@资源分享师_79
-      - BG_youtube@资源分享师_2
-      - GB_youtube@资源分享师_19
-      - GB_youtube@资源分享师_20
       - US_youtube@资源分享师_80
+      - JP_youtube@资源分享师_48
       - US_youtube@资源分享师_81
-      - RU_youtube@资源分享师_9
       - US_youtube@资源分享师_82
-      - LT_youtube@资源分享师_12
+      - DE_youtube@资源分享师
       - US_youtube@资源分享师_83
       - US_youtube@资源分享师_84
-      - AM_youtube@资源分享师_3
-      - NL_youtube@资源分享师_28
       - US_youtube@资源分享师_85
+      - RU_youtube@资源分享师_5
       - US_youtube@资源分享师_86
-      - BR_youtube@资源分享师_2
       - US_youtube@资源分享师_87
       - US_youtube@资源分享师_88
-      - NL_youtube@资源分享师_29
-      - JP_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - NL_youtube@资源分享师_30
-      - JP_youtube@资源分享师_17
-      - CA_youtube@资源分享师
+      - LT_youtube@资源分享师_1
       - US_youtube@资源分享师_89
       - US_youtube@资源分享师_90
       - US_youtube@资源分享师_91
       - US_youtube@资源分享师_92
+      - unKnow_youtube@资源分享师_4
+      - US_youtube@资源分享师_93
+      - JP_youtube@资源分享师_49
+      - US_youtube@资源分享师_94
+      - US_youtube@资源分享师_95
+      - US_youtube@资源分享师_96
+      - DK_youtube@资源分享师_2
+      - LT_youtube@资源分享师_2
+      - US_youtube@资源分享师_97
+      - US_youtube@资源分享师_98
+      - US_youtube@资源分享师_99
+      - JP_youtube@资源分享师_50
+      - US_youtube@资源分享师_100
+      - BR_youtube@资源分享师
+      - US_youtube@资源分享师_101
+      - US_youtube@资源分享师_102
+      - US_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - US_youtube@资源分享师_105
+      - NL_youtube@资源分享师_5
+      - RU_youtube@资源分享师_6
+      - US_youtube@资源分享师_106
+      - US_youtube@资源分享师_107
+      - US_youtube@资源分享师_108
+      - US_youtube@资源分享师_109
+      - US_youtube@资源分享师_110
+      - US_youtube@资源分享师_111
+      - DK_youtube@资源分享师_3
+      - US_youtube@资源分享师_112
+      - US_youtube@资源分享师_113
+      - US_youtube@资源分享师_114
+      - US_youtube@资源分享师_115
+      - US_youtube@资源分享师_116
+      - US_youtube@资源分享师_117
+      - US_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_120
+      - US_youtube@资源分享师_121
+      - US_youtube@资源分享师_122
+      - LT_youtube@资源分享师_3
+      - SI_youtube@资源分享师_2
+      - SI_youtube@资源分享师_3
+      - FR_youtube@资源分享师
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - CN_youtube@资源分享师_28
+      - CN_youtube@资源分享师_29
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -3641,249 +3045,225 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - US_youtube@资源分享师_1
-      - IN_youtube@资源分享师_1
       - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - IR_youtube@资源分享师_1
+      - IR_youtube@资源分享师_2
       - US_youtube@资源分享师_4
+      - IR_youtube@资源分享师_3
       - US_youtube@资源分享师_5
       - US_youtube@资源分享师_6
-      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_7
-      - LT_youtube@资源分享师_1
-      - NL_youtube@资源分享师_2
       - US_youtube@资源分享师_8
       - US_youtube@资源分享师_9
-      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_11
       - US_youtube@资源分享师_12
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_1
-      - US_youtube@资源分享师_14
-      - NL_youtube@资源分享师_5
-      - CN_youtube@资源分享师_2
       - JP_youtube@资源分享师_1
-      - LT_youtube@资源分享师_2
-      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_13
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - US_youtube@资源分享师_14
       - US_youtube@资源分享师_15
-      - LU_youtube@资源分享师_1
-      - US_youtube@资源分享师_16
-      - US_youtube@资源分享师_17
-      - US_youtube@资源分享师_18
-      - NL_youtube@资源分享师_6
-      - LU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_7
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - US_youtube@资源分享师_19
-      - NL_youtube@资源分享师_10
       - JP_youtube@资源分享师_2
-      - UA_youtube@资源分享师_1
+      - RU_youtube@资源分享师_1
+      - IR_youtube@资源分享师_6
+      - US_youtube@资源分享师_16
+      - ZA_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - US_youtube@资源分享师_17
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_18
+      - JP_youtube@资源分享师_4
+      - US_youtube@资源分享师_19
       - US_youtube@资源分享师_20
-      - NL_youtube@资源分享师_11
       - US_youtube@资源分享师_21
       - US_youtube@资源分享师_22
+      - JP_youtube@资源分享师_5
       - US_youtube@资源分享师_23
-      - US_youtube@资源分享师_24
-      - GB_youtube@资源分享师_2
-      - ZA_youtube@资源分享师_1
-      - NL_youtube@资源分享师_12
-      - US_youtube@资源分享师_25
-      - ZA_youtube@资源分享师_2
-      - US_youtube@资源分享师_26
-      - LT_youtube@资源分享师_3
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_27
-      - NL_youtube@资源分享师_13
-      - SI_youtube@资源分享师_1
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_28
-      - LT_youtube@资源分享师_4
-      - CN_youtube@资源分享师_3
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_14
-      - US_youtube@资源分享师_29
-      - GB_youtube@资源分享师_5
-      - GB_youtube@资源分享师_6
-      - US_youtube@资源分享师_30
-      - SI_youtube@资源分享师_2
-      - NL_youtube@资源分享师_15
-      - US_youtube@资源分享师_31
-      - NL_youtube@资源分享师_16
-      - US_youtube@资源分享师_32
-      - AU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_17
-      - NL_youtube@资源分享师_18
-      - US_youtube@资源分享师_33
-      - AU_youtube@资源分享师_3
-      - FR_youtube@资源分享师_1
-      - US_youtube@资源分享师_34
-      - CN_youtube@资源分享师_4
-      - AM_youtube@资源分享师_1
-      - BG_youtube@资源分享师_1
-      - AU_youtube@资源分享师_4
-      - IN_youtube@资源分享师_2
-      - US_youtube@资源分享师_35
-      - GB_youtube@资源分享师_7
-      - NL_youtube@资源分享师_19
-      - UA_youtube@资源分享师_2
-      - DE_youtube@资源分享师_1
-      - NL_youtube@资源分享师_20
-      - SI_youtube@资源分享师_3
-      - AU_youtube@资源分享师_5
-      - GB_youtube@资源分享师_8
-      - GB_youtube@资源分享师_9
-      - US_youtube@资源分享师_36
-      - GB_youtube@资源分享师_10
-      - DK_youtube@资源分享师_1
       - RU_youtube@资源分享师_2
-      - ES_youtube@资源分享师_1
-      - MD_youtube@资源分享师
-      - US_youtube@资源分享师_37
-      - LT_youtube@资源分享师_5
-      - US_youtube@资源分享师_38
-      - FR_youtube@资源分享师_2
-      - US_youtube@资源分享师_39
-      - US_youtube@资源分享师_40
-      - UA_youtube@资源分享师_3
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - JP_youtube@资源分享师_9
+      - US_youtube@资源分享师_24
+      - NL_youtube@资源分享师_1
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - JP_youtube@资源分享师_10
+      - US_youtube@资源分享师_28
+      - JP_youtube@资源分享师_11
+      - US_youtube@资源分享师_29
+      - JP_youtube@资源分享师_12
+      - JP_youtube@资源分享师_13
+      - JP_youtube@资源分享师_14
+      - JP_youtube@资源分享师_15
+      - JP_youtube@资源分享师_16
+      - US_youtube@资源分享师_30
+      - JP_youtube@资源分享师_17
+      - JP_youtube@资源分享师_18
+      - JP_youtube@资源分享师_19
+      - JP_youtube@资源分享师_20
+      - DK_youtube@资源分享师_1
+      - BG_youtube@资源分享师
+      - JP_youtube@资源分享师_21
+      - US_youtube@资源分享师_31
+      - US_youtube@资源分享师_32
+      - JP_youtube@资源分享师_22
+      - US_youtube@资源分享师_33
+      - NL_youtube@资源分享师_2
+      - JP_youtube@资源分享师_23
+      - JP_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - JP_youtube@资源分享师_26
+      - US_youtube@资源分享师_34
+      - US_youtube@资源分享师_35
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_36
+      - JP_youtube@资源分享师_28
+      - JP_youtube@资源分享师_29
       - RU_youtube@资源分享师_3
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - UA_youtube@资源分享师_4
-      - LT_youtube@资源分享师_6
-      - LT_youtube@资源分享师_7
-      - RU_youtube@资源分享师_4
-      - LT_youtube@资源分享师_8
-      - NL_youtube@资源分享师_21
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_10
+      - US_youtube@资源分享师_38
+      - JP_youtube@资源分享师_30
+      - JP_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - JP_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - JP_youtube@资源分享师_35
+      - AU_youtube@资源分享师
+      - US_youtube@资源分享师_39
+      - JP_youtube@资源分享师_36
+      - US_youtube@资源分享师_40
       - US_youtube@资源分享师_41
-      - UA_youtube@资源分享师_5
-      - CN_youtube@资源分享师_8
       - US_youtube@资源分享师_42
       - US_youtube@资源分享师_43
-      - JP_youtube@资源分享师_4
-      - JP_youtube@资源分享师_5
-      - LT_youtube@资源分享师_9
-      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_37
       - US_youtube@资源分享师_44
-      - NL_youtube@资源分享师_22
-      - RU_youtube@资源分享师_5
+      - JP_youtube@资源分享师_38
       - US_youtube@资源分享师_45
-      - GB_youtube@资源分享师_11
       - US_youtube@资源分享师_46
+      - JP_youtube@资源分享师_39
       - US_youtube@资源分享师_47
-      - JP_youtube@资源分享师_7
-      - LT_youtube@资源分享师_10
+      - ES_youtube@资源分享师
+      - JP_youtube@资源分享师_40
       - US_youtube@资源分享师_48
       - US_youtube@资源分享师_49
       - US_youtube@资源分享师_50
-      - LU_youtube@资源分享师_3
-      - LT_youtube@资源分享师_11
       - US_youtube@资源分享师_51
-      - DE_youtube@资源分享师_2
-      - AU_youtube@资源分享师_6
+      - JP_youtube@资源分享师_41
+      - RU_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
       - US_youtube@资源分享师_52
       - US_youtube@资源分享师_53
-      - RU_youtube@资源分享师_6
-      - GB_youtube@资源分享师_12
-      - DE_youtube@资源分享师_3
-      - JP_youtube@资源分享师_8
-      - JP_youtube@资源分享师_9
       - US_youtube@资源分享师_54
-      - ZA_youtube@资源分享师_3
       - US_youtube@资源分享师_55
       - US_youtube@资源分享师_56
       - US_youtube@资源分享师_57
-      - ES_youtube@资源分享师_2
-      - JP_youtube@资源分享师_10
-      - UA_youtube@资源分享师_6
-      - LU_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
+      - JP_youtube@资源分享师_42
       - US_youtube@资源分享师_58
+      - JP_youtube@资源分享师_43
       - US_youtube@资源分享师_59
-      - JP_youtube@资源分享师_11
+      - JP_youtube@资源分享师_44
+      - CN_youtube@资源分享师_20
       - US_youtube@资源分享师_60
-      - NL_youtube@资源分享师_23
-      - GB_youtube@资源分享师_13
-      - GB_youtube@资源分享师_14
-      - ZA_youtube@资源分享师_4
-      - DK_youtube@资源分享师_2
-      - JP_youtube@资源分享师_12
-      - JP_youtube@资源分享师_13
       - US_youtube@资源分享师_61
       - US_youtube@资源分享师_62
-      - NL_youtube@资源分享师_24
-      - IN_youtube@资源分享师_3
-      - NL_youtube@资源分享师_25
+      - unKnow_youtube@资源分享师_1
       - US_youtube@资源分享师_63
-      - GB_youtube@资源分享师_15
+      - NL_youtube@资源分享师_3
       - US_youtube@资源分享师_64
-      - RO_youtube@资源分享师_1
       - US_youtube@资源分享师_65
+      - TR_youtube@资源分享师
+      - unKnow_youtube@资源分享师_2
       - US_youtube@资源分享师_66
-      - RO_youtube@资源分享师_2
-      - JP_youtube@资源分享师_14
-      - RU_youtube@资源分享师_7
       - US_youtube@资源分享师_67
       - US_youtube@资源分享师_68
+      - JP_youtube@资源分享师_45
+      - unKnow_youtube@资源分享师_3
       - US_youtube@资源分享师_69
-      - AT_youtube@资源分享师
       - US_youtube@资源分享师_70
-      - GB_youtube@资源分享师_16
-      - AU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_8
-      - UA_youtube@资源分享师_7
       - US_youtube@资源分享师_71
-      - GB_youtube@资源分享师_17
-      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师_72
-      - CN_youtube@资源分享师_11
+      - JP_youtube@资源分享师_46
       - US_youtube@资源分享师_73
+      - NL_youtube@资源分享师_4
       - US_youtube@资源分享师_74
-      - NL_youtube@资源分享师_26
-      - FR_youtube@资源分享师_3
-      - JP_youtube@资源分享师_15
-      - UA_youtube@资源分享师_8
       - US_youtube@资源分享师_75
-      - NL_youtube@资源分享师_27
-      - GB_youtube@资源分享师_18
-      - AM_youtube@资源分享师_2
-      - DK_youtube@资源分享师_3
+      - SI_youtube@资源分享师_1
       - US_youtube@资源分享师_76
       - US_youtube@资源分享师_77
-      - BR_youtube@资源分享师_1
       - US_youtube@资源分享师_78
+      - JP_youtube@资源分享师_47
+      - GB_youtube@资源分享师_2
       - US_youtube@资源分享师_79
-      - BG_youtube@资源分享师_2
-      - GB_youtube@资源分享师_19
-      - GB_youtube@资源分享师_20
       - US_youtube@资源分享师_80
+      - JP_youtube@资源分享师_48
       - US_youtube@资源分享师_81
-      - RU_youtube@资源分享师_9
       - US_youtube@资源分享师_82
-      - LT_youtube@资源分享师_12
+      - DE_youtube@资源分享师
       - US_youtube@资源分享师_83
       - US_youtube@资源分享师_84
-      - AM_youtube@资源分享师_3
-      - NL_youtube@资源分享师_28
       - US_youtube@资源分享师_85
+      - RU_youtube@资源分享师_5
       - US_youtube@资源分享师_86
-      - BR_youtube@资源分享师_2
       - US_youtube@资源分享师_87
       - US_youtube@资源分享师_88
-      - NL_youtube@资源分享师_29
-      - JP_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - NL_youtube@资源分享师_30
-      - JP_youtube@资源分享师_17
-      - CA_youtube@资源分享师
+      - LT_youtube@资源分享师_1
       - US_youtube@资源分享师_89
       - US_youtube@资源分享师_90
       - US_youtube@资源分享师_91
       - US_youtube@资源分享师_92
+      - unKnow_youtube@资源分享师_4
+      - US_youtube@资源分享师_93
+      - JP_youtube@资源分享师_49
+      - US_youtube@资源分享师_94
+      - US_youtube@资源分享师_95
+      - US_youtube@资源分享师_96
+      - DK_youtube@资源分享师_2
+      - LT_youtube@资源分享师_2
+      - US_youtube@资源分享师_97
+      - US_youtube@资源分享师_98
+      - US_youtube@资源分享师_99
+      - JP_youtube@资源分享师_50
+      - US_youtube@资源分享师_100
+      - BR_youtube@资源分享师
+      - US_youtube@资源分享师_101
+      - US_youtube@资源分享师_102
+      - US_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - US_youtube@资源分享师_105
+      - NL_youtube@资源分享师_5
+      - RU_youtube@资源分享师_6
+      - US_youtube@资源分享师_106
+      - US_youtube@资源分享师_107
+      - US_youtube@资源分享师_108
+      - US_youtube@资源分享师_109
+      - US_youtube@资源分享师_110
+      - US_youtube@资源分享师_111
+      - DK_youtube@资源分享师_3
+      - US_youtube@资源分享师_112
+      - US_youtube@资源分享师_113
+      - US_youtube@资源分享师_114
+      - US_youtube@资源分享师_115
+      - US_youtube@资源分享师_116
+      - US_youtube@资源分享师_117
+      - US_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_120
+      - US_youtube@资源分享师_121
+      - US_youtube@资源分享师_122
+      - LT_youtube@资源分享师_3
+      - SI_youtube@资源分享师_2
+      - SI_youtube@资源分享师_3
+      - FR_youtube@资源分享师
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - CN_youtube@资源分享师_28
+      - CN_youtube@资源分享师_29
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
