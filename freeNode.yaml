@@ -1,5 +1,5 @@
 # 模版名称：ACL4SSR_Mini.ini
-# 配置生成日期：2025-09-17 09:11:39
+# 配置生成日期：2025-09-19 11:30:33
 
 mixed-port: 7890
 allow-lan: false
@@ -50,177 +50,109 @@ tun:
     - 1.0.0.1
 
 proxies:
+  - type: vless
+    name: US_youtube@资源分享师_1
+    server: nl.horizongatex.org
+    port: 2087
+    uuid: 2988936d-3c33-4572-900c-40df2c63faa0
+    network: ws
+    servername: nl.horizongatex.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: IR_youtube@资源分享师_1
+    server: 188.245.126.149
+    port: 10600
+    uuid: 9a5a1134-4675-41af-8e4e-dab56016f5f7
+    network: tcp
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_2
+    server: 104.21.8.248
+    port: 443
+    uuid: 26c47597-5b9b-4b98-9b92-6faf9e87c890
+    network: ws
+    servername: c61d64ac-4c1c-9d9f-24ea-6ac4fcc2.19890614.qzz.io
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /qcjtxIzwY3z5Po5RMaCK6TdQ6q
+      headers:
+        Host: c61d64ac-4c1c-9d9f-24ea-6ac4fcc2.19890614.qzz.io
+  - type: vless
+    name: US_youtube@资源分享师_3
+    server: axe.soyet2j.ir
+    port: 2053
+    uuid: 48792cee-bfab-474c-9505-6413228c64c4
+    network: ws
+    servername: mojito.soyet2j.ir
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /homepage?ed=2560
+      headers:
+        Host: mojito.soyet2j.ir
   - type: vmess
-    name: VN_youtube@资源分享师
-    server: vn4.viefast.net
+    name: AU_youtube@资源分享师_1
+    server: malaysia.viefast.net
     port: 80
     uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
     alterId: 0
     network: ws
     cipher: auto
-    servername: www.linemo.jp
+    servername: www.bing.com
     ws-opts:
-      path: /viefast
+      path: /viefastvpnv23
       headers:
-        Host: www.linemo.jp
-  - type: vmess
-    name: CN_youtube@资源分享师 _1
-    server: 8.218.204.70
-    port: 47885
-    uuid: 797e2228-0d01-4b35-ed82-551ab4f3faee
-    alterId: 0
+        Host: www.bing.com
+  - type: vless
+    name: US_youtube@资源分享师_5
+    server: 51.89.2.113
+    port: 8081
+    uuid: f924939e-2d9a-46b7-a3c2-67a225b7c027
     network: tcp
-    cipher: auto
-    servername: ""
-  - type: vless
-    name: US_youtube@资源分享师 _1
-    server: cf.090227.xyz
-    port: 80
-    uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
-    network: ws
-    servername: xn--wgv71a.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
+    servername: yahoo.com
     encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: xn--wgv71a.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
+    reality-opts:
+      public-key: nT4JZTeUVOw-XZ-htdqbFi1je4ZHeg-ALICrDk2usFE
+      short-id: d19d7a2d3da8595a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
   - type: vless
-    name: US_youtube@资源分享师 _2
-    server: all.tellmethetrue.shop
+    name: FR_youtube@资源分享师_1
+    server: 45.81.58.168
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
     network: grpc
-    servername: pqh29v7.hiddendom.shop
+    servername: pqh24v3.hiddendom.shop
     tls: true
     encryption: none
-  - type: vmess
-    name: CN_youtube@资源分享师 _2
-    server: tunnel.gzcloud.shop
-    port: 47093
-    uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: DK_youtube@资源分享师 _1
-    server: csgo.com
-    port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
-    alterId: 0
+    alpn:
+      - h2
+  - type: vless
+    name: US_youtube@资源分享师_6
+    server: nl.horizongatex.org
+    port: 2087
+    uuid: 2988936d-3c33-4572-900c-40df2c63faa0
     network: ws
-    cipher: auto
-    servername: cdn-node-oss-91.paofu.de
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        Host: cdn-node-oss-91.paofu.de
-  - type: vmess
-    name: CN_youtube@资源分享师 _3
-    server: 8.218.204.70
-    port: 47885
-    uuid: 797e2228-0d01-4b35-ed82-551ab4f3faee
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: DK_youtube@资源分享师 _2
-    server: pubg.ac
-    port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: cdn-node-oss-91.paofu.de
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        Host: cdn-node-oss-91.paofu.de
-  - type: vmess
-    name: DK_youtube@资源分享师 _3
-    server: pubg.ac
-    port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: cdn-node-oss-91.paofu.de
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        Host: cdn-node-oss-91.paofu.de
-  - type: vmess
-    name: DK_youtube@资源分享师 _4
-    server: fastcup.net
-    port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: cdn-node-oss-91.paofu.de
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        Host: cdn-node-oss-91.paofu.de
-  - type: vmess
-    name: CN_youtube@资源分享师 _4
-    server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-    port: 80
-    uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+    servername: nl.horizongatex.org
+    tls: true
+    encryption: none
     ws-opts:
       path: /
-      headers:
-        Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
   - type: vless
-    name: UA_youtube@资源分享师 _1
-    server: 31.43.179.38
+    name: FR_youtube@资源分享师_2
+    server: 45.81.58.168
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
     network: grpc
-    servername: pqh23v4.hiddendom.shop
+    servername: pqh24v3.hiddendom.shop
     tls: true
     encryption: none
-  - type: trojan
-    name: US_youtube@资源分享师 _3
-    server: 3.64.195.143
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
   - type: vless
-    name: US_youtube@资源分享师 _4
-    server: cf.090227.xyz
-    port: 80
-    uuid: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
-    network: ws
-    servername: xn--wgv71a.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
-    encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: xn--wgv71a.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
-  - type: vmess
-    name: DK_youtube@资源分享师 _5
-    server: csgo.com
-    port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: cdn-node-oss-91.paofu.de
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        Host: cdn-node-oss-91.paofu.de
-  - type: vless
-    name: AU_youtube@资源分享师 _1
+    name: AU_youtube@资源分享师_2
     server: 103.133.1.227
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
@@ -228,17 +160,398 @@ proxies:
     servername: pqh24v3.hiddendom.shop
     tls: true
     encryption: none
-  - type: vmess
-    name: CN_youtube@资源分享师 _5
-    server: 43.100.129.210
-    port: 21405
-    uuid: 36edd2c0-f90e-4812-e0c4-336587422f15
-    alterId: 0
+  - type: vless
+    name: US_youtube@资源分享师_7
+    server: famous-danger.oneeat.co
+    port: 80
+    uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+  - type: vless
+    name: US_youtube@资源分享师_8
+    server: famous-danger.oneeat.co
+    port: 80
+    uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: RU_youtube@资源分享师_1
+    server: 185.59.218.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_9
+    server: all.tellmethetrue.shop
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v7.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_10
+    server: 167.68.42.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_11
+    server: 147.185.161.234
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: GB_youtube@资源分享师_1
+    server: 45.8.211.71
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_14
+    server: 51.195.31.95
+    port: 80
+    uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
+    network: ws
+    servername: wWw.speEDtEST.NeT
+    encryption: none
+    ws-opts:
+      path: /wslinws
+      headers:
+        Host: wWw.speEDtEST.NeT
+  - type: vless
+    name: GB_youtube@资源分享师_2
+    server: 45.8.211.71
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_16
+    server: 154.83.2.167
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: LT_youtube@资源分享师_1
+    server: 89.116.180.248
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_17
+    server: famous-danger.oneeat.co
+    port: 80
+    uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: trojan
+    name: DE_youtube@资源分享师_1
+    server: 18.198.130.48
+    port: 22222
+    password: telegram-id-privatevpns
     network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_18
+    server: all.tellmethetrue.shop
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v7.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: LT_youtube@资源分享师_2
+    server: 89.116.180.248
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vmess
+    name: JP_youtube@资源分享师_1
+    server: 8.209.200.91
+    port: 40916
+    uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+    alterId: 0
+    network: kcp
+    cipher: auto
+    servername: ""
+  - type: vmess
+    name: US_youtube@资源分享师_19
+    server: 47.239.183.87
+    port: 28590
+    uuid: d75481c7-b5c8-40a9-811a-02b709e74816
+    alterId: 0
+    network: kcp
     cipher: auto
     servername: ""
   - type: vless
-    name: US_youtube@资源分享师 _5
+    name: FR_youtube@资源分享师_3
+    server: 94.140.0.141
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vmess
+    name: JP_youtube@资源分享师_2
+    server: 8.209.200.91
+    port: 40916
+    uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+    alterId: 0
+    network: kcp
+    cipher: auto
+    servername: ""
+  - type: vmess
+    name: FR_youtube@资源分享师_4
+    server: 51.77.220.179
+    port: 443
+    uuid: 47b781a1-d02f-473e-a51d-8436ae73f265
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_20
+    server: 184.174.80.250
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vmess
+    name: US_youtube@资源分享师_21
+    server: 47.239.183.87
+    port: 28590
+    uuid: d75481c7-b5c8-40a9-811a-02b709e74816
+    alterId: 0
+    network: kcp
+    cipher: auto
+    servername: ""
+  - type: vmess
+    name: JP_youtube@资源分享师_3
+    server: 8.209.200.91
+    port: 40916
+    uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+    alterId: 0
+    network: kcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: RU_youtube@资源分享师_2
+    server: 94.247.142.103
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: NL_youtube@资源分享师_1
+    server: poland20.clearorbitllc.com
+    port: 443
+    uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
+    network: tcp
+    servername: poland20.clearorbitllc.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
+      short-id: 2a22
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - type: vless
+    name: UA_youtube@资源分享师_1
+    server: 31.43.179.38
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: unKnow_youtube@资源分享师_1
+    server: 103.160.204.145
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: ZA_youtube@资源分享师
+    server: 102.177.189.251
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+    alpn:
+      - h2
+  - type: vless
+    name: FR_youtube@资源分享师_5
+    server: 146.59.116.149
+    port: 24881
+    uuid: a8e10cc2-3de0-4558-b303-bfba2a5919b3
+    network: grpc
+    encryption: none
+  - type: vless
+    name: SI_youtube@资源分享师_1
+    server: 92.53.188.36
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: DE_youtube@资源分享师_2
+    server: 141.94.213.115
+    port: 25365
+    uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
+    network: grpc
+    encryption: none
+  - type: vmess
+    name: FR_youtube@资源分享师_6
+    server: 51.77.220.179
+    port: 443
+    uuid: 47b781a1-d02f-473e-a51d-8436ae73f265
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    tls: true
+  - type: vless
+    name: RU_youtube@资源分享师_3
+    server: 185.59.218.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: hysteria2
+    name: IR_youtube@资源分享师_2
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b66c248f-1644-4c27-9fe1-23a5aca78800
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: DE_youtube@资源分享师_3
+    server: 185.135.9.144
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_22
+    server: 104.129.167.161
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vmess
+    name: FR_youtube@资源分享师_7
+    server: 51.77.220.179
+    port: 443
+    uuid: 47b781a1-d02f-473e-a51d-8436ae73f265
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: BlaZE-FR-179.BlAzeSeRvERs1.Site
+    tls: true
+  - type: vless
+    name: IR_youtube@资源分享师_3
+    server: 85.133.206.49
+    port: 48008
+    uuid: 2ecc1c66-0808-174c-e51a-5274c1428b3c
+    network: tcp
+    encryption: none
+  - type: vless
+    name: UA_youtube@资源分享师_2
+    server: 31.43.179.38
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+    alpn:
+      - h2
+  - type: vless
+    name: US_youtube@资源分享师_23
+    server: 638937381606723301.brussels-drc-tusacaf.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_24
+    server: 69.84.182.18
+    port: 443
+    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
+    network: ws
+    servername: cdn-node-oss-93.paofu.de
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        Host: cdn-node-oss-93.paofu.de
+  - type: vless
+    name: US_youtube@资源分享师_25
     server: 104.18.20.69
     port: 443
     uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
@@ -251,33 +564,427 @@ proxies:
       headers:
         Host: cdn-node-oss-93.paofu.de
   - type: vless
-    name: US_youtube@资源分享师 _6
-    server: 69.84.182.18
+    name: US_youtube@资源分享师_26
+    server: 172.66.40.99
     port: 443
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
+    uuid: 433ec07e-672b-47f6-bcd5-fc7793ce4393
     network: ws
-    servername: cdn-node-oss-93.paofu.de
+    servername: 2free2.aparatir.xyz
     tls: true
     encryption: none
     ws-opts:
-      path: /profile/telegram@ssrsub
+      path: /admin
       headers:
-        Host: cdn-node-oss-93.paofu.de
+        Host: 2free2.aparatir.xyz
+  - type: vless
+    name: US_youtube@资源分享师_27
+    server: 167.68.42.168
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_8
+    server: 141.227.136.183
+    port: 15819
+    uuid: 1f90ea31-15a1-4896-bfff-c83f74ce0f7e
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_28
+    server: 104.129.167.161
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
   - type: vmess
-    name: DK_youtube@资源分享师 _6
-    server: fastcup.net
+    name: AU_youtube@资源分享师_3
+    server: www.tiktok.com.jp4.viefast.net
     port: 80
-    uuid: 1d9442f8-f4d6-46d0-8c81-69d4f404f8a5
+    uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
     alterId: 0
     network: ws
     cipher: auto
-    servername: cdn-node-oss-91.paofu.de
+    servername: www.linemo.jp
     ws-opts:
-      path: /profile/telegram@ssrsub
+      path: /viefast
       headers:
-        Host: cdn-node-oss-91.paofu.de
+        Host: www.linemo.jp
   - type: vless
-    name: NL_youtube@资源分享师 _1
+    name: US_youtube@资源分享师_29
+    server: 147.185.161.234
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_30
+    server: 104.16.142.193
+    port: 8880
+    uuid: 2a2f8790-99ab-4788-985c-0fe5627af2a9
+    network: ws
+    servername: SomeNotificationsChangeYourLife.EiNetwork.News.
+    encryption: none
+    ws-opts:
+      path: Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
+      headers:
+        Host: SomeNotificationsChangeYourLife.EiNetwork.News.
+  - type: vless
+    name: FR_youtube@资源分享师_9
+    server: 141.227.178.223
+    port: 34935
+    uuid: 4d7fdb66-eff3-4949-882b-d1115e1bc1e4
+    network: grpc
+    encryption: none
+  - type: hysteria2
+    name: IR_youtube@资源分享师_4
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: IR_youtube@资源分享师_5
+    server: luckypingout.bikofile.com
+    port: 48008
+    uuid: 2ecc1c66-0808-174c-e51a-5274c1428b3c
+    network: tcp
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_10
+    server: 141.227.164.136
+    port: 52095
+    uuid: 08a3325b-479e-4eae-a3e8-ba35ed880786
+    network: grpc
+    encryption: none
+  - type: vless
+    name: GB_youtube@资源分享师_3
+    server: 45.8.211.86
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: RU_youtube@资源分享师_4
+    server: 94.247.142.103
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_31
+    server: 51.89.230.180
+    port: 25365
+    uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
+    network: grpc
+    encryption: none
+  - type: trojan
+    name: FR_youtube@资源分享师_11
+    server: 35.181.17.181
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_32
+    server: 638934442807081605.stockholm-drc-tusacae.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: hysteria2
+    name: US_youtube@资源分享师_33
+    server: 70.34.215.221
+    port: 20335
+    password: 80747420-96c4-4a2f-83e6-eea4e46beb09
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: U1wBrYQyFm
+    sni: drhystuichdfy.samanidempire.org
+  - type: vless
+    name: US_youtube@资源分享师_34
+    server: handsome-device.oneeat.co
+    port: 80
+    uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: FR_youtube@资源分享师_12
+    server: 141.227.134.150
+    port: 45649
+    uuid: 89f5b64b-4ef3-4a51-9b9d-55a41c463055
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_35
+    server: 104.17.148.22
+    port: 8443
+    uuid: 655a6041-0ab8-4a92-ad79-f0dba34f5ace
+    network: http
+    servername: uk-09.allhubb.info
+    tls: true
+    encryption: none
+    http-opts:
+      path: /
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+  - type: vless
+    name: CN_youtube@资源分享师_1
+    server: 89.44.242.222
+    port: 46822
+    uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+    network: tcp
+    encryption: none
+  - type: vless
+    name: CN_youtube@资源分享师_2
+    server: 89.44.242.222
+    port: 29495
+    uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+    network: tcp
+    encryption: none
+  - type: vless
+    name: SG_youtube@资源分享师
+    server: 139.59.224.206
+    port: 11588
+    uuid: 7700a1f2-7612-49cf-9736-f2f79189b624
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /FREE By Tharuwa (0767597317)
+  - type: vless
+    name: US_youtube@资源分享师_36
+    server: 51.178.162.48
+    port: 57447
+    uuid: efa0a105-87ae-4063-b724-1729592c9f05
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_13
+    server: 141.227.140.224
+    port: 59185
+    uuid: 6c8b1551-128c-44f2-82d3-1065ad0c2024
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_37
+    server: all.tellmethetrue.shop
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh28v1.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: CN_youtube@资源分享师_3
+    server: 89.44.242.222
+    port: 29500
+    uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+    network: tcp
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_38
+    server: backus1.dh03.shop
+    port: 443
+    uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+    network: ws
+    servername: backus1.dh03.shop
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /higate
+      headers:
+        Host: backus1.dh03.shop
+  - type: vless
+    name: FR_youtube@资源分享师_14
+    server: 141.227.174.30
+    port: 32657
+    uuid: 24244970-2b14-47e6-b0c1-95cecc9bcc3c
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_15
+    server: 141.227.134.150
+    port: 45649
+    uuid: 89f5b64b-4ef3-4a51-9b9d-55a41c463055
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_16
+    server: 141.227.140.224
+    port: 59185
+    uuid: 6c8b1551-128c-44f2-82d3-1065ad0c2024
+    network: grpc
+    encryption: none
+  - type: vless
+    name: AU_youtube@资源分享师_4
+    server: 103.133.1.227
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+    alpn:
+      - h2
+  - type: vless
+    name: FR_youtube@资源分享师_17
+    server: 141.227.174.30
+    port: 32657
+    uuid: 24244970-2b14-47e6-b0c1-95cecc9bcc3c
+    network: grpc
+    encryption: none
+  - type: vless
+    name: BE_youtube@资源分享师_1
+    server: 57.130.11.49
+    port: 25365
+    uuid: bd610ee9-54fd-4f7c-b3e0-4b3114ee2c95
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_18
+    server: 141.227.168.179
+    port: 39703
+    uuid: 29e646a4-2fda-4495-83cc-e041b660fa21
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_19
+    server: 141.227.166.22
+    port: 11230
+    uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
+    network: grpc
+    encryption: none
+  - type: hysteria2
+    name: US_youtube@资源分享师_39
+    server: gavazn.lnmarketplace.net
+    port: 45000
+    password: Telegram-->@Ln2Ray
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Telegram-->@Ln2Ray
+    sni: gavazn.55994421.xyz
+  - type: vless
+    name: US_youtube@资源分享师_40
+    server: 104.21.36.57
+    port: 443
+    uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+    network: ws
+    servername: mirror.fullmargintraders.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+      headers:
+        Host: mirror.fullmargintraders.com
+  - type: hysteria2
+    name: IR_youtube@资源分享师_6
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: hysteria2
+    name: IR_youtube@资源分享师_7
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: hysteria2
+    name: IR_youtube@资源分享师_8
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: hysteria2
+    name: IR_youtube@资源分享师_9
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vmess
+    name: US_youtube@资源分享师_41
+    server: 149.104.15.178
+    port: 21201
+    uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: IN_youtube@资源分享师
+    server: 206.189.135.13
+    port: 41856
+    uuid: 895a39fb-6c32-49af-b04d-efecc1f6c5fb
+    network: tcp
+    encryption: none
+  - type: vless
+    name: BE_youtube@资源分享师_2
+    server: 57.129.92.155
+    port: 36626
+    uuid: 4981b98f-4943-4083-83aa-00b028f57a18
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_42
+    server: 51.89.230.180
+    port: 25365
+    uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
+    network: grpc
+    encryption: none
+  - type: vless
+    name: FR_youtube@资源分享师_20
+    server: 141.227.172.56
+    port: 25365
+    uuid: 59076475-a35e-4b5b-8e60-da7f215f618b
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_43
+    server: handsome-device.oneeat.co
+    port: 80
+    uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: US_youtube@资源分享师_44
+    server: 638936661878829611.ahvaz-drc-tusacae.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: SI_youtube@资源分享师_2
+    server: 92.53.188.36
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: NL_youtube@资源分享师_2
     server: 45.131.7.127
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
@@ -286,8 +993,103 @@ proxies:
     tls: true
     encryption: none
   - type: vless
-    name: LT_youtube@资源分享师 _1
-    server: 89.116.180.248
+    name: FR_youtube@资源分享师_21
+    server: 141.227.180.107
+    port: 47626
+    uuid: b6a6c154-c5eb-42b9-a90b-3d1eec7b8d7e
+    network: grpc
+    encryption: none
+  - type: vless
+    name: AU_youtube@资源分享师_5
+    server: 103.133.1.227
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: trojan
+    name: FR_youtube@资源分享师_22
+    server: 15.237.152.250
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: FR_youtube@资源分享师_23
+    server: 141.227.176.48
+    port: 10227
+    uuid: ba1fc4fe-c5a5-4ad3-b4e2-f02ecffd992e
+    network: grpc
+    encryption: none
+  - type: hysteria2
+    name: IR_youtube@资源分享师_10
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vmess
+    name: US_youtube@资源分享师_45
+    server: 149.104.15.178
+    port: 21201
+    uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: US_youtube@资源分享师_46
+    server: crazy-identity.oneeat.co
+    port: 80
+    uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+    network: ws
+    servername: crazy-identity.oneeat.co
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: crazy-identity.oneeat.co
+  - type: vless
+    name: US_youtube@资源分享师_47
+    server: crazy-identity.oneeat.co
+    port: 80
+    uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+    network: ws
+    servername: crazy-identity.oneeat.co
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: crazy-identity.oneeat.co
+  - type: vmess
+    name: CN_youtube@资源分享师_4
+    server: 183.240.180.3
+    port: 34141
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: hysteria2
+    name: IR_youtube@资源分享师_11
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: hysteria2
+    name: IR_youtube@资源分享师_12
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: GB_youtube@资源分享师_4
+    server: 45.8.211.86
     port: 443
     uuid: 401374e6-df77-41fb-f638-dad8184f175b
     network: grpc
@@ -295,161 +1097,231 @@ proxies:
     tls: true
     encryption: none
   - type: vless
-    name: US_youtube@资源分享师 _7
-    server: 51.89.230.180
-    port: 25365
-    uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
-    network: grpc
-    encryption: none
-  - type: ss
-    name: CN_youtube@资源分享师 _6
-    server: 154.205.134.132
-    port: 8443
-    cipher: chacha20-ietf-poly1305
-    password: g8BWaY8FYhKfVMOT9N0IIB
-  - type: vmess
-    name: IR_youtube@资源分享师
-    server: 91.98.83.114
-    port: 8585
-    uuid: 9ec1ebd0-34e2-40b0-a681-3cb0c2d51953
-    alterId: 0
+    name: VN_youtube@资源分享师
+    server: 103.9.77.61
+    port: 46922
+    uuid: ac2474ac-6716-458a-a301-bce29698186a
     network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: US_youtube@资源分享师 _8
-    server: qqqqqqqqqqqqaaaa.www890604.dpdns.org
-    port: 443
-    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: qqqqqqqqqqqqaaaa.www890604.dpdns.org
-    ws-opts:
-      path: /6We3U9Df1WGxgFnoFPw1
-      headers:
-        Host: qqqqqqqqqqqqaaaa.www890604.dpdns.org
-    tls: true
-  - type: vless
-    name: CN_youtube@资源分享师 _7
-    server: 89.44.242.222
-    port: 46822
-    uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
-    network: tcp
+    servername: vinahost.vn
     encryption: none
-  - type: vless
-    name: BE_youtube@资源分享师 _1
-    server: 57.129.92.155
-    port: 36626
-    uuid: 4981b98f-4943-4083-83aa-00b028f57a18
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _1
-    server: 141.227.136.183
-    port: 15819
-    uuid: 1f90ea31-15a1-4896-bfff-c83f74ce0f7e
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _2
-    server: 141.227.172.56
-    port: 25365
-    uuid: 59076475-a35e-4b5b-8e60-da7f215f618b
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _3
-    server: 141.227.134.153
-    port: 25365
-    uuid: 0a708abd-79b3-420d-a564-e8a1ff580f83
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _4
-    server: 141.227.140.224
-    port: 59185
-    uuid: 6c8b1551-128c-44f2-82d3-1065ad0c2024
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _5
-    server: 141.227.174.30
-    port: 32657
-    uuid: 24244970-2b14-47e6-b0c1-95cecc9bcc3c
-    network: grpc
-    encryption: none
-  - type: vless
-    name: FR_youtube@资源分享师 _6
-    server: 141.227.166.22
-    port: 11230
-    uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
-    network: grpc
-    encryption: none
-  - type: vless
-    name: DE_youtube@资源分享师 _1
-    server: 141.94.213.115
-    port: 25365
-    uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
-    network: grpc
-    encryption: none
-  - type: vmess
-    name: BE_youtube@资源分享师 _2
-    server: kampong.org
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
-    network: ws
-    cipher: auto
-    servername: kampong.org
-    ws-opts:
-      path: linkvws
-      headers:
-        Host: kampong.org
-    tls: true
-  - type: trojan
-    name: US_youtube@资源分享师 _9
-    server: 63.179.233.247
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
+    reality-opts:
+      public-key: Mxg3aGXzUTgR2rA-DtugBRm-4RBVLlSNWNMRKALZBDo
+      short-id: 9ed1d241f0
+    client-fingerprint: chrome
+  - type: hysteria2
+    name: IR_youtube@资源分享师_13
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
     skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: US_youtube@资源分享师 _10
-    server: 149.104.15.178
-    port: 21201
-    uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: ID_youtube@资源分享师 _1
-    server: 202.155.138.154
-    port: 44979
-    uuid: 8e03466d-2170-4fd0-d672-7c468075f808
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: NL_youtube@资源分享师 _2
-    server: 45.144.174.60
-    port: 22111
-    uuid: f60ba5f8-2fe5-4446-a00c-b5cf03383349
-    alterId: 0
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: US_youtube@资源分享师_48
+    server: backus1.dh03.shop
+    port: 443
+    uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
     network: ws
-    cipher: auto
-    servername: 45.144.174.60
+    servername: backus1.dh03.shop
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /higate
+  - type: vless
+    name: US_youtube@资源分享师_49
+    server: 638936661878827845.ahvaz-drc-tusacae.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_50
+    server: crazy-identity.oneeat.co
+    port: 80
+    uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+    network: ws
+    servername: crazy-identity.oneeat.co
+    encryption: none
     ws-opts:
       path: /
       headers:
-        Host: 45.144.174.60
+        Host: crazy-identity.oneeat.co
+  - type: vless
+    name: IR_youtube@资源分享师_14
+    server: 193.151.135.21
+    port: 44443
+    uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+    network: tcp
+    servername: www.speedtest.net
+    encryption: none
+    reality-opts:
+      public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: US_youtube@资源分享师_51
+    server: crazy-identity.oneeat.co
+    port: 80
+    uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /
+  - type: vless
+    name: NL_youtube@资源分享师_3
+    server: 45.159.218.165
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh24v3.hiddendom.shop
+    tls: true
+    encryption: none
+    alpn:
+      - h2
+  - type: vless
+    name: US_youtube@资源分享师_52
+    server: 3h-unitedstates3.09vpn.com
+    port: 8443
+    uuid: 48572af1-d091-457b-a86e-4a457e99927f
+    network: ws
+    servername: 3h-unitedstates3.09vpn.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /vless/
   - type: trojan
-    name: KR_youtube@资源分享师 _1
-    server: 13.124.19.111
+    name: US_youtube@资源分享师_53
+    server: 3.38.245.188
+    port: 6688
+    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+    network: tcp
+    sni: baidu.com
+    skip-cert-verify: true
+    tls: true
+  - type: hysteria2
+    name: IR_youtube@资源分享师_15
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: US_youtube@资源分享师_54
+    server: 51.195.31.95
+    port: 80
+    uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
+    network: ws
+    servername: wWw.speEDtEST.NeT
+    encryption: none
+    ws-opts:
+      path: /wslinws
+      headers:
+        Host: wWw.speEDtEST.NeT
+  - type: hysteria2
+    name: US_youtube@资源分享师_55
+    server: yapc-1.adamhayward.co.uk
+    port: 35000
+    password: Yet-Another-Public-Config-1
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+  - type: vless
+    name: RU_youtube@资源分享师_5
+    server: 185.39.207.121
+    port: 443
+    uuid: 6035325d-399a-5148-9126-29cedfd5966a
+    network: tcp
+    servername: outlook.office.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
+      short-id: 0fa84b90
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: AZ_youtube@资源分享师
+    server: 88.151.192.52
+    port: 443
+    uuid: 6035325d-399a-5148-9126-29cedfd5966a
+    network: tcp
+    servername: outlook.office.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Cb6bPG7NAEde5yU3KChBcx_iF3n7UHakfvi6aWT0ezY
+      short-id: dcaebc34
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: hysteria2
+    name: IR_youtube@资源分享师_16
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: hysteria2
+    name: IR_youtube@资源分享师_17
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
+  - type: vless
+    name: US_youtube@资源分享师_56
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    network: tcp
+    servername: i2pd.website
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: US_youtube@资源分享师_57
+    server: 104.21.36.57
+    port: 443
+    uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+    network: ws
+    servername: mirror.fullmargintraders.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+      headers:
+        Host: mirror.fullmargintraders.com
+  - type: vmess
+    name: CN_youtube@资源分享师_5
+    server: 183.240.180.47
+    port: 52512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: NL_youtube@资源分享师_4
+    server: 45.130.214.192
+    port: 20992
+    uuid: e0042666-497b-4fde-bf4a-c5281df24d15
+    network: tcp
+    encryption: none
+  - type: vmess
+    name: CN_youtube@资源分享师_6
+    server: 183.240.180.47
+    port: 52512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: trojan
+    name: US_youtube@资源分享师_58
+    server: 3.112.202.244
     port: 6688
     password: 1a17b19d-4896-4531-af79-6e91d8ef8228
     network: tcp
@@ -457,82 +1329,92 @@ proxies:
     skip-cert-verify: true
     tls: true
   - type: vmess
-    name: NL_youtube@资源分享师 _3
-    server: 45.144.174.60
-    port: 22111
-    uuid: 5d16ac2f-bb01-4b6e-8255-d6f3591448ec
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 45.144.174.60
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.174.60
-  - type: vmess
-    name: CN_youtube@资源分享师 _8
-    server: 43.100.129.210
-    port: 21405
-    uuid: 36edd2c0-f90e-4812-e0c4-336587422f15
+    name: unKnow_youtube@资源分享师_2
+    server: ppy-boardv2.02ijp4uos1.download
+    port: 26144
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
     alterId: 0
     network: tcp
     cipher: auto
     servername: ""
   - type: vmess
-    name: NL_youtube@资源分享师 _4
+    name: CN_youtube@资源分享师_7
+    server: 183.240.180.47
+    port: 52512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: hysteria2
+    name: US_youtube@资源分享师_59
+    server: drhystuichdfy.samanidempire.org
+    port: 20335
+    password: 80747420-96c4-4a2f-83e6-eea4e46beb09
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: U1wBrYQyFm
+    sni: drhystuichdfy.samanidempire.org
+  - type: vless
+    name: NL_youtube@资源分享师_5
+    server: 45.130.214.192
+    port: 20992
+    uuid: e0042666-497b-4fde-bf4a-c5281df24d15
+    network: tcp
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_60
+    server: narrow-passenger.oneeat.co
+    port: 80
+    uuid: 5a12794b-2125-46d7-a748-927a989faa04
+    network: ws
+    encryption: none
+    ws-opts:
+      path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+  - type: vless
+    name: NL_youtube@资源分享师_6
+    server: 45.131.7.127
+    port: 443
+    uuid: 401374e6-df77-41fb-f638-dad8184f175b
+    network: grpc
+    servername: pqh23v4.hiddendom.shop
+    tls: true
+    encryption: none
+  - type: vless
+    name: US_youtube@资源分享师_61
+    server: 198.62.62.229
+    port: 443
+    uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+    network: ws
+    servername: mirror.fullmargintraders.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+      headers:
+        Host: mirror.fullmargintraders.com
+  - type: vmess
+    name: NL_youtube@资源分享师_7
     server: 45.144.174.60
-    port: 22111
-    uuid: c5ed9583-9769-4947-a92d-a9074d04014b
+    port: 22113
+    uuid: 9661e432-c1c7-472e-89fe-2233e3f1fdf5
     alterId: 0
     network: ws
     cipher: auto
-    servername: 45.144.174.60
+    servername: ""
     ws-opts:
-      path: /
+      path: ""
       headers:
-        Host: 45.144.174.60
+        Host: ""
+  - type: hysteria2
+    name: IR_youtube@资源分享师_18
+    server: mf1.ylccloud.top
+    port: 16090
+    password: b6e2ca18-02d6-4b7d-b67e-dfe25a4f2fbc
+    skip-cert-verify: true
+    sni: mf1.ylccloud.top
   - type: vmess
-    name: BE_youtube@资源分享师 _3
-    server: kampong.org
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: kampong.org
-    ws-opts:
-      path: linkvws
-      headers:
-        Host: kampong.org
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师 _11
-    server: 172.67.113.218
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vless
-    name: US_youtube@资源分享师 _12
-    server: 162.159.251.118
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vmess
-    name: US_youtube@资源分享师 _13
+    name: US_youtube@资源分享师_62
     server: 149.104.15.178
     port: 21201
     uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
@@ -540,3322 +1422,366 @@ proxies:
     network: tcp
     cipher: auto
     servername: ""
-  - type: vmess
-    name: NL_youtube@资源分享师 _5
-    server: 45.144.174.60
-    port: 25156
-    uuid: 299f4d52-8ff6-444f-b2da-d05765461660
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 45.144.174.60
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.174.60
-  - type: vmess
-    name: NL_youtube@资源分享师 _6
-    server: 45.144.174.60
-    port: 23172
-    uuid: 9540a2a8-3497-43db-b074-46e6f051f502
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 45.144.174.60
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.174.60
-  - type: vmess
-    name: CN_youtube@资源分享师 _9
-    server: 123.58.203.92
-    port: 18872
-    uuid: edfe29a5-cc54-488d-a31d-ca71f39e38d4
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
   - type: vless
-    name: US_youtube@资源分享师 _14
-    server: 104.16.10.137
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_24
+    server: 141.227.172.56
+    port: 25365
+    uuid: 59076475-a35e-4b5b-8e60-da7f215f618b
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
   - type: vless
-    name: US_youtube@资源分享师 _15
-    server: 104.18.97.145
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_25
+    server: 141.227.176.48
+    port: 10227
+    uuid: ba1fc4fe-c5a5-4ad3-b4e2-f02ecffd992e
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vmess
-    name: ID_youtube@资源分享师 _2
-    server: 202.155.138.154
-    port: 44979
-    uuid: 8e03466d-2170-4fd0-d672-7c468075f808
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
   - type: vless
-    name: US_youtube@资源分享师 _16
-    server: 198.41.208.172
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_26
+    server: 141.227.166.22
+    port: 11230
+    uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
   - type: vless
-    name: US_youtube@资源分享师 _17
-    server: 162.159.251.118
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_27
+    server: 141.227.168.179
+    port: 39703
+    uuid: 29e646a4-2fda-4495-83cc-e041b660fa21
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
   - type: vless
-    name: US_youtube@资源分享师 _18
-    server: 198.41.208.172
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_28
+    server: 141.227.180.107
+    port: 47626
+    uuid: b6a6c154-c5eb-42b9-a90b-3d1eec7b8d7e
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
   - type: vless
-    name: US_youtube@资源分享师 _19
-    server: 172.67.121.166
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
+    name: FR_youtube@资源分享师_29
+    server: 141.227.164.136
+    port: 52095
+    uuid: 08a3325b-479e-4eae-a3e8-ba35ed880786
+    network: grpc
     encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vmess
-    name: CN_youtube@资源分享师 _10
-    server: 120.234.102.232
-    port: 46622
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: NL_youtube@资源分享师 _7
-    server: 45.144.174.60
-    port: 22111
-    uuid: 299f4d52-8ff6-444f-b2da-d05765461660
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 45.144.174.60
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.174.60
-  - type: vmess
-    name: NL_youtube@资源分享师 _8
-    server: 45.144.174.60
-    port: 22111
-    uuid: e881c886-6543-4e48-b68d-186feeb20a27
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 45.144.174.60
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.174.60
-  - type: trojan
-    name: CN_youtube@资源分享师 _11
-    server: 106.75.134.1
-    port: 12000
-    password: 68a1a760-d8c8-48cc-bffa-beb66125549f
-    network: tcp
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师 _20
-    server: 172.67.165.145
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vless
-    name: US_youtube@资源分享师 _21
-    server: 198.41.208.218
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vless
-    name: US_youtube@资源分享师 _22
-    server: 172.67.117.50
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vless
-    name: US_youtube@资源分享师 _23
-    server: 198.71.233.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _24
-    server: 198.71.191.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _25
-    server: 198.71.190.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _26
-    server: 198.71.189.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _27
-    server: 198.71.188.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _28
-    server: 198.62.62.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _29
-    server: 198.12.144.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: UA_youtube@资源分享师 _2
-    server: 195.245.221.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: RU_youtube@资源分享师 _1
-    server: 195.13.44.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: RU_youtube@资源分享师 _2
-    server: 193.233.21.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _30
-    server: 190.93.245.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _31
-    server: 190.93.244.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _9
-    server: 188.164.248.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: ES_youtube@资源分享师
-    server: 185.238.228.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _1
-    server: 185.162.229.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _2
-    server: 185.156.19.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: DE_youtube@资源分享师 _2
-    server: 185.16.110.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _32
-    server: 170.114.46.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _33
-    server: 170.114.45.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _34
-    server: 166.62.115.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _35
-    server: 166.62.114.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _36
-    server: 166.62.113.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _37
-    server: 166.62.112.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _38
-    server: 166.62.111.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _39
-    server: 166.62.110.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _40
-    server: 166.62.109.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _41
-    server: 166.62.108.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _42
-    server: 166.62.107.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _43
-    server: 166.62.106.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _44
-    server: 166.62.105.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _45
-    server: 166.62.104.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _46
-    server: 161.145.150.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _10
-    server: 160.153.168.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _11
-    server: 160.153.138.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _12
-    server: 160.153.137.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _13
-    server: 160.153.136.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _14
-    server: 160.153.1.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _47
-    server: 160.79.105.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _48
-    server: 160.79.104.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _49
-    server: 159.246.55.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _50
-    server: 159.112.235.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: CN_youtube@资源分享师 _12
-    server: 156.225.72.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _51
-    server: 155.46.213.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _52
-    server: 155.46.167.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: CN_youtube@资源分享师 _13
-    server: 154.219.5.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _53
-    server: 141.193.213.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: FR_youtube@资源分享师 _7
-    server: 141.11.202.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _54
-    server: 140.99.233.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _55
-    server: 135.84.76.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _56
-    server: 135.84.73.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _3
-    server: 109.176.239.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _57
-    server: 104.129.167.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: JP_youtube@资源分享师 _1
-    server: 103.245.229.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: JP_youtube@资源分享师 _2
-    server: 103.245.228.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: unKnow_youtube@资源分享师 _1
-    server: 103.169.142.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: AU_youtube@资源分享师 _2
-    server: 103.133.1.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: ZA_youtube@资源分享师 _1
-    server: 102.177.176.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: ZA_youtube@资源分享师 _2
-    server: 102.132.188.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: UA_youtube@资源分享师 _3
-    server: 91.124.127.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: LT_youtube@资源分享师 _2
-    server: 89.117.112.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: RU_youtube@资源分享师 _3
-    server: 77.232.140.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: unKnow_youtube@资源分享师 _2
-    server: 77.74.228.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: DE_youtube@资源分享师 _3
-    server: 77.37.33.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _58
-    server: 72.167.243.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _59
-    server: 72.167.242.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _60
-    server: 72.167.241.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _61
-    server: 72.167.230.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _62
-    server: 72.167.25.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: RU_youtube@资源分享师 _4
-    server: 46.254.93.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: RU_youtube@资源分享师 _5
-    server: 46.254.92.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _15
-    server: 45.153.7.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _16
-    server: 45.149.12.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: NL_youtube@资源分享师 _17
-    server: 37.0.6.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _4
-    server: 25.129.199.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _5
-    server: 25.129.198.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _6
-    server: 25.129.197.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: GB_youtube@资源分享师 _7
-    server: 25.25.25.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: IN_youtube@资源分享师 _1
-    server: 14.102.229.101
-    port: 2096
-    uuid: 74a4b068-0c12-45f0-a877-2ad78488a38e
-    network: ws
-    servername: qifei.daytimemeteor.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: qifei.daytimemeteor.top
-  - type: vless
-    name: US_youtube@资源分享师 _63
-    server: 216.205.52.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RU_youtube@资源分享师 _6
-    server: 213.219.247.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RO_youtube@资源分享师
-    server: 213.182.199.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _64
-    server: 198.177.57.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _65
-    server: 198.71.233.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _66
-    server: 198.71.232.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _67
-    server: 198.71.191.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _68
-    server: 198.71.190.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _69
-    server: 198.71.189.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _70
-    server: 198.71.188.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _71
-    server: 198.12.145.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _72
-    server: 198.12.144.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: DK_youtube@资源分享师 _7
-    server: 195.85.23.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RU_youtube@资源分享师 _7
-    server: 195.13.45.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RU_youtube@资源分享师 _8
-    server: 195.13.44.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _73
-    server: 192.169.221.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _74
-    server: 192.0.54.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: AU_youtube@资源分享师 _3
-    server: 185.207.197.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _18
-    server: 185.193.30.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: LT_youtube@资源分享师 _3
-    server: 185.148.104.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: FR_youtube@资源分享师 _8
-    server: 185.7.240.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _75
-    server: 184.174.80.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: BR_youtube@资源分享师
-    server: 181.214.1.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RU_youtube@资源分享师 _9
-    server: 176.124.223.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _76
-    server: 170.114.45.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _77
-    server: 167.68.42.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _78
-    server: 166.62.115.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _79
-    server: 166.62.114.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _80
-    server: 166.62.113.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _81
-    server: 166.62.112.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _82
-    server: 166.62.111.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _83
-    server: 166.62.110.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _84
-    server: 166.62.109.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _85
-    server: 166.62.108.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _86
-    server: 166.62.107.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _87
-    server: 166.62.106.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _88
-    server: 166.62.105.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _89
-    server: 166.62.104.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _90
-    server: 161.145.150.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _19
-    server: 160.153.168.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _20
-    server: 160.153.138.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _21
-    server: 160.153.137.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _22
-    server: 160.153.136.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _23
-    server: 160.153.1.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _24
-    server: 160.153.0.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _91
-    server: 160.79.105.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _92
-    server: 160.79.104.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _93
-    server: 159.246.55.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _94
-    server: 159.242.242.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _95
-    server: 159.112.235.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _14
-    server: 156.243.246.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: JP_youtube@资源分享师 _3
-    server: 156.238.19.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _96
-    server: 155.46.167.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _15
-    server: 154.198.173.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _16
-    server: 154.197.121.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _17
-    server: 154.197.108.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _18
-    server: 154.197.75.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: BG_youtube@资源分享师
-    server: 147.78.140.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _97
-    server: 141.193.213.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: FR_youtube@资源分享师 _9
-    server: 141.11.203.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _98
-    server: 135.84.76.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _99
-    server: 135.84.73.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: SG_youtube@资源分享师
-    server: 114.129.43.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: GB_youtube@资源分享师 _8
-    server: 109.176.239.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _100
-    server: 108.165.216.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _101
-    server: 104.238.70.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _102
-    server: 104.238.69.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _103
-    server: 104.129.165.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: JP_youtube@资源分享师 _4
-    server: 103.245.229.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: JP_youtube@资源分享师 _5
-    server: 103.245.228.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: unKnow_youtube@资源分享师 _3
-    server: 103.169.142.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: unKnow_youtube@资源分享师 _4
-    server: 103.160.204.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: AU_youtube@资源分享师 _4
-    server: 103.133.1.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: JP_youtube@资源分享师 _6
-    server: 103.116.7.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: ZA_youtube@资源分享师 _3
-    server: 102.177.176.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: ZA_youtube@资源分享师 _4
-    server: 102.132.188.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: FR_youtube@资源分享师 _10
-    server: 94.140.0.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: SI_youtube@资源分享师 _1
-    server: 92.53.191.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: SI_youtube@资源分享师 _2
-    server: 92.53.189.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: DE_youtube@资源分享师 _4
-    server: 91.206.71.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: LT_youtube@资源分享师 _4
-    server: 89.117.112.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: LT_youtube@资源分享师 _5
-    server: 89.116.250.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: LT_youtube@资源分享师 _6
-    server: 89.116.180.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: LT_youtube@资源分享师 _7
-    server: 88.216.69.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CA_youtube@资源分享师 _1
-    server: 74.49.215.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CA_youtube@资源分享师 _2
-    server: 74.49.214.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _104
-    server: 72.167.243.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _105
-    server: 72.167.242.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _106
-    server: 72.167.241.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _107
-    server: 72.167.230.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _108
-    server: 72.167.25.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _109
-    server: 66.45.118.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _110
-    server: 50.62.198.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _111
-    server: 50.62.175.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: UA_youtube@资源分享师 _4
-    server: 46.202.30.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _19
-    server: 45.192.222.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _25
-    server: 45.159.217.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _26
-    server: 45.131.6.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: GB_youtube@资源分享师 _9
-    server: 45.85.118.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: FR_youtube@资源分享师 _11
-    server: 45.80.111.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: FR_youtube@资源分享师 _12
-    server: 45.80.108.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _112
-    server: 45.40.155.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _113
-    server: 45.40.153.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _114
-    server: 45.40.144.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: NL_youtube@资源分享师 _27
-    server: 37.0.6.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _115
-    server: 31.12.75.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: CN_youtube@资源分享师 _20
-    server: 27.50.48.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: GB_youtube@资源分享师 _10
-    server: 25.129.199.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: GB_youtube@资源分享师 _11
-    server: 25.129.197.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: GB_youtube@资源分享师 _12
-    server: 25.26.27.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: IN_youtube@资源分享师 _2
-    server: 14.102.228.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: US_youtube@资源分享师 _116
-    server: 8.6.112.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: RU_youtube@资源分享师 _10
-    server: 5.182.84.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: DE_youtube@资源分享师 _5
-    server: 5.175.141.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: AZ_youtube@资源分享师
-    server: 5.10.246.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: vless
-    name: DE_youtube@资源分享师 _6
-    server: 5.10.215.101
-    port: 2096
-    uuid: ad7f1445-d916-49a0-88b8-d6adc9f5d26b
-    network: ws
-    servername: vless.901312.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: vless.901312.xyz
-  - type: trojan
-    name: CN_youtube@资源分享师 _21
-    server: 106.75.134.1
-    port: 12000
-    password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
-    network: tcp
-    sni: aliyun.com
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: US_youtube@资源分享师 _117
-    server: 172.67.113.218
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vless
-    name: US_youtube@资源分享师 _118
-    server: 172.67.121.166
-    port: 443
-    uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-    network: ws
-    servername: abc.vpneee.top
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /YnqGMcAt/
-      headers:
-        Host: abc.vpneee.top
-  - type: vmess
-    name: US_youtube@资源分享师 _119
-    server: 206.119.191.20
-    port: 7998
-    uuid: 984429ed-3959-4022-e248-cbcb19c96f9a
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师 _22
-    server: 106.75.134.1
-    port: 12000
-    password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
-    network: tcp
-    skip-cert-verify: true
-    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - VN_youtube@资源分享师
-      - CN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _2
-      - CN_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _4
-      - UA_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _4
-      - DK_youtube@资源分享师 _5
-      - AU_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _6
-      - DK_youtube@资源分享师 _6
-      - NL_youtube@资源分享师 _1
-      - LT_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _7
-      - CN_youtube@资源分享师 _6
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _7
-      - BE_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _2
-      - FR_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _5
-      - FR_youtube@资源分享师 _6
-      - DE_youtube@资源分享师 _1
-      - BE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _10
-      - ID_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _2
-      - KR_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _3
-      - CN_youtube@资源分享师 _8
-      - NL_youtube@资源分享师 _4
-      - BE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _15
-      - ID_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _16
-      - US_youtube@资源分享师 _17
-      - US_youtube@资源分享师 _18
-      - US_youtube@资源分享师 _19
-      - CN_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _7
-      - NL_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _20
-      - US_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _22
-      - US_youtube@资源分享师 _23
-      - US_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _25
-      - US_youtube@资源分享师 _26
-      - US_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _28
-      - US_youtube@资源分享师 _29
-      - UA_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _1
-      - RU_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _30
-      - US_youtube@资源分享师 _31
-      - NL_youtube@资源分享师 _9
-      - ES_youtube@资源分享师
-      - GB_youtube@资源分享师 _1
-      - GB_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _32
-      - US_youtube@资源分享师 _33
-      - US_youtube@资源分享师 _34
-      - US_youtube@资源分享师 _35
-      - US_youtube@资源分享师 _36
-      - US_youtube@资源分享师 _37
-      - US_youtube@资源分享师 _38
-      - US_youtube@资源分享师 _39
-      - US_youtube@资源分享师 _40
-      - US_youtube@资源分享师 _41
-      - US_youtube@资源分享师 _42
-      - US_youtube@资源分享师 _43
-      - US_youtube@资源分享师 _44
-      - US_youtube@资源分享师 _45
-      - US_youtube@资源分享师 _46
-      - NL_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _11
-      - NL_youtube@资源分享师 _12
-      - NL_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _47
-      - US_youtube@资源分享师 _48
-      - US_youtube@资源分享师 _49
-      - US_youtube@资源分享师 _50
-      - CN_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _51
-      - US_youtube@资源分享师 _52
-      - CN_youtube@资源分享师 _13
-      - US_youtube@资源分享师 _53
-      - FR_youtube@资源分享师 _7
-      - US_youtube@资源分享师 _54
-      - US_youtube@资源分享师 _55
-      - US_youtube@资源分享师 _56
-      - GB_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _57
-      - JP_youtube@资源分享师 _1
-      - JP_youtube@资源分享师 _2
-      - unKnow_youtube@资源分享师 _1
-      - AU_youtube@资源分享师 _2
-      - ZA_youtube@资源分享师 _1
-      - ZA_youtube@资源分享师 _2
-      - UA_youtube@资源分享师 _3
-      - LT_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _58
-      - US_youtube@资源分享师 _59
-      - US_youtube@资源分享师 _60
-      - US_youtube@资源分享师 _61
-      - US_youtube@资源分享师 _62
-      - RU_youtube@资源分享师 _4
-      - RU_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _15
-      - NL_youtube@资源分享师 _16
-      - NL_youtube@资源分享师 _17
-      - GB_youtube@资源分享师 _4
-      - GB_youtube@资源分享师 _5
-      - GB_youtube@资源分享师 _6
-      - GB_youtube@资源分享师 _7
-      - IN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _63
-      - RU_youtube@资源分享师 _6
-      - RO_youtube@资源分享师
-      - US_youtube@资源分享师 _64
-      - US_youtube@资源分享师 _65
-      - US_youtube@资源分享师 _66
-      - US_youtube@资源分享师 _67
-      - US_youtube@资源分享师 _68
-      - US_youtube@资源分享师 _69
-      - US_youtube@资源分享师 _70
-      - US_youtube@资源分享师 _71
-      - US_youtube@资源分享师 _72
-      - DK_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _73
-      - US_youtube@资源分享师 _74
-      - AU_youtube@资源分享师 _3
-      - NL_youtube@资源分享师 _18
-      - LT_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _75
-      - BR_youtube@资源分享师
-      - RU_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _76
-      - US_youtube@资源分享师 _77
-      - US_youtube@资源分享师 _78
-      - US_youtube@资源分享师 _79
-      - US_youtube@资源分享师 _80
-      - US_youtube@资源分享师 _81
-      - US_youtube@资源分享师 _82
-      - US_youtube@资源分享师 _83
-      - US_youtube@资源分享师 _84
-      - US_youtube@资源分享师 _85
-      - US_youtube@资源分享师 _86
-      - US_youtube@资源分享师 _87
-      - US_youtube@资源分享师 _88
-      - US_youtube@资源分享师 _89
-      - US_youtube@资源分享师 _90
-      - NL_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _20
-      - NL_youtube@资源分享师 _21
-      - NL_youtube@资源分享师 _22
-      - NL_youtube@资源分享师 _23
-      - NL_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _91
-      - US_youtube@资源分享师 _92
-      - US_youtube@资源分享师 _93
-      - US_youtube@资源分享师 _94
-      - US_youtube@资源分享师 _95
-      - CN_youtube@资源分享师 _14
-      - JP_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _96
-      - CN_youtube@资源分享师 _15
-      - CN_youtube@资源分享师 _16
-      - CN_youtube@资源分享师 _17
-      - CN_youtube@资源分享师 _18
-      - BG_youtube@资源分享师
-      - US_youtube@资源分享师 _97
-      - FR_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _98
-      - US_youtube@资源分享师 _99
+      - US_youtube@资源分享师_1
+      - IR_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
+      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_5
+      - FR_youtube@资源分享师_1
+      - US_youtube@资源分享师_6
+      - FR_youtube@资源分享师_2
+      - AU_youtube@资源分享师_2
+      - US_youtube@资源分享师_7
+      - US_youtube@资源分享师_8
+      - RU_youtube@资源分享师_1
+      - US_youtube@资源分享师_9
+      - US_youtube@资源分享师_10
+      - US_youtube@资源分享师_11
+      - GB_youtube@资源分享师_1
+      - US_youtube@资源分享师_14
+      - GB_youtube@资源分享师_2
+      - US_youtube@资源分享师_16
+      - LT_youtube@资源分享师_1
+      - US_youtube@资源分享师_17
+      - DE_youtube@资源分享师_1
+      - US_youtube@资源分享师_18
+      - LT_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
+      - US_youtube@资源分享师_19
+      - FR_youtube@资源分享师_3
+      - JP_youtube@资源分享师_2
+      - FR_youtube@资源分享师_4
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - JP_youtube@资源分享师_3
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_1
+      - UA_youtube@资源分享师_1
+      - unKnow_youtube@资源分享师_1
+      - ZA_youtube@资源分享师
+      - FR_youtube@资源分享师_5
+      - SI_youtube@资源分享师_1
+      - DE_youtube@资源分享师_2
+      - FR_youtube@资源分享师_6
+      - RU_youtube@资源分享师_3
+      - IR_youtube@资源分享师_2
+      - DE_youtube@资源分享师_3
+      - US_youtube@资源分享师_22
+      - FR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_3
+      - UA_youtube@资源分享师_2
+      - US_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - FR_youtube@资源分享师_8
+      - US_youtube@资源分享师_28
+      - AU_youtube@资源分享师_3
+      - US_youtube@资源分享师_29
+      - US_youtube@资源分享师_30
+      - FR_youtube@资源分享师_9
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - FR_youtube@资源分享师_10
+      - GB_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_31
+      - FR_youtube@资源分享师_11
+      - US_youtube@资源分享师_32
+      - US_youtube@资源分享师_33
+      - US_youtube@资源分享师_34
+      - FR_youtube@资源分享师_12
+      - US_youtube@资源分享师_35
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
       - SG_youtube@资源分享师
-      - GB_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _100
-      - US_youtube@资源分享师 _101
-      - US_youtube@资源分享师 _102
-      - US_youtube@资源分享师 _103
-      - JP_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _5
-      - unKnow_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _4
-      - AU_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _6
-      - ZA_youtube@资源分享师 _3
-      - ZA_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _10
-      - SI_youtube@资源分享师 _1
-      - SI_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _5
-      - LT_youtube@资源分享师 _6
-      - LT_youtube@资源分享师 _7
-      - CA_youtube@资源分享师 _1
-      - CA_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _104
-      - US_youtube@资源分享师 _105
-      - US_youtube@资源分享师 _106
-      - US_youtube@资源分享师 _107
-      - US_youtube@资源分享师 _108
-      - US_youtube@资源分享师 _109
-      - US_youtube@资源分享师 _110
-      - US_youtube@资源分享师 _111
-      - UA_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _25
-      - NL_youtube@资源分享师 _26
-      - GB_youtube@资源分享师 _9
-      - FR_youtube@资源分享师 _11
-      - FR_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _112
-      - US_youtube@资源分享师 _113
-      - US_youtube@资源分享师 _114
-      - NL_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _115
-      - CN_youtube@资源分享师 _20
-      - GB_youtube@资源分享师 _10
-      - GB_youtube@资源分享师 _11
-      - GB_youtube@资源分享师 _12
-      - IN_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _116
-      - RU_youtube@资源分享师 _10
-      - DE_youtube@资源分享师 _5
+      - US_youtube@资源分享师_36
+      - FR_youtube@资源分享师_13
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_38
+      - FR_youtube@资源分享师_14
+      - FR_youtube@资源分享师_15
+      - FR_youtube@资源分享师_16
+      - AU_youtube@资源分享师_4
+      - FR_youtube@资源分享师_17
+      - BE_youtube@资源分享师_1
+      - FR_youtube@资源分享师_18
+      - FR_youtube@资源分享师_19
+      - US_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - IR_youtube@资源分享师_6
+      - IR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_8
+      - IR_youtube@资源分享师_9
+      - US_youtube@资源分享师_41
+      - IN_youtube@资源分享师
+      - BE_youtube@资源分享师_2
+      - US_youtube@资源分享师_42
+      - FR_youtube@资源分享师_20
+      - US_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - SI_youtube@资源分享师_2
+      - NL_youtube@资源分享师_2
+      - FR_youtube@资源分享师_21
+      - AU_youtube@资源分享师_5
+      - FR_youtube@资源分享师_22
+      - FR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_10
+      - US_youtube@资源分享师_45
+      - US_youtube@资源分享师_46
+      - US_youtube@资源分享师_47
+      - CN_youtube@资源分享师_4
+      - IR_youtube@资源分享师_11
+      - IR_youtube@资源分享师_12
+      - GB_youtube@资源分享师_4
+      - VN_youtube@资源分享师
+      - IR_youtube@资源分享师_13
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - US_youtube@资源分享师_50
+      - IR_youtube@资源分享师_14
+      - US_youtube@资源分享师_51
+      - NL_youtube@资源分享师_3
+      - US_youtube@资源分享师_52
+      - US_youtube@资源分享师_53
+      - IR_youtube@资源分享师_15
+      - US_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - RU_youtube@资源分享师_5
       - AZ_youtube@资源分享师
-      - DE_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _117
-      - US_youtube@资源分享师 _118
-      - US_youtube@资源分享师 _119
-      - CN_youtube@资源分享师 _22
+      - IR_youtube@资源分享师_16
+      - IR_youtube@资源分享师_17
+      - US_youtube@资源分享师_56
+      - US_youtube@资源分享师_57
+      - CN_youtube@资源分享师_5
+      - NL_youtube@资源分享师_4
+      - CN_youtube@资源分享师_6
+      - US_youtube@资源分享师_58
+      - unKnow_youtube@资源分享师_2
+      - CN_youtube@资源分享师_7
+      - US_youtube@资源分享师_59
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_60
+      - NL_youtube@资源分享师_6
+      - US_youtube@资源分享师_61
+      - NL_youtube@资源分享师_7
+      - IR_youtube@资源分享师_18
+      - US_youtube@资源分享师_62
+      - FR_youtube@资源分享师_24
+      - FR_youtube@资源分享师_25
+      - FR_youtube@资源分享师_26
+      - FR_youtube@资源分享师_27
+      - FR_youtube@资源分享师_28
+      - FR_youtube@资源分享师_29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
-      - VN_youtube@资源分享师
-      - CN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _2
-      - CN_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _4
-      - UA_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _4
-      - DK_youtube@资源分享师 _5
-      - AU_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _6
-      - DK_youtube@资源分享师 _6
-      - NL_youtube@资源分享师 _1
-      - LT_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _7
-      - CN_youtube@资源分享师 _6
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _7
-      - BE_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _2
-      - FR_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _5
-      - FR_youtube@资源分享师 _6
-      - DE_youtube@资源分享师 _1
-      - BE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _10
-      - ID_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _2
-      - KR_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _3
-      - CN_youtube@资源分享师 _8
-      - NL_youtube@资源分享师 _4
-      - BE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _15
-      - ID_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _16
-      - US_youtube@资源分享师 _17
-      - US_youtube@资源分享师 _18
-      - US_youtube@资源分享师 _19
-      - CN_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _7
-      - NL_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _20
-      - US_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _22
-      - US_youtube@资源分享师 _23
-      - US_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _25
-      - US_youtube@资源分享师 _26
-      - US_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _28
-      - US_youtube@资源分享师 _29
-      - UA_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _1
-      - RU_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _30
-      - US_youtube@资源分享师 _31
-      - NL_youtube@资源分享师 _9
-      - ES_youtube@资源分享师
-      - GB_youtube@资源分享师 _1
-      - GB_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _32
-      - US_youtube@资源分享师 _33
-      - US_youtube@资源分享师 _34
-      - US_youtube@资源分享师 _35
-      - US_youtube@资源分享师 _36
-      - US_youtube@资源分享师 _37
-      - US_youtube@资源分享师 _38
-      - US_youtube@资源分享师 _39
-      - US_youtube@资源分享师 _40
-      - US_youtube@资源分享师 _41
-      - US_youtube@资源分享师 _42
-      - US_youtube@资源分享师 _43
-      - US_youtube@资源分享师 _44
-      - US_youtube@资源分享师 _45
-      - US_youtube@资源分享师 _46
-      - NL_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _11
-      - NL_youtube@资源分享师 _12
-      - NL_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _47
-      - US_youtube@资源分享师 _48
-      - US_youtube@资源分享师 _49
-      - US_youtube@资源分享师 _50
-      - CN_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _51
-      - US_youtube@资源分享师 _52
-      - CN_youtube@资源分享师 _13
-      - US_youtube@资源分享师 _53
-      - FR_youtube@资源分享师 _7
-      - US_youtube@资源分享师 _54
-      - US_youtube@资源分享师 _55
-      - US_youtube@资源分享师 _56
-      - GB_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _57
-      - JP_youtube@资源分享师 _1
-      - JP_youtube@资源分享师 _2
-      - unKnow_youtube@资源分享师 _1
-      - AU_youtube@资源分享师 _2
-      - ZA_youtube@资源分享师 _1
-      - ZA_youtube@资源分享师 _2
-      - UA_youtube@资源分享师 _3
-      - LT_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _58
-      - US_youtube@资源分享师 _59
-      - US_youtube@资源分享师 _60
-      - US_youtube@资源分享师 _61
-      - US_youtube@资源分享师 _62
-      - RU_youtube@资源分享师 _4
-      - RU_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _15
-      - NL_youtube@资源分享师 _16
-      - NL_youtube@资源分享师 _17
-      - GB_youtube@资源分享师 _4
-      - GB_youtube@资源分享师 _5
-      - GB_youtube@资源分享师 _6
-      - GB_youtube@资源分享师 _7
-      - IN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _63
-      - RU_youtube@资源分享师 _6
-      - RO_youtube@资源分享师
-      - US_youtube@资源分享师 _64
-      - US_youtube@资源分享师 _65
-      - US_youtube@资源分享师 _66
-      - US_youtube@资源分享师 _67
-      - US_youtube@资源分享师 _68
-      - US_youtube@资源分享师 _69
-      - US_youtube@资源分享师 _70
-      - US_youtube@资源分享师 _71
-      - US_youtube@资源分享师 _72
-      - DK_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _73
-      - US_youtube@资源分享师 _74
-      - AU_youtube@资源分享师 _3
-      - NL_youtube@资源分享师 _18
-      - LT_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _75
-      - BR_youtube@资源分享师
-      - RU_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _76
-      - US_youtube@资源分享师 _77
-      - US_youtube@资源分享师 _78
-      - US_youtube@资源分享师 _79
-      - US_youtube@资源分享师 _80
-      - US_youtube@资源分享师 _81
-      - US_youtube@资源分享师 _82
-      - US_youtube@资源分享师 _83
-      - US_youtube@资源分享师 _84
-      - US_youtube@资源分享师 _85
-      - US_youtube@资源分享师 _86
-      - US_youtube@资源分享师 _87
-      - US_youtube@资源分享师 _88
-      - US_youtube@资源分享师 _89
-      - US_youtube@资源分享师 _90
-      - NL_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _20
-      - NL_youtube@资源分享师 _21
-      - NL_youtube@资源分享师 _22
-      - NL_youtube@资源分享师 _23
-      - NL_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _91
-      - US_youtube@资源分享师 _92
-      - US_youtube@资源分享师 _93
-      - US_youtube@资源分享师 _94
-      - US_youtube@资源分享师 _95
-      - CN_youtube@资源分享师 _14
-      - JP_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _96
-      - CN_youtube@资源分享师 _15
-      - CN_youtube@资源分享师 _16
-      - CN_youtube@资源分享师 _17
-      - CN_youtube@资源分享师 _18
-      - BG_youtube@资源分享师
-      - US_youtube@资源分享师 _97
-      - FR_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _98
-      - US_youtube@资源分享师 _99
+      - US_youtube@资源分享师_1
+      - IR_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
+      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_5
+      - FR_youtube@资源分享师_1
+      - US_youtube@资源分享师_6
+      - FR_youtube@资源分享师_2
+      - AU_youtube@资源分享师_2
+      - US_youtube@资源分享师_7
+      - US_youtube@资源分享师_8
+      - RU_youtube@资源分享师_1
+      - US_youtube@资源分享师_9
+      - US_youtube@资源分享师_10
+      - US_youtube@资源分享师_11
+      - GB_youtube@资源分享师_1
+      - US_youtube@资源分享师_14
+      - GB_youtube@资源分享师_2
+      - US_youtube@资源分享师_16
+      - LT_youtube@资源分享师_1
+      - US_youtube@资源分享师_17
+      - DE_youtube@资源分享师_1
+      - US_youtube@资源分享师_18
+      - LT_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
+      - US_youtube@资源分享师_19
+      - FR_youtube@资源分享师_3
+      - JP_youtube@资源分享师_2
+      - FR_youtube@资源分享师_4
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - JP_youtube@资源分享师_3
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_1
+      - UA_youtube@资源分享师_1
+      - unKnow_youtube@资源分享师_1
+      - ZA_youtube@资源分享师
+      - FR_youtube@资源分享师_5
+      - SI_youtube@资源分享师_1
+      - DE_youtube@资源分享师_2
+      - FR_youtube@资源分享师_6
+      - RU_youtube@资源分享师_3
+      - IR_youtube@资源分享师_2
+      - DE_youtube@资源分享师_3
+      - US_youtube@资源分享师_22
+      - FR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_3
+      - UA_youtube@资源分享师_2
+      - US_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - FR_youtube@资源分享师_8
+      - US_youtube@资源分享师_28
+      - AU_youtube@资源分享师_3
+      - US_youtube@资源分享师_29
+      - US_youtube@资源分享师_30
+      - FR_youtube@资源分享师_9
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - FR_youtube@资源分享师_10
+      - GB_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_31
+      - FR_youtube@资源分享师_11
+      - US_youtube@资源分享师_32
+      - US_youtube@资源分享师_33
+      - US_youtube@资源分享师_34
+      - FR_youtube@资源分享师_12
+      - US_youtube@资源分享师_35
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
       - SG_youtube@资源分享师
-      - GB_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _100
-      - US_youtube@资源分享师 _101
-      - US_youtube@资源分享师 _102
-      - US_youtube@资源分享师 _103
-      - JP_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _5
-      - unKnow_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _4
-      - AU_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _6
-      - ZA_youtube@资源分享师 _3
-      - ZA_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _10
-      - SI_youtube@资源分享师 _1
-      - SI_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _5
-      - LT_youtube@资源分享师 _6
-      - LT_youtube@资源分享师 _7
-      - CA_youtube@资源分享师 _1
-      - CA_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _104
-      - US_youtube@资源分享师 _105
-      - US_youtube@资源分享师 _106
-      - US_youtube@资源分享师 _107
-      - US_youtube@资源分享师 _108
-      - US_youtube@资源分享师 _109
-      - US_youtube@资源分享师 _110
-      - US_youtube@资源分享师 _111
-      - UA_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _25
-      - NL_youtube@资源分享师 _26
-      - GB_youtube@资源分享师 _9
-      - FR_youtube@资源分享师 _11
-      - FR_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _112
-      - US_youtube@资源分享师 _113
-      - US_youtube@资源分享师 _114
-      - NL_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _115
-      - CN_youtube@资源分享师 _20
-      - GB_youtube@资源分享师 _10
-      - GB_youtube@资源分享师 _11
-      - GB_youtube@资源分享师 _12
-      - IN_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _116
-      - RU_youtube@资源分享师 _10
-      - DE_youtube@资源分享师 _5
+      - US_youtube@资源分享师_36
+      - FR_youtube@资源分享师_13
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_38
+      - FR_youtube@资源分享师_14
+      - FR_youtube@资源分享师_15
+      - FR_youtube@资源分享师_16
+      - AU_youtube@资源分享师_4
+      - FR_youtube@资源分享师_17
+      - BE_youtube@资源分享师_1
+      - FR_youtube@资源分享师_18
+      - FR_youtube@资源分享师_19
+      - US_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - IR_youtube@资源分享师_6
+      - IR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_8
+      - IR_youtube@资源分享师_9
+      - US_youtube@资源分享师_41
+      - IN_youtube@资源分享师
+      - BE_youtube@资源分享师_2
+      - US_youtube@资源分享师_42
+      - FR_youtube@资源分享师_20
+      - US_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - SI_youtube@资源分享师_2
+      - NL_youtube@资源分享师_2
+      - FR_youtube@资源分享师_21
+      - AU_youtube@资源分享师_5
+      - FR_youtube@资源分享师_22
+      - FR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_10
+      - US_youtube@资源分享师_45
+      - US_youtube@资源分享师_46
+      - US_youtube@资源分享师_47
+      - CN_youtube@资源分享师_4
+      - IR_youtube@资源分享师_11
+      - IR_youtube@资源分享师_12
+      - GB_youtube@资源分享师_4
+      - VN_youtube@资源分享师
+      - IR_youtube@资源分享师_13
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - US_youtube@资源分享师_50
+      - IR_youtube@资源分享师_14
+      - US_youtube@资源分享师_51
+      - NL_youtube@资源分享师_3
+      - US_youtube@资源分享师_52
+      - US_youtube@资源分享师_53
+      - IR_youtube@资源分享师_15
+      - US_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - RU_youtube@资源分享师_5
       - AZ_youtube@资源分享师
-      - DE_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _117
-      - US_youtube@资源分享师 _118
-      - US_youtube@资源分享师 _119
-      - CN_youtube@资源分享师 _22
+      - IR_youtube@资源分享师_16
+      - IR_youtube@资源分享师_17
+      - US_youtube@资源分享师_56
+      - US_youtube@资源分享师_57
+      - CN_youtube@资源分享师_5
+      - NL_youtube@资源分享师_4
+      - CN_youtube@资源分享师_6
+      - US_youtube@资源分享师_58
+      - unKnow_youtube@资源分享师_2
+      - CN_youtube@资源分享师_7
+      - US_youtube@资源分享师_59
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_60
+      - NL_youtube@资源分享师_6
+      - US_youtube@资源分享师_61
+      - NL_youtube@资源分享师_7
+      - IR_youtube@资源分享师_18
+      - US_youtube@资源分享师_62
+      - FR_youtube@资源分享师_24
+      - FR_youtube@资源分享师_25
+      - FR_youtube@资源分享师_26
+      - FR_youtube@资源分享师_27
+      - FR_youtube@资源分享师_28
+      - FR_youtube@资源分享师_29
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -3875,270 +1801,160 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VN_youtube@资源分享师
-      - CN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _2
-      - CN_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _2
-      - DK_youtube@资源分享师 _3
-      - DK_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _4
-      - UA_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _4
-      - DK_youtube@资源分享师 _5
-      - AU_youtube@资源分享师 _1
-      - CN_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _5
-      - US_youtube@资源分享师 _6
-      - DK_youtube@资源分享师 _6
-      - NL_youtube@资源分享师 _1
-      - LT_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _7
-      - CN_youtube@资源分享师 _6
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _7
-      - BE_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _1
-      - FR_youtube@资源分享师 _2
-      - FR_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _5
-      - FR_youtube@资源分享师 _6
-      - DE_youtube@资源分享师 _1
-      - BE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _10
-      - ID_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _2
-      - KR_youtube@资源分享师 _1
-      - NL_youtube@资源分享师 _3
-      - CN_youtube@资源分享师 _8
-      - NL_youtube@资源分享师 _4
-      - BE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _15
-      - ID_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _16
-      - US_youtube@资源分享师 _17
-      - US_youtube@资源分享师 _18
-      - US_youtube@资源分享师 _19
-      - CN_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _7
-      - NL_youtube@资源分享师 _8
-      - CN_youtube@资源分享师 _11
-      - US_youtube@资源分享师 _20
-      - US_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _22
-      - US_youtube@资源分享师 _23
-      - US_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _25
-      - US_youtube@资源分享师 _26
-      - US_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _28
-      - US_youtube@资源分享师 _29
-      - UA_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _1
-      - RU_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _30
-      - US_youtube@资源分享师 _31
-      - NL_youtube@资源分享师 _9
-      - ES_youtube@资源分享师
-      - GB_youtube@资源分享师 _1
-      - GB_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _32
-      - US_youtube@资源分享师 _33
-      - US_youtube@资源分享师 _34
-      - US_youtube@资源分享师 _35
-      - US_youtube@资源分享师 _36
-      - US_youtube@资源分享师 _37
-      - US_youtube@资源分享师 _38
-      - US_youtube@资源分享师 _39
-      - US_youtube@资源分享师 _40
-      - US_youtube@资源分享师 _41
-      - US_youtube@资源分享师 _42
-      - US_youtube@资源分享师 _43
-      - US_youtube@资源分享师 _44
-      - US_youtube@资源分享师 _45
-      - US_youtube@资源分享师 _46
-      - NL_youtube@资源分享师 _10
-      - NL_youtube@资源分享师 _11
-      - NL_youtube@资源分享师 _12
-      - NL_youtube@资源分享师 _13
-      - NL_youtube@资源分享师 _14
-      - US_youtube@资源分享师 _47
-      - US_youtube@资源分享师 _48
-      - US_youtube@资源分享师 _49
-      - US_youtube@资源分享师 _50
-      - CN_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _51
-      - US_youtube@资源分享师 _52
-      - CN_youtube@资源分享师 _13
-      - US_youtube@资源分享师 _53
-      - FR_youtube@资源分享师 _7
-      - US_youtube@资源分享师 _54
-      - US_youtube@资源分享师 _55
-      - US_youtube@资源分享师 _56
-      - GB_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _57
-      - JP_youtube@资源分享师 _1
-      - JP_youtube@资源分享师 _2
-      - unKnow_youtube@资源分享师 _1
-      - AU_youtube@资源分享师 _2
-      - ZA_youtube@资源分享师 _1
-      - ZA_youtube@资源分享师 _2
-      - UA_youtube@资源分享师 _3
-      - LT_youtube@资源分享师 _2
-      - RU_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _58
-      - US_youtube@资源分享师 _59
-      - US_youtube@资源分享师 _60
-      - US_youtube@资源分享师 _61
-      - US_youtube@资源分享师 _62
-      - RU_youtube@资源分享师 _4
-      - RU_youtube@资源分享师 _5
-      - NL_youtube@资源分享师 _15
-      - NL_youtube@资源分享师 _16
-      - NL_youtube@资源分享师 _17
-      - GB_youtube@资源分享师 _4
-      - GB_youtube@资源分享师 _5
-      - GB_youtube@资源分享师 _6
-      - GB_youtube@资源分享师 _7
-      - IN_youtube@资源分享师 _1
-      - US_youtube@资源分享师 _63
-      - RU_youtube@资源分享师 _6
-      - RO_youtube@资源分享师
-      - US_youtube@资源分享师 _64
-      - US_youtube@资源分享师 _65
-      - US_youtube@资源分享师 _66
-      - US_youtube@资源分享师 _67
-      - US_youtube@资源分享师 _68
-      - US_youtube@资源分享师 _69
-      - US_youtube@资源分享师 _70
-      - US_youtube@资源分享师 _71
-      - US_youtube@资源分享师 _72
-      - DK_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _7
-      - RU_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _73
-      - US_youtube@资源分享师 _74
-      - AU_youtube@资源分享师 _3
-      - NL_youtube@资源分享师 _18
-      - LT_youtube@资源分享师 _3
-      - FR_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _75
-      - BR_youtube@资源分享师
-      - RU_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _76
-      - US_youtube@资源分享师 _77
-      - US_youtube@资源分享师 _78
-      - US_youtube@资源分享师 _79
-      - US_youtube@资源分享师 _80
-      - US_youtube@资源分享师 _81
-      - US_youtube@资源分享师 _82
-      - US_youtube@资源分享师 _83
-      - US_youtube@资源分享师 _84
-      - US_youtube@资源分享师 _85
-      - US_youtube@资源分享师 _86
-      - US_youtube@资源分享师 _87
-      - US_youtube@资源分享师 _88
-      - US_youtube@资源分享师 _89
-      - US_youtube@资源分享师 _90
-      - NL_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _20
-      - NL_youtube@资源分享师 _21
-      - NL_youtube@资源分享师 _22
-      - NL_youtube@资源分享师 _23
-      - NL_youtube@资源分享师 _24
-      - US_youtube@资源分享师 _91
-      - US_youtube@资源分享师 _92
-      - US_youtube@资源分享师 _93
-      - US_youtube@资源分享师 _94
-      - US_youtube@资源分享师 _95
-      - CN_youtube@资源分享师 _14
-      - JP_youtube@资源分享师 _3
-      - US_youtube@资源分享师 _96
-      - CN_youtube@资源分享师 _15
-      - CN_youtube@资源分享师 _16
-      - CN_youtube@资源分享师 _17
-      - CN_youtube@资源分享师 _18
-      - BG_youtube@资源分享师
-      - US_youtube@资源分享师 _97
-      - FR_youtube@资源分享师 _9
-      - US_youtube@资源分享师 _98
-      - US_youtube@资源分享师 _99
+      - US_youtube@资源分享师_1
+      - IR_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
+      - AU_youtube@资源分享师_1
+      - US_youtube@资源分享师_5
+      - FR_youtube@资源分享师_1
+      - US_youtube@资源分享师_6
+      - FR_youtube@资源分享师_2
+      - AU_youtube@资源分享师_2
+      - US_youtube@资源分享师_7
+      - US_youtube@资源分享师_8
+      - RU_youtube@资源分享师_1
+      - US_youtube@资源分享师_9
+      - US_youtube@资源分享师_10
+      - US_youtube@资源分享师_11
+      - GB_youtube@资源分享师_1
+      - US_youtube@资源分享师_14
+      - GB_youtube@资源分享师_2
+      - US_youtube@资源分享师_16
+      - LT_youtube@资源分享师_1
+      - US_youtube@资源分享师_17
+      - DE_youtube@资源分享师_1
+      - US_youtube@资源分享师_18
+      - LT_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
+      - US_youtube@资源分享师_19
+      - FR_youtube@资源分享师_3
+      - JP_youtube@资源分享师_2
+      - FR_youtube@资源分享师_4
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - JP_youtube@资源分享师_3
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_1
+      - UA_youtube@资源分享师_1
+      - unKnow_youtube@资源分享师_1
+      - ZA_youtube@资源分享师
+      - FR_youtube@资源分享师_5
+      - SI_youtube@资源分享师_1
+      - DE_youtube@资源分享师_2
+      - FR_youtube@资源分享师_6
+      - RU_youtube@资源分享师_3
+      - IR_youtube@资源分享师_2
+      - DE_youtube@资源分享师_3
+      - US_youtube@资源分享师_22
+      - FR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_3
+      - UA_youtube@资源分享师_2
+      - US_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - US_youtube@资源分享师_25
+      - US_youtube@资源分享师_26
+      - US_youtube@资源分享师_27
+      - FR_youtube@资源分享师_8
+      - US_youtube@资源分享师_28
+      - AU_youtube@资源分享师_3
+      - US_youtube@资源分享师_29
+      - US_youtube@资源分享师_30
+      - FR_youtube@资源分享师_9
+      - IR_youtube@资源分享师_4
+      - IR_youtube@资源分享师_5
+      - FR_youtube@资源分享师_10
+      - GB_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_31
+      - FR_youtube@资源分享师_11
+      - US_youtube@资源分享师_32
+      - US_youtube@资源分享师_33
+      - US_youtube@资源分享师_34
+      - FR_youtube@资源分享师_12
+      - US_youtube@资源分享师_35
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
       - SG_youtube@资源分享师
-      - GB_youtube@资源分享师 _8
-      - US_youtube@资源分享师 _100
-      - US_youtube@资源分享师 _101
-      - US_youtube@资源分享师 _102
-      - US_youtube@资源分享师 _103
-      - JP_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _5
-      - unKnow_youtube@资源分享师 _3
-      - unKnow_youtube@资源分享师 _4
-      - AU_youtube@资源分享师 _4
-      - JP_youtube@资源分享师 _6
-      - ZA_youtube@资源分享师 _3
-      - ZA_youtube@资源分享师 _4
-      - FR_youtube@资源分享师 _10
-      - SI_youtube@资源分享师 _1
-      - SI_youtube@资源分享师 _2
-      - DE_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _4
-      - LT_youtube@资源分享师 _5
-      - LT_youtube@资源分享师 _6
-      - LT_youtube@资源分享师 _7
-      - CA_youtube@资源分享师 _1
-      - CA_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _104
-      - US_youtube@资源分享师 _105
-      - US_youtube@资源分享师 _106
-      - US_youtube@资源分享师 _107
-      - US_youtube@资源分享师 _108
-      - US_youtube@资源分享师 _109
-      - US_youtube@资源分享师 _110
-      - US_youtube@资源分享师 _111
-      - UA_youtube@资源分享师 _4
-      - CN_youtube@资源分享师 _19
-      - NL_youtube@资源分享师 _25
-      - NL_youtube@资源分享师 _26
-      - GB_youtube@资源分享师 _9
-      - FR_youtube@资源分享师 _11
-      - FR_youtube@资源分享师 _12
-      - US_youtube@资源分享师 _112
-      - US_youtube@资源分享师 _113
-      - US_youtube@资源分享师 _114
-      - NL_youtube@资源分享师 _27
-      - US_youtube@资源分享师 _115
-      - CN_youtube@资源分享师 _20
-      - GB_youtube@资源分享师 _10
-      - GB_youtube@资源分享师 _11
-      - GB_youtube@资源分享师 _12
-      - IN_youtube@资源分享师 _2
-      - US_youtube@资源分享师 _116
-      - RU_youtube@资源分享师 _10
-      - DE_youtube@资源分享师 _5
+      - US_youtube@资源分享师_36
+      - FR_youtube@资源分享师_13
+      - US_youtube@资源分享师_37
+      - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_38
+      - FR_youtube@资源分享师_14
+      - FR_youtube@资源分享师_15
+      - FR_youtube@资源分享师_16
+      - AU_youtube@资源分享师_4
+      - FR_youtube@资源分享师_17
+      - BE_youtube@资源分享师_1
+      - FR_youtube@资源分享师_18
+      - FR_youtube@资源分享师_19
+      - US_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - IR_youtube@资源分享师_6
+      - IR_youtube@资源分享师_7
+      - IR_youtube@资源分享师_8
+      - IR_youtube@资源分享师_9
+      - US_youtube@资源分享师_41
+      - IN_youtube@资源分享师
+      - BE_youtube@资源分享师_2
+      - US_youtube@资源分享师_42
+      - FR_youtube@资源分享师_20
+      - US_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - SI_youtube@资源分享师_2
+      - NL_youtube@资源分享师_2
+      - FR_youtube@资源分享师_21
+      - AU_youtube@资源分享师_5
+      - FR_youtube@资源分享师_22
+      - FR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_10
+      - US_youtube@资源分享师_45
+      - US_youtube@资源分享师_46
+      - US_youtube@资源分享师_47
+      - CN_youtube@资源分享师_4
+      - IR_youtube@资源分享师_11
+      - IR_youtube@资源分享师_12
+      - GB_youtube@资源分享师_4
+      - VN_youtube@资源分享师
+      - IR_youtube@资源分享师_13
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - US_youtube@资源分享师_50
+      - IR_youtube@资源分享师_14
+      - US_youtube@资源分享师_51
+      - NL_youtube@资源分享师_3
+      - US_youtube@资源分享师_52
+      - US_youtube@资源分享师_53
+      - IR_youtube@资源分享师_15
+      - US_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - RU_youtube@资源分享师_5
       - AZ_youtube@资源分享师
-      - DE_youtube@资源分享师 _6
-      - CN_youtube@资源分享师 _21
-      - US_youtube@资源分享师 _117
-      - US_youtube@资源分享师 _118
-      - US_youtube@资源分享师 _119
-      - CN_youtube@资源分享师 _22
+      - IR_youtube@资源分享师_16
+      - IR_youtube@资源分享师_17
+      - US_youtube@资源分享师_56
+      - US_youtube@资源分享师_57
+      - CN_youtube@资源分享师_5
+      - NL_youtube@资源分享师_4
+      - CN_youtube@资源分享师_6
+      - US_youtube@资源分享师_58
+      - unKnow_youtube@资源分享师_2
+      - CN_youtube@资源分享师_7
+      - US_youtube@资源分享师_59
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_60
+      - NL_youtube@资源分享师_6
+      - US_youtube@资源分享师_61
+      - NL_youtube@资源分享师_7
+      - IR_youtube@资源分享师_18
+      - US_youtube@资源分享师_62
+      - FR_youtube@资源分享师_24
+      - FR_youtube@资源分享师_25
+      - FR_youtube@资源分享师_26
+      - FR_youtube@资源分享师_27
+      - FR_youtube@资源分享师_28
+      - FR_youtube@资源分享师_29
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
