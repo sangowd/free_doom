@@ -1,5 +1,5 @@
 # 模版名称：ACL4SSR_Mini.ini
-# 配置生成日期：2025-10-20 08:59:49
+# 配置生成日期：2025-10-20 23:13:57
 
 mixed-port: 7890
 allow-lan: false
@@ -50,550 +50,775 @@ tun:
     - 1.0.0.1
 
 proxies:
-  - type: ss
-    name: CN_youtube@资源分享师_1
-    server: 113.99.142.199
-    port: 18001
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-  - type: ss
-    name: CN_youtube@资源分享师_2
-    server: 113.99.142.195
-    port: 27001
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-  - type: ss
-    name: CN_youtube@资源分享师_3
-    server: 113.99.142.195
-    port: 28001
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-  - type: ss
-    name: CN_youtube@资源分享师_4
-    server: 113.99.142.199
-    port: 28001
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-  - type: trojan
-    name: CN_youtube@资源分享师_5
-    server: 8.130.115.193
-    port: 21870
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
+  - type: vless
+    name: US_ youtube@资源分享师_1
+    server: 104.18.35.42
+    port: 443
+    uuid: 3f3e7b76-bebb-4e44-941b-a7594d6e761e
+    network: ws
+    servername: herokus.vps-jdkz.gq
     tls: true
+    encryption: none
+    ws-opts:
+      path: /vless-argo?ed=2560
+      headers:
+        Host: herokus.vps-jdkz.gq
   - type: trojan
-    name: CN_youtube@资源分享师_6
-    server: 8.130.115.193
-    port: 21873
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_7
-    server: 8.130.46.97
-    port: 21875
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_8
-    server: 8.130.115.193
-    port: 27865
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_9
-    server: 8.130.48.117
-    port: 21865
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_10
-    server: 8.130.46.97
-    port: 21870
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_11
-    server: 8.130.46.97
-    port: 21872
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_12
-    server: 8.130.48.117
-    port: 21873
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_13
-    server: 8.130.48.117
-    port: 21872
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_14
-    server: 101.227.42.156
-    port: 18181
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: CN_youtube@资源分享师_15
-    server: 101.227.42.156
-    port: 18186
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: ss
-    name: CN_youtube@资源分享师_16
-    server: 113.99.142.195
-    port: 21001
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-  - type: vmess
-    name: CN_youtube@资源分享师_17
-    server: 124.236.46.114
-    port: 18185
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_18
-    server: 8.130.46.97
-    port: 21891
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_19
-    server: 101.227.42.156
-    port: 18185
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_20
-    server: 8.130.48.117
-    port: 21866
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_21
-    server: 101.227.42.156
-    port: 18186
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: CN_youtube@资源分享师_22
-    server: 124.236.46.114
-    port: 18181
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: CN_youtube@资源分享师_23
-    server: 124.236.46.114
-    port: 18186
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_24
-    server: 8.130.115.193
-    port: 21865
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_25
-    server: 124.236.46.114
-    port: 18188
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: CN_youtube@资源分享师_26
-    server: 101.227.42.156
-    port: 18185
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_27
-    server: 8.130.48.117
-    port: 21877
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_28
-    server: 118.190.133.210
-    port: 21867
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_29
-    server: 124.236.46.114
-    port: 18180
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_30
-    server: 8.130.115.193
-    port: 21877
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_31
-    server: 8.130.48.117
-    port: 21891
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_32
-    server: 8.130.115.193
-    port: 21869
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_33
-    server: 118.190.133.210
-    port: 21869
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_34
-    server: 8.130.115.193
+    name: CN_ youtube@资源分享师_1
+    server: 183.232.143.109
     port: 21862
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
+  - type: vless
+    name: US_ youtube@资源分享师_2
+    server: cf.877774.xyz
+    port: 443
+    uuid: 82ea37e0-3e30-4b2a-8cbf-79ceeda7b5ac
+    network: ws
+    servername: herokuie.vps-jdkz.gq
     tls: true
+    encryption: none
+    ws-opts:
+      path: /vless-argo?ed=2560
+      headers:
+        Host: herokuie.vps-jdkz.gq
   - type: trojan
-    name: CN_youtube@资源分享师_35
-    server: 113.240.113.217
-    port: 21867
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_36
-    server: 8.130.46.97
-    port: 21873
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_37
-    server: 8.130.48.117
+    name: CN_ youtube@资源分享师_2
+    server: 120.241.237.179
     port: 21863
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_38
-    server: 8.130.46.97
-    port: 21867
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_39
-    server: 101.227.42.156
-    port: 18188
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_40
-    server: 118.190.133.210
-    port: 21874
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_41
-    server: 118.190.133.210
-    port: 21865
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_42
-    server: 118.190.133.210
-    port: 21862
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_43
-    server: 8.130.46.97
-    port: 21868
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_44
-    server: 118.190.133.210
-    port: 21877
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_45
-    server: 118.190.133.210
-    port: 21878
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_46
-    server: 8.130.115.193
-    port: 21868
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_47
-    server: 118.190.133.210
-    port: 21870
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_48
-    server: 118.190.133.210
+    name: CN_ youtube@资源分享师_3
+    server: 120.241.237.180
     port: 21872
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_49
-    server: 8.130.46.97
-    port: 21877
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_50
-    server: 8.130.46.97
-    port: 21869
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_51
-    server: 118.190.133.210
+    name: CN_ youtube@资源分享师_4
+    server: 183.232.143.109
     port: 21875
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_52
-    server: 118.190.133.210
+    name: CN_ youtube@资源分享师_5
+    server: 120.241.237.176
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_6
+    server: 120.241.237.178
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_7
+    server: 183.232.143.109
+    port: 21878
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_8
+    server: 120.241.237.179
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_9
+    server: 120.241.237.178
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_10
+    server: 120.241.237.179
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_11
+    server: 120.241.237.180
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_12
+    server: 120.241.237.177
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_13
+    server: 120.241.237.178
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_14
+    server: 120.241.237.178
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_15
+    server: 113.240.113.217
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_16
+    server: 120.241.237.179
+    port: 21875
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_17
+    server: 120.241.237.179
     port: 21871
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_53
+    name: CN_ youtube@资源分享师_18
+    server: 120.241.237.180
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_19
+    server: 183.232.143.109
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_20
+    server: 120.241.237.176
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_21
+    server: 183.232.143.109
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_22
+    server: 58.254.187.182
+    port: 20005
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.jpx1.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_23
+    server: 58.254.187.182
+    port: 20038
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.hkx1.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_24
+    server: 120.241.237.178
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_25
+    server: 58.254.187.182
+    port: 20067
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.sgx1.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_26
+    server: 183.60.186.235
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_27
+    server: 58.254.187.182
+    port: 20055
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.hkx3.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_28
+    server: 183.60.186.235
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_29
+    server: 120.241.237.176
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_30
+    server: 175.29.22.243
+    port: 42630
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.twq2.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_31
+    server: 120.241.237.180
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_32
+    server: 36.103.168.7
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_33
     server: 113.240.113.217
     port: 21872
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_54
-    server: 8.130.115.193
-    port: 21867
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    name: CN_ youtube@资源分享师_34
+    server: 183.60.186.235
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: CN_youtube@资源分享师_55
-    server: 8.130.48.117
-    port: 21867
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    name: CN_ youtube@资源分享师_35
+    server: 58.254.187.182
+    port: 20021
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: iepl.twx1.cat.bilibili.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_36
+    server: 120.236.198.227
+    port: 9210
+    password: 8d21e146-0413-4eaa-8ed5-e199b28a3e8b
+    network: tcp
+    sni: sg.weixin.qq.com
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_37
+    server: 36.103.168.7
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
   - type: trojan
-    name: GB_youtube@资源分享师_1
-    server: 51.44.54.3
+    name: FR_ youtube@资源分享师_1
+    server: 15.237.152.121
     port: 22222
     password: telegram-id-privatevpns
     network: tcp
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: NL_youtube@资源分享师_1
-    server: 45.131.208.187
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
   - type: trojan
-    name: CN_youtube@资源分享师_56
-    server: 113.240.113.217
+    name: CN_ youtube@资源分享师_38
+    server: 120.241.237.176
     port: 21868
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_39
+    server: 120.241.237.179
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_40
+    server: 36.103.168.7
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_41
+    server: 120.241.237.176
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_42
+    server: 120.241.237.177
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_43
+    server: 120.241.237.180
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_44
+    server: 36.151.251.18
+    port: 811
+    password: BxceQaOe
+    network: tcp
+    sni: 36.151.251.18
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_45
+    server: 36.103.168.7
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_46
+    server: 113.240.113.217
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_47
+    server: 113.240.113.217
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: hysteria2
+    name: US_ youtube@资源分享师_3
+    server: mg1.aeccghuyjftyg.shop
+    port: 20000
+    password: 5ef49e19-bb23-4e0c-9f7c-8070f0f8b127
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: fdrccJDGatdFDDRp
+  - type: trojan
+    name: CN_ youtube@资源分享师_48
+    server: 183.232.143.109
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_49
+    server: 183.232.143.109
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_50
+    server: 120.241.237.180
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_51
+    server: 120.241.237.177
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_52
+    server: 120.241.237.180
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_53
+    server: 120.241.237.176
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_54
+    server: 183.232.143.109
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_55
+    server: 120.241.237.177
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_56
+    server: 183.232.143.109
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_57
+    server: 120.241.237.177
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_58
+    server: 120.241.237.179
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_59
+    server: 183.232.143.109
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_60
+    server: 120.241.237.177
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_61
+    server: 120.241.237.180
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_62
+    server: 120.241.237.176
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_63
+    server: 120.241.237.179
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_64
+    server: 120.241.237.179
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_65
+    server: 183.232.143.109
+    port: 21872
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_66
+    server: 183.232.143.109
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_67
+    server: 120.241.237.178
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_68
+    server: 120.241.237.176
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_69
+    server: 120.241.237.178
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_70
+    server: 120.241.237.176
+    port: 21874
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_71
+    server: 113.240.113.217
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_72
+    server: 183.232.143.109
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
   - type: vless
-    name: RU_youtube@资源分享师_1
-    server: 195.13.45.253
-    port: 2096
+    name: KR_ youtube@资源分享师_1
+    server: 59.25.160.141
+    port: 50008
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram@freecodes/?ed=2560
+      path: X@节点狂魔/?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: FR_youtube@资源分享师_1
-    server: 45.80.111.1
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
   - type: trojan
-    name: CN_youtube@资源分享师_57
-    server: 113.240.113.217
-    port: 21871
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    name: CN_ youtube@资源分享师_73
+    server: 120.241.237.177
+    port: 21874
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_74
+    server: 183.60.186.235
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_75
+    server: 183.60.186.235
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
   - type: vless
-    name: CN_youtube@资源分享师_58
+    name: US_ youtube@资源分享师_4
+    server: aaaa.zarghamportal.ir
+    port: 2086
+    uuid: 5afc8a81-044e-47f8-eb35-0c3dce93f288
+    network: ws
+    servername: samnet.zarghamportal.ir
+    encryption: none
+    ws-opts:
+      path: /@iSpeedTopVPN
+      headers:
+        Host: samnet.zarghamportal.ir
+  - type: trojan
+    name: CN_ youtube@资源分享师_76
+    server: 120.241.237.176
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_77
+    server: 120.241.237.177
+    port: 21872
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_78
+    server: 120.241.237.176
+    port: 21872
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_79
+    server: 120.241.237.179
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: vless
+    name: KR_ youtube@资源分享师_2
+    server: 61.78.80.72
+    port: 10027
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: trojan
+    name: CN_ youtube@资源分享师_80
+    server: 113.240.113.217
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_81
+    server: 36.156.102.115
+    port: 44095
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_82
+    server: 120.241.237.178
+    port: 21862
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_83
+    server: 36.103.168.7
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_84
+    server: 120.241.237.178
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_85
+    server: 183.232.143.109
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_86
+    server: 183.60.186.235
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: vless
+    name: CN_ youtube@资源分享师_87
     server: 61.220.128.226
     port: 43
     uuid: e258977b-e413-4718-a3af-02d75492c349
@@ -605,20 +830,73 @@ proxies:
       path: /?ed=2048
       headers:
         Host: mf.xmma.xyz
+  - type: trojan
+    name: CN_ youtube@资源分享师_88
+    server: 120.241.237.176
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_89
+    server: 183.232.143.109
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: vmess
+    name: CN_ youtube@资源分享师_90
+    server: 43.247.134.213
+    port: 58509
+    uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: vmess
+    name: CN_ youtube@资源分享师_91
+    server: 47.242.90.210
+    port: 31212
+    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: trojan
+    name: CN_ youtube@资源分享师_92
+    server: 120.241.237.176
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_93
+    server: 120.241.237.178
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_94
+    server: 113.240.113.217
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_95
+    server: 183.232.143.109
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
   - type: vless
-    name: GB_youtube@资源分享师_2
-    server: 45.8.211.60
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_2
-    server: 188.42.145.253
+    name: NL_ youtube@资源分享师
+    server: 45.130.125.253
     port: 2096
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -630,57 +908,297 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: NL_youtube@资源分享师_3
-    server: 188.42.145.253
-    port: 2096
+    name: KR_ youtube@资源分享师_3
+    server: 220.80.75.163
+    port: 10026
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram@freecodes/?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_ youtube@资源分享师_4
+    server: 218.146.200.8
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_ youtube@资源分享师_5
+    server: 104.16.246.132
+    port: 8443
+    uuid: 7fc5337c-2639-42d3-b6ad-ff44277098d8
+    network: ws
+    servername: anime.11160321.xyz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /socks://test:test@162.55.92.106:1080
+      headers:
+        Host: anime.11160321.xyz
   - type: trojan
-    name: CN_youtube@资源分享师_59
-    server: 118.190.133.210
-    port: 27865
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
+    name: CN_ youtube@资源分享师_96
+    server: 120.241.237.179
+    port: 21872
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
     sni: TG.WangCai2
     skip-cert-verify: true
-    tls: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_97
+    server: 120.241.237.180
+    port: 21878
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_98
+    server: 113.240.113.217
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_99
+    server: 183.60.186.235
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_100
+    server: 183.60.186.235
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_101
+    server: 183.60.186.235
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_102
+    server: 36.103.168.7
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
   - type: vless
-    name: CN_youtube@资源分享师_60
-    server: 220.128.110.108
-    port: 43
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    network: ws
-    servername: mf.xmma.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: mf.xmma.xyz
-  - type: vless
-    name: KR_youtube@资源分享师_1
-    server: 116.93.199.28
-    port: 12136
+    name: KR_ youtube@资源分享师_5
+    server: 152.67.194.30
+    port: 443
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: trojan
+    name: CN_ youtube@资源分享师_103
+    server: 36.156.102.115
+    port: 26876
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_104
+    server: 120.241.237.179
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_105
+    server: 120.241.237.180
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_106
+    server: 183.60.186.235
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_107
+    server: 183.60.186.235
+    port: 21878
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: FR_ youtube@资源分享师_2
+    server: 15.188.198.23
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_108
+    server: 36.156.102.115
+    port: 26876
+    password: BxceQaOe
+    network: tcp
+    sni: 36.156.102.115
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_109
+    server: 120.241.237.176
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_110
+    server: 120.241.237.176
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_111
+    server: 120.241.237.177
+    port: 21867
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_112
+    server: 120.241.237.177
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_113
+    server: 120.241.237.177
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_114
+    server: 120.241.237.177
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_115
+    server: 120.241.237.177
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_116
+    server: 120.241.237.178
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_117
+    server: 120.241.237.178
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_118
+    server: 120.241.237.179
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_119
+    server: 120.241.237.180
+    port: 21863
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_120
+    server: 120.241.237.180
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_121
+    server: 113.240.113.217
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_122
+    server: 36.103.168.7
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: vless
+    name: KR_ youtube@资源分享师_6
+    server: 211.219.241.28
+    port: 31337
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_2
-    server: 222.113.89.142
-    port: 12105
+    name: KR_ youtube@资源分享师_7
+    server: 27.117.52.110
+    port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -690,54 +1208,18 @@ proxies:
       path: Telegram@freecodes/?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
+  - type: vmess
+    name: CN_ youtube@资源分享师_123
+    server: 43.247.134.213
+    port: 58509
+    uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
+    alterId: 0
+    network: tcp
+    cipher: auto
   - type: vless
-    name: GB_youtube@资源分享师_3
-    server: 45.12.30.233
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_4
-    server: 45.131.208.37
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_5
-    server: 45.159.219.24
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_6
-    server: 45.131.210.30
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: KR_youtube@资源分享师_3
-    server: 124.61.52.107
-    port: 26257
+    name: KR_ youtube@资源分享师_8
+    server: 221.163.173.252
+    port: 50004
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -748,8 +1230,21 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_4
-    server: 119.201.102.153
+    name: KR_ youtube@资源分享师_9
+    server: 203.251.70.240
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_ youtube@资源分享师_10
+    server: 211.207.97.48
     port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -757,121 +1252,263 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /X @节点狂魔 /
       headers:
         Host: gaosir.unfeeling.sbs
-  - type: vmess
-    name: CN_youtube@资源分享师_61
-    server: 101.227.42.156
-    port: 18188
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
+  - type: trojan
+    name: CN_ youtube@资源分享师_124
+    server: 120.241.237.176
+    port: 21875
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
     network: tcp
-    cipher: auto
-    servername: ""
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_125
+    server: 120.241.237.177
+    port: 21871
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_126
+    server: 120.241.237.177
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_127
+    server: 120.241.237.178
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_128
+    server: 120.241.237.178
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_129
+    server: 120.241.237.179
+    port: 21869
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_130
+    server: 120.241.237.179
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_131
+    server: 120.241.237.179
+    port: 21878
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_132
+    server: 120.241.237.180
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_133
+    server: 120.241.237.180
+    port: 21891
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_134
+    server: 113.240.113.217
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_135
+    server: 113.240.113.217
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_136
+    server: 113.240.113.217
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_137
+    server: 183.60.186.235
+    port: 21866
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_138
+    server: 183.60.186.235
+    port: 21877
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_139
+    server: 36.103.168.7
+    port: 21868
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_140
+    server: 36.103.168.7
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: US_ youtube@资源分享师_6
+    server: 63.179.171.101
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
   - type: vless
-    name: KR_youtube@资源分享师_5
-    server: 14.35.29.177
-    port: 15903
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    name: US_ youtube@资源分享师_7
+    server: join-raiv2mmr-telegram.koyeb.app
+    port: 443
+    uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
     network: ws
-    servername: gaosir.unfeeling.sbs
+    servername: join-raiv2mmr-telegram.koyeb.app
     tls: true
     encryption: none
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
       headers:
-        Host: gaosir.unfeeling.sbs
+        Host: join-raiv2mmr-telegram.koyeb.app
+  - type: trojan
+    name: CN_ youtube@资源分享师_141
+    server: 36.151.251.18
+    port: 811
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_142
+    server: 120.241.237.176
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_143
+    server: 120.241.237.177
+    port: 21873
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_144
+    server: 120.241.237.177
+    port: 21875
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_145
+    server: 120.241.237.178
+    port: 21874
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_146
+    server: 120.241.237.179
+    port: 21874
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_147
+    server: 120.241.237.179
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_148
+    server: 120.241.237.180
+    port: 21864
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_149
+    server: 120.241.237.180
+    port: 21865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_150
+    server: 113.240.113.217
+    port: 21870
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_151
+    server: 183.232.143.109
+    port: 27865
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
+  - type: trojan
+    name: CN_ youtube@资源分享师_152
+    server: 183.60.186.235
+    port: 21872
+    password: 7a4b5b0f-1b26-47fb-820d-b8e92bf048b8
+    network: tcp
+    sni: TG.WangCai2
+    skip-cert-verify: true
   - type: vless
-    name: LU_youtube@资源分享师
-    server: 188.42.89.163
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: GB_youtube@资源分享师_4
-    server: 45.12.30.226
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_7
-    server: 45.131.7.195
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: US_youtube@资源分享师_1
-    server: 141.193.213.75
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_8
-    server: 45.131.210.0
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_9
-    server: 45.131.7.33
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_10
-    server: 45.131.210.95
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_11
-    server: 45.131.4.224
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: KR_youtube@资源分享师_6
+    name: KR_ youtube@资源分享师_11
     server: 106.252.245.199
     port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -880,677 +1517,377 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: trojan
-    name: CN_youtube@资源分享师_62
-    server: 36.151.195.112
-    port: 4556
-    password: BxceQaOe
-    network: tcp
-    sni: 36.151.195.112
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: KR_youtube@资源分享师_7
-    server: 119.201.195.135
-    port: 10001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_8
-    server: 175.215.175.175
-    port: 50003
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    name: US_ youtube@资源分享师_8
+    server: join-raiv2mmr-telegram.koyeb.app
+    port: 443
+    uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
     network: ws
-    servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vmess
-    name: CN_youtube@资源分享师_63
-    server: 101.227.42.156
-    port: 18181
-    uuid: 0491a9f5-e443-453c-86b4-b66eb70c5bd9
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: trojan
-    name: CN_youtube@资源分享师_64
-    server: 113.240.113.217
-    port: 21869
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_65
-    server: 113.240.113.217
-    port: 21873
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: CN_youtube@资源分享师_66
-    server: 114.34.202.224
-    port: 10004
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_9
-    server: 121.167.146.253
-    port: 12902
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_10
-    server: 121.173.93.124
-    port: 12185
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: UA_youtube@资源分享师_1
-    server: 31.43.179.234
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: RU_youtube@资源分享师_2
-    server: 185.174.138.47
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_12
-    server: 45.131.4.159
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: KR_youtube@资源分享师_11
-    server: 125.136.152.137
-    port: 10043
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_12
-    server: 222.113.89.142
-    port: 12105
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_13
-    server: 220.118.109.204
-    port: 10042
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: GB_youtube@资源分享师_5
-    server: 45.85.119.30
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_13
-    server: 45.131.4.39
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_14
-    server: 45.131.208.53
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: GB_youtube@资源分享师_6
-    server: 45.12.30.88
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_15
-    server: 45.131.7.186
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: NL_youtube@资源分享师_16
-    server: 45.159.217.59
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: trojan
-    name: JP_youtube@资源分享师
-    server: 54.168.245.253
-    port: 6688
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    network: tcp
-    sni: baidu.com
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: KR_youtube@资源分享师_14
-    server: 112.186.212.12
-    port: 50000
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_15
-    server: 121.167.146.253
-    port: 12902
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: trojan
-    name: CN_youtube@资源分享师_67
-    server: 113.240.113.217
-    port: 21863
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_68
-    server: 113.240.113.217
-    port: 21877
-    password: a941e7fd-e866-4d57-9ef0-c05aaab7e22a
-    network: tcp
-    sni: TG.WangCai2
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: DE_youtube@资源分享师
-    server: 3.127.95.57
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: US_youtube@资源分享师_2
-    server: 13.37.71.98
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: KR_youtube@资源分享师_16
-    server: 222.113.18.206
-    port: 10004
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_17
-    server: 14.39.99.235
-    port: 50000
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_18
-    server: 220.72.245.245
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: NL_youtube@资源分享师_17
-    server: 194.152.44.114
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: IR_youtube@资源分享师
-    server: 94.184.18.245
-    port: 8097
-    uuid: 98e70086-6f4c-4435-a975-78d0d6f0fc42
-    network: tcp
-    encryption: none
-  - type: vless
-    name: US_youtube@资源分享师_3
-    server: 104.254.140.59
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: FR_youtube@资源分享师_2
-    server: 45.80.111.26
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: UA_youtube@资源分享师_2
-    server: 31.43.179.124
-    port: 2053
-    uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
-    network: ws
-    servername: AeEye-52235.zephorium.uk
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vless
-    name: US_youtube@资源分享师_4
-    server: 172.66.156.81
-    port: 80
-    uuid: 01cea818-a80b-4945-a883-f5164cde4ad3
-    network: ws
-    servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    encryption: none
-    ws-opts:
-      path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-      headers:
-        Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
+      path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - CN_youtube@资源分享师_8
-      - CN_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_11
-      - CN_youtube@资源分享师_12
-      - CN_youtube@资源分享师_13
-      - CN_youtube@资源分享师_14
-      - CN_youtube@资源分享师_15
-      - CN_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - CN_youtube@资源分享师_18
-      - CN_youtube@资源分享师_19
-      - CN_youtube@资源分享师_20
-      - CN_youtube@资源分享师_21
-      - CN_youtube@资源分享师_22
-      - CN_youtube@资源分享师_23
-      - CN_youtube@资源分享师_24
-      - CN_youtube@资源分享师_25
-      - CN_youtube@资源分享师_26
-      - CN_youtube@资源分享师_27
-      - CN_youtube@资源分享师_28
-      - CN_youtube@资源分享师_29
-      - CN_youtube@资源分享师_30
-      - CN_youtube@资源分享师_31
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_33
-      - CN_youtube@资源分享师_34
-      - CN_youtube@资源分享师_35
-      - CN_youtube@资源分享师_36
-      - CN_youtube@资源分享师_37
-      - CN_youtube@资源分享师_38
-      - CN_youtube@资源分享师_39
-      - CN_youtube@资源分享师_40
-      - CN_youtube@资源分享师_41
-      - CN_youtube@资源分享师_42
-      - CN_youtube@资源分享师_43
-      - CN_youtube@资源分享师_44
-      - CN_youtube@资源分享师_45
-      - CN_youtube@资源分享师_46
-      - CN_youtube@资源分享师_47
-      - CN_youtube@资源分享师_48
-      - CN_youtube@资源分享师_49
-      - CN_youtube@资源分享师_50
-      - CN_youtube@资源分享师_51
-      - CN_youtube@资源分享师_52
-      - CN_youtube@资源分享师_53
-      - CN_youtube@资源分享师_54
-      - CN_youtube@资源分享师_55
-      - GB_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
-      - CN_youtube@资源分享师_56
-      - RU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_1
-      - CN_youtube@资源分享师_57
-      - CN_youtube@资源分享师_58
-      - GB_youtube@资源分享师_2
-      - NL_youtube@资源分享师_2
-      - NL_youtube@资源分享师_3
-      - CN_youtube@资源分享师_59
-      - CN_youtube@资源分享师_60
-      - KR_youtube@资源分享师_1
-      - KR_youtube@资源分享师_2
-      - GB_youtube@资源分享师_3
-      - NL_youtube@资源分享师_4
-      - NL_youtube@资源分享师_5
-      - NL_youtube@资源分享师_6
-      - KR_youtube@资源分享师_3
-      - KR_youtube@资源分享师_4
-      - CN_youtube@资源分享师_61
-      - KR_youtube@资源分享师_5
-      - LU_youtube@资源分享师
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_7
-      - US_youtube@资源分享师_1
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - NL_youtube@资源分享师_10
-      - NL_youtube@资源分享师_11
-      - KR_youtube@资源分享师_6
-      - CN_youtube@资源分享师_62
-      - KR_youtube@资源分享师_7
-      - KR_youtube@资源分享师_8
-      - CN_youtube@资源分享师_63
-      - CN_youtube@资源分享师_64
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_66
-      - KR_youtube@资源分享师_9
-      - KR_youtube@资源分享师_10
-      - UA_youtube@资源分享师_1
-      - RU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_12
-      - KR_youtube@资源分享师_11
-      - KR_youtube@资源分享师_12
-      - KR_youtube@资源分享师_13
-      - GB_youtube@资源分享师_5
-      - NL_youtube@资源分享师_13
-      - NL_youtube@资源分享师_14
-      - GB_youtube@资源分享师_6
-      - NL_youtube@资源分享师_15
-      - NL_youtube@资源分享师_16
-      - JP_youtube@资源分享师
-      - KR_youtube@资源分享师_14
-      - KR_youtube@资源分享师_15
-      - CN_youtube@资源分享师_67
-      - CN_youtube@资源分享师_68
-      - DE_youtube@资源分享师
-      - US_youtube@资源分享师_2
-      - KR_youtube@资源分享师_16
-      - KR_youtube@资源分享师_17
-      - KR_youtube@资源分享师_18
-      - NL_youtube@资源分享师_17
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师_3
-      - FR_youtube@资源分享师_2
-      - UA_youtube@资源分享师_2
-      - US_youtube@资源分享师_4
+      - US_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - CN_ youtube@资源分享师_9
+      - CN_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_11
+      - CN_ youtube@资源分享师_12
+      - CN_ youtube@资源分享师_13
+      - CN_ youtube@资源分享师_14
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - CN_ youtube@资源分享师_18
+      - CN_ youtube@资源分享师_19
+      - CN_ youtube@资源分享师_20
+      - CN_ youtube@资源分享师_21
+      - CN_ youtube@资源分享师_22
+      - CN_ youtube@资源分享师_23
+      - CN_ youtube@资源分享师_24
+      - CN_ youtube@资源分享师_25
+      - CN_ youtube@资源分享师_26
+      - CN_ youtube@资源分享师_27
+      - CN_ youtube@资源分享师_28
+      - CN_ youtube@资源分享师_29
+      - CN_ youtube@资源分享师_30
+      - CN_ youtube@资源分享师_31
+      - CN_ youtube@资源分享师_32
+      - CN_ youtube@资源分享师_33
+      - CN_ youtube@资源分享师_34
+      - CN_ youtube@资源分享师_35
+      - CN_ youtube@资源分享师_36
+      - CN_ youtube@资源分享师_37
+      - FR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_38
+      - CN_ youtube@资源分享师_39
+      - CN_ youtube@资源分享师_40
+      - CN_ youtube@资源分享师_41
+      - CN_ youtube@资源分享师_42
+      - CN_ youtube@资源分享师_43
+      - CN_ youtube@资源分享师_44
+      - CN_ youtube@资源分享师_45
+      - CN_ youtube@资源分享师_46
+      - CN_ youtube@资源分享师_47
+      - US_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_48
+      - CN_ youtube@资源分享师_49
+      - CN_ youtube@资源分享师_50
+      - CN_ youtube@资源分享师_51
+      - CN_ youtube@资源分享师_52
+      - CN_ youtube@资源分享师_53
+      - CN_ youtube@资源分享师_54
+      - CN_ youtube@资源分享师_55
+      - CN_ youtube@资源分享师_56
+      - CN_ youtube@资源分享师_57
+      - CN_ youtube@资源分享师_58
+      - CN_ youtube@资源分享师_59
+      - CN_ youtube@资源分享师_60
+      - CN_ youtube@资源分享师_61
+      - CN_ youtube@资源分享师_62
+      - CN_ youtube@资源分享师_63
+      - CN_ youtube@资源分享师_64
+      - CN_ youtube@资源分享师_65
+      - CN_ youtube@资源分享师_66
+      - CN_ youtube@资源分享师_67
+      - CN_ youtube@资源分享师_68
+      - CN_ youtube@资源分享师_69
+      - CN_ youtube@资源分享师_70
+      - CN_ youtube@资源分享师_71
+      - CN_ youtube@资源分享师_72
+      - KR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_73
+      - CN_ youtube@资源分享师_74
+      - CN_ youtube@资源分享师_75
+      - US_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_76
+      - CN_ youtube@资源分享师_77
+      - CN_ youtube@资源分享师_78
+      - CN_ youtube@资源分享师_79
+      - KR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_80
+      - CN_ youtube@资源分享师_81
+      - CN_ youtube@资源分享师_82
+      - CN_ youtube@资源分享师_83
+      - CN_ youtube@资源分享师_84
+      - CN_ youtube@资源分享师_85
+      - CN_ youtube@资源分享师_86
+      - CN_ youtube@资源分享师_87
+      - CN_ youtube@资源分享师_88
+      - CN_ youtube@资源分享师_89
+      - CN_ youtube@资源分享师_90
+      - CN_ youtube@资源分享师_91
+      - CN_ youtube@资源分享师_92
+      - CN_ youtube@资源分享师_93
+      - CN_ youtube@资源分享师_94
+      - CN_ youtube@资源分享师_95
+      - NL_ youtube@资源分享师
+      - KR_ youtube@资源分享师_3
+      - KR_ youtube@资源分享师_4
+      - US_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_96
+      - CN_ youtube@资源分享师_97
+      - CN_ youtube@资源分享师_98
+      - CN_ youtube@资源分享师_99
+      - CN_ youtube@资源分享师_100
+      - CN_ youtube@资源分享师_101
+      - CN_ youtube@资源分享师_102
+      - KR_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_103
+      - CN_ youtube@资源分享师_104
+      - CN_ youtube@资源分享师_105
+      - CN_ youtube@资源分享师_106
+      - CN_ youtube@资源分享师_107
+      - FR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_108
+      - CN_ youtube@资源分享师_109
+      - CN_ youtube@资源分享师_110
+      - CN_ youtube@资源分享师_111
+      - CN_ youtube@资源分享师_112
+      - CN_ youtube@资源分享师_113
+      - CN_ youtube@资源分享师_114
+      - CN_ youtube@资源分享师_115
+      - CN_ youtube@资源分享师_116
+      - CN_ youtube@资源分享师_117
+      - CN_ youtube@资源分享师_118
+      - CN_ youtube@资源分享师_119
+      - CN_ youtube@资源分享师_120
+      - CN_ youtube@资源分享师_121
+      - CN_ youtube@资源分享师_122
+      - KR_ youtube@资源分享师_6
+      - KR_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_123
+      - KR_ youtube@资源分享师_8
+      - KR_ youtube@资源分享师_9
+      - KR_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_124
+      - CN_ youtube@资源分享师_125
+      - CN_ youtube@资源分享师_126
+      - CN_ youtube@资源分享师_127
+      - CN_ youtube@资源分享师_128
+      - CN_ youtube@资源分享师_129
+      - CN_ youtube@资源分享师_130
+      - CN_ youtube@资源分享师_131
+      - CN_ youtube@资源分享师_132
+      - CN_ youtube@资源分享师_133
+      - CN_ youtube@资源分享师_134
+      - CN_ youtube@资源分享师_135
+      - CN_ youtube@资源分享师_136
+      - CN_ youtube@资源分享师_137
+      - CN_ youtube@资源分享师_138
+      - CN_ youtube@资源分享师_139
+      - CN_ youtube@资源分享师_140
+      - US_ youtube@资源分享师_6
+      - US_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_141
+      - CN_ youtube@资源分享师_142
+      - CN_ youtube@资源分享师_143
+      - CN_ youtube@资源分享师_144
+      - CN_ youtube@资源分享师_145
+      - CN_ youtube@资源分享师_146
+      - CN_ youtube@资源分享师_147
+      - CN_ youtube@资源分享师_148
+      - CN_ youtube@资源分享师_149
+      - CN_ youtube@资源分享师_150
+      - CN_ youtube@资源分享师_151
+      - CN_ youtube@资源分享师_152
+      - KR_ youtube@资源分享师_11
+      - US_ youtube@资源分享师_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - CN_youtube@资源分享师_8
-      - CN_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_11
-      - CN_youtube@资源分享师_12
-      - CN_youtube@资源分享师_13
-      - CN_youtube@资源分享师_14
-      - CN_youtube@资源分享师_15
-      - CN_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - CN_youtube@资源分享师_18
-      - CN_youtube@资源分享师_19
-      - CN_youtube@资源分享师_20
-      - CN_youtube@资源分享师_21
-      - CN_youtube@资源分享师_22
-      - CN_youtube@资源分享师_23
-      - CN_youtube@资源分享师_24
-      - CN_youtube@资源分享师_25
-      - CN_youtube@资源分享师_26
-      - CN_youtube@资源分享师_27
-      - CN_youtube@资源分享师_28
-      - CN_youtube@资源分享师_29
-      - CN_youtube@资源分享师_30
-      - CN_youtube@资源分享师_31
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_33
-      - CN_youtube@资源分享师_34
-      - CN_youtube@资源分享师_35
-      - CN_youtube@资源分享师_36
-      - CN_youtube@资源分享师_37
-      - CN_youtube@资源分享师_38
-      - CN_youtube@资源分享师_39
-      - CN_youtube@资源分享师_40
-      - CN_youtube@资源分享师_41
-      - CN_youtube@资源分享师_42
-      - CN_youtube@资源分享师_43
-      - CN_youtube@资源分享师_44
-      - CN_youtube@资源分享师_45
-      - CN_youtube@资源分享师_46
-      - CN_youtube@资源分享师_47
-      - CN_youtube@资源分享师_48
-      - CN_youtube@资源分享师_49
-      - CN_youtube@资源分享师_50
-      - CN_youtube@资源分享师_51
-      - CN_youtube@资源分享师_52
-      - CN_youtube@资源分享师_53
-      - CN_youtube@资源分享师_54
-      - CN_youtube@资源分享师_55
-      - GB_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
-      - CN_youtube@资源分享师_56
-      - RU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_1
-      - CN_youtube@资源分享师_57
-      - CN_youtube@资源分享师_58
-      - GB_youtube@资源分享师_2
-      - NL_youtube@资源分享师_2
-      - NL_youtube@资源分享师_3
-      - CN_youtube@资源分享师_59
-      - CN_youtube@资源分享师_60
-      - KR_youtube@资源分享师_1
-      - KR_youtube@资源分享师_2
-      - GB_youtube@资源分享师_3
-      - NL_youtube@资源分享师_4
-      - NL_youtube@资源分享师_5
-      - NL_youtube@资源分享师_6
-      - KR_youtube@资源分享师_3
-      - KR_youtube@资源分享师_4
-      - CN_youtube@资源分享师_61
-      - KR_youtube@资源分享师_5
-      - LU_youtube@资源分享师
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_7
-      - US_youtube@资源分享师_1
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - NL_youtube@资源分享师_10
-      - NL_youtube@资源分享师_11
-      - KR_youtube@资源分享师_6
-      - CN_youtube@资源分享师_62
-      - KR_youtube@资源分享师_7
-      - KR_youtube@资源分享师_8
-      - CN_youtube@资源分享师_63
-      - CN_youtube@资源分享师_64
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_66
-      - KR_youtube@资源分享师_9
-      - KR_youtube@资源分享师_10
-      - UA_youtube@资源分享师_1
-      - RU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_12
-      - KR_youtube@资源分享师_11
-      - KR_youtube@资源分享师_12
-      - KR_youtube@资源分享师_13
-      - GB_youtube@资源分享师_5
-      - NL_youtube@资源分享师_13
-      - NL_youtube@资源分享师_14
-      - GB_youtube@资源分享师_6
-      - NL_youtube@资源分享师_15
-      - NL_youtube@资源分享师_16
-      - JP_youtube@资源分享师
-      - KR_youtube@资源分享师_14
-      - KR_youtube@资源分享师_15
-      - CN_youtube@资源分享师_67
-      - CN_youtube@资源分享师_68
-      - DE_youtube@资源分享师
-      - US_youtube@资源分享师_2
-      - KR_youtube@资源分享师_16
-      - KR_youtube@资源分享师_17
-      - KR_youtube@资源分享师_18
-      - NL_youtube@资源分享师_17
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师_3
-      - FR_youtube@资源分享师_2
-      - UA_youtube@资源分享师_2
-      - US_youtube@资源分享师_4
+      - US_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - CN_ youtube@资源分享师_9
+      - CN_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_11
+      - CN_ youtube@资源分享师_12
+      - CN_ youtube@资源分享师_13
+      - CN_ youtube@资源分享师_14
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - CN_ youtube@资源分享师_18
+      - CN_ youtube@资源分享师_19
+      - CN_ youtube@资源分享师_20
+      - CN_ youtube@资源分享师_21
+      - CN_ youtube@资源分享师_22
+      - CN_ youtube@资源分享师_23
+      - CN_ youtube@资源分享师_24
+      - CN_ youtube@资源分享师_25
+      - CN_ youtube@资源分享师_26
+      - CN_ youtube@资源分享师_27
+      - CN_ youtube@资源分享师_28
+      - CN_ youtube@资源分享师_29
+      - CN_ youtube@资源分享师_30
+      - CN_ youtube@资源分享师_31
+      - CN_ youtube@资源分享师_32
+      - CN_ youtube@资源分享师_33
+      - CN_ youtube@资源分享师_34
+      - CN_ youtube@资源分享师_35
+      - CN_ youtube@资源分享师_36
+      - CN_ youtube@资源分享师_37
+      - FR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_38
+      - CN_ youtube@资源分享师_39
+      - CN_ youtube@资源分享师_40
+      - CN_ youtube@资源分享师_41
+      - CN_ youtube@资源分享师_42
+      - CN_ youtube@资源分享师_43
+      - CN_ youtube@资源分享师_44
+      - CN_ youtube@资源分享师_45
+      - CN_ youtube@资源分享师_46
+      - CN_ youtube@资源分享师_47
+      - US_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_48
+      - CN_ youtube@资源分享师_49
+      - CN_ youtube@资源分享师_50
+      - CN_ youtube@资源分享师_51
+      - CN_ youtube@资源分享师_52
+      - CN_ youtube@资源分享师_53
+      - CN_ youtube@资源分享师_54
+      - CN_ youtube@资源分享师_55
+      - CN_ youtube@资源分享师_56
+      - CN_ youtube@资源分享师_57
+      - CN_ youtube@资源分享师_58
+      - CN_ youtube@资源分享师_59
+      - CN_ youtube@资源分享师_60
+      - CN_ youtube@资源分享师_61
+      - CN_ youtube@资源分享师_62
+      - CN_ youtube@资源分享师_63
+      - CN_ youtube@资源分享师_64
+      - CN_ youtube@资源分享师_65
+      - CN_ youtube@资源分享师_66
+      - CN_ youtube@资源分享师_67
+      - CN_ youtube@资源分享师_68
+      - CN_ youtube@资源分享师_69
+      - CN_ youtube@资源分享师_70
+      - CN_ youtube@资源分享师_71
+      - CN_ youtube@资源分享师_72
+      - KR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_73
+      - CN_ youtube@资源分享师_74
+      - CN_ youtube@资源分享师_75
+      - US_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_76
+      - CN_ youtube@资源分享师_77
+      - CN_ youtube@资源分享师_78
+      - CN_ youtube@资源分享师_79
+      - KR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_80
+      - CN_ youtube@资源分享师_81
+      - CN_ youtube@资源分享师_82
+      - CN_ youtube@资源分享师_83
+      - CN_ youtube@资源分享师_84
+      - CN_ youtube@资源分享师_85
+      - CN_ youtube@资源分享师_86
+      - CN_ youtube@资源分享师_87
+      - CN_ youtube@资源分享师_88
+      - CN_ youtube@资源分享师_89
+      - CN_ youtube@资源分享师_90
+      - CN_ youtube@资源分享师_91
+      - CN_ youtube@资源分享师_92
+      - CN_ youtube@资源分享师_93
+      - CN_ youtube@资源分享师_94
+      - CN_ youtube@资源分享师_95
+      - NL_ youtube@资源分享师
+      - KR_ youtube@资源分享师_3
+      - KR_ youtube@资源分享师_4
+      - US_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_96
+      - CN_ youtube@资源分享师_97
+      - CN_ youtube@资源分享师_98
+      - CN_ youtube@资源分享师_99
+      - CN_ youtube@资源分享师_100
+      - CN_ youtube@资源分享师_101
+      - CN_ youtube@资源分享师_102
+      - KR_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_103
+      - CN_ youtube@资源分享师_104
+      - CN_ youtube@资源分享师_105
+      - CN_ youtube@资源分享师_106
+      - CN_ youtube@资源分享师_107
+      - FR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_108
+      - CN_ youtube@资源分享师_109
+      - CN_ youtube@资源分享师_110
+      - CN_ youtube@资源分享师_111
+      - CN_ youtube@资源分享师_112
+      - CN_ youtube@资源分享师_113
+      - CN_ youtube@资源分享师_114
+      - CN_ youtube@资源分享师_115
+      - CN_ youtube@资源分享师_116
+      - CN_ youtube@资源分享师_117
+      - CN_ youtube@资源分享师_118
+      - CN_ youtube@资源分享师_119
+      - CN_ youtube@资源分享师_120
+      - CN_ youtube@资源分享师_121
+      - CN_ youtube@资源分享师_122
+      - KR_ youtube@资源分享师_6
+      - KR_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_123
+      - KR_ youtube@资源分享师_8
+      - KR_ youtube@资源分享师_9
+      - KR_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_124
+      - CN_ youtube@资源分享师_125
+      - CN_ youtube@资源分享师_126
+      - CN_ youtube@资源分享师_127
+      - CN_ youtube@资源分享师_128
+      - CN_ youtube@资源分享师_129
+      - CN_ youtube@资源分享师_130
+      - CN_ youtube@资源分享师_131
+      - CN_ youtube@资源分享师_132
+      - CN_ youtube@资源分享师_133
+      - CN_ youtube@资源分享师_134
+      - CN_ youtube@资源分享师_135
+      - CN_ youtube@资源分享师_136
+      - CN_ youtube@资源分享师_137
+      - CN_ youtube@资源分享师_138
+      - CN_ youtube@资源分享师_139
+      - CN_ youtube@资源分享师_140
+      - US_ youtube@资源分享师_6
+      - US_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_141
+      - CN_ youtube@资源分享师_142
+      - CN_ youtube@资源分享师_143
+      - CN_ youtube@资源分享师_144
+      - CN_ youtube@资源分享师_145
+      - CN_ youtube@资源分享师_146
+      - CN_ youtube@资源分享师_147
+      - CN_ youtube@资源分享师_148
+      - CN_ youtube@资源分享师_149
+      - CN_ youtube@资源分享师_150
+      - CN_ youtube@资源分享师_151
+      - CN_ youtube@资源分享师_152
+      - KR_ youtube@资源分享师_11
+      - US_ youtube@资源分享师_8
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -1570,129 +1907,180 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - CN_youtube@资源分享师_8
-      - CN_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_11
-      - CN_youtube@资源分享师_12
-      - CN_youtube@资源分享师_13
-      - CN_youtube@资源分享师_14
-      - CN_youtube@资源分享师_15
-      - CN_youtube@资源分享师_16
-      - CN_youtube@资源分享师_17
-      - CN_youtube@资源分享师_18
-      - CN_youtube@资源分享师_19
-      - CN_youtube@资源分享师_20
-      - CN_youtube@资源分享师_21
-      - CN_youtube@资源分享师_22
-      - CN_youtube@资源分享师_23
-      - CN_youtube@资源分享师_24
-      - CN_youtube@资源分享师_25
-      - CN_youtube@资源分享师_26
-      - CN_youtube@资源分享师_27
-      - CN_youtube@资源分享师_28
-      - CN_youtube@资源分享师_29
-      - CN_youtube@资源分享师_30
-      - CN_youtube@资源分享师_31
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_33
-      - CN_youtube@资源分享师_34
-      - CN_youtube@资源分享师_35
-      - CN_youtube@资源分享师_36
-      - CN_youtube@资源分享师_37
-      - CN_youtube@资源分享师_38
-      - CN_youtube@资源分享师_39
-      - CN_youtube@资源分享师_40
-      - CN_youtube@资源分享师_41
-      - CN_youtube@资源分享师_42
-      - CN_youtube@资源分享师_43
-      - CN_youtube@资源分享师_44
-      - CN_youtube@资源分享师_45
-      - CN_youtube@资源分享师_46
-      - CN_youtube@资源分享师_47
-      - CN_youtube@资源分享师_48
-      - CN_youtube@资源分享师_49
-      - CN_youtube@资源分享师_50
-      - CN_youtube@资源分享师_51
-      - CN_youtube@资源分享师_52
-      - CN_youtube@资源分享师_53
-      - CN_youtube@资源分享师_54
-      - CN_youtube@资源分享师_55
-      - GB_youtube@资源分享师_1
-      - NL_youtube@资源分享师_1
-      - CN_youtube@资源分享师_56
-      - RU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_1
-      - CN_youtube@资源分享师_57
-      - CN_youtube@资源分享师_58
-      - GB_youtube@资源分享师_2
-      - NL_youtube@资源分享师_2
-      - NL_youtube@资源分享师_3
-      - CN_youtube@资源分享师_59
-      - CN_youtube@资源分享师_60
-      - KR_youtube@资源分享师_1
-      - KR_youtube@资源分享师_2
-      - GB_youtube@资源分享师_3
-      - NL_youtube@资源分享师_4
-      - NL_youtube@资源分享师_5
-      - NL_youtube@资源分享师_6
-      - KR_youtube@资源分享师_3
-      - KR_youtube@资源分享师_4
-      - CN_youtube@资源分享师_61
-      - KR_youtube@资源分享师_5
-      - LU_youtube@资源分享师
-      - GB_youtube@资源分享师_4
-      - NL_youtube@资源分享师_7
-      - US_youtube@资源分享师_1
-      - NL_youtube@资源分享师_8
-      - NL_youtube@资源分享师_9
-      - NL_youtube@资源分享师_10
-      - NL_youtube@资源分享师_11
-      - KR_youtube@资源分享师_6
-      - CN_youtube@资源分享师_62
-      - KR_youtube@资源分享师_7
-      - KR_youtube@资源分享师_8
-      - CN_youtube@资源分享师_63
-      - CN_youtube@资源分享师_64
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_66
-      - KR_youtube@资源分享师_9
-      - KR_youtube@资源分享师_10
-      - UA_youtube@资源分享师_1
-      - RU_youtube@资源分享师_2
-      - NL_youtube@资源分享师_12
-      - KR_youtube@资源分享师_11
-      - KR_youtube@资源分享师_12
-      - KR_youtube@资源分享师_13
-      - GB_youtube@资源分享师_5
-      - NL_youtube@资源分享师_13
-      - NL_youtube@资源分享师_14
-      - GB_youtube@资源分享师_6
-      - NL_youtube@资源分享师_15
-      - NL_youtube@资源分享师_16
-      - JP_youtube@资源分享师
-      - KR_youtube@资源分享师_14
-      - KR_youtube@资源分享师_15
-      - CN_youtube@资源分享师_67
-      - CN_youtube@资源分享师_68
-      - DE_youtube@资源分享师
-      - US_youtube@资源分享师_2
-      - KR_youtube@资源分享师_16
-      - KR_youtube@资源分享师_17
-      - KR_youtube@资源分享师_18
-      - NL_youtube@资源分享师_17
-      - IR_youtube@资源分享师
-      - US_youtube@资源分享师_3
-      - FR_youtube@资源分享师_2
-      - UA_youtube@资源分享师_2
-      - US_youtube@资源分享师_4
+      - US_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - CN_ youtube@资源分享师_9
+      - CN_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_11
+      - CN_ youtube@资源分享师_12
+      - CN_ youtube@资源分享师_13
+      - CN_ youtube@资源分享师_14
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - CN_ youtube@资源分享师_18
+      - CN_ youtube@资源分享师_19
+      - CN_ youtube@资源分享师_20
+      - CN_ youtube@资源分享师_21
+      - CN_ youtube@资源分享师_22
+      - CN_ youtube@资源分享师_23
+      - CN_ youtube@资源分享师_24
+      - CN_ youtube@资源分享师_25
+      - CN_ youtube@资源分享师_26
+      - CN_ youtube@资源分享师_27
+      - CN_ youtube@资源分享师_28
+      - CN_ youtube@资源分享师_29
+      - CN_ youtube@资源分享师_30
+      - CN_ youtube@资源分享师_31
+      - CN_ youtube@资源分享师_32
+      - CN_ youtube@资源分享师_33
+      - CN_ youtube@资源分享师_34
+      - CN_ youtube@资源分享师_35
+      - CN_ youtube@资源分享师_36
+      - CN_ youtube@资源分享师_37
+      - FR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_38
+      - CN_ youtube@资源分享师_39
+      - CN_ youtube@资源分享师_40
+      - CN_ youtube@资源分享师_41
+      - CN_ youtube@资源分享师_42
+      - CN_ youtube@资源分享师_43
+      - CN_ youtube@资源分享师_44
+      - CN_ youtube@资源分享师_45
+      - CN_ youtube@资源分享师_46
+      - CN_ youtube@资源分享师_47
+      - US_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_48
+      - CN_ youtube@资源分享师_49
+      - CN_ youtube@资源分享师_50
+      - CN_ youtube@资源分享师_51
+      - CN_ youtube@资源分享师_52
+      - CN_ youtube@资源分享师_53
+      - CN_ youtube@资源分享师_54
+      - CN_ youtube@资源分享师_55
+      - CN_ youtube@资源分享师_56
+      - CN_ youtube@资源分享师_57
+      - CN_ youtube@资源分享师_58
+      - CN_ youtube@资源分享师_59
+      - CN_ youtube@资源分享师_60
+      - CN_ youtube@资源分享师_61
+      - CN_ youtube@资源分享师_62
+      - CN_ youtube@资源分享师_63
+      - CN_ youtube@资源分享师_64
+      - CN_ youtube@资源分享师_65
+      - CN_ youtube@资源分享师_66
+      - CN_ youtube@资源分享师_67
+      - CN_ youtube@资源分享师_68
+      - CN_ youtube@资源分享师_69
+      - CN_ youtube@资源分享师_70
+      - CN_ youtube@资源分享师_71
+      - CN_ youtube@资源分享师_72
+      - KR_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_73
+      - CN_ youtube@资源分享师_74
+      - CN_ youtube@资源分享师_75
+      - US_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_76
+      - CN_ youtube@资源分享师_77
+      - CN_ youtube@资源分享师_78
+      - CN_ youtube@资源分享师_79
+      - KR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_80
+      - CN_ youtube@资源分享师_81
+      - CN_ youtube@资源分享师_82
+      - CN_ youtube@资源分享师_83
+      - CN_ youtube@资源分享师_84
+      - CN_ youtube@资源分享师_85
+      - CN_ youtube@资源分享师_86
+      - CN_ youtube@资源分享师_87
+      - CN_ youtube@资源分享师_88
+      - CN_ youtube@资源分享师_89
+      - CN_ youtube@资源分享师_90
+      - CN_ youtube@资源分享师_91
+      - CN_ youtube@资源分享师_92
+      - CN_ youtube@资源分享师_93
+      - CN_ youtube@资源分享师_94
+      - CN_ youtube@资源分享师_95
+      - NL_ youtube@资源分享师
+      - KR_ youtube@资源分享师_3
+      - KR_ youtube@资源分享师_4
+      - US_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_96
+      - CN_ youtube@资源分享师_97
+      - CN_ youtube@资源分享师_98
+      - CN_ youtube@资源分享师_99
+      - CN_ youtube@资源分享师_100
+      - CN_ youtube@资源分享师_101
+      - CN_ youtube@资源分享师_102
+      - KR_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_103
+      - CN_ youtube@资源分享师_104
+      - CN_ youtube@资源分享师_105
+      - CN_ youtube@资源分享师_106
+      - CN_ youtube@资源分享师_107
+      - FR_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_108
+      - CN_ youtube@资源分享师_109
+      - CN_ youtube@资源分享师_110
+      - CN_ youtube@资源分享师_111
+      - CN_ youtube@资源分享师_112
+      - CN_ youtube@资源分享师_113
+      - CN_ youtube@资源分享师_114
+      - CN_ youtube@资源分享师_115
+      - CN_ youtube@资源分享师_116
+      - CN_ youtube@资源分享师_117
+      - CN_ youtube@资源分享师_118
+      - CN_ youtube@资源分享师_119
+      - CN_ youtube@资源分享师_120
+      - CN_ youtube@资源分享师_121
+      - CN_ youtube@资源分享师_122
+      - KR_ youtube@资源分享师_6
+      - KR_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_123
+      - KR_ youtube@资源分享师_8
+      - KR_ youtube@资源分享师_9
+      - KR_ youtube@资源分享师_10
+      - CN_ youtube@资源分享师_124
+      - CN_ youtube@资源分享师_125
+      - CN_ youtube@资源分享师_126
+      - CN_ youtube@资源分享师_127
+      - CN_ youtube@资源分享师_128
+      - CN_ youtube@资源分享师_129
+      - CN_ youtube@资源分享师_130
+      - CN_ youtube@资源分享师_131
+      - CN_ youtube@资源分享师_132
+      - CN_ youtube@资源分享师_133
+      - CN_ youtube@资源分享师_134
+      - CN_ youtube@资源分享师_135
+      - CN_ youtube@资源分享师_136
+      - CN_ youtube@资源分享师_137
+      - CN_ youtube@资源分享师_138
+      - CN_ youtube@资源分享师_139
+      - CN_ youtube@资源分享师_140
+      - US_ youtube@资源分享师_6
+      - US_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_141
+      - CN_ youtube@资源分享师_142
+      - CN_ youtube@资源分享师_143
+      - CN_ youtube@资源分享师_144
+      - CN_ youtube@资源分享师_145
+      - CN_ youtube@资源分享师_146
+      - CN_ youtube@资源分享师_147
+      - CN_ youtube@资源分享师_148
+      - CN_ youtube@资源分享师_149
+      - CN_ youtube@资源分享师_150
+      - CN_ youtube@资源分享师_151
+      - CN_ youtube@资源分享师_152
+      - KR_ youtube@资源分享师_11
+      - US_ youtube@资源分享师_8
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
