@@ -1,5 +1,5 @@
 # 模版名称：ACL4SSR_Mini.ini
-# 配置生成日期：2025-10-21 10:57:58
+# 配置生成日期：2025-10-22 12:38:59
 
 mixed-port: 7890
 allow-lan: false
@@ -50,38 +50,76 @@ tun:
     - 1.0.0.1
 
 proxies:
-  - type: vless
-    name: US_youtube@资源分享师_1
-    server: 104.18.35.42
-    port: 443
-    uuid: 3f3e7b76-bebb-4e44-941b-a7594d6e761e
-    network: ws
-    servername: herokus.vps-jdkz.gq
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /vless-argo?ed=2560
-      headers:
-        Host: herokus.vps-jdkz.gq
-  - type: trojan
-    name: CN_youtube@资源分享师_1
-    server: 36.156.102.115
-    port: 44095
-    password: BxceQaOe
-    network: tcp
-    skip-cert-verify: true
-    tls: true
+  - type: ss
+    name: PL_youtube@资源分享师
+    server: 95.40.124.155
+    port: 15099
+    cipher: aes-256-gcm
+    password: 591d0321-53a9-4420-8148-6f2deb559b60
   - type: vmess
-    name: CN_youtube@资源分享师_2
-    server: 47.242.90.210
-    port: 31212
-    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    name: US_youtube@资源分享师_1
+    server: 38.147.188.110
+    port: 42487
+    uuid: f7ca451f-7adf-4af1-858a-196edb1af799
     alterId: 0
     network: tcp
     cipher: auto
     servername: ""
-  - type: vless
+  - type: vmess
     name: US_youtube@资源分享师_2
+    server: 3.112.235.245
+    port: 22211
+    uuid: 591d0321-53a9-4420-8148-6f2deb559b60
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vmess
+    name: US_youtube@资源分享师_3
+    server: 38.147.188.110
+    port: 42487
+    uuid: f7ca451f-7adf-4af1-858a-196edb1af799
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: trojan
+    name: CN_youtube@资源分享师_1
+    server: 58.152.110.40
+    port: 443
+    password: ea39fa94f1ee00999337ea1fd3318e69
+    network: tcp
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_2
+    server: 36.156.102.115
+    port: 2088
+    password: BxceQaOe
+    network: tcp
+    sni: 36.156.102.115
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: JP_youtube@资源分享师_1
+    server: 52.192.131.84
+    port: 23211
+    uuid: 591d0321-53a9-4420-8148-6f2deb559b60
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: trojan
+    name: CN_youtube@资源分享师_3
+    server: 36.150.215.138
+    port: 4451
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_4
     server: cf.877774.xyz
     port: 443
     uuid: 82ea37e0-3e30-4b2a-8cbf-79ceeda7b5ac
@@ -93,166 +131,25 @@ proxies:
       path: /vless-argo?ed=2560
       headers:
         Host: herokuie.vps-jdkz.gq
-  - type: vmess
-    name: CN_youtube@资源分享师_3
-    server: 47.242.90.210
-    port: 31212
-    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
   - type: trojan
     name: CN_youtube@资源分享师_4
     server: 36.156.102.115
-    port: 26876
+    port: 2088
     password: BxceQaOe
     network: tcp
     skip-cert-verify: true
     tls: true
   - type: trojan
     name: CN_youtube@资源分享师_5
-    server: 36.156.102.115
-    port: 44095
+    server: 36.150.215.138
+    port: 4451
     password: BxceQaOe
     network: tcp
-    sni: 36.156.102.115
+    sni: 36.150.215.138
     skip-cert-verify: true
     tls: true
-  - type: trojan
-    name: FR_youtube@资源分享师
-    server: 52.47.174.55
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: CN_youtube@资源分享师_6
-    server: 43.247.134.213
-    port: 58509
-    uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: CN_youtube@资源分享师_7
-    server: 43.247.134.213
-    port: 58509
-    uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: US_youtube@资源分享师_3
-    server: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    port: 443
-    uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    ws-opts:
-      path: /e7JS5ETJeA85VyjPCYXwETL
-      headers:
-        Host: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    tls: true
-  - type: hysteria2
-    name: US_youtube@资源分享师_4
-    server: mg1.aeccghuyjftyg.shop
-    port: 20000
-    password: 5ef49e19-bb23-4e0c-9f7c-8070f0f8b127
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
-  - type: hysteria2
-    name: unKnow_youtube@资源分享师
-    server: mg2.aeccghuyjftyg.shop
-    port: 20000
-    password: c30fd1d5-a3d9-48f3-8967-181ee0b2dd1c
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
-  - type: hysteria2
+  - type: vless
     name: US_youtube@资源分享师_5
-    server: mg1.aeccghuyjftyg.shop
-    port: 20000
-    password: c30fd1d5-a3d9-48f3-8967-181ee0b2dd1c
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
-  - type: vmess
-    name: US_youtube@资源分享师_6
-    server: 45.38.42.210
-    port: 17872
-    uuid: 9a7ba7d1-c0b0-479a-a109-447993cd3e41
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vmess
-    name: US_youtube@资源分享师_7
-    server: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    port: 443
-    uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    ws-opts:
-      path: /e7JS5ETJeA85VyjPCYXwETL
-      headers:
-        Host: e8c46690-90d1-8c68-db2c-35ca7bda3680.925.qzz.io
-    tls: true
-  - type: hysteria2
-    name: US_youtube@资源分享师_8
-    server: mg1.aeccghuyjftyg.shop
-    port: 20000
-    password: 5c19510e-c302-40d8-a7ed-29f31ac8f569
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
-  - type: vmess
-    name: US_youtube@资源分享师_9
-    server: aio.unlimited.biz.id
-    port: 443
-    uuid: f282b878-8711-45a1-8c69-5564172123c1
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: aio.unlimited.biz.id
-    ws-opts:
-      path: /aioproxybot/129.150.49.58-18650
-      headers:
-        Host: aio.unlimited.biz.id
-    tls: true
-  - type: vmess
-    name: KR_youtube@资源分享师_1
-    server: 140.238.2.250
-    port: 443
-    uuid: 41a7089a-040b-4538-8b8d-010902405bde
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vless
-    name: CN_youtube@资源分享师_8
-    server: 61.220.128.226
-    port: 43
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    network: ws
-    servername: mf.xmma.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: mf.xmma.xyz
-  - type: vless
-    name: US_youtube@资源分享师_10
     server: www.speedtest.net
     port: 80
     uuid: be38fcfb-6bef-4bad-b0ec-3bfd0a8d6265
@@ -264,42 +161,47 @@ proxies:
       headers:
         Host: 3h-kAzakhStan1.09vPn.cOm.
   - type: vmess
-    name: CN_youtube@资源分享师_9
-    server: 123.254.106.68
-    port: 30651
-    uuid: 669c37c3-0e5a-4e68-a28e-ab6d5d85669a
+    name: CN_youtube@资源分享师_6
+    server: 124.236.46.114
+    port: 47083
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
     alterId: 0
     network: tcp
     cipher: auto
     servername: ""
-  - type: vless
-    name: KR_youtube@资源分享师_2
-    server: 222.113.89.142
-    port: 12105
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: CN_youtube@资源分享师_10
-    server: 220.128.110.108
-    port: 43
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    network: ws
-    servername: mf.xmma.xyz
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: mf.xmma.xyz
+  - type: ss
+    name: GB_youtube@资源分享师
+    server: uk.vpnsparta.pro
+    port: 57456
+    cipher: chacha20-ietf-poly1305
+    password: c40641c1f89e7acb
   - type: trojan
-    name: CN_youtube@资源分享师_11
+    name: US_youtube@资源分享师_6
+    server: 13.36.60.157
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_7
+    server: 36.156.102.115
+    port: 44095
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_8
+    server: 36.151.251.18
+    port: 811
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: CN_youtube@资源分享师_9
     server: 36.156.102.115
     port: 26876
     password: BxceQaOe
@@ -307,25 +209,38 @@ proxies:
     sni: 36.156.102.115
     skip-cert-verify: true
     tls: true
-  - type: vless
-    name: KR_youtube@资源分享师_3
-    server: 112.165.52.204
-    port: 50000
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
   - type: trojan
-    name: CN_youtube@资源分享师_12
-    server: 36.151.251.18
-    port: 811
+    name: FR_youtube@资源分享师
+    server: 15.237.200.91
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: DE_youtube@资源分享师
+    server: free.vpn.luna-marzban.ir
+    port: 15510
+    uuid: 9e32844a-cfe8-4f27-80c2-fc4f1a0e386f
+    network: tcp
+    encryption: none
+  - type: vmess
+    name: CN_youtube@资源分享师_10
+    server: 124.236.46.114
+    port: 47084
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: trojan
+    name: CN_youtube@资源分享师_11
+    server: 36.156.102.115
+    port: 44095
     password: BxceQaOe
     network: tcp
+    sni: 36.156.102.115
     skip-cert-verify: true
     tls: true
   - type: vless
@@ -338,154 +253,11 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: US_youtube@资源分享师_11
-    server: 104.19.50.238
-    port: 2096
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /telegram🇨🇳@wangcai2/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_4
-    server: 211.48.77.114
-    port: 12312
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /x @节点狂魔
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_5
-    server: 121.173.93.124
-    port: 12185
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /TelegramU0001F1E8U0001F1F3@freecodes/?ed=2560fp=chrome
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: NL_youtube@资源分享师_2
-    server: 45.135.235.253
-    port: 2096
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_6
-    server: 121.167.146.253
-    port: 12902
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_7
-    server: 211.59.232.85
-    port: 18077
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_8
-    server: 59.25.160.141
-    port: 50008
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_9
-    server: 59.19.192.51
-    port: 10080
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_10
-    server: 14.36.155.120
-    port: 21286
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_11
-    server: 221.151.212.249
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_12
-    server: 222.114.57.191
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: NL_youtube@资源分享师_3
     server: 188.42.145.253
     port: 2096
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -495,390 +267,27 @@ proxies:
     encryption: none
     ws-opts:
       path: /
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_13
-    server: 121.145.201.24
-    port: 50004
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /telegram @freecodes /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: hysteria2
+  - type: vmess
+    name: CN_youtube@资源分享师_12
+    server: 124.236.46.114
+    port: 47083
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vmess
     name: CN_youtube@资源分享师_13
-    server: hk1.aeccghuyjftyg.shop
-    port: 20000
-    password: c30fd1d5-a3d9-48f3-8967-181ee0b2dd1c
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
+    server: 124.236.46.114
+    port: 47081
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
   - type: vless
-    name: KR_youtube@资源分享师_14
-    server: 220.118.153.222
-    port: 11443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_15
-    server: 183.104.0.181
-    port: 16923
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: JP_youtube@资源分享师_1
-    server: 153.121.45.101
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_16
-    server: 222.113.18.206
-    port: 10913
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: NL_youtube@资源分享师_4
-    server: 188.42.145.253
-    port: 2096
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_17
-    server: 59.19.192.51
-    port: 10058
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_18
-    server: 203.243.63.166
-    port: 27249
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_19
-    server: 123.143.9.5
-    port: 14041
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_20
-    server: 222.113.18.207
-    port: 18001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_21
-    server: 112.170.255.67
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_22
-    server: 211.177.114.117
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_23
-    server: 211.177.114.117
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_24
-    server: 121.158.194.32
-    port: 11611
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_25
-    server: 116.93.199.28
-    port: 12136
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_26
-    server: 211.229.77.184
-    port: 27443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_27
-    server: 175.211.35.161
-    port: 50003
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: hysteria2
-    name: IR_youtube@资源分享师
-    server: sfjmg4.sufujia.top
-    port: 57300
-    password: cbe8b795-ed44-4023-aa4b-51fc57cb7380
-    skip-cert-verify: true
-    sni: sfjmg4.sufujia.top
-  - type: vless
-    name: KR_youtube@资源分享师_28
-    server: 218.151.91.131
-    port: 12151
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /x @节点狂魔 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_29
-    server: 121.173.93.124
-    port: 12185
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_30
-    server: 220.72.245.245
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_31
-    server: 211.229.77.184
-    port: 27443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_32
-    server: 59.1.74.97
-    port: 10911
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_33
-    server: 183.104.0.181
-    port: 16923
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_34
-    server: 118.45.150.77
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_35
-    server: 14.35.29.177
-    port: 15903
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: GB_youtube@资源分享师
-    server: 141.11.43.124
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_36
-    server: 152.67.194.30
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_37
-    server: 211.184.133.123
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_38
-    server: 118.47.194.165
+    name: KR_youtube@资源分享师_1
+    server: 14.39.99.235
     port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -886,318 +295,29 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /
       headers:
         Host: gaosir.unfeeling.sbs
+  - type: vmess
+    name: CN_youtube@资源分享师_14
+    server: 124.236.46.114
+    port: 47083
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vmess
+    name: CN_youtube@资源分享师_15
+    server: 124.236.46.114
+    port: 47084
+    uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
   - type: vless
-    name: JP_youtube@资源分享师_2
-    server: 202.84.53.85
-    port: 19999
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_39
-    server: 121.167.146.253
-    port: 12902
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: RU_youtube@资源分享师
-    server: 195.13.45.253
-    port: 2096
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /x @节点狂魔 /
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_40
-    server: 218.151.91.131
-    port: 12151
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /x @节点狂魔 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_41
-    server: 121.182.150.149
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: NL_youtube@资源分享师_5
-    server: 188.42.145.253
-    port: 2096
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560fp=chrome
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_42
-    server: 221.151.212.249
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_43
-    server: 121.167.146.253
-    port: 12902
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_44
-    server: 121.165.101.69
-    port: 19413
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_45
-    server: 218.146.200.8
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_46
-    server: 183.104.0.181
-    port: 16923
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_47
-    server: 211.229.77.184
-    port: 27443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: hysteria2
-    name: US_youtube@资源分享师_12
-    server: jp1.aeccghuyjftyg.shop
-    port: 20000
-    password: c30fd1d5-a3d9-48f3-8967-181ee0b2dd1c
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: fdrccJDGatdFDDRp
-  - type: vless
-    name: KR_youtube@资源分享师_48
-    server: 222.109.206.218
-    port: 50003
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_49
-    server: 218.148.100.87
-    port: 16038
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_50
-    server: 211.197.161.123
-    port: 10041
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_51
-    server: 121.145.201.24
-    port: 50004
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_52
-    server: 14.32.12.235
-    port: 10008
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_53
-    server: 118.40.126.7
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_54
-    server: 218.155.245.69
-    port: 50003
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_55
-    server: 183.101.243.99
-    port: 12576
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_56
-    server: 115.40.244.240
-    port: 12696
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_57
-    server: 211.59.232.85
-    port: 18077
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_58
-    server: 115.40.244.240
-    port: 11211
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_59
+    name: KR_youtube@资源分享师_2
     server: 220.118.109.204
     port: 10042
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1209,216 +329,17 @@ proxies:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
+  - type: vmess
+    name: CN_youtube@资源分享师_16
+    server: 47.242.90.210
+    port: 31212
+    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
   - type: vless
-    name: JP_youtube@资源分享师_3
-    server: 158.101.145.82
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: US_youtube@资源分享师_13
-    server: 131.186.38.123
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_60
-    server: 222.113.18.207
-    port: 10090
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_61
-    server: 49.246.69.204
-    port: 10004
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_62
-    server: 218.151.91.131
-    port: 12151
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_63
-    server: 222.113.18.211
-    port: 14443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_64
-    server: 125.141.38.50
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_65
-    server: 221.151.212.249
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_66
-    server: 116.93.199.28
-    port: 12020
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_67
-    server: 211.219.241.28
-    port: 31337
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_68
-    server: 182.31.70.92
-    port: 12336
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_69
-    server: 119.201.195.135
-    port: 10001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_70
-    server: 218.155.245.69
-    port: 50003
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_71
-    server: 211.228.5.119
-    port: 50001
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_72
-    server: 222.113.89.142
-    port: 12105
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_73
-    server: 59.25.160.141
-    port: 50008
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: KR_youtube@资源分享师_74
+    name: KR_youtube@资源分享师_3
     server: 14.40.124.226
     port: 50003
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1431,20 +352,20 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_75
-    server: 121.182.150.149
-    port: 50001
+    name: KR_youtube@资源分享师_4
+    server: 14.33.140.80
+    port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_76
+    name: KR_youtube@资源分享师_5
     server: 221.163.173.252
     port: 50004
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1457,85 +378,72 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_77
-    server: 211.48.77.114
-    port: 12312
+    name: KR_youtube@资源分享师_6
+    server: 49.142.150.222
+    port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram@freecodes/?ed=2560
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_78
-    server: 121.158.194.32
-    port: 11611
+    name: KR_youtube@资源分享师_7
+    server: 183.100.113.37
+    port: 21297
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_79
-    server: 183.106.76.116
-    port: 29429
+    name: KR_youtube@资源分享师_8
+    server: 222.109.206.218
+    port: 50003
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: X @节点狂魔 /?ed=2560
+      path: X@节点狂魔/?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_80
-    server: 183.104.0.181
-    port: 16923
+    name: KR_youtube@资源分享师_9
+    server: 121.165.101.69
+    port: 19413
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /x @节点狂魔 /
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_81
-    server: 175.201.95.5
-    port: 30051
+    name: KR_youtube@资源分享师_10
+    server: 118.45.150.77
+    port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: X@freecodes/?ed=2560
+      path: /X @节点狂魔 /
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: CN_youtube@资源分享师_14
-    server: 202.85.53.74
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: NL_youtube@资源分享师_6
+    name: NL_youtube@资源分享师_3
     server: 188.42.145.253
     port: 2096
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1548,20 +456,127 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_82
-    server: 183.101.243.99
-    port: 12576
+    name: RU_youtube@资源分享师_1
+    server: 195.13.45.253
+    port: 2096
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /X@节点狂魔/?ed=2560
+      path: /x @节点狂魔
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_83
+    name: KR_youtube@资源分享师_11
+    server: 14.40.124.226
+    port: 50003
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_12
+    server: 118.44.64.9
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vmess
+    name: KR_youtube@资源分享师_13
+    server: 140.238.2.250
+    port: 443
+    uuid: 41a7089a-040b-4538-8b8d-010902405bde
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ""
+  - type: vless
+    name: IR_youtube@资源分享师_1
+    server: 94.182.137.12
+    port: 20532
+    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+    network: tcp
+    encryption: none
+  - type: vless
+    name: KR_youtube@资源分享师_14
+    server: 112.165.52.204
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_15
+    server: 175.215.175.175
+    port: 50003
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_16
+    server: 14.33.140.80
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: IE_youtube@资源分享师
+    server: 185.18.222.208
+    port: 2053
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_17
+    server: 221.151.212.249
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_18
     server: 14.39.99.235
     port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1574,8 +589,68 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_84
-    server: 14.39.99.235
+    name: KR_youtube@资源分享师_19
+    server: 203.243.63.166
+    port: 27249
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: hysteria2
+    name: CN_youtube@资源分享师_17
+    server: hk1.aeccghuyjftyg.shop
+    port: 20000
+    password: 4b5e5aa9-043f-4aac-b19f-1283fff8e6a2
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: fdrccJDGatdFDDRp
+  - type: vless
+    name: KR_youtube@资源分享师_20
+    server: 27.100.229.147
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_21
+    server: 203.243.63.166
+    port: 27249
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_4
+    server: 45.130.125.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_22
+    server: 106.244.201.248
     port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -1583,7 +658,233 @@ proxies:
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_2
+    server: 160.16.203.210
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_23
+    server: 211.59.232.85
+    port: 18077
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: IR_youtube@资源分享师_2
+    server: 217.60.38.191
+    port: 2053
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_24
+    server: 118.45.150.77
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /x @节点狂魔 /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_5
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: trojan
+    name: US_youtube@资源分享师_7
+    server: 3.77.59.128
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: AU_youtube@资源分享师
+    server: 43.203.215.108
+    port: 6688
+    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+    network: tcp
+    sni: baidu.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: NL_youtube@资源分享师_6
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_25
+    server: 106.244.201.248
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_26
+    server: 183.100.113.37
+    port: 21297
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_27
+    server: 222.96.197.31
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_28
+    server: 182.31.70.92
+    port: 12147
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_29
+    server: 118.91.78.76
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram @节点狂魔 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_30
+    server: 106.252.245.199
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_31
+    server: 61.83.202.17
+    port: 10042
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_18
+    server: 36.50.90.241
+    port: 47790
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_7
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_32
+    server: 183.104.0.181
+    port: 16923
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
@@ -1600,9 +901,48 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_85
-    server: 218.148.100.87
-    port: 12228
+    name: JP_youtube@资源分享师_3
+    server: 153.121.45.101
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_4
+    server: 160.16.203.210
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_8
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_33
+    server: 211.59.232.85
+    port: 18077
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1613,21 +953,21 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_86
-    server: 221.163.173.252
-    port: 50004
+    name: KR_youtube@资源分享师_34
+    server: 218.151.91.131
+    port: 12151
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: X @节点狂魔 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_87
-    server: 49.142.150.222
+    name: KR_youtube@资源分享师_35
+    server: 221.151.212.249
     port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -1639,9 +979,22 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_88
-    server: 222.113.18.207
-    port: 18001
+    name: KR_youtube@资源分享师_36
+    server: 121.182.150.149
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_37
+    server: 112.165.52.204
+    port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1652,7 +1005,252 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: KR_youtube@资源分享师_89
+    name: KR_youtube@资源分享师_38
+    server: 121.173.93.124
+    port: 12185
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_39
+    server: 182.31.70.92
+    port: 12336
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_40
+    server: 211.219.241.28
+    port: 31337
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_41
+    server: 59.1.74.97
+    port: 10911
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_42
+    server: 118.47.194.165
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_43
+    server: 175.211.35.161
+    port: 50003
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_44
+    server: 14.40.124.226
+    port: 50003
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_45
+    server: 175.208.202.41
+    port: 20583
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_2
+    server: 195.13.45.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /x @节点狂魔 /
+  - type: vless
+    name: NL_youtube@资源分享师_9
+    server: 185.133.35.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_46
+    server: 118.40.126.7
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_10
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_3
+    server: 46.8.226.39
+    port: 2053
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_4
+    server: 46.8.226.39
+    port: 8443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_8
+    server: 172.67.131.76
+    port: 443
+    uuid: afc9d688-520a-46fa-a98d-4511d1198cdd
+    network: ws
+    servername: EEeE3.222767.xYz
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Bla4bwO5lnIT6TyxDFklcPSbclvX
+      headers:
+        Host: eeee3.222767.xyz
+  - type: vless
+    name: KR_youtube@资源分享师_47
+    server: 118.40.126.7
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_48
+    server: 121.158.194.32
+    port: 11611
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_49
+    server: 183.104.0.181
+    port: 16923
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /x @节点狂魔 /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_50
+    server: 121.182.150.149
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_51
     server: 211.219.241.28
     port: 31337
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
@@ -1665,9 +1263,776 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
+    name: NL_youtube@资源分享师_11
+    server: 45.135.235.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: IR_youtube@资源分享师_3
+    server: 217.60.38.191
+    port: 8443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_52
+    server: 118.47.194.165
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_53
+    server: 121.165.101.69
+    port: 19413
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_54
+    server: 175.208.202.41
+    port: 20583
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_55
+    server: 59.25.160.141
+    port: 50008
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_56
+    server: 211.48.77.114
+    port: 12312
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_9
+    server: 47.76.218.163
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_57
+    server: 221.163.173.252
+    port: 50004
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /x @节点狂魔 /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_58
+    server: 222.113.18.211
+    port: 14443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_59
+    server: 222.96.197.31
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_19
+    server: 114.34.202.224
+    port: 10004
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_10
+    server: 104.17.89.51
+    port: 443
+    uuid: 82ebd58c-156a-4c2b-9cf9-1762f0a1e04f
+    network: ws
+    servername: rAyAn-007.lEiLa.dPdNs.oRg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rAyAn-007.lEiLa.dPdNs.oRg
+  - type: vless
+    name: CN_youtube@资源分享师_20
+    server: 36.50.90.241
+    port: 35951
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_60
+    server: 27.100.229.147
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_61
+    server: 175.215.175.175
+    port: 50003
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_62
+    server: 124.61.52.107
+    port: 26257
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_63
+    server: 175.208.202.41
+    port: 20583
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_64
+    server: 122.47.74.139
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X @节点狂魔 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_65
+    server: 118.45.150.77
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: IR_youtube@资源分享师_4
+    server: 217.60.248.66
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_66
+    server: 118.38.245.191
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X @节点狂魔 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_67
+    server: 59.1.74.97
+    port: 10911
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_68
+    server: 125.128.215.162
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: NL_youtube@资源分享师_12
+    server: 188.42.145.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /freecodes@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_21
+    server: 210.61.97.241
+    port: 81
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_22
+    server: 210.61.97.241
+    port: 81
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_69
+    server: 211.48.77.114
+    port: 12312
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_70
+    server: 27.100.189.152
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /telegram @freecodes
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_71
+    server: 118.44.64.9
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_11
+    server: 47.76.218.163
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_23
+    server: 223.16.138.113
+    port: 10002
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_24
+    server: 221.125.10.8
+    port: 57537
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_25
+    server: 210.6.207.42
+    port: 18622
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_5
+    server: 158.101.80.84
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_6
+    server: 158.101.77.33
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_7
+    server: 202.84.53.85
+    port: 19999
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_8
+    server: 159.100.194.42
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_5
+    server: 31.192.238.71
+    port: 8443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_72
+    server: 152.67.194.140
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_73
+    server: 152.67.194.30
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_12
+    server: 131.186.18.145
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: SG_youtube@资源分享师
+    server: 185.114.78.230
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_74
+    server: 121.131.242.29
+    port: 12219
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_75
+    server: 27.100.229.147
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_76
+    server: 14.33.140.80
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_77
+    server: 124.61.52.107
+    port: 26257
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_78
+    server: 112.156.154.95
+    port: 30067
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_79
+    server: 220.80.75.163
+    port: 10026
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_80
+    server: 182.208.209.54
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_81
+    server: 182.208.209.54
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_82
+    server: 211.196.80.94
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_83
+    server: 220.118.109.204
+    port: 12236
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_84
+    server: 121.158.194.32
+    port: 11611
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_85
+    server: 211.207.97.48
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_86
+    server: 218.151.91.131
+    port: 12151
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_87
+    server: 121.154.2.209
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_88
+    server: 27.100.229.147
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_89
+    server: 106.252.245.199
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
     name: KR_youtube@资源分享师_90
-    server: 222.113.18.206
-    port: 13128
+    server: 222.113.18.214
+    port: 12533
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1679,7 +2044,7 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_91
-    server: 125.141.38.50
+    server: 218.146.200.8
     port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -1692,8 +2057,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_92
-    server: 59.22.88.168
-    port: 50001
+    server: 222.113.18.207
+    port: 10090
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1705,8 +2070,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_93
-    server: 211.228.5.119
-    port: 50001
+    server: 203.251.70.240
+    port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1718,8 +2083,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_94
-    server: 116.93.199.28
-    port: 30012
+    server: 125.128.215.162
+    port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1731,8 +2096,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_95
-    server: 49.246.69.204
-    port: 12106
+    server: 59.19.192.51
+    port: 12326
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1740,60 +2105,47 @@ proxies:
     encryption: none
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vless
-    name: CN_youtube@资源分享师_15
-    server: 210.61.97.241
-    port: 81
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: gaosir.unfeeling.sbs
-  - type: vmess
-    name: US_youtube@资源分享师_14
-    server: 47.245.106.193
-    port: 22433
-    uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: ""
-  - type: vless
-    name: CN_youtube@资源分享师_16
-    server: 36.50.90.241
-    port: 35951
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
-    tls: true
-    encryption: none
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_96
-    server: 220.80.75.163
-    port: 10026
+    server: 211.177.114.117
+    port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
     tls: true
     encryption: none
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_97
-    server: 125.135.4.15
-    port: 12216
+    server: 125.130.15.106
+    port: 27879
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: trojan
+    name: CN_youtube@资源分享师_26
+    server: 36.151.251.18
+    port: 811
+    password: BxceQaOe
+    network: tcp
+    sni: 36.151.251.18
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: US_youtube@资源分享师_13
+    server: 47.76.218.163
+    port: 443
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1804,9 +2156,74 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
+    name: CN_youtube@资源分享师_27
+    server: 114.34.202.224
+    port: 10004
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_6
+    server: 31.192.238.71
+    port: 2053
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: RU_youtube@资源分享师_7
+    server: 31.192.238.71
+    port: 8443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: US_youtube@资源分享师_14
+    server: 47.79.90.37
+    port: 49153
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
     name: KR_youtube@资源分享师_98
-    server: 211.229.77.184
-    port: 27443
+    server: 152.67.194.140
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: JP_youtube@资源分享师_9
+    server: 113.37.149.36
+    port: 12553
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1818,8 +2235,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_99
-    server: 211.207.97.48
-    port: 50001
+    server: 61.83.202.17
+    port: 10042
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1831,8 +2248,21 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_100
-    server: 49.142.150.222
-    port: 50001
+    server: 218.148.100.87
+    port: 12228
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: CN_youtube@资源分享师_28
+    server: 210.61.97.241
+    port: 81
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1844,8 +2274,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_101
-    server: 121.154.2.209
-    port: 50000
+    server: 220.118.153.222
+    port: 11443
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1857,8 +2287,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_102
-    server: 222.113.18.207
-    port: 32773
+    server: 122.47.74.139
+    port: 50001
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1870,8 +2300,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_103
-    server: 115.40.244.240
-    port: 12696
+    server: 112.156.154.95
+    port: 30067
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1883,8 +2313,8 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_104
-    server: 203.251.70.240
-    port: 50000
+    server: 111.118.118.177
+    port: 36167
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1896,7 +2326,33 @@ proxies:
         Host: gaosir.unfeeling.sbs
   - type: vless
     name: KR_youtube@资源分享师_105
-    server: 125.128.215.162
+    server: 182.208.209.54
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_106
+    server: 218.148.100.87
+    port: 16038
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_107
+    server: 182.208.209.54
     port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
@@ -1908,9 +2364,269 @@ proxies:
       headers:
         Host: gaosir.unfeeling.sbs
   - type: vless
-    name: CN_youtube@资源分享师_17
-    server: 221.125.10.8
-    port: 57537
+    name: KR_youtube@资源分享师_108
+    server: 121.158.194.32
+    port: 11413
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_109
+    server: 14.32.12.235
+    port: 10008
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_110
+    server: 118.38.245.191
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_111
+    server: 112.165.52.204
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_112
+    server: 14.39.99.235
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_113
+    server: 14.35.29.177
+    port: 15211
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_114
+    server: 218.151.91.131
+    port: 12151
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_115
+    server: 182.31.70.92
+    port: 12336
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_116
+    server: 115.93.169.180
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_117
+    server: 124.61.52.107
+    port: 26257
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_118
+    server: 222.113.18.206
+    port: 13128
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_119
+    server: 211.48.77.114
+    port: 12312
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_120
+    server: 118.44.64.9
+    port: 50000
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_121
+    server: 106.252.245.199
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_122
+    server: 218.146.200.8
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_123
+    server: 211.59.232.85
+    port: 12140
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_124
+    server: 211.59.232.85
+    port: 18077
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_125
+    server: 183.104.0.181
+    port: 16923
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_126
+    server: 221.151.212.249
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_127
+    server: 222.114.57.191
+    port: 50001
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: KR_youtube@资源分享师_128
+    server: 27.100.189.152
+    port: 50000
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     network: ws
     servername: gaosir.unfeeling.sbs
@@ -1926,118 +2642,153 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - PL_youtube@资源分享师
       - US_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
       - CN_youtube@资源分享师_2
-      - US_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
       - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_4
       - CN_youtube@资源分享师_4
       - CN_youtube@资源分享师_5
-      - FR_youtube@资源分享师
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - US_youtube@资源分享师_3
-      - US_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
       - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - GB_youtube@资源分享师
       - US_youtube@资源分享师_6
-      - US_youtube@资源分享师_7
-      - US_youtube@资源分享师_8
-      - US_youtube@资源分享师_9
-      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_7
       - CN_youtube@资源分享师_8
-      - US_youtube@资源分享师_10
       - CN_youtube@资源分享师_9
-      - KR_youtube@资源分享师_2
+      - FR_youtube@资源分享师
+      - DE_youtube@资源分享师
       - CN_youtube@资源分享师_10
       - CN_youtube@资源分享师_11
-      - KR_youtube@资源分享师_3
-      - CN_youtube@资源分享师_12
       - NL_youtube@资源分享师_1
-      - US_youtube@资源分享师_11
+      - NL_youtube@资源分享师_2
+      - CN_youtube@资源分享师_12
+      - CN_youtube@资源分享师_13
+      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_14
+      - CN_youtube@资源分享师_15
+      - KR_youtube@资源分享师_2
+      - CN_youtube@资源分享师_16
+      - KR_youtube@资源分享师_3
       - KR_youtube@资源分享师_4
       - KR_youtube@资源分享师_5
-      - NL_youtube@资源分享师_2
       - KR_youtube@资源分享师_6
       - KR_youtube@资源分享师_7
       - KR_youtube@资源分享师_8
       - KR_youtube@资源分享师_9
       - KR_youtube@资源分享师_10
+      - NL_youtube@资源分享师_3
+      - RU_youtube@资源分享师_1
       - KR_youtube@资源分享师_11
       - KR_youtube@资源分享师_12
-      - NL_youtube@资源分享师_3
       - KR_youtube@资源分享师_13
-      - CN_youtube@资源分享师_13
+      - IR_youtube@资源分享师_1
       - KR_youtube@资源分享师_14
       - KR_youtube@资源分享师_15
-      - JP_youtube@资源分享师_1
       - KR_youtube@资源分享师_16
-      - NL_youtube@资源分享师_4
+      - IE_youtube@资源分享师
       - KR_youtube@资源分享师_17
       - KR_youtube@资源分享师_18
       - KR_youtube@资源分享师_19
+      - CN_youtube@资源分享师_17
       - KR_youtube@资源分享师_20
       - KR_youtube@资源分享师_21
+      - NL_youtube@资源分享师_4
       - KR_youtube@资源分享师_22
+      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_2
       - KR_youtube@资源分享师_24
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_7
+      - AU_youtube@资源分享师
+      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_25
       - KR_youtube@资源分享师_26
       - KR_youtube@资源分享师_27
-      - IR_youtube@资源分享师
       - KR_youtube@资源分享师_28
       - KR_youtube@资源分享师_29
       - KR_youtube@资源分享师_30
       - KR_youtube@资源分享师_31
+      - CN_youtube@资源分享师_18
+      - NL_youtube@资源分享师_7
       - KR_youtube@资源分享师_32
+      - IQ_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - JP_youtube@资源分享师_4
+      - NL_youtube@资源分享师_8
       - KR_youtube@资源分享师_33
       - KR_youtube@资源分享师_34
       - KR_youtube@资源分享师_35
-      - GB_youtube@资源分享师
       - KR_youtube@资源分享师_36
       - KR_youtube@资源分享师_37
       - KR_youtube@资源分享师_38
-      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_39
-      - RU_youtube@资源分享师
       - KR_youtube@资源分享师_40
       - KR_youtube@资源分享师_41
-      - NL_youtube@资源分享师_5
       - KR_youtube@资源分享师_42
       - KR_youtube@资源分享师_43
       - KR_youtube@资源分享师_44
       - KR_youtube@资源分享师_45
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_9
       - KR_youtube@资源分享师_46
+      - NL_youtube@资源分享师_10
+      - RU_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_8
       - KR_youtube@资源分享师_47
-      - US_youtube@资源分享师_12
       - KR_youtube@资源分享师_48
       - KR_youtube@资源分享师_49
       - KR_youtube@资源分享师_50
       - KR_youtube@资源分享师_51
+      - NL_youtube@资源分享师_11
+      - IR_youtube@资源分享师_3
       - KR_youtube@资源分享师_52
       - KR_youtube@资源分享师_53
       - KR_youtube@资源分享师_54
       - KR_youtube@资源分享师_55
       - KR_youtube@资源分享师_56
+      - US_youtube@资源分享师_9
       - KR_youtube@资源分享师_57
       - KR_youtube@资源分享师_58
       - KR_youtube@资源分享师_59
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_19
+      - US_youtube@资源分享师_10
+      - CN_youtube@资源分享师_20
       - KR_youtube@资源分享师_60
       - KR_youtube@资源分享师_61
       - KR_youtube@资源分享师_62
       - KR_youtube@资源分享师_63
       - KR_youtube@资源分享师_64
       - KR_youtube@资源分享师_65
+      - IR_youtube@资源分享师_4
       - KR_youtube@资源分享师_66
       - KR_youtube@资源分享师_67
       - KR_youtube@资源分享师_68
+      - NL_youtube@资源分享师_12
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
       - KR_youtube@资源分享师_69
       - KR_youtube@资源分享师_70
       - KR_youtube@资源分享师_71
+      - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_23
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - JP_youtube@资源分享师_5
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - RU_youtube@资源分享师_5
       - KR_youtube@资源分享师_72
       - KR_youtube@资源分享师_73
+      - US_youtube@资源分享师_12
+      - SG_youtube@资源分享师
       - KR_youtube@资源分享师_74
       - KR_youtube@资源分享师_75
       - KR_youtube@资源分享师_76
@@ -2046,12 +2797,9 @@ proxy-groups:
       - KR_youtube@资源分享师_79
       - KR_youtube@资源分享师_80
       - KR_youtube@资源分享师_81
-      - CN_youtube@资源分享师_14
-      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_82
       - KR_youtube@资源分享师_83
       - KR_youtube@资源分享师_84
-      - IQ_youtube@资源分享师
       - KR_youtube@资源分享师_85
       - KR_youtube@资源分享师_86
       - KR_youtube@资源分享师_87
@@ -2063,136 +2811,198 @@ proxy-groups:
       - KR_youtube@资源分享师_93
       - KR_youtube@资源分享师_94
       - KR_youtube@资源分享师_95
-      - CN_youtube@资源分享师_15
-      - US_youtube@资源分享师_14
-      - CN_youtube@资源分享师_16
       - KR_youtube@资源分享师_96
       - KR_youtube@资源分享师_97
+      - CN_youtube@资源分享师_26
+      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_27
+      - RU_youtube@资源分享师_6
+      - RU_youtube@资源分享师_7
+      - US_youtube@资源分享师_14
       - KR_youtube@资源分享师_98
+      - JP_youtube@资源分享师_9
       - KR_youtube@资源分享师_99
       - KR_youtube@资源分享师_100
+      - CN_youtube@资源分享师_28
       - KR_youtube@资源分享师_101
       - KR_youtube@资源分享师_102
       - KR_youtube@资源分享师_103
       - KR_youtube@资源分享师_104
       - KR_youtube@资源分享师_105
-      - CN_youtube@资源分享师_17
+      - KR_youtube@资源分享师_106
+      - KR_youtube@资源分享师_107
+      - KR_youtube@资源分享师_108
+      - KR_youtube@资源分享师_109
+      - KR_youtube@资源分享师_110
+      - KR_youtube@资源分享师_111
+      - KR_youtube@资源分享师_112
+      - KR_youtube@资源分享师_113
+      - KR_youtube@资源分享师_114
+      - KR_youtube@资源分享师_115
+      - KR_youtube@资源分享师_116
+      - KR_youtube@资源分享师_117
+      - KR_youtube@资源分享师_118
+      - KR_youtube@资源分享师_119
+      - KR_youtube@资源分享师_120
+      - KR_youtube@资源分享师_121
+      - KR_youtube@资源分享师_122
+      - KR_youtube@资源分享师_123
+      - KR_youtube@资源分享师_124
+      - KR_youtube@资源分享师_125
+      - KR_youtube@资源分享师_126
+      - KR_youtube@资源分享师_127
+      - KR_youtube@资源分享师_128
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
+      - PL_youtube@资源分享师
       - US_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
       - CN_youtube@资源分享师_2
-      - US_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
       - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_4
       - CN_youtube@资源分享师_4
       - CN_youtube@资源分享师_5
-      - FR_youtube@资源分享师
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - US_youtube@资源分享师_3
-      - US_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
       - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - GB_youtube@资源分享师
       - US_youtube@资源分享师_6
-      - US_youtube@资源分享师_7
-      - US_youtube@资源分享师_8
-      - US_youtube@资源分享师_9
-      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_7
       - CN_youtube@资源分享师_8
-      - US_youtube@资源分享师_10
       - CN_youtube@资源分享师_9
-      - KR_youtube@资源分享师_2
+      - FR_youtube@资源分享师
+      - DE_youtube@资源分享师
       - CN_youtube@资源分享师_10
       - CN_youtube@资源分享师_11
-      - KR_youtube@资源分享师_3
-      - CN_youtube@资源分享师_12
       - NL_youtube@资源分享师_1
-      - US_youtube@资源分享师_11
+      - NL_youtube@资源分享师_2
+      - CN_youtube@资源分享师_12
+      - CN_youtube@资源分享师_13
+      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_14
+      - CN_youtube@资源分享师_15
+      - KR_youtube@资源分享师_2
+      - CN_youtube@资源分享师_16
+      - KR_youtube@资源分享师_3
       - KR_youtube@资源分享师_4
       - KR_youtube@资源分享师_5
-      - NL_youtube@资源分享师_2
       - KR_youtube@资源分享师_6
       - KR_youtube@资源分享师_7
       - KR_youtube@资源分享师_8
       - KR_youtube@资源分享师_9
       - KR_youtube@资源分享师_10
+      - NL_youtube@资源分享师_3
+      - RU_youtube@资源分享师_1
       - KR_youtube@资源分享师_11
       - KR_youtube@资源分享师_12
-      - NL_youtube@资源分享师_3
       - KR_youtube@资源分享师_13
-      - CN_youtube@资源分享师_13
+      - IR_youtube@资源分享师_1
       - KR_youtube@资源分享师_14
       - KR_youtube@资源分享师_15
-      - JP_youtube@资源分享师_1
       - KR_youtube@资源分享师_16
-      - NL_youtube@资源分享师_4
+      - IE_youtube@资源分享师
       - KR_youtube@资源分享师_17
       - KR_youtube@资源分享师_18
       - KR_youtube@资源分享师_19
+      - CN_youtube@资源分享师_17
       - KR_youtube@资源分享师_20
       - KR_youtube@资源分享师_21
+      - NL_youtube@资源分享师_4
       - KR_youtube@资源分享师_22
+      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_2
       - KR_youtube@资源分享师_24
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_7
+      - AU_youtube@资源分享师
+      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_25
       - KR_youtube@资源分享师_26
       - KR_youtube@资源分享师_27
-      - IR_youtube@资源分享师
       - KR_youtube@资源分享师_28
       - KR_youtube@资源分享师_29
       - KR_youtube@资源分享师_30
       - KR_youtube@资源分享师_31
+      - CN_youtube@资源分享师_18
+      - NL_youtube@资源分享师_7
       - KR_youtube@资源分享师_32
+      - IQ_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - JP_youtube@资源分享师_4
+      - NL_youtube@资源分享师_8
       - KR_youtube@资源分享师_33
       - KR_youtube@资源分享师_34
       - KR_youtube@资源分享师_35
-      - GB_youtube@资源分享师
       - KR_youtube@资源分享师_36
       - KR_youtube@资源分享师_37
       - KR_youtube@资源分享师_38
-      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_39
-      - RU_youtube@资源分享师
       - KR_youtube@资源分享师_40
       - KR_youtube@资源分享师_41
-      - NL_youtube@资源分享师_5
       - KR_youtube@资源分享师_42
       - KR_youtube@资源分享师_43
       - KR_youtube@资源分享师_44
       - KR_youtube@资源分享师_45
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_9
       - KR_youtube@资源分享师_46
+      - NL_youtube@资源分享师_10
+      - RU_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_8
       - KR_youtube@资源分享师_47
-      - US_youtube@资源分享师_12
       - KR_youtube@资源分享师_48
       - KR_youtube@资源分享师_49
       - KR_youtube@资源分享师_50
       - KR_youtube@资源分享师_51
+      - NL_youtube@资源分享师_11
+      - IR_youtube@资源分享师_3
       - KR_youtube@资源分享师_52
       - KR_youtube@资源分享师_53
       - KR_youtube@资源分享师_54
       - KR_youtube@资源分享师_55
       - KR_youtube@资源分享师_56
+      - US_youtube@资源分享师_9
       - KR_youtube@资源分享师_57
       - KR_youtube@资源分享师_58
       - KR_youtube@资源分享师_59
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_19
+      - US_youtube@资源分享师_10
+      - CN_youtube@资源分享师_20
       - KR_youtube@资源分享师_60
       - KR_youtube@资源分享师_61
       - KR_youtube@资源分享师_62
       - KR_youtube@资源分享师_63
       - KR_youtube@资源分享师_64
       - KR_youtube@资源分享师_65
+      - IR_youtube@资源分享师_4
       - KR_youtube@资源分享师_66
       - KR_youtube@资源分享师_67
       - KR_youtube@资源分享师_68
+      - NL_youtube@资源分享师_12
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
       - KR_youtube@资源分享师_69
       - KR_youtube@资源分享师_70
       - KR_youtube@资源分享师_71
+      - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_23
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - JP_youtube@资源分享师_5
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - RU_youtube@资源分享师_5
       - KR_youtube@资源分享师_72
       - KR_youtube@资源分享师_73
+      - US_youtube@资源分享师_12
+      - SG_youtube@资源分享师
       - KR_youtube@资源分享师_74
       - KR_youtube@资源分享师_75
       - KR_youtube@资源分享师_76
@@ -2201,12 +3011,9 @@ proxy-groups:
       - KR_youtube@资源分享师_79
       - KR_youtube@资源分享师_80
       - KR_youtube@资源分享师_81
-      - CN_youtube@资源分享师_14
-      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_82
       - KR_youtube@资源分享师_83
       - KR_youtube@资源分享师_84
-      - IQ_youtube@资源分享师
       - KR_youtube@资源分享师_85
       - KR_youtube@资源分享师_86
       - KR_youtube@资源分享师_87
@@ -2218,20 +3025,47 @@ proxy-groups:
       - KR_youtube@资源分享师_93
       - KR_youtube@资源分享师_94
       - KR_youtube@资源分享师_95
-      - CN_youtube@资源分享师_15
-      - US_youtube@资源分享师_14
-      - CN_youtube@资源分享师_16
       - KR_youtube@资源分享师_96
       - KR_youtube@资源分享师_97
+      - CN_youtube@资源分享师_26
+      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_27
+      - RU_youtube@资源分享师_6
+      - RU_youtube@资源分享师_7
+      - US_youtube@资源分享师_14
       - KR_youtube@资源分享师_98
+      - JP_youtube@资源分享师_9
       - KR_youtube@资源分享师_99
       - KR_youtube@资源分享师_100
+      - CN_youtube@资源分享师_28
       - KR_youtube@资源分享师_101
       - KR_youtube@资源分享师_102
       - KR_youtube@资源分享师_103
       - KR_youtube@资源分享师_104
       - KR_youtube@资源分享师_105
-      - CN_youtube@资源分享师_17
+      - KR_youtube@资源分享师_106
+      - KR_youtube@资源分享师_107
+      - KR_youtube@资源分享师_108
+      - KR_youtube@资源分享师_109
+      - KR_youtube@资源分享师_110
+      - KR_youtube@资源分享师_111
+      - KR_youtube@资源分享师_112
+      - KR_youtube@资源分享师_113
+      - KR_youtube@资源分享师_114
+      - KR_youtube@资源分享师_115
+      - KR_youtube@资源分享师_116
+      - KR_youtube@资源分享师_117
+      - KR_youtube@资源分享师_118
+      - KR_youtube@资源分享师_119
+      - KR_youtube@资源分享师_120
+      - KR_youtube@资源分享师_121
+      - KR_youtube@资源分享师_122
+      - KR_youtube@资源分享师_123
+      - KR_youtube@资源分享师_124
+      - KR_youtube@资源分享师_125
+      - KR_youtube@资源分享师_126
+      - KR_youtube@资源分享师_127
+      - KR_youtube@资源分享师_128
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -2251,118 +3085,153 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - PL_youtube@资源分享师
       - US_youtube@资源分享师_1
+      - US_youtube@资源分享师_2
+      - US_youtube@资源分享师_3
       - CN_youtube@资源分享师_1
       - CN_youtube@资源分享师_2
-      - US_youtube@资源分享师_2
+      - JP_youtube@资源分享师_1
       - CN_youtube@资源分享师_3
+      - US_youtube@资源分享师_4
       - CN_youtube@资源分享师_4
       - CN_youtube@资源分享师_5
-      - FR_youtube@资源分享师
-      - CN_youtube@资源分享师_6
-      - CN_youtube@资源分享师_7
-      - US_youtube@资源分享师_3
-      - US_youtube@资源分享师_4
-      - unKnow_youtube@资源分享师
       - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - GB_youtube@资源分享师
       - US_youtube@资源分享师_6
-      - US_youtube@资源分享师_7
-      - US_youtube@资源分享师_8
-      - US_youtube@资源分享师_9
-      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_7
       - CN_youtube@资源分享师_8
-      - US_youtube@资源分享师_10
       - CN_youtube@资源分享师_9
-      - KR_youtube@资源分享师_2
+      - FR_youtube@资源分享师
+      - DE_youtube@资源分享师
       - CN_youtube@资源分享师_10
       - CN_youtube@资源分享师_11
-      - KR_youtube@资源分享师_3
-      - CN_youtube@资源分享师_12
       - NL_youtube@资源分享师_1
-      - US_youtube@资源分享师_11
+      - NL_youtube@资源分享师_2
+      - CN_youtube@资源分享师_12
+      - CN_youtube@资源分享师_13
+      - KR_youtube@资源分享师_1
+      - CN_youtube@资源分享师_14
+      - CN_youtube@资源分享师_15
+      - KR_youtube@资源分享师_2
+      - CN_youtube@资源分享师_16
+      - KR_youtube@资源分享师_3
       - KR_youtube@资源分享师_4
       - KR_youtube@资源分享师_5
-      - NL_youtube@资源分享师_2
       - KR_youtube@资源分享师_6
       - KR_youtube@资源分享师_7
       - KR_youtube@资源分享师_8
       - KR_youtube@资源分享师_9
       - KR_youtube@资源分享师_10
+      - NL_youtube@资源分享师_3
+      - RU_youtube@资源分享师_1
       - KR_youtube@资源分享师_11
       - KR_youtube@资源分享师_12
-      - NL_youtube@资源分享师_3
       - KR_youtube@资源分享师_13
-      - CN_youtube@资源分享师_13
+      - IR_youtube@资源分享师_1
       - KR_youtube@资源分享师_14
       - KR_youtube@资源分享师_15
-      - JP_youtube@资源分享师_1
       - KR_youtube@资源分享师_16
-      - NL_youtube@资源分享师_4
+      - IE_youtube@资源分享师
       - KR_youtube@资源分享师_17
       - KR_youtube@资源分享师_18
       - KR_youtube@资源分享师_19
+      - CN_youtube@资源分享师_17
       - KR_youtube@资源分享师_20
       - KR_youtube@资源分享师_21
+      - NL_youtube@资源分享师_4
       - KR_youtube@资源分享师_22
+      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_23
+      - IR_youtube@资源分享师_2
       - KR_youtube@资源分享师_24
+      - NL_youtube@资源分享师_5
+      - US_youtube@资源分享师_7
+      - AU_youtube@资源分享师
+      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_25
       - KR_youtube@资源分享师_26
       - KR_youtube@资源分享师_27
-      - IR_youtube@资源分享师
       - KR_youtube@资源分享师_28
       - KR_youtube@资源分享师_29
       - KR_youtube@资源分享师_30
       - KR_youtube@资源分享师_31
+      - CN_youtube@资源分享师_18
+      - NL_youtube@资源分享师_7
       - KR_youtube@资源分享师_32
+      - IQ_youtube@资源分享师
+      - JP_youtube@资源分享师_3
+      - JP_youtube@资源分享师_4
+      - NL_youtube@资源分享师_8
       - KR_youtube@资源分享师_33
       - KR_youtube@资源分享师_34
       - KR_youtube@资源分享师_35
-      - GB_youtube@资源分享师
       - KR_youtube@资源分享师_36
       - KR_youtube@资源分享师_37
       - KR_youtube@资源分享师_38
-      - JP_youtube@资源分享师_2
       - KR_youtube@资源分享师_39
-      - RU_youtube@资源分享师
       - KR_youtube@资源分享师_40
       - KR_youtube@资源分享师_41
-      - NL_youtube@资源分享师_5
       - KR_youtube@资源分享师_42
       - KR_youtube@资源分享师_43
       - KR_youtube@资源分享师_44
       - KR_youtube@资源分享师_45
+      - RU_youtube@资源分享师_2
+      - NL_youtube@资源分享师_9
       - KR_youtube@资源分享师_46
+      - NL_youtube@资源分享师_10
+      - RU_youtube@资源分享师_3
+      - RU_youtube@资源分享师_4
+      - US_youtube@资源分享师_8
       - KR_youtube@资源分享师_47
-      - US_youtube@资源分享师_12
       - KR_youtube@资源分享师_48
       - KR_youtube@资源分享师_49
       - KR_youtube@资源分享师_50
       - KR_youtube@资源分享师_51
+      - NL_youtube@资源分享师_11
+      - IR_youtube@资源分享师_3
       - KR_youtube@资源分享师_52
       - KR_youtube@资源分享师_53
       - KR_youtube@资源分享师_54
       - KR_youtube@资源分享师_55
       - KR_youtube@资源分享师_56
+      - US_youtube@资源分享师_9
       - KR_youtube@资源分享师_57
       - KR_youtube@资源分享师_58
       - KR_youtube@资源分享师_59
-      - JP_youtube@资源分享师_3
-      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_19
+      - US_youtube@资源分享师_10
+      - CN_youtube@资源分享师_20
       - KR_youtube@资源分享师_60
       - KR_youtube@资源分享师_61
       - KR_youtube@资源分享师_62
       - KR_youtube@资源分享师_63
       - KR_youtube@资源分享师_64
       - KR_youtube@资源分享师_65
+      - IR_youtube@资源分享师_4
       - KR_youtube@资源分享师_66
       - KR_youtube@资源分享师_67
       - KR_youtube@资源分享师_68
+      - NL_youtube@资源分享师_12
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
       - KR_youtube@资源分享师_69
       - KR_youtube@资源分享师_70
       - KR_youtube@资源分享师_71
+      - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_23
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - JP_youtube@资源分享师_5
+      - JP_youtube@资源分享师_6
+      - JP_youtube@资源分享师_7
+      - JP_youtube@资源分享师_8
+      - RU_youtube@资源分享师_5
       - KR_youtube@资源分享师_72
       - KR_youtube@资源分享师_73
+      - US_youtube@资源分享师_12
+      - SG_youtube@资源分享师
       - KR_youtube@资源分享师_74
       - KR_youtube@资源分享师_75
       - KR_youtube@资源分享师_76
@@ -2371,12 +3240,9 @@ proxy-groups:
       - KR_youtube@资源分享师_79
       - KR_youtube@资源分享师_80
       - KR_youtube@资源分享师_81
-      - CN_youtube@资源分享师_14
-      - NL_youtube@资源分享师_6
       - KR_youtube@资源分享师_82
       - KR_youtube@资源分享师_83
       - KR_youtube@资源分享师_84
-      - IQ_youtube@资源分享师
       - KR_youtube@资源分享师_85
       - KR_youtube@资源分享师_86
       - KR_youtube@资源分享师_87
@@ -2388,20 +3254,47 @@ proxy-groups:
       - KR_youtube@资源分享师_93
       - KR_youtube@资源分享师_94
       - KR_youtube@资源分享师_95
-      - CN_youtube@资源分享师_15
-      - US_youtube@资源分享师_14
-      - CN_youtube@资源分享师_16
       - KR_youtube@资源分享师_96
       - KR_youtube@资源分享师_97
+      - CN_youtube@资源分享师_26
+      - US_youtube@资源分享师_13
+      - CN_youtube@资源分享师_27
+      - RU_youtube@资源分享师_6
+      - RU_youtube@资源分享师_7
+      - US_youtube@资源分享师_14
       - KR_youtube@资源分享师_98
+      - JP_youtube@资源分享师_9
       - KR_youtube@资源分享师_99
       - KR_youtube@资源分享师_100
+      - CN_youtube@资源分享师_28
       - KR_youtube@资源分享师_101
       - KR_youtube@资源分享师_102
       - KR_youtube@资源分享师_103
       - KR_youtube@资源分享师_104
       - KR_youtube@资源分享师_105
-      - CN_youtube@资源分享师_17
+      - KR_youtube@资源分享师_106
+      - KR_youtube@资源分享师_107
+      - KR_youtube@资源分享师_108
+      - KR_youtube@资源分享师_109
+      - KR_youtube@资源分享师_110
+      - KR_youtube@资源分享师_111
+      - KR_youtube@资源分享师_112
+      - KR_youtube@资源分享师_113
+      - KR_youtube@资源分享师_114
+      - KR_youtube@资源分享师_115
+      - KR_youtube@资源分享师_116
+      - KR_youtube@资源分享师_117
+      - KR_youtube@资源分享师_118
+      - KR_youtube@资源分享师_119
+      - KR_youtube@资源分享师_120
+      - KR_youtube@资源分享师_121
+      - KR_youtube@资源分享师_122
+      - KR_youtube@资源分享师_123
+      - KR_youtube@资源分享师_124
+      - KR_youtube@资源分享师_125
+      - KR_youtube@资源分享师_126
+      - KR_youtube@资源分享师_127
+      - KR_youtube@资源分享师_128
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
