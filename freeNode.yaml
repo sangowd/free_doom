@@ -58,155 +58,270 @@ tun:
 
 
 proxies:
-  - type: vless
-    name: US_youtube@资源分享师
-    server: 108.162.198.11
-    port: 2096
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: JP_youtube@资源分享师
-    server: 52.68.194.189
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: FR_youtube@资源分享师
-    server: 51.195.43.174
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
+  - type: vmess
+    name: CN_youtube@资源分享师
+    server: 120.232.218.191
+    port: 31301
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: ss
     name: PL_youtube@资源分享师
-    server: 95.40.61.115
-    port: 443
-    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
-    network: ws
-    servername: s3.sni565.netlib.re
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /proxyip=tw.sni2025.netlib.re
-      headers:
-        Host: s3.sni565.netlib.re
-  - type: vless
-    name: DE_youtube@资源分享师
-    server: 142.132.140.130
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
+    server: 95.40.121.59
+    port: 50000
+    cipher: aes-256-gcm
+    password: a9a37b54-e95a-4bc4-9637-7fd00a03dd2e
+  - type: vmess
+    name: CN_youtube@资源分享师_1
+    server: 120.232.218.191
+    port: 31301
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp1.sstank.top
+  - type: vmess
+    name: CN_youtube@资源分享师_2
+    server: 120.232.218.191
+    port: 31151
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vmess
+    name: CN_youtube@资源分享师_3
+    server: 120.232.218.191
+    port: 31239
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: ml02.3332100.xyz
+  - type: vmess
+    name: CN_youtube@资源分享师_4
+    server: 103.219.103.134
+    port: 31122
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 103.219.103.134
+  - type: vmess
+    name: CN_youtube@资源分享师_5
+    server: 120.232.218.191
+    port: 31304
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: vmess
+    name: CN_youtube@资源分享师_6
+    server: 120.232.218.191
+    port: 31109
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
   - type: trojan
     name: HK_youtube@资源分享师
-    server: 58.152.53.22
+    server: 58.152.110.120
     port: 443
-    password: BxceQaOe
+    password: 2cf6d686799e6fa95316394064f26c0a
     network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: DE_youtube@资源分享师_1
-    server: 63.178.126.212
-    port: 22223
-    password: telegram-id-directvpn
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: TW_youtube@资源分享师
-    server: 220.128.110.108
-    port: 43
-    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
-    network: ws
-    servername: s3.sni565.netlib.re
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /proxyip=tw.sni2025.netlib.re
-      headers:
-        Host: s3.sni565.netlib.re
-  - type: trojan
-    name: HK_youtube@资源分享师_1
-    server: 18.162.97.46
-    port: 2569
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: HK_youtube@资源分享师_2
-    server: 16.162.87.79
-    port: 2173
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
+    sni: www.nintendogames.net
     skip-cert-verify: true
     tls: true
   - type: vmess
-    name: youtube@资源分享师
-    server: 2237-4cE3-8698-cfD1b622333A.457.pp.uA
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
+    name: CN_youtube@资源分享师_7
+    server: 120.232.218.191
+    port: 31307
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
     alterId: 0
-    network: xhttp
-    cipher: auto
-    servername: 2237-4CE3-8698-CFd1b622333a.457.pP.UA
-    tls: true
-  - type: trojan
-    name: DE_youtube@资源分享师_2
-    server: 54.93.174.92
-    port: 22223
-    password: telegram-id-directvpn
     network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: KR_youtube@资源分享师
-    server: 175.210.217.204
-    port: 50001
-    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: vmess
+    name: youtube@资源分享师
+    server: 00yin6.keeoomboom.de
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
     network: ws
-    servername: s3.sni565.netlib.re
+    cipher: auto
+    servername: 00yin6.keeoomboom.de
+    ws-opts:
+      path: /video/yhaah6j.m3u8
+      headers:
+        Host: 00yin6.keeoomboom.de
+    tls: true
+  - type: vmess
+    name: CN_youtube@资源分享师_8
+    server: 120.232.218.191
+    port: 31300
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp1.sstank.top
+  - type: vmess
+    name: CN_youtube@资源分享师_9
+    server: 120.232.218.191
+    port: 31113
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vmess
+    name: CN_youtube@资源分享师_10
+    server: 120.232.218.191
+    port: 31307
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp1.sstank.top
+  - type: vless
+    name: US_youtube@资源分享师
+    server: 47.79.41.201
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
     tls: true
     encryption: none
     ws-opts:
-      path: /proxyip=tw.sni2025.netlib.re
+      path: /?ed=2560
       headers:
-        Host: s3.sni565.netlib.re
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: trojan
+    name: JP_youtube@资源分享师
+    server: 167.179.90.127
+    port: 443
+    password: 7f7fea1d-16cf-3f0b-95c8-2dbb2fc5a97c
+    network: tcp
+    sni: jp1.sstank.top
+    skip-cert-verify: true
+    tls: true
   - type: vless
-    name: HK_youtube@资源分享师_3
-    server: 202.85.53.160
+    name: HK_youtube@资源分享师_1
+    server: 43.161.222.233
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: US_youtube@资源分享师_1
+    server: 172.66.156.81
+    port: 80
+    uuid: 0267b737-c79b-4092-95ad-74694cbbce32
+    network: ws
+    servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    encryption: none
+    ws-opts:
+      path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+      headers:
+        Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  - type: vmess
+    name: CN_youtube@资源分享师_11
+    server: 120.232.218.191
+    port: 31140
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: CN_youtube@资源分享师_12
+    server: 120.232.218.191
+    port: 32020
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
+  - type: vless
+    name: SG_youtube@资源分享师
+    server: 34.143.159.175
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: ss
+    name: GB_youtube@资源分享师
+    server: 82.38.31.199
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - type: vmess
+    name: CN_youtube@资源分享师_13
+    server: 144.48.180.187
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: CN_youtube@资源分享师_14
+    server: 120.232.218.191
+    port: 32020
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vless
+    name: JP_youtube@资源分享师_1
+    server: 18.183.89.240
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vmess
+    name: CN_youtube@资源分享师_15
+    server: 120.232.218.191
+    port: 31247
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_16
+    server: 120.232.218.191
+    port: 31247
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vless
+    name: HK_youtube@资源分享师_2
+    server: 202.85.53.77
     port: 7000
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -217,40 +332,227 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
-  - type: trojan
-    name: DE_youtube@资源分享师_3
-    server: 54.93.174.92
-    port: 22222
-    password: telegram-id-privatevpns
+  - type: vmess
+    name: CN_youtube@资源分享师_17
+    server: 120.232.218.191
+    port: 31253
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
     network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: ss
-    name: LT_youtube@资源分享师
-    server: 45.87.175.166
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-  - type: ss
-    name: RU_youtube@资源分享师
-    server: clr.ducks.tel
-    port: 17846
-    cipher: chacha20-ietf-poly1305
-    password: "907560230"
-  - type: trojan
-    name: FR_youtube@资源分享师_1
-    server: 51.44.94.146
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
+    cipher: auto
+    servername: www.alibaba.com
   - type: vless
-    name: FR_youtube@资源分享师_2
-    server: 51.195.102.180
-    port: 8443
+    name: US_youtube@资源分享师_2
+    server: 172.64.144.217
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_18
+    server: 120.232.218.191
+    port: 31153
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
+  - type: ss
+    name: SG_youtube@资源分享师_1
+    server: 54.179.51.73
+    port: 11688
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: vless
+    name: US_youtube@资源分享师_3
+    server: 172.64.49.121
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_19
+    server: 120.232.218.191
+    port: 31201
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: ss
+    name: JP_youtube@资源分享师_2
+    server: 35.77.219.57
+    port: 15097
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: vmess
+    name: CN_youtube@资源分享师_20
+    server: 120.232.218.191
+    port: 31117
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vmess
+    name: CN_youtube@资源分享师_21
+    server: 120.232.218.191
+    port: 31153
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_22
+    server: 120.232.218.191
+    port: 32026
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_23
+    server: 120.232.218.191
+    port: 31154
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
+  - type: vless
+    name: US_youtube@资源分享师_4
+    server: download.yunzhongzhuan.com
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: ss
+    name: GB_youtube@资源分享师_1
+    server: 82.38.31.202
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - type: vless
+    name: JP_youtube@资源分享师_3
+    server: 45.66.129.7
+    port: 21262
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vless
+    name: HK_youtube@资源分享师_3
+    server: 8.217.192.104
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_24
+    server: 103.219.103.134
+    port: 32023
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_25
+    server: 103.219.103.134
+    port: 31110
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 103.219.103.134
+  - type: vmess
+    name: CN_youtube@资源分享师_26
+    server: 120.232.218.191
+    port: 31153
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vmess
+    name: CN_youtube@资源分享师_27
+    server: 120.232.218.191
+    port: 31136
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vless
+    name: HK_youtube@资源分享师_4
+    server: 34.92.187.216
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: HK_youtube@资源分享师_5
+    server: 8.218.189.27
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_28
+    server: 120.232.218.191
+    port: 31102
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vless
+    name: HK_youtube@资源分享师_6
+    server: 202.85.53.54
+    port: 7000
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
     servername: kuangbao.xiejiang.dpdns.org
@@ -260,9 +562,321 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
+  - type: ss
+    name: JP_youtube@资源分享师_4
+    server: 52.193.6.47
+    port: 36887
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
   - type: vless
-    name: RU_youtube@资源分享师_1
-    server: 77.221.157.32
+    name: JP_youtube@资源分享师_5
+    server: 8.211.167.99
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_29
+    server: 103.219.103.134
+    port: 31239
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: ss
+    name: US_youtube@资源分享师_5
+    server: 54.46.63.2
+    port: 11688
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: vless
+    name: HK_youtube@资源分享师_7
+    server: 101.32.72.125
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vmess
+    name: US_youtube@资源分享师_6
+    server: xyst5w.teeoomboom.de
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    network: ws
+    cipher: auto
+    ws-opts:
+      path: /video/g5petez.m3u8
+    tls: true
+  - type: vmess
+    name: CN_youtube@资源分享师_30
+    server: 120.232.218.191
+    port: 32020
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: JP_youtube@资源分享师_6
+    server: 116.206.93.131
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_31
+    server: 120.232.218.191
+    port: 31248
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vless
+    name: youtube@资源分享师_1
+    server: 104.21.237.9
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: ss
+    name: HK_youtube@资源分享师_8
+    server: 16.163.40.230
+    port: 15099
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: ss
+    name: US_youtube@资源分享师_7
+    server: 54.46.13.224
+    port: 15098
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: vless
+    name: youtube@资源分享师_2
+    server: www.speedtest.net
+    port: 80
+    uuid: 0267b737-c79b-4092-95ad-74694cbbce32
+    network: ws
+    servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    encryption: none
+    ws-opts:
+      path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+      headers:
+        Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  - type: vmess
+    name: CN_youtube@资源分享师_32
+    server: 120.232.218.191
+    port: 31245
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vmess
+    name: CN_youtube@资源分享师_33
+    server: 120.232.218.191
+    port: 31138
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: CN_youtube@资源分享师_34
+    server: 120.232.218.191
+    port: 32027
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: KR_youtube@资源分享师
+    server: 146.56.99.255
+    port: 56789
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: hysteria2
+    name: US_youtube@资源分享师_8
+    server: yn2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: yn2.nezhasu.com
+  - type: vmess
+    name: youtube@资源分享师_3
+    server: bCE5-3ebfED0a18F2.008880888.Xyz
+    port: 80
+    uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
+    alterId: 0
+    network: xhttp
+    cipher: auto
+    servername: bcE5-3EBFeD0A18F2.008880888.XYz
+  - type: vless
+    name: youtube@资源分享师_4
+    server: 104.18.190.116
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_35
+    server: 120.232.218.191
+    port: 32021
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vmess
+    name: CN_youtube@资源分享师_36
+    server: 103.219.103.134
+    port: 31138
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: hysteria2
+    name: GB_youtube@资源分享师_2
+    server: lundun2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: lundun2.nezhasu.com
+  - type: vless
+    name: JP_youtube@资源分享师_7
+    server: 54.65.179.131
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_37
+    server: 120.232.218.191
+    port: 31138
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_38
+    server: 120.232.218.191
+    port: 32023
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: trojan
+    name: HK_youtube@资源分享师_9
+    server: 58.152.53.22
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: hysteria2
+    name: SE_youtube@资源分享师
+    server: mumbai-4.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: mumbai-4.nezhasu.com
+  - type: hysteria2
+    name: US_youtube@资源分享师_9
+    server: batam3.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: batam3.nezhasu.com
+  - type: hysteria2
+    name: US_youtube@资源分享师_10
+    server: singaporex-1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: Singaporex-1.nezhasu.com
+  - type: hysteria2
+    name: US_youtube@资源分享师_11
+    server: phoenix-2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: phoenix-2.nezhasu.com
+  - type: vmess
+    name: CN_youtube@资源分享师_39
+    server: 120.232.218.191
+    port: 31243
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vmess
+    name: CN_youtube@资源分享师_40
+    server: 120.232.218.191
+    port: 31242
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vless
+    name: JP_youtube@资源分享师_8
+    server: 54.249.169.40
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -274,50 +888,113 @@ proxies:
       headers:
         Host: kuangbao.xiejiang.dpdns.org
   - type: vmess
-    name: youtube@资源分享师_1
-    server: 920A-4bCC-9A2d-57960603c7D9.457.Pp.ua
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
+    name: CN_youtube@资源分享师_41
+    server: 120.232.218.191
+    port: 31254
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
     alterId: 0
-    network: xhttp
+    network: tcp
     cipher: auto
-    servername: 920a-4bcc-9a2d-57960603c7d9.457.pp.UA
-    tls: true
+    servername: ml02.3332100.xyz
+  - type: vmess
+    name: CN_youtube@资源分享师_42
+    server: 103.219.103.134
+    port: 31247
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_youtube@资源分享师_43
+    server: 103.219.103.134
+    port: 31306
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: ss
+    name: HK_youtube@资源分享师_10
+    server: 43.199.133.216
+    port: 15097
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: vmess
+    name: CN_youtube@资源分享师_44
+    server: 120.232.218.191
+    port: 31306
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp1.sstank.top
+  - type: ss
+    name: TR_youtube@资源分享师
+    server: 185.39.204.189
+    port: 34085
+    cipher: chacha20-ietf-poly1305
+    password: depjSbjv2Uql6W4Vge7sDf
   - type: vless
-    name: FR_youtube@资源分享师_3
-    server: 57.130.29.181
-    port: 41640
-    uuid: 1e8e5607-1dae-45de-bb64-613701313479
-    network: grpc
-    encryption: none
-    grpc-opts:
-      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - type: vless
-    name: US_youtube@资源分享师_1
-    server: 98.70.151.190
+    name: youtube@资源分享师_5
+    server: 104.21.29.51
     port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    uuid: e258977b-e413-4718-a3af-02d75492c349
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
+    servername: www.x-aniu--jp.netlib.re
     tls: true
     encryption: none
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: PL_youtube@资源分享师_1
-    server: 91.149.253.249
+        Host: www.x-aniu--jp.netlib.re
+  - type: hysteria2
+    name: JP_youtube@资源分享师_9
+    server: db1.nezhasu.com
     port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    sni: db1.nezhasu.com
+  - type: vmess
+    name: CN_youtube@资源分享师_45
+    server: 120.232.218.191
+    port: 31306
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: ss
+    name: US_youtube@资源分享师_12
+    server: 54.46.76.67
+    port: 11688
+    cipher: aes-256-gcm
+    password: aa17772f-efea-469f-b9cf-c2a5ba6d7854
+  - type: hysteria2
+    name: ZA_youtube@资源分享师
+    server: johannesburg-2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: Johannesburg-2.nezhasu.com
+  - type: hysteria2
+    name: CL_youtube@资源分享师
+    server: valparaiso-1.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: 2b195c17-5ff5-4b0d-a809-210b92212394
+    skip-cert-verify: true
+    sni: Valparaiso-1.nezhasu.cn
+  - type: vmess
+    name: CN_youtube@资源分享师_46
+    server: 103.219.103.134
+    port: 32004
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
   - type: vless
     name: HU_youtube@资源分享师
     server: 193.124.18.13
@@ -331,8 +1008,577 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
+  - type: hysteria2
+    name: IL_youtube@资源分享师
+    server: ylsl.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    sni: ylsl.nezhasu.com
+  - type: hysteria2
+    name: IL_ youtube@资源分享师
+    server: ylsl.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    sni: ylsl.nezhasu.com
+  - type: vmess
+    name: CN_ youtube@资源分享师
+    server: 120.232.218.191
+    port: 32005
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
+  - type: hysteria2
+    name: ZA_ youtube@资源分享师
+    server: johannesburg-2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: Johannesburg-2.nezhasu.com
   - type: vless
-    name: HK_youtube@资源分享师_4
+    name: " youtube@资源分享师"
+    server: 162.159.0.66
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: trojan
+    name: RU_ youtube@资源分享师
+    server: 37.18.14.33
+    port: 443
+    password: Qzy7tgpRhu
+    network: tcp
+    sni: m.vk.com
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: CN_ youtube@资源分享师_1
+    server: 120.232.218.191
+    port: 32023
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: hysteria2
+    name: JP_ youtube@资源分享师
+    server: db1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    sni: db1.nezhasu.com
+  - type: hysteria2
+    name: US_ youtube@资源分享师
+    server: yn2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: yn2.nezhasu.com
+  - type: hysteria2
+    name: US_ youtube@资源分享师_1
+    server: batam3.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: batam3.nezhasu.com
+  - type: hysteria2
+    name: US_ youtube@资源分享师_2
+    server: singaporex-3.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    sni: Singaporex-3.nezhasu.com
+  - type: hysteria2
+    name: SE_ youtube@资源分享师
+    server: mumbai-4.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 2b195c17-5ff5-4b0d-a809-210b92212394
+    skip-cert-verify: true
+    sni: mumbai-4.nezhasu.com
+  - type: hysteria2
+    name: CL_ youtube@资源分享师
+    server: valparaiso-3.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: 2b195c17-5ff5-4b0d-a809-210b92212394
+    skip-cert-verify: true
+    sni: Valparaiso-3.nezhasu.cn
+  - type: hysteria2
+    name: US_ youtube@资源分享师_3
+    server: phoenix-2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: phoenix-2.nezhasu.com
+  - type: hysteria2
+    name: GB_ youtube@资源分享师
+    server: lundun2.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: lundun2.nezhasu.com
+  - type: hysteria2
+    name: US_ youtube@资源分享师_4
+    server: singaporex-1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: Singaporex-1.nezhasu.com
+  - type: hysteria2
+    name: CL_ youtube@资源分享师_1
+    server: valparaiso-4.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: Valparaiso-4.nezhasu.cn
+  - type: hysteria2
+    name: SE_ youtube@资源分享师_1
+    server: mumbai-4.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: mumbai-4.nezhasu.com
+  - type: hysteria2
+    name: CL_ youtube@资源分享师_2
+    server: valparaiso-4.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: Valparaiso-4.nezhasu.cn
+  - type: hysteria2
+    name: IL_ youtube@资源分享师_1
+    server: ylsl.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    sni: ylsl.nezhasu.com
+  - type: hysteria2
+    name: IL_ youtube@资源分享师_2
+    server: ylsl.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 2b195c17-5ff5-4b0d-a809-210b92212394
+    sni: ylsl.nezhasu.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_2
+    server: 120.232.218.191
+    port: 32110
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_3
+    server: 120.232.218.191
+    port: 31241
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 120.232.218.191
+  - type: vless
+    name: US_ youtube@资源分享师_5
+    server: 108.162.198.11
+    port: 2096
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: trojan
+    name: US_ youtube@资源分享师_6
+    server: 63.181.59.118
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: hysteria2
+    name: CL_ youtube@资源分享师_3
+    server: valparaiso-3.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: Valparaiso-3.nezhasu.cn
+  - type: vmess
+    name: CN_ youtube@资源分享师_4
+    server: 120.232.218.191
+    port: 32002
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: HK_ youtube@资源分享师
+    server: 20.239.233.43
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: trojan
+    name: JP_ youtube@资源分享师_1
+    server: 160.16.131.243
+    port: 3169
+    password: 2cf6d686799e6fa95316394064f26c0a
+    network: tcp
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: JP_ youtube@资源分享师_2
+    server: 35.77.89.180
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vmess
+    name: CN_ youtube@资源分享师_5
+    server: 120.232.218.191
+    port: 32007
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_ youtube@资源分享师_6
+    server: 120.232.218.191
+    port: 31227
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: hysteria2
+    name: CL_ youtube@资源分享师_4
+    server: valparaiso-3.nezhasu.cn
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: Valparaiso-3.nezhasu.cn
+  - type: vmess
+    name: CN_ youtube@资源分享师_7
+    server: 120.232.218.191
+    port: 32004
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_ youtube@资源分享师_8
+    server: 120.232.218.191
+    port: 31300
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: vless
+    name: DE_ youtube@资源分享师
+    server: 185.103.252.54
+    port: 2053
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: trojan
+    name: HK_ youtube@资源分享师_1
+    server: 58.152.53.22
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: CN_ youtube@资源分享师_9
+    server: 120.232.218.191
+    port: 31303
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: jp2.sstank.top
+  - type: hysteria2
+    name: IN_ youtube@资源分享师
+    server: mumbai-1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 2b195c17-5ff5-4b0d-a809-210b92212394
+    skip-cert-verify: true
+    sni: mumbai-1.nezhasu.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_10
+    server: 103.219.103.134
+    port: 31246
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 103.219.103.134
+  - type: hysteria2
+    name: IN_ youtube@资源分享师_1
+    server: mumbai-1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+    skip-cert-verify: true
+    sni: mumbai-1.nezhasu.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_11
+    server: 120.232.218.191
+    port: 32009
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: trojan
+    name: FR_ youtube@资源分享师
+    server: 35.181.120.20
+    port: 22222
+    password: telegram-id-privatevpns
+    network: tcp
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: CN_ youtube@资源分享师_12
+    server: 120.232.218.191
+    port: 32007
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: hysteria2
+    name: IN_ youtube@资源分享师_2
+    server: mumbai-1.nezhasu.com
+    port: 443
+    ports: 50000-65535
+    password: 52d0cb21-56da-4f00-862f-be01b66446a8
+    skip-cert-verify: true
+    sni: mumbai-1.nezhasu.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_13
+    server: 120.232.218.191
+    port: 32009
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: mel.rmanluo.top
+  - type: vless
+    name: KR_ youtube@资源分享师
+    server: 211.195.83.140
+    port: 50003
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+  - type: ss
+    name: RU_ youtube@资源分享师_1
+    server: 146.19.128.183
+    port: 17847
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: vless
+    name: " youtube@资源分享师_1"
+    server: 104.18.175.200
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_2"
+    server: 104.18.63.109
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: FR_ youtube@资源分享师_1
+    server: 51.195.43.174
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: US_ youtube@资源分享师_7
+    server: 98.70.151.163
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: ss
+    name: RU_ youtube@资源分享师_2
+    server: clr.ducks.tel
+    port: 17846
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: vless
+    name: " youtube@资源分享师_3"
+    server: wangcai82.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vmess
+    name: CN_ youtube@资源分享师_14
+    server: 120.232.218.191
+    port: 32006
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vless
+    name: US_ youtube@资源分享师_8
+    server: 130.33.68.45
+    port: 443
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+  - type: ss
+    name: IR_ youtube@资源分享师
+    server: 213.176.16.77
+    port: 7022
+    cipher: chacha20-ietf-poly1305
+    password: 8HtC7rj6NfZncXYvAjDV5t
+  - type: ss
+    name: RU_ youtube@资源分享师_3
+    server: clr.ducks.tel
+    port: 17844
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: ss
+    name: RU_ youtube@资源分享师_4
+    server: 146.19.128.183
+    port: 17844
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: ss
+    name: RU_ youtube@资源分享师_5
+    server: 146.19.128.183
+    port: 17846
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: vless
+    name: NG_ youtube@资源分享师
+    server: 83.229.126.122
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vless
+    name: PL_ youtube@资源分享师
+    server: 85.193.95.23
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: HK_ youtube@资源分享师_2
     server: 8.218.189.27
     port: 443
     uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
@@ -344,233 +1590,189 @@ proxies:
       path: /proxyip=tw.sni2025.netlib.re
       headers:
         Host: s3.sni565.netlib.re
-  - type: vless
-    name: KR_youtube@资源分享师_1
-    server: 211.252.50.74
-    port: 30004
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: trojan
-    name: HU_youtube@资源分享师_1
-    server: 138.124.30.8
-    port: 443
-    password: 0311306e-56d4-4aa1-bde5-8cede7fcd3e4
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/138.124.30.8=443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: vless
-    name: FR_youtube@资源分享师_4
-    server: 141.227.170.6
-    port: 46353
-    uuid: 85dabec7-47ef-4fda-b332-83d723cc2487
-    network: grpc
-    encryption: none
-    grpc-opts:
-      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - type: vless
-    name: US_youtube@资源分享师_2
-    server: 68.64.176.135
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: US_youtube@资源分享师_3
-    server: 108.162.198.24
-    port: 2096
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: FI_youtube@资源分享师
-    server: abmive.abmivenaser-18.ir
-    port: 1520
-    uuid: 9fb343ce-90f3-4786-ad6f-1d8a822f1c41
-    network: tcp
-    servername: fast.com
-    encryption: none
-  - type: vless
-    name: youtube@资源分享师_2
-    server: wangcai199.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
     client-fingerprint: chrome
     alpn:
       - h3
   - type: vless
-    name: US_youtube@资源分享师_4
-    server: wangcai188.000444.cn
+    name: US_ youtube@资源分享师_9
+    server: www.shopify.com
     port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
     tls: true
     encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: trojan
-    name: EE_youtube@资源分享师
-    server: 37.252.5.75
-    port: 443
-    password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
     ws-opts:
-      path: /Free-VPN-CF-Geo-Project/37.252.5.75=443
+      path: /?ed=2560
       headers:
-        Host: joss.gpj1.web.id
+        Host: www.x-aniu--sg.netlib.re
+  - type: ss
+    name: RU_ youtube@资源分享师_6
+    server: clr.ducks.tel
+    port: 17847
+    cipher: chacha20-ietf-poly1305
+    password: "907560230"
+  - type: vless
+    name: " youtube@资源分享师_4"
+    server: 104.18.46.49
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
   - type: vmess
-    name: US_youtube@资源分享师_5
-    server: 479b-b511-7D5B7828DbEb.457.PP.ua
-    port: 443
-    uuid: a1d2e3cd-297e-4753-8e7a-6d9fb0f4aac1
+    name: CN_ youtube@资源分享师_15
+    server: 103.219.103.134
+    port: 32025
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
     alterId: 0
-    network: xhttp
+    network: tcp
     cipher: auto
-    servername: 479B-B511-7d5B7828DbEb.457.pp.UA
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vmess
+    name: CN_ youtube@资源分享师_16
+    server: 120.232.218.191
+    port: 32025
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: vmess
+    name: CN_ youtube@资源分享师_17
+    server: 120.232.218.191
+    port: 32025
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: TR_ youtube@资源分享师
+    server: 213.142.149.3
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
     tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: " youtube@资源分享师_5"
+    server: wangcai70.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: GB_ youtube@资源分享师_1
+    server: 206.189.25.65
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: AE_ youtube@资源分享师
+    server: 139.185.50.5
+    port: 14594
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: TW_ youtube@资源分享师
+    server: 220.128.110.108
+    port: 43
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
   - type: trojan
-    name: JP_youtube@资源分享师_1
-    server: 153.121.67.215
+    name: JP_ youtube@资源分享师_3
+    server: 160.16.212.152
     port: 2145
     password: BxceQaOe
     network: tcp
     sni: t.me/ripaojiedian
     skip-cert-verify: true
     tls: true
-  - type: vless
-    name: US_youtube@资源分享师_6
-    server: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    port: 443
-    uuid: 75b55ef6-7a78-4020-8540-df4e1a533895
-    network: http
-    servername: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    tls: true
-    encryption: none
-    http-opts:
-      path: /dgK6j67SvaPqspF7njNFy6
-      headers:
-        Host: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_7
-    server: 4069-a9d0-b967c7529ac7.457.pp.ua
-    port: 443
-    uuid: 75b55ef6-7a78-4020-8540-df4e1a533895
-    network: http
-    servername: 4069-a9d0-b967c7529ac7.457.pp.ua
-    tls: true
-    encryption: none
-    http-opts:
-      path: /dgK6j67SvaPqspF7njNFy6
-      headers:
-        Host: 4069-a9d0-b967c7529ac7.457.pp.ua
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_3
-    server: wangcai113.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_4
-    server: wangcai125.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_5
-    server: wangcai169.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: JP_youtube@资源分享师_2
-    server: 188.253.21.106
-    port: 443
-    uuid: 247a22e1-0795-4852-9bdd-a65ac1078034
-    network: tcp
-    servername: yahoo.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: 4JvLKnuuAs4h0cQ1j_S4SAuXQQ579D7Wr1sGBjmH-Ws
-      short-id: 73d3fec4
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
   - type: vmess
-    name: youtube@资源分享师_6
-    server: 920a-4bCc-9a2D-57960603c7D9.457.pp.ua
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
+    name: CN_ youtube@资源分享师_18
+    server: 120.232.218.191
+    port: 32021
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
     alterId: 0
-    network: xhttp
+    network: tcp
     cipher: auto
-    servername: 920A-4Bcc-9a2D-57960603c7d9.457.PP.ua
-    tls: true
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: ss
+    name: US_ youtube@资源分享师_10
+    server: huojian1.vn9987.top
+    port: 51004
+    cipher: chacha20-ietf-poly1305
+    password: 65e3253e-3707-49ec-b91a-c8b3546497cc
   - type: vless
-    name: PL_youtube@资源分享师_2
+    name: HK_ youtube@资源分享师_3
+    server: 8.217.180.234
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: JP_ youtube@资源分享师_4
+    server: 54.238.195.81
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
+  - type: vless
+    name: PL_ youtube@资源分享师_1
     server: 194.35.119.49
     port: 2053
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
@@ -583,8 +1785,599 @@ proxies:
       headers:
         Host: kuangbao.xiejiang.dpdns.org
   - type: vless
-    name: US_youtube@资源分享师_8
-    server: wangcai164.000444.cn
+    name: " youtube@资源分享师_6"
+    server: wangcai84.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: JP_ youtube@资源分享师_5
+    server: 54.168.69.207
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_7"
+    server: wangcai188.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vmess
+    name: CN_ youtube@资源分享师_19
+    server: 120.232.218.191
+    port: 32006
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_8"
+    server: 104.18.14.246
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--jp.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--jp.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_9"
+    server: wangcai197.cloudflare.182682.xyz
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: JP_ youtube@资源分享师_6
+    server: 52.193.105.44
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_10"
+    server: freeyx.cloudflare88.eu.org
+    port: 2096
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vmess
+    name: CN_ youtube@资源分享师_20
+    server: 120.232.218.191
+    port: 31140
+    uuid: 388BB536-C97B-CC3F-D104-49247B9B1B65
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_11"
+    server: wangcai76.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: AE_ youtube@资源分享师_1
+    server: 139.185.34.131
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: trojan
+    name: JP_ youtube@资源分享师_7
+    server: 202.181.103.246
+    port: 127
+    password: 2cf6d686799e6fa95316394064f26c0a
+    network: tcp
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: JP_ youtube@资源分享师_8
+    server: 147.78.247.110
+    port: 50010
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: " youtube@资源分享师_12"
+    server: wangcai241.cloudflare.182682.xyz
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: SG_ youtube@资源分享师
+    server: 158.178.247.58
+    port: 30008
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: " youtube@资源分享师_13"
+    server: wangcai128.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: ss
+    name: RU_ youtube@资源分享师_7
+    server: 78.40.116.178
+    port: 34094
+    cipher: chacha20-ietf-poly1305
+    password: yo6h9qkhwz8UJoTZCRtoSi
+  - type: vless
+    name: US_ youtube@资源分享师_11
+    server: www.udacity.com
+    port: 8443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
+  - type: vless
+    name: SG_ youtube@资源分享师_1
+    server: 43.156.116.194
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
+  - type: vless
+    name: AE_ youtube@资源分享师_2
+    server: 193.123.90.82
+    port: 12648
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vmess
+    name: CN_ youtube@资源分享师_21
+    server: 103.181.165.243
+    port: 26144
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: c03237cb.ba73fe85.netlib.re
+  - type: ss
+    name: US_ youtube@资源分享师_12
+    server: 192.227.129.144
+    port: 51004
+    cipher: chacha20-ietf-poly1305
+    password: 2eaa2cc3-9b7d-4bed-a8f9-c509d76cf57f
+  - type: ss
+    name: US+AS+06+@SubscriptionShare
+    server: 192.227.129.144
+    port: 51004
+    cipher: chacha20-ietf-poly1305
+    password: 2eaa2cc3-9b7d-4bed-a8f9-c509d76cf57f
+  - type: vmess
+    name: ID Hadi 01 @SubscriptionShare
+    server: 103.181.165.243
+    port: 26144
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: free.best-antiaging-reviews.com
+  - type: trojan
+    name: 🇷🇺|RU|@wxgqlfx|121
+    server: 37.18.14.33
+    port: 443
+    password: Qzy7tgpRhu
+    network: tcp
+    sni: sun9-101.userapi.com
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 🇷🇺|RU|@wxgqlfx|176
+    server: 83.147.255.67
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: ss
+    name: 🇭🇷|HR|@wxgqlfx|183
+    server: 185.156.110.92
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|206
+    server: 142.132.140.130
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: ✅+@prrofile_purple+(تلگرام)
+    server: 141.227.170.6
+    port: 46354
+    uuid: 3ca79de7-3eca-436d-9ef3-7112cd56506d
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: ss
+    name: NL+Timeweb+01+@SubscriptionShare
+    server: 5.129.214.186
+    port: 6403
+    cipher: chacha20-ietf-poly1305
+    password: HWNsKy61qPyoDtrEYEtZuk
+  - type: trojan
+    name: 日本3|@ripaojiedian
+    server: 160.16.107.37
+    port: 3093
+    password: 2cf6d686799e6fa95316394064f26c0a
+    network: tcp
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: ID Hadi 01 @SubscriptionShare_1
+    server: 103.181.165.243
+    port: 26144
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tms.dingtalk.com
+  - type: ss
+    name: 机场推荐:dafei.de+美国+21
+    server: 146.19.49.251
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
+  - type: vless
+    name: 🇯🇵|JP|@wxgqlfx|21
+    server: 18.179.41.177
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: ss
+    name: 🇺🇸|US|@wxgqlfx|208
+    server: 23.95.72.81
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: UAMVtHm54uahd6SiN5WcD16rsPSdabPG
+  - type: vless
+    name: 🇨🇳_CN_中国
+    server: 202.85.53.160
+    port: 7000
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇺🇸US_6+|+⬇️+1.7MB/s
+    server: 194.35.119.135
+    port: 2053
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇯🇵|JP|@wxgqlfx|12
+    server: 52.192.202.83
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: 🇯🇵|JP|@wxgqlfx|14
+    server: 54.249.188.210
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
+  - type: vless
+    name: 🌐|UN|@wxgqlfx|39
+    server: 172.67.79.57
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
+  - type: ss
+    name: 🇺🇸|US|@wxgqlfx|133
+    server: 23.95.75.146
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|232
+    server: 95.140.157.183
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: US_youtube@资源分享师_13
+    server: 68.64.176.135
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: US_youtube@资源分享师_14
+    server: wangcai36.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: ss
+    name: SG+AMAZON+06+@SubscriptionShare
+    server: 52.77.237.87
+    port: 50000
+    cipher: aes-256-gcm
+    password: a9a37b54-e95a-4bc4-9637-7fd00a03dd2e
+  - type: vless
+    name: 🇷🇺+机场推荐:dafei.de+俄罗斯+03
+    server: zcreat.ethervpn.fun
+    port: 8443
+    uuid: a47595a8-1add-401a-8189-e6799f8d8628
+    network: ws
+    servername: zcreat.ethervpn.fun
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /websocketpl
+      headers:
+        Host: zcreat.ethervpn.fun
+  - type: vless
+    name: 🇮🇳|IN|@wxgqlfx|42
+    server: 98.70.1.250
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🌐|UN|@wxgqlfx|55
+    server: 104.16.45.68
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
+  - type: vless
+    name: 🇷🇺|RU|@wxgqlfx|217
+    server: 80.90.187.190
+    port: 2053
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|234
+    server: 89.19.211.109
+    port: 8443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|236
+    server: 90.156.228.74
+    port: 2053
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: ss
+    name: JP+BrainStorm+18+@SubscriptionShare
+    server: 103.75.118.125
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
+  - type: vless
+    name: youtube@资源分享师_6
+    server: wangcai17.cloudflare.182682.xyz
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: US_youtube@资源分享师_15
+    server: wangcai116.000444.cn
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
     network: http
@@ -598,7 +2391,7 @@ proxies:
       - h3
   - type: vless
     name: youtube@资源分享师_7
-    server: wangcai171.cloudflare.182682.xyz
+    server: wangcai92.000444.cn
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
     network: http
@@ -611,48 +2404,61 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: US_youtube@资源分享师_9
-    server: wangcai.cf.877774.xyz
-    port: 2096
-    uuid: d78d48df-b788-4a95-9e9f-77c9b2f69822
+    name: US_youtube@资源分享师_16
+    server: wangcai56.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇭🇰|HK|@wxgqlfx|35
+    server: 8.218.32.120
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
     network: ws
-    servername: joss.gpj1.web.id
+    servername: www.x-aniu--hk.netlib.re
     tls: true
     encryption: none
     ws-opts:
-      path: /Free-VPN-CF-Geo-Project/HK?Telegram🇨🇳+@WangCai2
+      path: /?ed=2560
       headers:
-        Host: joss.gpj1.web.id
+        Host: www.x-aniu--hk.netlib.re
   - type: vless
-    name: JP_youtube@资源分享师_3
-    server: 188.253.21.106
+    name: 🇯🇵|JP|@wxgqlfx|38
+    server: 52.192.82.166
     port: 443
-    uuid: 9936ae5c-91cd-4c8a-80e9-5118a209a7e4
-    network: tcp
-    servername: yahoo.com
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--hk.netlib.re
     tls: true
     encryption: none
-    reality-opts:
-      public-key: 4JvLKnuuAs4h0cQ1j_S4SAuXQQ579D7Wr1sGBjmH-Ws
-      short-id: 73d3fec4
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--hk.netlib.re
   - type: vless
-    name: RU_youtube@资源分享师_2
-    server: 178.236.16.98
-    port: 35728
-    uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-    network: tcp
-    servername: yahoo.com
+    name: 🌐|UN|@wxgqlfx|70
+    server: 104.19.174.233
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: www.x-aniu--sg.netlib.re
     tls: true
     encryption: none
-    reality-opts:
-      public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-      short-id: 69a2
-    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: www.x-aniu--sg.netlib.re
   - type: vless
-    name: HK_youtube@资源分享师_5
-    server: 8.217.180.234
+    name: 🇮🇳|IN|@wxgqlfx|104
+    server: 98.70.151.190
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -664,314 +2470,7 @@ proxies:
       headers:
         Host: kuangbao.xiejiang.dpdns.org
   - type: vless
-    name: CZ_youtube@资源分享师
-    server: 81.91.214.85
-    port: 443
-    uuid: b298ffac-7c86-44f5-b986-efc11d853046
-    network: ws
-    servername: joss.gpj1.web.id
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/81.91.214.85=443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: vless
-    name: TR_youtube@资源分享师
-    server: 185.39.204.189
-    port: 443
-    uuid: a40b0a127d65404a9e15b31e1c0c352b
-    network: tcp
-    servername: m.vk.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: 8xKzWSx8JZFIJPRBaxbznHriYpsb5HWqIz9sdDmWgks
-      short-id: aabbccdd
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: PL_youtube@资源分享师_3
-    server: 95.140.157.183
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vmess
-    name: US_youtube@资源分享师_10
-    server: ebc.zoom.us
-    port: 8443
-    uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-    alterId: 0
-    network: ws
-    cipher: auto
-    ws-opts:
-      path: /@Malinda6104
-    tls: true
-  - type: trojan
-    name: JP_youtube@资源分享师_4
-    server: 160.16.63.16
-    port: 4054
-    password: 2cf6d686799e6fa95316394064f26c0a
-    network: tcp
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
-  - type: ss
-    name: US_youtube@资源分享师_11
-    server: 23.95.72.81
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: UAMVtHm54uahd6SiN5WcD16rsPSdabPG
-  - type: vless
-    name: youtube@资源分享师_8
-    server: wangcai109.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_9
-    server: wangcai128.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_10
-    server: wangcai101.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vmess
-    name: youtube@资源分享师_11
-    server: 2237-4Ce3-8698-cfD1B622333a.457.Pp.ua
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
-    alterId: 0
-    network: xhttp
-    cipher: auto
-    servername: 2237-4CE3-8698-CFD1B622333A.457.pP.uA
-    tls: true
-  - type: trojan
-    name: GB_youtube@资源分享师
-    server: 109.169.76.23
-    port: 443
-    password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/109.169.76.23=443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: trojan
-    name: JP_youtube@资源分享师_5
-    server: 160.16.144.208
-    port: 3093
-    password: 2cf6d686799e6fa95316394064f26c0a
-    network: tcp
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: PL_youtube@资源分享师_4
-    server: 85.193.95.23
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: youtube@资源分享师_12
-    server: wangcai153.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_12
-    server: wangcai254.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: trojan
-    name: JP_youtube@资源分享师_6
-    server: 3.113.21.213
-    port: 2890
-    password: 2cf6d686799e6fa95316394064f26c0a
-    network: tcp
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师
-    server: jp3.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-jp-z1.psusercontent.com
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: GB_youtube@资源分享师_1
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    network: tcp
-    cipher: auto
-  - type: vmess
-    name: GB_youtube@资源分享师_2
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    network: tcp
-    cipher: auto
-    servername: 82.198.246.97
-  - type: ss
-    name: GR_youtube@资源分享师
-    server: 185.156.110.92
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn
-  - type: vmess
-    name: US_youtube@资源分享师_13
-    server: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    port: 443
-    uuid: 75b55ef6-7a78-4020-8540-df4e1a533895
-    alterId: 0
-    network: xhttp
-    cipher: auto
-    servername: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    tls: true
-  - type: trojan
-    name: RU_youtube@资源分享师_3
-    server: 37.18.14.33
-    port: 443
-    password: Qzy7tgpRhu
-    network: tcp
-    sni: sun9-101.userapi.com
-    skip-cert-verify: true
-    tls: true
-  - type: vmess
-    name: youtube@资源分享师_13
-    server: aio.unlimited.biz.id
-    port: 443
-    uuid: f282b878-8711-45a1-8c69-5564172123c1
-    alterId: 0
-    network: ws
-    cipher: zero
-    servername: aio.unlimited.biz.id
-    ws-opts:
-      path: /aioproxybot/129.150.49.58-18650
-      headers:
-        Host: aio.unlimited.biz.id
-    tls: true
-  - type: vmess
-    name: GB_youtube@资源分享师_3
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    network: tcp
-    cipher: auto
-  - type: vmess
-    name: US_youtube@资源分享师_14
-    server: 154.21.201.83
-    port: 443
-    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: hk.nbee.pp.ua
-    ws-opts:
-      path: /aa
-      headers:
-        Host: hk.nbee.pp.ua
-    tls: true
-  - type: trojan
-    name: RU_youtube@资源分享师_4
-    server: 37.18.14.33
-    port: 443
-    password: Qzy7tgpRhu
-    network: tcp
-    sni: sun6-22.userapi.com
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: RU_youtube@资源分享师_5
-    server: 37.18.14.33
-    port: 443
-    password: Qzy7tgpRhu
-    network: tcp
-    sni: m.vk.com
-    skip-cert-verify: true
-    tls: true
-  - type: vless
-    name: AE_youtube@资源分享师
-    server: 139.185.50.5
-    port: 14594
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: RU_youtube@资源分享师_6
+    name: 🇷🇺|RU|@wxgqlfx|154
     server: zcreat.ethervpn.fun
     port: 8443
     uuid: a47595a8-1add-401a-8189-e6799f8d8628
@@ -983,22 +2482,73 @@ proxies:
       path: /websocketpl?ed=2047
       headers:
         Host: zcreat.ethervpn.fun
+  - type: vless
+    name: 🇵🇱|PL|@wxgqlfx|159
+    server: 193.124.41.29
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|162
+    server: 80.76.32.12
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇩🇪|DE|@wxgqlfx|166
+    server: 49.12.210.182
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    network: ws
+    servername: kuangbao.xiejiang.dpdns.org
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
   - type: ss
-    name: JP_youtube@资源分享师_7
-    server: 103.75.118.125
+    name: 🇲🇩|MD|@wxgqlfx|188
+    server: 213.159.66.206
     port: 443
     cipher: chacha20-ietf-poly1305
-    password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
-  - type: vmess
-    name: CN_youtube@资源分享师_1
-    server: 113.57.36.148
-    port: 3304
-    uuid: f0305e21-30bb-32f9-9b1b-9e02dcf3af54
-    alterId: 0
-    network: tcp
-    cipher: auto
+    password: pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu
+  - type: ss
+    name: MD+WorkTitans+01+@SubscriptionShare
+    server: 213.159.67.124
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
   - type: vless
-    name: US_youtube@资源分享师_15
+    name: US_youtube@资源分享师_17
+    server: wangcai164.000444.cn
+    port: 443
+    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+    network: http
+    servername: cho.chonon.sbs
+    tls: true
+    encryption: none
+    http-opts:
+      path: /gdsthjjjvfxsstyy؟ed=443
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: US_youtube@资源分享师_18
     server: 194.61.31.126
     port: 443
     uuid: 5f39f871-2fae-446e-99ad-719fa8be687c
@@ -1013,231 +2563,7 @@ proxies:
       grpc-service-name: 78e691d782c9b9b2cd3c5621
     client-fingerprint: safari
   - type: vless
-    name: youtube@资源分享师_14
-    server: wangcai53.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_15
-    server: wangcai221.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_16
-    server: wangcai223.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_16
-    server: wangcai84.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_17
-    server: wangcai161.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: trojan
-    name: DE_youtube@资源分享师_4
-    server: 63.178.126.212
-    port: 22222
-    password: telegram-id-privatevpns
-    network: tcp
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    tls: true
-  - type: ss
-    name: RU_youtube@资源分享师_7
-    server: 213.159.67.124
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
-  - type: vless
-    name: DE_youtube@资源分享师_5
-    server: 185.103.252.54
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: GB_youtube@资源分享师_4
-    server: 5.144.182.111
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: SC_youtube@资源分享师
-    server: 80.76.32.12
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: PL_youtube@资源分享师_5
-    server: 194.35.119.135
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: RU_youtube@资源分享师_8
-    server: 80.90.187.190
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: PL_youtube@资源分享师_6
-    server: 85.193.92.242
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: PL_youtube@资源分享师_7
-    server: 90.156.228.74
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: ss
-    name: ✅+@prrofile_purple+(تلگرام)
-    server: 78.40.116.178
-    port: 34094
-    cipher: chacha20-ietf-poly1305
-    password: yo6h9qkhwz8UJoTZCRtoSi
-  - type: vless
-    name: youtube@资源分享师_18
-    server: wangcai71.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_19
-    server: wangcai9.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_20
-    server: wangcai87.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_21
+    name: youtube@资源分享师_8
     server: wangcai19.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1251,203 +2577,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_22
-    server: wangcai23.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_23
-    server: wangcai97.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_24
-    server: wangcai129.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_25
-    server: wangcai227.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_26
-    server: wangcai245.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_27
-    server: wangcai165.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_28
-    server: wangcai59.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_29
-    server: wangcai83.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_30
-    server: wangcai217.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_31
-    server: wangcai167.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: LB_youtube@资源分享师
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    network: tcp
-    servername: st.ozone.ru
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo
-      short-id: 07e904766d29b958
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: US_youtube@资源分享师_17
-    server: wangcai36.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_32
-    server: wangcai115.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_33
-    server: wangcai179.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_34
+    name: youtube@资源分享师_9
     server: wangcai151.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1461,177 +2591,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_35
-    server: wangcai185.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_36
-    server: wangcai181.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_37
-    server: wangcai91.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_38
-    server: wangcai31.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_39
-    server: wangcai17.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_40
-    server: wangcai78.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_18
-    server: wangcai82.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_19
-    server: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    port: 443
-    uuid: a1d2e3cd-297e-4753-8e7a-6d9fb0f4aac1
-    network: http
-    servername: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    tls: true
-    encryption: none
-    http-opts:
-      path: /dgK6j67SvaPqspF7njNFy6
-      headers:
-        Host: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_41
-    server: wangcai219.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_20
-    server: wangcai116.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_42
-    server: wangcai92.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_43
-    server: wangcai15.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_44
+    name: youtube@资源分享师_10
     server: wangcai51.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1645,133 +2605,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_45
-    server: wangcai7.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_46
-    server: wangcai93.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_47
-    server: wangcai149.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_21
-    server: wangcai100.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_48
-    server: wangcai3.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_49
-    server: wangcai213.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_50
-    server: wangcai235.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_51
-    server: wangcai49.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_52
-    server: wangcai139.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_53
+    name: youtube@资源分享师_11
     server: wangcai211.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1784,20 +2618,8 @@ proxies:
     client-fingerprint: chrome
     alpn:
       - h3
-  - type: trojan
-    name: FR_youtube@资源分享师_5
-    server: 51.15.210.1
-    port: 443
-    password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/51.15.210.1=443
-      headers:
-        Host: joss.gpj1.web.id
   - type: vless
-    name: US_youtube@资源分享师_22
+    name: US_youtube@资源分享师_19
     server: wangcai172.000444.cn
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1811,141 +2633,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_54
-    server: wangcai70.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: ss
-    name: 🇲🇩MD-213.159.66.206-0273
-    server: 213.159.66.206
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu
-  - type: vless
-    name: JP_youtube@资源分享师_8
-    server: 54.95.79.44
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: HK_youtube@资源分享师_6
-    server: 202.85.53.77
-    port: 7000
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: trojan
-    name: CN_youtube@资源分享师_2
-    server: kr3.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-kr-z1.psusercontent.com
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_3
-    server: hk3.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-hk-z1.psusercontent.com
-    skip-cert-verify: true
-    tls: true
-  - type: trojan
-    name: CN_youtube@资源分享师_4
-    server: psg2-ag.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-kr-g1.psusercontent.com
-    skip-cert-verify: true
-    tls: true
-  - type: ss
-    name: AE_youtube@资源分享师_1
-    server: 95.174.68.33
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: YzH4id7ZEyKpfy39F2YcOmzCsBklGwh8
-  - type: vless
     name: 德國
-    server: wangcai25.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: 德國_1
-    server: wangcai73.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: 俄罗斯
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    network: tcp
-    servername: st.ozone.ru
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo
-      short-id: 07e904766d29b958
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 德國_2
-    server: wangcai191.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: 德國_3
     server: wangcai13.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -1959,266 +2647,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: 🇩🇪DE_4+|+⬇️+1.1MB/s
-    server: 172.66.40.99
-    port: 2083
-    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
-    network: ws
-    servername: yousef.varzesh.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-  - type: vless
-    name: 🇸🇬|SG|@x|129
-    server: 178.239.123.216
-    port: 24443
-    uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
-    network: ws
-    servername: vless3.datatestvless.click
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-  - type: vmess
-    name: "@v2FreeHub 🇨🇦 153ms | vmess"
-    server: 69.28.82.253
-    port: 443
-    uuid: f282b878-8711-45a1-8c69-5564172123c1
-    alterId: 0
-    network: ws
-    cipher: zero
-    servername: vm.gpj1.web.id
-    ws-opts:
-      path: /Geo-Project/69.28.82.253-443
-      headers:
-        Host: vm.gpj1.web.id
-    tls: true
-  - type: vless
-    name: 🇪🇸|ES|@wxgqlfx|49
-    server: 68.221.24.211
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇬🇧|GB|@wxgqlfx|61
-    server: 206.189.25.65
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇬🇧|GB|@wxgqlfx|62
-    server: 167.99.86.115
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇵🇱|PL|@wxgqlfx|72
-    server: 193.124.41.29
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇩🇪|DE|@wxgqlfx|73
-    server: 81.200.154.2
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇸🇬|SG|@wxgqlfx|75
-    server: 8.222.209.252
-    port: 28465
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇩🇪|DE|@wxgqlfx|78
-    server: 85.193.95.220
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇩🇪|DE|@wxgqlfx|86
-    server: 85.193.95.220
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇦🇪|AE|@wxgqlfx|96
-    server: 139.185.34.131
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇨🇦|CA|@wxgqlfx|111
-    server: 69.28.82.253
-    port: 443
-    uuid: 0930fe32-e429-4f37-b8ec-92ac52b40f6e
-    network: ws
-    servername: joss.gpj1.web.id
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/69.28.82.253=443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: vmess
-    name: 🇨🇦 机场推荐:dafei.de 加拿大 02
-    server: 69.28.82.253
-    port: 443
-    uuid: f282b878-8711-45a1-8c69-5564172123c1
-    alterId: 0
-    network: ws
-    cipher: zero
-    servername: vm.gpj1.web.id
-    ws-opts:
-      path: /Geo-Project/69.28.82.253-443
-      headers:
-        Host: vm.gpj1.web.id
-    tls: true
-  - type: vless
-    name: 🇸🇬+机场推荐:dafei.de+新加坡+04
-    server: 178.239.123.216
-    port: 24443
-    uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
-    network: ws
-    servername: vless3.datatestvless.click
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /
-      headers:
-        Host: vless3.datatestvless.click
-  - type: vless
-    name: youtube@资源分享师_55
-    server: wangcai69.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_56
-    server: wangcai30.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vmess
-    name: youtube@资源分享师_57
-    server: 4120-BE04-13ef56096989.457.pp.uA
-    port: 443
-    uuid: 75b55ef6-7a78-4020-8540-df4e1a533895
-    alterId: 0
-    network: xhttp
-    cipher: auto
-    servername: 4120-BE04-13Ef56096989.457.Pp.Ua
-    tls: true
-  - type: vless
-    name: youtube@资源分享师_58
-    server: wangcai233.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_23
-    server: wangcai190.000444.cn
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_59
+    name: youtube@资源分享师_12
     server: wangcai111.cloudflare.182682.xyz
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -2232,21 +2661,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_60
-    server: wangcai201.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_24
+    name: US_youtube@资源分享师_20
     server: wangcai234.000444.cn
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -2260,35 +2675,7 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_61
-    server: wangcai67.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_62
-    server: wangcai117.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: US_youtube@资源分享师_25
+    name: US_youtube@资源分享师_21
     server: wangcai162.000444.cn
     port: 443
     uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
@@ -2302,580 +2689,549 @@ proxies:
     alpn:
       - h3
   - type: vless
-    name: youtube@资源分享师_63
-    server: wangcai197.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
+    name: 🇰🇷_KR_韩国
+    server: 106.242.64.238
+    port: 50000
+    uuid: 6923b959-c65f-764c-b072-94711382d716
+    network: ws
+    servername: s2.sni565.netlib.re
     tls: true
     encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_64
-    server: wangcai243.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_65
-    server: wangcai173.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_66
-    server: wangcai61.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_67
-    server: wangcai247.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_68
-    server: wangcai127.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_69
-    server: wangcai147.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_70
-    server: wangcai85.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_71
-    server: wangcai177.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_72
-    server: wangcai137.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vmess
-    name: US_youtube@资源分享师_26
-    server: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
-    alterId: 0
-    network: xhttp
-    cipher: auto
-    servername: 4cc8-a2d8-a34a20d2e7e5.457.pp.ua
-    tls: true
-  - type: vless
-    name: youtube@资源分享师_73
-    server: wangcai75.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
-  - type: vless
-    name: youtube@资源分享师_74
-    server: wangcai215.cloudflare.182682.xyz
-    port: 443
-    uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
-    network: http
-    servername: cho.chonon.sbs
-    tls: true
-    encryption: none
-    http-opts:
-      path: /gdsthjjjvfxsstyy؟ed=443
-    client-fingerprint: chrome
-    alpn:
-      - h3
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s2.sni565.netlib.re
+  - type: ss
+    name: US+AS+18+@SubscriptionShare
+    server: 192.227.129.144
+    port: 51004
+    cipher: chacha20-ietf-poly1305
+    password: 5341d691-c16c-402e-b87f-27a36b7c88b3
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CN_youtube@资源分享师
+      - PL_youtube@资源分享师
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
+      - CN_youtube@资源分享师_3
+      - CN_youtube@资源分享师_4
+      - CN_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - HK_youtube@资源分享师
+      - CN_youtube@资源分享师_7
+      - youtube@资源分享师
+      - CN_youtube@资源分享师_8
+      - CN_youtube@资源分享师_9
+      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师
       - JP_youtube@资源分享师
-      - FR_youtube@资源分享师
-      - PL_youtube@资源分享师
-      - DE_youtube@资源分享师
-      - HK_youtube@资源分享师
-      - DE_youtube@资源分享师_1
-      - TW_youtube@资源分享师
       - HK_youtube@资源分享师_1
-      - HK_youtube@资源分享师_2
-      - youtube@资源分享师
-      - DE_youtube@资源分享师_2
-      - KR_youtube@资源分享师
-      - HK_youtube@资源分享师_3
-      - DE_youtube@资源分享师_3
-      - LT_youtube@资源分享师
-      - RU_youtube@资源分享师
-      - FR_youtube@资源分享师_1
-      - FR_youtube@资源分享师_2
-      - RU_youtube@资源分享师_1
-      - youtube@资源分享师_1
-      - FR_youtube@资源分享师_3
       - US_youtube@资源分享师_1
-      - PL_youtube@资源分享师_1
-      - HU_youtube@资源分享师
-      - HK_youtube@资源分享师_4
-      - KR_youtube@资源分享师_1
-      - HU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_4
-      - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
-      - FI_youtube@资源分享师
-      - youtube@资源分享师_2
-      - US_youtube@资源分享师_4
-      - EE_youtube@资源分享师
-      - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_11
+      - CN_youtube@资源分享师_12
+      - SG_youtube@资源分享师
+      - GB_youtube@资源分享师
+      - CN_youtube@资源分享师_13
+      - CN_youtube@资源分享师_14
       - JP_youtube@资源分享师_1
+      - CN_youtube@资源分享师_15
+      - CN_youtube@资源分享师_16
+      - HK_youtube@资源分享师_2
+      - CN_youtube@资源分享师_17
+      - US_youtube@资源分享师_2
+      - CN_youtube@资源分享师_18
+      - SG_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - CN_youtube@资源分享师_19
+      - JP_youtube@资源分享师_2
+      - CN_youtube@资源分享师_20
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
+      - CN_youtube@资源分享师_23
+      - US_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
+      - JP_youtube@资源分享师_3
+      - HK_youtube@资源分享师_3
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - HK_youtube@资源分享师_4
+      - HK_youtube@资源分享师_5
+      - CN_youtube@资源分享师_28
+      - HK_youtube@资源分享师_6
+      - JP_youtube@资源分享师_4
+      - JP_youtube@资源分享师_5
+      - CN_youtube@资源分享师_29
+      - US_youtube@资源分享师_5
+      - HK_youtube@资源分享师_7
       - US_youtube@资源分享师_6
+      - CN_youtube@资源分享师_30
+      - JP_youtube@资源分享师_6
+      - CN_youtube@资源分享师_31
+      - youtube@资源分享师_1
+      - HK_youtube@资源分享师_8
       - US_youtube@资源分享师_7
+      - youtube@资源分享师_2
+      - CN_youtube@资源分享师_32
+      - CN_youtube@资源分享师_33
+      - CN_youtube@资源分享师_34
+      - KR_youtube@资源分享师
+      - US_youtube@资源分享师_8
       - youtube@资源分享师_3
       - youtube@资源分享师_4
-      - youtube@资源分享师_5
-      - JP_youtube@资源分享师_2
-      - youtube@资源分享师_6
-      - PL_youtube@资源分享师_2
-      - US_youtube@资源分享师_8
-      - youtube@资源分享师_7
+      - CN_youtube@资源分享师_35
+      - CN_youtube@资源分享师_36
+      - GB_youtube@资源分享师_2
+      - JP_youtube@资源分享师_7
+      - CN_youtube@资源分享师_37
+      - CN_youtube@资源分享师_38
+      - HK_youtube@资源分享师_9
+      - SE_youtube@资源分享师
       - US_youtube@资源分享师_9
-      - JP_youtube@资源分享师_3
-      - RU_youtube@资源分享师_2
-      - HK_youtube@资源分享师_5
-      - CZ_youtube@资源分享师
-      - TR_youtube@资源分享师
-      - PL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - JP_youtube@资源分享师_4
       - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_39
+      - CN_youtube@资源分享师_40
+      - JP_youtube@资源分享师_8
+      - CN_youtube@资源分享师_41
+      - CN_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - HK_youtube@资源分享师_10
+      - CN_youtube@资源分享师_44
+      - TR_youtube@资源分享师
+      - youtube@资源分享师_5
+      - JP_youtube@资源分享师_9
+      - CN_youtube@资源分享师_45
+      - US_youtube@资源分享师_12
+      - ZA_youtube@资源分享师
+      - CL_youtube@资源分享师
+      - CN_youtube@资源分享师_46
+      - HU_youtube@资源分享师
+      - IL_youtube@资源分享师
+      - IL_ youtube@资源分享师
+      - CN_ youtube@资源分享师
+      - ZA_ youtube@资源分享师
+      - " youtube@资源分享师"
+      - RU_ youtube@资源分享师
+      - CN_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师
+      - US_ youtube@资源分享师
+      - US_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - SE_ youtube@资源分享师
+      - CL_ youtube@资源分享师
+      - US_ youtube@资源分享师_3
+      - GB_ youtube@资源分享师
+      - US_ youtube@资源分享师_4
+      - CL_ youtube@资源分享师_1
+      - SE_ youtube@资源分享师_1
+      - CL_ youtube@资源分享师_2
+      - IL_ youtube@资源分享师_1
+      - IL_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - US_ youtube@资源分享师_5
+      - US_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - HK_ youtube@资源分享师
+      - JP_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - DE_ youtube@资源分享师
+      - HK_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_9
+      - IN_ youtube@资源分享师
+      - CN_ youtube@资源分享师_10
+      - IN_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_11
+      - FR_ youtube@资源分享师
+      - CN_ youtube@资源分享师_12
+      - IN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_13
+      - KR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_1
+      - " youtube@资源分享师_1"
+      - " youtube@资源分享师_2"
+      - FR_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_7
+      - RU_ youtube@资源分享师_2
+      - " youtube@资源分享师_3"
+      - CN_ youtube@资源分享师_14
+      - US_ youtube@资源分享师_8
+      - IR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_3
+      - RU_ youtube@资源分享师_4
+      - RU_ youtube@资源分享师_5
+      - NG_ youtube@资源分享师
+      - PL_ youtube@资源分享师
+      - HK_ youtube@资源分享师_2
+      - US_ youtube@资源分享师_9
+      - RU_ youtube@资源分享师_6
+      - " youtube@资源分享师_4"
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - TR_ youtube@资源分享师
+      - " youtube@资源分享师_5"
+      - GB_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师
+      - TW_ youtube@资源分享师
+      - JP_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_18
+      - US_ youtube@资源分享师_10
+      - HK_ youtube@资源分享师_3
+      - JP_ youtube@资源分享师_4
+      - PL_ youtube@资源分享师_1
+      - " youtube@资源分享师_6"
+      - JP_ youtube@资源分享师_5
+      - " youtube@资源分享师_7"
+      - CN_ youtube@资源分享师_19
+      - " youtube@资源分享师_8"
+      - " youtube@资源分享师_9"
+      - JP_ youtube@资源分享师_6
+      - " youtube@资源分享师_10"
+      - CN_ youtube@资源分享师_20
+      - " youtube@资源分享师_11"
+      - AE_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_7
+      - JP_ youtube@资源分享师_8
+      - " youtube@资源分享师_12"
+      - SG_ youtube@资源分享师
+      - " youtube@资源分享师_13"
+      - RU_ youtube@资源分享师_7
+      - US_ youtube@资源分享师_11
+      - SG_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_21
+      - US_ youtube@资源分享师_12
+      - US+AS+06+@SubscriptionShare
+      - ID Hadi 01 @SubscriptionShare
+      - 🇷🇺|RU|@wxgqlfx|121
+      - 🇷🇺|RU|@wxgqlfx|176
+      - 🇭🇷|HR|@wxgqlfx|183
+      - 🇩🇪|DE|@wxgqlfx|206
+      - ✅+@prrofile_purple+(تلگرام)
+      - NL+Timeweb+01+@SubscriptionShare
+      - 日本3|@ripaojiedian
+      - ID Hadi 01 @SubscriptionShare_1
+      - 机场推荐:dafei.de+美国+21
+      - 🇯🇵|JP|@wxgqlfx|21
+      - 🇺🇸|US|@wxgqlfx|208
+      - 🇨🇳_CN_中国
+      - 🇺🇸US_6+|+⬇️+1.7MB/s
+      - 🇯🇵|JP|@wxgqlfx|12
+      - 🇯🇵|JP|@wxgqlfx|14
+      - 🌐|UN|@wxgqlfx|39
+      - 🇺🇸|US|@wxgqlfx|133
+      - 🇩🇪|DE|@wxgqlfx|232
+      - US_youtube@资源分享师_13
+      - US_youtube@资源分享师_14
+      - SG+AMAZON+06+@SubscriptionShare
+      - 🇷🇺+机场推荐:dafei.de+俄罗斯+03
+      - 🇮🇳|IN|@wxgqlfx|42
+      - 🌐|UN|@wxgqlfx|55
+      - 🇷🇺|RU|@wxgqlfx|217
+      - 🇩🇪|DE|@wxgqlfx|234
+      - 🇩🇪|DE|@wxgqlfx|236
+      - JP+BrainStorm+18+@SubscriptionShare
+      - youtube@资源分享师_6
+      - US_youtube@资源分享师_15
+      - youtube@资源分享师_7
+      - US_youtube@资源分享师_16
+      - 🇭🇰|HK|@wxgqlfx|35
+      - 🇯🇵|JP|@wxgqlfx|38
+      - 🌐|UN|@wxgqlfx|70
+      - 🇮🇳|IN|@wxgqlfx|104
+      - 🇷🇺|RU|@wxgqlfx|154
+      - 🇵🇱|PL|@wxgqlfx|159
+      - 🇩🇪|DE|@wxgqlfx|162
+      - 🇩🇪|DE|@wxgqlfx|166
+      - 🇲🇩|MD|@wxgqlfx|188
+      - MD+WorkTitans+01+@SubscriptionShare
+      - US_youtube@资源分享师_17
+      - US_youtube@资源分享师_18
       - youtube@资源分享师_8
       - youtube@资源分享师_9
       - youtube@资源分享师_10
       - youtube@资源分享师_11
-      - GB_youtube@资源分享师
-      - JP_youtube@资源分享师_5
-      - PL_youtube@资源分享师_4
-      - youtube@资源分享师_12
-      - US_youtube@资源分享师_12
-      - JP_youtube@资源分享师_6
-      - CN_youtube@资源分享师
-      - GB_youtube@资源分享师_1
-      - GB_youtube@资源分享师_2
-      - GR_youtube@资源分享师
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_3
-      - youtube@资源分享师_13
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_14
-      - RU_youtube@资源分享师_4
-      - RU_youtube@资源分享师_5
-      - AE_youtube@资源分享师
-      - RU_youtube@资源分享师_6
-      - JP_youtube@资源分享师_7
-      - CN_youtube@资源分享师_1
-      - US_youtube@资源分享师_15
-      - youtube@资源分享师_14
-      - youtube@资源分享师_15
-      - youtube@资源分享师_16
-      - US_youtube@资源分享师_16
-      - youtube@资源分享师_17
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_5
-      - GB_youtube@资源分享师_4
-      - SC_youtube@资源分享师
-      - PL_youtube@资源分享师_5
-      - RU_youtube@资源分享师_8
-      - PL_youtube@资源分享师_6
-      - PL_youtube@资源分享师_7
-      - ✅+@prrofile_purple+(تلگرام)
-      - youtube@资源分享师_18
-      - youtube@资源分享师_19
-      - youtube@资源分享师_20
-      - youtube@资源分享师_21
-      - youtube@资源分享师_22
-      - youtube@资源分享师_23
-      - youtube@资源分享师_24
-      - youtube@资源分享师_25
-      - youtube@资源分享师_26
-      - youtube@资源分享师_27
-      - youtube@资源分享师_28
-      - youtube@资源分享师_29
-      - youtube@资源分享师_30
-      - youtube@资源分享师_31
-      - LB_youtube@资源分享师
-      - US_youtube@资源分享师_17
-      - youtube@资源分享师_32
-      - youtube@资源分享师_33
-      - youtube@资源分享师_34
-      - youtube@资源分享师_35
-      - youtube@资源分享师_36
-      - youtube@资源分享师_37
-      - youtube@资源分享师_38
-      - youtube@资源分享师_39
-      - youtube@资源分享师_40
-      - US_youtube@资源分享师_18
       - US_youtube@资源分享师_19
-      - youtube@资源分享师_41
-      - US_youtube@资源分享师_20
-      - youtube@资源分享师_42
-      - youtube@资源分享师_43
-      - youtube@资源分享师_44
-      - youtube@资源分享师_45
-      - youtube@资源分享师_46
-      - youtube@资源分享师_47
-      - US_youtube@资源分享师_21
-      - youtube@资源分享师_48
-      - youtube@资源分享师_49
-      - youtube@资源分享师_50
-      - youtube@资源分享师_51
-      - youtube@资源分享师_52
-      - youtube@资源分享师_53
-      - FR_youtube@资源分享师_5
-      - US_youtube@资源分享师_22
-      - youtube@资源分享师_54
-      - 🇲🇩MD-213.159.66.206-0273
-      - JP_youtube@资源分享师_8
-      - HK_youtube@资源分享师_6
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - AE_youtube@资源分享师_1
       - 德國
-      - 德國_1
-      - 俄罗斯
-      - 德國_2
-      - 德國_3
-      - 🇩🇪DE_4+|+⬇️+1.1MB/s
-      - 🇸🇬|SG|@x|129
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇪🇸|ES|@wxgqlfx|49
-      - 🇬🇧|GB|@wxgqlfx|61
-      - 🇬🇧|GB|@wxgqlfx|62
-      - 🇵🇱|PL|@wxgqlfx|72
-      - 🇩🇪|DE|@wxgqlfx|73
-      - 🇸🇬|SG|@wxgqlfx|75
-      - 🇩🇪|DE|@wxgqlfx|78
-      - 🇩🇪|DE|@wxgqlfx|86
-      - 🇦🇪|AE|@wxgqlfx|96
-      - 🇨🇦|CA|@wxgqlfx|111
-      - 🇨🇦 机场推荐:dafei.de 加拿大 02
-      - 🇸🇬+机场推荐:dafei.de+新加坡+04
-      - youtube@资源分享师_55
-      - youtube@资源分享师_56
-      - youtube@资源分享师_57
-      - youtube@资源分享师_58
-      - US_youtube@资源分享师_23
-      - youtube@资源分享师_59
-      - youtube@资源分享师_60
-      - US_youtube@资源分享师_24
-      - youtube@资源分享师_61
-      - youtube@资源分享师_62
-      - US_youtube@资源分享师_25
-      - youtube@资源分享师_63
-      - youtube@资源分享师_64
-      - youtube@资源分享师_65
-      - youtube@资源分享师_66
-      - youtube@资源分享师_67
-      - youtube@资源分享师_68
-      - youtube@资源分享师_69
-      - youtube@资源分享师_70
-      - youtube@资源分享师_71
-      - youtube@资源分享师_72
-      - US_youtube@资源分享师_26
-      - youtube@资源分享师_73
-      - youtube@资源分享师_74
+      - youtube@资源分享师_12
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - 🇰🇷_KR_韩国
+      - US+AS+18+@SubscriptionShare
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - CN_youtube@资源分享师
+      - PL_youtube@资源分享师
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
+      - CN_youtube@资源分享师_3
+      - CN_youtube@资源分享师_4
+      - CN_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - HK_youtube@资源分享师
+      - CN_youtube@资源分享师_7
+      - youtube@资源分享师
+      - CN_youtube@资源分享师_8
+      - CN_youtube@资源分享师_9
+      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师
       - JP_youtube@资源分享师
-      - FR_youtube@资源分享师
-      - PL_youtube@资源分享师
-      - DE_youtube@资源分享师
-      - HK_youtube@资源分享师
-      - DE_youtube@资源分享师_1
-      - TW_youtube@资源分享师
       - HK_youtube@资源分享师_1
-      - HK_youtube@资源分享师_2
-      - youtube@资源分享师
-      - DE_youtube@资源分享师_2
-      - KR_youtube@资源分享师
-      - HK_youtube@资源分享师_3
-      - DE_youtube@资源分享师_3
-      - LT_youtube@资源分享师
-      - RU_youtube@资源分享师
-      - FR_youtube@资源分享师_1
-      - FR_youtube@资源分享师_2
-      - RU_youtube@资源分享师_1
-      - youtube@资源分享师_1
-      - FR_youtube@资源分享师_3
       - US_youtube@资源分享师_1
-      - PL_youtube@资源分享师_1
-      - HU_youtube@资源分享师
-      - HK_youtube@资源分享师_4
-      - KR_youtube@资源分享师_1
-      - HU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_4
-      - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
-      - FI_youtube@资源分享师
-      - youtube@资源分享师_2
-      - US_youtube@资源分享师_4
-      - EE_youtube@资源分享师
-      - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_11
+      - CN_youtube@资源分享师_12
+      - SG_youtube@资源分享师
+      - GB_youtube@资源分享师
+      - CN_youtube@资源分享师_13
+      - CN_youtube@资源分享师_14
       - JP_youtube@资源分享师_1
+      - CN_youtube@资源分享师_15
+      - CN_youtube@资源分享师_16
+      - HK_youtube@资源分享师_2
+      - CN_youtube@资源分享师_17
+      - US_youtube@资源分享师_2
+      - CN_youtube@资源分享师_18
+      - SG_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - CN_youtube@资源分享师_19
+      - JP_youtube@资源分享师_2
+      - CN_youtube@资源分享师_20
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
+      - CN_youtube@资源分享师_23
+      - US_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
+      - JP_youtube@资源分享师_3
+      - HK_youtube@资源分享师_3
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - HK_youtube@资源分享师_4
+      - HK_youtube@资源分享师_5
+      - CN_youtube@资源分享师_28
+      - HK_youtube@资源分享师_6
+      - JP_youtube@资源分享师_4
+      - JP_youtube@资源分享师_5
+      - CN_youtube@资源分享师_29
+      - US_youtube@资源分享师_5
+      - HK_youtube@资源分享师_7
       - US_youtube@资源分享师_6
+      - CN_youtube@资源分享师_30
+      - JP_youtube@资源分享师_6
+      - CN_youtube@资源分享师_31
+      - youtube@资源分享师_1
+      - HK_youtube@资源分享师_8
       - US_youtube@资源分享师_7
+      - youtube@资源分享师_2
+      - CN_youtube@资源分享师_32
+      - CN_youtube@资源分享师_33
+      - CN_youtube@资源分享师_34
+      - KR_youtube@资源分享师
+      - US_youtube@资源分享师_8
       - youtube@资源分享师_3
       - youtube@资源分享师_4
-      - youtube@资源分享师_5
-      - JP_youtube@资源分享师_2
-      - youtube@资源分享师_6
-      - PL_youtube@资源分享师_2
-      - US_youtube@资源分享师_8
-      - youtube@资源分享师_7
+      - CN_youtube@资源分享师_35
+      - CN_youtube@资源分享师_36
+      - GB_youtube@资源分享师_2
+      - JP_youtube@资源分享师_7
+      - CN_youtube@资源分享师_37
+      - CN_youtube@资源分享师_38
+      - HK_youtube@资源分享师_9
+      - SE_youtube@资源分享师
       - US_youtube@资源分享师_9
-      - JP_youtube@资源分享师_3
-      - RU_youtube@资源分享师_2
-      - HK_youtube@资源分享师_5
-      - CZ_youtube@资源分享师
-      - TR_youtube@资源分享师
-      - PL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - JP_youtube@资源分享师_4
       - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_39
+      - CN_youtube@资源分享师_40
+      - JP_youtube@资源分享师_8
+      - CN_youtube@资源分享师_41
+      - CN_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - HK_youtube@资源分享师_10
+      - CN_youtube@资源分享师_44
+      - TR_youtube@资源分享师
+      - youtube@资源分享师_5
+      - JP_youtube@资源分享师_9
+      - CN_youtube@资源分享师_45
+      - US_youtube@资源分享师_12
+      - ZA_youtube@资源分享师
+      - CL_youtube@资源分享师
+      - CN_youtube@资源分享师_46
+      - HU_youtube@资源分享师
+      - IL_youtube@资源分享师
+      - IL_ youtube@资源分享师
+      - CN_ youtube@资源分享师
+      - ZA_ youtube@资源分享师
+      - " youtube@资源分享师"
+      - RU_ youtube@资源分享师
+      - CN_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师
+      - US_ youtube@资源分享师
+      - US_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - SE_ youtube@资源分享师
+      - CL_ youtube@资源分享师
+      - US_ youtube@资源分享师_3
+      - GB_ youtube@资源分享师
+      - US_ youtube@资源分享师_4
+      - CL_ youtube@资源分享师_1
+      - SE_ youtube@资源分享师_1
+      - CL_ youtube@资源分享师_2
+      - IL_ youtube@资源分享师_1
+      - IL_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - US_ youtube@资源分享师_5
+      - US_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - HK_ youtube@资源分享师
+      - JP_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - DE_ youtube@资源分享师
+      - HK_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_9
+      - IN_ youtube@资源分享师
+      - CN_ youtube@资源分享师_10
+      - IN_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_11
+      - FR_ youtube@资源分享师
+      - CN_ youtube@资源分享师_12
+      - IN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_13
+      - KR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_1
+      - " youtube@资源分享师_1"
+      - " youtube@资源分享师_2"
+      - FR_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_7
+      - RU_ youtube@资源分享师_2
+      - " youtube@资源分享师_3"
+      - CN_ youtube@资源分享师_14
+      - US_ youtube@资源分享师_8
+      - IR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_3
+      - RU_ youtube@资源分享师_4
+      - RU_ youtube@资源分享师_5
+      - NG_ youtube@资源分享师
+      - PL_ youtube@资源分享师
+      - HK_ youtube@资源分享师_2
+      - US_ youtube@资源分享师_9
+      - RU_ youtube@资源分享师_6
+      - " youtube@资源分享师_4"
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - TR_ youtube@资源分享师
+      - " youtube@资源分享师_5"
+      - GB_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师
+      - TW_ youtube@资源分享师
+      - JP_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_18
+      - US_ youtube@资源分享师_10
+      - HK_ youtube@资源分享师_3
+      - JP_ youtube@资源分享师_4
+      - PL_ youtube@资源分享师_1
+      - " youtube@资源分享师_6"
+      - JP_ youtube@资源分享师_5
+      - " youtube@资源分享师_7"
+      - CN_ youtube@资源分享师_19
+      - " youtube@资源分享师_8"
+      - " youtube@资源分享师_9"
+      - JP_ youtube@资源分享师_6
+      - " youtube@资源分享师_10"
+      - CN_ youtube@资源分享师_20
+      - " youtube@资源分享师_11"
+      - AE_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_7
+      - JP_ youtube@资源分享师_8
+      - " youtube@资源分享师_12"
+      - SG_ youtube@资源分享师
+      - " youtube@资源分享师_13"
+      - RU_ youtube@资源分享师_7
+      - US_ youtube@资源分享师_11
+      - SG_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_21
+      - US_ youtube@资源分享师_12
+      - US+AS+06+@SubscriptionShare
+      - ID Hadi 01 @SubscriptionShare
+      - 🇷🇺|RU|@wxgqlfx|121
+      - 🇷🇺|RU|@wxgqlfx|176
+      - 🇭🇷|HR|@wxgqlfx|183
+      - 🇩🇪|DE|@wxgqlfx|206
+      - ✅+@prrofile_purple+(تلگرام)
+      - NL+Timeweb+01+@SubscriptionShare
+      - 日本3|@ripaojiedian
+      - ID Hadi 01 @SubscriptionShare_1
+      - 机场推荐:dafei.de+美国+21
+      - 🇯🇵|JP|@wxgqlfx|21
+      - 🇺🇸|US|@wxgqlfx|208
+      - 🇨🇳_CN_中国
+      - 🇺🇸US_6+|+⬇️+1.7MB/s
+      - 🇯🇵|JP|@wxgqlfx|12
+      - 🇯🇵|JP|@wxgqlfx|14
+      - 🌐|UN|@wxgqlfx|39
+      - 🇺🇸|US|@wxgqlfx|133
+      - 🇩🇪|DE|@wxgqlfx|232
+      - US_youtube@资源分享师_13
+      - US_youtube@资源分享师_14
+      - SG+AMAZON+06+@SubscriptionShare
+      - 🇷🇺+机场推荐:dafei.de+俄罗斯+03
+      - 🇮🇳|IN|@wxgqlfx|42
+      - 🌐|UN|@wxgqlfx|55
+      - 🇷🇺|RU|@wxgqlfx|217
+      - 🇩🇪|DE|@wxgqlfx|234
+      - 🇩🇪|DE|@wxgqlfx|236
+      - JP+BrainStorm+18+@SubscriptionShare
+      - youtube@资源分享师_6
+      - US_youtube@资源分享师_15
+      - youtube@资源分享师_7
+      - US_youtube@资源分享师_16
+      - 🇭🇰|HK|@wxgqlfx|35
+      - 🇯🇵|JP|@wxgqlfx|38
+      - 🌐|UN|@wxgqlfx|70
+      - 🇮🇳|IN|@wxgqlfx|104
+      - 🇷🇺|RU|@wxgqlfx|154
+      - 🇵🇱|PL|@wxgqlfx|159
+      - 🇩🇪|DE|@wxgqlfx|162
+      - 🇩🇪|DE|@wxgqlfx|166
+      - 🇲🇩|MD|@wxgqlfx|188
+      - MD+WorkTitans+01+@SubscriptionShare
+      - US_youtube@资源分享师_17
+      - US_youtube@资源分享师_18
       - youtube@资源分享师_8
       - youtube@资源分享师_9
       - youtube@资源分享师_10
       - youtube@资源分享师_11
-      - GB_youtube@资源分享师
-      - JP_youtube@资源分享师_5
-      - PL_youtube@资源分享师_4
-      - youtube@资源分享师_12
-      - US_youtube@资源分享师_12
-      - JP_youtube@资源分享师_6
-      - CN_youtube@资源分享师
-      - GB_youtube@资源分享师_1
-      - GB_youtube@资源分享师_2
-      - GR_youtube@资源分享师
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_3
-      - youtube@资源分享师_13
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_14
-      - RU_youtube@资源分享师_4
-      - RU_youtube@资源分享师_5
-      - AE_youtube@资源分享师
-      - RU_youtube@资源分享师_6
-      - JP_youtube@资源分享师_7
-      - CN_youtube@资源分享师_1
-      - US_youtube@资源分享师_15
-      - youtube@资源分享师_14
-      - youtube@资源分享师_15
-      - youtube@资源分享师_16
-      - US_youtube@资源分享师_16
-      - youtube@资源分享师_17
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_5
-      - GB_youtube@资源分享师_4
-      - SC_youtube@资源分享师
-      - PL_youtube@资源分享师_5
-      - RU_youtube@资源分享师_8
-      - PL_youtube@资源分享师_6
-      - PL_youtube@资源分享师_7
-      - ✅+@prrofile_purple+(تلگرام)
-      - youtube@资源分享师_18
-      - youtube@资源分享师_19
-      - youtube@资源分享师_20
-      - youtube@资源分享师_21
-      - youtube@资源分享师_22
-      - youtube@资源分享师_23
-      - youtube@资源分享师_24
-      - youtube@资源分享师_25
-      - youtube@资源分享师_26
-      - youtube@资源分享师_27
-      - youtube@资源分享师_28
-      - youtube@资源分享师_29
-      - youtube@资源分享师_30
-      - youtube@资源分享师_31
-      - LB_youtube@资源分享师
-      - US_youtube@资源分享师_17
-      - youtube@资源分享师_32
-      - youtube@资源分享师_33
-      - youtube@资源分享师_34
-      - youtube@资源分享师_35
-      - youtube@资源分享师_36
-      - youtube@资源分享师_37
-      - youtube@资源分享师_38
-      - youtube@资源分享师_39
-      - youtube@资源分享师_40
-      - US_youtube@资源分享师_18
       - US_youtube@资源分享师_19
-      - youtube@资源分享师_41
-      - US_youtube@资源分享师_20
-      - youtube@资源分享师_42
-      - youtube@资源分享师_43
-      - youtube@资源分享师_44
-      - youtube@资源分享师_45
-      - youtube@资源分享师_46
-      - youtube@资源分享师_47
-      - US_youtube@资源分享师_21
-      - youtube@资源分享师_48
-      - youtube@资源分享师_49
-      - youtube@资源分享师_50
-      - youtube@资源分享师_51
-      - youtube@资源分享师_52
-      - youtube@资源分享师_53
-      - FR_youtube@资源分享师_5
-      - US_youtube@资源分享师_22
-      - youtube@资源分享师_54
-      - 🇲🇩MD-213.159.66.206-0273
-      - JP_youtube@资源分享师_8
-      - HK_youtube@资源分享师_6
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - AE_youtube@资源分享师_1
       - 德國
-      - 德國_1
-      - 俄罗斯
-      - 德國_2
-      - 德國_3
-      - 🇩🇪DE_4+|+⬇️+1.1MB/s
-      - 🇸🇬|SG|@x|129
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇪🇸|ES|@wxgqlfx|49
-      - 🇬🇧|GB|@wxgqlfx|61
-      - 🇬🇧|GB|@wxgqlfx|62
-      - 🇵🇱|PL|@wxgqlfx|72
-      - 🇩🇪|DE|@wxgqlfx|73
-      - 🇸🇬|SG|@wxgqlfx|75
-      - 🇩🇪|DE|@wxgqlfx|78
-      - 🇩🇪|DE|@wxgqlfx|86
-      - 🇦🇪|AE|@wxgqlfx|96
-      - 🇨🇦|CA|@wxgqlfx|111
-      - 🇨🇦 机场推荐:dafei.de 加拿大 02
-      - 🇸🇬+机场推荐:dafei.de+新加坡+04
-      - youtube@资源分享师_55
-      - youtube@资源分享师_56
-      - youtube@资源分享师_57
-      - youtube@资源分享师_58
-      - US_youtube@资源分享师_23
-      - youtube@资源分享师_59
-      - youtube@资源分享师_60
-      - US_youtube@资源分享师_24
-      - youtube@资源分享师_61
-      - youtube@资源分享师_62
-      - US_youtube@资源分享师_25
-      - youtube@资源分享师_63
-      - youtube@资源分享师_64
-      - youtube@资源分享师_65
-      - youtube@资源分享师_66
-      - youtube@资源分享师_67
-      - youtube@资源分享师_68
-      - youtube@资源分享师_69
-      - youtube@资源分享师_70
-      - youtube@资源分享师_71
-      - youtube@资源分享师_72
-      - US_youtube@资源分享师_26
-      - youtube@资源分享师_73
-      - youtube@资源分享师_74
+      - youtube@资源分享师_12
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - 🇰🇷_KR_韩国
+      - US+AS+18+@SubscriptionShare
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -2895,200 +3251,264 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_youtube@资源分享师
+      - PL_youtube@资源分享师
+      - CN_youtube@资源分享师_1
+      - CN_youtube@资源分享师_2
+      - CN_youtube@资源分享师_3
+      - CN_youtube@资源分享师_4
+      - CN_youtube@资源分享师_5
+      - CN_youtube@资源分享师_6
+      - HK_youtube@资源分享师
+      - CN_youtube@资源分享师_7
+      - youtube@资源分享师
+      - CN_youtube@资源分享师_8
+      - CN_youtube@资源分享师_9
+      - CN_youtube@资源分享师_10
       - US_youtube@资源分享师
       - JP_youtube@资源分享师
-      - FR_youtube@资源分享师
-      - PL_youtube@资源分享师
-      - DE_youtube@资源分享师
-      - HK_youtube@资源分享师
-      - DE_youtube@资源分享师_1
-      - TW_youtube@资源分享师
       - HK_youtube@资源分享师_1
-      - HK_youtube@资源分享师_2
-      - youtube@资源分享师
-      - DE_youtube@资源分享师_2
-      - KR_youtube@资源分享师
-      - HK_youtube@资源分享师_3
-      - DE_youtube@资源分享师_3
-      - LT_youtube@资源分享师
-      - RU_youtube@资源分享师
-      - FR_youtube@资源分享师_1
-      - FR_youtube@资源分享师_2
-      - RU_youtube@资源分享师_1
-      - youtube@资源分享师_1
-      - FR_youtube@资源分享师_3
       - US_youtube@资源分享师_1
-      - PL_youtube@资源分享师_1
-      - HU_youtube@资源分享师
-      - HK_youtube@资源分享师_4
-      - KR_youtube@资源分享师_1
-      - HU_youtube@资源分享师_1
-      - FR_youtube@资源分享师_4
-      - US_youtube@资源分享师_2
-      - US_youtube@资源分享师_3
-      - FI_youtube@资源分享师
-      - youtube@资源分享师_2
-      - US_youtube@资源分享师_4
-      - EE_youtube@资源分享师
-      - US_youtube@资源分享师_5
+      - CN_youtube@资源分享师_11
+      - CN_youtube@资源分享师_12
+      - SG_youtube@资源分享师
+      - GB_youtube@资源分享师
+      - CN_youtube@资源分享师_13
+      - CN_youtube@资源分享师_14
       - JP_youtube@资源分享师_1
+      - CN_youtube@资源分享师_15
+      - CN_youtube@资源分享师_16
+      - HK_youtube@资源分享师_2
+      - CN_youtube@资源分享师_17
+      - US_youtube@资源分享师_2
+      - CN_youtube@资源分享师_18
+      - SG_youtube@资源分享师_1
+      - US_youtube@资源分享师_3
+      - CN_youtube@资源分享师_19
+      - JP_youtube@资源分享师_2
+      - CN_youtube@资源分享师_20
+      - CN_youtube@资源分享师_21
+      - CN_youtube@资源分享师_22
+      - CN_youtube@资源分享师_23
+      - US_youtube@资源分享师_4
+      - GB_youtube@资源分享师_1
+      - JP_youtube@资源分享师_3
+      - HK_youtube@资源分享师_3
+      - CN_youtube@资源分享师_24
+      - CN_youtube@资源分享师_25
+      - CN_youtube@资源分享师_26
+      - CN_youtube@资源分享师_27
+      - HK_youtube@资源分享师_4
+      - HK_youtube@资源分享师_5
+      - CN_youtube@资源分享师_28
+      - HK_youtube@资源分享师_6
+      - JP_youtube@资源分享师_4
+      - JP_youtube@资源分享师_5
+      - CN_youtube@资源分享师_29
+      - US_youtube@资源分享师_5
+      - HK_youtube@资源分享师_7
       - US_youtube@资源分享师_6
+      - CN_youtube@资源分享师_30
+      - JP_youtube@资源分享师_6
+      - CN_youtube@资源分享师_31
+      - youtube@资源分享师_1
+      - HK_youtube@资源分享师_8
       - US_youtube@资源分享师_7
+      - youtube@资源分享师_2
+      - CN_youtube@资源分享师_32
+      - CN_youtube@资源分享师_33
+      - CN_youtube@资源分享师_34
+      - KR_youtube@资源分享师
+      - US_youtube@资源分享师_8
       - youtube@资源分享师_3
       - youtube@资源分享师_4
-      - youtube@资源分享师_5
-      - JP_youtube@资源分享师_2
-      - youtube@资源分享师_6
-      - PL_youtube@资源分享师_2
-      - US_youtube@资源分享师_8
-      - youtube@资源分享师_7
+      - CN_youtube@资源分享师_35
+      - CN_youtube@资源分享师_36
+      - GB_youtube@资源分享师_2
+      - JP_youtube@资源分享师_7
+      - CN_youtube@资源分享师_37
+      - CN_youtube@资源分享师_38
+      - HK_youtube@资源分享师_9
+      - SE_youtube@资源分享师
       - US_youtube@资源分享师_9
-      - JP_youtube@资源分享师_3
-      - RU_youtube@资源分享师_2
-      - HK_youtube@资源分享师_5
-      - CZ_youtube@资源分享师
-      - TR_youtube@资源分享师
-      - PL_youtube@资源分享师_3
       - US_youtube@资源分享师_10
-      - JP_youtube@资源分享师_4
       - US_youtube@资源分享师_11
+      - CN_youtube@资源分享师_39
+      - CN_youtube@资源分享师_40
+      - JP_youtube@资源分享师_8
+      - CN_youtube@资源分享师_41
+      - CN_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - HK_youtube@资源分享师_10
+      - CN_youtube@资源分享师_44
+      - TR_youtube@资源分享师
+      - youtube@资源分享师_5
+      - JP_youtube@资源分享师_9
+      - CN_youtube@资源分享师_45
+      - US_youtube@资源分享师_12
+      - ZA_youtube@资源分享师
+      - CL_youtube@资源分享师
+      - CN_youtube@资源分享师_46
+      - HU_youtube@资源分享师
+      - IL_youtube@资源分享师
+      - IL_ youtube@资源分享师
+      - CN_ youtube@资源分享师
+      - ZA_ youtube@资源分享师
+      - " youtube@资源分享师"
+      - RU_ youtube@资源分享师
+      - CN_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师
+      - US_ youtube@资源分享师
+      - US_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_2
+      - SE_ youtube@资源分享师
+      - CL_ youtube@资源分享师
+      - US_ youtube@资源分享师_3
+      - GB_ youtube@资源分享师
+      - US_ youtube@资源分享师_4
+      - CL_ youtube@资源分享师_1
+      - SE_ youtube@资源分享师_1
+      - CL_ youtube@资源分享师_2
+      - IL_ youtube@资源分享师_1
+      - IL_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_3
+      - US_ youtube@资源分享师_5
+      - US_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_4
+      - HK_ youtube@资源分享师
+      - JP_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_5
+      - CN_ youtube@资源分享师_6
+      - CL_ youtube@资源分享师_4
+      - CN_ youtube@资源分享师_7
+      - CN_ youtube@资源分享师_8
+      - DE_ youtube@资源分享师
+      - HK_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_9
+      - IN_ youtube@资源分享师
+      - CN_ youtube@资源分享师_10
+      - IN_ youtube@资源分享师_1
+      - CN_ youtube@资源分享师_11
+      - FR_ youtube@资源分享师
+      - CN_ youtube@资源分享师_12
+      - IN_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_13
+      - KR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_1
+      - " youtube@资源分享师_1"
+      - " youtube@资源分享师_2"
+      - FR_ youtube@资源分享师_1
+      - US_ youtube@资源分享师_7
+      - RU_ youtube@资源分享师_2
+      - " youtube@资源分享师_3"
+      - CN_ youtube@资源分享师_14
+      - US_ youtube@资源分享师_8
+      - IR_ youtube@资源分享师
+      - RU_ youtube@资源分享师_3
+      - RU_ youtube@资源分享师_4
+      - RU_ youtube@资源分享师_5
+      - NG_ youtube@资源分享师
+      - PL_ youtube@资源分享师
+      - HK_ youtube@资源分享师_2
+      - US_ youtube@资源分享师_9
+      - RU_ youtube@资源分享师_6
+      - " youtube@资源分享师_4"
+      - CN_ youtube@资源分享师_15
+      - CN_ youtube@资源分享师_16
+      - CN_ youtube@资源分享师_17
+      - TR_ youtube@资源分享师
+      - " youtube@资源分享师_5"
+      - GB_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师
+      - TW_ youtube@资源分享师
+      - JP_ youtube@资源分享师_3
+      - CN_ youtube@资源分享师_18
+      - US_ youtube@资源分享师_10
+      - HK_ youtube@资源分享师_3
+      - JP_ youtube@资源分享师_4
+      - PL_ youtube@资源分享师_1
+      - " youtube@资源分享师_6"
+      - JP_ youtube@资源分享师_5
+      - " youtube@资源分享师_7"
+      - CN_ youtube@资源分享师_19
+      - " youtube@资源分享师_8"
+      - " youtube@资源分享师_9"
+      - JP_ youtube@资源分享师_6
+      - " youtube@资源分享师_10"
+      - CN_ youtube@资源分享师_20
+      - " youtube@资源分享师_11"
+      - AE_ youtube@资源分享师_1
+      - JP_ youtube@资源分享师_7
+      - JP_ youtube@资源分享师_8
+      - " youtube@资源分享师_12"
+      - SG_ youtube@资源分享师
+      - " youtube@资源分享师_13"
+      - RU_ youtube@资源分享师_7
+      - US_ youtube@资源分享师_11
+      - SG_ youtube@资源分享师_1
+      - AE_ youtube@资源分享师_2
+      - CN_ youtube@资源分享师_21
+      - US_ youtube@资源分享师_12
+      - US+AS+06+@SubscriptionShare
+      - ID Hadi 01 @SubscriptionShare
+      - 🇷🇺|RU|@wxgqlfx|121
+      - 🇷🇺|RU|@wxgqlfx|176
+      - 🇭🇷|HR|@wxgqlfx|183
+      - 🇩🇪|DE|@wxgqlfx|206
+      - ✅+@prrofile_purple+(تلگرام)
+      - NL+Timeweb+01+@SubscriptionShare
+      - 日本3|@ripaojiedian
+      - ID Hadi 01 @SubscriptionShare_1
+      - 机场推荐:dafei.de+美国+21
+      - 🇯🇵|JP|@wxgqlfx|21
+      - 🇺🇸|US|@wxgqlfx|208
+      - 🇨🇳_CN_中国
+      - 🇺🇸US_6+|+⬇️+1.7MB/s
+      - 🇯🇵|JP|@wxgqlfx|12
+      - 🇯🇵|JP|@wxgqlfx|14
+      - 🌐|UN|@wxgqlfx|39
+      - 🇺🇸|US|@wxgqlfx|133
+      - 🇩🇪|DE|@wxgqlfx|232
+      - US_youtube@资源分享师_13
+      - US_youtube@资源分享师_14
+      - SG+AMAZON+06+@SubscriptionShare
+      - 🇷🇺+机场推荐:dafei.de+俄罗斯+03
+      - 🇮🇳|IN|@wxgqlfx|42
+      - 🌐|UN|@wxgqlfx|55
+      - 🇷🇺|RU|@wxgqlfx|217
+      - 🇩🇪|DE|@wxgqlfx|234
+      - 🇩🇪|DE|@wxgqlfx|236
+      - JP+BrainStorm+18+@SubscriptionShare
+      - youtube@资源分享师_6
+      - US_youtube@资源分享师_15
+      - youtube@资源分享师_7
+      - US_youtube@资源分享师_16
+      - 🇭🇰|HK|@wxgqlfx|35
+      - 🇯🇵|JP|@wxgqlfx|38
+      - 🌐|UN|@wxgqlfx|70
+      - 🇮🇳|IN|@wxgqlfx|104
+      - 🇷🇺|RU|@wxgqlfx|154
+      - 🇵🇱|PL|@wxgqlfx|159
+      - 🇩🇪|DE|@wxgqlfx|162
+      - 🇩🇪|DE|@wxgqlfx|166
+      - 🇲🇩|MD|@wxgqlfx|188
+      - MD+WorkTitans+01+@SubscriptionShare
+      - US_youtube@资源分享师_17
+      - US_youtube@资源分享师_18
       - youtube@资源分享师_8
       - youtube@资源分享师_9
       - youtube@资源分享师_10
       - youtube@资源分享师_11
-      - GB_youtube@资源分享师
-      - JP_youtube@资源分享师_5
-      - PL_youtube@资源分享师_4
-      - youtube@资源分享师_12
-      - US_youtube@资源分享师_12
-      - JP_youtube@资源分享师_6
-      - CN_youtube@资源分享师
-      - GB_youtube@资源分享师_1
-      - GB_youtube@资源分享师_2
-      - GR_youtube@资源分享师
-      - US_youtube@资源分享师_13
-      - RU_youtube@资源分享师_3
-      - youtube@资源分享师_13
-      - GB_youtube@资源分享师_3
-      - US_youtube@资源分享师_14
-      - RU_youtube@资源分享师_4
-      - RU_youtube@资源分享师_5
-      - AE_youtube@资源分享师
-      - RU_youtube@资源分享师_6
-      - JP_youtube@资源分享师_7
-      - CN_youtube@资源分享师_1
-      - US_youtube@资源分享师_15
-      - youtube@资源分享师_14
-      - youtube@资源分享师_15
-      - youtube@资源分享师_16
-      - US_youtube@资源分享师_16
-      - youtube@资源分享师_17
-      - DE_youtube@资源分享师_4
-      - RU_youtube@资源分享师_7
-      - DE_youtube@资源分享师_5
-      - GB_youtube@资源分享师_4
-      - SC_youtube@资源分享师
-      - PL_youtube@资源分享师_5
-      - RU_youtube@资源分享师_8
-      - PL_youtube@资源分享师_6
-      - PL_youtube@资源分享师_7
-      - ✅+@prrofile_purple+(تلگرام)
-      - youtube@资源分享师_18
-      - youtube@资源分享师_19
-      - youtube@资源分享师_20
-      - youtube@资源分享师_21
-      - youtube@资源分享师_22
-      - youtube@资源分享师_23
-      - youtube@资源分享师_24
-      - youtube@资源分享师_25
-      - youtube@资源分享师_26
-      - youtube@资源分享师_27
-      - youtube@资源分享师_28
-      - youtube@资源分享师_29
-      - youtube@资源分享师_30
-      - youtube@资源分享师_31
-      - LB_youtube@资源分享师
-      - US_youtube@资源分享师_17
-      - youtube@资源分享师_32
-      - youtube@资源分享师_33
-      - youtube@资源分享师_34
-      - youtube@资源分享师_35
-      - youtube@资源分享师_36
-      - youtube@资源分享师_37
-      - youtube@资源分享师_38
-      - youtube@资源分享师_39
-      - youtube@资源分享师_40
-      - US_youtube@资源分享师_18
       - US_youtube@资源分享师_19
-      - youtube@资源分享师_41
-      - US_youtube@资源分享师_20
-      - youtube@资源分享师_42
-      - youtube@资源分享师_43
-      - youtube@资源分享师_44
-      - youtube@资源分享师_45
-      - youtube@资源分享师_46
-      - youtube@资源分享师_47
-      - US_youtube@资源分享师_21
-      - youtube@资源分享师_48
-      - youtube@资源分享师_49
-      - youtube@资源分享师_50
-      - youtube@资源分享师_51
-      - youtube@资源分享师_52
-      - youtube@资源分享师_53
-      - FR_youtube@资源分享师_5
-      - US_youtube@资源分享师_22
-      - youtube@资源分享师_54
-      - 🇲🇩MD-213.159.66.206-0273
-      - JP_youtube@资源分享师_8
-      - HK_youtube@资源分享师_6
-      - CN_youtube@资源分享师_2
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - AE_youtube@资源分享师_1
       - 德國
-      - 德國_1
-      - 俄罗斯
-      - 德國_2
-      - 德國_3
-      - 🇩🇪DE_4+|+⬇️+1.1MB/s
-      - 🇸🇬|SG|@x|129
-      - "@v2FreeHub 🇨🇦 153ms | vmess"
-      - 🇪🇸|ES|@wxgqlfx|49
-      - 🇬🇧|GB|@wxgqlfx|61
-      - 🇬🇧|GB|@wxgqlfx|62
-      - 🇵🇱|PL|@wxgqlfx|72
-      - 🇩🇪|DE|@wxgqlfx|73
-      - 🇸🇬|SG|@wxgqlfx|75
-      - 🇩🇪|DE|@wxgqlfx|78
-      - 🇩🇪|DE|@wxgqlfx|86
-      - 🇦🇪|AE|@wxgqlfx|96
-      - 🇨🇦|CA|@wxgqlfx|111
-      - 🇨🇦 机场推荐:dafei.de 加拿大 02
-      - 🇸🇬+机场推荐:dafei.de+新加坡+04
-      - youtube@资源分享师_55
-      - youtube@资源分享师_56
-      - youtube@资源分享师_57
-      - youtube@资源分享师_58
-      - US_youtube@资源分享师_23
-      - youtube@资源分享师_59
-      - youtube@资源分享师_60
-      - US_youtube@资源分享师_24
-      - youtube@资源分享师_61
-      - youtube@资源分享师_62
-      - US_youtube@资源分享师_25
-      - youtube@资源分享师_63
-      - youtube@资源分享师_64
-      - youtube@资源分享师_65
-      - youtube@资源分享师_66
-      - youtube@资源分享师_67
-      - youtube@资源分享师_68
-      - youtube@资源分享师_69
-      - youtube@资源分享师_70
-      - youtube@资源分享师_71
-      - youtube@资源分享师_72
-      - US_youtube@资源分享师_26
-      - youtube@资源分享师_73
-      - youtube@资源分享师_74
+      - youtube@资源分享师_12
+      - US_youtube@资源分享师_20
+      - US_youtube@资源分享师_21
+      - 🇰🇷_KR_韩国
+      - US+AS+18+@SubscriptionShare
 rule-providers:
   LocalAreaNetwork:
     type: http
