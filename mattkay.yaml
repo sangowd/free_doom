@@ -46,35 +46,30 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: HK
-    type: hysteria2
-    server: hkt2.jueduibupao.top
-    port: 48625
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: hkt1.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇹🇼TW_20 | ⬇️ 16.1MB/s
-    type: vless
-    server: 2.tw.2.cdn-bilibili.cn
-    port: 443
-    uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: ev0T0oHwKzoTLJJ-enihK36_fOhb6Wdt5XMMj9QtCh0
   - name: TW
-    type: vless
-    server: 2.tw.2.cdn-bilibili.cn
+    type: trojan
+    server: 125.228.236.138
     port: 443
-    uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-    servername: www.icloud.com
+    password: 5a2c16f9
+    sni: 5c.hhhhh.eu.org
+    skip-cert-verify: false
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: ev0T0oHwKzoTLJJ-enihK36_fOhb6Wdt5XMMj9QtCh0
+    ws-opts:
+      path: /125.228.236.138:443
+      headers:
+        Host: 5c.hhhhh.eu.org
+  - name: 🇹🇼TW_5 | ⬇️ 9.0MB/s
+    type: trojan
+    server: 125.228.236.138
+    port: 443
+    password: 5a2c16f9
+    sni: 5c.hhhhh.eu.org
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /125.228.236.138:443
+      headers:
+        Host: 5c.hhhhh.eu.org
   - name: " 香港 46"
     type: vless
     server: 2.hk.2.cdn-bilibili.cn
@@ -86,35 +81,10 @@ proxies:
     client-fingerprint: safari
     reality-opts:
       public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
-  - name: HK_1
-    type: hysteria2
-    server: tw3.jueduibupao.top
-    port: 46741
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: tw3.jueduibupao.top
-    skip-cert-verify: true
-  - name: https://t.me/zyzzzoao ⚡️
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 19527
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: HK_2
-    type: vless
-    server: hkt1.xn--9kqp42aims.top
-    port: 20418
-    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
-    servername: buylite.music.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: edge
-    reality-opts:
-      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-      short-id: 4b070735
-  - name: 🇯🇵JP_2 | ⬇️ 10.8MB/s
+  - name: HK
     type: vless
     server: hkt.xn--9kqp42aims.top
-    port: 20517
+    port: 20516
     uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
     servername: buylite.music.apple.com
     tls: true
@@ -123,59 +93,173 @@ proxies:
     reality-opts:
       public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
       short-id: 4b070735
-  - name: 🇭🇰HK_6 | ⬇️ 2.6MB/s
-    type: hysteria2
-    server: hk2.jueduibupao.top
-    port: 47350
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: hk2.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇹🇼TW_3 | ⬇️ 1.2MB/s
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 32207
-    cipher: 2022-blake3-aes-128-gcm
-    password: NjVhMWE2YmVmNzg4MTcwMA==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 🇸🇬SG_1 | ⬇️ 11.7MB/s
-    type: hysteria2
-    server: linsg2.jueduibupao.top
-    port: 44521
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: linsg2.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇯🇵JP_3 | ⬇️ 1.4MB/s
-    type: vless
-    server: hkt-home.xn--9kqp42aims.top
-    port: 20001
-    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
-    servername: buylite.music.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: edge
-    reality-opts:
-      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-      short-id: 4b070735
-  - name: 🇫🇷FR_3 | ⬇️ 1.7MB/s
-    type: vless
-    server: fr.cdn.stun.su
+  - name: TW_1
+    type: trojan
+    server: 125.228.141.233
     port: 443
-    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-    servername: fr.cdn.stun.su
+    password: 5a2c16f9
+    sni: 5c.hhhhh.eu.org
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /125.228.141.233:443
+      headers:
+        Host: 5c.hhhhh.eu.org
+  - name: 🇹🇼TW_4 | ⬇️ 5.6MB/s
+    type: trojan
+    server: 125.228.141.233
+    port: 443
+    password: 5a2c16f9
+    sni: 5c.hhhhh.eu.org
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /125.228.141.233:443
+      headers:
+        Host: 5c.hhhhh.eu.org
+  - name: 🇭🇰HK_1 | ⬇️ 4.3MB/s
+    type: vless
+    server: hkt1.xn--9kqp42aims.top
+    port: 20417
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇹🇼TW_3 | ⬇️ 7.3MB/s
+    type: trojan
+    server: 220.128.110.108
+    port: 43
+    password: 5a2c16f9
+    sni: 5c.hhhhh.eu.org
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /220.128.110.108:43
+      headers:
+        Host: 5c.hhhhh.eu.org
+  - name: HK_1
+    type: vless
+    server: hkt1.xn--9kqp42aims.top
+    port: 20417
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇭🇰HK_2 | ⬇️ 2.0MB/s
+    type: vless
+    server: hkt.xn--9kqp42aims.top
+    port: 20516
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇦🇹AT_2 | ⬇️ 1.4MB/s
+    type: vless
+    server: 152.53.46.3
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: au1.scroogethebest.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
-      short-id: 3bdec72a5a0ffd84
-  - name: 🇯🇵JP_4 | ⬇️ 1.3MB/s
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 19529
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
+      public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+      short-id: 9c2378562188c3cb
   - name: JP
     type: ss
     server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇦🇹AT_1 | ⬇️ 1.4MB/s
+    type: vless
+    server: at.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: at.jojack.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+  - name: 🇩🇪DE_1 | ⬇️ 4.1MB/s
+    type: vless
+    server: 64.188.64.59
+    port: 443
+    uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
+    servername: yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
+      short-id: efd29b2d25
+  - name: ❓Other_1 | ⬇️ 1.6MB/s
+    type: vless
+    server: meow-msc.nethcloud.top
+    port: 8443
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
+  - name: 🇩🇪DE_7 | ⬇️ 5.0MB/s
+    type: vless
+    server: 144.31.139.71
+    port: 443
+    uuid: 192f7c25-0c3a-4089-a67b-5138c5d5d561
+    servername: de.gagtubelol.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: o29JCvEwwDcIW6ZQu06m6Vyxko6pXaNjzNd-jGcwABU
+      short-id: f1a3d4b6de93aa3a
+  - name: ❓Other_1 | ⬇️ 1.6MB/s_1
+    type: vless
+    server: meow-msc.nethcloud.top
+    port: 8443
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
+  - name: 🇫🇮FI_1 | ⬇️ 3.4MB/s
+    type: vless
+    server: 144.31.128.129
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: HK_2
+    type: ss
+    server: cf.008500.xyz
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -196,52 +280,33 @@ proxies:
     reality-opts:
       public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
       short-id: b8cf9578640a9edf
-  - name: 🇩🇪DE_1 | ⬇️ 4.1MB/s
+  - name: 🇫🇮FI_1 | ⬇️ 5.0MB/s
     type: vless
-    server: 64.188.64.59
+    server: ae.cdn.stun.su
     port: 443
-    uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
-    servername: yandex.ru
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
-      short-id: efd29b2d25
-  - name: 🇺🇸US_1 | ⬇️ 5.8MB/s
-    type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: SG
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇷🇺RU_2 | ⬇️ 7.4MB/s
-    type: vless
-    server: 185.39.206.226
-    port: 443
-    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-    servername: eh.vk.com
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
-      short-id: b8cf9578640a9edf
-  - name: HK_3
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇬🇧GB_1 | ⬇️ 7.9MB/s
+    type: vless
+    server: icshstor.site
+    port: 23411
+    uuid: 1eea1e0b-6388-491c-b310-5524e8384808
+    servername: icshstor.site
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0Z7LFqDUF568Df972BbYorpeykKnN-Z98jHjDBnRbCE
+      short-id: b69808
+  - name: TW_2
     type: ss
-    server: cf.008500.xyz
+    server: sub.danfeng.eu.org
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -261,7 +326,18 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK_4
+  - name: SG
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK_3
     type: ss
     server: cf.zhetengsha.eu.org
     port: 443
@@ -272,7 +348,30 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK_5
+  - name: 🇫🇷FR_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: fran.scroogethebest.com
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: fran.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: SG_1
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK_4
     type: ss
     server: cf.877774.xyz
     port: 443
@@ -283,6 +382,30 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+    type: vless
+    server: at.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: at.jojack.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+  - name: 🇹🇷TR_1 | ⬇️ 5.9MB/s
+    type: vless
+    server: 93.114.98.171
+    port: 443
+    uuid: 990e5a63-71e4-4dca-b110-ea8f9bf9f54b
+    servername: www.amd.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9hLM71lkMgoCAzQJ2WBv5TXI_4Lucl5DctQveS85A0Q
+      short-id: 1c
   - name: 美國
     type: trojan
     server: 172.66.44.230
@@ -295,18 +418,28 @@ proxies:
       path: /tro8sFW1S91B6sZrM1?ed=2560
       headers:
         Host: Koma-YT.PAGeS.Dev
-  - name: 🇵🇱PL_3 | ⬇️ 5.3MB/s
+  - name: ❓Other_1 | ⬇️ 6.2MB/s
     type: vless
-    server: 158.160.105.121
+    server: meow-msc.nethcloud.top
     port: 8443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    servername: yandex.ru
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
     tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: 8f222b3475800821
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
+  - name: ❓Other_1 | ⬇️ 6.2MB/s_1
+    type: vless
+    server: meow-msc.nethcloud.top
+    port: 8443
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
   - name: JP_1
     type: ss
     server: cdns.doon.eu.org
@@ -318,117 +451,33 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇺🇸US_6 | ⬇️ 7.3MB/s
-    type: vmess
-    server: y78.ae1.indevs.in
-    port: 80
-    uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /KHtPvNZl371C8NsbbZ1wwDhJ3
-      headers:
-        Host: y78.Ae1.indEVS.IN
-  - name: 🇵🇱PL_5 | ⬇️ 2.0MB/s
+  - name: 🇦🇹AT_1 | ⬇️ 4.0MB/s
     type: vless
-    server: 158.160.221.132
-    port: 8443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: 8f222b3475800821
-  - name: SG_1
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: TW_1
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇭🇺HU_2 | ⬇️ 2.4MB/s
-    type: vless
-    server: 89.169.128.105
-    port: 8443
-    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-      short-id: f4b4a6365558ea2e
-  - name: 🇵🇱PL_2 | ⬇️ 3.4MB/s
-    type: vless
-    server: 158.160.221.132
-    port: 51102
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: 8f222b3475800821
-  - name: 🇫🇮FI_1 | ⬇️ 5.0MB/s
-    type: vless
-    server: ae.cdn.stun.su
+    server: at.jojack.ru
     port: 443
     uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-    servername: ae.cdn.stun.su
+    servername: at.jojack.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
-      short-id: 41a0b29e95aaea87
-  - name: 🇭🇺HU_1 | ⬇️ 1.0MB/s
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+  - name: 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
     type: vless
-    server: 89.169.128.105
+    server: fran.scroogethebest.com
     port: 443
-    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-    servername: yandex.ru
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: fran.scroogethebest.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-      short-id: 2715592069f36fe7
-  - name: 🇭🇺HU_1 | ⬇️ 3.9MB/s
-    type: vless
-    server: 89.169.128.105
-    port: 443
-    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-      short-id: 2715592069f36fe7
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
   - name: 美国
     type: vmess
-    server: 2001:bc8:32d7:302::14
+    server: 2001:bc8:32d7:302::10
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -437,10 +486,56 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      path: ?ed=2048
+  - name: 🇦🇹AT_1 | ⬇️ 1.6MB/s
+    type: vless
+    server: at.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: at.jojack.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+  - name: 🇫🇷FR_4 | ⬇️ 2.3MB/s
+    type: vless
+    server: fran.scroogethebest.com
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: fran.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+    type: vless
+    server: at.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: at.jojack.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 8dc4fccb2bcfc99d
+  - name: HK_5
+    type: vless
+    server: hkt1.xn--9kqp42aims.top
+    port: 20418
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
     type: vless
     server: at.jojack.ru
     port: 443
@@ -463,45 +558,10 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_2
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: TURK1.NET.NET
-  - name: 🇮🇳IN_2 | ⬇️ 2.0MB/s
-    type: hysteria2
-    server: mm1.mangshe.xyz
-    port: 2056
-    password: 7dd10318-28fd-413f-81f0-cd0a286e4779
-    sni: mm1.mangshe.xyz
-    skip-cert-verify: true
-  - name: 美国_3
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_4
+  - name: 美国_2
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -515,85 +575,6 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: AZERB.NET
-  - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 2001:bc8:32d7:302::10
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇺🇸US_5 | ⬇️ 4.9MB/s
-    type: hysteria2
-    server: azcus1.jueduibupao.top
-    port: 20101
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: azcus1.jueduibupao.top
-    skip-cert-verify: true
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_7
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇫🇮FI_23 | ⬇️ 2.2MB/s
-    type: vless
-    server: 144.31.128.129
-    port: 443
-    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-    servername: ae.cdn.stun.su
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
-      short-id: 41a0b29e95aaea87
-  - name: 🇺🇸US_4 | ⬇️ 2.1MB/s
-    type: hysteria2
-    server: mg6.mangshe.xyz
-    port: 2056
-    password: 7dd10318-28fd-413f-81f0-cd0a286e4779
-    sni: mg6.mangshe.xyz
-    skip-cert-verify: true
   - name: HK_6
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -608,14 +589,155 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 🇺🇸US_4 | ⬇️ 1.8MB/s
-    type: hysteria2
-    server: ny.jueduibupao.top
-    port: 50001
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: ny.jueduibupao.top
-    skip-cert-verify: true
-  - name: 美国_9
+  - name: 美国_3
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 🇩🇪DE_6 | ⬇️ 2.8MB/s
+    type: vless
+    server: 144.31.180.212
+    port: 443
+    uuid: f8ffc2f3-9d01-41f8-9b8a-833ea3176318
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Ptlv1A0hHK3qw92t9cjKNJjaYCJnglNDGzPDOc4OZ1I
+      short-id: a59201a59450
+  - name: 🇷🇺RU_1 | ⬇️ 5.2MB/s
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+    servername: eh.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+  - name: 美国_4
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_5
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇵🇱PL_3 | ⬇️ 3.9MB/s
+    type: vless
+    server: 144.31.3.35
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: poland.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: ❓Other_1 | ⬇️ 6.2MB/s_2
+    type: vless
+    server: meow-msc.nethcloud.top
+    port: 8443
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
+  - name: 美国_8
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: ❓Other_2 | ⬇️ 5.5MB/s
+    type: vless
+    server: meow-msc.nethcloud.top
+    port: 8443
+    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
+    servername: wikihow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: 8bd29483ded126b4
+  - name: JP_2
+    type: vless
+    server: hkt-home.xn--9kqp42aims.top
+    port: 20001
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: FR
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -629,154 +751,21 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 🇪🇸ES_1 | ⬇️ 3.7MB/s
-    type: vless
-    server: 158.160.223.36
-    port: 8443
-    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-      short-id: 48fccabc158a4c22
-  - name: 🇭🇺HU_2 | ⬇️ 3.5MB/s
-    type: vless
-    server: 84.23.52.70
-    port: 443
-    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-    servername: m.vk.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-      short-id: 8ba12e75110b7a9c
-  - name: 🇵🇱PL_2 | ⬇️ 1.9MB/s
-    type: vless
-    server: 45.144.51.87
-    port: 443
-    uuid: 5757c746-9878-4cfd-874a-edd95485f26d
-    servername: pl.fasti.win
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
-      short-id: feedbacc
+  - name: 美国_9
+    type: vmess
+    server: 2001:bc8:32d7:302::14
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
   - name: 美国_10
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 美国_11
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 🇪🇸ES_1 | ⬇️ 3.6MB/s
-    type: vless
-    server: 158.160.223.36
-    port: 443
-    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-      short-id: 48fccabc158a4c22
-  - name: ❓Other_1 | ⬇️ 6.2MB/s
-    type: vless
-    server: meow-msc.nethcloud.top
-    port: 8443
-    uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
-    servername: wikihow.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
-      short-id: 8bd29483ded126b4
-  - name: 🇵🇱PL_1 | ⬇️ 3.8MB/s
-    type: vless
-    server: 158.160.105.121
-    port: 443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: 8f222b3475800821
-  - name: 美国_12
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇵🇱PL_3 | ⬇️ 3.9MB/s
-    type: vless
-    server: 144.31.3.35
-    port: 443
-    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-    servername: poland.scroogethebest.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-      short-id: 4fa44664f6a566d3
-  - name: 🇦🇲AM_1 | ⬇️ 1.2MB/s
-    type: vless
-    server: 185.234.57.207
-    port: 443
-    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
-    servername: teamdocs.su
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
-      short-id: b5e0cd9ca194c0a5
-  - name: 🇵🇱PL_3 | ⬇️ 2.7MB/s
-    type: vless
-    server: 158.160.221.132
-    port: 443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: 8f222b3475800821
-  - name: 🇩🇪DE_3 | ⬇️ 3.1MB/s
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 39987
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 美国_13
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -788,38 +777,303 @@ proxies:
     network: ws
     ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 🇩🇪DE_12 | ⬇️ 3.4MB/s
+  - name: 🇩🇪DE_5 | ⬇️ 2.1MB/s
     type: vless
-    server: 20.79.160.49
+    server: de-convert.webedg.net
     port: 443
-    uuid: jina
-    servername: jina-207916049-direct.yektanet.co
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: 🇺🇸US_3 | ⬇️ 5.2MB/s
-    type: vless
-    server: us.axinode.sbs
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
+    uuid: 3bf002f8-b951-4dd5-b372-8d46ccd5f24b
+    servername: de-convert.webedg.net
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_6 | ⬇️ 2.8MB/s
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 12980
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      public-key: d1PrrLqIGVQSZ5jUaLe-R67Ey8TJZN8WVkIJh0Xa_zc
+  - name: 🇯🇵JP_3 | ⬇️ 1.4MB/s
     type: vless
-    server: 144.31.3.30
+    server: hkt-home.xn--9kqp42aims.top
+    port: 20001
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+    type: vless
+    server: 144.31.3.35
     port: 443
     uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
     servername: poland.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 🇩🇪DE_3 | ⬇️ 1.8MB/s
+    type: vless
+    server: 144.31.85.153
+    port: 443
+    uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+    servername: germany.denditop.site
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+      short-id: 9c2378562188c3cb
+  - name: 美国_11
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+    type: vless
+    server: ae.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+    type: vless
+    server: 64.188.64.59
+    port: 443
+    uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
+    servername: yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
+      short-id: efd29b2d25
+  - name: 🇯🇵JP_2 | ⬇️ 10.8MB/s
+    type: vless
+    server: hkt.xn--9kqp42aims.top
+    port: 20517
+    uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+    servername: buylite.music.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+  - name: 🇫🇮FI_4 | ⬇️ 4.6MB/s
+    type: vless
+    server: 31.13.208.89
+    port: 443
+    uuid: 30c04389-bbcb-431f-9d47-a8ad24406bd4
+    network: grpc
+    servername: ads.x5.ru
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: xyz
+    reality-opts:
+      public-key: OBR2JYROQB8odK5glVW_KLnsWl3UZ-voyGq_9ihQgTI
+      short-id: d49d578f280fd83a
+  - name: 🇫🇮FI_1 | ⬇️ 3.3MB/s
+    type: vless
+    server: ae.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇩🇪DE_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: nl.jojack.ru
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: nl.jojack.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+      short-id: 6bb3c7f9f97b45b8
+  - name: 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+    type: vless
+    server: 144.31.3.35
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: poland.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 🇵🇱PL_1 | ⬇️ 4.1MB/s
+    type: vless
+    server: 144.31.3.35
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: poland.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 阿联酋
+    type: vless
+    server: 144.31.128.129
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+    type: vless
+    server: ae.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇵🇱PL_3 | ⬇️ 1.6MB/s
+    type: vless
+    server: pl-modx.webedg.net
+    port: 443
+    uuid: 3bf002f8-b951-4dd5-b372-8d46ccd5f24b
+    servername: pl-modx.webedg.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rpczbNzhaYC127W18DsTNJgVHeaKwdFAsmpzZhc31AM
+  - name: 美国_12
+    type: vmess
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 美国_13
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: AZERB.NET
+  - name: 🇷🇺RU_2 | ⬇️ 7.4MB/s
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+    servername: eh.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+  - name: 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+    type: vless
+    server: ae.cdn.stun.su
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+    type: vless
+    server: 185.39.206.226
+    port: 443
+    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+    servername: eh.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+      short-id: b8cf9578640a9edf
+  - name: 🇫🇮FI_23 | ⬇️ 2.2MB/s
+    type: vless
+    server: 144.31.128.129
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 🇳🇱NL_1 | ⬇️ 3.6MB/s
+    type: vless
+    server: 89.110.74.164
+    port: 8443
+    uuid: ef9f91a0-54bc-4678-8b48-b2c648c74625
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: E2uPS0gxJLxxJODyLM582BY9ZueZdZepeJ2BaLHhG2Y
+      short-id: be77cd9bc9dd69
+  - name: 🇩🇪DE_2 | ⬇️ 3.9MB/s
+    type: vless
+    server: 45.144.54.87
+    port: 443
+    uuid: ea51b4e4-b787-4dbc-a4ad-a96cbc0c7e85
+    servername: max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg
+      short-id: 03a70b17f8036009
+  - name: 🇺🇸US_2 | ⬇️ 4.0MB/s
+    type: vless
+    server: usa.scroogethebest.com
+    port: 443
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: usa.scroogethebest.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
@@ -837,511 +1091,10 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
-        Host: 2001:bc8:32d7:302::10
+        Host: AZERB.NET
   - name: 美国_15
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 🇺🇸US_3 | ⬇️ 1.2MB/s
-    type: vless
-    server: ghj.ae1autumn.cc.cd
-    port: 80
-    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-    network: ws
-    servername: ghj.ae1autumn.cc.cd
-    tls: false
-    ws-opts:
-      path: /XR8So0uqFVa3vY9ZbxgW4
-      headers:
-        Host: ghj.ae1autumn.cc.cd
-  - name: 🇯🇵JP_2 | ⬇️ 1.7MB/s
-    type: hysteria2
-    server: linjp1.jueduibupao.top
-    port: 44126
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: linjp1.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇩🇪DE_10 | ⬇️ 2.8MB/s
-    type: vless
-    server: 20.218.137.249
-    port: 443
-    uuid: jina
-    servername: jina-20218137249-direct.yektanet.co
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: 🇷🇺RU_3 | ⬇️ 6.9MB/s
-    type: vless
-    server: 87.239.111.227
-    port: 443
-    uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
-    network: grpc
-    servername: m.vk.ru
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: kz54nOxv8IOst-C_GQO5cf6106be0UakNbCEXiDuhHA
-      short-id: 3863adb3
-  - name: 🇱🇹LT_1 | ⬇️ 1.1MB/s
-    type: vless
-    server: 2.59.162.100
-    port: 443
-    uuid: 1004c163-26ea-5662-b5b2-40df01176f8b
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: eH6HWGKJUtp4VmC9KxtdcyxtLI0O52vhAmZx1ybOtUs
-      short-id: ffffffffff
-  - name: 美国_16
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: FR VLESS-126 | free-nodes
-    type: vless
-    server: 185.156.72.124
-    port: 52042
-    uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
-    servername: yandex.ru
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Z23_1wSIy1CNUEB7YEJwPZzCEsMTmzTNGe_h5bzEMHY
-      short-id: 8e8dcb9a67bf43f1
-  - name: 🇺🇸US_7 | ⬇️ 3.6MB/s
-    type: ss
-    server: xiaofeizhu.idsduf.com
-    port: 12981
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 🇹🇼TW_1 | ⬇️ 3.8MB/s
-    type: hysteria2
-    server: tw2.jueduibupao.top
-    port: 30078
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: tw2.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇨🇦CA_37 | ⬇️ 4.2MB/s
-    type: ss
-    server: xiaofeizhu.idsduf.com
-    port: 39986
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
-    type: vless
-    server: 185.234.57.207
-    port: 443
-    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
-    servername: teamdocs.su
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
-      short-id: b5e0cd9ca194c0a5
-  - name: 美国_17
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国 - 紐約 - Massivegrid LTD - 8
-    type: vmess
-    server: nju.bb4.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: nju.bb4.indevs.in
-  - name: 🇨🇦CA_36 | ⬇️ 3.3MB/s
-    type: ss
-    server: dafeizhu.whtjdasha.com
-    port: 39985
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:YzIwYTNlNmMtNDM3OC00ZQ==
-  - name: 🇯🇵JP_3 | ⬇️ 1.8MB/s
-    type: hysteria2
-    server: linjp2.jueduibupao.top
-    port: 30000
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: linjp2.jueduibupao.top
-    skip-cert-verify: true
-  - name: 🇦🇪AE_1 | ⬇️ 6.4MB/s
-    type: hysteria2
-    server: db1.mangshe.xyz
-    port: 2056
-    password: 7dd10318-28fd-413f-81f0-cd0a286e4779
-    sni: db1.mangshe.xyz
-    skip-cert-verify: true
-  - name: https://t.me/zyzzzoao ⚡️_1
-    type: vmess
-    server: nmk.tt6.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
-      headers:
-        Host: nmk.tt6.ccwu.cc
-  - name: 美国 - 紐約 - Massivegrid LTD - 9
-    type: vmess
-    server: bnmj.wc6.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
-      headers:
-        Host: bnmj.wc6.ccwu.cc
-  - name: 🇳🇱NL_2 | ⬇️ 5.7MB/s
-    type: vless
-    server: 172.66.128.70
-    port: 2052
-    uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
-  - name: 🇩🇪DE_4 | ⬇️ 3.7MB/s
-    type: vless
-    server: vpn.nnet.online
-    port: 80
-    uuid: 79d24ca6-8f75-4653-9a9c-2d4ee38f4b88
-    network: ws
-    tls: false
-    ws-opts:
-      path: /vless-ntls
-      headers:
-        Host: nnet.online
-  - name: 🇩🇪DE_4 | ⬇️ 4.5MB/s
-    type: vless
-    server: 172.67.193.88
-    port: 443
-    uuid: mahanvpn-free-iran2
-    network: ws
-    servername: MAHANteAm.noD32Cpu.iR
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /assets
-      headers:
-        Host: MAHANteAm.noD32Cpu.iR
-  - name: 🇩🇪DE_9 | ⬇️ 5.4MB/s
-    type: hysteria2
-    server: flkf3.mangshe.xyz
-    port: 2056
-    password: 7dd10318-28fd-413f-81f0-cd0a286e4779
-    sni: flkf3.mangshe.xyz
-    skip-cert-verify: true
-  - name: https://t.me/zyzzzoao ⚡️_2
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: nnmk.bb5.indevs.in http httpupgrade CDN vmess
-    type: vmess
-    server: nnmk.bb5.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: nnmk.bb5.indevs.in
-    network: httpupgrade
-  - name: bh.bb2.indevs.in http WS CDN vmess
-    type: vmess
-    server: bh.bb2.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: bh.bb2.indevs.in
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: bh.bb2.indevs.in
-  - name: bh.bb2.indevs.in http httpupgrade CDN vmess
-    type: vmess
-    server: bh.bb2.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: bh.bb2.indevs.in
-    network: httpupgrade
-  - name: mko.bb1.indevs.in http httpupgrade CDN vmess
-    type: vmess
-    server: mko.bb1.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: mko.bb1.indevs.in
-    network: httpupgrade
-  - name: nju.bb4.indevs.in http WS direct vmess
-    type: vmess
-    server: nju.bb4.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: nju.bb4.indevs.in
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: nju.bb4.indevs.in
-  - name: 美国_18
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: mko.bb1.indevs.in http WS CDN vmess
-    type: vmess
-    server: mko.bb1.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: mko.bb1.indevs.in
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: mko.bb1.indevs.in
-  - name: nnmk.bb5.indevs.in http WS CDN vmess
-    type: vmess
-    server: nnmk.bb5.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: nnmk.bb5.indevs.in
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: nnmk.bb5.indevs.in
-  - name: mio.tt9.ccwu.cc http httpupgrade CDN vmess
-    type: vmess
-    server: mio.tt9.ccwu.cc
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: mio.tt9.ccwu.cc
-    network: httpupgrade
-  - name: bnh.tt8.ccwu.cc http httpupgrade direct vmess
-    type: vmess
-    server: bnh.tt8.ccwu.cc
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: bnh.tt8.ccwu.cc
-    network: httpupgrade
-  - name: lop.bb3.indevs.in http httpupgrade CDN vmess
-    type: vmess
-    server: lop.bb3.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: lop.bb3.indevs.in
-    network: httpupgrade
-  - name: mio.tt9.ccwu.cc http WS CDN vmess
-    type: vmess
-    server: mio.tt9.ccwu.cc
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: mio.tt9.ccwu.cc
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: mio.tt9.ccwu.cc
-  - name: bnh.tt8.ccwu.cc tls WS direct vless
-    type: vless
-    server: bnh.tt8.ccwu.cc
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    network: ws
-    servername: bnh.tt8.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /15ZYK3adOPjqSc7fzeJr
-      headers:
-        Host: bnh.tt8.ccwu.cc
-  - name: ❓Other_8 | ⬇️ 3.5MB/s
-    type: hysteria2
-    server: 6bkr1.6bnw.top
-    port: 10100
-    password: c20a3e6c-4378-4e79-b261-78042e6fd52b
-    sni: 6bkr1.6bnw.top
-    skip-cert-verify: true
-  - name: bnh.tt8.ccwu.cc tls httpupgrade direct vless
-    type: vless
-    server: bnh.tt8.ccwu.cc
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    network: http
-    servername: bnh.tt8.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /15ZYK3apc5wVWIN
-      headers:
-        Host:
-          - bnh.tt8.ccwu.cc
-  - name: bn.457.pp.ua tls WS CDN vmess
-    type: vmess
-    server: bn.457.pp.ua
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: bn.457.pp.ua
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: bn.457.pp.ua
-  - name: jk.857856.xyz tls WS CDN vmess
-    type: vmess
-    server: jk.857856.xyz
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: jk.857856.xyz
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: jk.857856.xyz
-  - name: bn.457.pp.ua tls httpupgrade CDN vless
-    type: vless
-    server: bn.457.pp.ua
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    network: http
-    servername: bn.457.pp.ua
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /15ZYK3apc5wVWIN
-      headers:
-        Host:
-          - bn.457.pp.ua
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 美国_20
     type: vmess
     server: 2001:bc8:32d7:302::11
     port: 44579
@@ -1355,63 +1108,36 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: Azerb.NET
-  - name: mkl.661.qzz.io tls WS CDN vless
+  - name: 🇫🇮FI_2 | ⬇️ 3.7MB/s
     type: vless
-    server: mkl.661.qzz.io
+    server: ae.cdn.stun.su
     port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    network: ws
-    servername: mkl.661.qzz.io
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: ae.cdn.stun.su
     tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
-    ws-opts:
-      path: /15ZYK3adOPjqSc7fzeJr
-      headers:
-        Host: mkl.661.qzz.io
-  - name: bnh.tt8.ccwu.cc tls WS direct vmess
+    reality-opts:
+      public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+      short-id: 41a0b29e95aaea87
+  - name: 美国_16
     type: vmess
-    server: bnh.tt8.ccwu.cc
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: bnh.tt8.ccwu.cc
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: bnh.tt8.ccwu.cc
-  - name: bn.457.pp.ua tls httpupgrade CDN vmess
-    type: vmess
-    server: bn.457.pp.ua
-    port: 443
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: bn.457.pp.ua
-    network: httpupgrade
-  - name: bnh.tt8.ccwu.cc http WS direct vmess
-    type: vmess
-    server: bnh.tt8.ccwu.cc
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: bnh.tt8.ccwu.cc
+    servername: 2001:bc8:32d7:302::10
     network: ws
     ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
-        Host: bnh.tt8.ccwu.cc
-  - name: 美国_21
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_17
     type: vmess
-    server: 2001:bc8:32d7:302::11
+    server: 2001:bc8:32d7:302::10
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -1420,260 +1146,704 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇩🇪DE_10 | ⬇️ 2.8MB/s
+    type: vless
+    server: 20.218.137.249
+    port: 443
+    uuid: jina
+    servername: jina-20218137249-direct.yektanet.co
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: FR VLESS-126 | free-nodes
+    type: vless
+    server: 185.156.72.124
+    port: 52042
+    uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
+    servername: yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Z23_1wSIy1CNUEB7YEJwPZzCEsMTmzTNGe_h5bzEMHY
+      short-id: 8e8dcb9a67bf43f1
+  - name: 美国_18
+    type: vmess
+    server: 2001:bc8:32d7:302::16
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
-        Host: TABRIZ.NET
+        Host: AZERB.NET
+  - name: 美国_19
+    type: vmess
+    server: 2001:bc8:32d7:302::17
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: ss(广移)印度1
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)印度2
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇫🇷FR_2 | ⬇️ 1.1MB/s
+    type: ss
+    server: ss.sps1.sbs
+    port: 20
+    cipher: aes-256-gcm
+    password: mFdfoC1KdWUVLqBvCWgljg
+  - name: 🇺🇸US_3 | ⬇️ 5.2MB/s
+    type: vless
+    server: us.axinode.sbs
+    port: 443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
+  - name: 🇮🇳IN_1 | ⬇️ 1.2MB/s
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 美国_20
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: ss(广移)印度2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)印度1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇦🇲AM_1 | ⬇️ 1.3MB/s
+    type: vless
+    server: 185.234.57.207
+    port: 443
+    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+    servername: teamdocs.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+      short-id: b5e0cd9ca194c0a5
+  - name: 美国_21
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 🇫🇷FR_3 | ⬇️ 3.9MB/s
+    type: vless
+    server: fr.1323.world
+    port: 443
+    uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+    servername: b12a6eea4807ca4e.1323.world
+    tls: true
+    client-fingerprint: chrome
+  - name: 美国_22
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇱🇻LV_1 | ⬇️ 1.0MB/s
+    type: vless
+    server: lvcdn4.suio.me
+    port: 443
+    uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+    servername: lvcdn4.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: ss(广移)墨西哥2
+    type: ss
+    server: ldu.izenny.com
+    port: 20149
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾2
+    type: ss
+    server: ldu.izenny.com
+    port: 18148
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)墨西哥2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 20149
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)香港2
+    type: ss
+    server: ldu.izenny.com
+    port: 34061
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)墨西哥1
+    type: ss
+    server: ldu.izenny.com
+    port: 20149
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 18148
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾1
+    type: ss
+    server: ldu.izenny.com
+    port: 18148
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)墨西哥1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 20149
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)香港1
+    type: ss
+    server: ldu.izenny.com
+    port: 34061
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇫🇷FR_6 | ⬇️ 4.9MB/s
+    type: vless
+    server: fr.1323.world
+    port: 443
+    uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+    servername: fr.1323.world
+    tls: true
+    client-fingerprint: chrome
+  - name: 香港
+    type: ss
+    server: ldu.izenny.com
+    port: 34061
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇦🇲AM_1 | ⬇️ 1.2MB/s
+    type: vless
+    server: 185.234.57.207
+    port: 443
+    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+    servername: teamdocs.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+      short-id: b5e0cd9ca194c0a5
+  - name: 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+    type: vless
+    server: 185.234.57.207
+    port: 443
+    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+    servername: teamdocs.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+      short-id: b5e0cd9ca194c0a5
+  - name: 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+    type: vless
+    server: 185.234.57.207
+    port: 443
+    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+    servername: teamdocs.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+      short-id: b5e0cd9ca194c0a5
+  - name: 🇳🇱NL_2 | ⬇️ 5.7MB/s
+    type: vless
+    server: 172.66.128.70
+    port: 2052
+    uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
+  - name: ss(广移)台湾2-1
+    type: ss
+    server: ldu.izenny.com
+    port: 43076
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾2-1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 43076
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾2-2
+    type: ss
+    server: ldu.izenny.com
+    port: 43076
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 18148
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)台湾2-2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 43076
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: https://t.me/zyzzzoao ⚡️
+    type: vmess
+    server: turk1.net.net
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+    type: vless
+    server: 64.188.64.59
+    port: 443
+    uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
+    servername: yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
+      short-id: efd29b2d25
+  - name: 🇫🇷FR_8 | ⬇️ 2.4MB/s
+    type: vless
+    server: 95.182.97.115
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    servername: fr.cdn.stun.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
+      short-id: 3bdec72a5a0ffd84
+  - name: ss(广移)日本3
+    type: ss
+    server: ldu.izenny.com
+    port: 57927
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)日本1
+    type: ss
+    server: ldu.izenny.com
+    port: 10589
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)以色列2
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)以色列1
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)以色列2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)巴西2
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇧🇷BR_1 | ⬇️ 4.5MB/s
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)巴西2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移) 巴西1
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移) 巴西1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 55936
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1683,505 +1853,589 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2204,127 +2458,148 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK
-      - 🇹🇼TW_20 | ⬇️ 16.1MB/s
       - TW
+      - 🇹🇼TW_5 | ⬇️ 9.0MB/s
       - " 香港 46"
-      - HK_1
-      - https://t.me/zyzzzoao ⚡️
-      - HK_2
-      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
-      - 🇭🇰HK_6 | ⬇️ 2.6MB/s
-      - 🇹🇼TW_3 | ⬇️ 1.2MB/s
-      - 🇸🇬SG_1 | ⬇️ 11.7MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
-      - 🇫🇷FR_3 | ⬇️ 1.7MB/s
-      - 🇯🇵JP_4 | ⬇️ 1.3MB/s
-      - JP
-      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
-      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
-      - 🇺🇸US_1 | ⬇️ 5.8MB/s
-      - SG
-      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
-      - HK_3
-      - KR
-      - HK_4
-      - HK_5
-      - 美國
-      - 🇵🇱PL_3 | ⬇️ 5.3MB/s
-      - JP_1
-      - 🇺🇸US_6 | ⬇️ 7.3MB/s
-      - 🇵🇱PL_5 | ⬇️ 2.0MB/s
-      - SG_1
+      - HK
       - TW_1
-      - 🇭🇺HU_2 | ⬇️ 2.4MB/s
-      - 🇵🇱PL_2 | ⬇️ 3.4MB/s
+      - 🇹🇼TW_4 | ⬇️ 5.6MB/s
+      - 🇭🇰HK_1 | ⬇️ 4.3MB/s
+      - 🇹🇼TW_3 | ⬇️ 7.3MB/s
+      - HK_1
+      - 🇭🇰HK_2 | ⬇️ 2.0MB/s
+      - 🇦🇹AT_2 | ⬇️ 1.4MB/s
+      - JP
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s
+      - 🇩🇪DE_7 | ⬇️ 5.0MB/s
+      - ❓Other_1 | ⬇️ 1.6MB/s_1
+      - 🇫🇮FI_1 | ⬇️ 3.4MB/s
+      - HK_2
+      - 🇷🇺RU_4 | ⬇️ 6.3MB/s
       - 🇫🇮FI_1 | ⬇️ 5.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 1.0MB/s
-      - 🇭🇺HU_1 | ⬇️ 3.9MB/s
-      - 美国
+      - 🇬🇧GB_1 | ⬇️ 7.9MB/s
+      - TW_2
+      - KR
+      - SG
+      - HK_3
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s
+      - SG_1
+      - HK_4
+      - 🇦🇹AT_1 | ⬇️ 1.4MB/s_1
+      - 🇹🇷TR_1 | ⬇️ 5.9MB/s
+      - 美國
+      - ❓Other_1 | ⬇️ 6.2MB/s
+      - ❓Other_1 | ⬇️ 6.2MB/s_1
+      - JP_1
       - 🇦🇹AT_1 | ⬇️ 4.0MB/s
+      - 🇫🇷FR_1 | ⬇️ 3.9MB/s_1
+      - 美国
+      - 🇦🇹AT_1 | ⬇️ 1.6MB/s
+      - 🇫🇷FR_4 | ⬇️ 2.3MB/s
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_1
+      - HK_5
+      - 🇦🇹AT_1 | ⬇️ 4.0MB/s_2
       - 美国_1
       - 美国_2
-      - 🇮🇳IN_2 | ⬇️ 2.0MB/s
+      - HK_6
       - 美国_3
+      - 🇩🇪DE_6 | ⬇️ 2.8MB/s
+      - 🇷🇺RU_1 | ⬇️ 5.2MB/s
       - 美国_4
       - 美国_5
-      - 🇺🇸US_5 | ⬇️ 4.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
       - 美国_6
       - 美国_7
+      - ❓Other_1 | ⬇️ 6.2MB/s_2
       - 美国_8
-      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
-      - 🇺🇸US_4 | ⬇️ 2.1MB/s
-      - HK_6
-      - 🇺🇸US_4 | ⬇️ 1.8MB/s
+      - ❓Other_2 | ⬇️ 5.5MB/s
+      - JP_2
+      - FR
       - 美国_9
-      - 🇪🇸ES_1 | ⬇️ 3.7MB/s
-      - 🇭🇺HU_2 | ⬇️ 3.5MB/s
-      - 🇵🇱PL_2 | ⬇️ 1.9MB/s
       - 美国_10
+      - 🇩🇪DE_5 | ⬇️ 2.1MB/s
+      - 🇯🇵JP_3 | ⬇️ 1.4MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_1
+      - 🇩🇪DE_3 | ⬇️ 1.8MB/s
       - 美国_11
-      - 🇪🇸ES_1 | ⬇️ 3.6MB/s
-      - ❓Other_1 | ⬇️ 6.2MB/s
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_1
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_1
+      - 🇯🇵JP_2 | ⬇️ 10.8MB/s
+      - 🇫🇮FI_4 | ⬇️ 4.6MB/s
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s
+      - 🇩🇪DE_1 | ⬇️ 3.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 3.9MB/s_2
+      - 🇵🇱PL_1 | ⬇️ 4.1MB/s
+      - 阿联酋
+      - 🇫🇮FI_1 | ⬇️ 3.3MB/s_1
+      - 🇵🇱PL_3 | ⬇️ 1.6MB/s
       - 美国_12
-      - 🇵🇱PL_3 | ⬇️ 3.9MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
-      - 🇵🇱PL_3 | ⬇️ 2.7MB/s
-      - 🇩🇪DE_3 | ⬇️ 3.1MB/s
       - 美国_13
-      - 🇩🇪DE_12 | ⬇️ 3.4MB/s
-      - 🇺🇸US_3 | ⬇️ 5.2MB/s
-      - 🇺🇸US_6 | ⬇️ 2.8MB/s
-      - 🇵🇱PL_1 | ⬇️ 2.2MB/s
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s
+      - 🇫🇮FI_1 | ⬇️ 5.0MB/s_2
+      - 🇷🇺RU_2 | ⬇️ 7.4MB/s_1
+      - 🇫🇮FI_23 | ⬇️ 2.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.6MB/s
+      - 🇩🇪DE_2 | ⬇️ 3.9MB/s
+      - 🇺🇸US_2 | ⬇️ 4.0MB/s
       - 美国_14
       - 美国_15
-      - 🇺🇸US_3 | ⬇️ 1.2MB/s
-      - 🇯🇵JP_2 | ⬇️ 1.7MB/s
-      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
-      - 🇷🇺RU_3 | ⬇️ 6.9MB/s
-      - 🇱🇹LT_1 | ⬇️ 1.1MB/s
+      - 🇫🇮FI_2 | ⬇️ 3.7MB/s
       - 美国_16
-      - FR VLESS-126 | free-nodes
-      - 🇺🇸US_7 | ⬇️ 3.6MB/s
-      - 🇹🇼TW_1 | ⬇️ 3.8MB/s
-      - 🇨🇦CA_37 | ⬇️ 4.2MB/s
-      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
       - 美国_17
-      - 美国 - 紐約 - Massivegrid LTD - 8
-      - 🇨🇦CA_36 | ⬇️ 3.3MB/s
-      - 🇯🇵JP_3 | ⬇️ 1.8MB/s
-      - 🇦🇪AE_1 | ⬇️ 6.4MB/s
-      - https://t.me/zyzzzoao ⚡️_1
-      - 美国 - 紐約 - Massivegrid LTD - 9
-      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 3.7MB/s
-      - 🇩🇪DE_4 | ⬇️ 4.5MB/s
-      - 🇩🇪DE_9 | ⬇️ 5.4MB/s
-      - https://t.me/zyzzzoao ⚡️_2
-      - nnmk.bb5.indevs.in http httpupgrade CDN vmess
-      - bh.bb2.indevs.in http WS CDN vmess
-      - bh.bb2.indevs.in http httpupgrade CDN vmess
-      - mko.bb1.indevs.in http httpupgrade CDN vmess
-      - nju.bb4.indevs.in http WS direct vmess
+      - 🇩🇪DE_10 | ⬇️ 2.8MB/s
+      - FR VLESS-126 | free-nodes
       - 美国_18
-      - mko.bb1.indevs.in http WS CDN vmess
-      - nnmk.bb5.indevs.in http WS CDN vmess
-      - mio.tt9.ccwu.cc http httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http httpupgrade direct vmess
-      - lop.bb3.indevs.in http httpupgrade CDN vmess
-      - mio.tt9.ccwu.cc http WS CDN vmess
-      - bnh.tt8.ccwu.cc tls WS direct vless
-      - ❓Other_8 | ⬇️ 3.5MB/s
-      - bnh.tt8.ccwu.cc tls httpupgrade direct vless
-      - bn.457.pp.ua tls WS CDN vmess
-      - jk.857856.xyz tls WS CDN vmess
-      - bn.457.pp.ua tls httpupgrade CDN vless
       - 美国_19
+      - ss(广移)印度1
+      - ss(广移)印度2
+      - 🇫🇷FR_2 | ⬇️ 1.1MB/s
+      - 🇺🇸US_3 | ⬇️ 5.2MB/s
+      - 🇮🇳IN_1 | ⬇️ 1.2MB/s
       - 美国_20
-      - mkl.661.qzz.io tls WS CDN vless
-      - bnh.tt8.ccwu.cc tls WS direct vmess
-      - bn.457.pp.ua tls httpupgrade CDN vmess
-      - bnh.tt8.ccwu.cc http WS direct vmess
+      - ss(广移)印度2_1
+      - ss(广移)印度1_1
+      - 🇦🇲AM_1 | ⬇️ 1.3MB/s
       - 美国_21
+      - 🇫🇷FR_3 | ⬇️ 3.9MB/s
+      - 美国_22
+      - 🇱🇻LV_1 | ⬇️ 1.0MB/s
+      - ss(广移)墨西哥2
+      - ss(广移)台湾2
+      - ss(广移)墨西哥2_1
+      - ss(广移)香港2
+      - ss(广移)墨西哥1
+      - ss(广移)台湾2_1
+      - ss(广移)台湾1
+      - ss(广移)墨西哥1_1
+      - ss(广移)香港1
+      - 🇫🇷FR_6 | ⬇️ 4.9MB/s
+      - 香港
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_1
+      - 🇦🇲AM_1 | ⬇️ 1.2MB/s_2
+      - 🇳🇱NL_2 | ⬇️ 5.7MB/s
+      - ss(广移)台湾2-1
+      - ss(广移)台湾2-1_1
+      - ss(广移)台湾2-2
+      - ss(广移)台湾1_1
+      - ss(广移)台湾2-2_1
+      - https://t.me/zyzzzoao ⚡️
+      - 🇩🇪DE_1 | ⬇️ 4.1MB/s_2
+      - 🇫🇷FR_8 | ⬇️ 2.4MB/s
+      - ss(广移)日本3
+      - ss(广移)日本1
+      - ss(广移)以色列2
+      - ss(广移)以色列1
+      - ss(广移)以色列2_1
+      - ss(广移)巴西2
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s
+      - ss(广移)巴西2_1
+      - 🇧🇷BR_1 | ⬇️ 4.5MB/s_1
+      - ss(广移) 巴西1
+      - ss(广移) 巴西1_1
 rule-providers:
   LocalAreaNetwork:
     type: http
