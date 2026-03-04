@@ -46,6 +46,66 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 香港 ISP 5
+    type: vless
+    server: cdn.hk5.cocoduck.org
+    port: 30395
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 香港 ISP 6
+    type: vless
+    server: cdn.hk6.cocoduck.org
+    port: 30396
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 新加坡 4
+    type: vless
+    server: cdn.sg4.cocoduck.org
+    port: 35805
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 新加坡 1
+    type: vless
+    server: cdn.sg1.cocoduck.org
+    port: 15803
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 新加坡 2
+    type: vless
+    server: cdn.sg2.cocoduck.org
+    port: 27573
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
   - name: 🏳️ ShatakVPN 103019
     type: vless
     server: 46.235.189.157
@@ -59,28 +119,18 @@ proxies:
       path: //
       headers:
         Host: lk-cdn.deploy-assure.ru
-  - name: HK
-    type: ss
-    server: cf.zhetengsha.eu.org
+  - name: dejong
+    type: vless
+    server: 159.223.205.196
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: " KR"
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+    uuid: eca5271c-c716-4256-b6a7-bc662aca2976
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qKKK80HelRY6m3BxpQipcg2B09oMDA360saGZH2Us3w
+      short-id: 0092e5714c4b8401
   - name: 🇳🇱NL_4 | ⬇️ 3.7MB/s
     type: vless
     server: 143.20.236.51
@@ -93,90 +143,29 @@ proxies:
     reality-opts:
       public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
       short-id: c39cc7310a
-  - name: HK_1
-    type: ss
-    server: cf.zhetengsha.eu.org
+  - name: 🇩🇪DE_4 | ⬇️ 5.6MB/s
+    type: vless
+    server: test.spectrum.vu
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 美國
-    type: trojan
-    server: 172.66.44.230
-    port: 8443
-    password: 8r<[9'l6hAO#8ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    uuid: 4bc7d558-1943-44de-bd82-56920bc9383e
+    servername: test.spectrum.vu
     tls: true
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-      headers:
-        Host: Koma-YT.PAGeS.Dev
-  - name: JP-ss
-    type: ss
-    server: cdns.doon.eu.org
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo
+  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
+    type: vless
+    server: 143.20.236.51
     port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇨🇳广东2
-    type: ss
-    server: ldu.izenny.com
-    port: 34411
-    cipher: chacha20-ietf-poly1305
-    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  - name: SG-ss
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG_1
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
   - name: HK-ss
     type: ss
     server: cf.zhetengsha.eu.org
@@ -188,6 +177,42 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🏳️ ShatakVPN 103019_1
+    type: vless
+    server: 46.235.189.157
+    port: 443
+    uuid: 01638edd-ddd2-07d0-b437-48761495d07e
+    network: ws
+    servername: lk-cdn.deploy-assure.ru
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: //
+      headers:
+        Host: lk-cdn.deploy-assure.ru
+  - name: 阿联酋
+    type: vless
+    server: cdn.ae1.cocoduck.org
+    port: 45259
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: HK
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: HK-ss_1
     type: ss
     server: cf.zhetengsha.eu.org
@@ -199,53 +224,9 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " SG-ss"
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_1
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_2
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: HK-ss_2
     type: ss
-    server: cf.877774.xyz
+    server: cf.zhetengsha.eu.org
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -254,6 +235,32 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: 美国_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
   - name: HK-ss_3
     type: ss
     server: cf.zhetengsha.eu.org
@@ -265,9 +272,9 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_3
+  - name: SG-ss
     type: ss
-    server: cdns.doon.eu.org
+    server: cf.090227.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -287,20 +294,9 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_2
+  - name: " SG-ss"
     type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_5
-    type: ss
-    server: cf.zhetengsha.eu.org
+    server: cf.090227.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -309,17 +305,32 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_4
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国_2
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
+  - name: 美国_3
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 2001:bc8:32d7:302::10
   - name: SG-ss_1
     type: ss
     server: cf.090227.xyz
@@ -331,9 +342,23 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_3
+  - name: 美国_4
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK1.NET.NET
+  - name: HK_1
     type: ss
-    server: cf.008500.xyz
+    server: cf.zhetengsha.eu.org
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -342,6 +367,186 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_5
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+  - name: SG
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: SG_1
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 美国_8
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: 美国_9
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: 美国_10
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 美国_11
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 美国_12
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: JP-ss
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 印度 2
+    type: vless
+    server: cdn.in2.cocoduck.org
+    port: 36827
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 美国_13
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK1.NET.NET
+  - name: " SG-ss_1"
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: TW-ss
     type: ss
     server: sub.danfeng.eu.org
@@ -353,72 +558,83 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_5
-    type: ss
-    server: saas.sin.fan
+  - name: 美国_14
+    type: vmess
+    server: 2001:bc8:32d7:302::16
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s
+    type: vless
+    server: 143.20.236.51
     port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: TW
-    type: ss
-    server: sub.danfeng.eu.org
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🏳️ ShatakVPN 103019_2
+    type: vless
+    server: 46.235.189.157
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG-ss_2
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_3
-    type: ss
-    server: mfa.gov.ua
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_4
-    type: ss
-    server: mfa.gov.ua
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_6
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+    uuid: 01638edd-ddd2-07d0-b437-48761495d07e
+    network: ws
+    servername: lk-cdn.deploy-assure.ru
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: //
+      headers:
+        Host: lk-cdn.deploy-assure.ru
+  - name: 美国_15
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 美國
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: FR
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
   - name: " JP"
     type: ss
     server: saas.sin.fan
@@ -430,9 +646,218 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_6
+  - name: JP-ss_1
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_5
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: HK-ss_6
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国_16
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: ss(广移)印度2
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 美国_17
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+  - name: KR-ss
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: KR-ss_1
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_2
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国_18
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: JP
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: JP-ss_2
     type: ss
     server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_3
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: KR-ss_2
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_3
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP_1
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_4
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: KR-ss_3
+    type: ss
+    server: cf.130519.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -463,103 +888,20 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_7
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: FR
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: SG-ss_6
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_1
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: JP_1
+  - name: JP-ss_4
     type: ss
     server: cdns.doon.eu.org
     port: 443
     cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_8
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " SG-ss_1"
+  - name: HK-ss_7
     type: ss
-    server: cf.090227.xyz
+    server: cf.877774.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -579,142 +921,14 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_2
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_3
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s
-    type: vless
-    server: 143.20.236.51
+  - name: 🇨🇦 加拿大 01
+    type: hysteria2
+    server: ca-hy2.onetaplink.app
     port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: HK-ss_9
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: ss(广移)印度2
-    type: ss
-    server: ldu.izenny.com
-    port: 34411
-    cipher: chacha20-ietf-poly1305
-    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  - name: 美国_4
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
+    password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
+    sni: hy2-ca.onetaplink.app
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 美国_7
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_9
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 美国_10
+  - name: 美国_19
     type: vmess
     server: 2001:bc8:32d7:302::17
     port: 44579
@@ -728,7 +942,19 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 美国_11
+  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 美国_20
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -739,10 +965,10 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      path: /?ed=2048
       headers:
         Host: 2001:bc8:32d7:302::10
-  - name: 美国_12
+  - name: 美国_21
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -753,10 +979,92 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: JP-ss_7
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: TW
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_22
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: HK-ss_8
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_9
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: KR-ss_4
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_5
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_6
     type: ss
     server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_7
+    type: ss
+    server: saas.sin.fan
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -776,216 +1084,7 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_13
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: SG-ss_7
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_14
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 🇵🇱PL_4 | ⬇️ 4.1MB/s
-    type: vless
-    server: 144.31.130.49
-    port: 23335
-    uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-    servername: icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: 7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik
-      short-id: 67b1e94e4dd1ef90
-  - name: 美国_15
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: 美国_16
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: 美国_17
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 美国_18
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 🇫🇮 芬兰 | FI-025
-    type: vless
-    server: 165.154.235.194
-    port: 30001
-    uuid: be70763e-ab0a-4f8d-87aa-b8ae86495cca
-    servername: www.cloudflare.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  - name: KR-ss_1
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
-    type: vless
-    server: 144.31.130.49
-    port: 23335
-    uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-    servername: icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: 7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik
-      short-id: 67b1e94e4dd1ef90
-  - name: 美国_20
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_21
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_22
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+  - name: 🇳🇱NL_1 | ⬇️ 5.2MB/s
     type: vless
     server: 143.20.236.51
     port: 443
@@ -1008,9 +1107,95 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+  - name: HK_2
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: JP-ss_8
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK_3
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: KR-ss_5
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: TW-ss_3
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_11
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: TW-ss_4
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_12
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: 美国_24
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1022,26 +1207,22 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
   - name: 美国_25
     type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_26
-    type: vmess
-    server: 2001:bc8:32d7:302::11
+    server: 2001:bc8:32d7:302::14
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -1053,459 +1234,7 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: TABRIZ.NET
-  - name: 美国_27
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_28
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_29
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: 美国_30
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_31
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 美国_32
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_33
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_34
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: FR_1
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 🇺🇸US_1 | ⬇️ 4.4MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 未知 VLESS-81 | free-nodes
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇺🇸US_1 | ⬇️ 2.2MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s
-    type: anytls
-    server: us1.anliangjifei.top
-    port: 12053
-    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
-    sni: us1.anliangjifei.top
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-    type: anytls
-    server: us1.anliangjifei.top
-    port: 12053
-    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
-    sni: us1.anliangjifei.top
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇬🇧GB_1|1.2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_6 | ⬇️ 3.6MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: KR-ss_2
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_1 | ⬇️ 2.1MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 未知 VLESS-85 | free-nodes
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇺🇸US_1 | ⬇️ 4.9MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇬🇧GB_1|1.2MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-    type: anytls
-    server: us1.anliangjifei.top
-    port: 12053
-    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
-    sni: us1.anliangjifei.top
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_3 | ⬇️ 3.4MB/s
-    type: vless
-    server: 132.226.85.167
-    port: 443
-    uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
-    servername: www.microsoft.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3ik9ws7ATJ5dKDY2Fofv9y7_vpFYsTqgOJRxiQKwA3A
-      short-id: 7b233a973c94ca0a
-  - name: 未知 VLESS-81 | free-nodes_1
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 美国_35
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 美国_36
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇱🇮 列支敦士登 | LI-005
-    type: vless
-    server: ita01-vlr02.tcp-reset-club.net
-    port: 443
-    uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
-    servername: hls-svod.itunes.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-      short-id: "31"
-  - name: 美国_37
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_38
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_39
+  - name: 美国_26
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -1517,254 +1246,9 @@ proxies:
     network: ws
     ws-opts:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-    type: vless
-    server: 132.226.85.167
-    port: 443
-    uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
-    servername: www.microsoft.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3ik9ws7ATJ5dKDY2Fofv9y7_vpFYsTqgOJRxiQKwA3A
-      short-id: 7b233a973c94ca0a
-  - name: 美国_40
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 🇱🇮 列支敦士登 | LI-005_1
-    type: vless
-    server: ita01-vlr02.tcp-reset-club.net
-    port: 443
-    uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
-    servername: hls-svod.itunes.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-      short-id: "31"
-  - name: 未知 VLESS-85 | free-nodes_1
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: hy2-instance-20250911-1928
-    type: hysteria2
-    server: 158.178.247.207
-    port: 47645
-    password: 33e8d651-b550-4676-aa0d-b3255eab6ba5
-    sni: www.bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-    type: vless
-    server: 132.226.85.167
-    port: 443
-    uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
-    servername: www.microsoft.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3ik9ws7ATJ5dKDY2Fofv9y7_vpFYsTqgOJRxiQKwA3A
-      short-id: 7b233a973c94ca0a
-  - name: 🇺🇸US_1 | ⬇️ 4.7MB/s
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇦🇲 亚美尼亚 | AM-020
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇦🇲 亚美尼亚 | AM-020_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-    type: vless
-    server: 142.248.80.157
-    port: 443
-    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
-  - name: 🇺🇸US_1 | ⬇️ 1.2MB/s
-    type: vless
-    server: 165.154.235.194
-    port: 30001
-    uuid: be70763e-ab0a-4f8d-87aa-b8ae86495cca
-    servername: www.cloudflare.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  - name: US SS-23 | free-nodes
+  - name: JP-ss_9
     type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-23 | free-nodes_1
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: KR-ss_3
-    type: ss
-    server: cf.130519.xyz
+    server: saas.sin.fan
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -1773,33 +1257,31 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: KR-ss_4
+  - name: TW-ss_5
     type: ss
-    server: cf.130519.xyz
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_10
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_11
+    type: ss
+    server: saas.sin.fan
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -1819,25 +1301,7 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US SS-20 | free-nodes_1
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: 🇯🇵DMIT-JP-SS
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
-  - name: 🇺🇸US_3 | ⬇️ 5.5MB/s
-    type: ss
-    server: ldu.izenny.com
-    port: 46197
-    cipher: chacha20-ietf-poly1305
-    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  - name: 美国_41
+  - name: 美国_27
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -1848,143 +1312,122 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-    type: ss
-    server: ldu.izenny.com
-    port: 46197
-    cipher: chacha20-ietf-poly1305
-    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s
-    type: vless
-    server: 195.20.17.182
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: www.python.org
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
-      short-id: ecd1c97d
-  - name: 🇮🇱IL_1 | ⬇️ 3.3MB/s
+    udp: false
+  - name: 🇦🇲 亚美尼亚 | AM-020
     type: vless
-    server: 195.20.17.182
+    server: 142.248.80.157
     port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: www.python.org
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
-      short-id: ecd1c97d
-  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s
-    type: vless
-    server: 178.239.122.108
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
-      short-id: a56b26c2
-  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-    type: vless
-    server: 195.20.17.182
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: www.python.org
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
-      short-id: ecd1c97d
-  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-    type: vless
-    server: 178.239.122.108
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
-      short-id: a56b26c2
-  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-    type: vless
-    server: 195.20.17.182
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: www.python.org
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
-      short-id: ecd1c97d
-  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-    type: vless
-    server: 178.239.122.108
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
-      short-id: a56b26c2
-  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-    type: vless
-    server: 178.239.122.108
-    port: 443
-    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
-      short-id: a56b26c2
-  - name: 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-    type: vless
-    server: 165.154.235.194
-    port: 30001
-    uuid: be70763e-ab0a-4f8d-87aa-b8ae86495cca
-    servername: www.cloudflare.com
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    servername: apple.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  - name: 🇺🇸 US 239 | ⬇️ 12MB/s
+      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
+  - name: 美国_28
     type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇺🇸 US 159 | ⬇️ 2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
     network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
     ws-opts:
-      path: /love
+      path: /
       headers:
-        Host: tar.alabama-tigr.info
+        Host: AZERB.NET
+  - name: JP-ss_12
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_6
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_13
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国_29
+    type: vmess
+    server: 2001:bc8:32d7:302::17
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: SG-ss_7
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_13
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇳🇱NL_1 | ⬇️ 3.7MB/s
+    type: vless
+    server: 185.248.33.27
+    port: 443
+    uuid: 0a0d8e6f-8747-4ff6-afe0-e70aa97e7de8
+    servername: finance.yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1LHMePKT5PP9F9WQ1HhZUWZlrK2p9AW_sUwKNfO4ZC0
+      short-id: dd8ca121bb77dad9
   - name: 🇺🇸 US 158 | ⬇️ 2MB/s
     type: vless
     server: 198.62.62.248
@@ -1997,79 +1440,84 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 152 | ⬇️ 5MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 148 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 231 | ⬇️ 12MB/s
-    type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US 149 | ⬇️ 12MB/s
-    type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇨🇱 CL 139 | ⬇️ 1MB/s
-    type: ss
-    server: 38.54.20.59
-    port: 8881
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇱 CL 136 | ⬇️ 1MB/s
-    type: ss
-    server: 38.54.20.59
-    port: 8881
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇱 CL 138 | ⬇️ 1MB/s
-    type: ss
-    server: 38.54.20.59
-    port: 8881
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇬🇧 GB 168 | ⬇️ 4MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
   - name: 🇺🇸 US 162 | ⬇️ 3MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: hk-vless-reality
+    type: vless
+    server: 23.148.20.55
+    port: 443
+    uuid: e5130eee-cf44-405e-ce04-25817f961399
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: R0M4F0Di9oppNbz_LRIkF08whSeXbBHMNkAKVq5l-U8
+      short-id: ea80ef
+  - name: 🇺🇸 US 246 | ⬇️ 3MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国_30
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 🏳️ ShatakVPN 103019_3
+    type: vless
+    server: 46.235.189.157
+    port: 443
+    uuid: 01638edd-ddd2-07d0-b437-48761495d07e
+    network: ws
+    servername: lk-cdn.deploy-assure.ru
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: //
+      headers:
+        Host: lk-cdn.deploy-assure.ru
+  - name: 美国_31
+    type: vmess
+    server: 2001:bc8:32d7:302::16
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇺🇸 US 148 | ⬇️ 1MB/s
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2093,31 +1541,41 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇬🇧GB_1|1.2MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
   - name: 🇺🇸 US 164 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 248 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 161 | ⬇️ 2MB/s
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2141,7 +1599,21 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 246 | ⬇️ 3MB/s
+  - name: 美国_32
+    type: vmess
+    server: 2001:bc8:32d7:302::14
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇺🇸 US 161 | ⬇️ 2MB/s
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2153,7 +1625,21 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 156 | ⬇️ 2MB/s
+  - name: 美国_33
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_1
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2161,6 +1647,7 @@ proxies:
     network: ws
     servername: tar.alabama-tigr.info
     tls: true
+    client-fingerprint: chrome
     ws-opts:
       path: /love
       headers:
@@ -2177,7 +1664,20 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 155 | ⬇️ 4MB/s
+  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇬🇧GB_1|1.2MB/s_1
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2189,24 +1689,61 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 214 | ⬇️ 12MB/s
+  - name: 美国_34
     type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇺🇸 US 051 | ⬇️ 6MB/s
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇺🇸 美国 02
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国_35
     type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 美国_36
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
   - name: 🇺🇸 US 160 | ⬇️ 1MB/s
     type: vless
     server: 198.62.62.248
@@ -2219,419 +1756,1456 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 210 | ⬇️ 12MB/s
+  - name: 🇺🇸 US 152 | ⬇️ 5MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国_37
     type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇺🇸 US 208 | ⬇️ 12MB/s
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
+  - name: 🇺🇸 US 156 | ⬇️ 2MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国_38
     type: vmess
-    server: c86s3.portablesubmarines.com
-    port: 31350
-    uuid: 5f7e4a08-757a-48fa-8ed8-38599c684851
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
+  - name: 🇺🇸 US 248 | ⬇️ 1MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: FR_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇬🇧GB_1|1.2MB/s_2
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 加拿大 ISP
+    type: vless
+    server: cdn.ca1.cocoduck.org
+    port: 42786
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 西班牙
+    type: vless
+    server: cdn.es1.cocoduck.org
+    port: 46974
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇯🇵 日本 09
+    type: ss
+    server: 167.17.179.197
+    port: 60129
+    cipher: aes-256-gcm
+    password: 0690659746980c46
+  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国_39
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 荷兰
+    type: vless
+    server: cdn.nl1.cocoduck.org
+    port: 21958
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇺🇸 US 159 | ⬇️ 2MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 美国_40
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: AZERB.NET
+  - name: 🇹🇷TR_1 | ⬇️ 2.9MB/s
+    type: vless
+    server: tr.connect-opengate.cv
+    port: 443
+    uuid: 05f0c31f-d127-4a4e-a43c-b040ba8e42d0
+    servername: runstream.xyz
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: t2f5k2Kk4pHbHYbuOA4AMR4ThAFZzZtDnLPaorGIj2I
+      short-id: 611025b7fc8a5751
+  - name: 乌克兰
+    type: vless
+    server: cdn.ua1.cocoduck.org
+    port: 41732
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 美国_41
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 瑞典
+    type: vless
+    server: cdn.se1.cocoduck.org
+    port: 13254
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 芬兰
+    type: vless
+    server: cdn.be1.cocoduck.org
+    port: 36829
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇬🇧GB_1|1.2MB/s_3
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_2 | ⬇️ 5.8MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 土耳其
+    type: vless
+    server: cdn.tr2.cocoduck.org
+    port: 22797
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 瑞士
+    type: vless
+    server: cdn.ch1.cocoduck.org
+    port: 13255
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 英国
+    type: vless
+    server: cdn.uk1.cocoduck.org
+    port: 17891
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇺🇸US_1 | ⬇️ 3.2MB/s
+    type: vless
+    server: 142.248.80.157
+    port: 443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
+  - name: 未知 VLESS-85 | free-nodes
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+    servername: www.techradar.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 174c6cf22e22
+  - name: 未知 VLESS-81 | free-nodes
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+    servername: www.techradar.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 174c6cf22e22
+  - name: 🇳🇱NL_4 | ⬇️ 2.4MB/s
+    type: vless
+    server: 78.159.131.16
+    port: 443
+    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
+    servername: alb.denditop.site
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: BxD77zyPkOaShiNfOkRbbJvpmSzFHIKx4xhhLR4PSQU
+      short-id: 9c2378562188c3cb
+  - name: 以色列
+    type: vless
+    server: cdn.il1.cocoduck.org
+    port: 17853
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 未知 VLESS-81 | free-nodes_1
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+    servername: www.techradar.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 174c6cf22e22
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 葡萄牙
+    type: vless
+    server: cdn.pt1.cocoduck.org
+    port: 56212
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 希腊
+    type: vless
+    server: cdn.gr1.cocoduck.org
+    port: 13062
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇺🇸US_94 | ⬇️ 2.0MB/s
+    type: vless
+    server: 144.31.234.98
+    port: 443
+    uuid: fd325093-cdb5-4a73-980e-af2ec0444310
+    servername: retn.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2s4DLPlhc3evv3LN-qV-nXdjQtJ7jQ35i--PE8JeeG4
+  - name: 🇺🇸 US 155 | ⬇️ 4MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_15 | ⬇️ 6.5MB/s
+    type: hysteria2
+    server: 107.175.220.71
+    port: 8443
+    password: nfeIIOqUAjDo0mUL
+    sni: bing.com
+    skip-cert-verify: true
+  - name: US SS-20 | free-nodes
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 未知 VLESS-85 | free-nodes_1
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+    servername: www.techradar.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 174c6cf22e22
+  - name: US SS-23 | free-nodes
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: US SS-20 | free-nodes_1
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 冰岛
+    type: vless
+    server: cdn.is1.cocoduck.org
+    port: 45261
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇯🇵 日本 32
+    type: ss
+    server: 185.141.219.203
+    port: 8388
+    cipher: aes-256-gcm
+    password: iEydd8LA8OG3
+  - name: 奥地利
+    type: vless
+    server: cdn.at1.cocoduck.org
+    port: 27741
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇯🇵 日本 09_1
+    type: ss
+    server: 167.17.179.197
+    port: 60129
+    cipher: aes-256-gcm
+    password: 0690659746980c46
+  - name: 德国
+    type: vless
+    server: cdn.de1.cocoduck.org
+    port: 17890
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇬🇧GB_5 | ⬇️ 1.8MB/s
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇬🇧 GB 168 | ⬇️ 4MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇨🇳广东2
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇬🇧GB_1 | ⬇️ 4.6MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: " KR"
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 新加坡 3
+    type: vless
+    server: cdn.sg3.cocoduck.org
+    port: 19609
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 印度 1
+    type: vless
+    server: cdn.in1.cocoduck.org
+    port: 36828
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇨🇳广东2_1
+    type: ss
+    server: ldu.izenny.com
+    port: 34411
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇺🇸US_3 | ⬇️ 5.5MB/s
+    type: ss
+    server: ldu.izenny.com
+    port: 46197
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+    type: ss
+    server: ldu.izenny.com
+    port: 46197
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+    type: ss
+    server: ldu.izenny.com
+    port: 46197
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: KR-ss_6
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 巴西
+    type: vless
+    server: cdn.br1.cocoduck.org
+    port: 58021
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: 🇮🇱 以色列 01
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: ss(广移)以色列1
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: 俄罗斯
+    type: vless
+    server: cdn.ru1.cocoduck.org
+    port: 45260
+    uuid: 6a62060e-3f1f-4254-8faa-2c2f4f0fa28b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+      short-id: 693b25e06841ac7f
+  - name: ss(广移)以色列1_1
+    type: ss
+    server: ldu.izenny.com
+    port: 18140
+    cipher: chacha20-ietf-poly1305
+    password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  - name: KR-ss_7
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s
+    type: vless
+    server: 178.239.122.108
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
+      short-id: a56b26c2
+  - name: 🇸🇬 新加坡 02
+    type: vless
+    server: 178.239.122.108
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
+      short-id: a56b26c2
+  - name: 🇮🇱IL_1 | ⬇️ 3.3MB/s
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+    type: vless
+    server: 178.239.122.108
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
+      short-id: a56b26c2
+  - name: 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2HWC3TKZmYDORsrGqTTOITNFBp6ANhwgERK6lPcVbic
+      short-id: ecd1c97d
+  - name: 🇯🇵 日本 33
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: 🇯🇵DMIT-JP-SS
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: 🇯🇵DMIT-JP-SS_1
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: 🇯🇵DMIT-JP-SS_2
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: US SS-23 | free-nodes_1
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 🇸🇬 新加坡 02_1
+    type: vless
+    server: 178.239.122.108
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
+      short-id: a56b26c2
+  - name: 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
+    type: vless
+    server: 178.239.122.108
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: juH5xrivuMuDd3Qp_P-CTHfvnQIVetUgDe7XwpJvLkE
+      short-id: a56b26c2
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -2641,793 +3215,965 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -3450,199 +4196,242 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 ISP 5
+      - 香港 ISP 6
+      - 新加坡 4
+      - 新加坡 1
+      - 新加坡 2
       - 🏳️ ShatakVPN 103019
-      - HK
-      - " KR"
+      - dejong
       - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - HK_1
-      - JP
-      - 美國
-      - JP-ss
-      - SG
-      - 🇨🇳广东2
-      - SG-ss
-      - SG_1
-      - HK-ss
-      - HK-ss_1
-      - KR-ss
-      - " SG-ss"
-      - JP-ss_1
-      - JP-ss_2
-      - HK-ss_2
-      - HK-ss_3
-      - JP-ss_3
-      - HK-ss_4
-      - HK_2
-      - HK-ss_5
-      - JP-ss_4
-      - SG-ss_1
-      - HK_3
-      - TW-ss
-      - JP-ss_5
-      - TW
-      - SG-ss_2
-      - SG-ss_3
-      - SG-ss_4
-      - HK-ss_6
-      - " JP"
-      - JP-ss_6
-      - SG-ss_5
-      - TW-ss_1
-      - HK-ss_7
+      - 🇩🇪DE_4 | ⬇️ 5.6MB/s
       - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - HK-ss
+      - 🏳️ ShatakVPN 103019_1
+      - 阿联酋
+      - HK
+      - HK-ss_1
+      - HK-ss_2
       - 美国
-      - FR
-      - SG-ss_6
       - 美国_1
-      - JP_1
-      - HK-ss_8
-      - " SG-ss_1"
-      - TW-ss_2
+      - HK-ss_3
+      - SG-ss
+      - HK-ss_4
+      - " SG-ss"
       - 美国_2
       - 美国_3
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - HK-ss_9
-      - ss(广移)印度2
+      - SG-ss_1
       - 美国_4
+      - HK_1
       - 美国_5
+      - SG
       - 美国_6
+      - SG_1
       - 美国_7
       - 美国_8
       - 美国_9
       - 美国_10
       - 美国_11
       - 美国_12
-      - JP-ss_7
-      - HK-ss_10
+      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
+      - JP-ss
+      - 印度 2
       - 美国_13
-      - SG-ss_7
+      - " SG-ss_1"
+      - TW-ss
       - 美国_14
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
+      - 🏳️ ShatakVPN 103019_2
       - 美国_15
+      - 美國
+      - FR
+      - " JP"
+      - JP-ss_1
+      - HK-ss_5
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - HK-ss_6
       - 美国_16
+      - ss(广移)印度2
       - 美国_17
-      - 美国_18
-      - 美国_19
-      - 🇫🇮 芬兰 | FI-025
+      - KR-ss
       - KR-ss_1
-      - 🇵🇱PL_4 | ⬇️ 4.1MB/s_1
+      - SG-ss_2
+      - 美国_18
+      - JP
+      - JP-ss_2
+      - SG-ss_3
+      - KR-ss_2
+      - JP-ss_3
+      - JP_1
+      - SG-ss_4
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - KR-ss_3
+      - SG-ss_5
+      - TW-ss_1
+      - JP-ss_4
+      - HK-ss_7
+      - TW-ss_2
+      - 🇨🇦 加拿大 01
+      - 美国_19
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
       - 美国_20
       - 美国_21
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
+      - TW
       - 美国_22
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
+      - HK-ss_8
+      - HK-ss_9
+      - KR-ss_4
+      - JP-ss_5
+      - JP-ss_6
+      - JP-ss_7
+      - HK-ss_10
+      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
       - 美国_23
+      - HK_2
+      - JP-ss_8
+      - HK_3
+      - KR-ss_5
+      - TW-ss_3
+      - HK-ss_11
+      - TW-ss_4
+      - HK-ss_12
       - 美国_24
+      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
       - 美国_25
       - 美国_26
-      - 美国_27
-      - 美国_28
-      - 美国_29
-      - 美国_30
-      - 美国_31
-      - 美国_32
-      - 美国_33
-      - 美国_34
-      - FR_1
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s
-      - KR-ss_2
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.4MB/s_1
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_1
-      - 美国_35
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_2
-      - 美国_36
-      - 🇱🇮 列支敦士登 | LI-005
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_1
-      - 美国_40
-      - 🇱🇮 列支敦士登 | LI-005_1
-      - 未知 VLESS-85 | free-nodes_1
-      - hy2-instance-20250911-1928
-      - 🇺🇸US_1 | ⬇️ 2.2MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_3
-      - 🇺🇸US_3 | ⬇️ 3.4MB/s_2
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s
-      - 🇺🇸US_1 | ⬇️ 2.1MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_1
-      - 🇺🇸US_1 | ⬇️ 4.9MB/s_2
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_4
-      - 🇦🇲 亚美尼亚 | AM-020
-      - 🇦🇲 亚美尼亚 | AM-020_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_5
-      - 🇺🇸US_6 | ⬇️ 3.6MB/s_1
-      - 🇺🇸US_1 | ⬇️ 3.2MB/s_6
-      - 🇺🇸US_1 | ⬇️ 4.7MB/s_1
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s
-      - US SS-23 | free-nodes
-      - US SS-23 | free-nodes_1
-      - US SS-20 | free-nodes
-      - KR-ss_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - KR-ss_4
+      - JP-ss_9
+      - TW-ss_5
+      - JP-ss_10
+      - JP-ss_11
       - KR
-      - US SS-20 | free-nodes_1
-      - 🇯🇵DMIT-JP-SS
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s
-      - 美国_41
-      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
-      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
-      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
-      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_3
-      - 🇺🇸US_1 | ⬇️ 1.2MB/s_1
-      - 🇺🇸 US 239 | ⬇️ 12MB/s
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 美国_27
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚 | AM-020
+      - 美国_28
+      - JP-ss_12
+      - SG-ss_6
+      - JP-ss_13
+      - 美国_29
+      - SG-ss_7
+      - HK-ss_13
+      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
       - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇺🇸 US 231 | ⬇️ 12MB/s
-      - 🇺🇸 US 149 | ⬇️ 12MB/s
-      - 🇨🇱 CL 139 | ⬇️ 1MB/s
-      - 🇨🇱 CL 136 | ⬇️ 1MB/s
-      - 🇨🇱 CL 138 | ⬇️ 1MB/s
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
       - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - hk-vless-reality
       - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_30
+      - 🏳️ ShatakVPN 103019_3
+      - 美国_31
+      - 🇺🇸 US 148 | ⬇️ 1MB/s
+      - 🇺🇸 US 247 | ⬇️ 3MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇺🇸 US 164 | ⬇️ 1MB/s
+      - 🇺🇸 US 151 | ⬇️ 3MB/s
+      - 美国_32
+      - 🇺🇸 US 161 | ⬇️ 2MB/s
+      - 美国_33
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
       - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🇺🇸 US 214 | ⬇️ 12MB/s
-      - 🇺🇸 US 051 | ⬇️ 6MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
+      - 🇬🇧GB_1|1.2MB/s_1
+      - 美国_34
+      - 🇺🇸 美国 02
+      - 美国_35
+      - 美国_36
       - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 🇺🇸 US 210 | ⬇️ 12MB/s
-      - 🇺🇸 US 208 | ⬇️ 12MB/s
+      - 🇺🇸 US 152 | ⬇️ 5MB/s
+      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
+      - 美国_37
+      - 🇺🇸 US 156 | ⬇️ 2MB/s
+      - 美国_38
+      - 🇺🇸 US 248 | ⬇️ 1MB/s
+      - FR_1
+      - 🇬🇧GB_1|1.2MB/s_2
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_2
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s
+      - 加拿大 ISP
+      - 西班牙
+      - 🇯🇵 日本 09
+      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
+      - 美国_39
+      - 荷兰
+      - 🇺🇸 US 159 | ⬇️ 2MB/s
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_3
+      - 美国_40
+      - 🇹🇷TR_1 | ⬇️ 2.9MB/s
+      - 乌克兰
+      - 美国_41
+      - 瑞典
+      - 芬兰
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_4
+      - 🇬🇧GB_1|1.2MB/s_3
+      - 🇺🇸US_2 | ⬇️ 5.8MB/s
+      - 土耳其
+      - 瑞士
+      - 英国
+      - 🇺🇸US_1 | ⬇️ 3.2MB/s
+      - 未知 VLESS-85 | free-nodes
+      - 未知 VLESS-81 | free-nodes
+      - 🇳🇱NL_4 | ⬇️ 2.4MB/s
+      - 以色列
+      - 未知 VLESS-81 | free-nodes_1
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s_5
+      - 葡萄牙
+      - 希腊
+      - 🇺🇸US_94 | ⬇️ 2.0MB/s
+      - 🇺🇸 US 155 | ⬇️ 4MB/s
+      - 🇺🇸US_15 | ⬇️ 6.5MB/s
+      - US SS-20 | free-nodes
+      - 未知 VLESS-85 | free-nodes_1
+      - US SS-23 | free-nodes
+      - US SS-20 | free-nodes_1
+      - 冰岛
+      - 🇯🇵 日本 32
+      - 奥地利
+      - 🇯🇵 日本 09_1
+      - 德国
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
+      - 🇬🇧 GB 168 | ⬇️ 4MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
+      - 🇨🇳广东2
+      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
+      - " KR"
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
+      - 新加坡 3
+      - 印度 1
+      - 🇨🇳广东2_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_1
+      - 🇺🇸US_3 | ⬇️ 5.5MB/s_2
+      - KR-ss_6
+      - 巴西
+      - 🇮🇱 以色列 01
+      - ss(广移)以色列1
+      - 俄罗斯
+      - ss(广移)以色列1_1
+      - KR-ss_7
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_2
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_3
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s
+      - 🇸🇬 新加坡 02
+      - 🇮🇱IL_1 | ⬇️ 3.3MB/s
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_4
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_1
+      - 🇮🇱IL_1 | ⬇️ 4.8MB/s_5
+      - 🇯🇵 日本 33
+      - 🇯🇵DMIT-JP-SS
+      - 🇯🇵DMIT-JP-SS_1
+      - 🇯🇵DMIT-JP-SS_2
+      - US SS-23 | free-nodes_1
+      - 🇸🇬 新加坡 02_1
+      - 🇸🇬SG_13 | ⬇️ 1.6MB/s_2
 rule-providers:
   LocalAreaNetwork:
     type: http
