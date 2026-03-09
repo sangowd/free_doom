@@ -46,145 +46,31 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇹🇼TW_5 | ⬇️ 2.1MB/s
-    type: vless
-    server: tw2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: cJc4dNsluJs9LimkkO6uVVafilOvr6H8Jx2uM9JnhEE
-      short-id: "129271"
-  - name: 🇹🇼TW_6 | ⬇️ 3.8MB/s
-    type: vless
-    server: tw1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: KJgODVMTQcncG_l1ZCDhzn8gEgMU2YRl2Yw2je6moWY
-      short-id: c0d856ec
-  - name: 🇭🇰HK_1 | ⬇️ 1.2MB/s
-    type: vless
-    server: hk1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.microsoft.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: JEH14p4YvGvmDdBct-yekywfh8xcbbHjTBoBteh_qSs
-      short-id: 7538ac
-  - name: 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-    type: vless
-    server: hk1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.microsoft.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: JEH14p4YvGvmDdBct-yekywfh8xcbbHjTBoBteh_qSs
-      short-id: 7538ac
-  - name: 🇳🇱NL_12 | ⬇️ 3.4MB/s
+  - name: 🇯🇵JP_1 | ⬇️ 9.4MB/s
     type: vmess
-    server: 141.11.21.219
-    port: 50521
-    uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
+    server: highspeedtesting01.publicvm.com
+    port: 443
+    uuid: a301c77c-e549-494e-a1e2-b386412f4d11
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: false
-    servername: a.sezar.top
-  - name: 🇳🇱NL_13 | ⬇️ 4.9MB/s
-    type: vless
-    server: 141.11.21.219
-    port: 53458
-    uuid: de73ea62-68e4-45e2-8cc3-87c6d4b23aa0
-    servername: a.sezar.top
-    tls: true
-    client-fingerprint: chrome
-  - name: 🇷🇺RU_2 | ⬇️ 11.6MB/s
-    type: vless
-    server: 91.243.82.95
-    port: 443
-    uuid: f9c72c6d-8d6e-4032-9f29-9c7c0bb9c24b
-    servername: premium-ru-khv.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-    client-fingerprint: chrome
-  - name: 🇺🇸US_35 | ⬇️ 4.9MB/s
-    type: vless
-    server: us1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM
-      short-id: 014c5bef3f
-  - name: 🇳🇱NL_1 | ⬇️ 2.5MB/s
-    type: vless
-    server: nl1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.philips.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw
-      short-id: 92dca6
-  - name: HK
+    servername: highspeedtesting01.publicvm.com
+    network: ws
+    ws-opts:
+      path: /gredfbgr
+      headers:
+        Host: highspeedtesting01.publicvm.com
+  - name: 🇺🇸US_3 | ⬇️ 5.4MB/s
+    type: hysteria2
+    server: us.xn--ehqa22b.site
+    port: 21777
+    password: c942d3cd-b89a-4809-bc40-630dd32330bb
+    sni: us.xn--ehqa22b.site
+    skip-cert-verify: false
+  - name: " HK-ss"
     type: ss
     server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇺🇸US_2 | ⬇️ 1.8MB/s
-    type: vless
-    server: us1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM
-      short-id: 014c5bef3f
-  - name: JP-ss
-    type: ss
-    server: saas.sin.fan
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -193,71 +79,75 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇫🇷FR_2 | ⬇️ 8.7MB/s
-    type: hysteria2
-    server: 62.210.124.146
-    port: 22000
-    password: dongtaiwang.com
-    sni: www.microsoft.com
-    skip-cert-verify: true
+  - name: " HK-ss_1"
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: SG-ss
     type: ss
     server: mfa.gov.ua
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: HK-ss
     type: ss
     server: cf.008500.xyz
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_1
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK_1
     type: ss
-    server: cf.008500.xyz
+    server: cf.zhetengsha.eu.org
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_2
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_1
     type: ss
     server: cf.090227.xyz
     port: 443
     cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss
     type: ss
-    server: cdns.doon.eu.org
+    server: saas.sin.fan
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -266,20 +156,9 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_3
+  - name: SG-ss_2
     type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_4
-    type: ss
-    server: cf.zhetengsha.eu.org
+    server: store.ubi.com
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -288,20 +167,20 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_3
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: TW-ss
     type: ss
     server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " JP"
-    type: ss
-    server: saas.sin.fan
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -315,27 +194,37 @@ proxies:
     server: cdns.doon.eu.org
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇬🇧GB_3 | ⬇️ 1.5MB/s
-    type: vless
-    server: uk2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-      short-id: "20"
-  - name: SG-ss_1
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss_1
     type: ss
-    server: store.ubi.com
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " JP-ss"
+    type: ss
+    server: saas.sin.fan
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -344,6 +233,69 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: " 美國"
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: SG-ss_4
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG_1
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇳🇱NL_14 | ⬇️ 3.7MB/s
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇭🇰 香港 02
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
   - name: KR-ss
     type: ss
     server: cf.130519.xyz
@@ -355,18 +307,30 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: TW
+  - name: " HK-ss_2"
     type: ss
-    server: sub.danfeng.eu.org
+    server: cf.877774.xyz
     port: 443
     cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_2
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇩🇪DE_8 | ⬇️ 3.9MB/s
+    type: vless
+    server: 146.185.241.48
+    port: 52006
+    uuid: b3da836c-d6d8-03e8-ba4a-0a7a54491924
+    servername: max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+      short-id: d8c6b58bcbb0c323
+  - name: " JP-ss_1"
     type: ss
     server: cdns.doon.eu.org
     port: 443
@@ -377,40 +341,7 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_3
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_5
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_4
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s
+  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
     type: vless
     server: 143.20.236.51
     port: 443
@@ -429,62 +360,6 @@ proxies:
     password: alvin9999.com
     sni: apple.com
     skip-cert-verify: true
-  - name: HK-ss_6
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " SG-ss"
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " TW"
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇬🇧GB_2 | ⬇️ 1.2MB/s
-    type: vless
-    server: uk2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-      short-id: "20"
-  - name: JP_1
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: TW-ss_1
     type: ss
     server: sub.danfeng.eu.org
@@ -496,729 +371,9 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " HK-ss"
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_1
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: TW-ss_2
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_14 | ⬇️ 3.7MB/s
-    type: vless
-    server: 141.11.21.219
-    port: 17191
-    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
-    servername: a.sezar.top
-    tls: true
-    client-fingerprint: chrome
-  - name: SG-ss_2
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_2
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_3
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_3
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_5 | ⬇️ 1.0MB/s
-    type: vless
-    server: us1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM
-      short-id: 014c5bef3f
-  - name: HK-ss_7
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_4
-    type: ss
-    server: mfa.gov.ua
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_4
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_8
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_5
-    type: ss
-    server: mfa.gov.ua
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG_1
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_5
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美國
-    type: trojan
-    server: 172.66.44.230
-    port: 8443
-    password: 8r<[9'l6hAO#8ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-      headers:
-        Host: Koma-YT.PAGeS.Dev
-  - name: JP-ss_6
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_6
-    type: ss
-    server: mfa.gov.ua
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_7
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: JP-ss_8
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " 美國"
-    type: trojan
-    server: 172.66.44.230
-    port: 8443
-    password: 8r<[9'l6hAO#8ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-      headers:
-        Host: Koma-YT.PAGeS.Dev
-  - name: HK-ss_9
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🏳️ ShatakVPN 768101
-    type: vless
-    server: 51.250.103.29
-    port: 443
-    uuid: 5aa188ea-db1b-4121-82f8-4eb1452cc052
-    servername: ads.x5.ru
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: LCxSn-zcFxBKKztCytR-Wzjt3VwezZs2jN6FtZPQ3n0
-  - name: " JP-ss"
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_9
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: KR-ss_5
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: TW-ss_3
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_10
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_1
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG_2
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: " KR"
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: KR-ss_6
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_10
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_11
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_12
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_7
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: " HK-ss_1"
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_8
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_7
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " JP-ss_1"
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_13
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: TW-ss_4
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK_2
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: " KR_1"
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP_2
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_11
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK-ss_12
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_8
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: JP-ss_14
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_3 | ⬇️ 5.4MB/s
-    type: vless
-    server: us2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: OIVDQIpAT0W0VQ5E8qHlBZjXtcPOxrbWpx3CxN5L-iQ
-      short-id: 2714177825354e
-  - name: HK-ss_13
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_15
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_16
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_9
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_4 | ⬇️ 3.7MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: KR-ss_9
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_3
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG-ss_10
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_38 | ⬇️ 4.8MB/s
-    type: vless
-    server: us2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: OIVDQIpAT0W0VQ5E8qHlBZjXtcPOxrbWpx3CxN5L-iQ
-      short-id: 2714177825354e
-  - name: JP_3
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss_17
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: 美国
     type: vmess
-    server: 2001:bc8:32d7:302::16
+    server: 2001:bc8:32d7:302::10
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -1229,7 +384,7 @@ proxies:
     ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
-        Host: AZERB.NET
+        Host: TURK1.NET.NET
   - name: 美国_1
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1241,63 +396,7 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: ?ed=2048
-  - name: JP-ss_18
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: KR-ss_10
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_2 | ⬇️ 2.6MB/s
-    type: vless
-    server: nl2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.philips.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
-      short-id: 69cc4c0d5e
-  - name: JP-ss_19
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+      path: /?ed=2048
   - name: 美国_2
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1309,44 +408,12 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048
-  - name: 🇺🇸US_42 | ⬇️ 4.1MB/s
-    type: vless
-    server: us3.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: W69IUo4AnRh5R8kBqp5q88Ttaf8rB5ZeqbvQpS5krTY
-      short-id: 9f3d2bcc02a2
-  - name: SG-ss_11
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_4
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+      path: /
+      headers:
+        Host: AZERB.NET
   - name: 美国_3
     type: vmess
-    server: 2001:bc8:32d7:302::11
+    server: 2001:bc8:32d7:302::10
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -1355,12 +422,22 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: TW-ss_5
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇩🇪DE_12 | ⬇️ 1.0MB/s
+    type: vless
+    server: 84.201.174.221
+    port: 443
+    uuid: 42191252-2937-404a-a982-04519c71e26a
+    servername: api-maps.yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: a76ea384b29a4f79
+  - name: KR-ss_1
     type: ss
-    server: sub.danfeng.eu.org
+    server: cf.130519.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -1380,7 +457,106 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+    client-fingerprint: chrome
+  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇳🇱NL_4 | ⬇️ 2.2MB/s
+    type: vless
+    server: nll.scroogethebest.com
+    port: 443
+    uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+    servername: nll.scroogethebest.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
+  - name: 美国_5
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 美国_8
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
+  - name: 🇩🇪DE_10 | ⬇️ 1.8MB/s
+    type: vless
+    server: 146.185.240.171
+    port: 52006
+    uuid: b3da836c-d6d8-03e8-ba4a-0a7a54491924
+    servername: max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+      short-id: d8c6b58bcbb0c323
   - name: FR
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1395,847 +571,16 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 🇳🇱NL_5 | ⬇️ 5.1MB/s
-    type: vless
-    server: nl1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.philips.com
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw
-      short-id: 92dca6
-  - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 美国_7
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: HK_5
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 美国_9
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 🇬🇧GB_2 | ⬇️ 1.8MB/s
-    type: vless
-    server: uk1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
-      short-id: d923
-  - name: 🇺🇸US_337 | ⬇️ 1.6MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 🏳️ ShatakVPN 218587
-    type: vless
-    server: 5.188.88.164
-    port: 443
-    uuid: 0509acee-63e3-4364-95cc-21c601f059be
-    servername: booking.com
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-  - name: 美国_10
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 美国_11
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: 美国_12
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_13
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: " HK-ss_2"
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_14
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_15
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_16
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_17
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_18
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_20
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_21
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 美国_22
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 美国_23
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_24
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 美国_25
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_26
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 🇳🇱NL_1 | ⬇️ 3.1MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_27
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: 🇳🇱NL_1 | ⬇️ 3.7MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_28
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: HK-ss_14
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇵🇱PL_1 | ⬇️ 3.8MB/s
-    type: ss
-    server: 144.31.131.32
-    port: 9443
-    cipher: chacha20-ietf-poly1305
-    password: yoNzQ7Q6qbC1Mx5QpGvdPsHpRsqkvQxk
-  - name: 美国_29
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: FR_1
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 🇳🇱NL_2 | ⬇️ 4.7MB/s
-    type: vless
-    server: nl2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.philips.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
-      short-id: 69cc4c0d5e
-  - name: 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-    type: vless
-    server: uk1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
-      short-id: d923
-  - name: 美国_30
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: KR-ss_11
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_31
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: " SG-ss_1"
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_32
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_33
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_34
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_35
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: 美国_36
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_37
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_38
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: SG-ss_12
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 美国_39
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_40
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: 美国_41
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 美国_42
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇬🇧GB_1 | ⬇️ 4.5MB/s
-    type: vless
-    server: uk1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
-      short-id: d923
-  - name: 🇳🇱NL_10 | ⬇️ 3.1MB/s
-    type: vless
-    server: 78.159.131.16
-    port: 443
-    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-    servername: alb.denditop.site
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-    reality-opts:
-      public-key: BxD77zyPkOaShiNfOkRbbJvpmSzFHIKx4xhhLR4PSQU
-      short-id: 9c2378562188c3cb
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇳🇱NL_1 | ⬇️ 5.2MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇬🇧GB_1 | ⬇️ 2.4MB/s
-    type: vless
-    server: uk2.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-      short-id: "20"
-  - name: HK-ss_15
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_43
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: HK-ss_16
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_44
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 🇺🇸US_2 | ⬇️ 5.8MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 155 | ⬇️ 4MB/s
+    udp: false
+  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2245,19 +590,6 @@ proxies:
     tls: true
     ws-opts:
       path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🏳️ ShatakVPN 282215
-    type: vless
-    server: 51.250.103.29
-    port: 443
-    uuid: 5aa188ea-db1b-4121-82f8-4eb1452cc052
-    servername: ads.x5.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: LCxSn-zcFxBKKztCytR-Wzjt3VwezZs2jN6FtZPQ3n0
   - name: 未知 VLESS-81 | free-nodes
     type: vless
     server: dns.dressforida.monster
@@ -2270,19 +602,6 @@ proxies:
     reality-opts:
       public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
       short-id: 174c6cf22e22
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
   - name: 🇬🇧GB_1|1.2MB/s
     type: vless
     server: 198.62.62.248
@@ -2295,31 +614,7 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇬🇧GB_1|1.2MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 148 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
+  - name: 🏳️ ShatakVPN 201045
     type: vless
     server: 198.62.62.248
     port: 443
@@ -2332,25 +627,21 @@ proxies:
       path: /love
       headers:
         Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 161 | ⬇️ 2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  - name: 美国_9
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
     ws-opts:
-      path: /love
+      path: /?ed=2048
       headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇯🇵 日本 09
-    type: ss
-    server: 167.17.179.197
-    port: 60129
-    cipher: aes-256-gcm
-    password: 0690659746980c46
-  - name: 美国_45
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_10
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -2364,19 +655,6 @@ proxies:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
         Host: 2001:bc8:32d7:302::10
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
   - name: 🇳🇱NL_11 | ⬇️ 5.3MB/s
     type: hysteria2
     server: 89.144.35.34
@@ -2384,386 +662,7 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 美国 02
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_46
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: 美国_47
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 🇺🇸 US 162 | ⬇️ 3MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 248 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 246 | ⬇️ 3MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇬🇧GB_1|1.2MB/s_2
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_48
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_49
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_50
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: FR_2
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_51
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇺🇸 US 160 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_52
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 🇺🇸 US 158 | ⬇️ 2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇬🇧GB_1|1.2MB/s_3
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 151 | ⬇️ 3MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: TW-ss_6
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 164 | ⬇️ 1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 152 | ⬇️ 5MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸 US 156 | ⬇️ 2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_53
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 未知 VLESS-85 | free-nodes
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇺🇸US_30 | ⬇️ 1.1MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_54
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 🇯🇵 日本 09_1
-    type: ss
-    server: 167.17.179.197
-    port: 60129
-    cipher: aes-256-gcm
-    password: 0690659746980c46
-  - name: 🇯🇵 日本 09_2
-    type: ss
-    server: 167.17.179.197
-    port: 60129
-    cipher: aes-256-gcm
-    password: 0690659746980c46
-  - name: 🇺🇸 US 247 | ⬇️ 3MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_55
+  - name: 美国_11
     type: vmess
     server: 2001:bc8:32d7:302::15
     port: 44579
@@ -2777,21 +676,9 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: TURK.NET
-  - name: 🇺🇸 US 159 | ⬇️ 2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_56
+  - name: 美国_12
     type: vmess
-    server: 2001:bc8:32d7:302::15
+    server: 2001:bc8:32d7:302::16
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -2802,111 +689,19 @@ proxies:
     ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
-        Host: TURK.NET
-  - name: 🇯🇵 日本 09_3
-    type: ss
-    server: 167.17.179.197
-    port: 60129
-    cipher: aes-256-gcm
-    password: 0690659746980c46
-  - name: SG-ss_13
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸 US 150 | ⬇️ 2MB/s
+        Host: AZERB.NET
+  - name: 🇩🇪DE_2 | ⬇️ 6.1MB/s
     type: vless
-    server: 198.62.62.248
+    server: 5.254.85.151
     port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_1 | ⬇️ 5.0MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_57
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 🇺🇸 ShatakVPN 114180
-    type: vless
-    server: 104.18.32.47
-    port: 2052
-    uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
-    network: http
-    tls: false
-    http-opts:
-      path:
-        - /pabloping
-      headers:
-        Host:
-          - s2.nakosgol.com
-  - name: HK_6
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 未知 VLESS-85 | free-nodes_1
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
+    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+    servername: germany.scroogethebest.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 未知 VLESS-81 | free-nodes_1
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
+      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+      short-id: 4fa44664f6a566d3
   - name: 🇺🇸 ShatakVPN 569904
     type: vless
     server: 104.18.32.47
@@ -2920,149 +715,17 @@ proxies:
       headers:
         Host:
           - s2.nakosgol.com
-  - name: 🇬🇧 GB 168 | ⬇️ 4MB/s
+  - name: 🇳🇱NL_7 | ⬇️ 8.3MB/s
     type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    server: mx2.tehrantolidi.ir
+    port: 80
+    uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
     network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
+    tls: false
     ws-opts:
-      path: /love
+      path: /site
       headers:
-        Host: bank.alaska-tigr.info
-  - name: 未知 VLESS-85 | free-nodes_2
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 未知 VLESS-81 | free-nodes_2
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: HK-ss_17
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇬🇧GB_5 | ⬇️ 1.8MB/s
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_3 | ⬇️ 3.5MB/s
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
+        Host: cdn123.global.ssl.fastly.net
   - name: 🇳🇱NL_2 | ⬇️ 3.6MB/s
     type: vless
     server: 104.18.32.47
@@ -3087,7 +750,7 @@ proxies:
       path: /love
       headers:
         Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_3 | ⬇️ 2.5MB/s
+  - name: US
     type: vless
     server: 198.62.62.124
     port: 443
@@ -3099,79 +762,36 @@ proxies:
       path: /love
       headers:
         Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 4.6MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇳🇱NL_7 | ⬇️ 8.3MB/s
-    type: vless
-    server: mx2.tehrantolidi.ir
-    port: 80
-    uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /site
-      headers:
-        Host: cdn123.global.ssl.fastly.net
-  - name: HK-ss_18
+  - name: US SS-20 | free-nodes
     type: ss
-    server: cf.zhetengsha.eu.org
+    server: tinkered-pennies-puppies.freesocks.work
     port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_58
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: us 🇺🇸
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+  - name: 美国_13
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -3181,47 +801,7 @@ proxies:
     tls: false
     skip-cert-verify: false
     network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: hk-vless-reality
-    type: vless
-    server: 23.148.20.55
-    port: 443
-    uuid: e5130eee-cf44-405e-ce04-25817f961399
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: R0M4F0Di9oppNbz_LRIkF08whSeXbBHMNkAKVq5l-U8
-      short-id: ea80ef
-  - name: hk-vless-reality_1
-    type: vless
-    server: 23.148.20.55
-    port: 443
-    uuid: e5130eee-cf44-405e-ce04-25817f961399
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: R0M4F0Di9oppNbz_LRIkF08whSeXbBHMNkAKVq5l-U8
-      short-id: ea80ef
-  - name: 🇹🇼TW_3 | ⬇️ 4.0MB/s
-    type: vless
-    server: tw1.miyazono-kaori.com
-    port: 443
-    uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: KJgODVMTQcncG_l1ZCDhzn8gEgMU2YRl2Yw2je6moWY
-      short-id: c0d856ec
-  - name: 美国_59
+  - name: 美国_14
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -3233,9 +813,95 @@ proxies:
     network: ws
     ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+  - name: 美国_15
+    type: vmess
+    server: 2001:bc8:32d7:302::14
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇯🇵JP_2 | ⬇️ 2.8MB/s
+    type: hysteria2
+    server: jp.xn--ehqa22b.site
+    port: 21996
+    password: c942d3cd-b89a-4809-bc40-630dd32330bb
+    sni: jp.xn--ehqa22b.site
+    skip-cert-verify: false
+  - name: 美国_16
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: 美国_17
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_18
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: 🇯🇵DMIT-JP-SS
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: 🇲🇾MY_1 | ⬇️ 2.5MB/s
+    type: hysteria2
+    server: my.xn--ehqa22b.site
+    port: 21933
+    password: c942d3cd-b89a-4809-bc40-630dd32330bb
+    sni: my.xn--ehqa22b.site
+    skip-cert-verify: false
+  - name: 美国_19
+    type: vmess
+    server: 2001:bc8:32d7:302::17
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 美国_60
+  - name: 美国_20
     type: vmess
     server: 2001:bc8:32d7:302::11
     port: 44579
@@ -3249,689 +915,167 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: TABRIZ.NET
-  - name: 美国_61
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: 美国_62
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s
-    type: anytls
-    server: us1.anliangjifei.top
-    port: 12053
-    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
-    sni: us1.anliangjifei.top
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-    type: anytls
-    server: us1.anliangjifei.top
-    port: 12053
-    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
-    sni: us1.anliangjifei.top
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: hy2-node
-    type: hysteria2
-    server: 66.154.127.121
-    port: 443
-    password: ilikecs123!
-    sni: cloudcone.wolfmoss.top
-    skip-cert-verify: false
-  - name: TW-ss_7
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: hk-vless-reality_2
-    type: vless
-    server: 23.148.20.55
-    port: 443
-    uuid: e5130eee-cf44-405e-ce04-25817f961399
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: R0M4F0Di9oppNbz_LRIkF08whSeXbBHMNkAKVq5l-U8
-      short-id: ea80ef
-  - name: 🇯🇵DMIT-JP-SS
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
-  - name: 🇯🇵 日本 33
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
-  - name: 🇯🇵DMIT-JP-SS_1
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
-  - name: 🇯🇵DMIT-JP-SS_2
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
-  - name: 🇯🇵DMIT-JP-SS_3
-    type: ss
-    server: iepl.huli168.com
-    port: 19822
-    cipher: aes-256-gcm
-    password: g4JtpkuxkwRH4jhj
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -3941,1161 +1085,325 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -5118,291 +1426,82 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼TW_5 | ⬇️ 2.1MB/s
-      - 🇹🇼TW_6 | ⬇️ 3.8MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s
-      - 🇭🇰HK_1 | ⬇️ 1.2MB/s_1
-      - 🇳🇱NL_12 | ⬇️ 3.4MB/s
-      - 🇳🇱NL_13 | ⬇️ 4.9MB/s
-      - 🇷🇺RU_2 | ⬇️ 11.6MB/s
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_35 | ⬇️ 4.9MB/s
-      - 🇳🇱NL_1 | ⬇️ 2.5MB/s
+      - 🇯🇵JP_1 | ⬇️ 9.4MB/s
+      - 🇺🇸US_3 | ⬇️ 5.4MB/s
+      - " HK-ss"
+      - " HK-ss_1"
       - HK
-      - 🇺🇸US_2 | ⬇️ 1.8MB/s
-      - JP-ss
-      - 🇫🇷FR_2 | ⬇️ 8.7MB/s
       - SG-ss
       - HK-ss
-      - HK-ss_1
-      - HK-ss_2
-      - SG
-      - JP
-      - HK-ss_3
-      - HK-ss_4
-      - TW-ss
-      - " JP"
-      - JP-ss_1
-      - 🇬🇧GB_3 | ⬇️ 1.5MB/s
-      - SG-ss_1
-      - KR-ss
-      - TW
-      - JP-ss_2
-      - JP-ss_3
-      - HK-ss_5
-      - JP-ss_4
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s
-      - 🇺🇸US_335 | ⬇️ 1.8MB/s
-      - HK-ss_6
-      - " SG-ss"
-      - " TW"
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s
-      - JP_1
-      - TW-ss_1
-      - " HK-ss"
-      - KR-ss_1
-      - TW-ss_2
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - SG-ss_2
-      - KR-ss_2
-      - SG-ss_3
-      - KR-ss_3
-      - 🇺🇸US_5 | ⬇️ 1.0MB/s
-      - HK-ss_7
-      - SG-ss_4
-      - KR-ss_4
-      - HK-ss_8
-      - SG-ss_5
-      - SG_1
-      - JP-ss_5
-      - 美國
-      - JP-ss_6
-      - SG-ss_6
-      - JP-ss_7
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - JP-ss_8
-      - " 美國"
-      - HK-ss_9
-      - 🏳️ ShatakVPN 768101
-      - " JP-ss"
-      - JP-ss_9
-      - KR-ss_5
-      - TW-ss_3
-      - HK-ss_10
       - HK_1
-      - SG_2
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_1
-      - " KR"
-      - KR-ss_6
-      - JP-ss_10
-      - JP-ss_11
-      - JP-ss_12
-      - SG-ss_7
-      - " HK-ss_1"
-      - SG-ss_8
-      - KR-ss_7
+      - SG-ss_1
+      - JP-ss
+      - SG-ss_2
+      - SG-ss_3
+      - TW-ss
+      - JP-ss_1
+      - HK-ss_1
+      - SG
+      - " JP-ss"
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - " 美國"
+      - SG-ss_4
+      - SG_1
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - 🇭🇰 香港 02
+      - KR-ss
+      - " HK-ss_2"
+      - 🇩🇪DE_8 | ⬇️ 3.9MB/s
       - " JP-ss_1"
-      - JP-ss_13
-      - TW-ss_4
-      - HK_2
-      - " KR_1"
-      - JP_2
-      - HK-ss_11
-      - HK-ss_12
-      - KR-ss_8
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s_2
-      - JP-ss_14
-      - 🇺🇸US_3 | ⬇️ 5.4MB/s
-      - HK-ss_13
-      - JP-ss_15
-      - JP-ss_16
-      - SG-ss_9
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s
-      - KR-ss_9
-      - HK_3
-      - SG-ss_10
-      - 🇺🇸US_38 | ⬇️ 4.8MB/s
-      - JP_3
-      - JP-ss_17
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - TW-ss_1
       - 美国
       - 美国_1
-      - JP-ss_18
-      - KR
-      - KR-ss_10
-      - 🇳🇱NL_2 | ⬇️ 2.6MB/s
-      - JP-ss_19
       - 美国_2
-      - 🇺🇸US_42 | ⬇️ 4.1MB/s
-      - SG-ss_11
-      - HK_4
       - 美国_3
-      - TW-ss_5
+      - 🇩🇪DE_12 | ⬇️ 1.0MB/s
+      - KR-ss_1
       - 美国_4
-      - FR
-      - 🇳🇱NL_5 | ⬇️ 5.1MB/s
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 🇳🇱NL_4 | ⬇️ 2.2MB/s
       - 美国_5
       - 美国_6
       - 美国_7
       - 美国_8
-      - HK_5
+      - 🇩🇪DE_10 | ⬇️ 1.8MB/s
+      - FR
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 未知 VLESS-81 | free-nodes
+      - 🇬🇧GB_1|1.2MB/s
+      - 🏳️ ShatakVPN 201045
       - 美国_9
-      - 🇬🇧GB_2 | ⬇️ 1.8MB/s
-      - 🇺🇸US_337 | ⬇️ 1.6MB/s
-      - 🏳️ ShatakVPN 218587
       - 美国_10
+      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
       - 美国_11
       - 美国_12
+      - 🇩🇪DE_2 | ⬇️ 6.1MB/s
+      - 🇺🇸 ShatakVPN 569904
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - US
+      - US SS-20 | free-nodes
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - us 🇺🇸
       - 美国_13
-      - " HK-ss_2"
       - 美国_14
       - 美国_15
+      - 🇯🇵JP_2 | ⬇️ 2.8MB/s
       - 美国_16
       - 美国_17
       - 美国_18
+      - 🇯🇵DMIT-JP-SS
+      - 🇲🇾MY_1 | ⬇️ 2.5MB/s
       - 美国_19
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - 美国_26
-      - 🇳🇱NL_1 | ⬇️ 3.1MB/s
-      - 美国_27
-      - 🇳🇱NL_1 | ⬇️ 3.7MB/s
-      - 美国_28
-      - HK-ss_14
-      - 🇵🇱PL_1 | ⬇️ 3.8MB/s
-      - 美国_29
-      - FR_1
-      - 🇳🇱NL_2 | ⬇️ 4.7MB/s
-      - 🇬🇧GB_2 | ⬇️ 1.2MB/s_1
-      - 美国_30
-      - KR-ss_11
-      - 美国_31
-      - " SG-ss_1"
-      - 美国_32
-      - 美国_33
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_1
-      - 美国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 🇳🇱NL_4 | ⬇️ 3.7MB/s_1
-      - SG-ss_12
-      - 美国_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 🇬🇧GB_1 | ⬇️ 4.5MB/s
-      - 🇳🇱NL_10 | ⬇️ 3.1MB/s
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_2
-      - 🇳🇱NL_1 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.4MB/s
-      - HK-ss_15
-      - 美国_43
-      - HK-ss_16
-      - 🇳🇱NL_1 | ⬇️ 3.5MB/s_3
-      - 美国_44
-      - 🇺🇸US_2 | ⬇️ 5.8MB/s
-      - 🇺🇸 US 155 | ⬇️ 4MB/s
-      - 🏳️ ShatakVPN 282215
-      - 未知 VLESS-81 | free-nodes
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s
-      - 🇬🇧GB_1|1.2MB/s
-      - 🇬🇧GB_1|1.2MB/s_1
-      - 🇺🇸 US 148 | ⬇️ 1MB/s
-      - 🇬🇧GB²_1|7.4MB/s|21%|GPT⁺|X|History|[广播|机房]
-      - 🇺🇸 US 161 | ⬇️ 2MB/s
-      - 🇯🇵 日本 09
-      - 美国_45
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_1
-      - 🇳🇱NL_11 | ⬇️ 5.3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_2
-      - 🇺🇸 美国 02
-      - 美国_46
-      - 美国_47
-      - 🇺🇸 US 162 | ⬇️ 3MB/s
-      - 🇺🇸 US 248 | ⬇️ 1MB/s
-      - 🇺🇸 US 246 | ⬇️ 3MB/s
-      - 🇬🇧GB_1|1.2MB/s_2
-      - 美国_48
-      - 美国_49
-      - 美国_50
-      - FR_2
-      - 美国_51
-      - 🇺🇸 US 160 | ⬇️ 1MB/s
-      - 美国_52
-      - 🇺🇸 US 158 | ⬇️ 2MB/s
-      - 🇬🇧GB_1|1.2MB/s_3
-      - 🇺🇸 US 151 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s
-      - TW-ss_6
-      - 🇺🇸US_2 | ⬇️ 3.4MB/s_1
-      - 🇺🇸 US 164 | ⬇️ 1MB/s
-      - 🇺🇸 US 152 | ⬇️ 5MB/s
-      - 🇺🇸 US 156 | ⬇️ 2MB/s
-      - 美国_53
-      - 未知 VLESS-85 | free-nodes
-      - 🇺🇸US_30 | ⬇️ 1.1MB/s
-      - 美国_54
-      - 🇯🇵 日本 09_1
-      - 🇯🇵 日本 09_2
-      - 🇺🇸 US 247 | ⬇️ 3MB/s
-      - 🇺🇸US_2 | ⬇️ 6.1MB/s_3
-      - 美国_55
-      - 🇺🇸 US 159 | ⬇️ 2MB/s
-      - 美国_56
-      - 🇯🇵 日本 09_3
-      - SG-ss_13
-      - 🇺🇸 US 150 | ⬇️ 2MB/s
-      - 🇺🇸US_1 | ⬇️ 5.0MB/s
-      - 美国_57
-      - 🇺🇸 ShatakVPN 114180
-      - HK_6
-      - 未知 VLESS-85 | free-nodes_1
-      - 未知 VLESS-81 | free-nodes_1
-      - 🇺🇸 ShatakVPN 569904
-      - 🇬🇧 GB 168 | ⬇️ 4MB/s
-      - 未知 VLESS-85 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - 未知 VLESS-81 | free-nodes_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_3
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_4
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_5
-      - HK-ss_17
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s
-      - 🇬🇧GB_3 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_3 | ⬇️ 2.5MB/s
-      - 🇬🇧GB_5 | ⬇️ 1.8MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s_1
-      - 🇬🇧GB_1 | ⬇️ 4.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_6
-      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
-      - HK-ss_18
-      - 美国_58
-      - hk-vless-reality
-      - hk-vless-reality_1
-      - 🇹🇼TW_3 | ⬇️ 4.0MB/s
-      - 美国_59
-      - 美国_60
-      - 美国_61
-      - 美国_62
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s
-      - 🇺🇸US_1 | ⬇️ 1.4MB/s_1
-      - hy2-node
-      - TW-ss_7
-      - hk-vless-reality_2
-      - 🇯🇵DMIT-JP-SS
-      - 🇯🇵 日本 33
-      - 🇯🇵DMIT-JP-SS_1
-      - 🇯🇵DMIT-JP-SS_2
-      - 🇯🇵DMIT-JP-SS_3
 rule-providers:
   LocalAreaNetwork:
     type: http
