@@ -46,70 +46,43 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 香港
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2649
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2642
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_2
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2537
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_3
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2542
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_4
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2541
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_5
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2538
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_6
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2655
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_7
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2647
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 香港_8
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2690
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2557
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: ❓Other_11 | ⬇️ 2.7MB/s
+  - name: 广播JP
+    type: vless
+    server: 8.216.2.135
+    port: 12853
+    uuid: 2cee7a70-d867-48ea-ba98-cda478ee7cd4
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8ucW2JdAVcp7hSKe26JUayqE4Rw9cO0R7g_isaXGFWs
+      short-id: e19803d3
+  - name: ISIF02-vless-reality|JK9l.love@xray.com
+    type: vless
+    server: sig03.jumperservice.com
+    port: 19001
+    uuid: c31d4cc6-7c15-4e20-9928-1cfc4a22527b
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  - name: ISIF02-vless-reality|dEgK.love@xray.com
+    type: vless
+    server: sig03.jumperservice.com
+    port: 19001
+    uuid: 80fa3672-567c-469d-a0b6-b8d8d54f01d4
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  - name: ❓Other_3 | ⬇️ 2.5MB/s
     type: trojan
-    server: 220.93.106.4
-    port: 11434
+    server: 211.252.46.215
+    port: 27015
     password: trojan
     sni: jflsjlaf.pages.dev
     skip-cert-verify: true
@@ -118,84 +91,52 @@ proxies:
       path: /
       headers:
         Host: jflsjlaf.pages.dev
-  - name: JP
+  - name: EvoxtMala01-vless-reality|QOT8.love@xray.com
+    type: vless
+    server: malaysia01.jumperservice.com
+    port: 19001
+    uuid: e675787a-48db-45f9-9902-13b1b941446c
+    servername: www.speedtest.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  - name: EvoxtMala01-vless-reality|jBNs.love@xray.com
+    type: vless
+    server: malaysia01.jumperservice.com
+    port: 19001
+    uuid: d13545be-5c06-4283-cdf3-a364201bf9fb
+    servername: www.speedtest.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  - name: TW-01
     type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2550
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s
+    server: 120.232.77.28
+    port: 30036
+    cipher: aes-256-gcm
+    password: PiLr13pE
+  - name: TW-02
     type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 21402
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 日本
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2693
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 12397
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: KR
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2555
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: KR_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2554
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: SG
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2672
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2559
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡_2
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2558
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡  01
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2667
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡_3
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2556
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 新加坡_4
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2673
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: SG_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2676
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
+    server: 120.233.125.33
+    port: 30036
+    cipher: aes-256-gcm
+    password: PiLr13pE
+  - name: 新加坡-3A-广东移动
+    type: vless
+    server: 203.rushrushnode.org
+    port: 10203
+    uuid: 14d36639-0d42-4b3d-acd3-ff1c0ceae0ad
+    servername: img14.360buyimg.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    reality-opts:
+      public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+      short-id: "9153"
   - name: ❓Other_1 | ⬇️ 3.5MB/s
     type: trojan
     server: 152.53.200.167
@@ -206,43 +147,9 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 🇳🇱NL_5 | ⬇️ 3.0MB/s
-    type: vless
-    server: 141.11.21.219
-    port: 53458
-    uuid: de73ea62-68e4-45e2-8cc3-87c6d4b23aa0
-    servername: a.sezar.top
-    tls: true
-    client-fingerprint: chrome
-  - name: 🇳🇱NL_4 | ⬇️ 2.9MB/s
-    type: vless
-    server: 141.11.21.219
-    port: 17191
-    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
-    servername: a.sezar.top
-    tls: true
-    client-fingerprint: chrome
-  - name: 香港_9
+  - name: HK-ss
     type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 10015
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 日本_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2552
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 日本_2
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2553
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: TW-ss
-    type: ss
-    server: sub.danfeng.eu.org
+    server: cf.008500.xyz
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -251,54 +158,9 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
+  - name: " HK-ss"
     type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2575
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2570
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇨🇭CH_8 | ⬇️ 4.4MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_1i6h1l4sl:NoN480zbmvyftOY9oApbob7BLPrpJrEn
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 香港_10
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 24304
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇨🇭CH_5 | ⬇️ 3.1MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_k0svv53f6:yqblbDl9396YSmHqhw0t7S04VOESnL3f
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 🇨🇭CH_7 | ⬇️ 2.6MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_62hxzxhw6:gpjapMeYWiBsDR3KEun6DrwY0Is3gXay
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 距离下次重置剩余：3 天
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2691
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: TW-ss_1
-    type: ss
-    server: sub.danfeng.eu.org
+    server: cf.008500.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -307,25 +169,99 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇨🇭CH_6 | ⬇️ 2.5MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_81uqqeagr:LepBwrE84qJQqGYctplZF35Z8cSmFDn6
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 美国
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2691
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 套餐到期：2026-03-14
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2691
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
+  - name: 🇳🇱NL_5 | ⬇️ 4.1MB/s
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+    client-fingerprint: chrome
+  - name: AkileUsap01-vless-reality|tqTG.love@xray.com
+    type: vless
+    server: usap01.jumperservice.com
+    port: 19001
+    uuid: 4e607c90-e3cf-4e02-9d3e-5aa5a5567f71
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+  - name: DMIT01-vless-reality|AKdn.love@xray.com
+    type: vless
+    server: usadt01.jumperservice.com
+    port: 19001
+    uuid: b5be8e3f-a17d-479c-ebdb-9c3265c2cab7
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM
+  - name: DMIT01-vless-reality|s0f0.love@xray.com
+    type: vless
+    server: usadt01.jumperservice.com
+    port: 19001
+    uuid: 719b17cb-004b-4029-b3fb-e98fafdb0271
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM
+  - name: 🇳🇱NL_4 | ⬇️ 2.9MB/s
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇩🇪DE_4 | ⬇️ 5.3MB/s
+    type: vless
+    server: 144.31.63.7
+    port: 443
+    uuid: 1472b7a6-da03-4999-8247-adf67830bc14
+    servername: deout.funvideorus.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YI0QbJYHCyl4-VWZPWAMccOmUW0c_XDE_rEZc-dNC0
+  - name: AkileUsap01-vless-reality|YL10.love@xray.com
+    type: vless
+    server: usap01.jumperservice.com
+    port: 19001
+    uuid: 0deff678-f177-4cb3-e905-50724ab89f48
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
+  - name: LisahostUsa01-vless-reality|ujy2.love@xray.com
+    type: vless
+    server: usalh01.jumperservice.com
+    port: 19001
+    uuid: 68f5f3fd-fbf6-42a0-e8bc-d0a6285e766e
+    servername: www.speedtest.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
   - name: 🇺🇸US_3 | ⬇️ 2.9MB/s
     type: vless
     server: 157.254.223.44
@@ -337,7 +273,7 @@ proxies:
     reality-opts:
       public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
       short-id: d557c6895d014075
-  - name: 🇺🇸US_44 | ⬇️ 4.7MB/s
+  - name: 🇺🇸US_1 | ⬇️ 1.1MB/s
     type: vless
     server: 157.254.223.44
     port: 18959
@@ -348,6 +284,39 @@ proxies:
     reality-opts:
       public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
       short-id: d557c6895d014075
+  - name: " JP-ss"
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " JP-ss_1"
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: 🇳🇱NL_1 | ⬇️ 4.5MB/s
     type: vless
     server: 143.20.236.51
@@ -360,115 +329,9 @@ proxies:
     reality-opts:
       public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
       short-id: c39cc7310a
-  - name: 美国_1
+  - name: TW-ss
     type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2680
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_2
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2564
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: HK-ss
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK_1
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 日本_3
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG_2
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2691
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: HK_2
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: KR-ss
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " HK-ss"
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: KR-ss_1
-    type: ss
-    server: cf.130519.xyz
+    server: sub.danfeng.eu.org
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -488,29 +351,20 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇳🇱NL_14 | ⬇️ 3.7MB/s
-    type: vless
-    server: 141.11.21.219
-    port: 17191
-    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
-    servername: a.sezar.top
-    tls: true
-    client-fingerprint: chrome
-  - name: 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: " JP-ss"
+  - name: JP-ss_1
     type: ss
-    server: cdns.doon.eu.org
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: KR-ss
+    type: ss
+    server: cf.130519.xyz
     port: 443
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -530,19 +384,7 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2563
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_3
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2565
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: SG_3
+  - name: US_1
     type: ss
     server: cf.090227.xyz
     port: 443
@@ -553,17 +395,17 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG-ss
+  - name: TW-ss_1
     type: ss
-    server: store.ubi.com
+    server: sub.danfeng.eu.org
     port: 443
     cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: SG-ss_1
     type: ss
     server: mfa.gov.ua
@@ -575,83 +417,17 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_1
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇭🇰 香港 02
-    type: vmess
-    server: 103.181.164.237
-    port: 34114
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
+  - name: ❓Other_1 | ⬇️ 3.5MB/s_1
+    type: trojan
+    server: 152.53.200.167
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
     skip-cert-verify: false
-  - name: 🇳🇱NL_2 | ⬇️ 2.3MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 美国_4
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 🇨🇭CH_2 | ⬇️ 2.7MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_d0ab36hob:ijQep9aZ2kUAqzKAeTSIW70zJq3FiJvO
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: SG-ss_2
-    type: ss
-    server: store.ubi.com
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_3
+      path: /
+  - name: US_2
     type: ss
     server: cf.zhetengsha.eu.org
     port: 443
@@ -662,67 +438,20 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2572
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: " HK-ss_1"
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: SG-ss_3
+  - name: EvoxtHk01-vless-reality|ZzAH.love@xray.com
+    type: vless
+    server: hke01.jumperservice.com
+    port: 19001
+    uuid: 1a8c4353-8aa9-4038-99a8-b613ad47000e
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  - name: SG
     type: ss
     server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2560
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: JP-ss_1
-    type: ss
-    server: saas.sin.fan
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -731,40 +460,153 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
+  - name: " 美國"
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-    network: ws
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2573
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
     tls: true
-    udp: false
-    client-fingerprint: chrome
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: SG-ss_2
     type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2561
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_7
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇺🇸US_44 | ⬇️ 4.7MB/s
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
+  - name: KR-ss_1
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
+  - name: LisahostUsa01-vless-reality|18DZ.love@xray.com
+    type: vless
+    server: usalh01.jumperservice.com
+    port: 19001
+    uuid: 723e6520-ddb1-4dab-d4b0-2da6736b9f8a
+    servername: www.speedtest.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+  - name: 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: SG-ss_3
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " HK-ss_1"
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: EvoxtHk01-vless-reality|9MwF.love@xray.com
+    type: vless
+    server: hke01.jumperservice.com
+    port: 19001
+    uuid: 5ab22628-9dc7-48c4-c56e-f129da583baa
+    servername: www.speedtest.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  - name: 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: SG-ss_4
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国
     type: vmess
     server: 2001:bc8:32d7:302::14
     port: 44579
@@ -778,83 +620,282 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: TABRIZ.NET
-  - name: " HK-ss_2"
+  - name: HK-ss_1
     type: ss
     server: cf.877774.xyz
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2678
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 美国_9
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
     type: vless
-    server: 141.11.21.219
-    port: 17191
-    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
-    servername: a.sezar.top
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
     tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
-  - name: " 美國"
-    type: trojan
-    server: 172.66.44.230
-    port: 8443
-    password: 8r<[9'l6hAO#8ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
     tls: true
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-      headers:
-        Host: Koma-YT.PAGeS.Dev
-  - name: " JP-ss_1"
+    udp: false
+  - name: HK_1
     type: ss
-    server: saas.sin.fan
+    server: cf.zhetengsha.eu.org
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_10
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇳🇱NL_2 | ⬇️ 2.3MB/s
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇳🇱NL_4 | ⬇️ 9.5MB/s
+    type: tuic
+    server: ip1.758733.xyz
+    port: 10088
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    password: dongtaiwang.com
+    sni: apple.com
+    alpn:
+      - h3
+    congestion-controller: bbr
+    skip-cert-verify: false
+    disable-sni: false
+  - name: 美国_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+  - name: 🇺🇸US_53 | ⬇️ 1.2MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    sni: 45.221.98.14
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: nyc01-vless-reality|XQfi.love@xray.com
+    type: vless
+    server: nyc01.jumperservice.com
+    port: 19001
+    uuid: 1773e4cf-cf60-4801-ea3e-872bb63b8b16
+    servername: icloud.cdn-apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
+  - name: JP
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_2
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇺🇸US_72 | ⬇️ 6.8MB/s
+    type: hysteria2
+    server: panel.appleragmcp.com
+    port: 443
+    password: linuxdo.jZiAjLK8pmy4pxp
+    sni: hysteria.apple-rag.com
+    skip-cert-verify: false
+  - name: 美国_3
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: fra01-vless-reality|E8D5.love@xray.com
+    type: vless
+    server: fra01.jumperservice.com
+    port: 19001
+    uuid: 12eac926-c4ec-4040-8fb8-f316e9fc0fd6
+    servername: www.speedtest.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4
+  - name: 美国_4
+    type: vmess
+    server: 2001:bc8:32d7:302::17
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 美国_5
+    type: vmess
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: AZERB.NET
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 美国_8
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -868,37 +909,7 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: TURK1.NET.NET
-  - name: 🇳🇱NL_5 | ⬇️ 4.2MB/s
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2568
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_11
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_12
+  - name: 美国_9
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -910,6 +921,184 @@ proxies:
     network: ws
     ws-opts:
       path: /?ed=2048
+  - name: 美国_10
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
+  - name: 日本
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK_2
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US_3
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇳🇱NL_14 | ⬇️ 3.7MB/s
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+    client-fingerprint: chrome
+  - name: SG_1
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国_11
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_12
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+    client-fingerprint: chrome
+  - name: 美国_13
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 美国_14
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: 🇵🇱PL_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: 92.62.251.205
+    port: 8443
+    uuid: a68c90a4-a560-489a-ab4b-d918e78e9dee
+    servername: github.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YH_QnUEGzMHf8RjEDh5bRXocz7gq_QdrZWysD2yF_i8
+  - name: 美国_15
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 美国_16
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: 美国_17
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 2001:bc8:32d7:302::10
   - name: FR
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -924,231 +1113,30 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2578
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_13
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2562
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_14
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_15
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 日本_4
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 24385
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_16
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 俄罗斯
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2574
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: TR
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2571
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: us 🇺🇸
+  - name: AkileKrp01-vless-reality|qEiK.love@xray.com
     type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-  - name: 美国_17
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 🇳🇱NL_2 | ⬇️ 3.8MB/s
-    type: vless
-    server: 144.31.234.7
-    port: 4546
-    uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
-    servername: enterprise.api-maps.yandex.ru
+    server: krp01.jumperservice.com
+    port: 19001
+    uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
+    servername: addons.mozilla.org
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: 3DLDFzq0NAYBMrhDOaMM04A_Ictohao2yWOY1NdrJCk
-  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+  - name: 英国-1A-广东移动
     type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
+    server: 701.rushrushnode.org
+    port: 10701
+    uuid: 370696cb-57bf-4cf4-ad27-b98000ea6c1b
+    servername: img14.360buyimg.com
     tls: true
-    ws-opts:
-      path: /love
-  - name: 🇺🇸US_10 | ⬇️ 4.4MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_1 | ⬇️ 2.5MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: us 🇺🇸_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+      short-id: "9153"
   - name: 美国_18
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 🇺🇸US_2 | ⬇️ 4.3MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_20
     type: vmess
     server: 2001:bc8:32d7:302::16
     port: 44579
@@ -1162,367 +1150,40 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 🇺🇸US_2 | ⬇️ 4.7MB/s
+  - name: AkileKrp01-vless-reality|px87.love@xray.com
     type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: us 🇺🇸_2
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-  - name: 美国_21
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_22
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 加拿大
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2684
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_23
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 🇳🇱NL_4 | ⬇️ 9.5MB/s
-    type: tuic
-    server: ip1.758733.xyz
-    port: 10088
-    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-    password: dongtaiwang.com
-    sni: apple.com
-    alpn:
-      - h3
-    congestion-controller: bbr
-    skip-cert-verify: false
-    disable-sni: false
-  - name: caCA
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2566
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_24
-    type: vless
-    server: assets-cfnode81.rfsconfig.com
-    port: 21009
-    uuid: eb90dcba-d515-4dde-87c5-84e6a1deb826
-    servername: www.bing.com
+    server: krp01.jumperservice.com
+    port: 19001
+    uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
+    servername: addons.mozilla.org
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     reality-opts:
-      public-key: EIkyDGZpOLLW_5_7uHSZvsv_WO9JbNhDF-SPyNW7VhY
-      short-id: bacca51e
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 25396
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2576
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 美国_25
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 25395
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: US_1
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2544
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
   - name: US SS-20 | free-nodes
     type: ss
     server: tinkered-pennies-puppies.freesocks.work
     port: 443
     cipher: chacha20-ietf-poly1305
     password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: 🇳🇱NL_8 | ⬇️ 2.7MB/s
-    type: vless
-    server: 144.31.234.7
-    port: 4546
-    uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
-    servername: enterprise.api-maps.yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3DLDFzq0NAYBMrhDOaMM04A_Ictohao2yWOY1NdrJCk
+  - name: " HK-ss_2"
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
   - name: US SS-20 | free-nodes_1
     type: ss
     server: tinkered-pennies-puppies.freesocks.work
     port: 443
     cipher: chacha20-ietf-poly1305
     password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: 墨西哥
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2569
-    cipher: 2022-blake3-aes-128-gcm
-    password: MjM1ZWRkYzg4YzU3YWYyNw==:ZWI5MGRjYmEtZDUxNS00ZA==
-  - name: 🇬🇧GB_2 | ⬇️ 3.5MB/s
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_1 | ⬇️ 2.5MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 25396
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 香港_11
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2543
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-  - name: 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2577
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇬🇧GB_1 | ⬇️ 4.0MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇨🇭CH_3 | ⬇️ 2.5MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_dnq9o89yn:p6G9GwfEF7DqKxfBImWNKgW4YXHiDh6B
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 澳门 01
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2685
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇨🇭CH_1 | ⬇️ 4.9MB/s
-    type: hysteria2
-    server: 150.241.78.128
-    port: 1935
-    password: hysteria2_fastlane_y3phbb5eb:8FXcfb2dGzLFFgNvqVZdCWMApn6xfCiV
-    sni: de3.h.fastlanehosting.ru
-    skip-cert-verify: false
-  - name: 香港_12
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 21401
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: US SS-20 | free-nodes_2
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US_2
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇺🇸US_1 | ⬇️ 5.6MB/s
-    type: vless
-    server: 204.197.163.238
-    port: 43643
-    uuid: ff111801-768c-4d23-8f46-e90ef677c80d
-    servername: www.bing.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: U_AczMjOIM-_AgDZrEtTBrInB4lcZxXpGB5CCNeqSCs
-      short-id: "0708e917"
-  - name: 美国_26
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 日本_5
-    type: ss
-    server: assets-cfnode81.rfsconfig.com
-    port: 24382
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇬🇧GB_2 | ⬇️ 2.4MB/s
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🏳️ ShatakVPN 201045
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: 美国_27
-    type: ss
-    server: bgp01.inbound.rfsconfig.com
-    port: 2680
-    cipher: chacha20-ietf-poly1305
-    password: eb90dcba-d515-4dde-87c5-84e6a1deb826
-  - name: 🇺🇸US_1 | ⬇️ 1.1MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
   - name: 🇺🇸 ShatakVPN 569904
     type: vless
     server: 104.18.32.47
@@ -1536,508 +1197,290 @@ proxies:
       headers:
         Host:
           - s2.nakosgol.com
-  - name: 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-    type: vless
-    server: 143.20.236.51
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    servername: yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-  - name: 🇬🇧GB_1|1.2MB/s
-    type: vless
-    server: 198.62.62.248
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: tar.alabama-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: tar.alabama-tigr.info
-  - name: US_3
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇳🇱NL_3 | ⬇️ 5.2MB/s
-    type: vless
-    server: 104.18.32.47
-    port: 2052
-    uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  - name: 🇬🇧GB_1 | ⬇️ 3.6MB/s
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-    type: vless
-    server: 198.62.62.235
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: bank.alaska-tigr.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: bank.alaska-tigr.info
-  - name: GB
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-    type: vless
-    server: 198.62.62.124
-    port: 443
-    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-    network: ws
-    servername: war.connecticut-haloo.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /love
-      headers:
-        Host: war.connecticut-haloo.info
-  - name: 🇳🇱NL_9 | ⬇️ 3.2MB/s
-    type: vless
-    server: 144.31.234.7
-    port: 4546
-    uuid: b52989b9-09dc-4ca0-b722-e6fe3e8a0313
-    servername: enterprise.api-maps.yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3DLDFzq0NAYBMrhDOaMM04A_Ictohao2yWOY1NdrJCk
-  - name: SG-ss_4
+  - name: US SS-20 | free-nodes_2
     type: ss
-    server: mfa.gov.ua
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: HK_3
+    type: ss
+    server: cf.zhetengsha.eu.org
     port: 443
     cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US SS-20 | free-nodes_3
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: US SS-20 | free-nodes_4
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 美国_19
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_20
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -2047,717 +1490,457 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2780,180 +1963,115 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港
-      - 香港_1
-      - 香港_2
-      - 香港_3
-      - 香港_4
-      - 香港_5
-      - 香港_6
-      - 香港_7
-      - 香港_8
-      - 新加坡
-      - ❓Other_11 | ⬇️ 2.7MB/s
-      - JP
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s
-      - 日本
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_1
-      - KR
-      - KR_1
-      - SG
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡  01
-      - 新加坡_3
-      - 新加坡_4
-      - SG_1
+      - 广播JP
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ❓Other_3 | ⬇️ 2.5MB/s
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - TW-01
+      - TW-02
+      - 新加坡-3A-广东移动
       - ❓Other_1 | ⬇️ 3.5MB/s
-      - 🇳🇱NL_5 | ⬇️ 3.0MB/s
-      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
-      - 香港_9
-      - 日本_1
-      - 日本_2
-      - TW-ss
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_3
-      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
-      - 香港_10
-      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
-      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
-      - 距离下次重置剩余：3 天
-      - TW-ss_1
-      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
-      - 美国
-      - 套餐到期：2026-03-14
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
-      - 美国_1
-      - 美国_2
       - HK-ss
-      - HK
-      - HK_1
-      - 日本_3
-      - SG_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_4
-      - HK_2
-      - KR-ss
       - " HK-ss"
-      - KR-ss_1
-      - JP-ss
-      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
-      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇩🇪DE_4 | ⬇️ 5.3MB/s
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - 🇺🇸US_3 | ⬇️ 2.9MB/s
+      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - " JP-ss"
-      - US
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_5
-      - 美国_3
-      - SG_3
       - SG-ss
-      - SG-ss_1
-      - HK-ss_1
-      - 🇭🇰 香港 02
-      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
-      - 美国_4
-      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
-      - SG-ss_2
-      - HK_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_6
-      - " HK-ss_1"
-      - 美国_5
-      - SG-ss_3
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_7
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - " JP-ss_1"
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s
+      - TW-ss
+      - JP-ss
       - JP-ss_1
+      - KR-ss
+      - US
+      - US_1
+      - TW-ss_1
+      - SG-ss_1
+      - ❓Other_1 | ⬇️ 3.5MB/s_1
+      - US_2
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - SG
+      - " 美國"
+      - SG-ss_2
+      - HK
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - KR-ss_1
+      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_1
+      - SG-ss_3
+      - " HK-ss_1"
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_2
+      - SG-ss_4
+      - 美国
+      - HK-ss_1
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - HK_1
+      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
+      - 🇳🇱NL_1 | ⬇️ 4.5MB/s_3
+      - 🇳🇱NL_2 | ⬇️ 2.3MB/s
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+      - 美国_1
+      - 🇺🇸US_53 | ⬇️ 1.2MB/s
+      - nyc01-vless-reality|XQfi.love@xray.com
+      - JP
+      - 美国_2
+      - 🇺🇸US_72 | ⬇️ 6.8MB/s
+      - 美国_3
+      - fra01-vless-reality|E8D5.love@xray.com
+      - 美国_4
+      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
+      - 美国_5
       - 美国_6
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_8
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_9
       - 美国_7
-      - " HK-ss_2"
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_10
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_8
       - 美国_9
-      - 🇳🇱NL_5 | ⬇️ 4.1MB/s
-      - " 美國"
-      - " JP-ss_1"
       - 美国_10
-      - 🇳🇱NL_5 | ⬇️ 4.2MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_11
+      - 日本
+      - HK_2
+      - US_3
+      - 🇳🇱NL_14 | ⬇️ 3.7MB/s
+      - SG_1
       - 美国_11
       - 美国_12
-      - FR
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_12
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
       - 美国_13
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_13
       - 美国_14
+      - 🇵🇱PL_1 | ⬇️ 3.9MB/s
       - 美国_15
-      - 日本_4
       - 美国_16
-      - 俄罗斯
-      - TR
-      - us 🇺🇸
       - 美国_17
-      - 🇳🇱NL_2 | ⬇️ 3.8MB/s
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_10 | ⬇️ 4.4MB/s
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s
-      - us 🇺🇸_1
+      - FR
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - 英国-1A-广东移动
       - 美国_18
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
-      - 美国_19
-      - 🇺🇸US_1 | ⬇️ 2.5MB/s_1
-      - 🇺🇸US_2 | ⬇️ 4.3MB/s
-      - 美国_20
-      - 🇺🇸US_2 | ⬇️ 4.7MB/s
-      - us 🇺🇸_2
-      - 美国_21
-      - 美国_22
-      - 加拿大
-      - 美国_23
-      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
-      - caCA
-      - 美国_24
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_14
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_15
-      - 美国_25
-      - US_1
+      - AkileKrp01-vless-reality|px87.love@xray.com
       - US SS-20 | free-nodes
-      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - " HK-ss_2"
       - US SS-20 | free-nodes_1
-      - 墨西哥
-      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
-      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_16
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_1
-      - 香港_11
-      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_2
-      - 🇩🇪DE_1 | ⬇️ 6.8MB/s_17
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
-      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
-      - 澳门 01
-      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
-      - 香港_12
-      - US SS-20 | free-nodes_2
-      - US_2
-      - 🇺🇸US_1 | ⬇️ 5.6MB/s
-      - 美国_26
-      - 日本_5
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s
-      - 🏳️ ShatakVPN 201045
-      - 美国_27
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
       - 🇺🇸 ShatakVPN 569904
-      - 🇦🇲 亚美尼亚 | AM-063 @zyzzzoaoa_1
-      - 🇬🇧GB_1|1.2MB/s
-      - US_3
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_1
-      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
-      - 🇬🇧GB_1 | ⬇️ 3.6MB/s
-      - 🇬🇧GB_1 | ⬇️ 4.0MB/s_2
-      - 🇬🇧GB_1 | ⬇️ 3.9MB/s_2
-      - GB
-      - 🇬🇧GB_2 | ⬇️ 2.4MB/s_1
-      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
-      - SG-ss_4
+      - US SS-20 | free-nodes_2
+      - HK_3
+      - US SS-20 | free-nodes_3
+      - US SS-20 | free-nodes_4
+      - 美国_19
+      - 美国_20
 rule-providers:
   LocalAreaNetwork:
     type: http
