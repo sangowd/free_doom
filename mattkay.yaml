@@ -46,61 +46,167 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: US
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 香港-优化-Gemini
+    type: vmess
+    server: planb.mojcn.com
+    port: 16632
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 香港WAP-优化-Gemini
+    type: vmess
+    server: planb.mojcn.com
+    port: 16622
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 香港-优化2-Gemini
+    type: vmess
+    server: m.cnmjin.net
+    port: 16632
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
   - name: HK
-    type: ss
-    server: cf.zhetengsha.eu.org
+    type: trojan
+    server: nrtcfdns.zone.id
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_1
-    type: ss
-    server: cf.zhetengsha.eu.org
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 香港WAP-优化2-Gemini
+    type: vmess
+    server: m.cnmjin.net
+    port: 16622
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 🇲🇴MO_1 | ⬇️ 4.8MB/s
+    type: anytls
+    server: hkaws.ccwink.photos
+    port: 60006
+    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+    sni: hkaws.ccwink.photos
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 香港-优化3-Gemini
+    type: vmess
+    server: t.cnmjcn.cyou
+    port: 16632
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 香港WAP-优化3-Gemini
+    type: vmess
+    server: t.cnmjcn.cyou
+    port: 16622
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 🇳🇱NL_2 | ⬇️ 2.1MB/s
+    type: trojan
+    server: apt-magpie.rooster465.autos
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 日本
-    type: ss
-    server: cf.090227.xyz
+    password: IL37892054
+    sni: apt-magpie.rooster465.autos
+    skip-cert-verify: false
+    tls: true
+  - name: 台湾-优化3
+    type: vmess
+    server: t.cnmjcn.cyou
+    port: 16616
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: ❓Other_1 | ⬇️ 1.1MB/s
+    type: trojan
+    server: 152.53.200.167
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+  - name: JP|官方优选|100ms
+    type: trojan
+    server: 108.162.198.106
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_2
-    type: ss
-    server: cf.090227.xyz
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|99ms
+    type: trojan
+    server: 108.162.198.8
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: " HK-ss"
     type: ss
     server: cf.zhetengsha.eu.org
@@ -112,376 +218,87 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_1
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 83b4yezw
-    type: vless
-    server: panda.cumotech.com
-    port: 49836
-    uuid: 2b7118d9-04c0-4c2f-8a2d-fe44bef73c7b
-    servername: tesla.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: GO5Oj6pvIPmAz3D-c1B5FZy4ZeVpnPQzcX1cZcnS9i0
-      short-id: b6d67bd8896d16
-  - name: 9kg-wmrhcggp
-    type: vless
-    server: 9kg.cumotech.com
-    port: 21876
-    uuid: 7db4a03c-7616-42f1-a1e7-80ec822e1ed0
-    servername: tesla.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4SQmJ_vJw_UhDZ-sHlex6aJlYO0w7LndThtCaUDPYiI
-      short-id: 204673043ea9
-  - name: US_3
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: jflsjlaf.pages.dev
-  - name: ❓Other_1 | ⬇️ 3.5MB/s
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /
-  - name: US_4
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /
-  - name: 美国
+  - name: 日本-优化3
     type: vmess
-    server: d.810114.xyz
-    port: 443
-    uuid: 2ce2ab9a-ea25-45d3-80d9-c361878bb983
+    server: t.cnmjcn.cyou
+    port: 16617
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /mea
-  - name: US_5
-    type: trojan
-    server: saas.sin.fan
-    port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      path: /
       headers:
-        Host: sni.111000.dynv6.net
-  - name: ❓Other_1 | ⬇️ 3.5MB/s_1
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 新加坡-优化2-Gemini-GPT
+    type: vmess
+    server: m.cnmjin.net
+    port: 16618
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: false
-    tls: true
+    network: ws
     ws-opts:
       path: /
-  - name: 00-Trojan-jp-AI
-    type: trojan
-    server: jp.111000.cc.cd
-    port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
-        Host: sni.111000.dynv6.net
-  - name: TW-ss
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: JP-ss
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: " 美國"
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: JP|官方优选|101ms
     type: trojan
-    server: 172.66.44.230
-    port: 8443
-    password: 8r<[9'l6hAO#8ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-      headers:
-        Host: Koma-YT.PAGeS.Dev
-  - name: SG-ss
-    type: ss
-    server: mfa.gov.ua
+    server: 108.162.198.51
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_6
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: KR-ss
-    type: ss
-    server: cf.130519.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_7
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " HK-ss_1"
-    type: ss
-    server: cf.877774.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: HK_2
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: SG-ss_1
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: " JP-ss"
-    type: ss
-    server: saas.sin.fan
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP-ss_1
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇺🇸US_2 | ⬇️ 4.0MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: TW-ss_1
-    type: ss
-    server: sub.danfeng.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: JP
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_8
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_9
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_10
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: HK-ss_1
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: US_11
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇺🇸US_4 | ⬇️ 4.7MB/s
-    type: hysteria2
-    server: 38.165.21.126
-    port: 29794
-    password: fGIvSUXOYn7WYPNAc2PmjYuIKbw
-    sni: bing.com
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
     skip-cert-verify: true
-  - name: 01-Trojan-030101.xyz
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 新加坡-优化-Gemini-GPT
+    type: vmess
+    server: planb.mojcn.com
+    port: 16618
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: JP|官方优选|103ms
     type: trojan
-    server: bestcf.030101.xyz
+    server: 108.162.198.26
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cf.zhetengsha.eu.org
+    type: trojan
+    server: cf.zhetengsha.eu.org
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 02-Trojan-saas.sin.fan
+    type: trojan
+    server: saas.sin.fan
     port: 443
     password: 6202b230-417c-4d8e-b624-0f71afa9c75d
     sni: sni.111000.dynv6.net
@@ -493,28 +310,54 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: " HK-ss_2"
-    type: ss
-    server: cf.008500.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 🇺🇸US_1 | ⬇️ 1.1MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
+  - name: SG 官方优选 141ms
+    type: trojan
+    server: 108.162.192.90
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
     tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|143ms
+    type: trojan
+    server: 172.64.148.169
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cdn.2020111.xyz
+    type: trojan
+    server: cdn.2020111.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms
+    type: trojan
+    server: 8.39.125.148
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: 03-Trojan-cloudflare88
     type: trojan
     server: freeyx.cloudflare88.eu.org
@@ -529,20 +372,70 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: SG-ss_2
-    type: ss
-    server: mfa.gov.ua
+  - name: 加拿大
+    type: trojan
+    server: saas.sin.fan
     port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: SG-ss_3
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: cfsaas.080112.xyz
+    type: trojan
+    server: cfsaas.080112.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cloudflare.cfgo.cc
+    type: trojan
+    server: cloudflare.cfgo.cc
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 00-Trojan-jp-AI
+    type: trojan
+    server: jp.111000.cc.cd
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: US
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: KR-ss
     type: ss
-    server: store.ubi.com
+    server: cf.130519.xyz
     port: 443
     cipher: none
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
@@ -551,16 +444,105 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: ❓Other_1 | ⬇️ 3.5MB/s_2
+  - name: cf.877774.xyz
     type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
+    server: cf.877774.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|102ms
+    type: trojan
+    server: 108.162.198.221
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 01-Trojan-030101.xyz
+    type: trojan
+    server: bestcf.030101.xyz
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
     skip-cert-verify: false
     tls: true
     ws-opts:
-      path: /
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: cf.130519.xyz
+    type: trojan
+    server: cf.130519.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: sub.danfeng.eu.org
+    type: trojan
+    server: sub.danfeng.eu.org
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: " JP-ss"
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 00-Trojan-jp-AI_1
+    type: trojan
+    server: jp.111000.cc.cd
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: freeyx.cloudflare88.eu.org
+    type: trojan
+    server: freeyx.cloudflare88.eu.org
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: KR-ss_1
     type: ss
     server: cf.130519.xyz
@@ -572,7 +554,618 @@ proxies:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
       path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 03-Trojan-cloudflare88_1
+    type: trojan
+    server: freeyx.cloudflare88.eu.org
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: cloudflare-ip.mofashi.ltd
+    type: trojan
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: img.yust.eu.org
+    type: trojan
+    server: img.yust.eu.org
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP-ss
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 新加坡-优化3-Gemini
+    type: vmess
+    server: t.cnmjcn.cyou
+    port: 16618
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: " JP-ss_1"
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP|官方优选|102ms_1
+    type: trojan
+    server: 108.162.198.145
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
   - name: 美国_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: JP|官方优选|100ms_1
+    type: trojan
+    server: 108.162.198.178
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.7
+    type: trojan
+    server: 172.64.153.4
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_2
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: JP|官方优选|100ms_2
+    type: trojan
+    server: 108.162.198.249
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG 官方优选 140ms
+    type: trojan
+    server: 172.64.33.225
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.5
+    type: trojan
+    server: 104.18.46.91
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 台湾-优化2-GPT
+    type: vmess
+    server: m.cnmjin.net
+    port: 16616
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: JP|官方优选|99ms_1
+    type: trojan
+    server: 108.162.198.147
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP 官方优选 102ms
+    type: trojan
+    server: 108.162.198.155
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|141ms
+    type: trojan
+    server: 8.39.125.101
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 印度-优化
+    type: vmess
+    server: planb.mojcn.com
+    port: 16626
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: SG|官方优选|136ms
+    type: trojan
+    server: 104.18.37.240
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_1
+    type: trojan
+    server: 172.64.144.157
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|101ms_1
+    type: trojan
+    server: 108.162.198.89
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_2
+    type: trojan
+    server: 8.39.125.158
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.6
+    type: trojan
+    server: 104.18.35.59
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_3
+    type: trojan
+    server: 8.39.125.116
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|139ms
+    type: trojan
+    server: 172.64.145.109
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_3
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: JP|官方优选|99ms_2
+    type: trojan
+    server: 162.159.38.225
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.1
+    type: trojan
+    server: 172.64.144.4
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG 官方优选 142ms
+    type: trojan
+    server: 104.18.43.138
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|103ms_1
+    type: trojan
+    server: 172.64.229.73
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: AT
+    type: trojan
+    server: 152.53.200.167
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: 🇺🇸US_27 | ⬇️ 1.4MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: SG Senflare优选.2
+    type: trojan
+    server: 104.18.43.58
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.11
+    type: trojan
+    server: 104.18.33.192
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_4
+    type: trojan
+    server: 162.159.35.241
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.10
+    type: trojan
+    server: 172.64.154.242
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|137ms
+    type: trojan
+    server: 8.35.211.219
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|103ms_2
+    type: trojan
+    server: 162.159.45.11
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP|官方优选|102ms_2
+    type: trojan
+    server: 108.162.198.163
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG 官方优选 140ms_1
+    type: trojan
+    server: 173.245.58.197
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.3
+    type: trojan
+    server: 172.64.156.154
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: JP-ss_1
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: cfip.1323123.xyz
+    type: trojan
+    server: cfip.1323123.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_5
+    type: trojan
+    server: 8.39.125.42
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|139ms_1
+    type: trojan
+    server: 104.18.35.96
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: bestcf.030101.xyz
+    type: trojan
+    server: bestcf.030101.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_6
+    type: trojan
+    server: 8.35.211.159
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG 官方优选 146ms
+    type: trojan
+    server: 108.162.194.70
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_4
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -586,186 +1179,114 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: TURK1.NET.NET
-  - name: 🇺🇸US_2 | ⬇️ 2.4MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
+  - name: SG|官方优选|136ms_1
+    type: trojan
+    server: 173.245.58.159
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
     tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 美国_2
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
     ws-opts:
-      path: /
+      path: /?ed=2560
       headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_3
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|138ms_7
+    type: trojan
+    server: 104.18.44.197
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      path: /?ed=2560
       headers:
-        Host: TABRIZ.NET
-  - name: 美国_4
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.4
+    type: trojan
+    server: 172.64.146.47
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
     ws-opts:
-      path: /
+      path: /?ed=2560
       headers:
-        Host: AZERB.NET
+        Host: sub.oobiaoooo.de5.net
+  - name: SG-ss
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG 官方优选 138ms
+    type: trojan
+    server: 108.162.194.36
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG 官方优选 144ms
+    type: trojan
+    server: 173.245.58.190
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: " 美國"
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: SG 官方优选 143ms
+    type: trojan
+    server: 198.41.211.60
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG Senflare优选.9
+    type: trojan
+    server: 104.18.42.33
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-    client-fingerprint: chrome
-  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: FR
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_7
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 🇺🇸US_25 | ⬇️ 2.2MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 美国_9
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: 美国_10
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 美国_11
     type: vmess
     server: 2001:bc8:32d7:302::16
     port: 44579
@@ -779,28 +1300,171 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: US_12
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
+  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
     tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: SG-ss_4
-    type: ss
-    server: store.ubi.com
+    udp: false
+  - name: SG|官方优选|139ms_2
+    type: trojan
+    server: 198.41.223.241
     port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::14
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: SG|官方优选|144ms
+    type: trojan
+    server: 8.35.211.1
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cf.008500.xyz
+    type: trojan
+    server: cf.008500.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cdn.204910.best
+    type: trojan
+    server: cdn.204910.best
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_8
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇺🇸US_25 | ⬇️ 2.9MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    sni: 45.221.98.14
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 01-Trojan-030101.xyz_1
+    type: trojan
+    server: bestcf.030101.xyz
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 美国_9
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
+  - name: 美国_10
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: 美国_11
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
   - name: 美国_12
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -813,37 +1477,18 @@ proxies:
     network: ws
     ws-opts:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
+  - name: SG 官方优选 142ms_1
+    type: trojan
+    server: 173.245.59.74
+    port: 8443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
     skip-cert-verify: true
     tls: true
-    udp: false
-  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: 美国_13
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -855,50 +1500,7 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: SG_1
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: ❓Other_1 | ⬇️ 4.3MB/s
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /
-  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s_2
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
   - name: 美国_14
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -913,53 +1515,21 @@ proxies:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
         Host: 2001:bc8:32d7:302::10
-  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_44 | ⬇️ 4.7MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 🇺🇸US_53 | ⬇️ 1.2MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    sni: 45.221.98.14
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: US_13
-    type: vmess
-    server: d.810114.xyz
+  - name: SG|官方优选|137ms_1
+    type: trojan
+    server: 8.39.125.97
     port: 443
-    uuid: 2ce2ab9a-ea25-45d3-80d9-c361878bb983
-    alterId: 0
-    cipher: auto
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
     tls: true
-    skip-cert-verify: false
-    network: ws
     ws-opts:
-      path: /mea
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
   - name: 美国_15
     type: vmess
-    server: 2001:bc8:32d7:302::11
+    server: 2001:bc8:32d7:302::17
     port: 44579
     uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
     alterId: 0
@@ -968,68 +1538,20 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
-        Host: TABRIZ.NET
-  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_3 | ⬇️ 2.9MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    sni: 45.221.98.14
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_25 | ⬇️ 2.9MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    sni: 45.221.98.14
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇧🇬BG_1 | ⬇️ 1.5MB/s
+        Host: AZERB.NET
+  - name: HK-ss
     type: ss
-    server: 194.68.225.52
-    port: 65232
-    cipher: chacha20-ietf-poly1305
-    password: 6J754ee6ITjyfDysi78uqJ
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
   - name: 美国_16
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1041,225 +1563,7 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: ?ed=2048
-  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: US_14
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: CCS+｜+洛杉矶
-    type: vless
-    server: 107.172.67.59
-    port: 44439
-    uuid: 0f780c56-a708-44d9-a1a1-7c210b65e44f
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: lRUqKrHoHDHOV4kd8bhZ3BID8Nc-wtoTIUTI7COFtTA
-      short-id: 7af883
-  - name: 🇺🇸US_3 | ⬇️ 4.4MB/s
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: HK_3
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: Netcup+|+非优化
-    type: vless
-    server: 5.181.48.45
-    port: 44435
-    uuid: 0f780c56-a708-44d9-a1a1-7c210b65e44f
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: CdCF_1UhM5QocRpNw2I7DasURAf3n80BoFskTI8WKHw
-      short-id: 19fc123c52e7c30a
-  - name: 🇺🇸 ShatakVPN 569904
-    type: vless
-    server: 104.18.32.47
-    port: 2052
-    uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
-    network: http
-    tls: false
-    http-opts:
-      path:
-        - /pabloping
-      headers:
-        Host:
-          - s2.nakosgol.com
-  - name: US SS-20 | free-nodes
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes_1
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes_2
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes_3
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes_4
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: US SS-20 | free-nodes_5
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: CCS+｜+洛杉矶_1
-    type: vless
-    server: 107.172.67.59
-    port: 44439
-    uuid: 0f780c56-a708-44d9-a1a1-7c210b65e44f
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: lRUqKrHoHDHOV4kd8bhZ3BID8Nc-wtoTIUTI7COFtTA
-      short-id: 7af883
-  - name: 🇩🇪DE_2 | ⬇️ 5.1MB/s
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: dc08d353-44f5-45b6-b273-703ff5e955dc
-    network: ws
-    servername: 639073677243308853.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /jxyughws?ed=2560
-      headers:
-        Host: 639073677243308853.camry-perma.info
-  - name: US_15
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: " JP-ss_1"
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: AT
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: jflsjlaf.pages.dev
-  - name: 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    servername: itunes.apple.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-      short-id: d557c6895d014075
-  - name: ❓Other_1 | ⬇️ 3.5MB/s_3
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
   - name: 美国_17
     type: vmess
     server: 2001:bc8:32d7:302::10
@@ -1272,9 +1576,18 @@ proxies:
     network: ws
     ws-opts:
       path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_18
+  - name: JP
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: FR
     type: vmess
     server: 2001:bc8:32d7:302::10
     port: 44579
@@ -1288,318 +1601,704 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
       headers:
         Host: AZERB.NET
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_20
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: US_16
-    type: vmess
-    server: 103.181.164.237
-    port: 34114
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇧🇬BG_1 | ⬇️ 1.4MB/s
-    type: ss
-    server: 194.68.225.52
-    port: 65232
-    cipher: chacha20-ietf-poly1305
-    password: 6J754ee6ITjyfDysi78uqJ
-  - name: 美国_21
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: Netcup+|+非优化_1
-    type: vless
-    server: 5.181.48.45
-    port: 44435
-    uuid: 0f780c56-a708-44d9-a1a1-7c210b65e44f
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: CdCF_1UhM5QocRpNw2I7DasURAf3n80BoFskTI8WKHw
-      short-id: 19fc123c52e7c30a
-  - name: US SS-20 | free-nodes_6
+  - name: US SS-20 | free-nodes
     type: ss
     server: tinkered-pennies-puppies.freesocks.work
     port: 443
     cipher: chacha20-ietf-poly1305
     password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 🇺🇸美国-10
+    type: anytls
+    server: 155.94.145.166
+    port: 8443
+    password: tzjz55
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇳🇱NL_3 | ⬇️ 1.7MB/s
+    type: tuic
+    server: ip1.758733.xyz
+    port: 10088
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    password: dongtaiwang.com
+    sni: apple.com
+    alpn:
+      - h3
+    congestion-controller: bbr
+    skip-cert-verify: false
+    disable-sni: false
+  - name: "🇺🇸US_6|1.6MB/s "
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
+  - name: 🇳🇱NL_3 | ⬇️ 2.9MB/s
+    type: trojan
+    server: upright-rhino.rooster465.autos
+    port: 443
+    password: IL37892054
+    sni: upright-rhino.rooster465.autos
+    skip-cert-verify: false
+    tls: true
+  - name: 日本-优化2
+    type: vmess
+    server: m.cnmjin.net
+    port: 16617
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: 剩余流量：5828.32 GB
+    type: vmess
+    server: planb.mojcn.com
+    port: 16617
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: JP_1
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss_1
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " HK-ss_1"
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_1
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_2
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_2
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: JP-ss_2
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: TW-ss
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US_1
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: fn.130519.xyz
+    type: trojan
+    server: fn.130519.xyz
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: OTHER
+    type: trojan
+    server: 152.53.200.167
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+  - name: 🇵🇱PL_1 | ⬇️ 3.0MB/s
+    type: trojan
+    server: outgoing-ladybird.rooster465.autos
+    port: 443
+    password: IL37892054
+    sni: outgoing-ladybird.rooster465.autos
+    skip-cert-verify: false
+    tls: true
+  - name: cf-cname.xingpingcn.top
+    type: trojan
+    server: cf-cname.xingpingcn.top
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: cdns.doon.eu.org
+    type: trojan
+    server: cdns.doon.eu.org
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG-ss_3
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: cf.tencentapp.cn
+    type: trojan
+    server: cf.tencentapp.cn
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_18
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: AZERB.NET
+  - name: 🇺🇸US_2 | ⬇️ 2.9MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 台湾-优化
+    type: vmess
+    server: planb.mojcn.com
+    port: 16616
+    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+  - name: JP|官方优选|101ms_2
+    type: trojan
+    server: 162.159.38.233
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: SG|官方优选|137ms_2
+    type: trojan
+    server: 8.35.211.216
+    port: 443
+    password: "123456"
+    sni: sub.oobiaoooo.de5.net
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.oobiaoooo.de5.net
+  - name: 美国_19
+    type: vmess
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 🇺🇸US_37 | ⬇️ 4.1MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    sni: 45.221.98.14
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 美国_20
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇺🇸US_10 | ⬇️ 2.2MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: US_2
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1609,493 +2308,661 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2118,124 +2985,166 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US
+      - 香港-优化-Gemini
+      - 香港WAP-优化-Gemini
+      - 香港-优化2-Gemini
       - HK
-      - US_1
-      - 日本
-      - US_2
+      - 香港WAP-优化2-Gemini
+      - 🇲🇴MO_1 | ⬇️ 4.8MB/s
+      - 香港-优化3-Gemini
+      - 香港WAP-优化3-Gemini
+      - 🇳🇱NL_2 | ⬇️ 2.1MB/s
+      - 台湾-优化3
+      - ❓Other_1 | ⬇️ 1.1MB/s
+      - JP|官方优选|100ms
+      - JP|官方优选|99ms
       - " HK-ss"
-      - HK_1
-      - 83b4yezw
-      - 9kg-wmrhcggp
-      - US_3
-      - ❓Other_1 | ⬇️ 3.5MB/s
-      - US_4
-      - 美国
-      - US_5
-      - ❓Other_1 | ⬇️ 3.5MB/s_1
-      - 00-Trojan-jp-AI
-      - TW-ss
-      - HK-ss
-      - JP-ss
-      - " 美國"
-      - SG-ss
-      - US_6
-      - KR-ss
-      - US_7
-      - " HK-ss_1"
-      - HK_2
-      - SG-ss_1
-      - " JP-ss"
-      - JP-ss_1
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s
-      - TW-ss_1
-      - JP
-      - US_8
-      - US_9
-      - US_10
-      - SG
-      - HK-ss_1
-      - US_11
-      - 🇺🇸US_4 | ⬇️ 4.7MB/s
-      - 01-Trojan-030101.xyz
-      - " HK-ss_2"
-      - 🇺🇸US_1 | ⬇️ 1.1MB/s
+      - 日本-优化3
+      - 新加坡-优化2-Gemini-GPT
+      - JP|官方优选|101ms
+      - 新加坡-优化-Gemini-GPT
+      - JP|官方优选|103ms
+      - cf.zhetengsha.eu.org
+      - 02-Trojan-saas.sin.fan
+      - SG 官方优选 141ms
+      - SG|官方优选|143ms
+      - cdn.2020111.xyz
+      - SG|官方优选|138ms
       - 03-Trojan-cloudflare88
-      - SG-ss_2
-      - SG-ss_3
-      - ❓Other_1 | ⬇️ 3.5MB/s_2
+      - 加拿大
+      - cfsaas.080112.xyz
+      - cloudflare.cfgo.cc
+      - 00-Trojan-jp-AI
+      - US
+      - KR-ss
+      - cf.877774.xyz
+      - JP|官方优选|102ms
+      - 01-Trojan-030101.xyz
+      - cf.130519.xyz
+      - sub.danfeng.eu.org
+      - " JP-ss"
+      - 00-Trojan-jp-AI_1
+      - freeyx.cloudflare88.eu.org
       - KR-ss_1
+      - 03-Trojan-cloudflare88_1
+      - cloudflare-ip.mofashi.ltd
+      - img.yust.eu.org
+      - JP-ss
+      - 新加坡-优化3-Gemini
+      - " JP-ss_1"
+      - JP|官方优选|102ms_1
+      - 美国
       - 美国_1
-      - 🇺🇸US_2 | ⬇️ 2.4MB/s
+      - JP|官方优选|100ms_1
+      - SG Senflare优选.7
       - 美国_2
+      - JP|官方优选|100ms_2
+      - SG 官方优选 140ms
+      - SG Senflare优选.5
+      - 台湾-优化2-GPT
+      - JP|官方优选|99ms_1
+      - JP 官方优选 102ms
+      - SG|官方优选|141ms
+      - 印度-优化
+      - SG|官方优选|136ms
+      - SG|官方优选|138ms_1
+      - JP|官方优选|101ms_1
+      - SG|官方优选|138ms_2
+      - SG Senflare优选.6
+      - SG|官方优选|138ms_3
+      - SG|官方优选|139ms
       - 美国_3
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s
+      - JP|官方优选|99ms_2
+      - SG Senflare优选.1
+      - SG 官方优选 142ms
+      - JP|官方优选|103ms_1
+      - AT
+      - 🇺🇸US_27 | ⬇️ 1.4MB/s
+      - SG Senflare优选.2
+      - SG Senflare优选.11
+      - SG|官方优选|138ms_4
+      - SG Senflare优选.10
+      - SG|官方优选|137ms
+      - JP|官方优选|103ms_2
+      - JP|官方优选|102ms_2
+      - SG 官方优选 140ms_1
+      - SG Senflare优选.3
+      - JP-ss_1
+      - cfip.1323123.xyz
+      - SG|官方优选|138ms_5
+      - SG|官方优选|139ms_1
+      - bestcf.030101.xyz
+      - SG|官方优选|138ms_6
+      - SG 官方优选 146ms
       - 美国_4
+      - SG|官方优选|136ms_1
+      - SG|官方优选|138ms_7
+      - SG Senflare优选.4
+      - SG-ss
+      - SG 官方优选 138ms
+      - SG 官方优选 144ms
+      - " 美國"
+      - SG 官方优选 143ms
+      - SG Senflare优选.9
       - 美国_5
-      - 🇺🇸US_332 | ⬇️ 2.1MB/s
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s
-      - FR
+      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
+      - SG|官方优选|139ms_2
       - 美国_6
       - 美国_7
+      - SG|官方优选|144ms
+      - cf.008500.xyz
+      - cdn.204910.best
       - 美国_8
-      - 🇺🇸US_25 | ⬇️ 2.2MB/s
+      - 🇺🇸US_25 | ⬇️ 2.9MB/s
+      - 01-Trojan-030101.xyz_1
       - 美国_9
       - 美国_10
       - 美国_11
-      - US_12
-      - SG-ss_4
       - 美国_12
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s
+      - SG 官方优选 142ms_1
       - 美国_13
-      - SG_1
-      - ❓Other_1 | ⬇️ 4.3MB/s
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_1
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_2
       - 美国_14
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_1
-      - 🇺🇸US_44 | ⬇️ 4.7MB/s
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s
-      - US_13
+      - SG|官方优选|137ms_1
       - 美国_15
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_2
-      - 🇺🇸US_3 | ⬇️ 2.9MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s_2
-      - 🇺🇸US_53 | ⬇️ 1.2MB/s_1
-      - 🇺🇸US_25 | ⬇️ 2.9MB/s
-      - 🇧🇬BG_1 | ⬇️ 1.5MB/s
+      - HK-ss
       - 美国_16
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_3
-      - US_14
-      - 🇺🇸US_2 | ⬇️ 4.0MB/s_1
-      - CCS+｜+洛杉矶
-      - 🇺🇸US_3 | ⬇️ 4.4MB/s
-      - HK_3
-      - 🇺🇸US_2 | ⬇️ 2.9MB/s_3
-      - Netcup+|+非优化
-      - 🇺🇸 ShatakVPN 569904
-      - US SS-20 | free-nodes
-      - US SS-20 | free-nodes_1
-      - US SS-20 | free-nodes_2
-      - US SS-20 | free-nodes_3
-      - US SS-20 | free-nodes_4
-      - US SS-20 | free-nodes_5
-      - CCS+｜+洛杉矶_1
-      - 🇩🇪DE_2 | ⬇️ 5.1MB/s
-      - US_15
-      - " JP-ss_1"
-      - AT
-      - 🇺🇸US_2 | ⬇️ 2.3MB/s_4
-      - ❓Other_1 | ⬇️ 3.5MB/s_3
       - 美国_17
+      - JP
+      - FR
+      - US SS-20 | free-nodes
+      - 🇺🇸美国-10
+      - 🇳🇱NL_3 | ⬇️ 1.7MB/s
+      - "🇺🇸US_6|1.6MB/s "
+      - 🇳🇱NL_3 | ⬇️ 2.9MB/s
+      - 日本-优化2
+      - 剩余流量：5828.32 GB
+      - JP_1
+      - HK-ss_1
+      - " HK-ss_1"
+      - SG-ss_1
+      - HK-ss_2
+      - SG-ss_2
+      - JP-ss_2
+      - TW-ss
+      - US_1
+      - fn.130519.xyz
+      - OTHER
+      - 🇵🇱PL_1 | ⬇️ 3.0MB/s
+      - cf-cname.xingpingcn.top
+      - cdns.doon.eu.org
+      - SG-ss_3
+      - cf.tencentapp.cn
       - 美国_18
+      - 🇺🇸US_2 | ⬇️ 2.9MB/s
+      - 台湾-优化
+      - JP|官方优选|101ms_2
+      - SG|官方优选|137ms_2
       - 美国_19
+      - 🇺🇸US_37 | ⬇️ 4.1MB/s
       - 美国_20
-      - US_16
-      - 🇧🇬BG_1 | ⬇️ 1.4MB/s
-      - 美国_21
-      - Netcup+|+非优化_1
-      - US SS-20 | free-nodes_6
+      - 🇺🇸US_10 | ⬇️ 2.2MB/s
+      - US_2
 rule-providers:
   LocalAreaNetwork:
     type: http
