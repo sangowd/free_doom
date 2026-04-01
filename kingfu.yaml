@@ -46,29 +46,30 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇰🇷 韩国 03
-    type: vless
-    server: 47.80.13.250
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    servername: api.company-target.com
-    tls: true
-    client-fingerprint: random
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
   - name: 🇭🇰 香港 06
     type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12163
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: HK
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    skip-cert-verify: true
+    server: 47.242.145.136
+    port: 8001
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: KR
+    type: vless
+    server: 106.242.64.238
+    port: 50000
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
     tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /doujin/video
+      headers:
+        Host: edt2.btxst.eu.cc
   - name: US
     type: trojan
     server: 58.152.25.253
@@ -76,12 +77,156 @@ proxies:
     password: BxceQaOe
     skip-cert-verify: true
     tls: true
-  - name: 🇭🇰 香港 21
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14628
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+  - name: TW VLESS-109 | free-nodes
+    type: vless
+    server: 106.105.161.54
+    port: 12345
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.chinat.eu.cc
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinat.eu.cc
+  - name: 🇺🇸 美国 04
+    type: vless
+    server: 140.235.10.14
+    port: 30003
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: 🇮🇩 印度尼西亚
+    type: vmess
+    server: 8.130.185.163
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: mn1ray.jagoanvip.xyz
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: AT
+    type: trojan
+    server: 152.53.200.167
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: AT_1
+    type: trojan
+    server: 152.53.45.251
+    port: 8888
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: 🇴🇲 阿曼
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: AT_2
+    type: trojan
+    server: 152.53.200.98
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: US_1
+    type: vless
+    server: 192.0.63.124
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.chinat.eu.cc
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinat.eu.cc
+  - name: CH
+    type: vless
+    server: 138.226.240.199
+    port: 4433
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: NL
+    type: vless
+    server: 185.94.29.156
+    port: 4001
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: US_2
+    type: vless
+    server: 43.153.61.80
+    port: 40874
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /temp/edu
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: US_3
+    type: vless
+    server: 192.0.63.115
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
   - name: JP
     type: ss
     server: cf.090227.xyz
@@ -93,49 +238,474 @@ proxies:
       mode: websocket
       host: woshinidie-et3.pages.dev
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 02-Trojan-saas.sin.fan
-    type: trojan
-    server: saas.sin.fan
+  - name: 🇺🇸 美国 14
+    type: ss
+    server: store.ubi.com
     port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇺🇸 美国 12
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇺🇸 美国 07
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US_4
+    type: vless
+    server: 192.0.63.49
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
     tls: true
     ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      path: /danfeng?ed=2560
       headers:
-        Host: sni.111000.dynv6.net
-  - name: 02-Trojan-saas.sin.fan_1
-    type: trojan
-    server: saas.sin.fan
+        Host: snippet.danfeng.theworkpc.com
+  - name: US_5
+    type: vless
+    server: 192.0.54.188
     port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.kozow.com
     tls: true
     ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      path: /danfeng?ed=2560
       headers:
-        Host: sni.111000.dynv6.net
-  - name: 02-Trojan-saas.sin.fan_2
-    type: trojan
-    server: saas.sin.fan
+        Host: snippet.danfeng.kozow.com
+  - name: 🇸🇬SG_2 | ⬇️ 1.9MB/s
+    type: vless
+    server: 192.0.63.18
     port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.loc.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.loc.cc
+  - name: NL_1
+    type: vless
+    server: 185.94.29.156
+    port: 4001
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
     tls: true
     ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      path: /
       headers:
-        Host: sni.111000.dynv6.net
-  - name: US_1
+        Host: sub.mot.ip-ddns.com
+  - name: US_6
+    type: vless
+    server: 192.0.54.216
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.ndjp.net
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.ndjp.net
+  - name: 🇺🇸 美国 09
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US_7
+    type: vless
+    server: 192.0.63.18
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.loc.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.loc.cc
+  - name: 🇺🇸US_1 | ⬇️ 1.7MB/s
+    type: vless
+    server: 150.241.83.152
+    port: 10121
+    uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
+      short-id: 9c2a7d4e5f18b6a3
+  - name: TW-ss
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: US_8
+    type: vless
+    server: 192.0.54.131
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.kozow.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: US_9
+    type: vless
+    server: 192.0.63.56
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.kozow.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: 🇺🇸 美国 10
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: US_10
+    type: vless
+    server: 192.0.63.216
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: US_11
+    type: vless
+    server: 192.0.63.76
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: US_12
+    type: vless
+    server: 192.0.54.225
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.kozow.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: US_13
+    type: vless
+    server: 192.0.63.115
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: 更新日期 3.30
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: FR
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: 🇭🇰 香港 07
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇸🇬SG_1 | ⬇️ 1.2MB/s
+    type: vless
+    server: 192.0.63.115
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: 🇯🇵 日本 14
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK_1
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: KR_1
+    type: vless
+    server: 175.208.111.195
+    port: 50001
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: 美国
+    type: vmess
+    server: 2001:bc8:32d7:302::16
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 美国_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: AZERB.NET
+  - name: "JP "
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: CN
+    type: vless
+    server: 112.126.1.114
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.eu.org
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.eu.org
+  - name: 美国_2
+    type: vmess
+    server: 2001:bc8:32d7:302::17
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: US_14
+    type: vless
+    server: 192.0.63.216
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.theworkpc.com
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: 美国_3
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: CN_1
+    type: vless
+    server: 112.126.1.114
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.eu.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.eu.org
+  - name: FR_1
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 🇴🇲 阿曼_1
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国_4
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 美国_5
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+  - name: 03-Trojan-cloudflare88
     type: trojan
     server: freeyx.cloudflare88.eu.org
     port: 443
@@ -145,6 +715,975 @@ proxies:
       - http/1.1
     skip-cert-verify: false
     tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: HK_2
+    type: vless
+    server: 89.185.25.124
+    port: 443
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /version/collection
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: US_15
+    type: vless
+    server: 192.0.63.18
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.loc.cc
+    tls: true
+    ws-opts:
+      path: /danfeng?ed=2560
+      headers:
+        Host: snippet.danfeng.loc.cc
+  - name: 美国_6
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: 🇺🇸 美国 13
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇳🇱 荷兰 01
+    type: vless
+    server: 195.181.173.199
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+  - name: 🇺🇸 美国
+    type: trojan
+    server: 94.131.105.125
+    port: 4443
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    tls: true
+  - name: US_16
+    type: vless
+    server: 192.0.63.230
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.kozow.com
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: 美国_7
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: 🇸🇬SG_7 | ⬇️ 5.1MB/s
+    type: vless
+    server: 112.126.1.114
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.danfeng.eu.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.eu.org
+  - name: US_17
+    type: vless
+    server: 195.181.173.199
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+  - name: US_18
+    type: trojan
+    server: jp.111000.cc.cd
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: NL_2
+    type: vless
+    server: 152.53.200.241
+    port: 8443
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /channels
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: FI
+    type: vless
+    server: 31.58.171.230
+    port: 8443
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /jp/seller
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: AT_3
+    type: trojan
+    server: 152.53.60.198
+    port: 8444
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: 🇰🇷 韩国 01
+    type: ss
+    server: 211.48.77.114
+    port: 12312
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇯🇵 日本 02
+    type: ss
+    server: 202.84.53.85
+    port: 20755
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: 🇯🇵 日本 05
+    type: ss
+    server: 202.84.53.85
+    port: 17892
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: 美国_8
+    type: vmess
+    server: 2001:bc8:32d7:302::15
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK.NET
+  - name: 🇮🇷 伊朗
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国_9
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: 美国_10
+    type: vmess
+    server: 2001:bc8:32d7:302::14
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 美国_11
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 2001:bc8:32d7:302::10
+  - name: NL_3
+    type: vless
+    server: 5.35.36.146
+    port: 8443
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /dl/store
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: 🇯🇵 日本 01
+    type: ss
+    server: 202.84.53.85
+    port: 14740
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: VMESS节点2-ipv6
+    type: vmess
+    server: 2001:bc8:32d7:225::1
+    port: 23456
+    uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /alvin9999.com
+      headers:
+        Host: www.bing.com
+  - name: 🏳️ ShatakVPN 690322
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    network: ws
+    servername: 639073677243557970.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /yaeungws
+      headers:
+        Host: 639073677243557970.camry-perma.info
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    network: ws
+    servername: 639073677243557970.camry-perma.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /yaeungws
+      headers:
+        Host: 639073677243557970.camry-perma.info
+  - name: US_19
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    network: ws
+    servername: 639073677243557970.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /yaeungws
+      headers:
+        Host: 639073677243557970.camry-perma.info
+  - name: US_20
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /njvqoews?ed=2560
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: US SS-16 | free-nodes
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+  - name: 🇩🇪DE
+    type: vless
+    server: 199.34.229.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 01-Trojan-030101.xyz
+    type: trojan
+    server: bestcf.030101.xyz
+    port: 443
+    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    sni: sni.111000.dynv6.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 🇩🇪DE_1
+    type: vless
+    server: 216.24.57.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 未知 VLESS-107 | free-nodes
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /njvqoews
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: US_21
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /njvqoews
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: 🇨🇦加拿大02
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /njvqoews
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: 美国_12
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: Azerb.NET
+  - name: 🇩🇪DE_2
+    type: vless
+    server: 199.68.156.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_3
+    type: vless
+    server: 205.233.181.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_4
+    type: vless
+    server: 209.94.90.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: NL_4
+    type: trojan
+    server: 94.131.105.125
+    port: 4443
+    password: strong-secret-pass-777
+    sni: 94.131.105.125
+    skip-cert-verify: true
+    tls: true
+  - name: NL_5
+    type: vless
+    server: 195.181.173.199
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+  - name: 未知 VLESS-92 | free-nodes
+    type: vless
+    server: 195.181.173.199
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+  - name: VMESS节点2-ipv6_1
+    type: vmess
+    server: 2a14:7584:d0a2::a
+    port: 23456
+    uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /alvin9999.com
+      headers:
+        Host: www.bing.com
+  - name: NL_6
+    type: trojan
+    server: 94.131.105.125
+    port: 4443
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    tls: true
+  - name: DE
+    type: vless
+    server: 194.26.192.251
+    port: 5004
+    uuid: 8d2aeab8-ce98-47a6-84ec-d5b45d060b66
+    network: ws
+    servername: edt2.btxst.eu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /lesson/mall
+      headers:
+        Host: edt2.btxst.eu.cc
+  - name: 🇯🇵 日本 08
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 未知 VLESS-128 | free-nodes
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    network: ws
+    servername: 639073677243557970.camry-perma.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /yaeungws
+      headers:
+        Host: 639073677243557970.camry-perma.info
+  - name: 🇯🇵JP
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: US_22
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    network: ws
+    servername: 639073677243557970.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /yaeungws?ed=2560
+      headers:
+        Host: 639073677243557970.camry-perma.info
+  - name: 🇰🇷 韩国 02
+    type: ss
+    server: 211.48.77.114
+    port: 24095
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 美国_13
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ?ed=2048
+  - name: US_23
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    ws-opts:
+      path: /njvqoews?ed=2560
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: 美国_14
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+  - name: 美国_15
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: AZERB.NET
+  - name: 美国_16
+    type: vmess
+    server: 2001:bc8:32d7:302::11
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: TABRIZ.NET
+  - name: 🇭🇺HU
+    type: vless
+    server: 192.200.160.20
+    port: 443
+    uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+    network: ws
+    servername: 639073677243791121.camry-perma.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /njvqoews?ed=2560
+      headers:
+        Host: 639073677243791121.camry-perma.info
+  - name: 美国_17
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+  - name: 美国_18
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+      headers:
+        Host: AZERB.NET
+  - name: 美国_19
+    type: vmess
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+      headers:
+        Host: TURK1.NET.NET
+  - name: DE SS-54 | free-nodes
+    type: ss
+    server: 185.223.82.82
+    port: 10021
+    cipher: chacha20-ietf-poly1305
+    password: m02X9p9Cqn3Ic4l6PyJMF8
+  - name: KR_2
+    type: vless
+    server: 59.14.58.161
+    port: 25105
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.ndjp.net
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.ndjp.net
+  - name: 🇩🇪DE_5
+    type: vless
+    server: 212.183.88.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_6
+    type: vless
+    server: 209.46.30.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_7
+    type: vless
+    server: 198.71.232.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_8
+    type: vless
+    server: 199.34.230.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 🇩🇪DE_9
+    type: vless
+    server: 213.219.247.23
+    port: 8880
+    uuid: f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /compass/cdn?
+      headers:
+        Host:
+          - ci49kfwjrc-57129121185.hediiigate.com
+  - name: 秘鲁
+    type: vmess
+    server: pe1.bctuo.top
+    port: 443
+    uuid: 31801968-9877-4ef5-be87-56503c34a69d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇬🇧 GB_39
+    type: vmess
+    server: 82.198.246.46
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇬🇧 GB_40
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: SG-ss
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: KR-ss
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_1
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss_1
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: JP-ss
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss_2
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇹🇼 台湾家宽 12
+    type: ss
+    server: ncmrcg000116egb.cybervena.com
+    port: 50099
+    cipher: chacha20-ietf-poly1305
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  - name: 🇸🇬 新加坡 078
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇭🇰香港｜01｜HKT
+    type: hysteria2
+    server: hkt.ccwink.cc
+    port: 56309
+    password: ce147ad3-81a9-4623-9952-9621afc716a1
+    sni: hkt.ccwink.cc
+    skip-cert-verify: true
+  - name: 🇲🇴澳门｜04｜AWS
+    type: hysteria2
+    server: hkaws.ccwink.photos
+    port: 58
+    password: ce147ad3-81a9-4623-9952-9621afc716a1
+    sni: moak.ccwink.cc
+    skip-cert-verify: true
+  - name: 🇹🇼台湾｜01｜HiNet
+    type: hysteria2
+    server: tw.ccwink.cc
+    port: 30102
+    password: ce147ad3-81a9-4623-9952-9621afc716a1
+    sni: tw.ccwink.cc
+    skip-cert-verify: true
+  - name: 🇰🇷韩国｜01｜Tencent Cloud
+    type: hysteria2
+    server: kr.ccwink.cc
+    port: 56309
+    password: ce147ad3-81a9-4623-9952-9621afc716a1
+    sni: kr.ccwink.cc
+    skip-cert-verify: true
+  - name: 🇩🇪德国｜05｜AWS
+    type: hysteria2
+    server: hkaws.ccwink.photos
+    port: 56
+    password: ce147ad3-81a9-4623-9952-9621afc716a1
+    sni: de.ccwink.cc
+    skip-cert-verify: true
+  - name: 00-WS-jp-AI
+    type: vless
+    server: jp.111000.cc.cd
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    servername: sni.111000.dynv6.net
+    tls: true
+    client-fingerprint: chrome
     ws-opts:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
@@ -163,44 +1702,15 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: 01-Trojan-030101.xyz
-    type: trojan
+  - name: 01-WS-030101.xyz
+    type: vless
     server: bestcf.030101.xyz
     port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    servername: sni.111000.dynv6.net
     tls: true
-    ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
-      headers:
-        Host: sni.111000.dynv6.net
-  - name: 00-Trojan-jp-AI_1
-    type: trojan
-    server: jp.111000.cc.cd
-    port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?ed=2560&proxyip=ip.111000.de5.net:443
-      headers:
-        Host: sni.111000.dynv6.net
-  - name: 00-Trojan-jp-AI_2
-    type: trojan
-    server: jp.111000.cc.cd
-    port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    tls: true
+    client-fingerprint: chrome
     ws-opts:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
@@ -219,9 +1729,22 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: 01-Trojan-030101.xyz_2
+  - name: 02-WS-saas.sin.fan
+    type: vless
+    server: saas.sin.fan
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    servername: sni.111000.dynv6.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560&proxyip=ip.111000.de5.net:443
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 02-Trojan-saas.sin.fan
     type: trojan
-    server: bestcf.030101.xyz
+    server: saas.sin.fan
     port: 443
     password: 6202b230-417c-4d8e-b624-0f71afa9c75d
     sni: sni.111000.dynv6.net
@@ -233,32 +1756,20 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: JP-ss
-    type: ss
-    server: cdns.doon.eu.org
+  - name: 03-WS-cloudflare88
+    type: vless
+    server: freeyx.cloudflare88.eu.org
     port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 01-Trojan-030101.xyz_3
-    type: trojan
-    server: bestcf.030101.xyz
-    port: 443
-    password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    sni: sni.111000.dynv6.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    servername: sni.111000.dynv6.net
     tls: true
+    client-fingerprint: chrome
     ws-opts:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: 03-Trojan-cloudflare88
+  - name: 03-Trojan-cloudflare88_1
     type: trojan
     server: freeyx.cloudflare88.eu.org
     port: 443
@@ -272,1037 +1783,313 @@ proxies:
       path: /?ed=2560&proxyip=ip.111000.de5.net:443
       headers:
         Host: sni.111000.dynv6.net
-  - name: " HK-ss"
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: ?ed=2048
-  - name: 美国_1
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 美国_2
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: JP_1
-    type: ss
-    server: cf.zhetengsha.eu.org
-    port: 443
-    cipher: none
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
-  - name: 美国_3
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-  - name: 🇭🇰 香港 17
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12742
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 美国_4
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: AZERB.NET
-  - name: 美国_5
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  - name: 美国_6
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_7
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: 美国_8
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK1.NET.NET
-  - name: FR
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  - name: 美国_9
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 🇺🇸US_37 | ⬇️ 4.1MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    sni: 45.221.98.14
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 🇺🇸US_5 | ⬇️ 2.8MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    alpn:
-      - h2
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 美国_10
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: 美国_11
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 2001:bc8:32d7:302::10
-  - name: SG-ss
-    type: ss
-    server: cf.090227.xyz
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_12
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: AZERB.NET
-  - name: 美国_13
-    type: vmess
-    server: 2001:bc8:32d7:302::11
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: Azerb.NET
-  - name: 美国_14
-    type: vmess
-    server: 2001:bc8:32d7:302::15
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: TURK.NET
-  - name: 美国_15
-    type: vmess
-    server: 2001:bc8:32d7:302::16
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: FR_1
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: DE VLESS-116 | free-nodes
-    type: vless
-    server: desta.axinode.sbs
-    port: 10965
-    uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-    servername: deepl.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: lHxeD2nYtDb1V7JseV-sUTEuqH6_jie7U_iOARX7cT0
-      short-id: 9f3a7c6d2e8b41af
-  - name: 🇺🇸US_18 | ⬇️ 2.2MB/s
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    tls: true
-    udp: false
-  - name: 未知 VLESS-92 | free-nodes
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
-  - name: 🇭🇰 香港 24
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13153
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 11
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: US SS-25 | free-nodes
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: 🇭🇰 香港 24_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13153
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🏳️ ShatakVPN 690322
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: youneed.win
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 未知 VLESS-113 | free-nodes
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: US SS-20 | free-nodes
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: DE VLESS-84 | free-nodes
-    type: vless
-    server: v1.dabache.top
-    port: 443
-    uuid: 94daa8ad-75ed-4dbf-a6de-d05036d98df5
-    network: ws
-    servername: vangoghhh.info
-    tls: true
-    ws-opts:
-      path: /tixvuws
-      headers:
-        Host: vangoghhh.info
-  - name: 未知 VLESS-127 | free-nodes
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 🇺🇸_US_美国
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 🇺🇸_US_美国_1
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 🏳️ ShatakVPN 690322_1
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 🇭🇰 香港 06_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12163
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇹🇭 泰国 01
-    type: vless
-    server: 47.81.12.38
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    servername: api.digital-help-prd.autodesk.com
-    tls: true
-    client-fingerprint: random
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  - name: 🇹🇭 泰国 05
-    type: vless
-    server: 47.81.39.100
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    servername: api.digital-help-prd.autodesk.com
-    tls: true
-    client-fingerprint: random
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  - name: 🇭🇰 香港 20
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12523
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 23
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13159
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 25
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13146
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 21_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14628
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 08
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12407
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 22
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12402
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: " JP-ss"
-    type: ss
-    server: cdns.doon.eu.org
-    port: 443
-    cipher: none
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
-  - name: 美国_16
-    type: vmess
-    server: 2001:bc8:32d7:302::17
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-  - name: VMESS节点2-ipv6
-    type: vmess
-    server: 2a14:7584:d0a2::a
-    port: 23456
-    uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /alvin9999.com
-      headers:
-        Host: www.bing.com
-  - name: 美国_17
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 美国_18
-    type: vmess
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
-  - name: 🇭🇰 香港 11_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 15
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14625
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 15_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14625
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 08_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12407
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 09
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14623
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 美国_19
-    type: vmess
-    server: 2001:bc8:32d7:302::14
-    port: 44579
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: TABRIZ.NET
-  - name: 🇭🇰 香港 12
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12527
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 19
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12752
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 15_2
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14625
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 15_3
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14625
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 13
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12401
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 13_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12401
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 未知 VLESS-126 | free-nodes
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: 🇭🇰 香港 16
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13155
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 11_2
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 16_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13155
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 11_3
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 12_1
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12527
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 11_4
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 12_2
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 12527
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 11_5
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13242
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: 🇭🇰 香港 24_2
-    type: ss
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13153
-    cipher: 2022-blake3-aes-256-gcm
-    password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-  - name: DE VLESS-125 | free-nodes
-    type: vless
-    server: 109.120.180.65
-    port: 443
-    uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
-    servername: yandex.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
-      short-id: e7
-  - name: DE VLESS-110 | free-nodes
-    type: vless
-    server: desta.axinode.sbs
-    port: 10965
-    uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-    servername: deepl.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: lHxeD2nYtDb1V7JseV-sUTEuqH6_jie7U_iOARX7cT0
-      short-id: 9f3a7c6d2e8b41af
-  - name: 未知 SS-09 | free-nodes
-    type: ss
-    server: 185.176.221.72
-    port: 24637
-    cipher: chacha20-ietf-poly1305
-    password: MholStyHL7DhrewKbpQa20
-  - name: 未知 VLESS-122 | free-nodes
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
-    network: ws
-    servername: 639073677243557970.camry-perma.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /yaeungws
-      headers:
-        Host: 639073677243557970.camry-perma.info
-  - name: DE VLESS-84 | free-nodes_1
-    type: vless
-    server: v1.dabache.top
-    port: 443
-    uuid: 94daa8ad-75ed-4dbf-a6de-d05036d98df5
-    network: ws
-    servername: vangoghhh.info
-    tls: true
-    ws-opts:
-      path: /tixvuws
-      headers:
-        Host: vangoghhh.info
-  - name: DE VLESS-74 | free-nodes
-    type: vless
-    server: 162.159.44.45
-    port: 443
-    uuid: 7270612b-49f6-4b04-999c-34d8263da767
-    network: ws
-    servername: picassooo.info
-    tls: true
-    ws-opts:
-      path: /aymdlws
-      headers:
-        Host: picassooo.info
-  - name: US SS-14 | free-nodes
-    type: ss
-    server: tinkered-pennies-puppies.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: hbGrpfvNrJsUmKmPbR3iY2
-  - name: 未知 VLESS-76 | free-nodes
-    type: vless
-    server: dns.dressforida.monster
-    port: 443
-    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-    servername: www.techradar.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 174c6cf22e22
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1312,433 +2099,617 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1761,109 +2732,155 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 韩国 03
       - 🇭🇰 香港 06
-      - HK
+      - KR
       - US
-      - 🇭🇰 香港 21
-      - JP
-      - 02-Trojan-saas.sin.fan
-      - 02-Trojan-saas.sin.fan_1
-      - 02-Trojan-saas.sin.fan_2
+      - TW VLESS-109 | free-nodes
+      - 🇺🇸 美国 04
+      - 🇮🇩 印度尼西亚
+      - AT
+      - AT_1
+      - 🇴🇲 阿曼
+      - AT_2
       - US_1
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI_1
-      - 00-Trojan-jp-AI_2
-      - 01-Trojan-030101.xyz_1
-      - 01-Trojan-030101.xyz_2
-      - JP-ss
-      - 01-Trojan-030101.xyz_3
-      - 03-Trojan-cloudflare88
-      - " HK-ss"
+      - CH
+      - NL
+      - US_2
+      - US_3
+      - JP
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 07
+      - US_4
+      - US_5
+      - 🇸🇬SG_2 | ⬇️ 1.9MB/s
+      - NL_1
+      - US_6
+      - 🇺🇸 美国 09
+      - HK
+      - US_7
+      - 🇺🇸US_1 | ⬇️ 1.7MB/s
+      - TW-ss
+      - US_8
+      - US_9
+      - 🇺🇸 美国 10
+      - US_10
+      - US_11
+      - US_12
+      - US_13
+      - 更新日期 3.30
+      - FR
+      - 🇭🇰 香港 07
+      - 🇸🇬SG_1 | ⬇️ 1.2MB/s
+      - 🇯🇵 日本 14
+      - HK_1
+      - KR_1
       - 美国
       - 美国_1
+      - "JP "
+      - CN
       - 美国_2
-      - JP_1
+      - US_14
       - 美国_3
-      - 🇭🇰 香港 17
+      - CN_1
+      - FR_1
+      - 🇴🇲 阿曼_1
       - 美国_4
       - 美国_5
+      - 03-Trojan-cloudflare88
+      - HK_2
+      - US_15
       - 美国_6
+      - 🇺🇸 美国 13
+      - 🇳🇱 荷兰 01
+      - 🇺🇸 美国
+      - US_16
       - 美国_7
+      - 🇸🇬SG_7 | ⬇️ 5.1MB/s
+      - US_17
+      - US_18
+      - NL_2
+      - FI
+      - AT_3
+      - 🇰🇷 韩国 01
+      - 🇯🇵 日本 02
+      - 🇯🇵 日本 05
       - 美国_8
-      - FR
+      - 🇮🇷 伊朗
+      - 中国 V2CROSS.COM
       - 美国_9
-      - 🇺🇸US_37 | ⬇️ 4.1MB/s
-      - 🇺🇸US_5 | ⬇️ 2.8MB/s
       - 美国_10
       - 美国_11
-      - SG-ss
+      - NL_3
+      - 🇯🇵 日本 01
+      - VMESS节点2-ipv6
+      - 🏳️ ShatakVPN 690322
+      - 🇺🇸_US_美国
+      - US_19
+      - US_20
+      - US SS-16 | free-nodes
+      - 🇩🇪DE
+      - 01-Trojan-030101.xyz
+      - 🇩🇪DE_1
+      - 未知 VLESS-107 | free-nodes
+      - US_21
+      - 🇨🇦加拿大02
       - 美国_12
+      - 🇩🇪DE_2
+      - 🇩🇪DE_3
+      - 🇩🇪DE_4
+      - NL_4
+      - NL_5
+      - 未知 VLESS-92 | free-nodes
+      - VMESS节点2-ipv6_1
+      - NL_6
+      - DE
+      - 🇯🇵 日本 08
+      - 未知 VLESS-128 | free-nodes
+      - 🇯🇵JP
+      - US_22
+      - 🇰🇷 韩国 02
       - 美国_13
+      - US_23
       - 美国_14
       - 美国_15
-      - FR_1
-      - DE VLESS-116 | free-nodes
-      - 🇺🇸US_18 | ⬇️ 2.2MB/s
-      - 未知 VLESS-92 | free-nodes
-      - 🇭🇰 香港 24
-      - 🇭🇰 香港 11
-      - US SS-25 | free-nodes
-      - 🇭🇰 香港 24_1
-      - 🏳️ ShatakVPN 690322
-      - youneed.win
-      - 未知 VLESS-113 | free-nodes
-      - US SS-20 | free-nodes
-      - DE VLESS-84 | free-nodes
-      - 未知 VLESS-127 | free-nodes
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🏳️ ShatakVPN 690322_1
-      - 🇭🇰 香港 06_1
-      - 🇹🇭 泰国 01
-      - 🇹🇭 泰国 05
-      - 🇭🇰 香港 20
-      - 🇭🇰 香港 23
-      - 🇭🇰 香港 25
-      - 🇭🇰 香港 21_1
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 22
-      - " JP-ss"
       - 美国_16
-      - VMESS节点2-ipv6
+      - 🇭🇺HU
       - 美国_17
       - 美国_18
-      - 🇭🇰 香港 11_1
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港 15_1
-      - 🇭🇰 香港 08_1
-      - 🇭🇰 香港 09
       - 美国_19
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 19
-      - 🇭🇰 香港 15_2
-      - 🇭🇰 香港 15_3
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 13_1
-      - 未知 VLESS-126 | free-nodes
-      - 🇭🇰 香港 16
-      - 🇭🇰 香港 11_2
-      - 🇭🇰 香港 16_1
-      - 🇭🇰 香港 11_3
-      - 🇭🇰 香港 12_1
-      - 🇭🇰 香港 11_4
-      - 🇭🇰 香港 12_2
-      - 🇭🇰 香港 11_5
-      - 🇭🇰 香港 24_2
-      - DE VLESS-125 | free-nodes
-      - DE VLESS-110 | free-nodes
-      - 未知 SS-09 | free-nodes
-      - 未知 VLESS-122 | free-nodes
-      - DE VLESS-84 | free-nodes_1
-      - DE VLESS-74 | free-nodes
-      - US SS-14 | free-nodes
-      - 未知 VLESS-76 | free-nodes
+      - DE SS-54 | free-nodes
+      - KR_2
+      - 🇩🇪DE_5
+      - 🇩🇪DE_6
+      - 🇩🇪DE_7
+      - 🇩🇪DE_8
+      - 🇩🇪DE_9
+      - 秘鲁
+      - 🇬🇧 GB_39
+      - 🇬🇧 GB_40
+      - SG-ss
+      - KR-ss
+      - HK-ss
+      - SG-ss_1
+      - HK-ss_1
+      - JP-ss
+      - HK-ss_2
+      - 🇹🇼 台湾家宽 12
+      - 🇸🇬 新加坡 078
+      - 🇭🇰香港｜01｜HKT
+      - 🇲🇴澳门｜04｜AWS
+      - 🇹🇼台湾｜01｜HiNet
+      - 🇰🇷韩国｜01｜Tencent Cloud
+      - 🇩🇪德国｜05｜AWS
+      - 00-WS-jp-AI
+      - 00-Trojan-jp-AI
+      - 01-WS-030101.xyz
+      - 01-Trojan-030101.xyz_1
+      - 02-WS-saas.sin.fan
+      - 02-Trojan-saas.sin.fan
+      - 03-WS-cloudflare88
+      - 03-Trojan-cloudflare88_1
 rule-providers:
   LocalAreaNetwork:
     type: http
