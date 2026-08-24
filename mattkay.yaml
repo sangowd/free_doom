@@ -24,36 +24,32 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇳🇱荷兰NL003 2.64MB/s
+  - name: 🇺🇸美国5.07MB/s 355
     type: vless
-    server: dey.lnmarketplace.net
+    server: 200.165.230.19
     port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
+    uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+    servername: www.kinopoisk.ru
     tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    reality-opts:
+      public-key: iWxxH0TWB1Ciz6sEwtfjUVY61OcTDihou5IJfkt0O0Q
+      short-id: a3f8d21c4b907e56
     skip-cert-verify: true
     udp: true
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 104.16.79.73
-    port: 443
-    uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-    network: ws
-    servername: josni.hoyes.cloudns.ch
-    tls: true
-    ws-opts:
-      path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2048
-      headers:
-        Host: josni.hoyes.cloudns.ch
+  - name: 法国
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
     udp: true
   - name: 🇫🇷法国FR026 0.95MB/s
     type: vmess
@@ -70,44 +66,65 @@ proxies:
       headers:
         Host: 2001:bc8:32d7:1a9::2
     udp: true
-  - name: 🇫🇷法国FR037
+  - name: 🇸🇬新加坡
     type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: 法国
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: SG新加坡()
-    type: vless
-    server: 104.18.37.228
+    server: vip.cf.3666888.xyz
     port: 443
-    uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-    network: ws
-    servername: josni.hoyes.cloudns.ch
+    uuid: 6e25985e-eb57-411f-9a7b-d877ff425522
+    alterId: 0
+    cipher: auto
     tls: true
+    skip-cert-verify: true
+    servername: 6e25985e.pwd.kdns.fr
+    network: ws
     ws-opts:
-      path: /sg-melbi
+      path: /6e25985e-eb57-411f-9a7b-d877ff425522-vm
       headers:
-        Host: josni.hoyes.cloudns.ch
+        Host: 6e25985e.pwd.kdns.fr
+    udp: true
+  - name: 🇯🇵日本4.59MB/s 228
+    type: hysteria2
+    server: 151.145.65.190
+    port: 50160
+    password: b4c65d3711d27d46f32263f1dd9caf48
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪德国10.62MB/s 374
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    udp: true
+  - name: 🇳🇱荷兰NL057 1.2MB/s
+    type: vless
+    server: 85.198.70.200
+    port: 14406
+    uuid: 237f91bf-102e-4077-8cc3-baebccb42936
+    servername: vk.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
+      short-id: 1a2b3c4d5e6f7a8b
+    skip-cert-verify: true
+    udp: true
+  - name: 🇷🇺RU
+    type: vless
+    server: 85.198.70.200
+    port: 14406
+    uuid: 237f91bf-102e-4077-8cc3-baebccb42936
+    servername: vk.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
+      short-id: 1a2b3c4d5e6f7a8b
     skip-cert-verify: true
     udp: true
   - name: 🇫🇷法国FR036 0.94MB/s
@@ -125,6 +142,139 @@ proxies:
       headers:
         Host: 2001:bc8:32d7:1a9::2
     udp: true
+  - name: 🇩🇪德国22.32MB/s 223
+    type: hysteria2
+    server: 3.71.196.174
+    port: 50160
+    password: e660daf2da753ca8317387342b8af384
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸美国66.79MB/s 384
+    type: vless
+    server: 46.29.235.9
+    port: 443
+    uuid: d67af820-f54c-48ab-862c-19086357f276
+    servername: telegraf.lv
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: vlessLV🇱🇻779ms
+    type: vless
+    server: 195.123.210.168
+    port: 13443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: auto.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    skip-cert-verify: true
+    udp: true
+  - name: 🇸🇬新加坡12.88MB/s 235
+    type: hysteria2
+    server: 213.35.114.141
+    port: 50160
+    password: 2544ad8a388f1b7e6d1c878f5a7d121c
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇳🇱荷兰NL048 1.41MB/s
+    type: vless
+    server: 85.198.70.200
+    port: 14406
+    uuid: 237f91bf-102e-4077-8cc3-baebccb42936
+    servername: vk.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
+      short-id: 1a2b3c4d5e6f7a8b
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸美国US001 2.76MB/s
+    type: vless
+    server: 200.165.230.19
+    port: 2087
+    uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+    network: grpc
+    servername: vk.com
+    tls: true
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: iWxxH0TWB1Ciz6sEwtfjUVY61OcTDihou5IJfkt0O0Q
+      short-id: f2a4c6e8
+    skip-cert-verify: true
+    udp: true
+  - name: DE-Frankfurt am Main-224912513-bvvv
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    sni: hy2.aspidnet.xyz
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    udp: true
+  - name: FR-Aubervilliers-9247811-blll
+    type: ss
+    server: 211.91.158.44
+    port: 21122
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇳🇱荷兰NL010 1.8MB/s
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: DE-Frankfurt am Main-224912513-bbxa
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    udp: true
+  - name: 🇳🇱荷兰NL034 1.54MB/s
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: ff4589d5-8c1b-4cd4-93d1-25db3635735d
+    network: ws
+    servername: ssl.fastly.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+      headers:
+        Host: pane3.global.ssl.fastly.net
+    skip-cert-verify: true
+    udp: true
   - name: 🇫🇷法国FR036 0.94MB/s_1
     type: vmess
     server: 2001:bc8:32d7:1a9::2
@@ -140,19 +290,18 @@ proxies:
       headers:
         Host: 2001:bc8:32d7:1a9::2
     udp: true
-  - name: 🇪🇪EE005 测速未知
-    type: vless
-    server: 31.76.70.32
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: baltic.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-      short-id: 4a46213c935e2ee4
+  - name: 🇫🇷法国FR021 0.85MB/s
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
     udp: true
   - name: 🇫🇷法国FR035 0.99MB/s
     type: vmess
@@ -167,44 +316,48 @@ proxies:
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
     udp: true
-  - name: 🇫🇷法国0.50MB/s
-    type: hysteria2
-    server: 173.212.201.85
-    port: 443
-    password: gf1:gfhysteria2024
-    sni: www.docker.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱荷兰NL004 2.39MB/s
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: US美国8/12
-    type: vless
-    server: 217.163.76.118
-    port: 2086
-    uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-    network: http
+  - name: 🇫🇷法国FR037
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
     tls: false
-    http-opts:
-      path:
-        - /
-      headers:
-        Host:
-          - xvh.andishehparenting.com
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+    udp: true
+  - name: 🇪🇪EE005 测速未知
+    type: vless
+    server: 31.76.70.32
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: baltic.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+      short-id: 4a46213c935e2ee4
+    skip-cert-verify: true
+    udp: true
+  - name: 🇫🇷法国FR020 0.96MB/s
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2001:bc8:32d7:1a9::2
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
     udp: true
   - name: 🇫🇷法国FR035 0.99MB/s_1
     type: vmess
@@ -219,364 +372,382 @@ proxies:
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
     udp: true
-  - name: DE德国(8-12)
+  - name: zhuhai.uk - 138
     type: vless
-    server: 217.163.76.118
-    port: 2086
-    uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-    network: http
-    tls: false
-    http-opts:
-      path:
-        - /
-      headers:
-        Host:
-          - xvh.andishehparenting.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸美国US010 2.18MB/s
-    type: vmess
-    server: US032020.ssgreen.org
+    server: mywebsite.whit3.net
     port: 443
-    uuid: da3a4ee7-b2dd-4820-a327-0e1b8b23e670
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /wes
-    udp: true
-  - name: 🇺🇸美国
-    type: vmess
-    server: US032020.ssgreen.org
-    port: 443
-    uuid: da3a4ee7-b2dd-4820-a327-0e1b8b23e670
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /wes
-    udp: true
-  - name: 🇺🇸美国_1
-    type: vmess
-    server: US032017.ssgreen.org
-    port: 443
-    uuid: 0891f4a0-5d3c-4ef2-ae0f-33427de786ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /wes
-    udp: true
-  - name: 🇺🇸美国_2
-    type: vmess
-    server: US122206.ssgreen.org
-    port: 443
-    uuid: 38d251a4-0cd2-416e-9cca-964c8081dfb9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /wes
-    udp: true
-  - name: 🇸🇬新加坡SG006 5MB/s
-    type: vless
-    server: pq.aws64.yydjc.top
-    port: 443
-    uuid: 1dd43c23-162a-402c-99f2-fb22922b27b7
-    servername: iosapps.itunes.apple.com
+    uuid: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
+    servername: mywebsite.whit3.net
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: safari
+    client-fingerprint: random
     reality-opts:
-      public-key: xjWkdgeetCnB1-kHqwVnAaSUqg4qK9TFWQlamW8FSRI
-      short-id: e2e15173
+      public-key: FYKh5rWtirmY23OjNuhNlQFJb7DI5J79E7T-gkyYNHo
+      short-id: 80bfd8cae4850bc9
     skip-cert-verify: true
     udp: true
-  - name: 🇹🇷土耳其TR001 1.65MB/s
-    type: hysteria2
-    server: 162.249.124.111
-    port: 8080
-    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-    sni: hopp-germany-new.ddnsguru.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪德国DE021 0.49MB/s
-    type: hysteria2
-    server: de87.mechvpn.online
-    port: 443
-    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-    sni: de87.mechvpn.online
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧英国GB003 1.99MB/s
-    type: hysteria2
-    server: 103.246.248.226
-    port: 8080
-    password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-    sni: hopp-legend-se.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪德国
-    type: hysteria2
-    server: 162.249.124.111
-    port: 8443
-    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-    sni: hopp-germany-new.ddnsguru.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱波兰PL001 1.94MB/s
-    type: hysteria2
-    server: 103.246.248.226
-    port: 8443
-    password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-    sni: hopp-legend-se.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪德国DE007 1.96MB/s
-    type: hysteria2
-    server: 85.204.107.171
-    port: 8080
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    sni: hopp-romania-new.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸美国US008 2.19MB/s
-    type: hysteria2
-    server: 82.39.214.98
-    port: 8443
-    password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-    sni: hopp-us.yyuyy.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇴罗马尼亚RO001 2.13MB/s
-    type: hysteria2
-    server: 85.204.107.171
-    port: 8443
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    sni: hopp-romania-new.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸美国US002 2.44MB/s
-    type: hysteria2
-    server: 82.39.214.98
-    port: 8080
-    password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-    sni: hopp-us.yyuyy.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇮芬兰FI010 1.81MB/s
-    type: vless
-    server: 185.37.8.133
-    port: 443
-    uuid: c7e9c591-2764-423a-afca-efbd010fd396
-    network: ws
-    servername: forfreeuse.rtqa.ru
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: forfreeuse.rtqa.ru
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇮芬兰FI001 2.37MB/s
-    type: hysteria2
-    server: 138.124.0.168
-    port: 8443
-    password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-    sni: hopp-legend-se.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪德国_1
-    type: hysteria2
-    server: 162.249.124.108
-    port: 8443
-    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-    sni: hopp-germany-new.ddnsguru.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸美国US114 1.4MB/s
-    type: trojan
-    server: 139.144.218.110
-    port: 5443
-    password: fg20mtCFHy
-    sni: www.bing.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇳🇱荷兰NL004 2.19MB/s
-    type: hysteria2
-    server: 86.107.178.78
-    port: 8443
-    password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-    sni: hopp-netherland-new.dynuddns.net
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬新加坡SG004 5.25MB/s
-    type: vless
-    server: pq.aws66.yydjc.top
-    port: 443
-    uuid: 1dd43c23-162a-402c-99f2-fb22922b27b7
-    servername: iosapps.itunes.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: OmGeSOsHQMl3Rm6G3SzYjmZvgFYBF489vxfbBCNDWjw
-      short-id: 289c74e0
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱荷兰NL006 2.12MB/s
-    type: hysteria2
-    server: 86.107.178.76
-    port: 8443
-    password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-    sni: hopp-netherland-new.dynuddns.net
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧英国
-    type: hysteria2
-    server: uk196.mechvpn.online
-    port: 443
-    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪德国_2
-    type: vless
-    server: nodeghxue5jx2xm2ehzdssl9dsaj.spored.online
-    port: 443
-    uuid: 5a266979-4249-4448-a93a-f27bb8aed542
-    network: http
-    servername: cdn.yandex.ru
-    tls: true
-    client-fingerprint: edge
-    http-opts:
-      path:
-        - /
-    reality-opts:
-      public-key: q6HuefYRTFeDLHr4iMWt_wbGY47V4etiXNPlWJfE7Fw
-      short-id: 3e7b9c1d5f8a2e64
-    skip-cert-verify: true
-    udp: true
-  - name: 🇧🇬BG001 2.16MB/s
-    type: hysteria2
-    server: bg185.mechvpn.online
-    port: 443
-    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-    sni: bg185.mechvpn.online
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇪瑞典SE002 1.51MB/s
-    type: trojan
-    server: 172.234.103.243
-    port: 5443
-    password: fg20mtCFHy
-    sni: www.bing.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇩🇪德国DE004 2.13MB/s
+  - name: 🇷🇴罗马尼亚18.94MB/s 392
     type: ss
-    server: 130.61.130.149
+    server: 130.61.113.169
     port: 59924
     cipher: 2022-blake3-chacha20-poly1305
-    password: pn9Vm+7cRIukB5e3ORaW9JaXbMGxJJAL+Hr0Ov9zpME=
+    password: TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw=
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸美国US007 2.21MB/s
+  - name: DE-Frankfurt am Main-119617-bbda
     type: hysteria2
-    server: 82.39.214.95
-    port: 8443
-    password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-    sni: hopp-us.yyuyy.com
+    server: 3.71.196.174
+    port: 50160
+    password: e660daf2da753ca8317387342b8af384
+    sni: www.bing.com
     skip-cert-verify: true
     udp: true
-  - name: 🇸🇬新加坡SG005 5.08MB/s
+  - name: SG-Singapore-18019021-bbdl
+    type: hysteria2
+    server: 38.180.190.215
+    port: 50160
+    password: 023c40e3394dd2c2f1b5d12556db2a6f
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: zhuhai.uk - 140
     type: vless
-    server: sg4.miyazono-kaori.com
+    server: 82.26.94.13
     port: 443
-    uuid: 67ae3c37-aa0e-40b6-872e-b3b90339e870
-    servername: www.changiairport.com
+    uuid: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
+    servername: mywebsite.whit3.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: FYKh5rWtirmY23OjNuhNlQFJb7DI5J79E7T-gkyYNHo
+      short-id: 80bfd8cae4850bc9
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸美国US044 1.62MB/s
+    type: vless
+    server: 200.165.230.19
+    port: 443
+    uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+    servername: www.kinopoisk.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    reality-opts:
+      public-key: iWxxH0TWB1Ciz6sEwtfjUVY61OcTDihou5IJfkt0O0Q
+      short-id: a3f8d21c4b907e56
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸美国78.63MB/s 266
+    type: vless
+    server: 188.114.97.110
+    port: 2087
+    uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+    network: ws
+    servername: wzknb.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240
+      headers:
+        Host: wzknb.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 🇱🇻拉脱维亚13.00MB/s 089
+    type: hysteria2
+    server: hy2-netherlands.unlimited-access.ru
+    port: 8443
+    password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+    sni: hy2-netherlands.unlimited-access.ru
+    skip-cert-verify: true
+    udp: true
+  - name: LV-Riga-51232089-aqmj
+    type: vless
+    server: 195.123.210.168
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: eu-west.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+      short-id: dd3ff38418d29d22
+    skip-cert-verify: true
+    udp: true
+  - name: 🇱🇻LV003 测速未知
+    type: vless
+    server: 195.123.210.168
+    port: 13443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: auto.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    skip-cert-verify: true
+    udp: true
+  - name: JP-Tokyo-h-023843-bbvl
+    type: hysteria2
+    server: 140.238.43.0
+    port: 50160
+    password: 9c5be37406b6584005b8de0ee3734dd9
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇯🇵日本4.43MB/s 230
+    type: hysteria2
+    server: 140.238.43.0
+    port: 50160
+    password: 9c5be37406b6584005b8de0ee3734dd9
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: TH-Bangkok-602008-bldv
+    type: ss
+    server: 211.91.158.44
+    port: 21123
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 VLESS-599 | free-nodes
+    type: vless
+    server: 195.123.210.168
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: eu-west.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+      short-id: dd3ff38418d29d22
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸美国40.17MB/s 255
+    type: vless
+    server: 154.17.224.207
+    port: 50159
+    uuid: 06431129-68ab-4ed0-adb4-e218715a5cac
+    servername: www.cloudflare.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
-      short-id: 1dd8558159ecd0
+      public-key: m4h311FFXc-2_cebf7mfjVxGMGCw7B4ADrRpgMsUxTw
+      short-id: 0fbe8f876366819f
     skip-cert-verify: true
     udp: true
-  - name: 🇫🇮芬兰FI068 1.47MB/s
-    type: trojan
-    server: 156.243.83.240
-    port: 443
-    password: MiTiVPN
-    sni: 8373638-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  - name: 🇷🇴罗马尼亚18.75MB/s 388
+    type: ss
+    server: 211.91.158.44
+    port: 21103
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
     skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: 8373638-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
     udp: true
-  - name: 🇸🇪瑞典SE001 1.68MB/s
-    type: trojan
-    server: 172.234.103.243
-    port: 5443
-    password: fg20mtCFHy
-    sni: www.bing.com
+  - name: 🇯🇵日本1.22MB/s 091
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10925
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
     skip-cert-verify: true
-    tls: true
     udp: true
-  - name: 🇸🇬新加坡SG015 0.74MB/s
-    type: trojan
-    server: 188.42.145.180
-    port: 443
-    password: MiTiVPN
-    sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  - name: 🇩🇪德国1.70MB/s 360
+    type: ss
+    server: 211.91.158.26
+    port: 21125
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
     skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-g@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: 383838-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
     udp: true
-  - name: 🇬🇧英国GB001 2.15MB/s
+  - name: 🇸🇬新加坡14.11MB/s 094
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10934
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: SG-Singapore-7724319-blhw
+    type: ss
+    server: 211.91.158.44
+    port: 21121
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: TW-Taipei-h-8012022-bbvx
     type: hysteria2
-    server: 138.124.0.168
-    port: 8080
-    password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-    sni: hopp-legend-se.roxa.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱荷兰
-    type: trojan
-    server: 213.182.199.137
-    port: 443
-    password: MiTiVPN
-    sni: 66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: 2-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-    udp: true
-  - name: 🇯🇵日本JP011 1.81MB/s
-    type: trojan
-    server: 172.237.3.17
-    port: 5443
-    password: fg20mtCFHy
+    server: 34.80.120.225
+    port: 50160
+    password: f4ae05bcb9528779a8469ee5d352a817
     sni: www.bing.com
     skip-cert-verify: true
+    udp: true
+  - name: 🇯🇵日本17.94MB/s 229
+    type: hysteria2
+    server: 45.153.245.25
+    port: 50160
+    password: bb7c0aa0966a031bb9184a64a52ce80e
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇯🇵日本11.11MB/s 231
+    type: vless
+    server: 45.66.218.187
+    port: 50159
+    uuid: fdb25e5e-d99a-468c-aa13-0fe9892771b6
+    servername: www.cloudflare.com
     tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GBSyMDmBSz4C-brs0GYG6HXNb2CyWANvkBrd8W1GDU0
+      short-id: 6b22ad2202d70547
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳台湾17.62MB/s 257
+    type: hysteria2
+    server: 34.80.120.225
+    port: 50160
+    password: f4ae05bcb9528779a8469ee5d352a817
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-371 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10931
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-372 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10933
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-373 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10936
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-367 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10925
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-366 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10924
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-369 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10928
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 VLESS-628 | free-nodes
+    type: vless
+    server: 195.123.210.168
+    port: 13443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: auto.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-374 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10937
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 VLESS-975 | free-nodes
+    type: vless
+    server: 46.29.235.9
+    port: 443
+    uuid: d67af820-f54c-48ab-862c-19086357f276
+    servername: telegraf.lv
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-370 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10929
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-365 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10913
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-368 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10927
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 VLESS-635 | free-nodes
+    type: vless
+    server: 88.218.92.164
+    port: 13443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: auto.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 SS-364 | free-nodes
+    type: ss
+    server: mn.qwer-cn.org
+    port: 10910
+    cipher: aes-128-gcm
+    password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+    skip-cert-verify: true
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -584,107 +755,139 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -694,217 +897,281 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -927,55 +1194,71 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱荷兰NL003 2.64MB/s
-      - 美国+CloudFlare节点
-      - 🇫🇷法国FR026 0.95MB/s
-      - 🇫🇷法国FR037
+      - 🇺🇸美国5.07MB/s 355
       - 法国
-      - SG新加坡()
+      - 🇫🇷法国FR026 0.95MB/s
+      - 🇸🇬新加坡
+      - 🇯🇵日本4.59MB/s 228
+      - 🇩🇪德国10.62MB/s 374
+      - 🇳🇱荷兰NL057 1.2MB/s
+      - 🇷🇺RU
       - 🇫🇷法国FR036 0.94MB/s
+      - 🇩🇪德国22.32MB/s 223
+      - 🇺🇸美国66.79MB/s 384
+      - vlessLV🇱🇻779ms
+      - 🇸🇬新加坡12.88MB/s 235
+      - 🇳🇱荷兰NL048 1.41MB/s
+      - 🇺🇸美国US001 2.76MB/s
+      - DE-Frankfurt am Main-224912513-bvvv
+      - FR-Aubervilliers-9247811-blll
+      - 🇳🇱荷兰NL010 1.8MB/s
+      - DE-Frankfurt am Main-224912513-bbxa
+      - 🇳🇱荷兰NL034 1.54MB/s
       - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR021 0.85MB/s
       - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国0.50MB/s
-      - 🇳🇱荷兰NL004 2.39MB/s
-      - US美国8/12
+      - 🇫🇷法国FR037
+      - 🇪🇪EE005 测速未知
+      - 🇫🇷法国FR020 0.96MB/s
       - 🇫🇷法国FR035 0.99MB/s_1
-      - DE德国(8-12)
-      - 🇺🇸美国US010 2.18MB/s
-      - 🇺🇸美国
-      - 🇺🇸美国_1
-      - 🇺🇸美国_2
-      - 🇸🇬新加坡SG006 5MB/s
-      - 🇹🇷土耳其TR001 1.65MB/s
-      - 🇩🇪德国DE021 0.49MB/s
-      - 🇬🇧英国GB003 1.99MB/s
-      - 🇩🇪德国
-      - 🇵🇱波兰PL001 1.94MB/s
-      - 🇩🇪德国DE007 1.96MB/s
-      - 🇺🇸美国US008 2.19MB/s
-      - 🇷🇴罗马尼亚RO001 2.13MB/s
-      - 🇺🇸美国US002 2.44MB/s
-      - 🇫🇮芬兰FI010 1.81MB/s
-      - 🇫🇮芬兰FI001 2.37MB/s
-      - 🇩🇪德国_1
-      - 🇺🇸美国US114 1.4MB/s
-      - 🇳🇱荷兰NL004 2.19MB/s
-      - 🇸🇬新加坡SG004 5.25MB/s
-      - 🇳🇱荷兰NL006 2.12MB/s
-      - 🇬🇧英国
-      - 🇩🇪德国_2
-      - 🇧🇬BG001 2.16MB/s
-      - 🇸🇪瑞典SE002 1.51MB/s
-      - 🇩🇪德国DE004 2.13MB/s
-      - 🇺🇸美国US007 2.21MB/s
-      - 🇸🇬新加坡SG005 5.08MB/s
-      - 🇫🇮芬兰FI068 1.47MB/s
-      - 🇸🇪瑞典SE001 1.68MB/s
-      - 🇸🇬新加坡SG015 0.74MB/s
-      - 🇬🇧英国GB001 2.15MB/s
-      - 🇳🇱荷兰
-      - 🇯🇵日本JP011 1.81MB/s
+      - zhuhai.uk - 138
+      - 🇷🇴罗马尼亚18.94MB/s 392
+      - DE-Frankfurt am Main-119617-bbda
+      - SG-Singapore-18019021-bbdl
+      - zhuhai.uk - 140
+      - 🇺🇸美国US044 1.62MB/s
+      - 🇺🇸美国78.63MB/s 266
+      - 🇱🇻拉脱维亚13.00MB/s 089
+      - LV-Riga-51232089-aqmj
+      - 🇱🇻LV003 测速未知
+      - JP-Tokyo-h-023843-bbvl
+      - 🇯🇵日本4.43MB/s 230
+      - TH-Bangkok-602008-bldv
+      - 未知 VLESS-599 | free-nodes
+      - 🇺🇸美国40.17MB/s 255
+      - 🇷🇴罗马尼亚18.75MB/s 388
+      - 🇯🇵日本1.22MB/s 091
+      - 🇩🇪德国1.70MB/s 360
+      - 🇸🇬新加坡14.11MB/s 094
+      - SG-Singapore-7724319-blhw
+      - TW-Taipei-h-8012022-bbvx
+      - 🇯🇵日本17.94MB/s 229
+      - 🇯🇵日本11.11MB/s 231
+      - 🇨🇳台湾17.62MB/s 257
+      - 未知 SS-371 | free-nodes
+      - 未知 SS-372 | free-nodes
+      - 未知 SS-373 | free-nodes
+      - 未知 SS-367 | free-nodes
+      - 未知 SS-366 | free-nodes
+      - 未知 SS-369 | free-nodes
+      - 未知 VLESS-628 | free-nodes
+      - 未知 SS-374 | free-nodes
+      - 未知 VLESS-975 | free-nodes
+      - 未知 SS-370 | free-nodes
+      - 未知 SS-365 | free-nodes
+      - 未知 SS-368 | free-nodes
+      - 未知 VLESS-635 | free-nodes
+      - 未知 SS-364 | free-nodes
 rule-providers:
   LocalAreaNetwork:
     type: http
