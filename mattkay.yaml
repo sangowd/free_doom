@@ -24,7 +24,133 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇫🇷法国FR020 0.96MB/s
+  - name: 法国 01
+    type: hysteria2
+    server: 62.210.7.139
+    port: 60111
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: speedtest.tinkoff.ru
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 01
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 02
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯 01
+    type: hysteria2
+    server: els2.mangshe.xyz
+    port: 2056
+    password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+    sni: els2.mangshe.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰 01
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 03
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 04
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 法国 02
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+    udp: true
+  - name: 俄罗斯 02
+    type: vless
+    server: 46.29.235.9
+    port: 443
+    uuid: d67af820-f54c-48ab-862c-19086357f276
+    servername: telegraf.lv
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 法国 03
     type: vmess
     server: 2001:bc8:32d7:1a9::2
     port: 23388
@@ -36,11 +162,11 @@ proxies:
     servername: 2001:bc8:32d7:1a9::2
     network: ws
     ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
+      path: /github.com/Alvin99999-newpac/fanqiang
       headers:
         Host: 2001:bc8:32d7:1a9::2
     udp: true
-  - name: 🇫🇷法国FR021 0.85MB/s
+  - name: 美国 06
     type: vmess
     server: 2001:bc8:32d7:1a9::2
     port: 23388
@@ -53,155 +179,80 @@ proxies:
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
     udp: true
-  - name: 🇫🇷法国
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: 🇸🇬新加坡12.10MB/s
-    type: hysteria2
-    server: 134.185.87.191
-    port: 443
-    password: b492c1192f7aa3433c9818baf5ebb4ff
-    sni: sb.jmx666.eu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬新加坡12.10MB/s_1
-    type: hysteria2
-    server: 134.185.87.191
-    port: 443
-    password: b492c1192f7aa3433c9818baf5ebb4ff
-    sni: sb.jmx666.eu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: 未知 VLESS-845 | free-nodes
+  - name: 美国 07
     type: vless
-    server: 46.29.235.9
+    server: dey.lnmarketplace.net
     port: 443
-    uuid: d67af820-f54c-48ab-862c-19086357f276
-    servername: telegraf.lv
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
     tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: firefox
-    reality-opts:
-      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 法国
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: 🇫🇷法国FR036 0.94MB/s
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
+    http-opts:
+      path:
+        - /kavir
       headers:
-        Host: 2001:bc8:32d7:1a9::2
-    udp: true
-  - name: 美国+Eastman
-    type: hysteria2
-    server: 134.185.87.191
-    port: 443
-    password: b492c1192f7aa3433c9818baf5ebb4ff
-    sni: sb.jmx666.eu.cc
+        Host:
+          - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 🇫🇷法国FR037
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: 🇫🇷法国FR035 0.99MB/s
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-    udp: true
-  - name: 🇫🇷法国FR036 0.94MB/s_1
-    type: vmess
-    server: 2001:bc8:32d7:1a9::2
-    port: 23388
-    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
-      headers:
-        Host: 2001:bc8:32d7:1a9::2
-    udp: true
-  - name: 🇵🇱波兰PL019 测速未知
+  - name: 荷兰 02
     type: vless
-    server: 31.59.125.49
+    server: dey.lnmarketplace.net
     port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: eu-central.cendora.ru
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-      short-id: 00bca5982f82d083
-    skip-cert-verify: true
-    udp: true
-  - name: 未知 VLESS-585 | free-nodes
-    type: vless
-    server: 31.76.70.32
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: baltic.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
-    reality-opts:
-      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-      short-id: 4a46213c935e2ee4
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇭 瑞士 | CHE
+  - name: 法国 05
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin99999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 阿联酋 01
+    type: hysteria2
+    server: fin14qr.wwwinternetvideo.click
+    port: 443
+    password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+    sni: fin14qr.wwwinternetvideo.click
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 08
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2001:bc8:32d7:1a9::2
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin99999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 瑞士 01
     type: hysteria2
     server: 140.238.213.114
     port: 50160
@@ -209,209 +260,449 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
     udp: true
-  - name: LV
+  - name: 美国 09
     type: vless
-    server: 195.123.210.168
-    port: 13443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: auto.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-      short-id: a7f3c91b2e6d84c0
+    server: 50.62.198.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: GB
+  - name: 美国 10
     type: vless
-    server: 193.227.99.253
-    port: 2096
-    uuid: b07fa744-dd60-4a35-afbe-bd84e2dc86af
+    server: 45.40.149.50
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 11
+    type: vless
+    server: 50.62.195.4
+    port: 80
+    uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: raspy-feather-12ec.137-257.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 12
+    type: vless
+    server: 91.206.71.8
+    port: 80
+    uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: round-haze-8783.294.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 13
+    type: vless
+    server: 63.141.128.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime42.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 14
+    type: vless
+    server: 162.159.81.104
+    port: 80
+    uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+      headers:
+        Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 15
+    type: vless
+    server: 162.159.81.177
+    port: 80
+    uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+      headers:
+        Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 16
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
     network: http
-    servername: tf.monister.ir
+    servername: dey.lnmarketplace.net
     tls: true
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     http-opts:
       path:
-        - /
-    skip-cert-verify: true
-    udp: true
-  - name: US
-    type: trojan
-    server: www.calmlunch.com
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
+        - /kavir
       headers:
-        Host: www.calmlunch.com
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
     udp: true
-  - name: DE
+  - name: 美国 17
     type: vless
-    server: panel.homelanderwins.com
-    port: 443
-    uuid: f81362b3-ba06-467e-8d3e-821bdf4ffd8d
+    server: 50.62.195.4
+    port: 80
+    uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
     network: ws
-    servername: panel.homelanderwins.com
-    tls: true
-    client-fingerprint: qq
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: US_1
-    type: trojan
-    server: 172.64.152.23
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: US_2
-    type: trojan
-    server: 104.18.9.83
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: DK
-    type: vless
-    server: 46.29.235.9
-    port: 443
-    uuid: d67af820-f54c-48ab-862c-19086357f276
-    servername: telegraf.lv
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: US_3
-    type: trojan
-    server: blackshadow.dpdns.org
-    port: 443
-    password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-    sni: support.zoom.us.blackshadow.dpdns.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /195.123.218.174-443
-      headers:
-        Host: support.zoom.us.blackshadow.dpdns.org
-    udp: true
-  - name: NL
-    type: vless
-    server: afa-production-479a.up.railway.app
-    port: 443
-    uuid: 3ab31593-94d3-9d01-8fc8-b7d99a53b7bf
-    network: ws
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws/3ab31593-94d3-9d01-8fc8-b7d99a53b7bf
-    skip-cert-verify: true
-    udp: true
-  - name: TR
-    type: ss
-    server: 176.53.17.241
-    port: 1943
-    cipher: 2022-blake3-aes-256-gcm
-    password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=
-    skip-cert-verify: true
-    udp: true
-  - name: DE_1
-    type: vless
-    server: cja.rapidmesh.ir
-    port: 2054
-    uuid: 40937be6-c8a7-41eb-8b74-ad57e1ce6012
-    servername: amp-api-edge.apps.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: psq5zvlm9L2I0HiUCbmF2hHtWUbKVnSWV4INwgsaJGc
-      short-id: 4120ad0370a5bcc7
-    skip-cert-verify: true
-    udp: true
-  - name: NL_1
-    type: vless
-    server: hys41.wba-pn.ru
-    port: 443
-    uuid: 8e8e4592-6088-4d00-b061-ef5456d0eb9c
-    network: ws
-    tls: true
-    client-fingerprint: qq
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: RU
-    type: vless
-    server: 201.24.49.233
-    port: 4100
-    uuid: aa7d939b-feaa-4ad3-9615-74216f490807
-    network: ws
-    servername: live.ok.ru
     tls: false
     ws-opts:
-      path: /v1
-    skip-cert-verify: true
-    udp: true
-  - name: IT
-    type: ss
-    server: 194.87.47.204
-    port: 10901
-    cipher: aes-256-gcm
-    password: d1fa2f4b98a38bc8
-    skip-cert-verify: true
-    udp: true
-  - name: US_4
-    type: vless
-    server: www.zsu.gov.ua
-    port: 443
-    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-    network: ws
-    servername: misaka.cndyw.ggff.net
-    tls: true
-    ws-opts:
       path: /
+      headers:
+        Host: raspy-feather-12ec.137-257.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: DE_2
+  - name: 美国 18
+    type: hysteria2
+    server: 31.76.70.107
+    port: 8443
+    password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+    sni: quic.tyr-agentstvo.tech
+    skip-cert-verify: true
+    udp: true
+  - name: 香港 01
     type: vless
-    server: fast.iqiraq.shop
+    server: dey.lnmarketplace.net
     port: 443
-    uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
-    network: ws
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
     tls: true
-    client-fingerprint: qq
-    ws-opts:
-      path: /
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: RU_1
-    type: vless
-    server: 200.165.234.45
-    port: 4100
-    uuid: 39e0f41b-180b-4f7e-a607-37b135f0fd83
+  - name: 法国 07
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2001:bc8:32d7:1a9::2
     network: ws
-    servername: live.ok.ru
+    ws-opts:
+      path: /github.com/Alvin99999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 法国 08
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin99999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 日本 01
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 01
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 香港 02
+    type: vmess
+    server: 2001:bc8:32d7:1a9::2
+    port: 23388
+    uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+      headers:
+        Host: 2001:bc8:32d7:1a9::2
+    udp: true
+  - name: 美国 20
+    type: hysteria2
+    server: 31.76.70.107
+    port: 8443
+    password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+    sni: quic.tyr-agentstvo.tech
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国 01
+    type: vless
+    server: 63.141.128.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
     tls: false
     ws-opts:
-      path: /v1
+      path: /
+      headers:
+        Host: vms.lifetime42.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 英国 01
+    type: vless
+    server: 162.159.81.177
+    port: 80
+    uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+      headers:
+        Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 德国 01
+    type: vless
+    server: 91.206.71.8
+    port: 80
+    uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: round-haze-8783.294.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 法国 09
+    type: vless
+    server: 162.159.81.104
+    port: 80
+    uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+      headers:
+        Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰 04
+    type: vless
+    server: 50.62.195.4
+    port: 80
+    uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: raspy-feather-12ec.137-257.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大 01
+    type: vless
+    server: 50.62.195.4
+    port: 80
+    uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: raspy-feather-12ec.137-257.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 澳大利亚 01
+    type: vless
+    server: 45.40.149.50
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典 01
+    type: vless
+    server: 50.62.198.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯 03
+    type: vless
+    server: ru05.abvpn.ru
+    port: 443
+    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+    network: ws
+    servername: ru05.abvpn.ru
+    tls: true
+    client-fingerprint: edge
+    ws-opts:
+      path: /websocket
+      headers:
+        Host: ru05.abvpn.ru
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯 04
+    type: hysteria2
+    server: els2.mangshe.xyz
+    port: 2056
+    password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+    sni: els2.mangshe.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯 05
+    type: hysteria2
+    server: els2.mangshe.xyz
+    port: 2056
+    password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+    sni: els2.mangshe.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 21
+    type: vless
+    server: 72.56.40.152
+    port: 443
+    uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
+    network: ws
+    servername: usa.korgivps.ru
+    tls: true
+    client-fingerprint: firefox
+    ws-opts:
+      path: /api/user
+      headers:
+        Host: usa.korgivps.ru
+    skip-cert-verify: true
+    udp: true
+  - name: 香港 03
+    type: vless
+    server: 82.38.46.66
+    port: 15003
+    uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+      short-id: 4c517b9e
+    skip-cert-verify: true
+    udp: true
+  - name: 芬兰 01
+    type: vless
+    server: 31.76.70.32
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: baltic.cendora.ru
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+      short-id: 4a46213c935e2ee4
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞士 02
+    type: hysteria2
+    server: 140.238.213.114
+    port: 50160
+    password: 84a506ca5aca505696a454d828420b3f
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 22
+    type: hysteria2
+    server: 31.76.70.107
+    port: 8443
+    password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+    sni: quic.tyr-agentstvo.tech
+    skip-cert-verify: true
+    udp: true
+  - name: 德国 02
+    type: hysteria2
+    server: fin14qr.wwwinternetvideo.click
+    port: 443
+    password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+    sni: fin14qr.wwwinternetvideo.click
+    skip-cert-verify: true
+    udp: true
+  - name: 阿联酋 02
+    type: hysteria2
+    server: fin14qr.wwwinternetvideo.click
+    port: 443
+    password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+    sni: fin14qr.wwwinternetvideo.click
+    skip-cert-verify: true
+    udp: true
+  - name: 伊朗 01
+    type: vless
+    server: 185.143.233.5
+    port: 80
+    uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
     skip-cert-verify: true
     udp: true
 proxy-groups:
@@ -420,73 +711,115 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -496,149 +829,233 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -661,38 +1078,59 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷法国FR020 0.96MB/s
-      - 🇫🇷法国FR021 0.85MB/s
-      - 🇫🇷法国
-      - 🇸🇬新加坡12.10MB/s
-      - 🇸🇬新加坡12.10MB/s_1
-      - 未知 VLESS-845 | free-nodes
-      - 法国
-      - 🇫🇷法国FR036 0.94MB/s
-      - 美国+Eastman
-      - 🇫🇷法国FR037
-      - 🇫🇷法国FR035 0.99MB/s
-      - 🇫🇷法国FR036 0.94MB/s_1
-      - 🇵🇱波兰PL019 测速未知
-      - 未知 VLESS-585 | free-nodes
-      - 🇨🇭 瑞士 | CHE
-      - LV
-      - GB
-      - US
-      - DE
-      - US_1
-      - US_2
-      - DK
-      - US_3
-      - NL
-      - TR
-      - DE_1
-      - NL_1
-      - RU
-      - IT
-      - US_4
-      - DE_2
-      - RU_1
+      - 法国 01
+      - 美国 01
+      - 美国 02
+      - 俄罗斯 01
+      - 荷兰 01
+      - 美国 03
+      - 美国 04
+      - 法国 02
+      - 俄罗斯 02
+      - 法国 03
+      - 美国 06
+      - 美国 07
+      - 荷兰 02
+      - 法国 05
+      - 阿联酋 01
+      - 美国 08
+      - 瑞士 01
+      - 美国 09
+      - 美国 10
+      - 美国 11
+      - 美国 12
+      - 美国 13
+      - 美国 14
+      - 美国 15
+      - 美国 16
+      - 美国 17
+      - 美国 18
+      - 香港 01
+      - 法国 07
+      - 法国 08
+      - 日本 01
+      - 新加坡 01
+      - 香港 02
+      - 美国 20
+      - 韩国 01
+      - 英国 01
+      - 德国 01
+      - 法国 09
+      - 荷兰 04
+      - 加拿大 01
+      - 澳大利亚 01
+      - 瑞典 01
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 俄罗斯 05
+      - 美国 21
+      - 香港 03
+      - 芬兰 01
+      - 瑞士 02
+      - 美国 22
+      - 德国 02
+      - 阿联酋 02
+      - 伊朗 01
 rule-providers:
   LocalAreaNetwork:
     type: http

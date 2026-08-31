@@ -24,109 +24,69 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 新加坡-youtube@资源分享师 01
-    type: vless
-    server: 141.11.43.124
-    port: 443
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 新加坡-youtube@资源分享师 02
-    type: vless
-    server: 213.35.100.31
-    port: 47112
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 新加坡-youtube@资源分享师 03
-    type: vless
-    server: 213.35.110.208
-    port: 12569
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 瑞典-youtube@资源分享师 01
-    type: vless
-    server: 62.182.193.108
-    port: 2087
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
   - name: 美国-youtube@资源分享师 01
-    type: trojan
-    server: 104.18.152.50
+    type: vless
+    server: 162.35.231.73
     port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    network: http
+    servername: net.savesafe.run
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /
+      headers:
+        Host:
+          - net.savesafe.run
+    reality-opts:
+      public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+      short-id: 812609fa663c57fb
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
   - name: 美国-youtube@资源分享师 02
     type: trojan
-    server: 216.24.57.1
+    server: 216.24.57.7
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     ws-opts:
       path: /assignment
+      headers:
+        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 03
-    type: trojan
-    server: 104.16.174.22
+    type: vless
+    server: 162.35.231.73
     port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    network: http
+    servername: net.savesafe.run
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /
+    reality-opts:
+      public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+      short-id: 812609fa663c57fb
     skip-cert-verify: true
-    ws-opts:
-      path: //assignment
     udp: true
   - name: 美国-youtube@资源分享师 04
-    type: trojan
-    server: 104.16.174.34
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
+    type: vless
+    server: 40.160.69.214
+    port: 8080
+    uuid: 11af1c47-865a-47c6-92ff-118013655d78
+    network: ws
+    tls: false
     ws-opts:
-      path: /assignment
+      path: /
+    skip-cert-verify: true
     udp: true
   - name: 美国-youtube@资源分享师 05
     type: trojan
-    server: 165.215.250.14
+    server: 104.16.174.124
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -136,19 +96,17 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 06
     type: trojan
-    server: 8.6.112.0
+    server: 104.16.174.72
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     ws-opts:
       path: /assignment
-      headers:
-        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 07
     type: trojan
-    server: render.com
+    server: 104.18.152.108
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -158,19 +116,17 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 08
     type: trojan
-    server: 165.215.250.14
+    server: 104.18.152.175
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     ws-opts:
       path: /assignment
-      headers:
-        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 09
     type: trojan
-    server: 104.18.152.143
+    server: 104.18.152.155
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -180,50 +136,6 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 10
     type: trojan
-    server: 104.26.14.137
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.ignitelimit.com
-    udp: true
-  - name: 美国-youtube@资源分享师 11
-    type: trojan
-    server: 104.16.174.36
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.ignitelimit.com
-    udp: true
-  - name: 美国-youtube@资源分享师 12
-    type: trojan
-    server: 104.18.152.207
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-    udp: true
-  - name: 美国-youtube@资源分享师 13
-    type: trojan
-    server: 104.16.174.37
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-    udp: true
-  - name: 美国-youtube@资源分享师 14
-    type: trojan
     server: 216.24.57.7
     port: 443
     password: humanity
@@ -232,9 +144,9 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 15
+  - name: 美国-youtube@资源分享师 11
     type: trojan
-    server: 104.18.152.159
+    server: 172.67.74.2
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -242,7 +154,7 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 16
+  - name: 美国-youtube@资源分享师 12
     type: trojan
     server: render.com
     port: 443
@@ -252,9 +164,49 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
+  - name: 美国-youtube@资源分享师 13
+    type: trojan
+    server: 104.18.152.143
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 14
+    type: trojan
+    server: 104.16.174.44
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 15
+    type: trojan
+    server: 104.18.152.207
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 16
+    type: trojan
+    server: 104.16.174.101
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
   - name: 美国-youtube@资源分享师 17
     type: trojan
-    server: www.speedtest.org
+    server: 104.19.229.21
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -264,7 +216,7 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 18
     type: trojan
-    server: 104.16.174.6
+    server: 104.16.174.109
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -274,7 +226,7 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 19
     type: trojan
-    server: 104.16.7.70
+    server: 104.18.152.113
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -284,41 +236,41 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 20
     type: trojan
-    server: 104.18.152.144
+    server: 104.16.174.22
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: //assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 21
+    type: trojan
+    server: 104.21.46.3
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     ws-opts:
       path: /assignment
-    udp: true
-  - name: 美国-youtube@资源分享师 21
-    type: vless
-    server: 31.76.61.232
-    port: 443
-    uuid: 4829c2f5-f45a-4330-9b3c-d381b9efdbec
-    servername: policies.google.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: CMTA5uuaIVIeqHslZMT3CbFwP8F5ysMLii72ybsTlyY
-      short-id: e2a4c6b8
-    skip-cert-verify: true
+      headers:
+        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 22
     type: trojan
-    server: 104.16.174.46
+    server: 104.19.229.21
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     ws-opts:
       path: /assignment
+      headers:
+        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 23
     type: trojan
-    server: 104.18.152.103
+    server: 104.19.229.21
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -335,22 +287,18 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /assignment
-      headers:
-        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 25
-    type: trojan
-    server: 104.18.152.230
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    type: ss
+    server: 129.146.114.222
+    port: 50356
+    cipher: 2022-blake3-chacha20-poly1305
+    password: KLmBBnsO8ydX13NDGiO2YXAVexjnJj8kxeZa7GXHtN4=
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
   - name: 美国-youtube@资源分享师 26
     type: trojan
-    server: www.ignitelimit.com
+    server: 104.18.152.50
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -360,7 +308,64 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 27
     type: trojan
-    server: 104.16.174.185
+    server: 104.16.174.71
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 28
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 美国-youtube@资源分享师 29
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 30
+    type: trojan
+    server: 104.21.46.3
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 31
+    type: vless
+    server: www.cnae.top
+    port: 443
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    network: ws
+    servername: mao.kipfel.kdns.fr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /glasspanel/guest000_0_5de14443985f/
+      headers:
+        Host: mao.kipfel.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 32
+    type: trojan
+    server: 104.16.174.117
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -370,45 +375,124 @@ proxies:
     udp: true
   - name: 美国-youtube@资源分享师 33
     type: trojan
-    server: 104.18.152.204
+    server: 216.24.57.1
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
     udp: true
   - name: 美国-youtube@资源分享师 34
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 35
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 36
+    type: trojan
+    server: 130.250.137.171
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 美国-youtube@资源分享师 37
+    type: trojan
+    server: 104.18.152.210
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 38
     type: trojan
     server: 104.16.174.14
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
+    ws-opts:
+      path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 35
+  - name: 美国-youtube@资源分享师 39
     type: trojan
-    server: 104.18.152.187
+    server: 104.16.174.148
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
+    ws-opts:
+      path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 36
+  - name: 美国-youtube@资源分享师 40
     type: trojan
-    server: 104.18.152.77
+    server: 104.16.174.121
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
+    ws-opts:
+      path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 37
+  - name: 美国-youtube@资源分享师 41
+    type: vless
+    server: k2.cloud--vpn.site
+    port: 443
+    uuid: d0ee468a-084b-411d-b2be-b886a61065d1
+    network: ws
+    servername: ssl.fastly.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: c12.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 42
     type: trojan
-    server: www.ignitelimit.com
+    server: 104.18.152.229
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
+    ws-opts:
+      path: /assignment
     udp: true
-  - name: 美国-youtube@资源分享师 38
+  - name: 美国-youtube@资源分享师 43
+    type: trojan
+    server: 104.17.111.1
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国-youtube@资源分享师 44
     type: vless
     server: jp.sofast.live
     port: 52683
@@ -416,135 +500,23 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 美国-youtube@资源分享师 39
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 40
-    type: trojan
-    server: 104.16.174.101
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 41
-    type: trojan
-    server: 104.16.174.109
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 42
-    type: trojan
-    server: 104.16.174.117
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 43
-    type: trojan
-    server: 104.16.174.36
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 44
-    type: trojan
-    server: 104.16.174.46
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
   - name: 美国-youtube@资源分享师 45
     type: trojan
-    server: 104.16.7.70
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    server: 514b5fc3-833e-430c-ba80-5370cde9c40e.bnsepserv.com
+    port: 32028
+    password: e000f0d4-4f0e-4722-926f-f551d3e377c7
+    sni: 514b5fc3-833e-430c-ba80-5370cde9c40e.bnsepserv.com
     skip-cert-verify: true
     udp: true
   - name: 美国-youtube@资源分享师 46
-    type: trojan
-    server: 104.17.111.1
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    type: hysteria2
+    server: rm-eco-us-01.409648.xyz
+    port: 15194
+    password: 6dcb725e-947e-4bbe-bb35-903374d57179
+    sni: mkm.icu
     skip-cert-verify: true
     udp: true
   - name: 美国-youtube@资源分享师 47
-    type: trojan
-    server: 104.18.152.152
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 48
-    type: trojan
-    server: 104.18.152.155
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 49
-    type: trojan
-    server: 104.18.152.207
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 50
-    type: trojan
-    server: 104.18.152.210
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 51
-    type: trojan
-    server: 104.18.152.230
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 52
-    type: trojan
-    server: 104.18.152.50
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 53
-    type: trojan
-    server: 104.18.23.63
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 54
-    type: trojan
-    server: 130.250.137.171
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国-youtube@资源分享师 55
     type: trojan
     server: 165.232.159.229
     port: 443
@@ -552,15 +524,223 @@ proxies:
     sni: px8r9i1b4k.bpusfaster2.top
     skip-cert-verify: true
     udp: true
-  - name: 美国-youtube@资源分享师 56
+  - name: 美国-youtube@资源分享师 48
     type: trojan
-    server: www.speedtest.org
+    server: 165.215.250.14
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
     udp: true
+  - name: 美国-youtube@资源分享师 49
+    type: trojan
+    server: 162.159.136.234
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 50
+    type: trojan
+    server: 216.24.57.1
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 51
+    type: trojan
+    server: 514b5fc3-833e-430c-ba80-5370cde9c40e.bnsepserv.com
+    port: 32028
+    password: e000f0d4-4f0e-4722-926f-f551d3e377c7
+    sni: 514b5fc3-833e-430c-ba80-5370cde9c40e.bnsepserv.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 52
+    type: trojan
+    server: 104.18.152.233
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 53
+    type: trojan
+    server: join-telegram-channel.tirexnet.kdns.fr
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 54
+    type: hysteria2
+    server: rm-eco-us-01.409648.xyz
+    port: 10140
+    password: 6dcb725e-947e-4bbe-bb35-903374d57179
+    sni: mkm.icu
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 55
+    type: trojan
+    server: 172.235.54.63
+    port: 11890
+    password: WQSShTQIMW
+    sni: v.qq.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 56
+    type: trojan
+    server: 212.18.104.164
+    port: 14166
+    password: WQSShTQIMW
+    sni: v.qq.com
+    skip-cert-verify: true
+    udp: true
   - name: 美国-youtube@资源分享师 57
+    type: trojan
+    server: 154.31.114.10
+    port: 443
+    password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+    sni: 154.31.114.10
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 58
+    type: trojan
+    server: 104.16.174.36
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 59
+    type: trojan
+    server: 141.101.90.101
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 60
+    type: trojan
+    server: 104.18.152.244
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 61
+    type: trojan
+    server: 104.18.152.204
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 62
+    type: trojan
+    server: 104.18.152.103
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 63
+    type: trojan
+    server: 104.18.152.113
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 64
+    type: trojan
+    server: 0000.cloudflare.182682.xyz
+    port: 443
+    password: 7e7d81db-779d-4216-9b94-7a6a09874549
+    sni: huoyuznhhy5gkpj2g.usgogo202510.top
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 65
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 66
+    type: trojan
+    server: 104.19.174.68
+    port: 443
+    password: 7e7d81db-779d-4216-9b94-7a6a09874549
+    sni: huojian.usfaster.top
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 67
+    type: trojan
+    server: 104.16.174.46
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 68
+    type: trojan
+    server: 104.18.152.108
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 69
+    type: trojan
+    server: 8888.cloudflare.182682.xyz
+    port: 443
+    password: 7e7d81db-779d-4216-9b94-7a6a09874549
+    sni: huojian.usfaster.top
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 75
+    type: trojan
+    server: 104.17.111.4
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 76
+    type: trojan
+    server: 104.18.152.144
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 77
+    type: trojan
+    server: 104.18.152.50
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 78
+    type: trojan
+    server: 104.26.14.137
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 79
+    type: trojan
+    server: render.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 80
     type: trojan
     server: 216.24.57.7
     port: 443
@@ -568,53 +748,32 @@ proxies:
     sni: www.ignitelimit.com
     skip-cert-verify: true
     udp: true
-  - name: 瑞士-youtube@资源分享师 01
-    type: vless
-    server: 185.195.69.158
+  - name: 美国-youtube@资源分享师 81
+    type: trojan
+    server: 154.31.114.10
     port: 443
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 日本-youtube@资源分享师 01
-    type: trojan
-    server: jp200m.jiasu.asia
-    port: 50000
-    password: fd3f82cc-bf25-4d3a-a379-09834800ade9
-    sni: jp200m.jiasu.asia
-    skip-cert-verify: true
-    udp: true
-  - name: 日本-youtube@资源分享师 02
-    type: trojan
-    server: jp200m.jiasu.asia
-    port: 50000
-    password: 0964f6b7-6aab-4b84-9e80-dd078ed1f269
-    sni: jp200m.jiasu.asia
+    password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+    sni: 154.31.114.10
     skip-cert-verify: true
     udp: true
   - name: 俄罗斯-youtube@资源分享师 01
     type: vless
-    server: 5.42.109.42
-    port: 8443
-    uuid: 11f3e7b1-5507-46da-a268-1f70a543e40a
+    server: ru05.abvpn.ru
+    port: 443
+    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
     network: ws
-    servername: run5.wba-pn.ru
+    servername: ru05.abvpn.ru
     tls: true
-    client-fingerprint: android
+    client-fingerprint: edge
     ws-opts:
-      path: /
+      path: /websocket
+      headers:
+        Host: ru05.abvpn.ru
     skip-cert-verify: true
     udp: true
-  - name: 加拿大-youtube@资源分享师 01
+  - name: 俄罗斯-youtube@资源分享师 02
     type: trojan
-    server: join-telegram-channel-tirexnet.trex.kdns.fr
+    server: 104.18.152.219
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -622,9 +781,9 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 02
+  - name: 法国-youtube@资源分享师 01
     type: trojan
-    server: 104.16.174.143
+    server: 104.21.46.3
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -632,9 +791,9 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 03
+  - name: 法国-youtube@资源分享师 02
     type: trojan
-    server: 104.16.174.14
+    server: 104.18.23.63
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -642,79 +801,467 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 04
+  - name: 法国-youtube@资源分享师 03
+    type: trojan
+    server: 130.250.137.171
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 法国-youtube@资源分享师 04
+    type: trojan
+    server: 104.17.111.4
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 法国-youtube@资源分享师 05
+    type: trojan
+    server: 104.18.152.179
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 法国-youtube@资源分享师 06
+    type: trojan
+    server: 104.18.152.219
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 07
+    type: trojan
+    server: one-quail.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: one-quail.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 08
+    type: trojan
+    server: 172.67.221.242
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 09
+    type: trojan
+    server: 104.16.174.33
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 10
+    type: trojan
+    server: 104.16.174.12
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 11
     type: trojan
     server: 104.16.174.72
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 05
+  - name: 法国-youtube@资源分享师 12
     type: trojan
-    server: 104.18.12.149
+    server: 104.16.174.101
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 06
+  - name: 法国-youtube@资源分享师 13
     type: trojan
-    server: 104.18.22.63
+    server: 104.18.152.246
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 07
+  - name: 法国-youtube@资源分享师 14
     type: trojan
-    server: 104.18.152.113
+    server: 104.16.174.37
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 08
+  - name: 法国-youtube@资源分享师 15
     type: trojan
-    server: 104.26.14.137
+    server: 104.18.152.179
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 09
+  - name: 法国-youtube@资源分享师 16
     type: trojan
-    server: 104.18.152.73
+    server: 104.16.174.121
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 10
+  - name: 法国-youtube@资源分享师 17
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 18
+    type: trojan
+    server: one-quail.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: one-quail.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 19
+    type: trojan
+    server: 104.16.174.148
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 20
+    type: trojan
+    server: 104.16.174.22
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 21
+    type: trojan
+    server: 104.16.174.6
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 22
+    type: trojan
+    server: 104.17.111.1
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 23
+    type: trojan
+    server: 104.17.111.3
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 24
     type: trojan
     server: 104.17.177.143
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
-    ws-opts:
-      path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 11
+  - name: 法国-youtube@资源分享师 25
     type: trojan
-    server: 104.18.152.159
+    server: 104.18.152.149
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 26
+    type: trojan
+    server: 104.18.152.155
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 27
+    type: trojan
+    server: 104.18.152.229
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 28
+    type: trojan
+    server: 104.18.152.230
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 29
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 30
+    type: trojan
+    server: ip.myip2.qzz.io
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 西班牙-youtube@资源分享师 01
+    type: vless
+    server: 193.238.154.39
+    port: 443
+    uuid: 4c1b7e3f-6a2d-493f-b6c4-4ef37db6fcfc
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: G7hjy9PEKopcPUP4mQXhwIaKIO9TCra_5LHZWuM_RjM
+      short-id: 641a87d5ecdfaeb3
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡-youtube@资源分享师 01
+    type: vless
+    server: 54.169.168.70
+    port: 12346
+    uuid: e77f740b-609e-41e0-86e7-14881c1185ea
+    servername: www.intel.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 8CbVZ66WQw2bBVlxbQuCZu9WmbFcxzY6nNSz1JcQZkE
+      short-id: a739eb7afcffa605
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡-youtube@资源分享师 02
+    type: vless
+    server: 54.169.168.70
+    port: 12346
+    uuid: e77f740b-609e-41e0-86e7-14881c1185ea
+    servername: www.intel.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 8CbVZ66WQw2bBVlxbQuCZu9WmbFcxzY6nNSz1JcQZkE
+      short-id: a739eb7afcffa605
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 01
+    type: vless
+    server: 54.95.137.141
+    port: 27898
+    uuid: 40a726db-6815-44de-9c2f-80e7bfb8f81c
+    servername: www.amd.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Pd8NKW1KgKjHl6lzGTB3qIAThLbT7alN_I1uIbAQrxA
+      short-id: 9e638ff3d3d9265c
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 02
+    type: vless
+    server: 54.95.137.141
+    port: 27898
+    uuid: 40a726db-6815-44de-9c2f-80e7bfb8f81c
+    servername: www.amd.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Pd8NKW1KgKjHl6lzGTB3qIAThLbT7alN_I1uIbAQrxA
+      short-id: 9e638ff3d3d9265c
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 03
+    type: trojan
+    server: 209.248.32.117
+    port: 28102
+    password: HOrViv
+    sni: 209.248.32.117
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 04
+    type: trojan
+    server: 209.248.32.116
+    port: 28122
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 05
+    type: trojan
+    server: 209.248.32.116
+    port: 28133
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 06
+    type: trojan
+    server: 209.248.32.117
+    port: 28110
+    password: HOrViv
+    sni: download.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 07
+    type: trojan
+    server: 209.248.32.117
+    port: 28104
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 08
+    type: trojan
+    server: 209.248.32.117
+    port: 28105
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 09
+    type: trojan
+    server: 209.248.32.117
+    port: 28102
+    password: HOrViv
+    sni: 209.248.32.117
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 01
+    type: vless
+    server: 31.76.71.133
+    port: 443
+    uuid: 80d02a71-54a5-4c5b-976d-5ee573c502af
+    servername: max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: NzaCxfbgTDajw93CJs3uFkFJzp7DWhzJIqcnzoZwGQ4
+      short-id: d68d40aba9c0394a
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 02
+    type: vless
+    server: 31.76.71.133
+    port: 443
+    uuid: 80d02a71-54a5-4c5b-976d-5ee573c502af
+    servername: max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: NzaCxfbgTDajw93CJs3uFkFJzp7DWhzJIqcnzoZwGQ4
+      short-id: d68d40aba9c0394a
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 03
+    type: vless
+    server: 159.69.28.178
+    port: 20995
+    uuid: 20bcb7a8-c51b-4771-9686-6b4509dc9cd2
+    servername: itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GqIZ3PiZBcvHMfXhk7BDZMWhF2Q4FrGVW9sgkllXkA4
+      short-id: 6ba85179e30d4fc2
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 04
+    type: vless
+    server: 159.69.28.178
+    port: 20995
+    uuid: 20bcb7a8-c51b-4771-9686-6b4509dc9cd2
+    servername: itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GqIZ3PiZBcvHMfXhk7BDZMWhF2Q4FrGVW9sgkllXkA4
+      short-id: 6ba85179e30d4fc2
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 01
+    type: ss
+    server: 141.148.242.8
+    port: 45819
+    cipher: 2022-blake3-chacha20-poly1305
+    password: ASZrfHb6wsgNUaFmzWovOJ+oao/cqGy34TAJO9+6iI0=
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 01
+    type: vless
+    server: nian.001.url111.kcloud02.top
+    port: 15006
+    uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+    servername: www.adobe.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg
+      short-id: 029a6cc4
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 02
+    type: trojan
+    server: 209.248.32.117
+    port: 28102
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 03
+    type: trojan
+    server: uk1.test3.net
+    port: 443
+    password: 497f2520-9538-11f1-8291-1239d0255272
+    sni: chatbuzzteam.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 04
+    type: trojan
+    server: uk1.test3.net
+    port: 443
+    password: dec2d020-9537-11f1-8cf7-1239d0255272
+    sni: chatbuzzteam.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 立陶宛-youtube@资源分享师 01
+    type: trojan
+    server: 86.38.214.205
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -724,10 +1271,46 @@ proxies:
       headers:
         Host: www.ignitelimit.com
     udp: true
-  - name: 加拿大-youtube@资源分享师 12
+  - name: 立陶宛-youtube@资源分享师 02
     type: trojan
-    server: 104.18.152.244
+    server: 86.38.214.205
     port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 立陶宛-youtube@资源分享师 03
+    type: trojan
+    server: 185.80.129.84
+    port: 443
+    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
+    sni: light.bpsg2026.top
+    skip-cert-verify: true
+    udp: true
+  - name: 立陶宛-youtube@资源分享师 04
+    type: trojan
+    server: 86.38.214.205
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
+  - name: 塞舌尔-youtube@资源分享师 01
+    type: trojan
+    server: 45.130.125.160
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 伊朗-youtube@资源分享师 01
+    type: trojan
+    server: 2.144.21.112
+    port: 40443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: true
@@ -736,7 +1319,28 @@ proxies:
       headers:
         Host: www.ignitelimit.com
     udp: true
-  - name: 加拿大-youtube@资源分享师 13
+  - name: 伊朗-youtube@资源分享师 02
+    type: vless
+    server: 185.143.233.5
+    port: 80
+    uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 巴西-youtube@资源分享师 01
+    type: ss
+    server: 137.131.191.12
+    port: 59319
+    cipher: 2022-blake3-chacha20-poly1305
+    password: xvjs4UHiUKxyde5edZ7RPZ3wnOste5XqT6xBMbVfd6g=
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 01
     type: trojan
     server: 104.17.111.8
     port: 443
@@ -746,252 +1350,7 @@ proxies:
     ws-opts:
       path: /assignment
     udp: true
-  - name: 加拿大-youtube@资源分享师 14
-    type: trojan
-    server: 104.18.152.204
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-    udp: true
-  - name: 塞浦路斯-youtube@资源分享师 01
-    type: vless
-    server: 194.55.164.154
-    port: 8443
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 波兰-youtube@资源分享师 01
-    type: vless
-    server: 31.59.125.49
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: eu-central.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-      short-id: 00bca5982f82d083
-    skip-cert-verify: true
-    udp: true
-  - name: 波兰-youtube@资源分享师 02
-    type: vless
-    server: 31.59.125.49
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: eu-central.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-      short-id: 00bca5982f82d083
-    skip-cert-verify: true
-    udp: true
-  - name: 波兰-youtube@资源分享师 03
-    type: vless
-    server: 31.59.125.49
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: eu-central.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-      short-id: 00bca5982f82d083
-    skip-cert-verify: true
-    udp: true
-  - name: 波兰-youtube@资源分享师 04
-    type: trojan
-    server: enough-basilisk.rooster465.autos
-    port: 443
-    password: AE62539071
-    sni: enough-basilisk.rooster465.autos
-    skip-cert-verify: true
-    udp: true
-  - name: 德国-youtube@资源分享师 01
-    type: vless
-    server: 5.61.46.9
-    port: 443
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 拉脱维亚-youtube@资源分享师 01
-    type: vless
-    server: 195.123.210.168
-    port: 13443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: auto.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-      short-id: a7f3c91b2e6d84c0
-    skip-cert-verify: true
-    udp: true
-  - name: 拉脱维亚-youtube@资源分享师 02
-    type: vless
-    server: 195.135.254.15
-    port: 443
-    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-    network: ws
-    servername: vod.ensf.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /api/v1/irc
-      headers:
-        Host: vod.ensf.top
-    skip-cert-verify: true
-    udp: true
-  - name: 拉脱维亚-youtube@资源分享师 03
-    type: vless
-    server: 195.123.210.168
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: eu-west.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-      short-id: dd3ff38418d29d22
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 01
-    type: trojan
-    server: one-quail.rooster465.autos
-    port: 443
-    password: AE62539071
-    sni: one-quail.rooster465.autos
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 02
-    type: trojan
-    server: 104.18.152.73
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 03
-    type: trojan
-    server: 104.16.174.33
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 04
-    type: trojan
-    server: 104.18.152.144
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 05
-    type: trojan
-    server: 104.18.152.175
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 06
-    type: trojan
-    server: 104.18.152.208
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 07
-    type: trojan
-    server: 104.18.152.219
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 08
-    type: trojan
-    server: 104.18.152.233
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国-youtube@资源分享师 09
-    type: trojan
-    server: ip.myip2.qzz.io
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-    udp: true
-  - name: 韩国-youtube@资源分享师 01
-    type: hysteria2
-    server: 132.226.226.189
-    port: 50160
-    password: 1671a252e2a97dc2bda4e515475931da
-    sni: www.bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 英国-youtube@资源分享师 01
-    type: vless
-    server: 18.133.19.17
-    port: 22222
-    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 英国-youtube@资源分享师 02
-    type: trojan
-    server: uk1.test3.net
-    port: 443
-    password: 497f2520-9538-11f1-8291-1239d0255272
-    sni: chatbuzzteam.ir
-    skip-cert-verify: true
-    udp: true
-  - name: 澳大利亚-youtube@资源分享师 01
-    type: trojan
-    server: together-dingo.rooster465.autos
-    port: 443
-    password: AE62539071
-    sni: together-dingo.rooster465.autos
-    skip-cert-verify: true
-    udp: true
   - name: 香港-youtube@资源分享师 01
-    type: trojan
-    server: 149.28.171.207
-    port: 443
-    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
-    sni: oe4up9z5j9yntita.tkgogocsgo.top
-    skip-cert-verify: true
-    udp: true
-  - name: 香港-youtube@资源分享师 02
     type: trojan
     server: 188.208.110.30
     port: 443
@@ -999,7 +1358,7 @@ proxies:
     sni: baihkhk1.xn--ghqp68hvpn1ka.com
     skip-cert-verify: true
     udp: true
-  - name: 香港-youtube@资源分享师 03
+  - name: 香港-youtube@资源分享师 02
     type: trojan
     server: 89.46.236.118
     port: 443
@@ -1007,28 +1366,12 @@ proxies:
     sni: oe4up9z5j9yntita.tkgogocsgo.top
     skip-cert-verify: true
     udp: true
-  - name: 印尼-youtube@资源分享师 01
+  - name: 香港-youtube@资源分享师 03
     type: trojan
-    server: 43.173.1.153
-    port: 8443
-    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
-    sni: light.bpsg2026.top
-    skip-cert-verify: true
-    udp: true
-  - name: 立陶宛-youtube@资源分享师 01
-    type: trojan
-    server: 185.80.129.84
-    port: 443
-    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
-    sni: light.bpsg2026.top
-    skip-cert-verify: true
-    udp: true
-  - name: 马来-youtube@资源分享师 01
-    type: trojan
-    server: 47.250.212.59
-    port: 2053
-    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
-    sni: gogoyy.bpmalai2026.top
+    server: 209.248.32.117
+    port: 18293
+    password: HOrViv
+    sni: ctldl.windowsupdate.com
     skip-cert-verify: true
     udp: true
   - name: 台湾-youtube@资源分享师 01
@@ -1039,16 +1382,68 @@ proxies:
     sni: ttww11.bpca2026.top
     skip-cert-verify: true
     udp: true
+  - name: 马来-youtube@资源分享师 01
+    type: trojan
+    server: 47.250.212.59
+    port: 2053
+    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
+    sni: gogoyy.bpmalai2026.top
+    skip-cert-verify: true
+    udp: true
+  - name: 波兰-youtube@资源分享师 01
+    type: trojan
+    server: enough-basilisk.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: enough-basilisk.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 波兰-youtube@资源分享师 02
+    type: trojan
+    server: enough-basilisk.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: enough-basilisk.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 印尼-youtube@资源分享师 01
+    type: trojan
+    server: 43.173.1.153
+    port: 8443
+    password: 080a97ac-d88d-44dd-b288-046295e5d6e9
+    sni: light.bpsg2026.top
+    skip-cert-verify: true
+    udp: true
+  - name: 澳大利亚-youtube@资源分享师 01
+    type: trojan
+    server: together-dingo.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: together-dingo.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 澳大利亚-youtube@资源分享师 02
+    type: trojan
+    server: together-dingo.rooster465.autos
+    port: 443
+    password: AE62539071
+    sni: together-dingo.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 01
+    type: trojan
+    server: 45.130.125.160
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1076,6 +1471,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1101,33 +1501,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1137,24 +1531,71 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1182,6 +1623,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1207,33 +1653,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1243,17 +1683,68 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1263,10 +1754,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1294,6 +1781,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1319,33 +1811,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1355,26 +1841,73 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1402,6 +1935,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1427,33 +1965,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1463,26 +1995,73 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1510,6 +2089,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1535,33 +2119,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1571,26 +2149,73 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1618,6 +2243,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1643,33 +2273,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1679,17 +2303,68 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1712,10 +2387,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-youtube@资源分享师 01
-      - 新加坡-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 03
-      - 瑞典-youtube@资源分享师 01
       - 美国-youtube@资源分享师 01
       - 美国-youtube@资源分享师 02
       - 美国-youtube@资源分享师 03
@@ -1743,6 +2414,11 @@ proxy-groups:
       - 美国-youtube@资源分享师 25
       - 美国-youtube@资源分享师 26
       - 美国-youtube@资源分享师 27
+      - 美国-youtube@资源分享师 28
+      - 美国-youtube@资源分享师 29
+      - 美国-youtube@资源分享师 30
+      - 美国-youtube@资源分享师 31
+      - 美国-youtube@资源分享师 32
       - 美国-youtube@资源分享师 33
       - 美国-youtube@资源分享师 34
       - 美国-youtube@资源分享师 35
@@ -1768,33 +2444,27 @@ proxy-groups:
       - 美国-youtube@资源分享师 55
       - 美国-youtube@资源分享师 56
       - 美国-youtube@资源分享师 57
-      - 瑞士-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 58
+      - 美国-youtube@资源分享师 59
+      - 美国-youtube@资源分享师 60
+      - 美国-youtube@资源分享师 61
+      - 美国-youtube@资源分享师 62
+      - 美国-youtube@资源分享师 63
+      - 美国-youtube@资源分享师 64
+      - 美国-youtube@资源分享师 65
+      - 美国-youtube@资源分享师 66
+      - 美国-youtube@资源分享师 67
+      - 美国-youtube@资源分享师 68
+      - 美国-youtube@资源分享师 69
+      - 美国-youtube@资源分享师 75
+      - 美国-youtube@资源分享师 76
+      - 美国-youtube@资源分享师 77
+      - 美国-youtube@资源分享师 78
+      - 美国-youtube@资源分享师 79
+      - 美国-youtube@资源分享师 80
+      - 美国-youtube@资源分享师 81
       - 俄罗斯-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 01
-      - 加拿大-youtube@资源分享师 02
-      - 加拿大-youtube@资源分享师 03
-      - 加拿大-youtube@资源分享师 04
-      - 加拿大-youtube@资源分享师 05
-      - 加拿大-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 07
-      - 加拿大-youtube@资源分享师 08
-      - 加拿大-youtube@资源分享师 09
-      - 加拿大-youtube@资源分享师 10
-      - 加拿大-youtube@资源分享师 11
-      - 加拿大-youtube@资源分享师 12
-      - 加拿大-youtube@资源分享师 13
-      - 加拿大-youtube@资源分享师 14
-      - 塞浦路斯-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 01
-      - 波兰-youtube@资源分享师 02
-      - 波兰-youtube@资源分享师 03
-      - 波兰-youtube@资源分享师 04
-      - 德国-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 01
-      - 拉脱维亚-youtube@资源分享师 02
-      - 拉脱维亚-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 02
       - 法国-youtube@资源分享师 01
       - 法国-youtube@资源分享师 02
       - 法国-youtube@资源分享师 03
@@ -1804,17 +2474,68 @@ proxy-groups:
       - 法国-youtube@资源分享师 07
       - 法国-youtube@资源分享师 08
       - 法国-youtube@资源分享师 09
-      - 韩国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 10
+      - 法国-youtube@资源分享师 11
+      - 法国-youtube@资源分享师 12
+      - 法国-youtube@资源分享师 13
+      - 法国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 15
+      - 法国-youtube@资源分享师 16
+      - 法国-youtube@资源分享师 17
+      - 法国-youtube@资源分享师 18
+      - 法国-youtube@资源分享师 19
+      - 法国-youtube@资源分享师 20
+      - 法国-youtube@资源分享师 21
+      - 法国-youtube@资源分享师 22
+      - 法国-youtube@资源分享师 23
+      - 法国-youtube@资源分享师 24
+      - 法国-youtube@资源分享师 25
+      - 法国-youtube@资源分享师 26
+      - 法国-youtube@资源分享师 27
+      - 法国-youtube@资源分享师 28
+      - 法国-youtube@资源分享师 29
+      - 法国-youtube@资源分享师 30
+      - 西班牙-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 德国-youtube@资源分享师 01
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 01
       - 英国-youtube@资源分享师 01
       - 英国-youtube@资源分享师 02
-      - 澳大利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 立陶宛-youtube@资源分享师 01
+      - 立陶宛-youtube@资源分享师 02
+      - 立陶宛-youtube@资源分享师 03
+      - 立陶宛-youtube@资源分享师 04
+      - 塞舌尔-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 02
+      - 巴西-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 01
       - 香港-youtube@资源分享师 01
       - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 03
-      - 印尼-youtube@资源分享师 01
-      - 立陶宛-youtube@资源分享师 01
-      - 马来-youtube@资源分享师 01
       - 台湾-youtube@资源分享师 01
+      - 马来-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 印尼-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 01
+      - 澳大利亚-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 01
 rule-providers:
   LocalAreaNetwork:
     type: http
