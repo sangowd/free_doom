@@ -24,6 +24,94 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
+  - name: 荷兰 04【由零开始 优选节点】
+    type: vless
+    server: pr-media.pepro.site
+    port: 14443
+    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+    network: ws
+    servername: pr-media.pepro.site
+    tls: true
+    client-fingerprint: qq
+    ws-opts:
+      path: /ws
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 13【由零开始 优选节点】
+    type: vless
+    server: 193.36.38.17
+    port: 443
+    uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+    network: ws
+    servername: eded-52n.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: eded-52n.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 26【由零开始 优选节点】
+    type: vless
+    server: 193.36.38.17
+    port: 443
+    uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+    network: ws
+    servername: eded-52n.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: eded-52n.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯 02【由零开始 优选节点】
+    type: vless
+    server: pr-media.pepro.site
+    port: 14443
+    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+    network: ws
+    servername: pr-media.pepro.site
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+    skip-cert-verify: true
+    udp: true
+  - name: 乌克兰 01【由零开始 优选节点】
+    type: vless
+    server: 213.111.149.58
+    port: 8443
+    uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+    network: ws
+    servername: eded-52n.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: eded-52n.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 05【由零开始 优选节点】
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
   - name: 荷兰 01【由零开始 优选节点】
     type: vless
     server: dey.lnmarketplace.net
@@ -32,7 +120,7 @@ proxies:
     network: http
     servername: dey.lnmarketplace.net
     tls: true
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     http-opts:
       path:
         - /kavir
@@ -41,7 +129,23 @@ proxies:
           - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 荷兰 06【由零开始 优选节点】
+  - name: 美国 02【由零开始 优选节点】
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 14【由零开始 优选节点】
     type: vless
     server: dey.lnmarketplace.net
     port: 443
@@ -58,7 +162,7 @@ proxies:
           - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 荷兰 03【由零开始 优选节点】
+  - name: 美国 18【由零开始 优选节点】
     type: vless
     server: dey.lnmarketplace.net
     port: 443
@@ -73,31 +177,6 @@ proxies:
       headers:
         Host:
           - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 06【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 法国 02【由零开始 优选节点】
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
     skip-cert-verify: true
     udp: true
   - name: 美国 01【由零开始 优选节点】
@@ -117,35 +196,23 @@ proxies:
           - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 法国 02【由零开始 优选节点】_1
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 09【由零开始 优选节点】
+  - name: 美国 15【由零开始 优选节点】
     type: vless
-    server: www.speedtest.net
+    server: dey.lnmarketplace.net
     port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    network: ws
-    servername: top-e4s.pages.dev
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
     tls: true
-    ws-opts:
-      path: /
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 法国 01【由零开始 优选节点】
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 01【由零开始 优选节点】_1
+  - name: 香港 01【由零开始 优选节点】
     type: vless
     server: dey.lnmarketplace.net
     port: 443
@@ -179,6 +246,215 @@ proxies:
           - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
+  - name: 阿联酋 02【由零开始 优选节点】
+    type: vless
+    server: 94.183.170.147
+    port: 8443
+    uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+    network: grpc
+    servername: www.cloudflare.com
+    tls: true
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: 9d30d49278
+    reality-opts:
+      public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+      short-id: 72ccd4a7563c2953
+    skip-cert-verify: true
+    udp: true
+  - name: 乌克兰 02【由零开始 优选节点】
+    type: vless
+    server: 213.111.149.58
+    port: 8443
+    uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+    network: ws
+    servername: eded-52n.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: eded-52n.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰 03【由零开始 优选节点】
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其 01【由零开始 优选节点】
+    type: vless
+    server: 91.206.71.8
+    port: 80
+    uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: round-haze-8783.294.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 10【由零开始 优选节点】
+    type: vless
+    server: 50.62.198.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 09【由零开始 优选节点】
+    type: vless
+    server: 63.141.128.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime42.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 22【由零开始 优选节点】
+    type: vless
+    server: 63.141.128.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime42.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其 02【由零开始 优选节点】
+    type: vless
+    server: 91.206.71.8
+    port: 80
+    uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+    network: ws
+    tls: false
+    ws-opts:
+      path: /pyip=Telegram🇨🇳+@WangCai2
+      headers:
+        Host: round-haze-8783.294.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 阿联酋 01【由零开始 优选节点】
+    type: vless
+    server: 94.183.170.147
+    port: 8443
+    uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+    network: grpc
+    servername: www.cloudflare.com
+    tls: true
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: 9d30d49278
+    reality-opts:
+      public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+      short-id: 72ccd4a7563c2953
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 21【由零开始 优选节点】
+    type: vless
+    server: www.speedtest.net
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    network: ws
+    servername: top-e4s.pages.dev
+    tls: true
+    ws-opts:
+      path: /
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 11【由零开始 优选节点】
+    type: vless
+    server: 45.40.149.50
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 23【由零开始 优选节点】
+    type: vless
+    server: 50.62.198.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 08【由零开始 优选节点】
+    type: vless
+    server: www.speedtest.net
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    network: ws
+    servername: top-e4s.pages.dev
+    tls: true
+    ws-opts:
+      path: /
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 24【由零开始 优选节点】
+    type: vless
+    server: 45.40.149.50
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime39.workers.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰 05【由零开始 优选节点】
+    type: vless
+    server: dey.lnmarketplace.net
+    port: 443
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    network: http
+    servername: dey.lnmarketplace.net
+    tls: true
+    client-fingerprint: firefox
+    http-opts:
+      path:
+        - /kavir
+      headers:
+        Host:
+          - dey.lnmarketplace.net
+    skip-cert-verify: true
+    udp: true
   - name: 香港 02【由零开始 优选节点】
     type: vless
     server: dey.lnmarketplace.net
@@ -196,500 +472,20 @@ proxies:
           - dey.lnmarketplace.net
     skip-cert-verify: true
     udp: true
-  - name: 荷兰 04【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
+  - name: 美国 25【由零开始 优选节点】
+    type: vmess
+    server: d3cdy6viklzpq1.cloudfront.net
     port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
+    uuid: 4da05f36-7918-488e-b07e-808e4992cee0
+    alterId: 0
+    cipher: auto
     tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
     skip-cert-verify: true
-    udp: true
-  - name: 荷兰 05【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 11【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 03【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 香港 01【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 香港 01【由零开始 优选节点】_1
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 01【由零开始 优选节点】_1
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 02【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 02【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 06【由零开始 优选节点】_1
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 香港 01【由零开始 优选节点】_2
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 76【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 08【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 法国 03【由零开始 优选节点】
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 法国 02【由零开始 优选节点】_2
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: speedtest.tinkoff.ru
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 08【由零开始 优选节点】_1
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 60【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 俄罗斯 06【由零开始 优选节点】
-    type: vless
-    server: pr-media.pepro.site
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
     network: ws
-    servername: pr-media.pepro.site
-    tls: true
-    client-fingerprint: qq
     ws-opts:
-      path: /ws
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 05【由零开始 优选节点】_1
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /kavir
+      path: /vmess
       headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 俄罗斯 05【由零开始 优选节点】
-    type: vless
-    server: pr-media.pepro.site
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-    network: ws
-    servername: pr-media.pepro.site
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 12【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 19【由零开始 优选节点】
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 02【由零开始 优选节点】_1
-    type: vless
-    server: pr-media.pepro.site
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-    network: ws
-    servername: pr-media.pepro.site
-    tls: true
-    client-fingerprint: qq
-    ws-opts:
-      path: /ws
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 01【由零开始 优选节点】_2
-    type: vless
-    server: 95.163.232.171
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-    network: ws
-    servername: pr-media.pepro.site
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 06【由零开始 优选节点】_1
-    type: vless
-    server: 95.163.232.171
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-    network: ws
-    servername: pr-media.pepro.site
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /ws
-    skip-cert-verify: true
-    udp: true
-  - name: 法国 03【由零开始 优选节点】_1
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: speedtest.tinkoff.ru
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 01【由零开始 优选节点】_3
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 01【由零开始 优选节点】_2
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 摩尔多瓦 01【由零开始 优选节点】
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 02【由零开始 优选节点】_1
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 03【由零开始 优选节点】_1
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 02【由零开始 优选节点】_2
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰 02【由零开始 优选节点】_2
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 07【由零开始 优选节点】
-    type: hysteria2
-    server: gta.internet-card.sbs
-    port: 443
-    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-    sni: gta.internet-card.sbs
-    skip-cert-verify: true
+        Host: d3cdy6viklzpq1.cloudfront.net
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -697,101 +493,71 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -801,205 +567,145 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1022,52 +728,37 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 荷兰 01【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】
-      - 荷兰 03【由零开始 优选节点】
-      - 美国 06【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_1
-      - 美国 09【由零开始 优选节点】
-      - 法国 01【由零开始 优选节点】
-      - 美国 01【由零开始 优选节点】_1
-      - 荷兰 07【由零开始 优选节点】
-      - 香港 02【由零开始 优选节点】
       - 荷兰 04【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】
-      - 美国 11【由零开始 优选节点】
-      - 美国 03【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】
-      - 香港 01【由零开始 优选节点】_1
-      - 荷兰 01【由零开始 优选节点】_1
+      - 美国 13【由零开始 优选节点】
+      - 美国 26【由零开始 优选节点】
+      - 俄罗斯 02【由零开始 优选节点】
+      - 乌克兰 01【由零开始 优选节点】
+      - 美国 05【由零开始 优选节点】
+      - 荷兰 01【由零开始 优选节点】
       - 美国 02【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】
-      - 荷兰 06【由零开始 优选节点】_1
-      - 香港 01【由零开始 优选节点】_2
-      - 美国 76【由零开始 优选节点】
+      - 美国 14【由零开始 优选节点】
+      - 美国 18【由零开始 优选节点】
+      - 美国 01【由零开始 优选节点】
+      - 美国 15【由零开始 优选节点】
+      - 香港 01【由零开始 优选节点】
+      - 荷兰 07【由零开始 优选节点】
+      - 阿联酋 02【由零开始 优选节点】
+      - 乌克兰 02【由零开始 优选节点】
+      - 荷兰 03【由零开始 优选节点】
+      - 土耳其 01【由零开始 优选节点】
+      - 美国 10【由零开始 优选节点】
+      - 美国 09【由零开始 优选节点】
+      - 美国 22【由零开始 优选节点】
+      - 土耳其 02【由零开始 优选节点】
+      - 阿联酋 01【由零开始 优选节点】
+      - 美国 21【由零开始 优选节点】
+      - 美国 11【由零开始 优选节点】
+      - 美国 23【由零开始 优选节点】
       - 美国 08【由零开始 优选节点】
-      - 法国 03【由零开始 优选节点】
-      - 法国 02【由零开始 优选节点】_2
-      - 美国 08【由零开始 优选节点】_1
-      - 美国 60【由零开始 优选节点】
-      - 俄罗斯 06【由零开始 优选节点】
-      - 荷兰 05【由零开始 优选节点】_1
-      - 俄罗斯 05【由零开始 优选节点】
-      - 美国 12【由零开始 优选节点】
-      - 美国 19【由零开始 优选节点】
-      - 荷兰 02【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_2
-      - 美国 06【由零开始 优选节点】_1
-      - 法国 03【由零开始 优选节点】_1
-      - 美国 01【由零开始 优选节点】_3
-      - 荷兰 01【由零开始 优选节点】_2
-      - 摩尔多瓦 01【由零开始 优选节点】
-      - 美国 02【由零开始 优选节点】_1
-      - 荷兰 03【由零开始 优选节点】_1
-      - 美国 02【由零开始 优选节点】_2
-      - 荷兰 02【由零开始 优选节点】_2
-      - 美国 07【由零开始 优选节点】
+      - 美国 24【由零开始 优选节点】
+      - 荷兰 05【由零开始 优选节点】
+      - 香港 02【由零开始 优选节点】
+      - 美国 25【由零开始 优选节点】
 rule-providers:
   LocalAreaNetwork:
     type: http
