@@ -1,4426 +1,589 @@
+tcp-concurrent: true
+unified-delay: true
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: info
-ipv6: false
-external-controller: 127.0.0.1:9090
+external-controller: '127.0.0.1:9090'
 dns:
-  enable: true
-  listen: 127.0.0.1:1053
-  ipv6: false
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-  proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-  nameserver-policy:
-    geosite:geolocation-!cn:
-      - https://1.1.1.1/dns-query#🚀 节点选择
-      - https://8.8.8.8/dns-query#🚀 节点选择
+    enable: true
+    ipv6: false
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter: ['geosite:cn', 'geosite:private', 'geosite:apple', 'geosite:category-ntp', '*.lan', '*.local', '*.localhost', '*.test', +.lan, +.local, +.localdomain, +.localhost, +.example, +.invalid, +.test, '+.stun.*.*', '+.stun.*.*.*', '+.stun.*.*.*.*', +.stun.playstation.net, lens.l.google.com, '*.srv.nintendo.net', 'xbox.*.*.microsoft.com', '*.*.xboxlive.com', localhost.ptlogin2.qq.com, msftconnecttest.com, msftncsi.com, '*.msftconnecttest.com', '*.msftncsi.com', dns.msftncsi.com, www.msftncsi.com, www.msftconnecttest.com, time.windows.com, time.apple.com, time-ios.apple.com, time.asia.apple.com, ntp.aliyun.com, ntp1.aliyun.com, ntp2.aliyun.com, ntp3.aliyun.com, ntp4.aliyun.com, ntp5.aliyun.com, ntp6.aliyun.com, ntp7.aliyun.com, time1.cloud.tencent.com, ntp.ntsc.ac.cn, +.pool.ntp.org, connectivitycheck.android.com, android.clients.google.com, services.googleapis.cn, xn--ngstr-lra8j.com]
+    respect-rules: true
+    use-hosts: true
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    proxy-server-nameserver: [223.5.5.5, 119.29.29.29]
+    direct-nameserver: [223.5.5.5, 119.29.29.29]
+    nameserver: [223.5.5.5, 119.29.29.29]
+    fallback: ['https://dns.google/dns-query', 'tls://1.1.1.1:853']
+    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-  - name: YouTube顺丰资源 中国
-    type: vless
-    server: 43.161.254.71
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_1
-    type: vless
-    server: 43.161.226.55
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国台湾
-    type: vmess
-    server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-    port: 443
-    uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    udp: true
-  - name: YouTube顺丰资源 日本
-    type: vless
-    server: 35.72.179.15
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 韩国
-    type: vless
-    server: 123.111.169.70
-    port: 2083
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国香港
-    type: vless
-    server: 103.118.41.121
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国
-    type: vless
-    server: 13.200.106.232
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国香港_1
-    type: vless
-    server: 103.143.81.178
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_1
-    type: vless
-    server: 45.40.151.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime42.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国香港_2
-    type: vless
-    server: 103.101.0.73
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_2
-    type: vless
-    server: 45.40.150.4
-    port: 80
-    uuid: 72c2b7cc-fcd9-494f-8a2e-21dcd062ff11
-    network: ws
-    tls: false
-    ws-opts:
-      path: /pyip=Telegram🇨🇳++
-      headers:
-        Host: holy-breeze-0bac.47-dec.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_3
-    type: vless
-    server: 161.33.29.51
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国
-    type: vless
-    server: 80.93.202.40
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime02.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_4
-    type: trojan
-    server: 199.232.78.160
-    port: 443
-    password: MiTIVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 瑞典
-    type: vless
-    server: 193.180.208.169
-    port: 8443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 法国
-    type: vless
-    server: 141.227.186.38
-    port: 2053
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 比利时
-    type: vless
-    server: 194.71.227.213
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 法国_1
-    type: vless
-    server: 141.227.137.177
-    port: 2053
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_5
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_6
-    type: trojan
-    server: 167.82.76.7
-    port: 443
-    password: MiTIVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 英国_1
-    type: vless
-    server: 109.176.202.20
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_7
-    type: vless
-    server: 38.180.109.174
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_8
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 俄罗斯
-    type: vless
-    server: 5.35.103.185
-    port: 8443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国香港_3
-    type: vless
-    server: 45.202.254.133
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 俄罗斯_1
-    type: vless
-    server: 185.153.198.86
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 Nofound
-    type: vless
-    server: 103.167.234.26
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 日本_1
-    type: vless
-    server: 103.31.77.108
-    port: 2053
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_9
-    type: vless
-    server: 104.21.1.174
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: kkkk.11ww.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: kkkk.11ww.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_10
-    type: vless
-    server: 207.57.135.37
-    port: 58979
-    uuid: 99385d38-676e-4e21-8de5-bd3b0b57e2b6
-    servername: www.ebay.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: BMGv1azVuzaXicmRgvGIbDdRv-9tIjfvtSCKRh1EfVw
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰
-    type: vless
-    server: 213.111.148.137
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国香港_4
-    type: vless
-    server: 45.202.254.133
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_11
-    type: vless
-    server: dey.lnmarketplace.net
-    port: 443
-    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-    network: http
-    servername: dey.lnmarketplace.net
-    tls: true
-    client-fingerprint: firefox
-    http-opts:
-      path:
-        - /kavir
-      headers:
-        Host:
-          - dey.lnmarketplace.net
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_1
-    type: vless
-    server: 213.111.177.107
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_12
-    type: vless
-    server: 172.67.223.78
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 4-m17.JordaN-LiNk.kdnS.fR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 4-m17.joRDan-linK.KDnS.FR
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_2
-    type: vless
-    server: 152.114.195.163
-    port: 8443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 亚美尼亚
-    type: vless
-    server: 2.56.204.183
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_13
-    type: vless
-    server: 104.21.16.18
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: api-endpoint-eu.f00f.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: api-endpoint-eu.f00f.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_2
-    type: vless
-    server: 213.111.148.137
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 意大利
-    type: vless
-    server: 45.145.228.155
-    port: 2574
-    uuid: 032b96c6-752f-4cff-88d1-fad817b0dad3
-    servername: dash.cloudflare.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: JXdqcykVt3Ue2ToOemH_AHoZUnQKbGIzaUmeZY7o32Y
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_2
-    type: vless
-    server: 103.200.28.113
-    port: 8443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 伊朗
-    type: vless
-    server: 31.57.218.99
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_14
-    type: vless
-    server: 104.21.49.165
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 4-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 4-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_15
-    type: vless
-    server: 172.67.223.26
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 0-M17.kUWAit-liNe.Kdns.FR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 0-M17.kUwAit-LiNe.KDNS.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 日本_2
-    type: hysteria2
-    server: msjp1.mangshe.xyz
-    port: 20561
-    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-    sni: www.microsoft.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_16
-    type: vless
-    server: 104.21.52.75
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 7-m9.pattaya-4.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 7-m9.pattaya-4.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 俄罗斯_2
-    type: vless
-    server: 195.133.92.20
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_17
-    type: vless
-    server: 172.67.223.78
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 6-m17.JORDAn-liNk.KDNS.fR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 6-M17.JOrdAN-liNk.KdNs.fR
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_18
-    type: vless
-    server: 172.67.212.195
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 7-m17.KuWAiT-AIrLiNE.kDns.Fr
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 7-M17.kUwaIt-AIrLInE.kDNS.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_19
-    type: vless
-    server: 104.21.16.18
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: api-gateway-1.f00f.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: api-gateway-1.f00f.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 Nofound_1
-    type: vless
-    server: 140.235.39.19
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_20
-    type: vless
-    server: 104.21.78.48
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 8-m9.5f67a3d6-2963-45ab-8313-7d02d224d2a0.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 8-m9.5f67a3d6-2963-45ab-8313-7d02d224d2a0.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 尼日利亚
-    type: vless
-    server: 83.229.127.18
-    port: 27948
-    uuid: 7010c0c4-ac62-4456-9f40-fead039d2be5
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: ZJbUs5ZBJacR5XKdOKz8rI7ovNMcq0ocdCvsA0Z3ul8
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_21
-    type: vless
-    server: 172.67.212.195
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 5-M17.KuWAIT-AirLinE.kDNS.fr
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 5-m17.kuwait-aIRLiNe.kDns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_22
-    type: vless
-    server: 172.67.222.216
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 3-m9.0353d46a-c168-413e-95bd-b5f2eb943cd7.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 3-m9.0353d46a-c168-413e-95bd-b5f2eb943cd7.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_3
-    type: vless
-    server: 213.111.177.107
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_23
-    type: vless
-    server: 172.67.182.152
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 5-m9.hat-yai.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 5-m9.hat-yai.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_24
-    type: vless
-    server: 104.21.16.18
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: api-gateway-1.f00f.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_25
-    type: vless
-    server: 104.21.77.97
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 7-m9.fa481bc3-db71-45d0-b251-3cd830fd1b94.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 7-m9.fa481bc3-db71-45d0-b251-3cd830fd1b94.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 伊朗_1
-    type: vless
-    server: 151.243.181.99
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_26
-    type: vless
-    server: 104.21.13.79
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 9-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 9-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_27
-    type: vless
-    server: 104.21.49.165
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 2-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 2-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_28
-    type: vless
-    server: 172.67.198.209
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 5-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_29
-    type: vless
-    server: 172.67.212.195
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 4-M17.KUWAIT-AIRlinE.kDNS.fR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 4-M17.KUWaiT-airLiNE.KdnS.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_30
-    type: vless
-    server: 104.21.52.2
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 1-m9.5a0bf842-dd8f-4ce0-8894-e4081516948b.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 1-m9.5a0bf842-dd8f-4ce0-8894-e4081516948b.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_31
-    type: vless
-    server: 104.21.49.165
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 8-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 8-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_32
-    type: vless
-    server: 173.234.14.105
-    port: 59615
-    uuid: e2632874-614e-4261-af62-52aca3358e4e
-    servername: biosmod.partners.nvidia.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M
-      short-id: 6b
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 亚美尼亚_1
-    type: vless
-    server: 2.56.207.67
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_33
-    type: vless
-    server: 172.232.236.252
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 澳大利亚
-    type: vless
-    server: 103.224.84.70
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 澳大利亚_1
-    type: vless
-    server: 202.166.187.132
-    port: 443
-    uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-    network: ws
-    servername: f.yoptybla.ru
-    tls: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-      headers:
-        Host: f.yoptybla.ru
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_3
-    type: vless
-    server: 31.76.226.100
-    port: 9443
-    uuid: d9d0f208-d582-41d5-bb7b-742671402810
-    network: http
-    servername: hub-ee-01.hanvpn.cc
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path:
-        - /ee01-xhttp-8e47a/
-      headers:
-        Host:
-          - hub-ee-01.hanvpn.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_34
-    type: vless
-    server: 104.238.24.152
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_35
-    type: vless
-    server: 207.57.133.53
-    port: 51135
-    uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
-    servername: www.ebay.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_36
-    type: vless
-    server: 104.21.62.195
-    port: 443
-    uuid: cb53f904-c979-454f-bf43-621990008148
-    network: ws
-    servername: 3.qq1-0.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /LNbYtR09FXg1AmmjhdiHvR8v
-      headers:
-        Host: 3.qq1-0.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_37
-    type: vless
-    server: 139.84.135.130
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_38
-    type: vless
-    server: 104.21.16.18
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: api-auth-service.f00f.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: api-auth-service.f00f.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_39
-    type: vless
-    server: 172.67.216.151
-    port: 443
-    uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-    network: ws
-    servername: 3-m9.5f67a3d6-2963-45ab-8313-7d02d224d2a0.kdns.fr
-    tls: true
-    ws-opts:
-      path: /BzuntJ8qZN0TRKbC8TveMxJ0
-      headers:
-        Host: 3-m9.5f67a3d6-2963-45ab-8313-7d02d224d2a0.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 Nofound_2
-    type: vless
-    server: 103.170.217.60
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 新加坡
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_3
-    type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 399b6b23-cc40-4831-a494-61948e2df133
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_40
-    type: vless
-    server: 104.194.140.26
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_41
-    type: vless
-    server: 104.143.204.23
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_42
-    type: vless
-    server: 104.143.204.23
-    port: 8443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_43
-    type: vless
-    server: 104.21.16.137
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 1-M17.kuWAit-aIRliNE.kDNs.FR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 1-M17.kUWaIT-AirLInE.Kdns.Fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_44
-    type: vless
-    server: 207.57.131.82
-    port: 42038
-    uuid: 451ae20e-adca-4d00-bf12-9572f58f181b
-    servername: aws.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_45
-    type: vless
-    server: 157.151.4.93
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_46
-    type: vless
-    server: 157.151.4.93
-    port: 443
-    uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-    network: ws
-    servername: shuma.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: shuma.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_47
-    type: vless
-    server: 68.64.183.164
-    port: 14163
-    uuid: 8871f4a9-cb90-4159-b3d0-84b90efdd3ca
-    servername: www.paypal.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 40j_uKu51A06ECDlinwC6Q7h7ZPWs9Bkv24_EZdcvnQ
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_48
-    type: trojan
-    server: www.calmlunch.com
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 美国_49
-    type: vless
-    server: 207.57.129.114
-    port: 14934
-    uuid: 630b700b-3c91-463a-9ef5-ee01f5848b45
-    servername: dash.cloudflare.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 意大利_1
-    type: vless
-    server: 45.145.228.129
-    port: 3077
-    uuid: 308afb3e-b0ce-41c8-9987-4023161fac75
-    servername: aws.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_50
-    type: vless
-    server: 172.67.138.232
-    port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    network: ws
-    servername: 4-M17.KaZakHSTAn-LiNk.kDNs.FR
-    tls: true
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 4-m17.KazAkhSTAN-LinK.KdnS.FR
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_51
-    type: vless
-    server: 104.21.39.176
-    port: 443
-    uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
-    network: ws
-    servername: 4-M13.aYuttHAYa.KDns.fr
-    tls: true
-    ws-opts:
-      path: /ED3ZQPu7lqyeDGD58KabZ
-      headers:
-        Host: 4-M13.AYUtTHAya.KdNS.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_4
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_52
-    type: vless
-    server: 45.9.15.206
-    port: 443
-    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-    network: ws
-    servername: ru05.abvpn.ru
-    tls: true
-    ws-opts:
-      path: /websocket
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_53
-    type: vless
-    server: ru05.abvpn.ru
-    port: 443
-    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-    network: ws
-    servername: ru05.abvpn.ru
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /websocket
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_54
-    type: vmess
-    server: 64.188.97.153
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 美国_55
-    type: trojan
-    server: 104.18.8.83
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 美国_56
-    type: vless
-    server: 167.104.104.138
-    port: 8443
-    uuid: a5194487-9b9a-462f-a047-ac7580d80201
-    network: ws
-    servername: n.tmkkarss.online
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 瑞士
-    type: trojan
-    server: 193.239.160.134
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-    udp: true
-  - name: YouTube顺丰资源 美国_57
-    type: vmess
-    server: 172.67.167.78
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        Host: v2ray1.dozapp.xyz
-    udp: true
-  - name: YouTube顺丰资源 爱尔兰
-    type: vmess
-    server: 78.17.71.236
-    port: 33736
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: Telegram-Leviko_v2ray
-    udp: true
-  - name: YouTube顺丰资源 美国_58
-    type: vless
-    server: 172.64.53.87
-    port: 8443
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    network: ws
-    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_59
-    type: vless
-    server: 172.67.217.240
-    port: 443
-    uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-    network: ws
-    servername: web-socket.tgdaosheng.ggff.net
-    tls: true
-    ws-opts:
-      path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_60
-    type: vless
-    server: 172.64.144.66
-    port: 8443
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    network: ws
-    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_61
-    type: vless
-    server: 206.1.96.228
-    port: 8082
-    uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_62
-    type: trojan
-    server: 199.232.78.160
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn-ss-mitivpn---mitivpn--mitivpn.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 美国_63
-    type: trojan
-    server: 151.101.56.7
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn-mitivpn-mitivpn-bb-mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 丹麦
-    type: vless
-    server: 5.157.10.146
-    port: 443
-    uuid: 732255eb-8ce9-4cd5-8bdc-376bd3fa0b11
-    servername: sweb1.loozerp.wiki
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-      short-id: fb442438e2223836
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 匈牙利
-    type: vless
-    server: 45.9.168.17
-    port: 443
-    uuid: 5d4a87fa-16f1-4b65-b217-225a31e36239
-    servername: hu.convert-flow.net
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-      short-id: 00a61d55a07de885
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 捷克共和国
-    type: vmess
-    server: 95.85.233.138
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 西班牙
-    type: vless
-    server: 45.159.79.71
-    port: 4443
-    uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-    servername: sentry.io
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 321Ii2xbCoyll6WJ0Qm1Sh8qcC0kxXvUaZhe3kyasD8
-      short-id: a1b2c3d4e5f6a7b8
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_64
-    type: vmess
-    server: 13.140.28.46
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 巴西
-    type: vless
-    server: 200.165.229.159
-    port: 443
-    uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-    servername: flarora.ferreo.sbs
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-      short-id: 1067b23f928e7618
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_65
-    type: vless
-    server: 208.103.161.249
-    port: 80
-    uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_66
-    type: vless
-    server: 66.81.247.240
-    port: 8880
-    uuid: 6fc81c37-e8e5-486d-8f07-3d6188ceb83b
-    network: ws
-    tls: false
-    ws-opts:
-      path: /rutube
-      headers:
-        Host: rutube.hampals.net
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_1
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_2
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_67
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_68
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_4
-    type: vless
-    server: 178.95.170.83
-    port: 2087
-    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-    network: ws
-    servername: Telegram-Leviko_v2ray
-    tls: false
-    ws-opts:
-      path: /4bc027a44532
-      headers:
-        Host: Telegram-Leviko_v2ray
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_5
-    type: vless
-    server: 178.95.170.83
-    port: 2087
-    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-    network: ws
-    servername: 178.95.170.83
-    tls: false
-    client-fingerprint: chrome
-    ws-opts:
-      path: /4bc027a44532
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_6
-    type: vless
-    server: 178.95.170.83
-    port: 2087
-    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-    network: ws
-    servername: 178.95.170.83
-    tls: false
-    ws-opts:
-      path: /4bc027a44532
-      headers:
-        Host: 178.95.170.83
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_5
-    type: hysteria2
-    server: gta.internet-card.sbs
-    port: 443
-    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-    sni: gta.internet-card.sbs
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_69
-    type: vless
-    server: 172.67.212.14
-    port: 443
-    uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-    network: ws
-    servername: 8-m19.souTh-afRiCA-ONLinE.CcwU.CC
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /CjBjB9sn5pCvaSwScc
-      headers:
-        Host: 8-m19.SoUth-AFriCa-onlInE.cCwU.cC
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_70
-    type: vless
-    server: k2.cloud--vpn.site
-    port: 443
-    uuid: daee66b7-3f5e-46d7-83c1-4d93a5fb33c3
-    network: ws
-    servername: ssl.fastly.com
-    tls: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-      headers:
-        Host: c12.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_71
-    type: vless
-    server: ru05.abvpn.ru
-    port: 443
-    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-    network: ws
-    servername: ru05.abvpn.ru
-    tls: true
-    ws-opts:
-      path: /websocket
-      headers:
-        Host: ru05.abvpn.ru
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_72
-    type: vless
-    server: 172.67.156.147
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    network: ws
-    servername: jp3.yohototo.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /tyxyws
-      headers:
-        Host: jp3.yohototo.top
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_6
-    type: hysteria2
-    server: news.gazette.help
-    port: 443
-    password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-    sni: news.gazette.help
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_73
-    type: vless
-    server: 104.17.74.206
-    port: 8443
-    uuid: 542fd687-5160-4f80-9223-56678567dd29
-    network: ws
-    servername: 8.sahanwickramasinghe.me
-    tls: true
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 巴西_1
-    type: vless
-    server: 200.165.229.159
-    port: 443
-    uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-    servername: flarora.ferreo.sbs
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-      short-id: 1067b23f928e7618
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 巴西_2
-    type: vless
-    server: 200.165.229.159
-    port: 443
-    uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-    servername: flarora.ferreo.sbs
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-      short-id: 1067b23f928e7618
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 巴西_3
-    type: vless
-    server: 200.165.229.159
-    port: 443
-    uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
-    servername: flarora.ferreo.sbs
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
-      short-id: 1067b23f928e7618
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_3
-    type: vless
-    server: freshjuniper.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_7
-    type: vless
-    server: 178.95.170.83
-    port: 2087
-    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-    network: ws
-    servername: 178.95.170.83
-    tls: false
-    ws-opts:
-      path: /4bc027a44532
-      headers:
-        Host: Telegram-Leviko_v2ray
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_74
-    type: vless
-    server: 45.9.15.206
-    port: 443
-    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-    network: ws
-    servername: ru05.abvpn.ru
-    tls: true
-    ws-opts:
-      path: /websocket
-      headers:
-        Host: ru05.abvpn.ru
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_4
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_5
-    type: vless
-    server: freshjuniper.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: freshjuniper.download
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_75
-    type: hysteria2
-    server: 161.33.230.205
-    port: 20000
-    password: a34f3990b69f44bfa0d32385
-    sni: rmgyvpn.rest
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: a34f3990b69f44bfa0d32385
-    udp: true
-  - name: YouTube顺丰资源 美国_76
-    type: vmess
-    server: 172.64.80.1
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        Host: v2ray1.dozapp.xyz
-    udp: true
-  - name: YouTube顺丰资源 美国_77
-    type: vless
-    server: 51.81.203.63
-    port: 443
-    uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-      short-id: 4477382ff6d3d41c
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_78
-    type: vless
-    server: 104.18.47.164
-    port: 443
-    uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    network: ws
-    servername: gy-cffc5-node-31z7yxejlog9qfu0.lancelot.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /download/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      headers:
-        Host: gy-cffc5-node-31z7yxejlog9qfu0.lancelot.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 塞浦路斯
-    type: vless
-    server: 185.71.219.188
-    port: 443
-    uuid: 2107ea1e-26fb-4831-8c3f-fb190bea79f7
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_79
-    type: vless
-    server: 104.18.46.46
-    port: 80
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    network: ws
-    servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    tls: false
-    ws-opts:
-      path: /?ed=2560security=tls
-      headers:
-        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_80
-    type: vless
-    server: 104.18.1.1
-    port: 2083
-    uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-    network: ws
-    servername: calm-smoke-1a21.alvlirm6262.workers.dev
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: calm-smoke-1a21.alvlirm6262.workers.dev
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_81
-    type: ss
-    server: 185.203.4.204
-    port: 3
-    cipher: chacha20-ietf-poly1305
-    password: 816Efx8yiCSDDpvvpxXL8Q
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_82
-    type: vless
-    server: 144.31.215.48
-    port: 443
-    uuid: d9d0f208-d582-41d5-bb7b-742671402810
-    servername: eu-central-de2.hanvpn.biz
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: w0J3H-DEyHEK-Nj7bst_5sQqzcPl700ybHpqq5mFz0U
-      short-id: 12a3b7681806bc97
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 加拿大_6
-    type: vless
-    server: freshjuniper.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_83
-    type: vless
-    server: 172.64.52.175
-    port: 2087
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    network: ws
-    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 土耳其
-    type: vless
-    server: 212.64.193.85
-    port: 443
-    uuid: 2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5
-    servername: cz.cloudtechone.org
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-      short-id: f93c9d5127e622e4
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_84
-    type: vless
-    server: 104.16.150.108
-    port: 2087
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    network: ws
-    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_85
-    type: vless
-    server: 51.81.203.63
-    port: 443
-    uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-      short-id: 4477382ff6d3d41c
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_86
-    type: vless
-    server: 104.17.103.118
-    port: 2087
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_7
-    type: vless
-    server: 178.105.61.61
-    port: 2083
-    uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
-    servername: 178.105.61.61
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
-      short-id: af04ff8094115e93
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_87
-    type: vless
-    server: 104.21.33.59
-    port: 443
-    uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-    network: ws
-    servername: web-socket.tgdaosheng.ggff.net
-    tls: true
-    client-fingerprint: unsafe
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_88
-    type: vless
-    server: 172.64.52.173
-    port: 443
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    network: ws
-    servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 Nofound_3
-    type: vmess
-    server: 165.140.217.2
-    port: 443
-    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_89
-    type: trojan
-    server: 151.101.56.6
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-1.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 美国_90
-    type: vless
-    server: 104.17.71.206
-    port: 8443
-    uuid: 542fd687-5160-4f80-9223-56678567dd29
-    network: ws
-    servername: 8.sahanwickramasinghe.me
-    tls: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_91
-    type: trojan
-    server: 151.101.56.7
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-2.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 美国_92
-    type: trojan
-    server: 167.82.76.27
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
-    udp: true
-  - name: YouTube顺丰资源 美国_93
-    type: vless
-    server: ccs2g.pai50288.uk
-    port: 443
-    uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-    network: ws
-    servername: ccs2g.pai50288.uk
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pai50288
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_94
-    type: trojan
-    server: 104.18.32.47
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 英国_8
-    type: vless
-    server: 2.26.178.129
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_8
-    type: vless
-    server: gr.freeinternat.com
-    port: 443
-    uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-    servername: gr.freeinternat.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-      short-id: ff776ff77be48b88
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 乌克兰_9
-    type: vless
-    server: 85.90.197.91
-    port: 443
-    uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-    servername: gr.freeinternat.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-      short-id: ff776ff77be48b88
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_95
-    type: vmess
-    server: www.nextkyc.com
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        Host: v2ray1.dozapp.xyz
-    udp: true
-  - name: YouTube顺丰资源 德国
-    type: vmess
-    server: 85.215.41.19
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 爱沙尼亚
-    type: vmess
-    server: 5.188.26.85
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 巴基斯坦
-    type: vmess
-    server: 111.88.74.167
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 英国_9
-    type: vmess
-    server: 2.27.16.177
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 俄罗斯_3
-    type: vmess
-    server: 80.240.252.241
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 伊朗_2
-    type: vmess
-    server: 95.81.126.119
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 爱尔兰_1
-    type: vmess
-    server: 89.127.218.61
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 英国_10
-    type: vmess
-    server: 31.77.223.21
-    port: 443
-    uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /api/v1/gpu-stream/socket
-      headers:
-        Host: renderer-stream-2-62.mirra.now
-    udp: true
-  - name: YouTube顺丰资源 土耳其_1
-    type: ss
-    server: 188.132.232.85
-    port: 1080
-    cipher: chacha20-ietf-poly1305
-    password: rSeYcig_XBy8q3k33NpK3A
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_96
-    type: vless
-    server: 104.18.33.112
-    port: 2096
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_97
-    type: trojan
-    server: 104.16.148.5
-    port: 443
-    password: 19877587-ed94-4033-88cd-4ac50a5e8718
-    sni: dimskiee.biz.id
-    skip-cert-verify: true
-    ws-opts:
-      path: /WangCai-8
-    udp: true
-  - name: YouTube顺丰资源 美国_98
-    type: vless
-    server: 152.53.1.40
-    port: 443
-    uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-    servername: at.quattro-tech.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-      short-id: 43dcff53849b81e6
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_99
-    type: vless
-    server: k2.cloud--vpn.site
-    port: 443
-    uuid: d9eda159-18d6-4457-8983-55523a21658c
-    network: ws
-    servername: ssl.fastly.com
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: c12.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_100
-    type: vless
-    server: bet.tunetworkin.online
-    port: 443
-    uuid: 4880ac28-4e37-4d13-9361-44d03e7020f1
-    network: ws
-    servername: jp-bet.tunetworkin.online
-    tls: true
-    ws-opts:
-      path: /kygaY42h
-      headers:
-        Host: jp-bet.tunetworkin.online
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_101
-    type: trojan
-    server: 104.18.9.83
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 德国_1
-    type: trojan
-    server: 185.220.100.168
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 中国_4
-    type: trojan
-    server: 62.234.223.235
-    port: 44027
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_5
-    type: trojan
-    server: 62.234.223.235
-    port: 44003
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_102
-    type: vless
-    server: 104.21.56.202
-    port: 443
-    uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-    network: ws
-    servername: web-socket.tgdaosheng.ggff.net
-    tls: true
-    ws-opts:
-      path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_6
-    type: trojan
-    server: 62.234.223.235
-    port: 44056
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_7
-    type: trojan
-    server: 62.234.223.235
-    port: 44004
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_8
-    type: trojan
-    server: 62.234.223.235
-    port: 44054
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_9
-    type: trojan
-    server: 62.234.223.235
-    port: 44058
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_103
-    type: vmess
-    server: 20.235.220.189
-    port: 443
-    uuid: f23bb427c1f94373876c2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /ws-vmess
-      headers:
-        Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    udp: true
-  - name: YouTube顺丰资源 中国_10
-    type: trojan
-    server: 62.234.223.235
-    port: 44057
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_11
-    type: trojan
-    server: 62.234.223.235
-    port: 44052
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_12
-    type: trojan
-    server: 62.234.223.235
-    port: 44011
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_13
-    type: trojan
-    server: 62.234.223.235
-    port: 44001
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_14
-    type: trojan
-    server: 62.234.223.235
-    port: 44063
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_15
-    type: trojan
-    server: 62.234.223.235
-    port: 44064
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_16
-    type: trojan
-    server: 62.234.223.235
-    port: 44065
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_104
-    type: trojan
-    server: 104.17.121.43
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-  - name: YouTube顺丰资源 美国_105
-    type: vless
-    server: land.zavqeron.ir
-    port: 2053
-    uuid: f2900749-7cff-42b7-9566-dfb03840d374
-    network: ws
-    servername: land.zavqeron.ir
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /fi-cdn
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 中国_17
-    type: trojan
-    server: 62.234.223.235
-    port: 44062
-    password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_106
-    type: vless
-    server: 104.19.151.247
-    port: 8443
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_107
-    type: vless
-    server: 104.19.50.229
-    port: 443
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_108
-    type: vless
-    server: 104.17.221.54
-    port: 2053
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_109
-    type: vless
-    server: 104.17.62.176
-    port: 2096
-    uuid: 42c62a5a-cd31-4551-80ef-908732370287
-    network: ws
-    servername: fq.jp188.dpdns.org
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-      headers:
-        Host: fq.jp188.dpdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_110
-    type: vless
-    server: 207.57.135.123
-    port: 35621
-    uuid: 6f8acdfd-0ce0-4386-ba02-5040da4c6fea
-    servername: www.amazon.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: wK6kCgPEjDA7KADag0eZUc8e523kdIOCh8Qavkb15nA
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 伊朗_3
-    type: vless
-    server: germ6.velqixa.ir
-    port: 8445
-    uuid: f2900749-7cff-42b7-9566-dfb03840d374
-    servername: amp-api-edge.apps.apple.com
-    tls: true
-    client-fingerprint: qq
-    reality-opts:
-      public-key: TJJ4Zfq2KhZii_IP8J1EW4VNt3HBYnlIR5yn7JzbFXs
-      short-id: 498dde7df1bf79ab
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 美国_111
-    type: vless
-    server: 207.57.133.49
-    port: 23156
-    uuid: 46554735-415f-4be5-9390-a19dc430a15c
-    servername: www.cloudflare.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: NjDiEVSSYysWC7yheN_cy4YkCXHtP91yB4vbpgQc2Q8
-    skip-cert-verify: true
-    udp: true
-  - name: YouTube顺丰资源 英国_11
-    type: ss
-    server: 129.151.73.130
-    port: 61312
-    cipher: 2022-blake3-chacha20-poly1305
-    password: SZpgL/kZRqx0r/pLnOmmmrSDMag2E9XthSqM467FGOo=
-    skip-cert-verify: true
-    udp: true
+    - { name: '剩余流量：25437.72 GB', type: trojan, server: bestcdn0.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216822160.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216824689.682637.xyz } } }
+    - { name: 套餐到期：2026-09-24, type: trojan, server: bestcdn0.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216822209.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216826633.682637.xyz } } }
+    - { name: 公益节点每日更新, type: trojan, server: bestcdn0.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824547.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216824139.682637.xyz } } }
+    - { name: 每日节点保证时效, type: trojan, server: bestcdn0.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826104.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216822755.682637.xyz } } }
+    - { name: berryhub.org, type: trojan, server: bestcdn0.868863.xyz, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216829120.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216825648.682637.xyz } } }
+    - { name: 蓝莓速递提供技术支持, type: trojan, server: bestcdn0.868863.xyz, port: 8443, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216821195.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216826076.682637.xyz } } }
+    - { name: 专属订阅十元每年, type: trojan, server: bestcdn0.868863.xyz, port: 8443, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216827142.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216821355.682637.xyz } } }
+    - { name: berryexpress.top, type: trojan, server: bestcdn0.868863.xyz, port: 2053, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826431.682637.xyz, network: ws, ws-opts: { path: /ahyrtuyjykl, headers: { Host: 17902216823393.682637.xyz } } }
+    - { name: Tahoe-IPv6, type: trojan, server: 99.cdn.aewe.de, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826935.206352.xyz, network: ws, ws-opts: { path: /agraeabtegrrh, headers: { Host: 17902216826982.206352.xyz } } }
+    - { name: Sequoia-IPv6, type: trojan, server: 99.cdn.aewe.de, port: 8443, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824216.206353.xyz, network: ws, ws-opts: { path: /agrbniuh, headers: { Host: 17902216824868.206353.xyz } } }
+    - { name: Sonoma-IPv6, type: trojan, server: 99.cdn.aewe.de, port: 2083, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824678.206355.xyz, network: ws, ws-opts: { path: /videomuaawe, headers: { Host: 17902216829395.206355.xyz } } }
+    - { name: Ventura-IPv6, type: trojan, server: 99.cdn.aewe.de, port: 2083, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216828674.206356.xyz, network: ws, ws-opts: { path: /dmusicmuaawe, headers: { Host: 17902216823573.206356.xyz } } }
+    - { name: Monterey-IPv6, type: trojan, server: 99.cdn.aewe.de, port: 2083, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216827001.168381.xyz, network: ws, ws-opts: { path: /tianboephth, headers: { Host: 17902216824243.168381.xyz } } }
+    - { name: Tahoe-01, type: trojan, server: bestcdn1.868863.xyz, port: 2053, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216827599.206352.xyz, network: ws, ws-opts: { path: /agraeabtegrrh, headers: { Host: 17902216823228.206352.xyz } } }
+    - { name: Sequoia-01, type: trojan, server: bestcdn1.868863.xyz, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216829836.206353.xyz, network: ws, ws-opts: { path: /agrbniuh, headers: { Host: 17902216827678.206353.xyz } } }
+    - { name: Sonoma-01, type: trojan, server: bestcdn1.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826629.206355.xyz, network: ws, ws-opts: { path: /videomuaawe, headers: { Host: 17902216825077.206355.xyz } } }
+    - { name: Ventura-01, type: trojan, server: bestcdn1.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824038.206356.xyz, network: ws, ws-opts: { path: /dmusicmuaawe, headers: { Host: 17902216823537.206356.xyz } } }
+    - { name: Monterey-01, type: trojan, server: bestcdn1.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216829378.168381.xyz, network: ws, ws-opts: { path: /tianboephth, headers: { Host: 17902216821714.168381.xyz } } }
+    - { name: Tahoe-02, type: trojan, server: bestcdn2.868863.xyz, port: 2083, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216828264.206352.xyz, network: ws, ws-opts: { path: /agraeabtegrrh, headers: { Host: 17902216822814.206352.xyz } } }
+    - { name: Sequoia-02, type: trojan, server: bestcdn2.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216829268.206353.xyz, network: ws, ws-opts: { path: /agrbniuh, headers: { Host: 17902216826649.206353.xyz } } }
+    - { name: Sonoma-02, type: trojan, server: bestcdn2.868863.xyz, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824797.206355.xyz, network: ws, ws-opts: { path: /videomuaawe, headers: { Host: 17902216826472.206355.xyz } } }
+    - { name: Ventura-02, type: trojan, server: bestcdn2.868863.xyz, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216828685.206356.xyz, network: ws, ws-opts: { path: /dmusicmuaawe, headers: { Host: 17902216823192.206356.xyz } } }
+    - { name: Monterey-02, type: trojan, server: bestcdn2.868863.xyz, port: 2096, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826851.168381.xyz, network: ws, ws-opts: { path: /tianboephth, headers: { Host: 17902216824164.168381.xyz } } }
+    - { name: Tahoe-03, type: trojan, server: bestcdn3.868863.xyz, port: 2087, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216825086.206352.xyz, network: ws, ws-opts: { path: /agraeabtegrrh, headers: { Host: 17902216823077.206352.xyz } } }
+    - { name: Sequoia-03, type: trojan, server: bestcdn3.868863.xyz, port: 2083, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216829031.206353.xyz, network: ws, ws-opts: { path: /agrbniuh, headers: { Host: 17902216822891.206353.xyz } } }
+    - { name: Sonoma-03, type: trojan, server: bestcdn3.868863.xyz, port: 2053, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216826760.206355.xyz, network: ws, ws-opts: { path: /videomuaawe, headers: { Host: 17902216827497.206355.xyz } } }
+    - { name: Ventura-03, type: trojan, server: bestcdn3.868863.xyz, port: 2053, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216821602.206356.xyz, network: ws, ws-opts: { path: /dmusicmuaawe, headers: { Host: 17902216827102.206356.xyz } } }
+    - { name: Monterey-03, type: trojan, server: bestcdn3.868863.xyz, port: 2053, password: d31b3e7a-ca14-4e77-a691-b88603707752, udp: true, skip-cert-verify: false, sni: 17902216824029.168381.xyz, network: ws, ws-opts: { path: /tianboephth, headers: { Host: 17902216824485.168381.xyz } } }
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - DIRECT
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-  - name: ♻️ 自动选择
-    type: url-test
-    proxies:
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-  - name: 📲 电报信息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - YouTube顺丰资源 中国
-      - YouTube顺丰资源 中国_1
-      - YouTube顺丰资源 中国台湾
-      - YouTube顺丰资源 日本
-      - YouTube顺丰资源 韩国
-      - YouTube顺丰资源 中国香港
-      - YouTube顺丰资源 美国
-      - YouTube顺丰资源 中国香港_1
-      - YouTube顺丰资源 美国_1
-      - YouTube顺丰资源 中国香港_2
-      - YouTube顺丰资源 美国_2
-      - YouTube顺丰资源 美国_3
-      - YouTube顺丰资源 英国
-      - YouTube顺丰资源 美国_4
-      - YouTube顺丰资源 瑞典
-      - YouTube顺丰资源 法国
-      - YouTube顺丰资源 比利时
-      - YouTube顺丰资源 法国_1
-      - YouTube顺丰资源 美国_5
-      - YouTube顺丰资源 美国_6
-      - YouTube顺丰资源 英国_1
-      - YouTube顺丰资源 美国_7
-      - YouTube顺丰资源 美国_8
-      - YouTube顺丰资源 俄罗斯
-      - YouTube顺丰资源 中国香港_3
-      - YouTube顺丰资源 俄罗斯_1
-      - YouTube顺丰资源 Nofound
-      - YouTube顺丰资源 日本_1
-      - YouTube顺丰资源 美国_9
-      - YouTube顺丰资源 美国_10
-      - YouTube顺丰资源 乌克兰
-      - YouTube顺丰资源 中国香港_4
-      - YouTube顺丰资源 美国_11
-      - YouTube顺丰资源 乌克兰_1
-      - YouTube顺丰资源 美国_12
-      - YouTube顺丰资源 英国_2
-      - YouTube顺丰资源 亚美尼亚
-      - YouTube顺丰资源 美国_13
-      - YouTube顺丰资源 乌克兰_2
-      - YouTube顺丰资源 意大利
-      - YouTube顺丰资源 中国_2
-      - YouTube顺丰资源 伊朗
-      - YouTube顺丰资源 美国_14
-      - YouTube顺丰资源 美国_15
-      - YouTube顺丰资源 日本_2
-      - YouTube顺丰资源 美国_16
-      - YouTube顺丰资源 俄罗斯_2
-      - YouTube顺丰资源 美国_17
-      - YouTube顺丰资源 美国_18
-      - YouTube顺丰资源 美国_19
-      - YouTube顺丰资源 Nofound_1
-      - YouTube顺丰资源 美国_20
-      - YouTube顺丰资源 尼日利亚
-      - YouTube顺丰资源 美国_21
-      - YouTube顺丰资源 美国_22
-      - YouTube顺丰资源 乌克兰_3
-      - YouTube顺丰资源 美国_23
-      - YouTube顺丰资源 美国_24
-      - YouTube顺丰资源 美国_25
-      - YouTube顺丰资源 伊朗_1
-      - YouTube顺丰资源 美国_26
-      - YouTube顺丰资源 美国_27
-      - YouTube顺丰资源 美国_28
-      - YouTube顺丰资源 美国_29
-      - YouTube顺丰资源 美国_30
-      - YouTube顺丰资源 美国_31
-      - YouTube顺丰资源 美国_32
-      - YouTube顺丰资源 亚美尼亚_1
-      - YouTube顺丰资源 美国_33
-      - YouTube顺丰资源 澳大利亚
-      - YouTube顺丰资源 澳大利亚_1
-      - YouTube顺丰资源 英国_3
-      - YouTube顺丰资源 美国_34
-      - YouTube顺丰资源 美国_35
-      - YouTube顺丰资源 美国_36
-      - YouTube顺丰资源 美国_37
-      - YouTube顺丰资源 美国_38
-      - YouTube顺丰资源 美国_39
-      - YouTube顺丰资源 Nofound_2
-      - YouTube顺丰资源 新加坡
-      - YouTube顺丰资源 中国_3
-      - YouTube顺丰资源 美国_40
-      - YouTube顺丰资源 美国_41
-      - YouTube顺丰资源 美国_42
-      - YouTube顺丰资源 美国_43
-      - YouTube顺丰资源 美国_44
-      - YouTube顺丰资源 美国_45
-      - YouTube顺丰资源 美国_46
-      - YouTube顺丰资源 美国_47
-      - YouTube顺丰资源 美国_48
-      - YouTube顺丰资源 美国_49
-      - YouTube顺丰资源 意大利_1
-      - YouTube顺丰资源 美国_50
-      - YouTube顺丰资源 美国_51
-      - YouTube顺丰资源 英国_4
-      - YouTube顺丰资源 美国_52
-      - YouTube顺丰资源 美国_53
-      - YouTube顺丰资源 美国_54
-      - YouTube顺丰资源 美国_55
-      - YouTube顺丰资源 美国_56
-      - YouTube顺丰资源 瑞士
-      - YouTube顺丰资源 美国_57
-      - YouTube顺丰资源 爱尔兰
-      - YouTube顺丰资源 美国_58
-      - YouTube顺丰资源 美国_59
-      - YouTube顺丰资源 美国_60
-      - YouTube顺丰资源 美国_61
-      - YouTube顺丰资源 美国_62
-      - YouTube顺丰资源 美国_63
-      - YouTube顺丰资源 丹麦
-      - YouTube顺丰资源 匈牙利
-      - YouTube顺丰资源 捷克共和国
-      - YouTube顺丰资源 西班牙
-      - YouTube顺丰资源 美国_64
-      - YouTube顺丰资源 巴西
-      - YouTube顺丰资源 美国_65
-      - YouTube顺丰资源 美国_66
-      - YouTube顺丰资源 加拿大
-      - YouTube顺丰资源 加拿大_1
-      - YouTube顺丰资源 加拿大_2
-      - YouTube顺丰资源 美国_67
-      - YouTube顺丰资源 美国_68
-      - YouTube顺丰资源 乌克兰_4
-      - YouTube顺丰资源 乌克兰_5
-      - YouTube顺丰资源 乌克兰_6
-      - YouTube顺丰资源 英国_5
-      - YouTube顺丰资源 美国_69
-      - YouTube顺丰资源 美国_70
-      - YouTube顺丰资源 美国_71
-      - YouTube顺丰资源 美国_72
-      - YouTube顺丰资源 英国_6
-      - YouTube顺丰资源 美国_73
-      - YouTube顺丰资源 巴西_1
-      - YouTube顺丰资源 巴西_2
-      - YouTube顺丰资源 巴西_3
-      - YouTube顺丰资源 加拿大_3
-      - YouTube顺丰资源 乌克兰_7
-      - YouTube顺丰资源 美国_74
-      - YouTube顺丰资源 加拿大_4
-      - YouTube顺丰资源 加拿大_5
-      - YouTube顺丰资源 美国_75
-      - YouTube顺丰资源 美国_76
-      - YouTube顺丰资源 美国_77
-      - YouTube顺丰资源 美国_78
-      - YouTube顺丰资源 塞浦路斯
-      - YouTube顺丰资源 美国_79
-      - YouTube顺丰资源 美国_80
-      - YouTube顺丰资源 美国_81
-      - YouTube顺丰资源 美国_82
-      - YouTube顺丰资源 加拿大_6
-      - YouTube顺丰资源 美国_83
-      - YouTube顺丰资源 土耳其
-      - YouTube顺丰资源 美国_84
-      - YouTube顺丰资源 美国_85
-      - YouTube顺丰资源 美国_86
-      - YouTube顺丰资源 英国_7
-      - YouTube顺丰资源 美国_87
-      - YouTube顺丰资源 美国_88
-      - YouTube顺丰资源 Nofound_3
-      - YouTube顺丰资源 美国_89
-      - YouTube顺丰资源 美国_90
-      - YouTube顺丰资源 美国_91
-      - YouTube顺丰资源 美国_92
-      - YouTube顺丰资源 美国_93
-      - YouTube顺丰资源 美国_94
-      - YouTube顺丰资源 英国_8
-      - YouTube顺丰资源 乌克兰_8
-      - YouTube顺丰资源 乌克兰_9
-      - YouTube顺丰资源 美国_95
-      - YouTube顺丰资源 德国
-      - YouTube顺丰资源 爱沙尼亚
-      - YouTube顺丰资源 巴基斯坦
-      - YouTube顺丰资源 英国_9
-      - YouTube顺丰资源 俄罗斯_3
-      - YouTube顺丰资源 伊朗_2
-      - YouTube顺丰资源 爱尔兰_1
-      - YouTube顺丰资源 英国_10
-      - YouTube顺丰资源 土耳其_1
-      - YouTube顺丰资源 美国_96
-      - YouTube顺丰资源 美国_97
-      - YouTube顺丰资源 美国_98
-      - YouTube顺丰资源 美国_99
-      - YouTube顺丰资源 美国_100
-      - YouTube顺丰资源 美国_101
-      - YouTube顺丰资源 德国_1
-      - YouTube顺丰资源 中国_4
-      - YouTube顺丰资源 中国_5
-      - YouTube顺丰资源 美国_102
-      - YouTube顺丰资源 中国_6
-      - YouTube顺丰资源 中国_7
-      - YouTube顺丰资源 中国_8
-      - YouTube顺丰资源 中国_9
-      - YouTube顺丰资源 美国_103
-      - YouTube顺丰资源 中国_10
-      - YouTube顺丰资源 中国_11
-      - YouTube顺丰资源 中国_12
-      - YouTube顺丰资源 中国_13
-      - YouTube顺丰资源 中国_14
-      - YouTube顺丰资源 中国_15
-      - YouTube顺丰资源 中国_16
-      - YouTube顺丰资源 美国_104
-      - YouTube顺丰资源 美国_105
-      - YouTube顺丰资源 中国_17
-      - YouTube顺丰资源 美国_106
-      - YouTube顺丰资源 美国_107
-      - YouTube顺丰资源 美国_108
-      - YouTube顺丰资源 美国_109
-      - YouTube顺丰资源 美国_110
-      - YouTube顺丰资源 伊朗_3
-      - YouTube顺丰资源 美国_111
-      - YouTube顺丰资源 英国_11
-rule-providers:
-  LocalAreaNetwork:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
-    path: ./rules/LocalAreaNetwork.yaml
-  BanAD:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
-    path: ./rules/BanAD.yaml
-  BanProgramAD:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
-    path: ./rules/BanProgramAD.yaml
-  GoogleCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
-    path: ./rules/GoogleCN.yaml
-  SteamCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
-    path: ./rules/SteamCN.yaml
-  Microsoft:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
-    path: ./rules/Microsoft.yaml
-  Apple:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
-    path: ./rules/Apple.yaml
-  ProxyMedia:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
-    path: ./rules/ProxyMedia.yaml
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
-    path: ./rules/Telegram.yaml
-  ProxyLite:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
-    path: ./rules/ProxyLite.yaml
-  ChinaDomain:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
-    path: ./rules/ChinaDomain.yaml
-  ChinaCompanyIp:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
-    path: ./rules/ChinaCompanyIp.yaml
+    - { name: 蓝莓速递, type: select, proxies: [自动选择, 故障转移, DIRECT, '剩余流量：25437.72 GB', 套餐到期：2026-09-24, 公益节点每日更新, 每日节点保证时效, berryhub.org, 蓝莓速递提供技术支持, 专属订阅十元每年, berryexpress.top, Tahoe-IPv6, Sequoia-IPv6, Sonoma-IPv6, Ventura-IPv6, Monterey-IPv6, Tahoe-01, Sequoia-01, Sonoma-01, Ventura-01, Monterey-01, Tahoe-02, Sequoia-02, Sonoma-02, Ventura-02, Monterey-02, Tahoe-03, Sequoia-03, Sonoma-03, Ventura-03, Monterey-03] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：25437.72 GB', 套餐到期：2026-09-24, 公益节点每日更新, 每日节点保证时效, berryhub.org, 蓝莓速递提供技术支持, 专属订阅十元每年, berryexpress.top, Tahoe-IPv6, Sequoia-IPv6, Sonoma-IPv6, Ventura-IPv6, Monterey-IPv6, Tahoe-01, Sequoia-01, Sonoma-01, Ventura-01, Monterey-01, Tahoe-02, Sequoia-02, Sonoma-02, Ventura-02, Monterey-02, Tahoe-03, Sequoia-03, Sonoma-03, Ventura-03, Monterey-03], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 500 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：25437.72 GB', 套餐到期：2026-09-24, 公益节点每日更新, 每日节点保证时效, berryhub.org, 蓝莓速递提供技术支持, 专属订阅十元每年, berryexpress.top, Tahoe-IPv6, Sequoia-IPv6, Sonoma-IPv6, Ventura-IPv6, Monterey-IPv6, Tahoe-01, Sequoia-01, Sonoma-01, Ventura-01, Monterey-01, Tahoe-02, Sequoia-02, Sonoma-02, Ventura-02, Monterey-02, Tahoe-03, Sequoia-03, Sonoma-03, Ventura-03, Monterey-03], url: 'http://www.gstatic.com/generate_204', interval: 300 }
 rules:
-  - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
-  - RULE-SET,LocalAreaNetwork,🎯 全球直连
-  - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,BanProgramAD,🍃 应用净化
-  - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,SteamCN,🎯 全球直连
-  - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,ProxyMedia,🌍 国外媒体
-  - RULE-SET,Telegram,📲 电报信息
-  - RULE-SET,ProxyLite,🚀 节点选择
-  - RULE-SET,ChinaDomain,🎯 全球直连
-  - RULE-SET,ChinaCompanyIp,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+    - 'DOMAIN,express-free.868382.xyz,DIRECT'
+    - 'DOMAIN-SUFFIX,bizographics.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dc-msedge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,l-msedge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,licdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linkedin.at,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linkedin.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,lnkd.in,蓝莓速递'
+    - 'DOMAIN-SUFFIX,licdn.cn,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linkedin.cn,蓝莓速递'
+    - 'DOMAIN-SUFFIX,e122475.dscg.akamaiedge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,licdn.cn.cdn20.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linkedin.sc.omtrdc.net,蓝莓速递'
+    - 'IP-CIDR,1.1.1.1/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,8.8.8.8/32,蓝莓速递,no-resolve'
+    - 'DOMAIN,api.githubcopilot.com,蓝莓速递'
+    - 'DOMAIN,copilot-proxy.githubusercontent.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,copilot.cloud.microsoft,蓝莓速递'
+    - 'DOMAIN-SUFFIX,copilot.microsoft.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,蓝莓速递'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,蓝莓速递'
+    - 'DOMAIN-KEYWORD,dbankcloud,DIRECT'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,digicert.com,蓝莓速递'
+    - 'DOMAIN,ocsp.apple.com,蓝莓速递'
+    - 'DOMAIN,ocsp.comodoca.com,蓝莓速递'
+    - 'DOMAIN,ocsp.usertrust.com,蓝莓速递'
+    - 'DOMAIN,ocsp.sectigo.com,蓝莓速递'
+    - 'DOMAIN,ocsp.verisign.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,apple-dns.net,蓝莓速递'
+    - 'DOMAIN,testflight.apple.com,蓝莓速递'
+    - 'DOMAIN,sandbox.itunes.apple.com,蓝莓速递'
+    - 'DOMAIN,itunes.apple.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,apps.apple.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,蓝莓速递'
+    - 'DOMAIN,cvws.icloud-content.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,蓝莓速递'
+    - 'DOMAIN-KEYWORD,google,蓝莓速递'
+    - 'DOMAIN-KEYWORD,gmail,蓝莓速递'
+    - 'DOMAIN-KEYWORD,youtube,蓝莓速递'
+    - 'DOMAIN-KEYWORD,facebook,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fb.me,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fbcdn.net,蓝莓速递'
+    - 'DOMAIN-KEYWORD,twitter,蓝莓速递'
+    - 'DOMAIN-KEYWORD,instagram,蓝莓速递'
+    - 'DOMAIN-KEYWORD,dropbox,蓝莓速递'
+    - 'DOMAIN-SUFFIX,twimg.com,蓝莓速递'
+    - 'DOMAIN-KEYWORD,blogspot,蓝莓速递'
+    - 'DOMAIN-SUFFIX,youtu.be,蓝莓速递'
+    - 'DOMAIN-KEYWORD,whatsapp,蓝莓速递'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,abpchina.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,adblockplus.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,adobe.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,akamaized.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,alfredapp.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,amplitude.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ampproject.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,android.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,angularjs.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,aolcdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,apkpure.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,appledaily.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,appshopper.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,appspot.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,arcgis.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,archive.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,armorgames.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,att.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,awsstatic.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,azureedge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bing.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bintray.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bit.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bit.ly,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bitbucket.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bjango.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bkrtx.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blog.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blogcdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blogger.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blogspot.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,blogspot.hk,蓝莓速递'
+    - 'DOMAIN-SUFFIX,bloomberg.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,box.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,box.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cachefly.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,chromium.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cl.ly,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cloudflare.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cloudfront.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cmail19.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cnet.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,cocoapods.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,comodoca.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,crashlytics.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,culturedcode.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,d.pr,蓝莓速递'
+    - 'DOMAIN-SUFFIX,danilo.to,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dayone.me,蓝莓速递'
+    - 'DOMAIN-SUFFIX,db.tt,蓝莓速递'
+    - 'DOMAIN-SUFFIX,deskconnect.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,disq.us,蓝莓速递'
+    - 'DOMAIN-SUFFIX,disqus.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,disquscdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dnsimple.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,docker.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dribbble.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,droplr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dueapp.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,dytt8.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,edgekey.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,edgesuite.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,engadget.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,entrust.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,evernote.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fabric.io,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fast.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fastly.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fc2.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,feedburner.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,feedly.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,feedsportal.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,fiftythree.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,firebaseio.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,flexibits.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,flickr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,flipboard.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,g.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gabia.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,geni.us,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gfx.ms,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ggpht.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,git.io,蓝莓速递'
+    - 'DOMAIN-KEYWORD,github,蓝莓速递'
+    - 'DOMAIN-SUFFIX,globalsign.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gmodules.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,godaddy.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,golang.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gongm.in,蓝莓速递'
+    - 'DOMAIN-SUFFIX,goo.gl,蓝莓速递'
+    - 'DOMAIN-SUFFIX,goodreaders.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,goodreads.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gravatar.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gstatic.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,gvt0.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,hotmail.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,icons8.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ifixit.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ift.tt,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ifttt.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,iherb.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,imageshack.us,蓝莓速递'
+    - 'DOMAIN-SUFFIX,img.ly,蓝莓速递'
+    - 'DOMAIN-SUFFIX,imgur.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,imore.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,instapaper.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ipn.li,蓝莓速递'
+    - 'DOMAIN-SUFFIX,is.gd,蓝莓速递'
+    - 'DOMAIN-SUFFIX,issuu.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,itgonglun.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,itun.es,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ixquick.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,j.mp,蓝莓速递'
+    - 'DOMAIN-SUFFIX,js.revsci.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,jshint.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,jtvnw.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,justgetflux.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,kat.cr,蓝莓速递'
+    - 'DOMAIN-SUFFIX,klip.me,蓝莓速递'
+    - 'DOMAIN-SUFFIX,libsyn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linkedin.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,line-apps.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,linode.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,lithium.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,littlehj.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,live.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,live.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,livefilestore.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,llnwd.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,macid.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,macromedia.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,macrumors.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mashable.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mathjax.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,medium.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mega.co.nz,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mega.nz,蓝莓速递'
+    - 'DOMAIN-SUFFIX,megaupload.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mindnode.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,mobile01.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,modmyi.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,msedge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,myfontastic.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,name.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,nextmedia.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,nsstatic.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,nssurge.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,nyt.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,nytimes.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,omnigroup.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,onedrive.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,onenote.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ooyala.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,openvpn.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,openwrt.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,orkut.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,osxdaily.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,outlook.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ow.ly,蓝莓速递'
+    - 'DOMAIN-SUFFIX,paddleapi.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,parallels.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,parse.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,periscope.tv,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pinboard.in,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pinterest.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pixelmator.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pixiv.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,playpcesor.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,playstation.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,蓝莓速递'
+    - 'DOMAIN-SUFFIX,playstation.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,rime.im,蓝莓速递'
+    - 'DOMAIN-SUFFIX,servebom.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sfx.ms,蓝莓速递'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sharethis.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,shazam.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,skype.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,smartdns蓝莓速递.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sndcdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sony.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,soundcloud.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sourceforge.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,spotify.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,squarespace.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,sstatic.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,蓝莓速递'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,startpage.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,staticflickr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,symauth.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,symcb.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,symcd.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tapbots.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tapbots.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tdesktop.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,techcrunch.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,techsmith.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,theverge.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,time.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,timeinc.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tiny.cc,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tinypic.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tmblr.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,todoist.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,trello.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tumblr.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tumblr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,twitch.tv,蓝莓速递'
+    - 'DOMAIN-SUFFIX,txmblr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,typekit.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ubertags.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ublock.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ubnt.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,urchin.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,usertrust.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,v.gd,蓝莓速递'
+    - 'DOMAIN-SUFFIX,v2ex.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vimeo.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vine.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vivaldi.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vsco.co,蓝莓速递'
+    - 'DOMAIN-SUFFIX,vultr.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,w.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,w3schools.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,webtype.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wikiwand.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wikileaks.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wikimedia.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wikipedia.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wikipedia.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,windows.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,windows.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wire.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wordpress.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,workflowy.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wp.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wsj.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,wsj.net,蓝莓速递'
+    - 'DOMAIN-SUFFIX,xda-developers.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,xeeno.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,xiti.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,yahoo.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,yimg.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ying.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,yoyo.org,蓝莓速递'
+    - 'DOMAIN-SUFFIX,ytimg.com,蓝莓速递'
+    - 'DOMAIN-SUFFIX,telegra.ph,蓝莓速递'
+    - 'DOMAIN-SUFFIX,telegram.org,蓝莓速递'
+    - 'IP-CIDR,91.108.4.0/22,蓝莓速递,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,蓝莓速递,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,蓝莓速递,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,蓝莓速递,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,蓝莓速递,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,蓝莓速递,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,蓝莓速递,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,蓝莓速递,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,蓝莓速递,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,蓝莓速递,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,蓝莓速递,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,蓝莓速递,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,蓝莓速递,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,蓝莓速递,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,蓝莓速递'
